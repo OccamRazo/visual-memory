@@ -142,28 +142,28 @@
 
 对事件 $e_t$，侧信息记为 $S_t=\{\text{caption, ASR, OCR, recent context}\}$，视觉表示为 $x_t$。先学习条件残差：
 
-\[
+$$
 r_t = E_v(x_t)-D_s(S_t),
-\]
+$$
 
 并显式保留视觉与侧信息冲突，而不是把错误 caption 能“解释”的视觉真相当作冗余。
 
 full-context teacher 用删除事件或关系超边的反事实，给出问题 $q$ 下的边际价值：
 
-\[
+$$
 \Delta(e,q\mid S,M)=
 \mathcal L_{ans}(q;M,S)-\mathcal L_{ans}(q;M\cup e,S)
 +\rho\,\Delta R_{evidence}.
-\]
+$$
 
 writer 不能看到实际未来问题，只能根据事件、侧信息和历史 memory 预测一组 future-query facets（who/what/where/when/count/change/causal/OCR/audio/conflict）的 utility。固定预算选择写成：
 
-\[
+$$
 \max_{\pi:C(M_\pi)\le B}
 \min_{P\in\mathcal U(P_0)}
 \mathbb E_{q\sim P}[U(M_\pi,q\mid S)]
 -\lambda C_{write},
-\]
+$$
 
 实现先用问题组上的 CVaR/worst-group reweighting，而不是一开始求复杂的通用 DRO。事件内存在依赖的“人物—动作—结果”以超边联合保留；固定一小部分 exploration quota，防止多轮历史问题把 memory 收缩到已知主题。
 
@@ -225,21 +225,21 @@ writer 不能看到实际未来问题，只能根据事件、侧信息和历史 
 
 每次淘汰区间 $b$ 时，在问题未知的条件下生成极小的 eviction witness：
 
-\[
+$$
 w_b=\{h_b^{sem},h_b^{vis},h_b^{ocr},h_b^{audio},
 [t_s,t_e],u_b,\text{provenance pointer}\}.
-\]
+$$
 
 其中包括语义投影、对象/动作/OCR/audio hash、状态变化与感知不确定性；witness tree 只用于判断“可能缺了什么”和定位，不直接充当答案证据。高保真块可在 CPU/NVMe，或在严格总预算设置下只保存高风险 cold blocks。
 
 问题到来后，覆盖检测器联合读取 $q$、active memory 和 witness tree：
 
-\[
+$$
 g_\theta(q,M_{active},W)
 \rightarrow
 p(z\in\{covered,retrieval\ failure,evicted,unanswerable\}),
 \quad p(b\mid z=evicted).
-\]
+$$
 
 训练数据通过 full-context evidence 标注和受控删除生成：删除必要证据、删除等量非必要证据、保留证据但让 retriever 失败、以及原视频无答案。推理采取三路决策：直接回答、回取/重编码、或校准拒答。
 
@@ -296,17 +296,17 @@ CVPR 版本可强调 grounded evidence 与可靠 VideoQA；ICLR 版本需要更�
 
 事件 $j$ 初始只得到 local utility 和低码率 forensic sketch。新事件 $t$ 到来时，定义：
 
-\[
+$$
 c_{t,j}=\mathcal L_{pred}(z_t\mid M_{<t}\setminus m_j)
 -\mathcal L_{pred}(z_t\mid M_{<t}).
-\]
+$$
 
 精确 leave-one-out 只在 teacher 数据的一小部分计算，用来训练 influence critic $\hat c_\phi(z_t,m_j,M_{<t})$。在线只对 ANN/causal prefilter 找到的少量候选做 credit sweep：
 
-\[
+$$
 u_j^t=\gamma u_j^{t-1}
 +\eta[\hat c_\phi(z_t,m_j)-b_{freq}(j,t)]_+.
-\]
+$$
 
 减去频率 baseline，防止重复背景因易预测而获得虚高信用。高 credit 触发：从 active 到 protected tier、从 base 到 enhancement layer，或在原视频可访问时重新编码；严格流式且原像素已丢失时，只能晋升已有 sketch，不能声称恢复细节。
 
@@ -365,10 +365,10 @@ hard eviction 对未知问题不可逆；统一低秩或统一量化则把相同
 
 对事件 $j$ 的 $X_j=[K_j,V_j]$ 编成嵌套层：
 
-\[
+$$
 c_j^0,c_j^1,\ldots,c_j^R=E(X_j),\qquad
 \hat X_j(r)=D_0(c_j^0)+\sum_{s=1}^{r}D_s(c_j^s).
-\]
+$$
 
 - $c^0$：所有事件必留的极低码率 discoverability sketch，包括 key centroid、时间区间、实体/OCR hash、value norm 和残差半径；
 - $c^{1:R}$：外观、运动、OCR、关系等残差，按 event page 连续存放于 CPU/NVMe；
@@ -378,13 +378,13 @@ c_j^0,c_j^1,\ldots,c_j^R=E(X_j),\qquad
 
 训练采用 full-cache teacher 蒸馏 attention output 与答案分布，并用 entropy model 计算真实 bit rate：
 
-\[
+$$
 \mathcal L=
 \operatorname{KL}(p_{full}\|p_{codec})
 +\lambda\sum_l\|o_l^{full}-o_l^{codec}\|_2^2
 +\beta\sum_{j,s\le r_j}-\log_2p(c_j^s)
 +\gamma\mathcal L_{ground}.
-\]
+$$
 
 ### 6.3 与最近邻的严格边界
 
@@ -438,19 +438,19 @@ c_j^0,c_j^1,\ldots,c_j^R=E(X_j),\qquad
 
 对视觉、音频和字幕表征，以对象/动作/状态、audio event、多步未来 latent 和跨模态一致性定义 surprise：
 
-\[
+$$
 s_t=\sum_m\pi_t^m
 D(y_t^m,f_{W_{t-1}}(k_t^m))
 +\lambda D_{cross}(x_t^v,x_t^a,x_t^s).
-\]
+$$
 
 $\pi_t^m$ 是感知不确定性权重，避免低质量模态支配更新。维护 $L$ 个不同半衰期、固定容量的低秩 memory modules，router 输出更新权重：
 
-\[
+$$
 r_t^\ell=\operatorname{softmax}_\ell
 g_\theta(s_t,\bar s_t^{(\tau_\ell)},\Delta s_t,
 \text{duration},\text{modal agreement}).
-\]
+$$
 
 快层吸收短暂但可信的变化；只有持续、跨模态一致且在 eligibility trace 中稳定的残差才晋升到慢层。每层只做固定 1–4 步低秩更新，并用固定数量 anchors、functional regularization、update-norm clipping 和 rollback checkpoint 抑制漂移。近期精确 KV 独立保留，避免让参数记忆承担即时感知。
 
