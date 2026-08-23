@@ -1,0 +1,67 @@
+# Secrets and local environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Downloaded, raw, and cached data
+.cache/
+cache/
+datasets/
+data/raw/
+data/cache/
+data/downloads/
+data/external/
+data/interim/
+
+# Local experiment artifacts
+outputs/
+logs/
+*.log
+checkpoints/
+runs/
+wandb/
+mlruns/
+experiments/**/run-*/
+experiments/**/tmp/
+
+# Model weights and large binary artifacts
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+*.gguf
+*.h5
+*.hdf5
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
