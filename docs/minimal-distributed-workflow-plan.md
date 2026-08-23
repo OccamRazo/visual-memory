@@ -23,8 +23,9 @@
 1. 初始化 Git，并连接一个私有远端 `origin`。
 2. 在 `AGENTS.md` 中加入最小多设备协作规则。
 3. 增加 `.gitignore`，排除环境、缓存、大型数据和实验输出。
-4. 增加一个 repo-local `git-handoff` skill，让每台设备上的 Codex 使用相同的接手与交接步骤。
-5. 在本地与服务器各做一次 clone、push、fetch 和接手验证。
+4. 增加一个 repo-local `session-notes` skill，集中处理 session note 的精确定位、创建、恢复与精选记录。
+5. 增加一个 repo-local `git-handoff` skill，让每台设备上的 Codex 使用相同的接手与交接步骤。
+6. 在本地与服务器各做一次 clone、push、fetch 和接手验证。
 
 本阶段不实现：
 
@@ -42,6 +43,8 @@ AGENTS.md
 .gitignore
 .agents/
   skills/
+    session-notes/
+      SKILL.md
     git-handoff/
       SKILL.md
 docs/
@@ -57,7 +60,7 @@ MVP 不增加辅助脚本。先用简短、明确的 Git 命令验证协议；�
 修改 `AGENTS.md`，加入以下约束：
 
 - 所有设备是对等节点，不设权威工作设备。
-- 开始工作前读取 `AGENTS.md`、当前 session note 和相关实验文档。
+- 开始工作前读取 `AGENTS.md`，并使用 `session-notes` skill 精确定位当前 session note，再读取相关实验文档。
 - 开始或接手任务前执行 fetch，确认工作区干净，并更新目标分支。
 - 一项任务对应一个 `work/<short-name>` 分支。
 - 交接必须留下可理解的 commit 并 push；不得用未提交文件或 stash 交接。
@@ -78,13 +81,22 @@ MVP 不增加辅助脚本。先用简短、明确的 Git 命令验证协议；�
 
 不要忽略调研文档、实验配置、精简指标、结果摘要、论文图表源文件和 session notes。
 
-### 步骤 3：实现最小 `git-handoff` skill
+### 步骤 3：实现 `session-notes` skill
+
+创建 `.agents/skills/session-notes/SKILL.md`，集中定义以下行为：
+
+- 使用平台提供的完整稳定 session ID，将 note 直接映射到 `notes/sessions/<session-id>.md`。
+- 当前 session note 只能通过 ID 路径定位，不扫描正文、主题、时间或修改时间来猜测。
+- 仅在首次出现持久信息时创建 note，并只记录对恢复工作仍有价值的精选内容。
+- 恢复 session 或 Git 交接时始终读写同一个 ID 对应文件。
+
+### 步骤 4：实现最小 `git-handoff` skill
 
 创建 `.agents/skills/git-handoff/SKILL.md`，只包含两个流程，不添加脚本。
 
 #### 接手
 
-1. 阅读仓库规则、相关 session note 和相关实验说明。
+1. 阅读仓库规则，调用 `session-notes` skill 精确读取当前 session note，再阅读相关实验说明。
 2. 检查当前工作区；存在未提交修改时停止并说明。
 3. fetch `origin`。
 4. 切换到已有任务分支并以 fast-forward-only 更新；新任务则从最新 `origin/main` 创建 `work/<short-name>`。
@@ -96,13 +108,13 @@ MVP 不增加辅助脚本。先用简短、明确的 Git 命令验证协议；�
 
 1. 检查本次改动，只保留当前任务范围内的文件。
 2. 运行当前设备能够运行的检查；不能运行的检查明确记录为 `未运行`。
-3. 按既有规则选择性更新当前 session note。
+3. 调用 `session-notes` skill 选择性更新当前 session note。
 4. 创建内容完整、可理解的 commit 并 push 当前任务分支。
 5. 返回分支名、commit SHA、验证情况、下一步，以及必要的本地输出位置。
 
 skill 不负责 merge、删除分支、创建远端仓库或同步实验产物。
 
-### 步骤 4：初始化 Git 与远端
+### 步骤 5：初始化 Git 与远端
 
 1. 在当前目录初始化 Git。
 2. 创建初始提交。
@@ -111,7 +123,7 @@ skill 不负责 merge、删除分支、创建远端仓库或同步实验产物�
 
 远端 URL 是唯一需要用户提供的前置输入；Codex 不自行创建公开仓库。
 
-### 步骤 5：双节点冒烟验证
+### 步骤 6：双节点冒烟验证
 
 按以下顺序验证一次完整交接：
 
@@ -141,7 +153,7 @@ Git commit:
 ## 7. 验收标准
 
 - 本地与服务器都能从同一个 `origin` 独立 clone、修改和 push 项目。
-- 任一设备都能依据 `AGENTS.md` 和 `git-handoff` skill 接手已有任务分支。
+- 任一设备都能依据 `AGENTS.md`、`session-notes` skill 和 `git-handoff` skill 精确恢复 session context 并接手已有任务分支。
 - 一次跨设备交接不依赖聊天记录、stash 或未提交文件。
 - 无开发环境的设备不会把未运行代码标记为已验证。
 - 大型数据、日志、checkpoint 和输出不会出现在待提交文件中。

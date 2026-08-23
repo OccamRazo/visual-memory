@@ -24,7 +24,7 @@ experiments/      # Configurations, scripts, records, and results by experiment 
 data/             # Data documentation, splits, and small metadata; no large raw data
 docs/             # Project conventions, development plans, and collaboration workflows
 notes/
-  sessions/       # One curated note per Codex/ChatGPT session
+  sessions/       # One ID-addressable note per Codex/ChatGPT session
 writing/
   drafts/         # Outlines and paper drafts
   figures/        # Final figures and instructions for generating them
@@ -34,17 +34,13 @@ Use `EXP-YYYYMMDD-short-name/` for experiment directories. Every experiment must
 
 ## Session notes
 
-- Use one `notes/sessions/YYYY-MM-DD_HHMM-short-topic.md` file for each Codex/ChatGPT session, and always append to the same file throughout that session. A stable session ID may replace `short-topic` when available.
-- Read the current session note when starting or resuming work. During a long session, review it when context changes or before an important decision, and decide before finishing whether anything is worth appending.
-- Record only information that will remain useful when work resumes later: key agreements or decisions, verified findings, important experimental results, constraints that affect the approach, and explicit open questions or next steps.
-- Do not record chat transcripts, routine operations, temporary progress, resolved minor errors, unverified speculation, information easily recovered from the repository, or any secrets.
-- Append entries chronologically using `- HH:MM [tag] content`. Use the existing Chinese tags `[约定]` (agreement), `[决策]` (decision), `[发现]` (finding), `[结果]` (result), `[限制]` (constraint), `[待办]` (todo), or `[更正]` (correction). Keep entries concise and accurate, and link source files when useful.
-- Do not write a note when nothing has sufficient long-term value. A note is a session index, not the sole source of truth; complete evidence and results belong in the relevant research or experiment files.
+- Use `.agents/skills/session-notes/SKILL.md` when starting or resuming a session, retrieving a known session note, deciding whether durable context should be recorded, and preparing a Git handoff.
+- Session notes are concise navigation aids, not the sole source of truth. Keep complete evidence and results in the relevant research or experiment files.
 
 ## Multi-device Git collaboration
 
 - All development devices are peer nodes; there is no authoritative workstation. Devices hand off the project only through Git states that have been committed and pushed.
-- Before starting or taking over a task, read this file, the current session note, and any relevant experiment documentation. Then fetch the latest state from `origin`, confirm that the worktree is clean, and update the target branch.
+- Before starting or taking over a task, read this file, use the `session-notes` skill to resolve and read the current session note when it exists, and read any relevant experiment documentation. Then fetch the latest state from `origin`, confirm that the worktree is clean, and update the target branch.
 - Small, low-risk documentation-only changes may be made directly on a clean, up-to-date `main`. Use a `work/<short-name>` branch for code changes, experiments, or work that requires cross-device handoff. Continue a given task on only one device at a time; another device may take over only after an explicit handoff.
 - Follow `.agents/skills/git-handoff/SKILL.md` for takeover and handoff. If branches have diverged, stop and report the divergence; do not automatically rebase, merge, overwrite, or force-push.
 - A handoff must leave a focused, understandable commit and push the current branch. Never hand off through uncommitted files or a stash.

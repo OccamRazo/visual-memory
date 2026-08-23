@@ -7,7 +7,7 @@ description: Take over or hand off Git work between peer development devices. Us
 
 ## Takeover
 
-1. Read the repository-root `AGENTS.md`, the current session note, and any experiment `README.md` or other documentation relevant to the task.
+1. Read the repository-root `AGENTS.md`, then follow `.agents/skills/session-notes/SKILL.md` to resolve and read the current session note when it exists. Read any experiment `README.md` or other documentation relevant to the task.
 2. Run `git status --short --branch` to inspect the worktree. If it contains modified, staged, or untracked files, stop immediately and explain; do not stash, commit, overwrite, or delete them.
 3. Run `git fetch origin` to retrieve the current remote state.
 4. Update or create the target branch:
@@ -22,7 +22,7 @@ description: Take over or hand off Git work between peer development devices. Us
 
 1. Inspect `git status`, the worktree diff, and the staged diff. Select only files within the current task scope; do not include unrelated changes in the handoff.
 2. Run every relevant check that the current device supports, and record each command and result accurately. Mark unavailable checks as not run and include the reason; never present an unexecuted check as verified.
-3. Follow `AGENTS.md` to decide whether the current session note needs a concise, durable update. Do not record routine operations.
+3. Follow `.agents/skills/session-notes/SKILL.md` to decide whether this session has a durable update and to write it to the correct note when needed.
 4. Commit and push from an eligible branch:
    - On `main`, proceed only when every change is small, low-risk, and documentation-only. Run `git fetch origin` and require the local `HEAD` to equal `origin/main` before committing; if the remote has advanced, stop and report it. Selectively stage the documentation files, review the staged diff, create a complete, understandable commit, and run `git push origin main`.
    - On `work/<short-name>`, selectively stage the task files, review the staged diff, create a complete, understandable commit, and run `git push -u origin work/<short-name>`.
