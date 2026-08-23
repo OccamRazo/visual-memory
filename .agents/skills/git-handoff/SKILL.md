@@ -1,26 +1,30 @@
 ---
 name: git-handoff
-description: Take over or hand off a work/task-name Git branch between peer development devices. Use when starting or resuming a task from origin, or when preparing committed work for another device; do not use it to merge, delete branches, create remotes, or synchronize artifacts.
+description: Take over or hand off Git work between peer development devices. Use for work/task-name branches, or for a small, low-risk documentation-only change made directly on an up-to-date main; do not use it to merge, delete branches, create remotes, or synchronize artifacts.
 ---
 
 # Git Handoff
 
-## 接手
+## Takeover
 
-1. 阅读仓库根目录的 `AGENTS.md`、当前 session note，以及与任务相关的实验 `README.md` 或说明文件。
-2. 运行 `git status --short --branch` 检查当前工作区。若存在修改、暂存内容或未跟踪文件，立即停止并说明；不要 stash、提交、覆盖或删除这些内容。
-3. 运行 `git fetch origin` 获取远端状态。
-4. 更新或创建目标分支：
-   - 已有本地 `work/<short-name>` 时，切换到该分支，并用 `git merge --ff-only origin/work/<short-name>` 更新。
-   - 仅远端存在任务分支时，用 `git switch --track -c work/<short-name> origin/work/<short-name>` 创建本地跟踪分支。
-   - 远端也不存在任务分支时，从最新 `origin/main` 用 `git switch --no-track -c work/<short-name> origin/main` 创建新任务分支。
-   - fast-forward-only 更新失败或本地与远端分叉时，停止并报告两侧提交差异；不得自动 rebase、merge、reset、覆盖或 force-push。
-5. 查看最新提交和相对 `origin/main` 的差异，结合交接信息确认一个明确的下一步后再开始修改。
+1. Read the repository-root `AGENTS.md`, the current session note, and any experiment `README.md` or other documentation relevant to the task.
+2. Run `git status --short --branch` to inspect the worktree. If it contains modified, staged, or untracked files, stop immediately and explain; do not stash, commit, overwrite, or delete them.
+3. Run `git fetch origin` to retrieve the current remote state.
+4. Update or create the target branch:
+   - For a small, low-risk documentation-only change that qualifies for the `main` exception in `AGENTS.md`, run `git switch main` and `git merge --ff-only origin/main`.
+   - If a local `work/<short-name>` branch exists, switch to it and update it with `git merge --ff-only origin/work/<short-name>`.
+   - If the task branch exists only on the remote, create a local tracking branch with `git switch --track -c work/<short-name> origin/work/<short-name>`.
+   - If the task branch does not exist locally or remotely, create it from the latest `origin/main` with `git switch --no-track -c work/<short-name> origin/main`.
+   - If the fast-forward-only update fails or the local and remote branches have diverged, stop and report the commits on both sides. Do not automatically rebase, merge, reset, overwrite, or force-push.
+5. Review the latest commits and the difference from `origin/main`. Use the handoff information to identify one clear next step before making changes.
 
-## 交接
+## Handoff
 
-1. 检查 `git status`、工作区差异和暂存区差异，只选择当前任务范围内的文件；不得把无关改动纳入交接。
-2. 运行当前设备具备条件执行的检查，并准确记录命令与结果。无法执行的检查写为 `未运行：<检查> — <原因>`，不得把未运行项目表述为已验证。
-3. 按 `AGENTS.md` 的规则判断是否需要向当前 session note 追加长期有价值的信息，不记录操作流水。
-4. 确认当前分支为 `work/<short-name>`，选择性暂存任务文件，复查暂存差异，创建内容完整且可理解的 commit；然后用 `git push -u origin work/<short-name>` 推送。不得自动 merge、删除分支或 force-push。
-5. 返回分支名、`git rev-parse HEAD` 得到的 commit SHA、已运行和未运行的验证、唯一下一步，以及后续确有需要时的本地输出位置。大型数据、日志、checkpoint 和输出产物不得进入 Git。
+1. Inspect `git status`, the worktree diff, and the staged diff. Select only files within the current task scope; do not include unrelated changes in the handoff.
+2. Run every relevant check that the current device supports, and record each command and result accurately. Mark unavailable checks as not run and include the reason; never present an unexecuted check as verified.
+3. Follow `AGENTS.md` to decide whether the current session note needs a concise, durable update. Do not record routine operations.
+4. Commit and push from an eligible branch:
+   - On `main`, proceed only when every change is small, low-risk, and documentation-only. Run `git fetch origin` and require the local `HEAD` to equal `origin/main` before committing; if the remote has advanced, stop and report it. Selectively stage the documentation files, review the staged diff, create a complete, understandable commit, and run `git push origin main`.
+   - On `work/<short-name>`, selectively stage the task files, review the staged diff, create a complete, understandable commit, and run `git push -u origin work/<short-name>`.
+   - On any other branch, stop and report that the branch is ineligible for handoff. Do not automatically merge, delete branches, or force-push.
+5. Return the branch name, the commit SHA from `git rev-parse HEAD`, checks run and not run, one clear next step, and a local output location only when later work genuinely needs it. Do not add large datasets, logs, checkpoints, or output artifacts to Git.

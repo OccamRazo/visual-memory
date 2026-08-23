@@ -1,60 +1,64 @@
-# Visual Memory 项目指南
+# Visual Memory Project Guide
 
-## 项目目标
+## Project goals
 
-本项目研究大模型的视觉记忆：模型如何从持续视觉输入中选择、压缩、保存、检索并更新信息。当前主要场景是超长视频理解，并关注其与稀疏注意力、KV Cache、外部或参数化记忆及评测方法的关系。
+This project studies visual memory in large models: how a model selects, compresses, stores, retrieves, and updates information from a continuous visual stream. The current primary setting is ultra-long video understanding, with particular interest in its relationship to sparse attention, KV cache, external or parametric memory, and evaluation methods.
 
-仓库应保留从调研、问题定义、假设、实验、分析到论文写作的完整过程。现有调研是探索材料，不代表最终方案或结论。
+The repository should preserve the complete research process, from literature review, problem formulation, and hypotheses through experiments, analysis, and paper writing. Existing surveys are exploratory material and do not represent a final approach or conclusion.
 
-## 文件结构
+## Communication
 
-仅在实际需要时创建目录，建议结构如下：
+- The user prefers Chinese. Communicate with the user in Chinese by default, including progress updates, questions, explanations, and handoff summaries, unless the user explicitly requests another language.
+
+## Repository structure
+
+Create directories only when they are actually needed. The recommended structure is:
 
 ```text
 research/
-  ideas/          # 早期想法、调研报告与方案草稿
-  literature/     # 文献笔记、证据表与引用信息
-  hypotheses/     # 可检验的研究问题与假设
-src/              # 可复用的模型、数据与评测代码
-experiments/      # 按实验编号保存配置、脚本、记录和结果
-data/             # 数据说明、划分与小型元数据，不存大型原始数据
-docs/             # 项目规范、开发计划与协作流程
+  ideas/          # Early ideas, survey reports, and proposal drafts
+  literature/     # Literature notes, evidence tables, and citation data
+  hypotheses/     # Testable research questions and hypotheses
+src/              # Reusable model, data, and evaluation code
+experiments/      # Configurations, scripts, records, and results by experiment ID
+data/             # Data documentation, splits, and small metadata; no large raw data
+docs/             # Project conventions, development plans, and collaboration workflows
 notes/
-  sessions/       # 每个 Codex/ChatGPT 会话一份精选记录
+  sessions/       # One curated note per Codex/ChatGPT session
 writing/
-  drafts/         # 大纲与论文草稿
-  figures/        # 定稿图表及其生成说明
+  drafts/         # Outlines and paper drafts
+  figures/        # Final figures and instructions for generating them
 ```
 
-实验目录使用 `EXP-YYYYMMDD-short-name/`；每个实验至少包含一份 `README.md`，记录目标、假设、数据与模型版本、配置、运行方式、指标、结果和结论。
+Use `EXP-YYYYMMDD-short-name/` for experiment directories. Every experiment must include at least one `README.md` recording its objective, hypothesis, data and model versions, configuration, run instructions, metrics, results, and conclusions.
 
 ## Session notes
 
-- 每个 Codex/ChatGPT 会话使用一份 `notes/sessions/YYYY-MM-DD_HHMM-short-topic.md`；同一会话始终追加到同一文件。若能取得稳定的 session ID，可用它替代 `short-topic`。
-- 开始或恢复工作时读取当前 session note；长会话中在上下文变化或重要决策前回顾，并在结束前判断是否有内容值得补记。
-- 只记录以后继续工作时仍有价值的信息：关键约定或决策、已验证发现、重要实验结果、影响方案的约束，以及明确的未决问题或下一步。
-- 不记录聊天转录、常规操作、临时进度、已解决的小错误、未经验证的猜测、容易从仓库恢复的信息或任何密钥。
-- 按时间顺序追加，格式为 `- HH:MM [标记] 内容`。使用 `[约定]`、`[决策]`、`[发现]`、`[结果]`、`[限制]`、`[待办]` 或 `[更正]`；内容必须精简、准确，必要时链接源文件。
-- 没有足够价值的信息时不要写 note。note 是会话索引而非事实的唯一来源；完整证据和结果仍应保存在调研或实验文件中。
+- Use one `notes/sessions/YYYY-MM-DD_HHMM-short-topic.md` file for each Codex/ChatGPT session, and always append to the same file throughout that session. A stable session ID may replace `short-topic` when available.
+- Read the current session note when starting or resuming work. During a long session, review it when context changes or before an important decision, and decide before finishing whether anything is worth appending.
+- Record only information that will remain useful when work resumes later: key agreements or decisions, verified findings, important experimental results, constraints that affect the approach, and explicit open questions or next steps.
+- Do not record chat transcripts, routine operations, temporary progress, resolved minor errors, unverified speculation, information easily recovered from the repository, or any secrets.
+- Append entries chronologically using `- HH:MM [tag] content`. Use the existing Chinese tags `[约定]` (agreement), `[决策]` (decision), `[发现]` (finding), `[结果]` (result), `[限制]` (constraint), `[待办]` (todo), or `[更正]` (correction). Keep entries concise and accurate, and link source files when useful.
+- Do not write a note when nothing has sufficient long-term value. A note is a session index, not the sole source of truth; complete evidence and results belong in the relevant research or experiment files.
 
-## 多设备 Git 协作
+## Multi-device Git collaboration
 
-- 所有开发设备都是对等节点，不设权威工作设备；设备之间只通过已提交并推送的 Git 状态交接项目。
-- 开始或接手任务前，先阅读本文件、当前 session note 和相关实验说明；随后获取 `origin` 的最新状态，确认工作区干净，并更新目标分支。
-- 一项任务对应一个 `work/<short-name>` 分支。同一任务同一时间只在一台设备上继续，明确交接后另一台设备才能接手。
-- 接手与交接遵循 `.agents/skills/git-handoff/SKILL.md`。分支发生分叉时停止并报告，不自动 rebase、merge、覆盖或 force-push。
-- 交接必须留下范围清晰、内容可理解的 commit 并推送当前任务分支；不得通过未提交文件或 stash 交接。
-- 只报告当前设备实际运行过的检查。缺少运行环境时必须明确标记“未运行”，不得声称代码已经通过验证。
-- 大型数据、日志、checkpoint 和输出产物保留在产生它们的设备，不通过 Git 同步；仅按需提交精简结果、复现信息和必要的本地位置说明。
+- All development devices are peer nodes; there is no authoritative workstation. Devices hand off the project only through Git states that have been committed and pushed.
+- Before starting or taking over a task, read this file, the current session note, and any relevant experiment documentation. Then fetch the latest state from `origin`, confirm that the worktree is clean, and update the target branch.
+- Small, low-risk documentation-only changes may be made directly on a clean, up-to-date `main`. Use a `work/<short-name>` branch for code changes, experiments, or work that requires cross-device handoff. Continue a given task on only one device at a time; another device may take over only after an explicit handoff.
+- Follow `.agents/skills/git-handoff/SKILL.md` for takeover and handoff. If branches have diverged, stop and report the divergence; do not automatically rebase, merge, overwrite, or force-push.
+- A handoff must leave a focused, understandable commit and push the current branch. Never hand off through uncommitted files or a stash.
+- Report only checks actually run on the current device. When the required environment is unavailable, explicitly mark the check as `未运行` (not run); never claim that unexecuted code has passed validation.
+- Keep large datasets, logs, checkpoints, and output artifacts on the device where they were produced. Do not synchronize them through Git; commit only concise results, reproduction details, and necessary local-location notes when appropriate.
 
-## 工作约束
+## Working constraints
 
-- 先阅读相关材料再修改；保留原始调研和失败实验，不静默覆盖历史结果。
-- 区分“文献事实”“推断”和“待验证想法”；可核查的事实应附论文、链接或其他来源。
-- 实验必须可复现：固定并记录随机种子、环境、配置、命令和关键版本；结果按独立 run 保存。
-- 优先做最小、可验证的改动；共享逻辑放入 `src/`，不要在多个实验中复制后分叉。
-- 数据集、模型权重、大型日志、缓存和密钥不得提交；在 `data/` 或实验说明中记录获取方式与本地路径约定。
-- 图表必须能追溯到数据和生成方法；不得手工修改数值来美化结果。
-- 结论必须与证据强度一致，同时记录负面结果、限制、异常和未解决问题。
-- 默认使用中文记录研究过程；面向投稿的内容可使用英文。文件名、实验编号和代码标识保持简洁一致。
-- 未经明确要求，不提前锁定具体模型、数据集、技术路线或投稿目标。
+- Read relevant material before making changes. Preserve original surveys and failed experiments; never silently overwrite historical results.
+- Distinguish literature facts, inferences, and ideas awaiting validation. Verifiable facts should cite a paper, link, or other source.
+- Experiments must be reproducible: fix and record random seeds, environment, configuration, commands, and key versions. Store results by independent run.
+- Prefer the smallest verifiable change. Put shared logic in `src/` rather than copying it across experiments and allowing the copies to diverge.
+- Do not commit datasets, model weights, large logs, caches, or secrets. Record acquisition instructions and local path conventions in `data/` or the relevant experiment documentation.
+- Figures must be traceable to their data and generation method. Never edit numeric values by hand to improve presentation.
+- Match conclusions to the strength of the evidence, and record negative results, limitations, anomalies, and unresolved questions.
+- Use Chinese by default when documenting the research process; submission-facing content may be in English. Keep file names, experiment IDs, and code identifiers concise and consistent.
+- Do not lock in a specific model, dataset, technical approach, or submission target without an explicit request.
