@@ -26,14 +26,14 @@ Create the ID-derived file only when the session first has durable information w
 
 Session ID：`<exact-session-id>`
 
-开始时间：YYYY-MM-DD HH:MM TZ
+开始时间：YYYY-MM-DDTHH:MM±HH:MM
 ```
 
 The title is descriptive metadata, not an identifier. It may be refined without renaming the file. Follow the repository language preference in `AGENTS.md`.
 
 ## Record Durable Context
 
-Append concise entries in chronological order using `- HH:MM [tag] content`. Use `[约定]`, `[决策]`, `[发现]`, `[结果]`, `[限制]`, `[待办]`, or `[更正]`.
+Append concise entries in chronological order using `- YYYY-MM-DDTHH:MM±HH:MM [tag] content`. Use ISO 8601 minute precision with the full local calendar date and numeric UTC offset, for example `2026-08-24T10:59+08:00`. Never use a time-only value or an ambiguous timezone abbreviation such as `CST`. Use `[约定]`, `[决策]`, `[发现]`, `[结果]`, `[限制]`, `[待办]`, or `[更正]`.
 
 Record only information that will remain useful when the session is resumed: important agreements or decisions, verified findings, meaningful results, constraints that affect the approach, and explicit open questions or next steps. Link the authoritative repository file when useful.
 
