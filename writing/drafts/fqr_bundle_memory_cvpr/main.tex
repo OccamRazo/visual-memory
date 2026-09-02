@@ -1,0 +1,666 @@
+% CVPR paper draft for the Visual Memory project.
+% Template assets are copied from the official CVPR 2026 author kit,
+% tag CVPR2026-v1(latex), commit 12909ae437f6dbc7435069cfdb4ca44c18e6a02f.
+% One trailing space in the bibliography style was normalized; no style logic changed.
+% Replace the template/year fields when a newer official CVPR kit is released.
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[review]{cvpr}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+\definecolor{cvprblue}{rgb}{0.21,0.49,0.74}
+\definecolor{draftorange}{rgb}{0.72,0.32,0.02}
+\definecolor{placeholdergray}{rgb}{0.96,0.96,0.96}
+\usepackage[pagebackref,breaklinks,colorlinks,allcolors=cvprblue]{hyperref}
+
+\def\paperID{0000}
+\def\confName{CVPR}
+\def\confYear{2026}
+
+\newcommand{\method}{\textnormal{\textsc{BundleMem}}\xspace}
+\newcommand{\tbd}[1]{\textcolor{draftorange}{[TBD: #1]}}
+\newcommand{\resultpending}[1]{%
+  \begingroup\setlength{\fboxsep}{3pt}%
+  \colorbox{placeholdergray}{\parbox{0.94\linewidth}{\textcolor{draftorange}{\textbf{Result pending.} #1}}}%
+  \endgroup}
+\newcommand{\softmin}{\operatorname{softmin}}
+\newcommand{\bytes}{\operatorname{Bytes}}
+
+\title{Beyond Evidence Recall: Preserving Complete Evidence Paths in Pre-Query Video Memory}
+
+\author{Anonymous CVPR submission}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Long video streams must often be compressed before anyone knows what will be asked about them.
+Most memory writers therefore rank individual clips by a proxy such as recency, surprise, semantic novelty, or predicted evidence relevance.
+These scores answer whether one item looks useful, but many questions are answerable only when a \emph{complete set} of mutually dependent observations survives.
+Keeping most items from several incomplete sets can yield high evidence recall while leaving no valid route to an answer.
+We formulate pre-query video memory around \emph{minimal sufficient evidence bundles}: items within a bundle are jointly required, while different bundles may provide alternative ways to answer the same question.
+This view exposes a bundle-internal AND and bundle-alternative OR structure that item-wise retention and ordinary additive coverage do not represent.
+We then propose \method, a representation-agnostic writer objective.
+During training, a query-visible teacher constructs or verifies sufficient bundles and labels sampled memory coalitions by complete-path coverage.
+A query-free set critic learns this utility from the candidate content, current memory, and allowed side information.
+At deployment, the writer never sees the future question; it uses the critic to admit or replace fixed-size evidence capsules under a strict persistent-byte budget.
+We specify an exact controllable Video Memory Gym, three information-matched oracle frontiers, and a real-video evaluation that separates storage, access, and use failures.
+\resultpending{Insert the main quantitative finding only after the same-backbone, matched-byte experiments and bundle-survival audit are complete.}
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Imagine a camera observing a workshop for several hours.
+Long after the stream has passed, a user may ask who moved a tool, which part was installed before a failure, or whether the same object appeared in two distant events.
+The system cannot keep the full stream and cannot revisit deleted frames.
+It must decide what to preserve while the future question is still unknown.
+This is the \emph{pre-query memory} setting: one bounded memory snapshot must support a family of later questions.
+
+Recent work has made this setting concrete.
+Streaming video systems maintain fixed-capacity states using scene statistics, surprise, semantic novelty, or hand-designed priorities~\cite{xie2026fluxmemadaptivehierarchicalmemory,wu2026semanticawareadaptivevisualmemory,ge2026streamingvideomodelremember,song2026dynamicfixedbudgetmemorybank,fu2026streamflowdynamicmemoryflows}.
+EMBER formalizes budgeted pre-query evidence retention and shows a substantial gap between learned retention and a same-budget oracle~\cite{li2026emberefficientmemorybudgeted}.
+OSL-MR further treats memory retention as a non-decomposable sequential optimization problem~\cite{kang2026learningrememberobservabilitysafememory}.
+These advances establish that bounded, query-hidden retention matters.
+They do not yet explain the central failure mode we study: a memory can retain many relevant pieces while retaining no \emph{complete} evidential route to an answer.
+
+Consider a question asking who eventually used a key.
+One valid route may require three observations: person A picks up the key, A hands it to B, and B later opens a door.
+Another route may be an independent spoken statement that directly identifies B.
+Within the first route, the three observations are complementary: missing any one breaks the chain.
+Across the two routes, either complete route is sufficient.
+We call each minimal sufficient route an \emph{evidence bundle}.
+The memory objective is therefore not simply to retain many gold items; it is to preserve at least one whole bundle for as many future questions as possible.
+
+This distinction is consequential even before considering imperfect models.
+If every sufficient bundle contains $r$ items, a writer may retain $r-1$ items from every bundle.
+Its item recall is $1-1/r$, which approaches one as $r$ grows, yet its exact answerability is zero.
+Likewise, a scalar score assigned independently to each item cannot, in general, distinguish two task families that have identical item marginals but different complementarities.
+This is why adding a better per-clip value predictor is not enough.
+
+Evidence sufficiency has recently proved important at query time: REVEAL verifies whether retrieved clips jointly satisfy a question and retrieves missing pieces~\cite{yan2026revealrubricguidedagentexplicit}.
+Our setting is different and harder in one specific way.
+REVEAL can search again because the source video still exists; a pre-query writer cannot recover a deleted observation.
+Decision-centric memory~\cite{zou2026rememberdecisiondescriptionratedistortion}, learned blind retention value~\cite{chen2026learningremembercognitivelygrounded}, and controlled memory interventions~\cite{srivastava2026causalinterventionbasedmemoryselection,guan2026decisionawarememorycardscounterfactualinspired} provide important ingredients, but they do not explicitly optimize the survival of alternative multi-item evidence paths in a frozen video memory shared by unknown future questions.
+
+We therefore organize the paper around one question:
+
+\begin{quote}
+\emph{Under a fixed budget and without seeing future questions, can a streaming writer preserve complete minimal evidence paths rather than isolated high-value items?}
+\end{quote}
+
+Our proposed answer, \method, deliberately changes the writer objective rather than introducing another memory hierarchy.
+A training-time teacher uses questions and evidence annotations to identify sufficient bundles and to score sampled memory sets.
+A set critic then learns to predict group-wise complete-path coverage without receiving the future question.
+At deployment, the critic evaluates the memory that would result from a small set of admissible insert and replacement actions.
+All methods share the same candidate generator, evidence codec, reader, answer model, and persistent-byte budget, so the experiment isolates the value of bundle-aware retention.
+
+This draft makes the following contributions, whose empirical parts remain explicitly conditional on the planned experiments:
+
+\begin{enumerate}[leftmargin=*,itemsep=2pt]
+    \item We define pre-query answerability using families of minimal sufficient evidence bundles and show why item recall and additive coverage can be arbitrarily misleading.
+    \item We introduce a controlled Video Memory Gym and three same-budget oracle frontiers that separate the price of an unknown question from the price of causal online writing.
+    \item We propose \method, a query-free set-value critic trained from query-visible bundle supervision and used for fixed-budget online admission and replacement.
+    \item We specify a matched-representation evaluation that reports complete-bundle survival and separately audits whether evidence was stored, accessed, and used.
+\end{enumerate}
+
+\begin{figure*}[t]
+    \centering
+    \setlength{\fboxsep}{0pt}
+    \fbox{\parbox[c][2.00in][c]{0.965\textwidth}{
+        \centering
+        \textbf{Planned Figure 1: From isolated relevance to complete-path retention}\\[5pt]
+        \begin{minipage}[t]{0.29\textwidth}
+        \centering\textbf{(a) Failure}\par
+        A high-scoring memory keeps pieces from several paths, but no path is complete. A lower item recall memory keeps one full path and remains answerable.
+        \end{minipage}
+        \hfill$\Longrightarrow$\hfill
+        \begin{minipage}[t]{0.29\textwidth}
+        \centering\textbf{(b) Training only}\par
+        Questions and grounded evidence define alternative minimal bundles. Matched with/without and deletion tests label sampled memory coalitions by complete-path coverage.
+        \end{minipage}
+        \hfill$\Longrightarrow$\hfill
+        \begin{minipage}[t]{0.29\textwidth}
+        \centering\textbf{(c) Deployment}\par
+        The future query is absent. A set critic scores candidate memory updates using only the stream, current memory, and allowed side information.
+        \end{minipage}
+    }}
+    \caption{The planned overview figure. The visual must make the information boundary unambiguous: training questions supervise bundle labels but never enter the deployed writer. The dominant visual contrast is between high item recall with no complete path and lower item recall with one surviving path. This placeholder will be replaced only after the method interface is fixed.}
+    \label{fig:overview}
+\end{figure*}
+
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Query-hidden streaming video memory.}
+Existing systems already establish that a long video should be compressed into a bounded persistent state before later interaction.
+FluxMem uses visual statistics for hierarchical selection and merging~\cite{xie2026fluxmemadaptivehierarchicalmemory}; CausalMem maintains an online semantic basis under a fixed budget~\cite{song2026dynamicfixedbudgetmemorybank}; SelectStream combines surprise-based segmentation with a persistent latent graph~\cite{ge2026streamingvideomodelremember}; and SAVEMem uses a fixed pseudo-question library as a prior over future semantic needs~\cite{wu2026semanticawareadaptivevisualmemory}.
+StreamFlow studies dynamic memory flow and verifies whether visual memory is used through matched interventions~\cite{fu2026streamflowdynamicmemoryflows}.
+Hierarchical event and multimodal memories improve how retained history is organized and read~\cite{liang2026oasisondemandhierarchicalevent,yeo2026worldmmdynamicmultimodalmemory}, but do not by themselves decide which complete evidence paths survive pre-query eviction.
+These systems differ in representation, but their retention decisions are primarily driven by item-level statistics or priorities.
+Our goal is not a new graph, hierarchy, or codec.
+We hold the representation fixed and ask whether the objective preserves a complete sufficient set.
+
+\paragraph{Budgeted retention and decision value.}
+EMBER is the closest protocol-level work: it writes source-backed evidence capsules before the query and later reads without the raw stream~\cite{li2026emberefficientmemorybudgeted}.
+OSL-MR formalizes budgeted sequential retention and separates offline supervision from online-observable features~\cite{kang2026learningrememberobservabilitysafememory}.
+DeMem studies decision rate--distortion and exact forgetting boundaries, but its bounded encoding is conditioned on the current query~\cite{zou2026rememberdecisiondescriptionratedistortion}.
+Learning What to Remember learns a blind, interpretable scalar retention value~\cite{chen2026learningremembercognitivelygrounded}.
+Controlled intervention methods estimate the utility of already available text memories or context for a known task~\cite{srivastava2026causalinterventionbasedmemoryselection,guan2026decisionawarememorycardscounterfactualinspired}.
+We borrow their separation of training supervision from deployable information, but replace item value with a set utility tied to minimal sufficient bundles.
+
+\paragraph{Evidence-grounded long-video reasoning.}
+Evidence-grounded benchmarks evaluate whether an answer is supported by the right temporal or spatial observations, rather than rewarding a correct guess~\cite{wang2026evidencebackedvideoquestionanswering,huang2026egvqabenchmarkingverifiablevideo,meng2026videozerobenchprobinglimitsvideo}.
+REVEAL distinguishes semantic relevance from evidence sufficiency and performs targeted re-retrieval when a requirement is unmet~\cite{yan2026revealrubricguidedagentexplicit}.
+Query-guided compression and navigation methods can use the known question to select evidence~\cite{yamao2026questionguidedvisualcompressionmemory,qiu2026longvideor1smartnavigationlowcost}; we use them only as privileged post-query upper bounds.
+StreamArena offers long-horizon streaming questions with timestamped evidence~\cite{zhang2026streamarenacontinuousinteractivelonghorizon}.
+Our work moves sufficiency from query-time search to the earlier, irreversible retention decision.
+
+\paragraph{Memory failure diagnosis.}
+WorldMemArena argues that writing, maintenance, retrieval, and use should be evaluated separately~\cite{liu2026worldmemarenaevaluatingmultimodalagent}.
+MemTrace finds that reachable evidence can still fail at the answer model, so retrieval success is not equivalent to evidence use~\cite{long2026memtraceprobingfinalaccuracy}.
+CVMA shows that current visual attention may be a poor proxy for future utility~\cite{chen2026seensaidforgottencausal}.
+Compression-aware abstention detects some cases in which answer evidence was removed~\cite{khodabandehlou2026compressionawareabstentionteachingllms}.
+We do not propose another abstention system in this first paper.
+Instead, our evaluation separately measures path survival at storage, retrieval, and answer use so that an end-to-end error is not automatically blamed on the writer.
+
+\section{Problem Formulation}
+\label{sec:problem}
+
+\subsection{Pre-query memory protocol}
+
+Let $O_{1:T}=(O_1,\ldots,O_T)$ be a video stream and $S_{1:T}$ be allowed side information such as native audio transcripts, OCR, and timestamps.
+A causal writer updates a persistent state
+\begin{equation}
+    M_t=W(M_{t-1},O_t,S_t), \qquad \bytes(M_t)\le B.
+    \label{eq:writer}
+\end{equation}
+The future question $q$ is absent from every input to $W$.
+When $q$ arrives after time $T$, a query-aware reader may retrieve from $M_T$, but the deleted stream cannot be replayed.
+One frozen $M_T$ must serve every question associated with the same video checkpoint.
+Any persistent caption, key, image crop, visual token, or index is charged to the same byte budget $B$; generation and read costs are reported separately.
+
+We call the fixed storage unit an \emph{evidence capsule}.
+It contains a compressed visual payload, time and provenance metadata, and a retrieval key.
+The main experiments use a fixed capsule size so that the scientific comparison is about selection, not rate allocation.
+Variable-rate codecs are a later extension, not part of the core claim.
+
+\subsection{Minimal sufficient evidence bundles}
+
+Let $\mathcal C=\{c_1,\ldots,c_N\}$ be the candidate capsules for a video.
+For a question $q$, define a family
+\begin{equation}
+    \mathcal E_q=\{E_{q,1},E_{q,2},\ldots\}, \qquad E_{q,k}\subseteq\mathcal C,
+    \label{eq:bundlefamily}
+\end{equation}
+where each $E_{q,k}$ is a \emph{minimal sufficient evidence bundle}: the complete set supports the answer and its grounding, while removing any member makes that route insufficient under the stated verifier.
+Different bundles are alternative routes; they need not be disjoint.
+
+For a stored set $M\subseteq\mathcal C$, exact storage-level answerability is
+\begin{equation}
+    A(q,M)=\mathbf{1}\!\left[\exists k: E_{q,k}\subseteq M\right].
+    \label{eq:answerability}
+\end{equation}
+Thus, items within a bundle combine by AND, while alternative bundles combine by OR.
+The resulting structure can be represented as a hypergraph, but the everyday interpretation is simpler: the memory must keep every required link in at least one valid path.
+
+For a question distribution $P$ and predefined structural groups $\mathcal G$ (for example, identity, order, state change, and multi-event questions), define
+\begin{align}
+    U_P(M)&=\mathbb E_{q\sim P}[A(q,M)],\\
+    U_g(M)&=\mathbb E_{q\sim P(\cdot\mid g)}[A(q,M)].
+    \label{eq:utility}
+\end{align}
+The group vector $\mathbf U(M)=(U_g(M))_{g\in\mathcal G}$ reveals whether high average coverage hides a completely unserved task family.
+
+\subsection{Why item recall is not answerability}
+
+Let $n$ bundles be disjoint and contain $r$ items each.
+A memory that retains $r-1$ items from every bundle has gold-item recall $(r-1)/r$ but $A(q,M)=0$ for every corresponding question.
+The recall can be arbitrarily close to one while answerability remains zero.
+This elementary construction motivates reporting both metrics.
+
+Item marginals are also insufficient for selection.
+Consider four equally frequent items $a,b,c,d$ and a budget of two.
+One task family has sufficient pairs $\{a,b\}$ and $\{c,d\}$; another has $\{a,c\}$ and $\{b,d\}$.
+Every item has the same marginal evidence frequency in both families, but the optimal pair depends on the pairing structure.
+Any policy that sees only independent item scores receives identical information in the two cases.
+
+\subsection{Oracle frontiers and two prices of uncertainty}
+
+We compare three same-budget upper bounds:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+    \item \textbf{Post-query oracle}: sees $q$ and the full candidate pool before selecting $M$.
+    \item \textbf{Offline pre-query oracle}: does not see $q$, but sees the complete stream and constructs one memory for the full question family.
+    \item \textbf{Causal pre-query oracle}: sees neither $q$ nor future observations and must update memory online.
+\end{enumerate}
+Let their best expected utilities at budget $B$ be $U^*_{\mathrm{post}}(B)$, $U^*_{\mathrm{off}}(B)$, and $U^*_{\mathrm{causal}}(B)$.
+We define
+\begin{align}
+    \Pi_Q(B)&=U^*_{\mathrm{post}}(B)-U^*_{\mathrm{off}}(B),\\
+    \Pi_H(B)&=U^*_{\mathrm{off}}(B)-U^*_{\mathrm{causal}}(B).
+    \label{eq:prices}
+\end{align}
+$\Pi_Q$ measures the cost of not knowing the future question; $\Pi_H$ measures the additional cost of not seeing future observations when an irreversible write decision is made.
+The present paper targets $\Pi_Q$ and bundle geometry.
+$\Pi_H$ is measured as a diagnostic, not claimed as solved.
+
+\section{Bundle-Aware Pre-Query Memory}
+\label{sec:method}
+
+\method changes only the retention objective.
+The candidate generator, capsule codec, query-time reader, and answer model are held fixed across writer objectives.
+The method has a training-only bundle teacher, a query-free set critic, and a causal local allocator (Fig.~\ref{fig:overview}).
+
+\subsection{Training-only bundle teacher}
+\label{sec:teacher}
+
+For the controlled gym, the generator provides exact minimal bundles.
+For real video, the teacher starts from human temporal or spatiotemporal evidence annotations.
+It splits long annotated spans into coherent atomic events using the same candidate boundaries available to every writer.
+If a dataset supplies only one evidence set, that set is treated as one observed path; alternative paths are not invented.
+
+When compute permits, the teacher proposes additional candidate paths using a query-known evidence retriever and then verifies them with a frozen reader and answer model.
+A proposed $E$ is accepted only if it passes both tests:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+    \item \textbf{Sufficiency}: the answer and required grounding meet frozen thresholds when only $E$ is supplied.
+    \item \textbf{Minimality}: removing any $c\in E$ makes the same route fail at least one threshold.
+\end{enumerate}
+These operational tests do not prove semantic sufficiency for every possible model.
+They define sufficiency relative to the declared consumer and verifier, and the paper reports the human agreement of a stratified sample.
+
+The teacher is used only on training videos.
+All questions, answers, and evidence timestamps are removed before the deployed writer is run.
+A required leakage test hashes the memory snapshot after replacing or permuting the held-out question set; the hash must remain unchanged.
+
+\subsection{Coalition supervision}
+
+An item-wise label cannot teach complementarities, so training examples are memory \emph{coalitions} $C\subseteq\mathcal C$.
+We sample coalitions from four sources: random budget-matched sets, proxy writers, the current \method policy, and hard partial bundles that contain all but one required item.
+For every $C$, exact bundle labels give
+\begin{equation}
+    y_g(C)=\frac{1}{|Q_g|}\sum_{q\in Q_g}\mathbf{1}[\exists E\in\mathcal E_q:E\subseteq C].
+    \label{eq:coalitionlabel}
+\end{equation}
+For real data with incomplete bundle annotation, $y_g$ is a conservative observed-path coverage label.
+We report its annotation coverage and never equate ``unobserved'' with ``impossible.''
+
+We also form matched preference pairs $(C^+,C^-)$ with equal item count and similar item recall, where $C^+$ completes more bundles than $C^-$.
+These pairs directly teach the failure case that item recall cannot distinguish.
+
+\subsection{Query-free set critic}
+
+The critic receives the candidate set, current memory, and allowed side information, but no future question:
+\begin{equation}
+    \widehat{\mathbf U}_\phi(C,S)=f_\phi\!\left(\{h(c):c\in C\},h(S),b(C)\right).
+    \label{eq:critic}
+\end{equation}
+$h(c)$ contains the frozen capsule embedding, time, provenance, and low-cost observable features.
+$h(S)$ summarizes which entities and facts are already covered by reliable ASR or OCR.
+$b(C)$ records budget occupancy and coarse temporal coverage.
+The set encoder is permutation invariant; a small Set Transformer or DeepSets model is sufficient for the first implementation.
+
+The critic predicts one coverage value per predefined question group.
+It is trained with
+\begin{equation}
+\mathcal L_{\mathrm{set}}=
+\mathcal L_{\mathrm{cov}}
++\lambda_{\mathrm{rank}}\mathcal L_{\mathrm{rank}}
++\lambda_{\mathrm{hard}}\mathcal L_{\mathrm{partial}},
+\label{eq:loss}
+\end{equation}
+where $\mathcal L_{\mathrm{cov}}$ is group-balanced regression or binary cross-entropy on Eq.~\eqref{eq:coalitionlabel}, $\mathcal L_{\mathrm{rank}}$ ranks matched coalitions by true complete-path coverage, and $\mathcal L_{\mathrm{partial}}$ upweights hard partial-bundle contrasts.
+The critic is trained first on mixed-policy coalitions and then refreshed with states produced by its own online writer to reduce state-distribution mismatch.
+
+\subsection{Balanced complete-path objective}
+
+Average coverage alone can abandon a rare group.
+We therefore score a memory by
+\begin{equation}
+    J_\phi(C)=
+    (1-\alpha)\sum_{g\in\mathcal G}p_g\widehat U_{\phi,g}(C)
+    +\alpha\,\softmin_{\tau}\{\widehat U_{\phi,g}(C):g\in\mathcal G\},
+    \label{eq:balanced}
+\end{equation}
+where $p_g$ is a declared training prior and $\softmin_\tau$ is a smooth lower-tail operator.
+$\alpha=0$ gives average bundle coverage; larger $\alpha$ protects poorly covered groups.
+This modest objective is not a claim of robustness to arbitrary future questions.
+It only balances a task family and structural groups fixed before test evaluation.
+
+\subsection{Causal admission and replacement}
+
+When a new capsule $c_t$ arrives, the writer considers a small action set:
+\begin{equation}
+    \mathcal A_t=\{\text{skip},\text{insert}\}\cup
+    \{\text{replace }c_j:c_j\in M_{t-1}\}.
+\end{equation}
+Actions that exceed $B$ are infeasible.
+For every feasible action $a$, let $M_t^a$ be the resulting memory.
+The writer chooses
+\begin{equation}
+    a_t^*=\arg\max_{a\in\mathcal A_t} J_\phi(M_t^a).
+    \label{eq:allocator}
+\end{equation}
+With $K$ fixed-size capsules, exact single-replacement evaluation uses $K+2$ critic calls per candidate.
+A cheap item-level prefilter may shortlist eviction candidates for larger $K$, but it is shared by all set-critic ablations and its oracle ceiling is reported.
+The online action uses no query and never accesses deleted observations.
+
+\subsection{Fixed reader and lifecycle audit}
+
+After the question appears, a fixed query-aware reader retrieves a byte-matched subset $Z=R(M_T,q,S)$, and a frozen consumer predicts the answer and evidence.
+We record three nested events for each gold bundle:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+    \item \textbf{Stored}: every required capsule has survived in $M_T$;
+    \item \textbf{Accessed}: at least one stored complete bundle is returned in $Z$;
+    \item \textbf{Used}: the consumer produces the correct answer and grounding under a matched intervention test.
+\end{enumerate}
+This audit prevents a retrieval or consumer failure from being misreported as a writer failure.
+It is an evaluation protocol, not an additional learned certificate.
+
+\section{Experiments}
+\label{sec:experiments}
+
+The experiments are designed to decide whether the paper's premise is true before scaling the system.
+No numerical result is reported in this draft.
+
+\subsection{Research questions}
+
+\begin{enumerate}[leftmargin=*,itemsep=2pt]
+    \item[\textbf{RQ1}] At matched item recall, does complete-bundle survival explain answerability beyond item-level metrics?
+    \item[\textbf{RQ2}] When bundle size, overlap, and alternative paths change, how large are $\Pi_Q(B)$ and the regret of item-wise writers?
+    \item[\textbf{RQ3}] On real video, does a learned set critic outperform strong scalar proxies under the same backbone, capsules, reader, and bytes?
+    \item[\textbf{RQ4}] Are observed gains caused by better storage, or by unrelated retrieval and consumer differences?
+\end{enumerate}
+
+\subsection{Stage I: Video Memory Gym}
+
+We first build a small controllable environment with exact enumeration.
+Each stream contains visually grounded atomic events and a family of post-hoc questions.
+The generator varies one factor at a time:
+\begin{itemize}[leftmargin=*,itemsep=1pt]
+    \item bundle size $1$--$4$;
+    \item within-bundle complementarity, from nearly additive to strict AND;
+    \item overlap between bundles;
+    \item number of alternative paths per question;
+    \item task-family entropy and rare-group mass;
+    \item evidence delay, distractor density, and side-information reliability;
+    \item storage budget and candidate recall.
+\end{itemize}
+Small instances are solved exactly by enumeration or integer programming to obtain the post-query, offline-pre-query, and causal-pre-query frontiers.
+The gym is not used as evidence that real video has the same distribution.
+Its purpose is to isolate the geometry that ordinary benchmarks entangle.
+
+\subsection{Stage II: real-video evaluation}
+
+The primary real-video set must provide verifiable evidence and multiple questions per video.
+Current candidates are EG-VQA~\cite{huang2026egvqabenchmarkingverifiablevideo}, E-VQA~\cite{wang2026evidencebackedvideoquestionanswering}, StreamArena~\cite{zhang2026streamarenacontinuousinteractivelonghorizon}, and a diagnostic subset of VideoZeroBench~\cite{meng2026videozerobenchprobinglimitsvideo}.
+The final pair will be selected only after confirming license, data access, evidence granularity, and stable baseline reproduction; the selection and exclusions will be recorded before test experiments.
+
+Data are split by video.
+All questions for one held-out video share one frozen memory snapshot.
+Question groups are defined from training metadata using evidence count, temporal gap, grounding type, and reasoning structure, then frozen.
+We will manually audit a stratified sample of teacher-verified bundles and report agreement, rejected alternatives, and the fraction of questions for which only one observed path is known.
+
+\subsection{Backbone and budget controls}
+
+We will choose one openly reproducible query-hidden streaming backbone after the protocol audit, with SelectStream, SAVEMem, FluxMem, and CausalMem as candidates~\cite{ge2026streamingvideomodelremember,wu2026semanticawareadaptivevisualmemory,xie2026fluxmemadaptivehierarchicalmemory,song2026dynamicfixedbudgetmemorybank}.
+Within the decisive comparison, every writer uses identical:
+\begin{itemize}[leftmargin=*,itemsep=1pt]
+    \item video sampling and candidate boundaries;
+    \item capsule payload, fixed capsule size, and candidate pool;
+    \item side information and its generation cost;
+    \item reader, consumer, decoding, and prompts;
+    \item total persistent bytes and query-time read bytes.
+\end{itemize}
+We report actual bytes rather than treating visual, text, KV, and latent tokens as interchangeable.
+Write latency, GPU hours for teacher labeling, query-time latency, peak memory, and raw-video I/O are separate columns.
+
+\subsection{Baselines}
+
+The objective-isolation study includes:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+    \item uniform sampling, FIFO, and recency;
+    \item feature change, surprise, and semantic diversity;
+    \item a CausalMem-style semantic residual;
+    \item a SAVEMem-style pseudo-question similarity prior;
+    \item the original backbone priority;
+    \item an EMBER/OSL-style learned item evidence score;
+    \item a learned scalar future-value model without memory-set input;
+    \item ordinary additive maximum coverage over evidence elements;
+    \item \method with average coverage ($\alpha=0$);
+    \item \method with balanced complete-path coverage ($\alpha>0$).
+\end{enumerate}
+Query-known selectors are reported separately as privileged post-query oracles, never in the fair pre-query ranking~\cite{yamao2026questionguidedvisualcompressionmemory,qiu2026longvideor1smartnavigationlowcost}.
+
+\subsection{Metrics}
+
+The primary storage metric is \textbf{complete-bundle survival}: the fraction of questions with at least one observed sufficient bundle fully stored.
+We additionally report item evidence recall, mean- and worst-group answerability, answerability--budget area under the curve, $\Pi_Q(B)$, and the interaction residual after controlling for item recall.
+
+End-to-end metrics are answer accuracy or a frozen open-answer judge, temporal/spatial evidence F1, and joint answer-and-evidence accuracy.
+Lifecycle metrics report stored, accessed, and used complete paths separately.
+All primary comparisons use at least three seeds, paired bootstrap confidence intervals by video, and a multiple-comparison correction fixed before test evaluation.
+
+\subsection{Main comparison}
+
+\begin{table*}[t]
+\centering
+\caption{Planned decisive comparison: writer objectives within one fixed backbone. Dashes are intentional placeholders, not zeroes. The paper's main claim requires a gain in complete-bundle survival and grounded end-to-end performance at matched bytes.}
+\label{tab:main}
+\scriptsize
+\setlength{\tabcolsep}{3.8pt}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}Xcccccccc}
+\toprule
+Writer objective & Item R & Bundle S & Avg. QA & Ev. F1 & Joint & Worst $A$ & Bytes & Write \\
+\midrule
+Original priority & -- & -- & -- & -- & -- & -- & matched & -- \\
+Surprise & -- & -- & -- & -- & -- & -- & matched & -- \\
+Semantic residual & -- & -- & -- & -- & -- & -- & matched & -- \\
+Pseudo-question prior & -- & -- & -- & -- & -- & -- & matched & -- \\
+Learned scalar value & -- & -- & -- & -- & -- & -- & matched & -- \\
+Additive coverage & -- & -- & -- & -- & -- & -- & matched & -- \\
+\method (average) & -- & -- & -- & -- & -- & -- & matched & -- \\
+\method (balanced) & -- & -- & -- & -- & -- & -- & matched & -- \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+\resultpending{Populate Table~\ref{tab:main} only after the snapshot-hash leakage audit, candidate-recall ceiling, and matched-byte checks pass. If \method improves item recall but not complete-bundle survival, the core hypothesis is rejected.}
+
+\subsection{Phenomenon and oracle analysis}
+
+The phenomenon study compares every proxy with exact or teacher-derived set utility using Spearman correlation, Kendall's $\tau$, nDCG@$K$, and budgeted value recovery.
+More importantly, it stratifies by bundle size, overlap, alternatives, and side-information reliability.
+We will plot the three oracle frontiers and report $\Pi_Q$ and $\Pi_H$ over budgets.
+
+\begin{table}[t]
+\centering
+\caption{Planned proxy-to-utility study. The exact columns are fixed before model training.}
+\label{tab:proxy}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\columnwidth}{>{\raggedright\arraybackslash}Xccc}
+\toprule
+Score & Item $\rho$ & Set $\rho$ & VR@$B$ \\
+\midrule
+Surprise & -- & -- & -- \\
+Semantic novelty & -- & -- & -- \\
+Pseudo-query similarity & -- & -- & -- \\
+Learned scalar value & -- & -- & -- \\
+Set critic & -- & -- & -- \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\resultpending{Test whether set utility adds stable explanatory power after matching item recall. If the strongest scalar policy approaches the exact oracle across geometry settings, the bundle-aware method should be stopped or reduced to an evaluation paper.}
+
+\subsection{Ablations}
+
+We isolate the proposed ingredients by replacing the set critic with an item critic, removing hard partial-bundle pairs, training only on random rather than on-policy coalitions, removing alternative-path labels, removing side-information features, and setting $\alpha=0$.
+An oracle critic with the same online allocator separates value-estimation error from local-search error; an offline allocator with the learned critic separates causal allocation error from critic error.
+Candidate recall is always reported because no writer can recover an event removed before the retention decision.
+
+\subsection{Storage--access--use interventions}
+
+For each query we perform four byte- and time-matched interventions:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+    \item delete a predicted high-value item from a complete stored bundle;
+    \item delete a matched random item;
+    \item keep storage fixed but block the reader from returning one bundle member;
+    \item return the complete bundle but replace one item with a semantically plausible item from another video.
+\end{enumerate}
+The first pair tests storage value, the third isolates access, and the fourth tests whether the consumer uses the grounded content rather than the question prior.
+Failures are assigned to the earliest failed stage.
+
+\subsection{Planned result visualizations}
+
+After Figure~\ref{fig:overview}, empirical figures will be added only when their source data exist:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+    \item an answerability--budget plot with post-query, offline-pre-query, causal-pre-query, scalar, and \method frontiers;
+    \item a geometry heat map over bundle size, overlap, and number of alternatives;
+    \item a stacked lifecycle audit showing storage, access, and use failures;
+    \item one qualitative case contrasting fragmented high recall with a surviving complete path.
+\end{enumerate}
+Each plot will be generated from committed result tables or scripts; no value will be edited by hand.
+
+\section{Limitations and Broader Impact}
+\label{sec:limitations}
+
+\paragraph{Observed bundles are incomplete.}
+Real benchmarks rarely enumerate every valid path to an answer.
+Treating one annotated route as the only route would create false negatives.
+We therefore call real-data labels \emph{observed-path coverage}, report annotation coverage, and use exact claims only in the controlled gym.
+
+\paragraph{Sufficiency is consumer-relative.}
+Deletion tests define whether a frozen reader and answer model can use a bundle, not whether the evidence is semantically sufficient for every possible reasoner.
+We mitigate this with human audits and a second consumer, but do not claim a universal certificate.
+
+\paragraph{The task family must be declared.}
+No bounded pre-query memory can preserve evidence for every conceivable future question.
+\method learns the training task family and predefined structural groups.
+Completely new tasks may favor general compression or an explicitly charged raw archive.
+
+\paragraph{Candidate and codec ceilings remain.}
+A bundle-aware objective cannot restore details already removed by the candidate generator or capsule codec.
+We expose both ceilings with gold-candidate and gold-payload oracles.
+
+\paragraph{Privacy and selective retention.}
+A stronger writer may preserve rare, personally identifying visual details precisely because they are hard to replace.
+Deployments need consent, retention policies, access control, and deletion mechanisms outside the scientific storage objective.
+The experimental release should avoid raw private streams and document the licensing and privacy status of every dataset.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Pre-query video memory should be judged by whether at least one complete evidential route survives, not only by how many relevant items remain.
+Minimal sufficient bundles make this distinction explicit: requirements within a route are complementary, while different routes may substitute for one another.
+\method turns that structure into a query-free set-value writer under a fixed byte budget, while keeping the underlying video memory system unchanged.
+The proposed experiments are deliberately falsifiable.
+If bundle interaction does not explain answerability beyond item recall, or if a strong scalar writer matches the exact frontier, the method should not be expanded.
+\resultpending{Replace this paragraph with the supported empirical conclusion, including failure cases and confidence intervals, after all planned experiments are complete.}
+
+{\small
+\bibliographystyle{ieeenat_fullname}
+\bibliography{references}
+}
+
+\appendix
+
+\section{Plain-Language Glossary}
+\label{app:glossary}
+
+\begin{description}
+    \item[Pre-query memory] A memory written before the eventual question is known.
+    \item[Evidence capsule] One fixed-size stored unit containing a compressed visual observation and the metadata needed to retrieve and verify it.
+    \item[Evidence bundle] A smallest set of capsules that jointly supports one answer route.
+    \item[Alternative path] A different complete bundle that can answer the same question.
+    \item[Complete-bundle survival] Whether every member of at least one observed sufficient bundle remains stored.
+    \item[Coalition] A candidate memory set used as one training example for the set critic.
+    \item[Set critic] A query-free predictor of how many question groups retain a complete answer path in a proposed memory.
+    \item[Side information] Information available independently of the visual payload, such as native audio transcripts, OCR, timestamps, or permitted sensor state.
+    \item[Privileged oracle] A non-deployable comparison that receives extra information, such as the future question, to locate an upper bound or failure layer.
+\end{description}
+
+\section{Proof of the Recall--Answerability Gap}
+\label{app:proof}
+
+Let the gold evidence universe be the disjoint union of $n$ bundles $E_1,\ldots,E_n$, each of size $r$.
+Construct $M$ by removing exactly one element from each bundle.
+Then $|M|=n(r-1)$ and the item evidence recall is
+\begin{equation}
+    \frac{|M|}{|\bigcup_k E_k|}=\frac{n(r-1)}{nr}=1-\frac{1}{r}.
+\end{equation}
+For every $k$, $E_k\nsubseteq M$, so Eq.~\eqref{eq:answerability} gives $A(q,M)=0$ when these are the only sufficient bundles.
+For any $\epsilon>0$, choosing $r>1/\epsilon$ yields item recall above $1-\epsilon$ while exact answerability remains zero.
+
+\section{Bundle Annotation Protocol}
+\label{app:annotation}
+
+The real-video bundle audit will record: dataset and video ID; question ID; candidate-boundary version; original annotated evidence; proposed alternative; sufficiency answer score; temporal/spatial grounding score; leave-one-out scores; accepted/rejected status; rejection reason; annotator decision; and consumer version.
+The verifier thresholds are selected on validation videos and then frozen.
+Ambiguous examples are retained with an uncertainty flag rather than forced into a binary label.
+
+Human reviewers answer three questions without seeing the method prediction:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+    \item Does the complete bundle contain enough visual information to answer and ground the question?
+    \item Does removing each claimed necessary item break this particular route?
+    \item Is there an obvious alternative route missing from the annotation?
+\end{enumerate}
+Inter-annotator agreement and the main disagreements are reported.
+
+\section{Video Memory Gym Specification}
+\label{app:gym}
+
+Every generated instance stores a machine-readable evidence hypergraph, the stream order, side-information channel, candidate costs, and the full question family.
+Random seeds are fixed per instance.
+The exact solver optimizes Eqs.~\eqref{eq:answerability}--\eqref{eq:utility} under each information regime.
+To prevent visual shortcuts, content identity, screen position, motion magnitude, and evidence membership are independently randomized where the task semantics permit.
+Matched counterfactual instances change only one geometry variable.
+
+The initial factorial grid is defined in the experiment configuration rather than hard-coded in the paper.
+Every released result records generator version, seed, grid values, solver status, optimality gap, and wall-clock cost.
+
+\section{Reproducibility and Leakage Checklist}
+\label{app:checklist}
+
+Before any test result is inserted, the following checks must pass:
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+    \item train/validation/test split is by video, not question;
+    \item one held-out video produces one memory snapshot shared by all its questions;
+    \item snapshot hashes are invariant to held-out question permutation and replacement;
+    \item writer input logs contain no question, answer, evidence timestamp, or derived embedding;
+    \item candidates, codec, reader, consumer, bytes, and decoding are identical in the objective-isolation study;
+    \item persistent text, keys, indexes, crops, KV, and latent nodes are all byte-accounted;
+    \item raw-video replay is zero for the main protocol;
+    \item candidate and codec oracle ceilings are reported;
+    \item at least three seeds and paired confidence intervals are present;
+    \item negative and null results are retained in experiment records.
+\end{enumerate}
+
+\section{Result Insertion Map}
+\label{app:resultsmap}
+
+\begin{center}
+\captionof{table}{Evidence required before each claim can replace a placeholder.}
+\label{tab:insertion-map}
+\small
+\begin{tabularx}{\columnwidth}{p{0.27\columnwidth}X}
+\toprule
+Claim & Required evidence \\
+\midrule
+Bundles matter & Matched-item-recall analysis on the gym and at least two real data sources. \\
+Set critic helps & Same-backbone, matched-byte gain over the strongest scalar writer with confidence intervals. \\
+Tail coverage helps & Predeclared group result; no post-hoc group selection. \\
+Memory is used & Top-delete, random-delete, access-block, and semantic-swap audit. \\
+Generalizes & Second representation or consumer with the same direction of effect. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\end{document}
