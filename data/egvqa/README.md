@@ -147,3 +147,61 @@ python scripts/download_egvqa.py --download-only --output data/downloads/egvqa-s
 两次均返回 `0`，第二次状态记录的新增范围正文传输量为 `0` 字节。本次实际运行还通过 `--annotations-dir` 和 `--index-file` 复用了本机已校验缓存；没有这些缓存时，上述命令会先获取标注并扫描索引。
 
 本次只抽查下载一个视频，未下载全部 24/64 个视频，未运行 VLM、GPU 实验或全量视频可用率评估。部分索引扫描用于核实真实 tar 格式，不代表所有成员均已验证。完整缓存和视频位于当前设备的 `/tmp/egvqa-subset-audit/`，仅供本次验证，后续实验应在目标设备按以上命令重新建立持久数据目录。
+
+## 2026-09-07：本设备完整 pilot 数据验证
+
+以下是本轮 Linux 设备的实际数据结果，保留上方 macOS 单视频抽查作为历史记录。环境位于仓库 `.venv`，本次使用 Python 3.12.3、requests 2.32.5、PyAV 18.1.0、NumPy 2.4.6 和 Pillow 12.2.0。逐视频 SHA-256、实际解码时长、帧率、E1 构造计数及失败原因见[数据摘要](../../experiments/EXP-20260907-egvqa-15h-pilot/data_summary.json)；模型实验另见[实验记录](../../experiments/EXP-20260907-egvqa-15h-pilot/README.md)。
+
+固定 revision 与 seed=17 的 **24/24 个视频、96 道 QA 已下载并完成逐视频 SHA 校验**，其中 dev 6 视频/24 QA、eval 18 视频/72 QA。视频正文合计 **350,188,158 字节**，位于 `data/downloads/egvqa-pilot/`。最终 `download_status.json` 为 `ready_videos=24`、缺失列表为空；最终 `--download-only` 校验退出码为 `0`，新增范围正文传输量为 `0` 字节。逐视频 SHA 是本地完整文件的校验记录；仍未重新下载整包计算上游 tar SHA。
+
+本轮已使下载器遵循 `HF_ENDPOINT=https://hf-mirror.com`，同时保持 manifest 中的原始 HF 来源身份不变。大规模下载命令临时清除大小写代理变量，不修改终端后续命令的代理设置。以下命令可复现下载、续传和最终校验：
+
+```bash
+export HF_ENDPOINT=https://hf-mirror.com
+
+env -u http_proxy -u https_proxy -u all_proxy \
+    -u HTTP_PROXY -u HTTPS_PROXY -u ALL_PROXY \
+    .venv/bin/python scripts/download_egvqa.py \
+    --output data/downloads/egvqa-pilot
+
+env -u http_proxy -u https_proxy -u all_proxy \
+    -u HTTP_PROXY -u HTTPS_PROXY -u ALL_PROXY \
+    .venv/bin/python scripts/download_egvqa.py \
+    --download-only --output data/downloads/egvqa-pilot
+```
+
+实际执行时，tar 头索引与已定位视频的 4 线程下载并行，CPU 准备同时等待新视频到位；没有等待全部索引才开始解码。索引共记录 1,981 个成员后已定位全部所选视频。过程中发现非所选的上游空文件 `videos/94Kea14_1I0.mp4`：旧索引器误将合法的零长度普通 tar 成员当作非法长度而中断。本轮修复后允许记录空成员并继续扫描；如果所选视频为空，下载器仍明确报错，不将其标为可用。`206`、`Content-Range`、字节长度和 tar 头校验保持严格，无整包回退。
+
+CPU 前端可在下载进行时运行：
+
+```bash
+EGVQA_RUN=experiments/EXP-20260907-egvqa-15h-pilot/run-20260907T0206+0800
+.venv/bin/python scripts/prepare_egvqa_pilot.py \
+    --dataset-root data/downloads/egvqa-pilot \
+    --output "$EGVQA_RUN/prepared" --watch --workers 4
+```
+
+全部 24 视频均完成首、中、尾帧及实际 PTS 检查。源视频包含 224p/3 fps，以及 360p/约 24–30 fps 等多种表示；不能把历史单视频的 3 fps 推广到全部数据。实际末帧 PTS 加帧时长与标注时长的最大差为约 0.567 秒，逐视频数值保存在数据摘要及本地解码审计中。
+
+前端统一采用 224×224 letterbox、2 秒 capsule、每槽 4 张图；不足 4 个不同 PTS 时重复末帧并将填充位置标为无效。在线 reservoir 使用 seed=17、K=64。writer 进程只接收视频路径、来源 ID 和固定参数，问题及金标由独立 E1 进程读取。全候选审计只保留时间/hash 元数据；正常快照不含原视频或淘汰载荷路径。24 个快照的存活键编码均已完成，包含像素、键和元数据的实际大小为 **38,699,319–38,701,883 字节**，均低于每视频 42,008,576 字节上限。
+
+| 划分 | 计划 QA | E1 可构造，待人工审核 | 无效：合并后仅一组 | 无效：不足三个证据外干扰组 |
+|---|---:|---:|---:|---:|
+| dev | 24 | 20 | 4 | 0 |
+| eval | 72 | 62 | 3 | 7 |
+
+当前 E1 前端版本为 `e1-v2-disjoint-time-regions`。首版干扰候选枚举在短证据外区域共用末帧，可能错误报告干扰不足；该工程问题在真实视频模型预测开始前修复，旧包保存在对应视频的 `e1-frontend-v1/`。当前 I1/I2/D 使用互不相交的证据外时间区域，按跨度匹配与固定 hash 选择。82 道可构造题的机械替换检查通过，未发现移除组的像素 hash 残留于该干预输入。**全部人工审核仍为 `pending`**；可构造和机械检查通过不等于干扰语义有效、事实独立或联合依赖已确认。
+
+本设备实际运行的数据相关检查如下，8 项数据前端测试及原下载器 14 项测试均通过。下载器测试使用本地 HTTP fixture，执行时同样临时去代理，避免代理干扰回环地址：
+
+```bash
+env -u http_proxy -u https_proxy -u all_proxy \
+    -u HTTP_PROXY -u HTTPS_PROXY -u ALL_PROXY \
+    .venv/bin/python -m unittest discover -s tests -p 'test_egvqa_data.py' -v
+
+env -u http_proxy -u https_proxy -u all_proxy \
+    -u HTTP_PROXY -u HTTPS_PROXY -u ALL_PROXY \
+    .venv/bin/python -m unittest discover -s tests -p 'test_egvqa_subset.py' -v
+```
+
+数据前端的 8 项测试覆盖真实 PyAV 流解码、实际 PTS 与尾部 mask、letterbox、reservoir 前缀因果性、持久字节上限、配对替换及短证据外区域、机械副本拒绝、镜像来源身份与空 tar 成员处理。本节只报告数据准备与上述检查；E1/E2 的模型分数及科学验收以实验记录为准。

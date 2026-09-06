@@ -1,0 +1,3319 @@
+{
+  "score_label": "local same-model judge pilot; not official scoring",
+  "source_run": "experiments/EXP-20260907-egvqa-15h-pilot/run-20260907T0206+0800",
+  "bootstrap": {
+    "unit": "video",
+    "n_resamples": 2000,
+    "seed": 43
+  },
+  "questions": [
+    {
+      "question_id": "PtbGXfb6B1I_q02",
+      "video_id": "PtbGXfb6B1I",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2120,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3128,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3124,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2078,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q01",
+      "video_id": "PtbGXfb6B1I",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2094,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3109,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3130,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2099,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q04",
+      "video_id": "PtbGXfb6B1I",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2081,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3107,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3143,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2090,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q03",
+      "video_id": "PtbGXfb6B1I",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2104,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3117,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3135,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2088,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q03",
+      "video_id": "v_0zjA3KPnLK8",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 1,
+          "Key-1": 1,
+          "Key-2": 1,
+          "Irrel-1": 1,
+          "Irrel-2": 1,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 1,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2102,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3114,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3142,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2089,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q02",
+      "video_id": "v_0zjA3KPnLK8",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 1,
+          "Key-1": 1,
+          "Key-2": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 1,
+          "Blind": 0
+        },
+        "delta_key": 0.5,
+        "delta_irrel": 0.5,
+        "D": 0.0,
+        "full_minus_blind": 1,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2080,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3098,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3137,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2072,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q01",
+      "video_id": "v_0zjA3KPnLK8",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2140,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3143,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3191,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2105,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q04",
+      "video_id": "v_0zjA3KPnLK8",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 1,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 1,
+        "delta_irrel": 1,
+        "D": 0,
+        "full_minus_blind": 1,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2107,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3119,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3130,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2088,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q02",
+      "video_id": "v_NGk3v4sKqdg",
+      "E1": {
+        "num_gold_groups": 4,
+        "valid_pair": false,
+        "invalid_reasons": [
+          "intervention_not_validated",
+          "fewer_than_three_disjoint_distractor_groups"
+        ],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Key-4": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": null,
+        "delta_irrel": null,
+        "D": null,
+        "full_minus_blind": null,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2108,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3106,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3141,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2106,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q01",
+      "video_id": "v_NGk3v4sKqdg",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 1,
+          "Key-2": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": -0.5,
+        "delta_irrel": 0,
+        "D": -0.5,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2075,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3108,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3132,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2071,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q04",
+      "video_id": "v_NGk3v4sKqdg",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 1,
+          "Key-2": 1,
+          "Key-3": 1,
+          "Irrel-1": 1,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": -1,
+        "delta_irrel": -0.5,
+        "D": -0.5,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2090,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3095,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3125,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2081,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q06",
+      "video_id": "v_NGk3v4sKqdg",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 1,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": -0.3333333333333333,
+        "delta_irrel": 0,
+        "D": -0.3333333333333333,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2080,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3103,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3143,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2100,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_Ktun1-2Y540_q03",
+      "video_id": "v_Ktun1-2Y540",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 1
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": -1,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2108,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3123,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3153,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2103,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_Ktun1-2Y540_q01",
+      "video_id": "v_Ktun1-2Y540",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 1,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 1
+        },
+        "delta_key": -0.5,
+        "delta_irrel": 0,
+        "D": -0.5,
+        "full_minus_blind": -1,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2109,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3129,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3171,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2106,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_Ktun1-2Y540_q06",
+      "video_id": "v_Ktun1-2Y540",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 1,
+          "Key-1": 1,
+          "Key-2": 1,
+          "Irrel-1": 1,
+          "Irrel-2": 1,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 1,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2086,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3107,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3135,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2095,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_Ktun1-2Y540_q02",
+      "video_id": "v_Ktun1-2Y540",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 1,
+          "Key-1": 1,
+          "Key-2": 1,
+          "Irrel-1": 1,
+          "Irrel-2": 1,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 1,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2106,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3117,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3153,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2105,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_D5xp0LuEcKw_q03",
+      "video_id": "v_D5xp0LuEcKw",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2083,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3111,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3142,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2074,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_D5xp0LuEcKw_q04",
+      "video_id": "v_D5xp0LuEcKw",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 1,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 1,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 1,
+        "delta_irrel": 0.5,
+        "D": 0.5,
+        "full_minus_blind": 1,
+        "any_uncertain": true
+      },
+      "E2": {
+        "R0": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2111,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3118,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3174,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2083,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_D5xp0LuEcKw_q02",
+      "video_id": "v_D5xp0LuEcKw",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 1,
+          "Key-3": 1,
+          "Irrel-1": 1,
+          "Irrel-2": 1,
+          "Blind": 0
+        },
+        "delta_key": -0.6666666666666666,
+        "delta_irrel": -1,
+        "D": 0.33333333333333337,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2100,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3101,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3139,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2102,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_D5xp0LuEcKw_q01",
+      "video_id": "v_D5xp0LuEcKw",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Irrel-1": 1,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": -0.5,
+        "D": 0.5,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2113,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3100,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3162,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2112,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_-UWE4jXuLoo_q04",
+      "video_id": "v_-UWE4jXuLoo",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 1,
+          "Key-1": 1,
+          "Key-2": 1,
+          "Irrel-1": 1,
+          "Irrel-2": 1,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 1,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2047,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3053,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3106,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2047,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_-UWE4jXuLoo_q03",
+      "video_id": "v_-UWE4jXuLoo",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 1,
+          "Key-2": 1,
+          "Irrel-1": 0,
+          "Irrel-2": 1,
+          "Blind": 0
+        },
+        "delta_key": -1,
+        "delta_irrel": -0.5,
+        "D": -0.5,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2104,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3129,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3157,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2101,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_-UWE4jXuLoo_q02",
+      "video_id": "v_-UWE4jXuLoo",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Irrel-1": 1,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": -0.5,
+        "D": 0.5,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2070,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3085,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3121,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2067,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_-UWE4jXuLoo_q05",
+      "video_id": "v_-UWE4jXuLoo",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 1,
+          "Key-1": 1,
+          "Key-2": 1,
+          "Irrel-1": 1,
+          "Irrel-2": 1,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 1,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2111,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3115,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3138,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2095,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_bJ695Pp7Vng_q02",
+      "video_id": "v_bJ695Pp7Vng",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": false,
+        "invalid_reasons": [
+          "intervention_not_validated",
+          "fewer_than_three_disjoint_distractor_groups"
+        ],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": null,
+        "delta_irrel": null,
+        "D": null,
+        "full_minus_blind": null,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2109,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3124,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3195,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2096,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_bJ695Pp7Vng_q01",
+      "video_id": "v_bJ695Pp7Vng",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": false,
+        "invalid_reasons": [
+          "intervention_not_validated",
+          "fewer_than_three_disjoint_distractor_groups"
+        ],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": null,
+        "delta_irrel": null,
+        "D": null,
+        "full_minus_blind": null,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2116,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3125,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3155,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2103,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_bJ695Pp7Vng_q03",
+      "video_id": "v_bJ695Pp7Vng",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": false,
+        "invalid_reasons": [
+          "intervention_not_validated",
+          "fewer_than_three_disjoint_distractor_groups"
+        ],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": null,
+        "delta_irrel": null,
+        "D": null,
+        "full_minus_blind": null,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2109,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3127,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3157,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2094,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "v_bJ695Pp7Vng_q05",
+      "video_id": "v_bJ695Pp7Vng",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2105,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3110,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3127,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2085,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "l2OTMq4aluc_q05",
+      "video_id": "l2OTMq4aluc",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 2159,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 3177,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 3249,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 2154,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "l2OTMq4aluc_q01",
+      "video_id": "l2OTMq4aluc",
+      "E1": {
+        "num_gold_groups": 4,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Key-4": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": true
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 2134,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 3175,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 3208,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 2138,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "E1": {
+        "num_gold_groups": 4,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 1,
+          "Key-3": 0,
+          "Key-4": 1,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": -0.5,
+        "delta_irrel": 0,
+        "D": -0.5,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 2217,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 3231,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 3323,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 2167,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "l2OTMq4aluc_q04",
+      "video_id": "l2OTMq4aluc",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 2147,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 3176,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 3226,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 2142,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "Lz3bNy9YQ80_q04",
+      "video_id": "Lz3bNy9YQ80",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2184,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3304,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3301,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2184,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "Lz3bNy9YQ80_q05",
+      "video_id": "Lz3bNy9YQ80",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2194,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3277,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3246,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2180,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "Lz3bNy9YQ80_q03",
+      "video_id": "Lz3bNy9YQ80",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2175,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3262,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3314,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2171,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "Lz3bNy9YQ80_q02",
+      "video_id": "Lz3bNy9YQ80",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 1,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": -0.5,
+        "D": 0.5,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2270,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3322,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3306,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2182,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "tKsGWxiWWCg_q02",
+      "video_id": "tKsGWxiWWCg",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 1,
+          "Key-1": 0,
+          "Key-2": 1,
+          "Irrel-1": 1,
+          "Irrel-2": 1,
+          "Blind": 0
+        },
+        "delta_key": 0.5,
+        "delta_irrel": 0,
+        "D": 0.5,
+        "full_minus_blind": 1,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2151,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3220,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3218,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2157,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "tKsGWxiWWCg_q01",
+      "video_id": "tKsGWxiWWCg",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 1,
+          "Key-1": 1,
+          "Key-2": 0,
+          "Irrel-1": 1,
+          "Irrel-2": 1,
+          "Blind": 0
+        },
+        "delta_key": 0.5,
+        "delta_irrel": 0,
+        "D": 0.5,
+        "full_minus_blind": 1,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2106,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3145,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3192,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2106,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "tKsGWxiWWCg_q04",
+      "video_id": "tKsGWxiWWCg",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2238,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3313,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3353,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2268,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "tKsGWxiWWCg_q05",
+      "video_id": "tKsGWxiWWCg",
+      "E1": {
+        "num_gold_groups": 4,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Key-4": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2195,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3249,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3295,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2144,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "J3Kg76JODsk_q01",
+      "video_id": "J3Kg76JODsk",
+      "E1": {
+        "num_gold_groups": 4,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Key-4": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2188,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3241,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3263,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2187,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "J3Kg76JODsk_q04",
+      "video_id": "J3Kg76JODsk",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 1,
+          "Key-1": 1,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0.6666666666666667,
+        "delta_irrel": 1,
+        "D": -0.33333333333333326,
+        "full_minus_blind": 1,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2231,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3263,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3311,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2198,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "J3Kg76JODsk_q02",
+      "video_id": "J3Kg76JODsk",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 1,
+          "Irrel-1": 1,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": -0.5,
+        "delta_irrel": -0.5,
+        "D": 0.0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2185,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3248,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3260,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2176,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "J3Kg76JODsk_q05",
+      "video_id": "J3Kg76JODsk",
+      "E1": {
+        "num_gold_groups": 4,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Key-4": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2182,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3245,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 3277,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2186,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "DBgap0YANhs_q05",
+      "video_id": "DBgap0YANhs",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 1948,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 2916,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 2950,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 1955,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "DBgap0YANhs_q01",
+      "video_id": "DBgap0YANhs",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 1952,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 2920,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 2967,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 1,
+          "status": "complete",
+          "verdict": "correct",
+          "access_ann": false,
+          "feasible_ann": false,
+          "stored_ann": false,
+          "citations_legal": true,
+          "logical_tokens": 1972,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "DBgap0YANhs_q02",
+      "video_id": "DBgap0YANhs",
+      "E1": {
+        "num_gold_groups": 3,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Key-3": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 1972,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2918,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": false,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2954,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 1972,
+          "logical_calls": 1
+        }
+      }
+    },
+    {
+      "question_id": "DBgap0YANhs_q03",
+      "video_id": "DBgap0YANhs",
+      "E1": {
+        "num_gold_groups": 2,
+        "valid_pair": true,
+        "invalid_reasons": [],
+        "scores": {
+          "Full": 0,
+          "Key-1": 0,
+          "Key-2": 0,
+          "Irrel-1": 0,
+          "Irrel-2": 0,
+          "Blind": 0
+        },
+        "delta_key": 0,
+        "delta_irrel": 0,
+        "D": 0,
+        "full_minus_blind": 0,
+        "any_uncertain": false
+      },
+      "E2": {
+        "R0": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 1955,
+          "logical_calls": 1
+        },
+        "R1": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2912,
+          "logical_calls": 2
+        },
+        "R2": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 2958,
+          "logical_calls": 2
+        },
+        "R*": {
+          "A": 0,
+          "status": "complete",
+          "verdict": "incorrect",
+          "access_ann": true,
+          "feasible_ann": true,
+          "stored_ann": true,
+          "citations_legal": true,
+          "logical_tokens": 1943,
+          "logical_calls": 1
+        }
+      }
+    }
+  ]
+}

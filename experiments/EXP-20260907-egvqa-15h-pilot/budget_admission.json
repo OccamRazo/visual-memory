@@ -1,0 +1,14 @@
+{
+  "answer_requests_upper": 483,
+  "control_requests_upper": 96,
+  "judge_requests_upper": 121,
+  "inference_p75_seconds": 1866.5023993859068,
+  "inference_with_20pct_margin_seconds": 2239.802879263088,
+  "remaining_implementation_encoding_seconds": 1800,
+  "reserved_audit_report_seconds": 7200,
+  "physical_requests_upper_including_dev": 831,
+  "basis": "D0 measured p75; no cache savings assumed; all original 50 and reserved 81 dev requests counted",
+  "total_remaining_seconds": 11239.802879263088,
+  "time_admitted": true,
+  "calls_admitted": true
+}

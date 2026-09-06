@@ -8,6 +8,7 @@ import copy
 import hashlib
 import json
 import math
+import os
 from pathlib import Path, PurePosixPath
 import re
 import sys
@@ -20,6 +21,14 @@ import requests
 
 REVISION = "24379571655174cc80e9c1a1603160e6783c6252"
 BASE_URL = f"https://huggingface.co/datasets/lphuang33/EG-VQA/resolve/{REVISION}"
+
+
+def transport_url(url: str) -> str:
+    """Honor HF_ENDPOINT without changing the pinned source identity in manifests."""
+    endpoint = os.environ.get("HF_ENDPOINT", "https://huggingface.co").rstrip("/")
+    return endpoint + url[len("https://huggingface.co"):] if url.startswith("https://huggingface.co/") else url
+
+
 ARCHIVE = {
     "url": f"{BASE_URL}/videos.tar",
     "size": 13090641920,
@@ -115,7 +124,7 @@ def load_annotations(root: Path, split: str, annotations_dir: Path | None = None
         # Only small annotation files are fetched whole. Never use this for videos.tar.
         print(f"下载 {split}.json 标注（固定版本 {REVISION[:12]}）", flush=True)
         try:
-            with requests.get(f"{BASE_URL}/{split}.json", stream=True, timeout=(10, 60)) as response:
+            with requests.get(transport_url(f"{BASE_URL}/{split}.json"), stream=True, timeout=(10, 60)) as response:
                 response.raise_for_status()
                 parts, size = [], 0
                 for chunk in response.iter_content(65536):
@@ -236,8 +245,8 @@ class RangeReader:
     """Fail closed if Range is ignored; cache redirects only in memory."""
 
     def __init__(self, url: str, size: int, retries: int = 3, timeout: float = 60):
-        self.url, self.size = url, size
-        self.resolved_url = url
+        self.url, self.size = transport_url(url), size
+        self.resolved_url = self.url
         self.retries, self.timeout = retries, timeout
         self.session = requests.Session()
         self.bytes_read = 0
@@ -294,7 +303,7 @@ def validate_index(index: dict, archive: dict) -> None:
         safe_video_path(name)
         offset, size = item["offset"], item["size"]
         if not (isinstance(offset, int) and isinstance(size, int)
-                and offset >= 512 and offset % 512 == 0 and size > 0
+                and offset >= 512 and offset % 512 == 0 and size >= 0
                 and offset + size <= archive["size"]):
             raise DataError(f"索引字节位置非法：{name}")
 
@@ -333,9 +342,11 @@ def build_index(reader: RangeReader, archive: dict, needed: set[str], cache_path
                 name = safe_video_path(member.name)
                 if name in index["members"]:
                     raise DataError(f"tar 内有重复路径：{name}")
-                if member.size <= 0 or offset + 512 + member.size > reader.size:
+                if member.size < 0 or offset + 512 + member.size > reader.size:
                     raise DataError(f"tar 文件长度非法：{name}")
                 index["members"][name] = {"offset": offset + 512, "size": member.size}
+                if member.size == 0:
+                    print(f"记录上游空视频成员并继续索引：{name}", flush=True)
             offset += 512 + (member.size + 511) // 512 * 512
             index["next_offset"] = offset
             scanned += 1
@@ -355,6 +366,8 @@ def download_member(reader: RangeReader, root: Path, name: str, member: dict,
                     archive: dict) -> dict:
     """Resume at verified chunk boundaries; publish only complete files."""
     name = safe_video_path(name)
+    if member["size"] <= 0:
+        raise DataError(f"所选上游视频为空，不能标为可用：{name}")
     path = root / name
     partial = path.with_name(path.name + ".part")
     marker_path = root / "cache" / "receipts" / (path.name + ".json")

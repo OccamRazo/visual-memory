@@ -1,0 +1,9 @@
+# Install in .venv with --system-site-packages to reuse CUDA-enabled torch.
+# The run's model_identity.json records all installed versions exactly.
+transformers==4.57.6
+accelerate==1.14.0
+safetensors==0.8.0
+av==18.1.0
+requests==2.32.5
+Pillow==12.2.0
+numpy==2.4.6

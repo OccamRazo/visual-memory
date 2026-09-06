@@ -1,0 +1,142 @@
+{
+  "verified_at": "2026-09-06T19:17:31.880013+00:00",
+  "status": "PASS",
+  "checks": {
+    "source_hashes_unchanged": 10,
+    "published_frozen_files_identical": 3,
+    "snapshot_payload_hashes_unchanged": 24,
+    "logical_call_records_and_ledger_match": 823,
+    "all_call_input_output_and_image_limits": true,
+    "no_memory_limit_exceeded": true,
+    "core_model_identity_matches": true,
+    "core_model_errors": 0,
+    "core_truncated_outputs": 0,
+    "preparation_truncated_outputs_preserved": 4,
+    "E1_unique_terminal_conditions": 320,
+    "E2_unique_terminal_conditions": 192,
+    "each_E2_method_questions": 48,
+    "E2_method_tokens_and_calls_within_limits": true,
+    "paired_scores_reproduce_primary_bootstrap_exactly": true
+  },
+  "ledger": {
+    "logical_calls": 823,
+    "physical_calls": 816,
+    "core_physical_calls": 816,
+    "e3_physical_calls": 0,
+    "logical_tokens": 1192934,
+    "physical_tokens": 1178269,
+    "judge_logical_tokens": 76265,
+    "budget_violations": 0,
+    "pending_requests": 0
+  },
+  "snapshot_hashes": [
+    {
+      "video_id": "1Sq_hpWzDTg",
+      "snapshot_hash": "b2825cda6c30f7337f1be57f3588fcb4d867514985f34acfc3dd172aaf5ef851"
+    },
+    {
+      "video_id": "1XXQu7sF3Ow",
+      "snapshot_hash": "8b2bee3d55b2b99ea0f716b0800e9c5f2ed5ab69a389af2ca7ba88cb8b4e2892"
+    },
+    {
+      "video_id": "DBgap0YANhs",
+      "snapshot_hash": "395aeb5ab833f29482288f79b60f7587f1e32ad521c5cb577c38892394af899b"
+    },
+    {
+      "video_id": "Doms9BvrfEc",
+      "snapshot_hash": "2320cfa67850e2fd33534374a53298f04791dfdbc3d4a2d207ce118c39f77e5c"
+    },
+    {
+      "video_id": "J3Kg76JODsk",
+      "snapshot_hash": "db18f21abe32ad2f95f0d14c85c4d55a0457adf39e2750cc85d866765178caa7"
+    },
+    {
+      "video_id": "Lz3bNy9YQ80",
+      "snapshot_hash": "f88d36aaeeb898d7ecf6805ea5f970998bb289342197e06866ce3a059a753111"
+    },
+    {
+      "video_id": "PtbGXfb6B1I",
+      "snapshot_hash": "8a8200c9d35cd8edf34d61139cbd9758fdb9aa7c619d86f43a21bd003160aad4"
+    },
+    {
+      "video_id": "Sn7o85vzsK4",
+      "snapshot_hash": "488e9f8d59a7c7a5b883c0d811f3d32d3140caf934aa465100f3d72e05af8fa7"
+    },
+    {
+      "video_id": "fEt2WJ-jmW8",
+      "snapshot_hash": "72b816527f8214d8897ea921afe973a28f889a8ebdafbe731a49fb4b4ab068fe"
+    },
+    {
+      "video_id": "kchoaU2HL-o",
+      "snapshot_hash": "9c834c7255c2950e71c7201c3787767ca6fa2e179a418a45be28dd0b2c56a13b"
+    },
+    {
+      "video_id": "l2OTMq4aluc",
+      "snapshot_hash": "e01a211bb4ee005a8ca4697f1d7dd75813a3c611239fcf9d5689f99774d6a3e0"
+    },
+    {
+      "video_id": "tKsGWxiWWCg",
+      "snapshot_hash": "7872147c7029a0357041cdc3c61f784e1eb391edd199e5e70a899460a9d548a6"
+    },
+    {
+      "video_id": "v_-UWE4jXuLoo",
+      "snapshot_hash": "71f7e9fcbfb7f8a79c3fbf17e7701c6bcb55d9b624bea37831b124d2ad2baee7"
+    },
+    {
+      "video_id": "v_0zjA3KPnLK8",
+      "snapshot_hash": "78e6e6161938a085ff14e97cc7dc0b7d0ba1056d25ed772dc555922ee2494ade"
+    },
+    {
+      "video_id": "v_D5xp0LuEcKw",
+      "snapshot_hash": "3716ae70f7eeb3be8a8b1422cf7828882acf5fcde218f63cf0ae594cf6f89465"
+    },
+    {
+      "video_id": "v_Ktun1-2Y540",
+      "snapshot_hash": "df51a2ab676ea8b91ab7777ed01c4f16fab455b906195bf9b0fbdcbf1b8ed96f"
+    },
+    {
+      "video_id": "v_NGk3v4sKqdg",
+      "snapshot_hash": "869e7314c4f89a7067aa3afb3baf406671a50b968c73c656235719687750036c"
+    },
+    {
+      "video_id": "v_bJ695Pp7Vng",
+      "snapshot_hash": "9c7528f7e30899c7e313a0232a2cb315042793bf488966f82274acbfe7223a52"
+    },
+    {
+      "video_id": "v_o8qR72Ymru8",
+      "snapshot_hash": "4ea1bbb4fd677e2966c6897d2ac37ec91a43e16b4f458da27f9a5348b92f3271"
+    },
+    {
+      "video_id": "v_p-vfyM7ew04",
+      "snapshot_hash": "75234e1d9ff42ebb81e1bd36c37aec43c1a24a622192064bc6b8486ccadfb01b"
+    },
+    {
+      "video_id": "v_tGHLUWWm_zU",
+      "snapshot_hash": "973329931e5245ee354c6e5327ab5c765905bc2b43a887e250880b81e0caa6ba"
+    },
+    {
+      "video_id": "v_z3xkE5Ox-2A",
+      "snapshot_hash": "4b899d0b114c3b8ae16f04d644c5b7b2bc82d0e669d7016ce6a96d05fe769143"
+    },
+    {
+      "video_id": "x3if1znl5Fg",
+      "snapshot_hash": "27293403b31906f1738075d1851f73d73f0d8716a557356157371bf14a52627e"
+    },
+    {
+      "video_id": "xmo0FSdfXl4",
+      "snapshot_hash": "7c0e9cdf346b55dedb3029e61449bfa76f0f12f6e223bbc7318ec96134663173"
+    }
+  ],
+  "source_sha256": {
+    "src/egvqa_pilot/analysis.py": "2ab6cd8e001f89d1f440da9268e4f98194935287b51f19bf490171015799e903",
+    "src/egvqa_pilot/data.py": "ce2671f3c0fa36e945b8da002250a504ac00ff5babf444d9943b9574b8e7dcdd",
+    "src/egvqa_pilot/encoding.py": "3f8cbf8d50abc6ea223099a63084183d2647b692f5640c076f0cac5509b498f9",
+    "src/egvqa_pilot/isolation.py": "ead27e9290b740f00ec6d00a588f76bd72d7383a0a5e57ca1ea18bb0f4095389",
+    "src/egvqa_pilot/model.py": "db06fa0a0229a1627cc02d250aeb082e50c82194b2a527801106db3e7064c381",
+    "src/egvqa_pilot/prompts.py": "557011b793e6ae3841bd2560a95e2e38811cc222df3cf515b38c706cf830d73a",
+    "src/egvqa_pilot/protocol.py": "eb084e07063a4b688e0a59c205864eb7a420369cbefecb019866a72a49245a13",
+    "src/egvqa_pilot/reader.py": "ace204d2e79b235a5ec50944c5c067ec943c6c1fa5d8bd6ab6c3e939232f49d2",
+    "src/egvqa_pilot/runner.py": "0f9e45c7f166b810990f8d083b2f2be223267d1de7d352b27bd25dfd5efe2dd8",
+    "src/egvqa_subset.py": "33c23cf40fa486eaa47b2ed4c839ba9382ba150dc34b0dc68aae633b90388f69"
+  }
+}

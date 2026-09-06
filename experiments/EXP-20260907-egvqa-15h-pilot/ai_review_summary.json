@@ -1,0 +1,8 @@
+{
+  "reviewer_type": "AI",
+  "explicitly_not_human": true,
+  "n_items": 32,
+  "n_agree": 26,
+  "does_not_satisfy_human_calibration": true,
+  "does_not_change_frozen_scores": true
+}

@@ -1,0 +1,475 @@
+{
+  "eval_frozen": true,
+  "frozen_at": "2026-09-06T18:50:07.076279+00:00",
+  "scale": "smoke",
+  "timing": {
+    "started_at": "2026-09-07T02:06:00+08:00",
+    "d0_deadline": "2026-09-07T04:06:00+08:00",
+    "model_deadline": "2026-09-07T14:36:00+08:00",
+    "deadline": "2026-09-07T17:06:00+08:00",
+    "note": "time begins at first preparation; host uses +08:00"
+  },
+  "dataset": {
+    "dataset": "lphuang33/EG-VQA",
+    "revision": "24379571655174cc80e9c1a1603160e6783c6252",
+    "annotation_sha256": {
+      "train": "f4992b0d3e239dd3e809b2feecb7bef41f1507153a358c40e9e271ae010622e6"
+    },
+    "selection": {
+      "split": "train",
+      "num_videos": 24,
+      "questions_per_video": 4,
+      "dev_videos": 6,
+      "train_videos": 0,
+      "train_questions_per_video": 5,
+      "seed": 17,
+      "min_evidence": 2,
+      "max_evidence": 4,
+      "min_gap_seconds": 0,
+      "min_duration": 60,
+      "max_duration": 600,
+      "question_types": [
+        "temporal",
+        "descriptive"
+      ],
+      "sources": [
+        "ActivityNet Captions",
+        "HiREST",
+        "YouCook2"
+      ]
+    }
+  },
+  "dataset_manifest_sha256": "43c1f584d61249afbfe470be024494d09b39d069218f9e1d343da1bc4bc9a957",
+  "model": {
+    "backend_version": "qwen3vl-pilot-v2-explicit-citation-ids-answer128",
+    "model_path": "/root/autodl-tmp/models/Qwen3-VL-8B-Instruct",
+    "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+    "model_type": "Instruct",
+    "revision": null,
+    "revision_source": "local asset; complete weight and tokenizer SHA256 manifest",
+    "files_sha256": {
+      "chat_template.json": "5c72a170d2a4a1a3bc5adad2e689ae28138a9700e5b8c96c0266331e86c0acce",
+      "config.json": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+      "generation_config.json": "8469742d1fce0de951c8909b26a2c0c0d8490837ce476efb114da9e0cefc4d44",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "model-00001-of-00004.safetensors": "d5d0aef0eb170fc7453a296c43c0849a56f510555d3588e4fd662bb35490aefa",
+      "model-00002-of-00004.safetensors": "8be88fb5501e4d5719a6d4cc212e6a13480330e74f3e8c77daa1a68f199106b5",
+      "model-00003-of-00004.safetensors": "83de00eafe6e0d57ccd009dbcf71c9974d74df2f016c27afb7e95aafd16b2192",
+      "model-00004-of-00004.safetensors": "0a88b98e9f96270973f567e6a2c103ede6ccdf915ca3075e21c755604d0377a5",
+      "model.safetensors.index.json": "520b2e05079402e9468a8701d03d1154d14b2599593afb6effa7fb60c1bff070",
+      "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "tokenizer.json": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+      "tokenizer_config.json": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+      "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "precision": "bfloat16",
+    "quantization": null,
+    "attention_implementation": "sdpa",
+    "batch_size": 1,
+    "seed": 17,
+    "generation_config": {
+      "max_length": 20,
+      "max_new_tokens": null,
+      "min_length": 0,
+      "min_new_tokens": null,
+      "early_stopping": false,
+      "max_time": null,
+      "stop_strings": null,
+      "do_sample": false,
+      "num_beams": 1,
+      "use_cache": true,
+      "cache_implementation": null,
+      "cache_config": null,
+      "return_legacy_cache": null,
+      "prefill_chunk_size": null,
+      "temperature": null,
+      "top_k": null,
+      "top_p": null,
+      "min_p": null,
+      "typical_p": 1.0,
+      "epsilon_cutoff": 0.0,
+      "eta_cutoff": 0.0,
+      "repetition_penalty": 1.0,
+      "encoder_repetition_penalty": 1.0,
+      "length_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "bad_words_ids": null,
+      "renormalize_logits": false,
+      "forced_bos_token_id": null,
+      "forced_eos_token_id": null,
+      "remove_invalid_values": false,
+      "exponential_decay_length_penalty": null,
+      "suppress_tokens": null,
+      "begin_suppress_tokens": null,
+      "sequence_bias": null,
+      "token_healing": false,
+      "guidance_scale": null,
+      "watermarking_config": null,
+      "num_return_sequences": 1,
+      "output_attentions": false,
+      "output_hidden_states": false,
+      "output_scores": false,
+      "output_logits": null,
+      "return_dict_in_generate": false,
+      "pad_token_id": 151643,
+      "bos_token_id": 151643,
+      "eos_token_id": [
+        151645,
+        151643
+      ],
+      "encoder_no_repeat_ngram_size": 0,
+      "decoder_start_token_id": null,
+      "is_assistant": false,
+      "num_assistant_tokens": 20,
+      "num_assistant_tokens_schedule": "constant",
+      "assistant_confidence_threshold": 0.4,
+      "prompt_lookup_num_tokens": null,
+      "max_matching_ngram_size": null,
+      "assistant_early_exit": null,
+      "assistant_lookbehind": 10,
+      "target_lookbehind": 10,
+      "disable_compile": false,
+      "low_memory": null,
+      "penalty_alpha": null,
+      "dola_layers": null,
+      "diversity_penalty": 0.0,
+      "num_beam_groups": 1,
+      "constraints": null,
+      "force_words_ids": null,
+      "_from_model_config": false,
+      "transformers_version": "4.57.6"
+    },
+    "role_max_new_tokens": {
+      "answer": 128,
+      "control": 96,
+      "judge": 256
+    },
+    "max_context_tokens": 8192,
+    "max_images": 24,
+    "processor_class": "Qwen3VLProcessor",
+    "processor_image_config": {
+      "_processor_class": "Qwen3VLProcessor",
+      "size": {
+        "longest_edge": 16777216,
+        "shortest_edge": 65536
+      },
+      "min_pixels": null,
+      "max_pixels": null,
+      "patch_size": 16,
+      "temporal_patch_size": 2,
+      "merge_size": 2,
+      "image_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_processor_type": "Qwen2VLImageProcessorFast",
+      "crop_size": null,
+      "pad_size": null,
+      "do_resize": true,
+      "default_to_square": true,
+      "resample": 3,
+      "do_center_crop": null,
+      "do_rescale": true,
+      "rescale_factor": 0.00392156862745098,
+      "do_normalize": true,
+      "do_pad": null,
+      "do_convert_rgb": true,
+      "return_tensors": null,
+      "data_format": "channels_first",
+      "input_data_format": null,
+      "device": null,
+      "disable_grouping": null
+    },
+    "processor_image_overrides": {
+      "size": {
+        "shortest_edge": 50176,
+        "longest_edge": 50176
+      }
+    },
+    "chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0].role == 'system' %}\n        {%- if messages[0].content is string %}\n            {{- messages[0].content }}\n        {%- else %}\n            {%- for content in messages[0].content %}\n                {%- if 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '\\n\\n' }}\n    {%- endif %}\n    {{- \"# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {{- '<|im_start|>system\\n' }}\n        {%- if messages[0].content is string %}\n            {{- messages[0].content }}\n        {%- else %}\n            {%- for content in messages[0].content %}\n                {%- if 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- for message in messages %}\n    {%- if message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' }}\n        {%- if message.content is string %}\n            {{- message.content }}\n        {%- else %}\n            {%- for content in message.content %}\n                {%- if content.type == 'image' or 'image' in content or 'image_url' in content %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                    {%- if add_vision_id %}Picture {{ image_count.value }}: {% endif -%}\n                    <|vision_start|><|image_pad|><|vision_end|>\n                {%- elif content.type == 'video' or 'video' in content %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                    {%- if add_vision_id %}Video {{ video_count.value }}: {% endif -%}\n                    <|vision_start|><|video_pad|><|vision_end|>\n                {%- elif 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role + '\\n' }}\n        {%- if message.content is string %}\n            {{- message.content }}\n        {%- else %}\n            {%- for content_item in message.content %}\n                {%- if 'text' in content_item %}\n                    {{- content_item.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {%- if message.tool_calls %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if (loop.first and message.content) or (not loop.first) %}\n                    {{- '\\n' }}\n                {%- endif %}\n                {%- if tool_call.function %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {{- '<tool_call>\\n{\"name\": \"' }}\n                {{- tool_call.name }}\n                {{- '\", \"arguments\": ' }}\n                {%- if tool_call.arguments is string %}\n                    {{- tool_call.arguments }}\n                {%- else %}\n                    {{- tool_call.arguments | tojson }}\n                {%- endif %}\n                {{- '}\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.first or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {%- if message.content is string %}\n            {{- message.content }}\n        {%- else %}\n            {%- for content in message.content %}\n                {%- if content.type == 'image' or 'image' in content or 'image_url' in content %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                    {%- if add_vision_id %}Picture {{ image_count.value }}: {% endif -%}\n                    <|vision_start|><|image_pad|><|vision_end|>\n                {%- elif content.type == 'video' or 'video' in content %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                    {%- if add_vision_id %}Video {{ video_count.value }}: {% endif -%}\n                    <|vision_start|><|video_pad|><|vision_end|>\n                {%- elif 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n",
+    "system_prompt": null,
+    "answer_citation_manifest": {
+      "rule": "append exact visible image IDs after the answer-role user text",
+      "prefix": "Allowed citation IDs: ",
+      "deduplication": "preserve first appearance",
+      "no_images": [],
+      "source": "image_records[*].visible_label.id",
+      "roles": [
+        "answer"
+      ]
+    },
+    "letterbox": {
+      "size": [
+        224,
+        224
+      ],
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "interpolation": "bicubic",
+      "exif_transpose": true
+    },
+    "dependencies": {
+      "torch": "2.12.1+cu130",
+      "torchvision": "0.27.1+cu130",
+      "transformers": "4.57.6",
+      "accelerate": "1.14.0",
+      "Pillow": "12.2.0",
+      "numpy": "2.4.6",
+      "safetensors": "0.8.0",
+      "av": "18.1.0"
+    },
+    "cuda_memory_fraction": 0.9,
+    "torch_deterministic_algorithms": true,
+    "allow_tf32": false,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "0",
+      "OPENBLAS_NUM_THREADS": "4",
+      "TOKENIZERS_PARALLELISM": null
+    },
+    "torch_num_threads": 4,
+    "torch_num_interop_threads": 104,
+    "identity_hash": "1bed1e22aa0aab23791bf662aba9358d4cc5819d44ef6d6e8dce718823c377e9"
+  },
+  "prompts": {
+    "prompts": {
+      "ANSWER": "Answer the question using the supplied video frames and their actual timestamps. Treat the images as observations from one video. Give a direct answer of at most 30 words and cite only the IDs of input groups that support it. Never invent IDs. When there are no images, citations must be an empty list []. Use at most six distinct input IDs. If the observations do not determine the answer, say that the available evidence is insufficient. Do not describe your reasoning. Return only a JSON object with keys \"answer\" (string) and \"citations\" (list of input ID strings).\nQuestion: {question}",
+      "CONTROL_R1": "You are selecting more observations to answer a question about a video. The supplied images are the first three retrieved groups, with actual timestamps. Write one concise search query that refines the original question using these observations. Do not answer the question. Return only JSON with key \"queries\", containing exactly one short string.\nQuestion: {question}",
+      "CONTROL_R2": "You are selecting more observations to answer a question about a video. The supplied images are the first three retrieved groups, with actual timestamps. Identify up to two missing facts or temporal relations needed to answer. Write one concise search query per missing fact or relation. Do not answer the question. Return only JSON with key \"queries\", containing one or two short strings.\nQuestion: {question}",
+      "JUDGE": "Evaluate each anonymous prediction against its question and reference answer. Use the same strict rule for every prediction: \"correct\" only if the conclusion is semantically correct, with no meaning-changing omission or contradiction; otherwise \"incorrect\". Use \"uncertain\" only when reference ambiguity prevents a reliable decision. A statement that evidence is insufficient does not answer a determinate reference question. Extra claims that contradict the reference make an answer incorrect. You cannot inspect the video. Return only a JSON object with a \"results\" array. For each supplied id, return keys \"id\", \"verdict\" (\"correct\", \"incorrect\", or \"uncertain\"), and \"reason\" (at most eight words).\nItems:\n{items}"
+    },
+    "sha256": "28fc8bf3397d4be64e2be879864965ed070dc0eb7dfcae085493ed6d5661c0da"
+  },
+  "clip": {
+    "model_id": "openai/clip-vit-base-patch32",
+    "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "endpoint": "https://hf-mirror.com",
+    "weights": "pytorch_model.bin"
+  },
+  "budget_admission": {
+    "answer_requests_upper": 483,
+    "control_requests_upper": 96,
+    "judge_requests_upper": 121,
+    "inference_p75_seconds": 1866.5023993859068,
+    "inference_with_20pct_margin_seconds": 2239.802879263088,
+    "remaining_implementation_encoding_seconds": 1800,
+    "reserved_audit_report_seconds": 7200,
+    "physical_requests_upper_including_dev": 831,
+    "basis": "D0 measured p75; no cache savings assumed; all original 50 and reserved 81 dev requests counted",
+    "total_remaining_seconds": 11239.802879263088,
+    "time_admitted": true,
+    "calls_admitted": true
+  },
+  "final_parser_validation": {
+    "n_answers": 32,
+    "n_parse_failures": 0,
+    "n_illegal_citations": 0,
+    "n_abstentions": 6,
+    "model_errors": 0,
+    "truncated_outputs": 0,
+    "empty_answer_rule": "valid JSON abstention is unsuccessful, not an absent logical condition",
+    "passed": true
+  },
+  "dev_recheck": {
+    "completed_at_utc": "2026-09-06T18:44:19Z",
+    "status": "COMPLETE",
+    "new_physical_requests": 41,
+    "ledger": {
+      "logical_calls": 131,
+      "physical_calls": 131,
+      "core_physical_calls": 131,
+      "e3_physical_calls": 0,
+      "logical_tokens": 165313,
+      "physical_tokens": 165313,
+      "judge_logical_tokens": 12594,
+      "budget_violations": 0,
+      "pending_requests": 0
+    },
+    "core_reserve_used_by_this_recheck": 41,
+    "original_d0_preserved": true,
+    "same_8_dev_questions_and_packages": true,
+    "model_errors": 0,
+    "truncated_outputs": 0,
+    "answer_parse_failures": 6,
+    "answer_invalid_or_illegal_citations": 6,
+    "judge_item_parse_failures": 0,
+    "control_normalization_new_calls": 0,
+    "control_parse_failures_after_normalization": 0,
+    "profile": {
+      "answer_with_images": {
+        "latency_s": {
+          "n": 24,
+          "p50": 2.3880936524365097,
+          "p75": 2.577146930503659,
+          "p95": 2.7219628783641383
+        },
+        "generation_s": {
+          "n": 24,
+          "p50": 2.380851852474734,
+          "p75": 2.562385928002186,
+          "p95": 2.710939875105396
+        },
+        "peak_cuda_reserved_bytes": 20401094656
+      },
+      "answer_blind": {
+        "latency_s": {
+          "n": 8,
+          "p50": 0.40293066087178886,
+          "p75": 0.47233302937820554,
+          "p95": 0.7666621772572397
+        },
+        "generation_s": {
+          "n": 8,
+          "p50": 0.40195212909020483,
+          "p75": 0.4714608886279166,
+          "p95": 0.7656590918777509
+        },
+        "peak_cuda_reserved_bytes": 20401094656
+      },
+      "judge": {
+        "latency_s": {
+          "n": 8,
+          "p50": 3.7444642761256546,
+          "p75": 3.8413170932326466,
+          "p95": 4.117027136590331
+        },
+        "generation_s": {
+          "n": 8,
+          "p50": 3.743215376511216,
+          "p75": 3.8402006487594917,
+          "p95": 4.116028618207201
+        },
+        "peak_cuda_reserved_bytes": 20401094656
+      },
+      "boundary": {
+        "latency_s": {
+          "n": 1,
+          "p50": 6.5052753570489585,
+          "p75": 6.5052753570489585,
+          "p95": 6.5052753570489585
+        },
+        "generation_s": {
+          "n": 1,
+          "p50": 1.8558645648881793,
+          "p75": 1.8558645648881793,
+          "p95": 1.8558645648881793
+        },
+        "peak_cuda_reserved_bytes": 20331888640
+      }
+    },
+    "local_judge_pilot_scores_unvalidated": {
+      "Full": {
+        "n": 8,
+        "correct": 3,
+        "accuracy_uncertain_as_zero": 0.375,
+        "original_d0_correct": 3
+      },
+      "Blind": {
+        "n": 8,
+        "correct": 1,
+        "accuracy_uncertain_as_zero": 0.125,
+        "original_d0_correct": 0
+      },
+      "Key-1": {
+        "n": 8,
+        "correct": 1,
+        "accuracy_uncertain_as_zero": 0.125,
+        "original_d0_correct": 1
+      },
+      "Irrel-1": {
+        "n": 8,
+        "correct": 2,
+        "accuracy_uncertain_as_zero": 0.25,
+        "original_d0_correct": 3
+      }
+    },
+    "human_judge_calibration": {
+      "status": "NOT_RUN",
+      "required_agreement": "at least 28/32",
+      "observed_agreement": null
+    },
+    "gpu_unloaded": true,
+    "prompt_identity": {
+      "prompts": {
+        "ANSWER": "Answer the question using the supplied video frames and their actual timestamps. Treat the images as observations from one video. Give a direct answer of at most 30 words and cite only the IDs of input groups that support it. Never invent IDs. When there are no images, citations must be an empty list []. Use at most six distinct input IDs. If the observations do not determine the answer, say that the available evidence is insufficient. Do not describe your reasoning. Return only a JSON object with keys \"answer\" (string) and \"citations\" (list of input ID strings).\nQuestion: {question}",
+        "CONTROL_R1": "You are selecting more observations to answer a question about a video. The supplied images are the first three retrieved groups, with actual timestamps. Write one concise search query that refines the original question using these observations. Do not answer the question. Return only JSON with key \"queries\", containing exactly one short string.\nQuestion: {question}",
+        "CONTROL_R2": "You are selecting more observations to answer a question about a video. The supplied images are the first three retrieved groups, with actual timestamps. Identify up to two missing facts or temporal relations needed to answer. Write one concise search query per missing fact or relation. Do not answer the question. Return only JSON with key \"queries\", containing one or two short strings.\nQuestion: {question}",
+        "JUDGE": "Evaluate each anonymous prediction against its question and reference answer. Use the same strict rule for every prediction: \"correct\" only if the conclusion is semantically correct, with no meaning-changing omission or contradiction; otherwise \"incorrect\". Use \"uncertain\" only when reference ambiguity prevents a reliable decision. A statement that evidence is insufficient does not answer a determinate reference question. Extra claims that contradict the reference make an answer incorrect. You cannot inspect the video. Return only a JSON object with a \"results\" array. For each supplied id, return keys \"id\", \"verdict\" (\"correct\", \"incorrect\", or \"uncertain\"), and \"reason\" (at most eight words).\nItems:\n{items}"
+      },
+      "sha256": "28fc8bf3397d4be64e2be879864965ed070dc0eb7dfcae085493ed6d5661c0da"
+    },
+    "d0_gate_passed": false,
+    "gate_note": "Format-only dev validation does not replace human judge calibration or other D0 scientific gates.",
+    "format_validation_passed": false
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 595.71.05, 97887 MiB, 0 MiB",
+  "K": 64,
+  "k_decision": {
+    "n_dev_questions": 24,
+    "stored_ann_rate": 1.0,
+    "r0_access_ann_rate": 0.2916666666666667,
+    "rule": "switch K64 to K32 only if BOTH dev rates >0.90",
+    "selected_k": 64
+  },
+  "limits": {
+    "single_request_tokens": 8192,
+    "single_request_images": 24,
+    "e2_method_tokens": 12288,
+    "core_physical_calls": 1400,
+    "total_physical_calls": 1800,
+    "R1_R2_calls": 2
+  },
+  "seeds": {
+    "writer": 17,
+    "selection": 17,
+    "bootstrap": 43,
+    "judge_order": 43
+  },
+  "bootstrap_resamples": 2000,
+  "source_sha256": {
+    "src/egvqa_pilot/analysis.py": "2ab6cd8e001f89d1f440da9268e4f98194935287b51f19bf490171015799e903",
+    "src/egvqa_pilot/data.py": "ce2671f3c0fa36e945b8da002250a504ac00ff5babf444d9943b9574b8e7dcdd",
+    "src/egvqa_pilot/encoding.py": "3f8cbf8d50abc6ea223099a63084183d2647b692f5640c076f0cac5509b498f9",
+    "src/egvqa_pilot/isolation.py": "ead27e9290b740f00ec6d00a588f76bd72d7383a0a5e57ca1ea18bb0f4095389",
+    "src/egvqa_pilot/model.py": "db06fa0a0229a1627cc02d250aeb082e50c82194b2a527801106db3e7064c381",
+    "src/egvqa_pilot/prompts.py": "557011b793e6ae3841bd2560a95e2e38811cc222df3cf515b38c706cf830d73a",
+    "src/egvqa_pilot/protocol.py": "eb084e07063a4b688e0a59c205864eb7a420369cbefecb019866a72a49245a13",
+    "src/egvqa_pilot/reader.py": "ace204d2e79b235a5ec50944c5c067ec943c6c1fa5d8bd6ab6c3e939232f49d2",
+    "src/egvqa_pilot/runner.py": "0f9e45c7f166b810990f8d083b2f2be223267d1de7d352b27bd25dfd5efe2dd8",
+    "src/egvqa_subset.py": "33c23cf40fa486eaa47b2ed4c839ba9382ba150dc34b0dc68aae633b90388f69"
+  },
+  "git_base": "2dac5182717cc1023ff5070c1bdcd328fbbe099f",
+  "snapshot_hashes": {
+    "PtbGXfb6B1I": "8a8200c9d35cd8edf34d61139cbd9758fdb9aa7c619d86f43a21bd003160aad4",
+    "v_0zjA3KPnLK8": "78e6e6161938a085ff14e97cc7dc0b7d0ba1056d25ed772dc555922ee2494ade",
+    "v_NGk3v4sKqdg": "869e7314c4f89a7067aa3afb3baf406671a50b968c73c656235719687750036c",
+    "v_Ktun1-2Y540": "df51a2ab676ea8b91ab7777ed01c4f16fab455b906195bf9b0fbdcbf1b8ed96f",
+    "v_D5xp0LuEcKw": "3716ae70f7eeb3be8a8b1422cf7828882acf5fcde218f63cf0ae594cf6f89465",
+    "v_-UWE4jXuLoo": "71f7e9fcbfb7f8a79c3fbf17e7701c6bcb55d9b624bea37831b124d2ad2baee7",
+    "v_bJ695Pp7Vng": "9c7528f7e30899c7e313a0232a2cb315042793bf488966f82274acbfe7223a52",
+    "l2OTMq4aluc": "e01a211bb4ee005a8ca4697f1d7dd75813a3c611239fcf9d5689f99774d6a3e0",
+    "Lz3bNy9YQ80": "f88d36aaeeb898d7ecf6805ea5f970998bb289342197e06866ce3a059a753111",
+    "tKsGWxiWWCg": "7872147c7029a0357041cdc3c61f784e1eb391edd199e5e70a899460a9d548a6",
+    "J3Kg76JODsk": "db18f21abe32ad2f95f0d14c85c4d55a0457adf39e2750cc85d866765178caa7",
+    "DBgap0YANhs": "395aeb5ab833f29482288f79b60f7587f1e32ad521c5cb577c38892394af899b"
+  },
+  "e3_status": "NOT_RUN",
+  "e3_reason": "Human judge calibration and core scientific audits must pass before E3 can enter.",
+  "human_judge_calibration": "NOT_RUN_pending_external_human_review",
+  "scientific_status": "PROVISIONAL_UNCALIBRATED_PILOT",
+  "registered_deviations": [
+    "D0 human judge calibration is pending. Before any eval prediction, choose the preregistered 12-video/48-question smoke size; this downgrade is due to the missing human gate, not insufficient GPU throughput. It cannot pass standard-scale scientific acceptance.",
+    "The original 50 profiling calls are preserved. Use 81 of the 100 core reserve calls for two 40-call format checks and one updated max-context check. Final answer cap is 128, control96, judge256; include the exact allowed citation IDs (empty for Blind) in each answer request. Normalize legal single-string controller output to a one-query list using CPU; no extra controller model calls. Before eval, parse valid JSON empty answers as explicit abstentions scored zero, retaining the pair; malformed JSON remains a failure."
+  ],
+  "execution_note": "Run the frozen paired conditions to completion; retain all failures and all planned questions. Do not tune against eval answers."
+}
