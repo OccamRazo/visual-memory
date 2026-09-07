@@ -1,0 +1,144 @@
+{
+  "analysis_kind": "post_hoc_diagnostic_not_preregistered_effect_test",
+  "n_questions": 48,
+  "question_types": {
+    "descriptive": 24,
+    "temporal": 24
+  },
+  "E1_gold_group_duration_s": {
+    "n": 115,
+    "min": 5.0,
+    "median": 33.0,
+    "mean": 45.21921739130435,
+    "max": 177.0
+  },
+  "E1_gold_group_max_frame_gap_s": {
+    "n": 115,
+    "min": 1.6683333333333366,
+    "median": 11.011000000000003,
+    "mean": 15.066642898550729,
+    "max": 58.992266666666694
+  },
+  "E1_gold_groups_over_30s": 62,
+  "E1_gold_groups_over_60s": 32,
+  "E1_visual_category_matching_performed": false,
+  "type_subgroups": [
+    {
+      "type": "descriptive",
+      "n_valid_E1": 21,
+      "n_Full_correct": 6,
+      "mean_D": 0.023809523809523815,
+      "E2_correct": {
+        "R0": 5,
+        "R1": 10,
+        "R2": 7,
+        "R*": 6
+      }
+    },
+    {
+      "type": "temporal",
+      "n_valid_E1": 23,
+      "n_Full_correct": 5,
+      "mean_D": -0.014492753623188404,
+      "E2_correct": {
+        "R0": 6,
+        "R1": 6,
+        "R2": 3,
+        "R*": 5
+      }
+    }
+  ],
+  "R1_R2_packet_overlap_counts": {
+    "5": 10,
+    "4": 23,
+    "3": 15
+  },
+  "control_query_words": {
+    "R1": {
+      "n": 48,
+      "min": 3,
+      "median": 6.0,
+      "mean": 7.104166666666667,
+      "max": 14
+    },
+    "R2": {
+      "n": 95,
+      "min": 7,
+      "median": 12,
+      "mean": 12.105263157894736,
+      "max": 19
+    }
+  },
+  "R2_query_counts": {
+    "2": 47,
+    "1": 1
+  },
+  "R2_coverage_contributing_extra_item_counts": {
+    "1": 22,
+    "2": 26
+  },
+  "R2_two_gap_query_cosine": {
+    "n": 47,
+    "min": 0.7188144326210022,
+    "median": 0.94440758228302,
+    "mean": 0.9318432541603737,
+    "max": 0.9968024492263794
+  },
+  "retrieval_redundancy": {
+    "R1": {
+      "mean_extra_pair_cosine": {
+        "n": 48,
+        "min": 0.6563470959663391,
+        "median": 0.9273117383321126,
+        "mean": 0.9065503664314747,
+        "max": 0.9946166276931763
+      },
+      "mean_extra_max_initial_cosine": {
+        "n": 48,
+        "min": 0.7100100517272949,
+        "median": 0.9331452548503876,
+        "mean": 0.9207337386906147,
+        "max": 0.9804559350013733
+      }
+    },
+    "R2": {
+      "mean_extra_pair_cosine": {
+        "n": 48,
+        "min": 0.5815139214197794,
+        "median": 0.877705881992976,
+        "mean": 0.8515803039901786,
+        "max": 0.9891239404678345
+      },
+      "mean_extra_max_initial_cosine": {
+        "n": 48,
+        "min": 0.7411019802093506,
+        "median": 0.9245436191558838,
+        "mean": 0.9102122796078523,
+        "max": 0.9861676096916199
+      }
+    }
+  },
+  "Rstar_first_selected_frame_relative_position_in_covered_group": {
+    "n": 122,
+    "min": 0.0,
+    "median": 0.015460689484126964,
+    "mean": 0.09948498183759728,
+    "max": 0.9372071227741331
+  },
+  "padding_images_in_final_packets": {
+    "R0": 2,
+    "R1": 2,
+    "R2": 2,
+    "R*": 0
+  },
+  "retrieval_only_alpha0_ablation": {
+    "new_VLM_requests": 0,
+    "n_alpha02_recorded_match": 48,
+    "n_extra_sets_changed": 42,
+    "recorded_R2_n_access": 16,
+    "alpha0_n_access": 19,
+    "n_coverage_gains": 4,
+    "n_coverage_losses": 1,
+    "limitation": "Only retrieval/annotation coverage recomputed; no new answer score and no claim of causal answer benefit."
+  }
+}

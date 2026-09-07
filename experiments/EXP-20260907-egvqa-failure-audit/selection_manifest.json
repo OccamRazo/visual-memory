@@ -1,0 +1,26 @@
+{
+  "selected_before_new_image_review": true,
+  "selection_seed": 43,
+  "selection_rule": "strata in declared order; first seed43 SHA question not previously selected; mechanically valid E1 only",
+  "selection_uses_original_outcomes": true,
+  "scope": "four diagnostic cases, all E1/E2 final input conditions",
+  "not_population_estimate": true,
+  "cases": [
+    {
+      "stratum": "same_answer_scoring_disagreement",
+      "question_id": "v_0zjA3KPnLK8_q02"
+    },
+    {
+      "stratum": "other_R2_loss",
+      "question_id": "l2OTMq4aluc_q06"
+    },
+    {
+      "stratum": "R2_gain",
+      "question_id": "v_NGk3v4sKqdg_q04"
+    },
+    {
+      "stratum": "E1_Full_incorrect",
+      "question_id": "PtbGXfb6B1I_q01"
+    }
+  ]
+}

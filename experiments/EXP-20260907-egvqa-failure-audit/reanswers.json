@@ -1,0 +1,2206 @@
+{
+  "scope": "four post-hoc selected questions, all frozen E1/E2 final packets",
+  "not_same_model_or_token_budget": true,
+  "human_calibration": "NOT_RUN",
+  "records": [
+    {
+      "question_id": "v_0zjA3KPnLK8_q02",
+      "video_id": "v_0zjA3KPnLK8",
+      "phase": "E1",
+      "condition": "Blind",
+      "packet_id": "p3c211ea12515",
+      "packet_content_hash": "3c211ea12515a8bc82eabaeb4683509988420d1171a5e2944761a4d9ef2266db",
+      "original_result_id": "E1:v_0zjA3KPnLK8_q02:Blind",
+      "original_verdict": "incorrect",
+      "original_answer": "",
+      "reference": "The main activity is wrestling, with two men throwing each other down in front of a crowd.",
+      "question": "What is the main activity taking place in the scene with the two men and the crowd?",
+      "frame_payload_verified": true,
+      "new_answer": "The available evidence is insufficient to determine the main activity.",
+      "new_citations": [],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a17e5279d74632c7f",
+      "new_judge_item_id": "a82aea9f8b46cc491",
+      "old_text_reviews": {
+        "A": {
+          "verdict": "incorrect",
+          "reason": "Explicit empty answer abstention"
+        },
+        "B": {
+          "verdict": "incorrect",
+          "reason": "Explicit empty answer abstention"
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a82aea9f8b46cc491",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate question."
+        },
+        "B": {
+          "id": "a82aea9f8b46cc491",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate reference."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q02",
+      "video_id": "v_0zjA3KPnLK8",
+      "phase": "E1",
+      "condition": "Irrel-2",
+      "packet_id": "p35fcfa1eb302",
+      "packet_content_hash": "35fcfa1eb3024891e7fe1f03c4a2ee48295584c894b5bd359d8ccc899b93adda",
+      "original_result_id": "E1:v_0zjA3KPnLK8_q02:Irrel-2",
+      "original_verdict": "correct",
+      "original_answer": "Sumo wrestling match",
+      "reference": "The main activity is wrestling, with two men throwing each other down in front of a crowd.",
+      "question": "What is the main activity taking place in the scene with the two men and the crowd?",
+      "frame_payload_verified": true,
+      "new_answer": "Two men are competing in a sumo wrestling match while a crowd watches.",
+      "new_citations": [
+        "g3a7028df0f0f",
+        "gec53fb17d683"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a18b28590611a0873",
+      "new_judge_item_id": "aa092c90b3499a431",
+      "old_text_reviews": {
+        "A": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "aa092c90b3499a431",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "aa092c90b3499a431",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q02",
+      "video_id": "v_0zjA3KPnLK8",
+      "phase": "E1",
+      "condition": "Irrel-1",
+      "packet_id": "pc9ec061f61d3",
+      "packet_content_hash": "c9ec061f61d3df78b9a060acad1c2fbbaf2bb433395c9e5439c89beac2938c62",
+      "original_result_id": "E1:v_0zjA3KPnLK8_q02:Irrel-1",
+      "original_verdict": "incorrect",
+      "original_answer": "Sumo wrestling match",
+      "reference": "The main activity is wrestling, with two men throwing each other down in front of a crowd.",
+      "question": "What is the main activity taking place in the scene with the two men and the crowd?",
+      "frame_payload_verified": true,
+      "new_answer": "Two men are competing in a sumo wrestling match while a crowd watches.",
+      "new_citations": [
+        "g3a7028df0f0f",
+        "g5127ddfc7668"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a18b28590611a0873",
+      "new_judge_item_id": "aa092c90b3499a431",
+      "old_text_reviews": {
+        "A": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "aa092c90b3499a431",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "aa092c90b3499a431",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q02",
+      "video_id": "v_0zjA3KPnLK8",
+      "phase": "E1",
+      "condition": "Key-2",
+      "packet_id": "pecd78ad29c45",
+      "packet_content_hash": "ecd78ad29c45b72c63816e1c4e58a24d889a9835356659e80a29c066ad2b3756",
+      "original_result_id": "E1:v_0zjA3KPnLK8_q02:Key-2",
+      "original_verdict": "incorrect",
+      "original_answer": "Sumo wrestling match",
+      "reference": "The main activity is wrestling, with two men throwing each other down in front of a crowd.",
+      "question": "What is the main activity taking place in the scene with the two men and the crowd?",
+      "frame_payload_verified": true,
+      "new_answer": "Two men are competing in a sumo wrestling match while a crowd watches.",
+      "new_citations": [
+        "g3a7028df0f0f",
+        "g5127ddfc7668"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a18b28590611a0873",
+      "new_judge_item_id": "aa092c90b3499a431",
+      "old_text_reviews": {
+        "A": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "aa092c90b3499a431",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "aa092c90b3499a431",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q02",
+      "video_id": "v_0zjA3KPnLK8",
+      "phase": "E1",
+      "condition": "Key-1",
+      "packet_id": "p98fcb4c16edb",
+      "packet_content_hash": "98fcb4c16edb80121dddd7e99afa73458ee3962f250663e8578fab07b4dcbd7f",
+      "original_result_id": "E1:v_0zjA3KPnLK8_q02:Key-1",
+      "original_verdict": "correct",
+      "original_answer": "Sumo wrestling match",
+      "reference": "The main activity is wrestling, with two men throwing each other down in front of a crowd.",
+      "question": "What is the main activity taking place in the scene with the two men and the crowd?",
+      "frame_payload_verified": true,
+      "new_answer": "The two men are competing in a sumo wrestling match while a crowd watches.",
+      "new_citations": [
+        "g5127ddfc7668",
+        "gec53fb17d683"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a18b28590611a0873",
+      "new_judge_item_id": "a295790b123dd0ef7",
+      "old_text_reviews": {
+        "A": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a295790b123dd0ef7",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "a295790b123dd0ef7",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q02",
+      "video_id": "v_0zjA3KPnLK8",
+      "phase": "E1",
+      "condition": "Full",
+      "packet_id": "p26ced87f6f1e",
+      "packet_content_hash": "26ced87f6f1ebeb56843bc187bf3d0340286c5f5b97378f4d2b84cb518036e8f",
+      "original_result_id": "E1:v_0zjA3KPnLK8_q02:Full",
+      "original_verdict": "correct",
+      "original_answer": "Sumo wrestling match",
+      "reference": "The main activity is wrestling, with two men throwing each other down in front of a crowd.",
+      "question": "What is the main activity taking place in the scene with the two men and the crowd?",
+      "frame_payload_verified": true,
+      "new_answer": "Two men are competing in a sumo wrestling match while a crowd watches.",
+      "new_citations": [
+        "g3a7028df0f0f",
+        "g5127ddfc7668",
+        "gec53fb17d683"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a18b28590611a0873",
+      "new_judge_item_id": "aa092c90b3499a431",
+      "old_text_reviews": {
+        "A": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "aa092c90b3499a431",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "aa092c90b3499a431",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q02",
+      "video_id": "v_0zjA3KPnLK8",
+      "phase": "E2",
+      "condition": "R0",
+      "packet_id": "p341d390c2ac0",
+      "packet_content_hash": "341d390c2ac06b114eb90b980c732192298a6dc660b0f74940ef2d7256cf22ed",
+      "original_result_id": "E2:v_0zjA3KPnLK8_q02:R0",
+      "original_verdict": "correct",
+      "original_answer": "Sumo wrestling match",
+      "reference": "The main activity is wrestling, with two men throwing each other down in front of a crowd.",
+      "question": "What is the main activity taking place in the scene with the two men and the crowd?",
+      "frame_payload_verified": true,
+      "new_answer": "The two men are participating in a sumo wrestling match in front of a crowd of spectators.",
+      "new_citations": [
+        "c000056",
+        "c000059"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a18b28590611a0873",
+      "new_judge_item_id": "a1e98c066b862036c",
+      "old_text_reviews": {
+        "A": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a1e98c066b862036c",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "a1e98c066b862036c",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q02",
+      "video_id": "v_0zjA3KPnLK8",
+      "phase": "E2",
+      "condition": "R1",
+      "packet_id": "p3974fe32f756",
+      "packet_content_hash": "3974fe32f756777cc5a194b8561120c91e37ebf928637ea0a1da77b2e52aeb79",
+      "original_result_id": "E2:v_0zjA3KPnLK8_q02:R1",
+      "original_verdict": "correct",
+      "original_answer": "Sumo wrestling match",
+      "reference": "The main activity is wrestling, with two men throwing each other down in front of a crowd.",
+      "question": "What is the main activity taking place in the scene with the two men and the crowd?",
+      "frame_payload_verified": true,
+      "new_answer": "Two men are competing in a sumo wrestling match while a crowd watches.",
+      "new_citations": [
+        "c000054",
+        "c000076"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a18b28590611a0873",
+      "new_judge_item_id": "aa092c90b3499a431",
+      "old_text_reviews": {
+        "A": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "aa092c90b3499a431",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "aa092c90b3499a431",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q02",
+      "video_id": "v_0zjA3KPnLK8",
+      "phase": "E2",
+      "condition": "R2",
+      "packet_id": "p341d390c2ac0",
+      "packet_content_hash": "341d390c2ac06b114eb90b980c732192298a6dc660b0f74940ef2d7256cf22ed",
+      "original_result_id": "E2:v_0zjA3KPnLK8_q02:R2",
+      "original_verdict": "incorrect",
+      "original_answer": "Sumo wrestling match",
+      "reference": "The main activity is wrestling, with two men throwing each other down in front of a crowd.",
+      "question": "What is the main activity taking place in the scene with the two men and the crowd?",
+      "frame_payload_verified": true,
+      "new_answer": "The two men are participating in a sumo wrestling match in front of a crowd of spectators.",
+      "new_citations": [
+        "c000056",
+        "c000059"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a18b28590611a0873",
+      "new_judge_item_id": "a1e98c066b862036c",
+      "old_text_reviews": {
+        "A": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a1e98c066b862036c",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "a1e98c066b862036c",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_0zjA3KPnLK8_q02",
+      "video_id": "v_0zjA3KPnLK8",
+      "phase": "E2",
+      "condition": "R*",
+      "packet_id": "pd849c443684d",
+      "packet_content_hash": "d849c443684dc1f8cdbb27e16d10dce3c6ea2bc22b006d01f38337c074b1ad3f",
+      "original_result_id": "E2:v_0zjA3KPnLK8_q02:R*",
+      "original_verdict": "correct",
+      "original_answer": "Sumo wrestling match",
+      "reference": "The main activity is wrestling, with two men throwing each other down in front of a crowd.",
+      "question": "What is the main activity taking place in the scene with the two men and the crowd?",
+      "frame_payload_verified": true,
+      "new_answer": "Two men are competing in a sumo wrestling match while a crowd watches.",
+      "new_citations": [
+        "c000028"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a18b28590611a0873",
+      "new_judge_item_id": "aa092c90b3499a431",
+      "old_text_reviews": {
+        "A": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "a18b28590611a0873",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "aa092c90b3499a431",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        },
+        "B": {
+          "id": "aa092c90b3499a431",
+          "verdict": "correct",
+          "reason": "Correctly identifies wrestling as the main activity."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "phase": "E1",
+      "condition": "Blind",
+      "packet_id": "p3f64a4457a44",
+      "packet_content_hash": "3f64a4457a4461fd3d75f2089f76425ea85594eff4c04bc5275ef084f862162c",
+      "original_result_id": "E1:l2OTMq4aluc_q06:Blind",
+      "original_verdict": "incorrect",
+      "original_answer": "",
+      "reference": "The cloth is cut, measured, and stitched.",
+      "question": "What actions are performed on the cloth in the video?",
+      "frame_payload_verified": true,
+      "new_answer": "The available evidence is insufficient to determine what actions are performed on the cloth.",
+      "new_citations": [],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "ab834a5dcced17a6b",
+      "new_judge_item_id": "a3807cdc6c5d43928",
+      "old_text_reviews": {
+        "A": {
+          "verdict": "incorrect",
+          "reason": "Explicit empty answer abstention"
+        },
+        "B": {
+          "verdict": "incorrect",
+          "reason": "Explicit empty answer abstention"
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a3807cdc6c5d43928",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate question."
+        },
+        "B": {
+          "id": "a3807cdc6c5d43928",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate reference."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "phase": "E1",
+      "condition": "Full",
+      "packet_id": "pe9a919598874",
+      "packet_content_hash": "e9a919598874443a29dc6b64c3bff12905da6b8aa40c9a1ab056922034865fb4",
+      "original_result_id": "E1:l2OTMq4aluc_q06:Full",
+      "original_verdict": "incorrect",
+      "original_answer": "Cutting, pinning, sewing, and trying on the cloth.",
+      "reference": "The cloth is cut, measured, and stitched.",
+      "question": "What actions are performed on the cloth in the video?",
+      "frame_payload_verified": true,
+      "new_answer": "The cloth is laid flat, shaped using paper patterns, cut into pieces, and machine-sewn to transform the pink dress into a halter-style romper.",
+      "new_citations": [
+        "gbd6c382116e8",
+        "gdef5a38a5b53",
+        "g4309c7ec4156",
+        "g371ce89083d4"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "aaa51795338488ace",
+      "new_judge_item_id": "a4b361cde66785d35",
+      "old_text_reviews": {
+        "A": {
+          "id": "aaa51795338488ace",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        },
+        "B": {
+          "id": "aaa51795338488ace",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a4b361cde66785d35",
+          "verdict": "incorrect",
+          "reason": "Pattern shaping does not establish measuring."
+        },
+        "B": {
+          "id": "a4b361cde66785d35",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "phase": "E1",
+      "condition": "Key-2",
+      "packet_id": "p426a02e7ef9d",
+      "packet_content_hash": "426a02e7ef9d56368e6d152a68cd844adccc3826d0950634f50248a00b221b01",
+      "original_result_id": "E1:l2OTMq4aluc_q06:Key-2",
+      "original_verdict": "correct",
+      "original_answer": "Cutting, pinning, sewing, and altering fabric to create a new garment.",
+      "reference": "The cloth is cut, measured, and stitched.",
+      "question": "What actions are performed on the cloth in the video?",
+      "frame_payload_verified": true,
+      "new_answer": "The cloth is laid out, pinned to paper patterns, cut into pieces, and sewn together to transform a long pink dress into a short halter outfit.",
+      "new_citations": [
+        "gbd6c382116e8",
+        "gdef5a38a5b53",
+        "g4309c7ec4156",
+        "gba6ff86476cf"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a78f0a5e964b3bd42",
+      "new_judge_item_id": "a317abb7c585adcf4",
+      "old_text_reviews": {
+        "A": {
+          "id": "a78f0a5e964b3bd42",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        },
+        "B": {
+          "id": "a78f0a5e964b3bd42",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a317abb7c585adcf4",
+          "verdict": "incorrect",
+          "reason": "Pattern pinning does not establish measuring."
+        },
+        "B": {
+          "id": "a317abb7c585adcf4",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "phase": "E1",
+      "condition": "Irrel-1",
+      "packet_id": "p1915a02e049b",
+      "packet_content_hash": "1915a02e049b578fdb08e5787879d7189f5f18cfe441c0143dbd7a8ff576bd30",
+      "original_result_id": "E1:l2OTMq4aluc_q06:Irrel-1",
+      "original_verdict": "incorrect",
+      "original_answer": "Cutting, pinning, sewing, and trying on the modified garment.",
+      "reference": "The cloth is cut, measured, and stitched.",
+      "question": "What actions are performed on the cloth in the video?",
+      "frame_payload_verified": true,
+      "new_answer": "The cloth is laid out, pinned to paper patterns, cut into pieces, and sewn together to turn a long pink dress into a short halter outfit.",
+      "new_citations": [
+        "gdef5a38a5b53",
+        "g4309c7ec4156",
+        "gba6ff86476cf"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "ab7d0f67cef43e8ed",
+      "new_judge_item_id": "a6603078a44386e21",
+      "old_text_reviews": {
+        "A": {
+          "id": "ab7d0f67cef43e8ed",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        },
+        "B": {
+          "id": "ab7d0f67cef43e8ed",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a6603078a44386e21",
+          "verdict": "incorrect",
+          "reason": "Pattern pinning does not establish measuring."
+        },
+        "B": {
+          "id": "a6603078a44386e21",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "phase": "E1",
+      "condition": "Key-4",
+      "packet_id": "p383ea9adb987",
+      "packet_content_hash": "383ea9adb987dcda1fd0e9d70a4c784c80aa5f6d726908af921f0b6710763d76",
+      "original_result_id": "E1:l2OTMq4aluc_q06:Key-4",
+      "original_verdict": "correct",
+      "original_answer": "Cutting, folding, and sewing the cloth are performed.",
+      "reference": "The cloth is cut, measured, and stitched.",
+      "question": "What actions are performed on the cloth in the video?",
+      "frame_payload_verified": true,
+      "new_answer": "The pink garment is laid flat, positioned under sewing patterns, cut and reshaped into a halter-neck romper, then tried on and modeled.",
+      "new_citations": [
+        "gbd6c382116e8",
+        "gacc3dc029532",
+        "gdef5a38a5b53",
+        "gba6ff86476cf",
+        "g371ce89083d4"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a89a02d5511cf47fd",
+      "new_judge_item_id": "ab9049ed6a45d6b40",
+      "old_text_reviews": {
+        "A": {
+          "id": "a89a02d5511cf47fd",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        },
+        "B": {
+          "id": "a89a02d5511cf47fd",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "ab9049ed6a45d6b40",
+          "verdict": "incorrect",
+          "reason": "Omits measuring and stitching."
+        },
+        "B": {
+          "id": "ab9049ed6a45d6b40",
+          "verdict": "incorrect",
+          "reason": "Omits measuring and stitching."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "phase": "E1",
+      "condition": "Irrel-2",
+      "packet_id": "p739a9c6cc2be",
+      "packet_content_hash": "739a9c6cc2be2a6131c14e2046c6d3125fefb994f98eb0c3b3a242898428b253",
+      "original_result_id": "E1:l2OTMq4aluc_q06:Irrel-2",
+      "original_verdict": "incorrect",
+      "original_answer": "Cutting, folding, pinning, sewing, and wearing the cloth.",
+      "reference": "The cloth is cut, measured, and stitched.",
+      "question": "What actions are performed on the cloth in the video?",
+      "frame_payload_verified": true,
+      "new_answer": "The cloth is laid out with pattern pieces, cut into sections, and sewn into a new outfit, which is then tried on and modeled.",
+      "new_citations": [
+        "gdef5a38a5b53",
+        "g4309c7ec4156",
+        "gba6ff86476cf"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "acea50e5c0ab47fd4",
+      "new_judge_item_id": "a561ddaddfd1d2a58",
+      "old_text_reviews": {
+        "A": {
+          "id": "acea50e5c0ab47fd4",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        },
+        "B": {
+          "id": "acea50e5c0ab47fd4",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a561ddaddfd1d2a58",
+          "verdict": "incorrect",
+          "reason": "Pattern placement does not establish measuring."
+        },
+        "B": {
+          "id": "a561ddaddfd1d2a58",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "phase": "E1",
+      "condition": "Key-3",
+      "packet_id": "p8d4a88ff6277",
+      "packet_content_hash": "8d4a88ff6277de34734bd6d951fce4ac178b9b5524c69a6a02a207464573c277",
+      "original_result_id": "E1:l2OTMq4aluc_q06:Key-3",
+      "original_verdict": "incorrect",
+      "original_answer": "Cutting, folding, sewing, and wearing the cloth.",
+      "reference": "The cloth is cut, measured, and stitched.",
+      "question": "What actions are performed on the cloth in the video?",
+      "frame_payload_verified": true,
+      "new_answer": "The pink cloth is laid flat, marked using patterns, cut into pieces, and sewn together to remake the dress into a new outfit.",
+      "new_citations": [
+        "gbd6c382116e8",
+        "g4309c7ec4156",
+        "gba6ff86476cf"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a00c3791876ed15fb",
+      "new_judge_item_id": "ab7d3ed3b6641dadf",
+      "old_text_reviews": {
+        "A": {
+          "id": "a00c3791876ed15fb",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        },
+        "B": {
+          "id": "a00c3791876ed15fb",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "ab7d3ed3b6641dadf",
+          "verdict": "incorrect",
+          "reason": "Pattern marking does not establish measuring."
+        },
+        "B": {
+          "id": "ab7d3ed3b6641dadf",
+          "verdict": "incorrect",
+          "reason": "Pattern marking does not establish measuring."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "phase": "E1",
+      "condition": "Key-1",
+      "packet_id": "pb3cf40d8b30d",
+      "packet_content_hash": "b3cf40d8b30ddb56f7db61543561c9072d70df9f1f533920341e0397dcab6a7e",
+      "original_result_id": "E1:l2OTMq4aluc_q06:Key-1",
+      "original_verdict": "incorrect",
+      "original_answer": "Cutting, pinning, sewing, and trying on the cloth.",
+      "reference": "The cloth is cut, measured, and stitched.",
+      "question": "What actions are performed on the cloth in the video?",
+      "frame_payload_verified": true,
+      "new_answer": "The pink dress is laid out, cut into pattern pieces, pinned, and machine-sewn into a shorter halter-style outfit, which is then tried on.",
+      "new_citations": [
+        "gbd6c382116e8",
+        "gdef5a38a5b53",
+        "g4309c7ec4156",
+        "gba6ff86476cf"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "aaa51795338488ace",
+      "new_judge_item_id": "aeda66b921138f954",
+      "old_text_reviews": {
+        "A": {
+          "id": "aaa51795338488ace",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        },
+        "B": {
+          "id": "aaa51795338488ace",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "aeda66b921138f954",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        },
+        "B": {
+          "id": "aeda66b921138f954",
+          "verdict": "incorrect",
+          "reason": "Omits measuring the cloth."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "phase": "E2",
+      "condition": "R0",
+      "packet_id": "pa2bfd25306dd",
+      "packet_content_hash": "a2bfd25306ddcb12938859456b3ddc027302f64fcd95f088bb57e54d7c6531c3",
+      "original_result_id": "E2:l2OTMq4aluc_q06:R0",
+      "original_verdict": "incorrect",
+      "original_answer": "Measuring, folding, and sewing the cloth.",
+      "reference": "The cloth is cut, measured, and stitched.",
+      "question": "What actions are performed on the cloth in the video?",
+      "frame_payload_verified": true,
+      "new_answer": "The cloth is measured, marked, cut into pieces, folded and arranged, then sewn together using a sewing machine.",
+      "new_citations": [
+        "c000076",
+        "c000078",
+        "c000082",
+        "c000132",
+        "c000136",
+        "c000138"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "abfe4907879877bd5",
+      "new_judge_item_id": "a4ef4e1ae6e7cdca5",
+      "old_text_reviews": {
+        "A": {
+          "id": "abfe4907879877bd5",
+          "verdict": "incorrect",
+          "reason": "Omits cutting the cloth."
+        },
+        "B": {
+          "id": "abfe4907879877bd5",
+          "verdict": "incorrect",
+          "reason": "Omits cutting the cloth."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a4ef4e1ae6e7cdca5",
+          "verdict": "correct",
+          "reason": "Includes measuring, cutting, and stitching."
+        },
+        "B": {
+          "id": "a4ef4e1ae6e7cdca5",
+          "verdict": "correct",
+          "reason": "Includes measuring, cutting, and stitching."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "phase": "E2",
+      "condition": "R1",
+      "packet_id": "p303db0a84f52",
+      "packet_content_hash": "303db0a84f52fe238b7178071e0408d978f8bc5e1a56c2079a3b9d27edea6a0b",
+      "original_result_id": "E2:l2OTMq4aluc_q06:R1",
+      "original_verdict": "correct",
+      "original_answer": "Measuring, cutting, and sewing the cloth.",
+      "reference": "The cloth is cut, measured, and stitched.",
+      "question": "What actions are performed on the cloth in the video?",
+      "frame_payload_verified": true,
+      "new_answer": "The cloth is measured, unfolded and spread flat, repositioned and aligned, then sewn together using a sewing machine.",
+      "new_citations": [
+        "c000076",
+        "c000106",
+        "c000111",
+        "c000136",
+        "c000138"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "aa2ef9c70ca545b45",
+      "new_judge_item_id": "abf40a61ea3267460",
+      "old_text_reviews": {
+        "A": {
+          "id": "aa2ef9c70ca545b45",
+          "verdict": "correct",
+          "reason": "Includes measuring, cutting, and stitching."
+        },
+        "B": {
+          "id": "aa2ef9c70ca545b45",
+          "verdict": "correct",
+          "reason": "Includes measuring, cutting, and stitching."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "abf40a61ea3267460",
+          "verdict": "incorrect",
+          "reason": "Omits cutting the cloth."
+        },
+        "B": {
+          "id": "abf40a61ea3267460",
+          "verdict": "incorrect",
+          "reason": "Omits cutting the cloth."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "phase": "E2",
+      "condition": "R2",
+      "packet_id": "p54d6105401eb",
+      "packet_content_hash": "54d6105401ebbee6e007575922034de6160a09f0550f015181132720c408f956",
+      "original_result_id": "E2:l2OTMq4aluc_q06:R2",
+      "original_verdict": "incorrect",
+      "original_answer": "Measuring, folding, and adjusting the cloth.",
+      "reference": "The cloth is cut, measured, and stitched.",
+      "question": "What actions are performed on the cloth in the video?",
+      "frame_payload_verified": true,
+      "new_answer": "The cloth is measured, cut into sections with scissors, then lifted, turned, spread out, and smoothed by hand.",
+      "new_citations": [
+        "c000075",
+        "c000078",
+        "c000082",
+        "c000132",
+        "c000136"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "aec0e9c7a102d7ba3",
+      "new_judge_item_id": "a2bfd6c4c05a45b29",
+      "old_text_reviews": {
+        "A": {
+          "id": "aec0e9c7a102d7ba3",
+          "verdict": "incorrect",
+          "reason": "Omits cutting and stitching."
+        },
+        "B": {
+          "id": "aec0e9c7a102d7ba3",
+          "verdict": "incorrect",
+          "reason": "Omits cutting and stitching the cloth."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a2bfd6c4c05a45b29",
+          "verdict": "incorrect",
+          "reason": "Omits stitching the cloth."
+        },
+        "B": {
+          "id": "a2bfd6c4c05a45b29",
+          "verdict": "incorrect",
+          "reason": "Omits stitching the cloth."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "l2OTMq4aluc_q06",
+      "video_id": "l2OTMq4aluc",
+      "phase": "E2",
+      "condition": "R*",
+      "packet_id": "pc792e858fc65",
+      "packet_content_hash": "c792e858fc65ade997069d11fa8d4065518f41cbe24817dc434be5dbf485a309",
+      "original_result_id": "E2:l2OTMq4aluc_q06:R*",
+      "original_verdict": "correct",
+      "original_answer": "Measuring, cutting, and manipulating fabric.",
+      "reference": "The cloth is cut, measured, and stitched.",
+      "question": "What actions are performed on the cloth in the video?",
+      "frame_payload_verified": true,
+      "new_answer": "The cloth is laid flat, measured and marked, cut with a rotary cutter, then folded and rearranged by hand.",
+      "new_citations": [
+        "c000076",
+        "c000078",
+        "c000089",
+        "c000136"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a88f50eb3e82c529a",
+      "new_judge_item_id": "a0d42937c7fad2b5c",
+      "old_text_reviews": {
+        "A": {
+          "id": "a88f50eb3e82c529a",
+          "verdict": "incorrect",
+          "reason": "Omits stitching the cloth."
+        },
+        "B": {
+          "id": "a88f50eb3e82c529a",
+          "verdict": "incorrect",
+          "reason": "Omits stitching the cloth."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a0d42937c7fad2b5c",
+          "verdict": "incorrect",
+          "reason": "Omits stitching the cloth."
+        },
+        "B": {
+          "id": "a0d42937c7fad2b5c",
+          "verdict": "incorrect",
+          "reason": "Omits stitching the cloth."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q04",
+      "video_id": "v_NGk3v4sKqdg",
+      "phase": "E1",
+      "condition": "Blind",
+      "packet_id": "p494f374eb3c5",
+      "packet_content_hash": "494f374eb3c5d1784d57d0212766751dba4af4de723581265a029af040d42ae5",
+      "original_result_id": "E1:v_NGk3v4sKqdg_q04:Blind",
+      "original_verdict": "incorrect",
+      "original_answer": "",
+      "reference": "People work on bicycles, put chains on them, pump air into the tires, and ride the bicycles.",
+      "question": "What activities are people engaged in with bicycles?",
+      "frame_payload_verified": true,
+      "new_answer": "The available evidence is insufficient to determine what activities people are engaged in with bicycles.",
+      "new_citations": [],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a0010e559ad80ed13",
+      "new_judge_item_id": "a606906b40a368309",
+      "old_text_reviews": {
+        "A": {
+          "verdict": "incorrect",
+          "reason": "Explicit empty answer abstention"
+        },
+        "B": {
+          "verdict": "incorrect",
+          "reason": "Explicit empty answer abstention"
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a606906b40a368309",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate question."
+        },
+        "B": {
+          "id": "a606906b40a368309",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate reference."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q04",
+      "video_id": "v_NGk3v4sKqdg",
+      "phase": "E1",
+      "condition": "Key-1",
+      "packet_id": "pace6ee5908d1",
+      "packet_content_hash": "ace6ee5908d1b30707a24117ecac392dcd37e6717e1ae0889af44128bdb115d8",
+      "original_result_id": "E1:v_NGk3v4sKqdg_q04:Key-1",
+      "original_verdict": "correct",
+      "original_answer": "People are inspecting, repairing, and riding bicycles.",
+      "reference": "People work on bicycles, put chains on them, pump air into the tires, and ride the bicycles.",
+      "question": "What activities are people engaged in with bicycles?",
+      "frame_payload_verified": true,
+      "new_answer": "People repair and adjust bicycles, handle wheels, watch others fixing bikes, and ride bicycles.",
+      "new_citations": [
+        "g823d45bf9d3e",
+        "g1b1cf4351299",
+        "g733b6afd415c"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a18c2af12b6cb4c82",
+      "new_judge_item_id": "a9c89a94e500ae111",
+      "old_text_reviews": {
+        "A": {
+          "id": "a18c2af12b6cb4c82",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        },
+        "B": {
+          "id": "a18c2af12b6cb4c82",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a9c89a94e500ae111",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        },
+        "B": {
+          "id": "a9c89a94e500ae111",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q04",
+      "video_id": "v_NGk3v4sKqdg",
+      "phase": "E1",
+      "condition": "Key-3",
+      "packet_id": "p7239e5838654",
+      "packet_content_hash": "7239e5838654143a4dd09f6a48f5e108e25c6c72ec2d1e7a0e347ce2e5ad6de5",
+      "original_result_id": "E1:v_NGk3v4sKqdg_q04:Key-3",
+      "original_verdict": "correct",
+      "original_answer": "Children and adults are inspecting, repairing, and assembling bicycles, with some children observing the process.",
+      "reference": "People work on bicycles, put chains on them, pump air into the tires, and ride the bicycles.",
+      "question": "What activities are people engaged in with bicycles?",
+      "frame_payload_verified": true,
+      "new_answer": "Adults repair and adjust bicycles while children watch, help, and handle a detached bicycle wheel.",
+      "new_citations": [
+        "g823d45bf9d3e",
+        "g8b5d69c8ce72",
+        "g1b1cf4351299"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "acd0e9ef768fe9e6f",
+      "new_judge_item_id": "ab92e6b631fcd483d",
+      "old_text_reviews": {
+        "A": {
+          "id": "acd0e9ef768fe9e6f",
+          "verdict": "incorrect",
+          "reason": "Omits riding and tire inflation."
+        },
+        "B": {
+          "id": "acd0e9ef768fe9e6f",
+          "verdict": "incorrect",
+          "reason": "Omits tire inflation and bicycle riding."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "ab92e6b631fcd483d",
+          "verdict": "incorrect",
+          "reason": "Omits riding and tire inflation."
+        },
+        "B": {
+          "id": "ab92e6b631fcd483d",
+          "verdict": "incorrect",
+          "reason": "Omits tire inflation and bicycle riding."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q04",
+      "video_id": "v_NGk3v4sKqdg",
+      "phase": "E1",
+      "condition": "Key-2",
+      "packet_id": "p780a6b7cccd9",
+      "packet_content_hash": "780a6b7cccd986f49224e265610cb6c60928ace24c3d4f0c37b2f67c5c418450",
+      "original_result_id": "E1:v_NGk3v4sKqdg_q04:Key-2",
+      "original_verdict": "correct",
+      "original_answer": "People are repairing, inspecting, and riding bicycles.",
+      "reference": "People work on bicycles, put chains on them, pump air into the tires, and ride the bicycles.",
+      "question": "What activities are people engaged in with bicycles?",
+      "frame_payload_verified": true,
+      "new_answer": "People are repairing and maintaining bicycles, handling wheels and tires, helping children with bikes, and riding bicycles.",
+      "new_citations": [
+        "g823d45bf9d3e",
+        "g8b5d69c8ce72",
+        "g733b6afd415c"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a6c07d81949eebe06",
+      "new_judge_item_id": "a0dd380654a3c2f6a",
+      "old_text_reviews": {
+        "A": {
+          "id": "a6c07d81949eebe06",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        },
+        "B": {
+          "id": "a6c07d81949eebe06",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a0dd380654a3c2f6a",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        },
+        "B": {
+          "id": "a0dd380654a3c2f6a",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q04",
+      "video_id": "v_NGk3v4sKqdg",
+      "phase": "E1",
+      "condition": "Irrel-1",
+      "packet_id": "p7404ffd656dc",
+      "packet_content_hash": "7404ffd656dc81b5c6892ea577e5d14c31ce95eebb319c03ff4d147ddf7b1c0d",
+      "original_result_id": "E1:v_NGk3v4sKqdg_q04:Irrel-1",
+      "original_verdict": "correct",
+      "original_answer": "People are handling, repairing, and riding bicycles.",
+      "reference": "People work on bicycles, put chains on them, pump air into the tires, and ride the bicycles.",
+      "question": "What activities are people engaged in with bicycles?",
+      "frame_payload_verified": true,
+      "new_answer": "Adults and children handle bicycle wheels, repair and adjust bikes, and ride bicycles.",
+      "new_citations": [
+        "g823d45bf9d3e",
+        "g8b5d69c8ce72",
+        "g733b6afd415c"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "af345f8e8edda3a48",
+      "new_judge_item_id": "a273890d2bbe2932c",
+      "old_text_reviews": {
+        "A": {
+          "id": "af345f8e8edda3a48",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        },
+        "B": {
+          "id": "af345f8e8edda3a48",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a273890d2bbe2932c",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        },
+        "B": {
+          "id": "a273890d2bbe2932c",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q04",
+      "video_id": "v_NGk3v4sKqdg",
+      "phase": "E1",
+      "condition": "Full",
+      "packet_id": "pec01c5a2b5c9",
+      "packet_content_hash": "ec01c5a2b5c9186be92c24d60c421224f569d6564e6ccc7bd6f126184f5ec1da",
+      "original_result_id": "E1:v_NGk3v4sKqdg_q04:Full",
+      "original_verdict": "incorrect",
+      "original_answer": "Repairing, inspecting, and assembling bicycles, with children observing or participating.",
+      "reference": "People work on bicycles, put chains on them, pump air into the tires, and ride the bicycles.",
+      "question": "What activities are people engaged in with bicycles?",
+      "frame_payload_verified": true,
+      "new_answer": "People are repairing and adjusting bicycles, handling wheels, watching demonstrations, and riding bikes.",
+      "new_citations": [
+        "gab66db18f160",
+        "g8b5d69c8ce72",
+        "g1b1cf4351299",
+        "g733b6afd415c"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "ad17aca2f913c6007",
+      "new_judge_item_id": "a2a6c454d9f6a8981",
+      "old_text_reviews": {
+        "A": {
+          "id": "ad17aca2f913c6007",
+          "verdict": "incorrect",
+          "reason": "Omits riding and tire inflation."
+        },
+        "B": {
+          "id": "ad17aca2f913c6007",
+          "verdict": "incorrect",
+          "reason": "Omits tire inflation and bicycle riding."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a2a6c454d9f6a8981",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        },
+        "B": {
+          "id": "a2a6c454d9f6a8981",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q04",
+      "video_id": "v_NGk3v4sKqdg",
+      "phase": "E1",
+      "condition": "Irrel-2",
+      "packet_id": "pe704a1070dd5",
+      "packet_content_hash": "e704a1070dd5de6cea6bbdb9eb95ee204205cb3d9326603364c4f40d02bfe217",
+      "original_result_id": "E1:v_NGk3v4sKqdg_q04:Irrel-2",
+      "original_verdict": "incorrect",
+      "original_answer": "People are repairing, inspecting, and riding bicycles.",
+      "reference": "People work on bicycles, put chains on them, pump air into the tires, and ride the bicycles.",
+      "question": "What activities are people engaged in with bicycles?",
+      "frame_payload_verified": true,
+      "new_answer": "People are repairing bicycles, working on wheels and other parts, helping children with bikes, and riding bicycles.",
+      "new_citations": [
+        "g823d45bf9d3e",
+        "g8b5d69c8ce72",
+        "g1b1cf4351299",
+        "g733b6afd415c"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a6c07d81949eebe06",
+      "new_judge_item_id": "a4d91e86887b107a8",
+      "old_text_reviews": {
+        "A": {
+          "id": "a6c07d81949eebe06",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        },
+        "B": {
+          "id": "a6c07d81949eebe06",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a4d91e86887b107a8",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        },
+        "B": {
+          "id": "a4d91e86887b107a8",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q04",
+      "video_id": "v_NGk3v4sKqdg",
+      "phase": "E2",
+      "condition": "R0",
+      "packet_id": "p9f775da27b5a",
+      "packet_content_hash": "9f775da27b5a1d5126d2c4e3334f803757b06e45dca8696ffe68e079e96f552f",
+      "original_result_id": "E2:v_NGk3v4sKqdg_q04:R0",
+      "original_verdict": "incorrect",
+      "original_answer": "People are repairing or assembling bicycles, with children observing or assisting.",
+      "reference": "People work on bicycles, put chains on them, pump air into the tires, and ride the bicycles.",
+      "question": "What activities are people engaged in with bicycles?",
+      "frame_payload_verified": true,
+      "new_answer": "People are repairing and adjusting bicycles, working on wheels and chains, while children watch and handle a bicycle wheel.",
+      "new_citations": [
+        "c000004",
+        "c000009",
+        "c000012",
+        "c000041",
+        "c000076"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "aaab193d389706b93",
+      "new_judge_item_id": "a10de294f8c261ab1",
+      "old_text_reviews": {
+        "A": {
+          "id": "aaab193d389706b93",
+          "verdict": "incorrect",
+          "reason": "Omits riding and tire inflation."
+        },
+        "B": {
+          "id": "aaab193d389706b93",
+          "verdict": "incorrect",
+          "reason": "Omits tire inflation and bicycle riding."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a10de294f8c261ab1",
+          "verdict": "incorrect",
+          "reason": "Omits riding and tire inflation."
+        },
+        "B": {
+          "id": "a10de294f8c261ab1",
+          "verdict": "incorrect",
+          "reason": "Omits tire inflation and bicycle riding."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q04",
+      "video_id": "v_NGk3v4sKqdg",
+      "phase": "E2",
+      "condition": "R1",
+      "packet_id": "p2d23c0b02bd2",
+      "packet_content_hash": "2d23c0b02bd2c9cfb0ebea7284b4e9579890990f335bdda86fe18ee927b3800b",
+      "original_result_id": "E2:v_NGk3v4sKqdg_q04:R1",
+      "original_verdict": "incorrect",
+      "original_answer": "People are repairing or assembling bicycles, including adjusting wheels and components.",
+      "reference": "People work on bicycles, put chains on them, pump air into the tires, and ride the bicycles.",
+      "question": "What activities are people engaged in with bicycles?",
+      "frame_payload_verified": true,
+      "new_answer": "People are repairing and adjusting bicycles, working on wheels and drivetrain parts, while children handle bikes and a detached wheel.",
+      "new_citations": [
+        "c000004",
+        "c000005",
+        "c000010",
+        "c000076"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a25802ef479475ebd",
+      "new_judge_item_id": "a10e9362ced30b63e",
+      "old_text_reviews": {
+        "A": {
+          "id": "a25802ef479475ebd",
+          "verdict": "incorrect",
+          "reason": "Omits riding and tire inflation."
+        },
+        "B": {
+          "id": "a25802ef479475ebd",
+          "verdict": "incorrect",
+          "reason": "Omits tire inflation and bicycle riding."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a10e9362ced30b63e",
+          "verdict": "incorrect",
+          "reason": "Omits riding and tire inflation."
+        },
+        "B": {
+          "id": "a10e9362ced30b63e",
+          "verdict": "incorrect",
+          "reason": "Omits tire inflation and bicycle riding."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q04",
+      "video_id": "v_NGk3v4sKqdg",
+      "phase": "E2",
+      "condition": "R2",
+      "packet_id": "pc1840b0d6b93",
+      "packet_content_hash": "c1840b0d6b939edaec30adef83de37f92da2799c19ac0a8d76b49f05aabfdb1b",
+      "original_result_id": "E2:v_NGk3v4sKqdg_q04:R2",
+      "original_verdict": "correct",
+      "original_answer": "People are repairing, assembling, and riding bicycles.",
+      "reference": "People work on bicycles, put chains on them, pump air into the tires, and ride the bicycles.",
+      "question": "What activities are people engaged in with bicycles?",
+      "frame_payload_verified": true,
+      "new_answer": "People repair and adjust bicycles and their wheels, while children watch, help handle bicycle parts, and ride bikes.",
+      "new_citations": [
+        "c000004",
+        "c000012",
+        "c000041",
+        "c000076",
+        "c000085"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a5fd372a263a5cb92",
+      "new_judge_item_id": "a3aeb639986ae7791",
+      "old_text_reviews": {
+        "A": {
+          "id": "a5fd372a263a5cb92",
+          "verdict": "incorrect",
+          "reason": "Omits tire inflation."
+        },
+        "B": {
+          "id": "a5fd372a263a5cb92",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a3aeb639986ae7791",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        },
+        "B": {
+          "id": "a3aeb639986ae7791",
+          "verdict": "incorrect",
+          "reason": "Omits chain installation and tire inflation."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "v_NGk3v4sKqdg_q04",
+      "video_id": "v_NGk3v4sKqdg",
+      "phase": "E2",
+      "condition": "R*",
+      "packet_id": "p12e35eb329fe",
+      "packet_content_hash": "12e35eb329fe2c277e7df1e6dbc4372355e0ee540fd943c2f4f7fc352e29b902",
+      "original_result_id": "E2:v_NGk3v4sKqdg_q04:R*",
+      "original_verdict": "incorrect",
+      "original_answer": "People are repairing or adjusting bicycles, with children observing or assisting.",
+      "reference": "People work on bicycles, put chains on them, pump air into the tires, and ride the bicycles.",
+      "question": "What activities are people engaged in with bicycles?",
+      "frame_payload_verified": true,
+      "new_answer": "People are inspecting and repairing bicycles, adjusting wheels and other parts, while children watch and help handle the bikes.",
+      "new_citations": [
+        "c000004",
+        "c000005",
+        "c000041",
+        "c000043",
+        "c000076"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a417f4aa571969f3f",
+      "new_judge_item_id": "a4711994cd27756c9",
+      "old_text_reviews": {
+        "A": {
+          "id": "a417f4aa571969f3f",
+          "verdict": "incorrect",
+          "reason": "Omits riding and tire inflation."
+        },
+        "B": {
+          "id": "a417f4aa571969f3f",
+          "verdict": "incorrect",
+          "reason": "Omits tire inflation and bicycle riding."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a4711994cd27756c9",
+          "verdict": "incorrect",
+          "reason": "Omits riding and tire inflation."
+        },
+        "B": {
+          "id": "a4711994cd27756c9",
+          "verdict": "incorrect",
+          "reason": "Omits tire inflation and bicycle riding."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q01",
+      "video_id": "PtbGXfb6B1I",
+      "phase": "E1",
+      "condition": "Blind",
+      "packet_id": "pfb5ce3b80aae",
+      "packet_content_hash": "fb5ce3b80aae4e28fc2cb967e64d8d0d333eecca94ba24f84bbd131b78902eaa",
+      "original_result_id": "E1:PtbGXfb6B1I_q01:Blind",
+      "original_verdict": "incorrect",
+      "original_answer": "",
+      "reference": "First, dig the soil, then insert the stick into the big hole, and finally adjust it using the small hole.",
+      "question": "What steps are involved in preparing the fire pit before lighting the stick?",
+      "frame_payload_verified": true,
+      "new_answer": "The available evidence is insufficient to determine the steps involved in preparing the fire pit before lighting the stick.",
+      "new_citations": [],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a28d13964796cda35",
+      "new_judge_item_id": "adc53ca0afa6be857",
+      "old_text_reviews": {
+        "A": {
+          "verdict": "incorrect",
+          "reason": "Explicit empty answer abstention"
+        },
+        "B": {
+          "verdict": "incorrect",
+          "reason": "Explicit empty answer abstention"
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "adc53ca0afa6be857",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate question."
+        },
+        "B": {
+          "id": "adc53ca0afa6be857",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate reference."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q01",
+      "video_id": "PtbGXfb6B1I",
+      "phase": "E1",
+      "condition": "Key-3",
+      "packet_id": "pdf936a4e9373",
+      "packet_content_hash": "df936a4e9373b1d4c61fc7ee8ece5b47347f7fac3d2dd59a392b60825304815d",
+      "original_result_id": "E1:PtbGXfb6B1I_q01:Key-3",
+      "original_verdict": "incorrect",
+      "original_answer": "Digging a hole, arranging stones around it, and placing kindling inside before lighting.",
+      "reference": "First, dig the soil, then insert the stick into the big hole, and finally adjust it using the small hole.",
+      "question": "What steps are involved in preparing the fire pit before lighting the stick?",
+      "frame_payload_verified": true,
+      "new_answer": "Dig the main pit and a nearby air hole, connect them underground, then arrange stones and dry twigs in the fire pit.",
+      "new_citations": [
+        "g3164a72903d2",
+        "g709fb595b5c0",
+        "g342acd58812b",
+        "g947912a0b850"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "ae5aa3f98c8349416",
+      "new_judge_item_id": "a72d314d61866d092",
+      "old_text_reviews": {
+        "A": {
+          "id": "ae5aa3f98c8349416",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "ae5aa3f98c8349416",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a72d314d61866d092",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "a72d314d61866d092",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q01",
+      "video_id": "PtbGXfb6B1I",
+      "phase": "E1",
+      "condition": "Irrel-1",
+      "packet_id": "p6e85c698ba8b",
+      "packet_content_hash": "6e85c698ba8b9cf4bd1e5621387013bd84602f4df456275c19152cd1f515f62b",
+      "original_result_id": "E1:PtbGXfb6B1I_q01:Irrel-1",
+      "original_verdict": "incorrect",
+      "original_answer": "Digging a hole, arranging stones around it, and placing kindling inside before lighting.",
+      "reference": "First, dig the soil, then insert the stick into the big hole, and finally adjust it using the small hole.",
+      "question": "What steps are involved in preparing the fire pit before lighting the stick?",
+      "frame_payload_verified": true,
+      "new_answer": "Dig the main pit and a smaller air hole, connect them underground, clear loose soil, arrange stones along the rim, and place sticks inside.",
+      "new_citations": [
+        "g3164a72903d2",
+        "g709fb595b5c0",
+        "g342acd58812b",
+        "g04fb4cba3227"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "ae5aa3f98c8349416",
+      "new_judge_item_id": "affa8f371d1ee9aa6",
+      "old_text_reviews": {
+        "A": {
+          "id": "ae5aa3f98c8349416",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "ae5aa3f98c8349416",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "affa8f371d1ee9aa6",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "affa8f371d1ee9aa6",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q01",
+      "video_id": "PtbGXfb6B1I",
+      "phase": "E1",
+      "condition": "Key-1",
+      "packet_id": "p5a7ed9bed30d",
+      "packet_content_hash": "5a7ed9bed30daa39b96c77df289e2862383175e888abc75eb77758cd8f1cac99",
+      "original_result_id": "E1:PtbGXfb6B1I_q01:Key-1",
+      "original_verdict": "incorrect",
+      "original_answer": "Digging a hole, arranging stones around it, and placing kindling inside before lighting.",
+      "reference": "First, dig the soil, then insert the stick into the big hole, and finally adjust it using the small hole.",
+      "question": "What steps are involved in preparing the fire pit before lighting the stick?",
+      "frame_payload_verified": true,
+      "new_answer": "Dig the main pit and a smaller connected air hole, clear loose soil, line the edge with stones, and arrange small sticks inside.",
+      "new_citations": [
+        "g3164a72903d2",
+        "g342acd58812b",
+        "g04fb4cba3227"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "ae5aa3f98c8349416",
+      "new_judge_item_id": "a10e18916c904b8a6",
+      "old_text_reviews": {
+        "A": {
+          "id": "ae5aa3f98c8349416",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "ae5aa3f98c8349416",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a10e18916c904b8a6",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "a10e18916c904b8a6",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q01",
+      "video_id": "PtbGXfb6B1I",
+      "phase": "E1",
+      "condition": "Irrel-2",
+      "packet_id": "p93b1f5d67fe8",
+      "packet_content_hash": "93b1f5d67fe80eb24107405c45e9a1ee4f84f453d53a6f9e4cce568e630e8d78",
+      "original_result_id": "E1:PtbGXfb6B1I_q01:Irrel-2",
+      "original_verdict": "incorrect",
+      "original_answer": "Digging a hole, arranging stones around it, and placing kindling inside before lighting.",
+      "reference": "First, dig the soil, then insert the stick into the big hole, and finally adjust it using the small hole.",
+      "question": "What steps are involved in preparing the fire pit before lighting the stick?",
+      "frame_payload_verified": true,
+      "new_answer": "Dig a main pit and a smaller adjoining air hole, connect them underground, then arrange stones around the pit and place sticks inside.",
+      "new_citations": [
+        "g3164a72903d2",
+        "g709fb595b5c0",
+        "g342acd58812b",
+        "g04fb4cba3227"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "ae5aa3f98c8349416",
+      "new_judge_item_id": "a299ef603c8a7642b",
+      "old_text_reviews": {
+        "A": {
+          "id": "ae5aa3f98c8349416",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "ae5aa3f98c8349416",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a299ef603c8a7642b",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "a299ef603c8a7642b",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q01",
+      "video_id": "PtbGXfb6B1I",
+      "phase": "E1",
+      "condition": "Full",
+      "packet_id": "p7bc9ab0a55b4",
+      "packet_content_hash": "7bc9ab0a55b450804e99d2f13973083673535dab0ede444848653b517a04f4a3",
+      "original_result_id": "E1:PtbGXfb6B1I_q01:Full",
+      "original_verdict": "incorrect",
+      "original_answer": "Digging a hole, arranging stones around it, and placing kindling inside before lighting.",
+      "reference": "First, dig the soil, then insert the stick into the big hole, and finally adjust it using the small hole.",
+      "question": "What steps are involved in preparing the fire pit before lighting the stick?",
+      "frame_payload_verified": true,
+      "new_answer": "Dig a main pit and a nearby air hole, connect them with a tunnel, line the pit’s edge with stones, and arrange sticks inside.",
+      "new_citations": [
+        "g709fb595b5c0",
+        "g342acd58812b",
+        "g04fb4cba3227",
+        "g39bff14b5ca8"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "ae5aa3f98c8349416",
+      "new_judge_item_id": "aefe0a1da60753d62",
+      "old_text_reviews": {
+        "A": {
+          "id": "ae5aa3f98c8349416",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "ae5aa3f98c8349416",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "aefe0a1da60753d62",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "aefe0a1da60753d62",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q01",
+      "video_id": "PtbGXfb6B1I",
+      "phase": "E1",
+      "condition": "Key-2",
+      "packet_id": "p6c78f33a238e",
+      "packet_content_hash": "6c78f33a238e514216623f10aa67fe776dca60b93df3b29bc2362b1701481a10",
+      "original_result_id": "E1:PtbGXfb6B1I_q01:Key-2",
+      "original_verdict": "incorrect",
+      "original_answer": "Digging a pit, arranging stones around it, and placing kindling inside before lighting.",
+      "reference": "First, dig the soil, then insert the stick into the big hole, and finally adjust it using the small hole.",
+      "question": "What steps are involved in preparing the fire pit before lighting the stick?",
+      "frame_payload_verified": true,
+      "new_answer": "Dig the main pit and a smaller adjoining air hole, connect them underground, line the pit’s edge with stones, and place dry sticks inside.",
+      "new_citations": [
+        "g3164a72903d2",
+        "g709fb595b5c0",
+        "g04fb4cba3227",
+        "g947912a0b850"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a0ccae75d7ef2ac6e",
+      "new_judge_item_id": "ae4118918cc9aed74",
+      "old_text_reviews": {
+        "A": {
+          "id": "a0ccae75d7ef2ac6e",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "a0ccae75d7ef2ac6e",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "ae4118918cc9aed74",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "ae4118918cc9aed74",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q01",
+      "video_id": "PtbGXfb6B1I",
+      "phase": "E2",
+      "condition": "R0",
+      "packet_id": "pdeb701734026",
+      "packet_content_hash": "deb701734026e3b2f8bf1cb5f68831dc5fb9117237b9360db16f6051384e2d85",
+      "original_result_id": "E2:PtbGXfb6B1I_q01:R0",
+      "original_verdict": "incorrect",
+      "original_answer": "Digging a pit and arranging stones around it.",
+      "reference": "First, dig the soil, then insert the stick into the big hole, and finally adjust it using the small hole.",
+      "question": "What steps are involved in preparing the fire pit before lighting the stick?",
+      "frame_payload_verified": true,
+      "new_answer": "The available evidence is insufficient to identify the preparation steps; all supplied frames show an already burning fire pit.",
+      "new_citations": [
+        "c000121",
+        "c000130",
+        "c000132",
+        "c000134",
+        "c000136",
+        "c000138"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a7b2efdbfad8a142d",
+      "new_judge_item_id": "a03a0f8dbf287f71c",
+      "old_text_reviews": {
+        "A": {
+          "id": "a7b2efdbfad8a142d",
+          "verdict": "incorrect",
+          "reason": "Omits stick insertion and small-hole adjustment."
+        },
+        "B": {
+          "id": "a7b2efdbfad8a142d",
+          "verdict": "incorrect",
+          "reason": "Omits stick insertion and adjustment."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a03a0f8dbf287f71c",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate question."
+        },
+        "B": {
+          "id": "a03a0f8dbf287f71c",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate reference."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q01",
+      "video_id": "PtbGXfb6B1I",
+      "phase": "E2",
+      "condition": "R1",
+      "packet_id": "pdeb701734026",
+      "packet_content_hash": "deb701734026e3b2f8bf1cb5f68831dc5fb9117237b9360db16f6051384e2d85",
+      "original_result_id": "E2:PtbGXfb6B1I_q01:R1",
+      "original_verdict": "incorrect",
+      "original_answer": "Digging a pit and arranging stones around it.",
+      "reference": "First, dig the soil, then insert the stick into the big hole, and finally adjust it using the small hole.",
+      "question": "What steps are involved in preparing the fire pit before lighting the stick?",
+      "frame_payload_verified": true,
+      "new_answer": "The available evidence is insufficient to identify the preparation steps; all supplied frames show an already burning fire pit.",
+      "new_citations": [
+        "c000121",
+        "c000130",
+        "c000132",
+        "c000134",
+        "c000136",
+        "c000138"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a7b2efdbfad8a142d",
+      "new_judge_item_id": "a03a0f8dbf287f71c",
+      "old_text_reviews": {
+        "A": {
+          "id": "a7b2efdbfad8a142d",
+          "verdict": "incorrect",
+          "reason": "Omits stick insertion and small-hole adjustment."
+        },
+        "B": {
+          "id": "a7b2efdbfad8a142d",
+          "verdict": "incorrect",
+          "reason": "Omits stick insertion and adjustment."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a03a0f8dbf287f71c",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate question."
+        },
+        "B": {
+          "id": "a03a0f8dbf287f71c",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate reference."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q01",
+      "video_id": "PtbGXfb6B1I",
+      "phase": "E2",
+      "condition": "R2",
+      "packet_id": "p54a78340323c",
+      "packet_content_hash": "54a78340323c0fd000d51466ba99fac893da87d4fbdc95a21d941deb198abf62",
+      "original_result_id": "E2:PtbGXfb6B1I_q01:R2",
+      "original_verdict": "incorrect",
+      "original_answer": "Digging a pit and arranging stones around it.",
+      "reference": "First, dig the soil, then insert the stick into the big hole, and finally adjust it using the small hole.",
+      "question": "What steps are involved in preparing the fire pit before lighting the stick?",
+      "frame_payload_verified": true,
+      "new_answer": "The available evidence is insufficient to determine the preparation steps; the frames show the fire pit already burning.",
+      "new_citations": [
+        "c000124",
+        "c000130"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a7b2efdbfad8a142d",
+      "new_judge_item_id": "ab5223a1465e92a0b",
+      "old_text_reviews": {
+        "A": {
+          "id": "a7b2efdbfad8a142d",
+          "verdict": "incorrect",
+          "reason": "Omits stick insertion and small-hole adjustment."
+        },
+        "B": {
+          "id": "a7b2efdbfad8a142d",
+          "verdict": "incorrect",
+          "reason": "Omits stick insertion and adjustment."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "ab5223a1465e92a0b",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate question."
+        },
+        "B": {
+          "id": "ab5223a1465e92a0b",
+          "verdict": "incorrect",
+          "reason": "Abstention does not answer the determinate reference."
+        }
+      },
+      "new_reviewers_agree": true
+    },
+    {
+      "question_id": "PtbGXfb6B1I_q01",
+      "video_id": "PtbGXfb6B1I",
+      "phase": "E2",
+      "condition": "R*",
+      "packet_id": "p7597709fde6e",
+      "packet_content_hash": "7597709fde6eef4037f0cc088a9de01ce1535da7c3cdfa27eeea2725393e4c44",
+      "original_result_id": "E2:PtbGXfb6B1I_q01:R*",
+      "original_verdict": "incorrect",
+      "original_answer": "Digging a pit, arranging stones around it, and placing kindling inside.",
+      "reference": "First, dig the soil, then insert the stick into the big hole, and finally adjust it using the small hole.",
+      "question": "What steps are involved in preparing the fire pit before lighting the stick?",
+      "frame_payload_verified": true,
+      "new_answer": "Dig a pit in the ground, place stones along its edge, and arrange small sticks and twigs inside as kindling.",
+      "new_citations": [
+        "c000023",
+        "c000089",
+        "c000130"
+      ],
+      "new_reviewer_type": "AI",
+      "human_review_status": "pending",
+      "old_judge_item_id": "a4b3d6c10815f43b6",
+      "new_judge_item_id": "a8e412040239776f6",
+      "old_text_reviews": {
+        "A": {
+          "id": "a4b3d6c10815f43b6",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "a4b3d6c10815f43b6",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "old_reviewers_agree": true,
+      "new_text_reviews": {
+        "A": {
+          "id": "a8e412040239776f6",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        },
+        "B": {
+          "id": "a8e412040239776f6",
+          "verdict": "incorrect",
+          "reason": "Omits adjusting the stick through the small hole."
+        }
+      },
+      "new_reviewers_agree": true
+    }
+  ]
+}

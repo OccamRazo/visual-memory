@@ -1,0 +1,39 @@
+{
+  "logical_conditions": 44,
+  "unique_packets": 42,
+  "unique_text_items": 61,
+  "text_reviewer_agreement": 61,
+  "disagreement_ids": [],
+  "human_calibration": "NOT_RUN",
+  "population_accuracy_claimed": false,
+  "cases": {
+    "v_0zjA3KPnLK8_q02": {
+      "n_conditions": 10,
+      "new_correct_by_reviewer": {
+        "A": 9,
+        "B": 9
+      }
+    },
+    "l2OTMq4aluc_q06": {
+      "n_conditions": 12,
+      "new_correct_by_reviewer": {
+        "A": 1,
+        "B": 1
+      }
+    },
+    "v_NGk3v4sKqdg_q04": {
+      "n_conditions": 11,
+      "new_correct_by_reviewer": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    "PtbGXfb6B1I_q01": {
+      "n_conditions": 11,
+      "new_correct_by_reviewer": {
+        "A": 0,
+        "B": 0
+      }
+    }
+  }
+}

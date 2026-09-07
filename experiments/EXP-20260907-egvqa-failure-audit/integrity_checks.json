@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-09-07T01:53:30.976656+00:00",
+  "baseline_file_count": 15,
+  "baseline_sha256": {
+    "experiments/EXP-20260907-egvqa-15h-pilot/run-20260907T0206+0800/calls.jsonl": "6f20190c8baa9ef13ad4c9bded365d56e506ea2fba291b46f867d56311a997c5",
+    "experiments/EXP-20260907-egvqa-15h-pilot/run-20260907T0206+0800/e1_pairs.jsonl": "2c6374881d75b7987349e186d6bfad39b7cac2e32ae7f139243fa1a2e13e5411",
+    "experiments/EXP-20260907-egvqa-15h-pilot/run-20260907T0206+0800/e2_results.jsonl": "8d6326d3e24727981673c8f804f8f47f6c1b16e2f01d9d2efc9019a21a3a3460",
+    "experiments/EXP-20260907-egvqa-15h-pilot/run-20260907T0206+0800/resolved_config.json": "cd5df87a76baf1f02d167c6ae2bb87d4f9b613849a39170a85c4682703da29cb",
+    "experiments/EXP-20260907-egvqa-15h-pilot/run-20260907T0206+0800/eval_manifest.json": "db6e31535496acff2ac39196d97fb17caf8a0bf9acac4681b6aa72bccad61376",
+    "src/egvqa_pilot/analysis.py": "2ab6cd8e001f89d1f440da9268e4f98194935287b51f19bf490171015799e903",
+    "src/egvqa_pilot/data.py": "ce2671f3c0fa36e945b8da002250a504ac00ff5babf444d9943b9574b8e7dcdd",
+    "src/egvqa_pilot/encoding.py": "3f8cbf8d50abc6ea223099a63084183d2647b692f5640c076f0cac5509b498f9",
+    "src/egvqa_pilot/isolation.py": "ead27e9290b740f00ec6d00a588f76bd72d7383a0a5e57ca1ea18bb0f4095389",
+    "src/egvqa_pilot/model.py": "db06fa0a0229a1627cc02d250aeb082e50c82194b2a527801106db3e7064c381",
+    "src/egvqa_pilot/prompts.py": "557011b793e6ae3841bd2560a95e2e38811cc222df3cf515b38c706cf830d73a",
+    "src/egvqa_pilot/protocol.py": "eb084e07063a4b688e0a59c205864eb7a420369cbefecb019866a72a49245a13",
+    "src/egvqa_pilot/reader.py": "ace204d2e79b235a5ec50944c5c067ec943c6c1fa5d8bd6ab6c3e939232f49d2",
+    "src/egvqa_pilot/runner.py": "0f9e45c7f166b810990f8d083b2f2be223267d1de7d352b27bd25dfd5efe2dd8",
+    "src/egvqa_subset.py": "33c23cf40fa486eaa47b2ed4c839ba9382ba150dc34b0dc68aae633b90388f69"
+  },
+  "baseline_unchanged": true,
+  "scoring_source_files_unchanged": true,
+  "frozen_aggregation_parsing_validity_candidate_rules_match": true,
+  "scoring_diagnostics_unchanged_after_canonical_rule_alignment": true,
+  "original_model_requests_unchanged": true,
+  "new_local_Qwen_requests": 0,
+  "response_checks": {
+    "status": "PASS",
+    "unique_packets": 42,
+    "logical_conditions": 44,
+    "fresh_context_declarations_checked": true,
+    "OS_isolation_claimed": false
+  },
+  "all_review_ids_unique_and_complete": true,
+  "all_review_reason_word_limits_pass": true,
+  "text_reviewer_agreement": {
+    "agreed": 61,
+    "total": 61,
+    "human": false
+  },
+  "independent_code_review": {
+    "reviewer_type": "AI",
+    "task": "/root/audit_review",
+    "unique_packets_checked": 42,
+    "exported_frames_checked": 824,
+    "RGB_SHA_order_ID_PTS_match": true,
+    "responses_seen": false
+  },
+  "executed": [
+    "analyze_egvqa_scoring.py",
+    "analyze_egvqa_representation.py CPU including alpha0",
+    "prepare_egvqa_reanswer.py",
+    "summarize_egvqa_reanswers.py prepare-judge and report",
+    "py_compile four scripts"
+  ],
+  "not_run": [
+    "original 61-test suite",
+    "new local Qwen inference",
+    "human calibration",
+    "human grounding",
+    "alpha0 answer ablation",
+    "E3"
+  ],
+  "git_staged_diff_check": "PASS",
+  "local_markdown_link_targets_exist": true
+}

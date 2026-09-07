@@ -1,0 +1,171 @@
+{
+  "audit_type": "posthoc_text_and_score_consistency_not_independent_visual_reanswer_not_human",
+  "total_conditions": 512,
+  "complete_conditions": 483,
+  "status_counts": {
+    "complete": 483,
+    "construction_failed": 29
+  },
+  "invalid_questions": [
+    "v_NGk3v4sKqdg_q02",
+    "v_bJ695Pp7Vng_q01",
+    "v_bJ695Pp7Vng_q02",
+    "v_bJ695Pp7Vng_q03"
+  ],
+  "judge_input_equality_checks": {
+    "n_checked_nonempty": 450,
+    "passed": true
+  },
+  "duplicates": {
+    "exact": {
+      "repeated_groups": 57,
+      "repeated_rows": 154,
+      "conflicting_groups": 6,
+      "conflicting_rows": 21,
+      "conflicting_questions": 5
+    },
+    "case_punctuation_whitespace": {
+      "repeated_groups": 57,
+      "repeated_rows": 154,
+      "conflicting_groups": 6,
+      "conflicting_rows": 21,
+      "conflicting_questions": 5
+    }
+  },
+  "reference_lengths": {
+    "n": 48,
+    "min": 7,
+    "median": 12.5,
+    "mean": 12.895833333333334,
+    "max": 20,
+    "above_30": 0
+  },
+  "e1": {
+    "n_valid_questions": 44,
+    "condition_micro_counts": {
+      "Full": {
+        "n": 44,
+        "correct": 11,
+        "verdicts": {
+          "incorrect": 33,
+          "correct": 11
+        }
+      },
+      "Blind": {
+        "n": 44,
+        "correct": 2,
+        "verdicts": {
+          "incorrect": 40,
+          "correct": 2,
+          "uncertain": 2
+        }
+      },
+      "Key": {
+        "n": 115,
+        "correct": 27,
+        "verdicts": {
+          "correct": 27,
+          "incorrect": 88
+        }
+      },
+      "Irrel": {
+        "n": 88,
+        "correct": 24,
+        "verdicts": {
+          "incorrect": 64,
+          "correct": 24
+        }
+      }
+    },
+    "D_positive_zero_negative": {
+      "negative": 7,
+      "zero": 30,
+      "positive": 7
+    },
+    "full_correct": 11,
+    "full_correct_with_any_key_failure": 6,
+    "full_correct_with_two_or_more_key_failures": 3,
+    "full_correct_with_both_irrel_correct": 7,
+    "full_correct_both_irrel_correct_with_two_key_failures": 0,
+    "automatic_joint_candidates": 0,
+    "full_incorrect_any_key_correct": 8,
+    "all_visual_conditions_incorrect": 22,
+    "mean_full_minus_key": -0.018939393939393936,
+    "mean_full_minus_irrel": -0.022727272727272728,
+    "D": {
+      "estimate": 0.0037878787878787897,
+      "ci95": [
+        -0.10228001165501166,
+        0.10608766233766219
+      ],
+      "n_questions": 44,
+      "n_videos": 12,
+      "n_resamples": 2000,
+      "seed": 43,
+      "statistically_positive": false,
+      "limitation": null
+    }
+  },
+  "e2": {
+    "R2_gain": 2,
+    "R2_loss": 8,
+    "R1_R2_exact_equal_questions": 7
+  },
+  "same_packet_conditions": {
+    "identity_rule": "same question_id, snapshot_hash, and ordered selected_ids",
+    "groups": 7,
+    "rows": 14,
+    "different_answer_groups": 0,
+    "different_verdict_groups": 2
+  },
+  "identical_text_consistency_sensitivity": {
+    "rule": "all binary assignments to each of six exact-text conflicting groups; original scores untouched",
+    "n_assignments": 64,
+    "original_R2_minus_R1": {
+      "estimate": -0.125,
+      "ci95": [
+        -0.22916666666666666,
+        -0.020833333333333332
+      ],
+      "n_questions": 48,
+      "n_videos": 12,
+      "n_resamples": 2000,
+      "seed": 43,
+      "statistically_positive": false,
+      "limitation": null
+    },
+    "e2_R2_minus_R1_estimate_range": [
+      -0.14583333333333334,
+      -0.10416666666666667
+    ],
+    "e2_R2_minus_R1_ci_endpoint_envelope": [
+      -0.25,
+      0.020833333333333332
+    ],
+    "e1_D_estimate_range": [
+      0.02272727272727273,
+      0.03787878787878788
+    ],
+    "e1_D_ci_endpoint_envelope": [
+      -0.06885567632850241,
+      0.12701465201465187
+    ],
+    "e1_joint_candidate_range": [
+      0,
+      0
+    ],
+    "only_force_equal_R1_R2_pairs": {
+      "estimate": -0.10416666666666667,
+      "ci95": [
+        -0.22916666666666666,
+        0.020833333333333332
+      ],
+      "n_questions": 48,
+      "n_videos": 12,
+      "n_resamples": 2000,
+      "seed": 43,
+      "statistically_positive": false,
+      "limitation": null
+    }
+  }
+}
