@@ -1,0 +1,670 @@
+{
+  "revised_on": "2026-09-10",
+  "literature_cutoff": "2026-09-09",
+  "classification_axis": "持久记忆对象的计算形态：输入 token、层内 KV、关联矩阵、条件向量表、可调用模型参数。任务与控制策略独立标注。",
+  "classification_unit": "方法中的技术构件；多标签，不强行把混合系统塞入单一类别。",
+  "classes": {
+    "T1": "压缩 token 记忆",
+    "T2": "KV 缓存记忆",
+    "T3": "关联矩阵记忆",
+    "T4": "条件查表记忆",
+    "T5": "参数记忆"
+  },
+  "representatives": {
+    "T1": "L07",
+    "T2": "A10",
+    "T3": "L13",
+    "T4": "L20",
+    "T5": "L18"
+  },
+  "new_count": 20,
+  "previous_count": 20,
+  "records": [
+    {
+      "id": "L01",
+      "name": "LCLM",
+      "title": "End-to-End Context Compression at Scale",
+      "date": "2026-06-08",
+      "source": "https://arxiv.org/abs/2606.09659",
+      "full_text": "https://arxiv.org/html/2606.09659v1",
+      "team": "NYU、Princeton、UMD、Columbia、Harvard、Meta FAIR、LLNL；Izmailov / Goldblum / Goldstein / Zhuang Liu 等团队",
+      "task": "长文本／agent",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "分块编码和池化产生潜 token，经投影输入解码器；分阶段联合训练读写接口。EXPAND 仅是原文回查工具。",
+      "orthogonal_designs": "分块；回查；联合训练",
+      "group": "new_2026"
+    },
+    {
+      "id": "L02",
+      "name": "NextMem",
+      "title": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
+      "date": "2026-02-26",
+      "source": "https://arxiv.org/abs/2603.15634",
+      "full_text": "https://arxiv.org/html/2603.15634v1",
+      "team": "NUS（Tat-Seng Chua、Yang Zhang）、人大（Xu Chen）、CUHK、中国科大",
+      "task": "文本事实记忆",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "自回归编码成潜序列，以重建对齐和逐步替换训练；可先将潜序列重建成文本再回答。",
+      "orthogonal_designs": "自回归；重建；量化",
+      "group": "new_2026"
+    },
+    {
+      "id": "L03",
+      "name": "One Token per Multimodal Evidence",
+      "title": "One Token per Multimodal Evidence: Latent Memory for Resource-Constrained QA",
+      "date": "2026-06-09",
+      "source": "https://arxiv.org/abs/2606.10572",
+      "full_text": "https://arxiv.org/html/2606.10572v1",
+      "team": "NUS School of Computing（Wee Sun Lee 团队）",
+      "task": "文本／图像 QA",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "每条证据压为一个高维 token；联合学习重建、检索和生成，再将检索到的潜 token 送入生成器。",
+      "orthogonal_designs": "检索；联合目标",
+      "group": "new_2026"
+    },
+    {
+      "id": "L04",
+      "name": "LycheeMemory",
+      "title": "Dynamic Long Context Reasoning over Compressed Memory via End-to-End Reinforcement Learning",
+      "date": "2026-02-09",
+      "source": "https://arxiv.org/abs/2602.08382",
+      "full_text": "https://arxiv.org/html/2602.08382v1",
+      "team": "哈工大深圳计算与智能研究院（Min Zhang、Meishan Zhang、Baotian Hu）",
+      "task": "长文本多跳推理",
+      "technical_classes": [
+        "T2"
+      ],
+      "design": "交错插入 memory tokens，保存其层内 KV 作为压缩块；门控选择块，推理器另维护文本工作窗口。",
+      "orthogonal_designs": "块检索；文本工作记忆；RL",
+      "group": "new_2026"
+    },
+    {
+      "id": "L05",
+      "name": "EvoEmbedding",
+      "title": "EvoEmbedding: Evolvable Representations for Long-Context Retrieval and Agentic Memory",
+      "date": "2026-06-19",
+      "source": "https://arxiv.org/abs/2606.21649",
+      "full_text": "https://arxiv.org/html/2606.21649v2",
+      "team": "南京大学（Chaoyou Fu、Caifeng Shan、Junlan Feng）",
+      "task": "动态检索／个性化",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "当前段与历史潜 token 共同编码，更新 FIFO 潜记忆队列；该状态进入检索编码器，改变后续 embedding。",
+      "orthogonal_designs": "递归；FIFO；检索表征",
+      "group": "new_2026"
+    },
+    {
+      "id": "L06",
+      "name": "L²-VMAS",
+      "title": "Dual Latent Memory for Visual Multi-agent System",
+      "date": "2026-01-31",
+      "source": "https://arxiv.org/abs/2602.00471",
+      "full_text": "https://arxiv.org/html/2602.00471v2",
+      "team": "NUS（Shuicheng Yan、Xiaobin Hu）、复旦、清华、浙大、上海 AI Lab 等",
+      "task": "视觉多 agent",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "将视觉证据与思考轨迹分别生成潜 token，按需注入 agent 推理；双来源和触发器不改变 token 接口。",
+      "orthogonal_designs": "双来源；熵触发",
+      "group": "new_2026"
+    },
+    {
+      "id": "L07",
+      "name": "Mem-W",
+      "title": "Mem-W: Latent Memory-Native GUI Agents",
+      "date": "2026-05-10",
+      "source": "https://arxiv.org/abs/2605.09317",
+      "full_text": "https://arxiv.org/html/2605.09317v1",
+      "team": "LV-NUS Lab；NUS / NTU（Guibin Zhang、Shuicheng Yan）",
+      "task": "GUI 操作",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "共享 Q-Former 将观察—动作段压成固定数量潜 token；历史经验和本轮历史在输入序列中合流。",
+      "orthogonal_designs": "检索；双来源；自蒸馏",
+      "group": "new_2026"
+    },
+    {
+      "id": "L08",
+      "name": "LaMem-VLA",
+      "title": "Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation",
+      "date": "2026-07-08",
+      "source": "https://arxiv.org/abs/2607.07608",
+      "full_text": "https://arxiv.org/html/2607.07608v1",
+      "team": "NUS（Shuicheng Yan、Xiaobin Hu）、南京理工（Xiangbo Shu）、浙大（Wenguan Wang）",
+      "task": "机器人操作",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "双历史库经当前隐藏状态检索，condenser 输出潜 token，weaver 将其与观察、指令嵌入拼接。",
+      "orthogonal_designs": "双时间尺度；检索",
+      "group": "new_2026"
+    },
+    {
+      "id": "L09",
+      "name": "LatentMem",
+      "title": "LatentMem: Customizing Latent Memory for Multi-Agent Systems",
+      "date": "2026-02-03",
+      "source": "https://arxiv.org/abs/2602.03036",
+      "full_text": "https://arxiv.org/html/2602.03036v2",
+      "team": "同济、上海 AI Lab、CUHK、南京大学、上海交大等（Muxin Fu、Yu Cheng、Yang Yang 等）",
+      "task": "多 agent",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "composer 根据检索经验及角色上下文生成潜 token，LMPO 训练其内容；底层轨迹库仍是外部数据。",
+      "orthogonal_designs": "角色条件；检索；RL",
+      "group": "new_2026"
+    },
+    {
+      "id": "L10",
+      "name": "ElasticMem",
+      "title": "ElasticMem: Latent Memory as a Learnable Resource for LLM Agents",
+      "date": "2026-05-29",
+      "source": "https://arxiv.org/abs/2605.30690",
+      "full_text": "https://arxiv.org/html/2605.30690v1",
+      "team": "UIUC（Jiaxuan You、Ge Liu）、NTU",
+      "task": "文本 QA／ALFWorld",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "离线键与内容缓存供检索，策略分配各条目的潜 token 数，投影后进入生成输入；查询时 bank 不更新。",
+      "orthogonal_designs": "自适应预算；检索；GRPO",
+      "group": "new_2026"
+    },
+    {
+      "id": "L11",
+      "name": "HyMEM",
+      "title": "Hybrid Self-evolving Structured Memory for GUI Agents",
+      "date": "2026-03-11",
+      "source": "https://arxiv.org/abs/2603.10291",
+      "full_text": "https://arxiv.org/html/2603.10291v1",
+      "team": "UC San Diego（Biwei Huang）、Abel.ai",
+      "task": "GUI 操作",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "连续轨迹编码承担潜内容，离散概念图承担组织与多跳检索；取回混合记忆后刷新工作上下文。",
+      "orthogonal_designs": "图索引；多跳；在线刷新",
+      "group": "new_2026"
+    },
+    {
+      "id": "L12",
+      "name": "Metis",
+      "title": "Metis: Memory Foundation Model",
+      "date": "2026-07-29",
+      "source": "https://arxiv.org/abs/2607.26760",
+      "full_text": "https://arxiv.org/html/2607.26760v2",
+      "team": "MemTensor、人大（Xu Chen）、NUS（Tat-Seng Chua、Yang Zhang）、上海交大、同济等",
+      "task": "跨交互语言任务",
+      "technical_classes": [
+        "T3"
+      ],
+      "design": "local memory 保存动态矩阵及归一化向量，hyper memory 选择隐藏表示并执行写入；矩阵读出参与模型计算。",
+      "orthogonal_designs": "递归；自适应写入",
+      "group": "new_2026"
+    },
+    {
+      "id": "L13",
+      "name": "δ-mem",
+      "title": "$\\delta$-mem: Efficient Online Memory for Large Language Models",
+      "date": "2026-05-12",
+      "source": "https://arxiv.org/abs/2605.12357",
+      "full_text": "https://arxiv.org/html/2605.12357v1",
+      "team": "NTU / DeCLaRe Lab（Soujanya Poria）、Mind Lab、复旦、上海交大等",
+      "task": "文本记忆／推理",
+      "technical_classes": [
+        "T3"
+      ],
+      "design": "从旧状态读出关联向量，修正注意力查询与输出，再按门控 delta rule 将当前键值误差写回矩阵。",
+      "orthogonal_designs": "递归；delta rule；冻结骨干",
+      "group": "new_2026"
+    },
+    {
+      "id": "L14",
+      "name": "IndexMem",
+      "title": "IndexMem: Learned KV-Cache Eviction with Latent Memory for Long-Context LLM Inference",
+      "date": "2026-05-25",
+      "source": "https://arxiv.org/abs/2605.25475",
+      "full_text": "https://arxiv.org/html/2605.25475v2",
+      "team": "HKUST（Yike Guo、Sirui Han）、浙大；微软研究院有官方论文条目",
+      "task": "长文本推理",
+      "technical_classes": [
+        "T2",
+        "T3"
+      ],
+      "design": "indexer 留下部分 KV；被淘汰的键值进入紧凑关联状态，状态读出对普通注意力作残差补偿。",
+      "orthogonal_designs": "混合；学习淘汰",
+      "group": "new_2026"
+    },
+    {
+      "id": "L15",
+      "name": "RetentiveKV",
+      "title": "RetentiveKV: State-Space Memory for Uncertainty-Aware Multimodal KV Cache Eviction",
+      "date": "2026-04-14",
+      "source": "https://arxiv.org/abs/2605.04075",
+      "full_text": "https://arxiv.org/html/2605.04075v1",
+      "team": "浙江大学、阿里巴巴",
+      "task": "多模态推理",
+      "technical_classes": [
+        "T2",
+        "T3"
+      ],
+      "design": "显式保留部分 KV，将待淘汰内容通过熵相关状态转移写入 SSM 式关联状态，供后续读取。",
+      "orthogonal_designs": "混合；熵调节",
+      "group": "new_2026"
+    },
+    {
+      "id": "L16",
+      "name": "FlashMem",
+      "title": "FlashMem: Distilling Intrinsic Latent Memory via Computation Reuse",
+      "date": "2026-01-09",
+      "source": "https://arxiv.org/abs/2601.05505",
+      "full_text": "https://arxiv.org/html/2601.05505v2",
+      "team": "北航（Zengchang Qin）、中科院计算所、UCAS、VinUniversity",
+      "task": "文本 agent",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "Consolidator 读取已经计算的骨干 KV，产出潜 token。KV 是构造记忆时的计算来源，长期输出接口仍是 token。",
+      "orthogonal_designs": "计算复用；熵触发",
+      "group": "new_2026"
+    },
+    {
+      "id": "L17",
+      "name": "MemRoPE",
+      "title": "MemRoPE: Training-Free Infinite Video Generation via Evolving Memory Tokens",
+      "date": "2026-03-12",
+      "source": "https://arxiv.org/abs/2603.12513",
+      "full_text": "https://arxiv.org/html/2603.12513v1",
+      "team": "USC（C.-C. Jay Kuo、Peter A. Beerel）",
+      "task": "长视频生成",
+      "technical_classes": [
+        "T2"
+      ],
+      "design": "在缓存中维护双速 EMA 聚合的记忆键值；键以未旋转形式保存，读取时施加位置编码。",
+      "orthogonal_designs": "EMA；位置重索引",
+      "group": "new_2026"
+    },
+    {
+      "id": "L18",
+      "name": "Context Distillation as Latent Memory Management",
+      "title": "Context Distillation as Latent Memory Management",
+      "date": "2026-05-27",
+      "source": "https://arxiv.org/abs/2605.28889",
+      "full_text": "https://arxiv.org/html/2605.28889v1",
+      "team": "CUHK（Qiang Xu）、华为诺亚方舟实验室",
+      "task": "上下文问答",
+      "technical_classes": [
+        "T5"
+      ],
+      "design": "每个上下文蒸馏出独立 LoRA；查询时检索并路由模块，以共享前缀 KV 和首 token 熵控制启用。",
+      "orthogonal_designs": "模块检索；蒸馏；启停门控",
+      "group": "new_2026"
+    },
+    {
+      "id": "L19",
+      "name": "Memory Grafting",
+      "title": "Memory Grafting: Scaling Language Model Pre-training via Offline Conditional Memory",
+      "date": "2026-05-20",
+      "source": "https://arxiv.org/abs/2605.20948",
+      "full_text": "https://arxiv.org/html/2605.20948v1",
+      "team": "清华大学（Chun Yuan）、微软亚洲研究院（Yeyun Gong、Yan Lu）",
+      "task": "语言预训练",
+      "technical_classes": [
+        "T4"
+      ],
+      "design": "冻结模型离线产生 n-gram 隐藏向量；按最长匹配后缀读取向量表，投影与门控后融合入骨干。",
+      "orthogonal_designs": "离线构表；精确匹配",
+      "group": "new_2026"
+    },
+    {
+      "id": "L20",
+      "name": "Engram",
+      "title": "Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models",
+      "date": "2026-01-12",
+      "source": "https://arxiv.org/abs/2601.07372",
+      "full_text": "https://arxiv.org/html/2601.07372v2",
+      "team": "DeepSeek-AI、北京大学（Huishuai Zhang、Dongyan Zhao）",
+      "task": "语言预训练",
+      "technical_classes": [
+        "T4"
+      ],
+      "design": "规范化局部 token 模式，经多头哈希读取可学习 embedding 表，再用当前隐藏状态门控融合。",
+      "orthogonal_designs": "哈希；上下文门控",
+      "group": "new_2026"
+    },
+    {
+      "id": "A01",
+      "name": "LatentStream",
+      "title": "Beyond Retrieval: Progressive Latent Memory Evolution for Streaming Video Understanding",
+      "date": "2026-09-03",
+      "source": "https://arxiv.org/abs/2609.04131",
+      "full_text": "https://arxiv.org/html/2609.04131",
+      "team": "蚂蚁集团、NUS、CUHK、南京理工",
+      "task": "视频流",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "逐步演化潜 token，问题到达后扩大所整合记忆的范围。",
+      "orthogonal_designs": "多时间尺度；问题后演化",
+      "group": "previous_video"
+    },
+    {
+      "id": "A02",
+      "name": "StreamFlow",
+      "title": "StreamFlow: Dynamic Memory Flows for Streaming Video Understanding",
+      "date": "2026-08-11",
+      "source": "https://arxiv.org/abs/2608.10949",
+      "full_text": "https://arxiv.org/pdf/2608.10949",
+      "team": "NTU（Bo An）、NUS（Shuicheng Yan）、同济、Michigan、HKUST",
+      "task": "视频流",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "过滤动态冗余并保存视觉潜表示，推理中按需向输入／推理序列注入历史。",
+      "orthogonal_designs": "动态过滤；触发读取",
+      "group": "previous_video"
+    },
+    {
+      "id": "A03",
+      "name": "CausalMem",
+      "title": "Towards a Dynamic and Fixed-budget Memory Bank for Efficient Streaming Video Understanding",
+      "date": "2026-06-24",
+      "source": "https://arxiv.org/abs/2606.25658",
+      "full_text": "https://arxiv.org/html/2606.25658",
+      "team": "厦门大学多媒体可信感知与高效计算教育部重点实验室（纪荣嵘、周易毅）",
+      "task": "视频流",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "维护固定预算视觉表征 bank，以语义基底与冗余分析决定保留及压缩。",
+      "orthogonal_designs": "免训练；预算约束",
+      "group": "previous_video"
+    },
+    {
+      "id": "A04",
+      "name": "OmniMem",
+      "title": "OmniMem: Perturbation-aware Memory Compression for Streaming Audio-Visual LLMs",
+      "date": "2026-05-26",
+      "source": "https://arxiv.org/abs/2606.07577",
+      "full_text": "https://arxiv.org/html/2606.07577",
+      "team": "字节跳动、剑桥大学、清华大学",
+      "task": "音视频流",
+      "technical_classes": [
+        "T2"
+      ],
+      "design": "按扰动敏感性管理音频和视觉 KV，并为两类缓存分配预算。",
+      "orthogonal_designs": "分模态预算",
+      "group": "previous_video"
+    },
+    {
+      "id": "A05",
+      "name": "MuKV",
+      "title": "MuKV: Multi-Grained KV Cache Compression for Long Streaming Video Question-Answering",
+      "date": "2026-05-21",
+      "source": "https://arxiv.org/abs/2605.22269",
+      "full_text": "https://arxiv.org/html/2605.22269",
+      "team": "NUS（Angela Yao）、中国科大",
+      "task": "长视频问答",
+      "technical_classes": [
+        "T2"
+      ],
+      "design": "在 patch、帧、片段尺度压缩和组织 KV；按层级读取。",
+      "orthogonal_designs": "多粒度；层级",
+      "group": "previous_video"
+    },
+    {
+      "id": "A06",
+      "name": "R3-Streaming",
+      "title": "An Efficient Streaming Video Understanding Framework with Agentic Control",
+      "date": "2026-05-18",
+      "source": "https://arxiv.org/abs/2605.17921",
+      "full_text": "https://arxiv.org/html/2605.17921",
+      "team": "微软亚洲研究院、上海交大、宁波东方理工",
+      "task": "视频流",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "近远区采用不同视觉 token 压缩强度，旧内容合并到紧凑 slots；响应与模型路由在外层控制。",
+      "orthogonal_designs": "时间分区；响应门控；模型路由",
+      "group": "previous_video",
+      "read_scope": "分别核对 R3 §4.2 与 WeaveTime §3.1、§3.3"
+    },
+    {
+      "id": "A07",
+      "name": "FlexMem",
+      "title": "Scaling the Long Video Understanding of Multimodal Large Language Models via Visual Memory Mechanism",
+      "date": "2026-03-31",
+      "source": "https://arxiv.org/abs/2603.29252",
+      "full_text": "https://arxiv.org/html/2603.29252",
+      "team": "厦门大学上述教育部重点实验室、国防科大",
+      "task": "长视频",
+      "technical_classes": [
+        "T2"
+      ],
+      "design": "结合压缩全局 KV 与局部细节检索，给长视频推理复用缓存。",
+      "orthogonal_designs": "全局／局部；检索",
+      "group": "previous_video"
+    },
+    {
+      "id": "A08",
+      "name": "FluxMem",
+      "title": "FluxMem: Adaptive Hierarchical Memory for Streaming Video Understanding",
+      "date": "2026-03-02",
+      "source": "https://arxiv.org/abs/2603.02096",
+      "full_text": "https://arxiv.org/html/2603.02096",
+      "team": "复旦可信具身智能研究院（吴祖玄）、上海创智、马里兰大学",
+      "task": "视频流",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "对视觉 token 做时间冗余抑制与空间合并，并调节压缩强度。",
+      "orthogonal_designs": "时空合并；自适应预算",
+      "group": "previous_video"
+    },
+    {
+      "id": "A09",
+      "name": "WeaveTime",
+      "title": "WeaveTime: Stream from Earlier Frames into Emergent Memory in VideoLLMs",
+      "date": "2026-02-25",
+      "source": "https://arxiv.org/abs/2602.22142",
+      "full_text": "https://arxiv.org/html/2602.22142",
+      "team": "香港大学、上海科技大学、中山大学（杨思蓓）",
+      "task": "视频流",
+      "technical_classes": [
+        "T2"
+      ],
+      "design": "将记忆检索集成入 LLM cache，依当前置信程度调用过去缓存并做粗到细选择。",
+      "orthogonal_designs": "时间学习；熵触发；分级检索",
+      "group": "previous_video",
+      "read_scope": "分别核对 R3 §4.2 与 WeaveTime §3.1、§3.3"
+    },
+    {
+      "id": "A10",
+      "name": "HERMES",
+      "title": "HERMES: KV Cache as Hierarchical Memory for Efficient Streaming Video Understanding",
+      "date": "2026-01-21",
+      "source": "https://arxiv.org/abs/2601.14724",
+      "full_text": "https://arxiv.org/pdf/2601.14724",
+      "team": "复旦 OpenMOSS、上海创智、NUS",
+      "task": "视频流",
+      "technical_classes": [
+        "T2"
+      ],
+      "design": "逐层评分并选择 K/V，平滑跨层分数，保存淘汰摘要 KV 并重索引位置。",
+      "orthogonal_designs": "跨层分级；摘要；位置处理",
+      "group": "previous_video",
+      "read_scope": "§3.1–3.3、§4.1；作者 PDF"
+    },
+    {
+      "id": "A11",
+      "name": "Memento",
+      "title": "Memento: Toward an All-Day Proactive Assistant for Ultra-Long Streaming Video",
+      "date": "2026 ICLR；更早首发未核定",
+      "source": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/3b5f4587a0bdb81ecc6ce9d82320a5c2-Abstract-Conference.html",
+      "full_text": "https://proceedings.iclr.cc/paper_files/paper/2026/file/3b5f4587a0bdb81ecc6ce9d82320a5c2-Paper-Conference.pdf",
+      "team": "Deepeleph、清华大学、小红书、北航等",
+      "task": "全天主动助手",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "当前视觉特征与历史 token 进行保留／融合，再按问题选取送入 LLM；时间掩码约束训练可见性。",
+      "orthogonal_designs": "递归；检索；时间因果掩码",
+      "group": "previous_video",
+      "read_scope": "§3.1–3.3"
+    },
+    {
+      "id": "A12",
+      "name": "StreamingVLM",
+      "title": "StreamingVLM: Real-Time Understanding for Infinite Video Streams",
+      "date": "2025-10-10",
+      "source": "https://arxiv.org/abs/2510.09608",
+      "full_text": "https://arxiv.org/html/2510.09608",
+      "team": "MIT Han Lab、NVIDIA、First Intelligence",
+      "task": "实时视频流",
+      "technical_classes": [
+        "T2"
+      ],
+      "design": "保留 sink、短视觉窗口和较长文本窗口，在有限 KV 上持续生成。",
+      "orthogonal_designs": "滑窗；sink",
+      "group": "previous_video"
+    },
+    {
+      "id": "A13",
+      "name": "StreamMem",
+      "title": "StreamMem: Query-Agnostic KV Cache Memory for Streaming Video Understanding",
+      "date": "2025-08-21",
+      "source": "https://arxiv.org/abs/2508.15717",
+      "full_text": "https://arxiv.org/html/2508.15717",
+      "team": "Meta AI、NYU Agentic Learning Lab",
+      "task": "视频流",
+      "technical_classes": [
+        "T2"
+      ],
+      "design": "用通用 query token 对视觉 KV 评分，未来问题未知时维护固定容量 KV。",
+      "orthogonal_designs": "问题无关写入",
+      "group": "previous_video"
+    },
+    {
+      "id": "A14",
+      "name": "Flash-VStream",
+      "title": "Flash-VStream: Efficient Real-Time Understanding for Long Video Streams",
+      "date": "2024 前身 / 2025-06-30 扩展",
+      "source": "https://arxiv.org/abs/2506.23825",
+      "full_text": "https://arxiv.org/html/2506.23825",
+      "team": "清华大学、字节跳动、北京交通大学",
+      "task": "实时视频",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "分别保存上下文概述与细节视觉表示，供异步问答时融合读取。",
+      "orthogonal_designs": "概述／细节；异步",
+      "group": "previous_video"
+    },
+    {
+      "id": "A15",
+      "name": "ReKV",
+      "title": "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+      "date": "2025-03-01",
+      "source": "https://arxiv.org/abs/2503.00540",
+      "full_text": "https://arxiv.org/html/2503.00540",
+      "team": "阿里巴巴、上海交大",
+      "task": "视频流",
+      "technical_classes": [
+        "T2"
+      ],
+      "design": "滑窗编码后将历史 KV 存入外部介质，按问题检索并搬回；外部库随历史增长。",
+      "orthogonal_designs": "分层存储；检索",
+      "group": "previous_video"
+    },
+    {
+      "id": "A16",
+      "name": "Video-XL",
+      "title": "Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding",
+      "date": "2024-09-22",
+      "source": "https://arxiv.org/abs/2409.14485",
+      "full_text": "https://arxiv.org/html/2409.14485",
+      "team": "北京智源、北京大学、人大、上海交大等",
+      "task": "小时级视频",
+      "technical_classes": [
+        "T2"
+      ],
+      "design": "可学习总结 token 汇总片段，其层内压缩 KV 承接长历史；不是只存一层输入 embedding。",
+      "orthogonal_designs": "学习压缩；渐进训练",
+      "group": "previous_video"
+    },
+    {
+      "id": "A17",
+      "name": "VideoLLaMB",
+      "title": "VideoLLaMB: Long Streaming Video Understanding with Recurrent Memory Bridges",
+      "date": "2024-09-02",
+      "source": "https://arxiv.org/abs/2409.01071",
+      "full_text": "https://arxiv.org/html/2409.01071",
+      "team": "BIGAI 通用人工智能全国重点实验室、北大、北理工、UCSC",
+      "task": "视频流",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "memory bridge 在片段间递归传递压缩 token；记忆对象仍是 token 序列。",
+      "orthogonal_designs": "递归；场景切分",
+      "group": "previous_video"
+    },
+    {
+      "id": "A18",
+      "name": "VideoStreaming",
+      "title": "Streaming Long Video Understanding with Large Language Models",
+      "date": "2024-05-25",
+      "source": "https://arxiv.org/abs/2405.16009",
+      "full_text": "https://arxiv.org/html/2405.16009",
+      "team": "上海人工智能实验室、香港中文大学",
+      "task": "长视频",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "跨片段传播压缩表征，问题到来后选择相关记忆供后续推理。",
+      "orthogonal_designs": "递归；选择",
+      "group": "previous_video"
+    },
+    {
+      "id": "A19",
+      "name": "MA-LMM",
+      "title": "MA-LMM: Memory-Augmented Large Multimodal Model for Long-Term Video Understanding",
+      "date": "2024-04-08",
+      "source": "https://arxiv.org/abs/2404.05726",
+      "full_text": "https://arxiv.org/html/2404.05726",
+      "team": "Meta、马里兰大学（Abhinav Shrivastava）",
+      "task": "视频理解",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "视觉特征 bank 与查询表征 bank 通过注意力融合读取；没有将历史写成 delta-rule 矩阵。",
+      "orthogonal_designs": "双 bank；注意力融合",
+      "group": "previous_video"
+    },
+    {
+      "id": "A20",
+      "name": "MovieChat",
+      "title": "MovieChat: From Dense Token to Sparse Memory for Long Video Understanding",
+      "date": "2023-07-31",
+      "source": "https://arxiv.org/abs/2307.16449",
+      "full_text": "https://arxiv.org/html/2307.16449",
+      "team": "微软亚洲研究院、浙江大学、华盛顿大学",
+      "task": "长视频",
+      "technical_classes": [
+        "T1"
+      ],
+      "design": "将短期密集视觉 token 合并为稀疏长期 token，送入视觉语言推理。",
+      "orthogonal_designs": "聚合；双时间尺度",
+      "group": "previous_video"
+    }
+  ]
+}
