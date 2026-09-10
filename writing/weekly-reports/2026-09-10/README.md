@@ -6,11 +6,13 @@
 
 当前稿另按**单轮使用、跨问题复用、跨会话持久化**说明各路线的使用边界：远期证据回忆与跨会话保存分开讨论。每条路线的正文给出差别，备注展开保存／读取机制、训练影响和建议评测协议，并区分文献事实与可扩展设计。
 
+配套[完整调研报告](../../../research/literature/latent_memory_technical_taxonomy_2026-09-10.md)已将原两批 40 篇合并归类，并新增 6 项状态工作，共 46 项：压缩 token 22、KV 缓存 11、递归状态 10、其他 3。IndexMem、RetentiveKV 主归递归状态并保留 KV 混合标签；六页稿仍保留原精选范围。
+
 ## 五类技术接口（历史版本）
 
 内容源为 `latent_memory_technical_12slides_2026-09-10.md`，阅读／打印版为同名 HTML。封面与结束页各 1 页，正文 10 页；五条技术路线各“总体设计＋代表设计”两页。
 
-本版按记忆的计算形态分类，任务仅作为应用标签。代表设计为 Mem-W、HERMES、δ-mem、Engram、Context Distillation。完整 40 篇映射与设计详解见 [技术报告](../../../research/literature/latent_memory_technical_taxonomy_2026-09-10.md)。2026-09-09 版本保留为历史记录。
+本历史版按五类记忆计算形态分类，任务仅作为应用标签。代表设计为 Mem-W、HERMES、δ-mem、Engram、Context Distillation，当时覆盖 40 篇工作。当前分类与新增材料见上方完整调研报告；本历史稿及 2026-09-09 版本保留。
 
 重建需 Node.js、marked、playwright：运行 `node build_weekly.mjs`；可用 `CHROME_PATH` 指定本机 Chrome。首次渲染公式需访问 MathJax CDN，生成后的 HTML 已内嵌公式 SVG，可离线阅读。`SKIP_RENDER=1` 只生成保留 LaTeX 的动态 HTML。
 

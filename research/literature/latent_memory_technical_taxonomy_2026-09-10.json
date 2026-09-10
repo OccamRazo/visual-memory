@@ -1,21 +1,23 @@
 {
   "revised_on": "2026-09-10",
-  "literature_cutoff": "2026-09-09",
-  "classification_axis": "持久记忆对象的计算形态：输入 token、层内 KV、关联矩阵、条件向量表、可调用模型参数。任务与控制策略独立标注。",
-  "classification_unit": "方法中的技术构件；多标签，不强行把混合系统塞入单一类别。",
+  "literature_cutoff": "2026-09-10",
+  "classification_axis": "主要记忆载体与读取接口：压缩 token、KV 缓存、递归状态；其他收纳条件查表和参数模块。任务、访问策略与持久化边界独立标注。",
+  "classification_unit": "每项一个主列位置；KV＋递归状态混合工作主归递归状态，KV 路线交叉引用；保留技术构件多标签。",
   "classes": {
-    "T1": "压缩 token 记忆",
-    "T2": "KV 缓存记忆",
-    "T3": "关联矩阵记忆",
-    "T4": "条件查表记忆",
-    "T5": "参数记忆"
+    "T1": "压缩 token",
+    "T2": "KV 缓存",
+    "T3": "递归状态",
+    "O": "其他"
   },
   "representatives": {
     "T1": "L07",
     "T2": "A10",
     "T3": "L13",
-    "T4": "L20",
-    "T5": "L18"
+    "O": [
+      "L19",
+      "L20",
+      "L18"
+    ]
   },
   "new_count": 20,
   "previous_count": 20,
@@ -34,7 +36,14 @@
       ],
       "design": "分块编码和池化产生潜 token，经投影输入解码器；分阶段联合训练读写接口。EXPAND 仅是原文回查工具。",
       "orthogonal_designs": "分块；回查；联合训练",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "查询压缩、编码器对齐与潜 token 生成",
+      "classification_rationale": "读写接口联合对齐；和视频池化相比，重点从删减冗余扩展到“压缩后怎样被读懂”。",
+      "report_anchor": "paper-L01"
     },
     {
       "id": "L02",
@@ -50,7 +59,14 @@
       ],
       "design": "自回归编码成潜序列，以重建对齐和逐步替换训练；可先将潜序列重建成文本再回答。",
       "orthogonal_designs": "自回归；重建；量化",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "查询压缩、编码器对齐与潜 token 生成",
+      "classification_rationale": "强调事实可恢复性；重建是读取路径及训练目标，记忆载体仍是潜 token。",
+      "report_anchor": "paper-L02"
     },
     {
       "id": "L03",
@@ -66,7 +82,14 @@
       ],
       "design": "每条证据压为一个高维 token；联合学习重建、检索和生成，再将检索到的潜 token 送入生成器。",
       "orthogonal_designs": "检索；联合目标",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "查询压缩、编码器对齐与潜 token 生成",
+      "classification_rationale": "将证据选择与潜 token 生成接口结合；一个高维 token 的容量仍需按字节核算。",
+      "report_anchor": "paper-L03"
     },
     {
       "id": "L04",
@@ -82,7 +105,14 @@
       ],
       "design": "交错插入 memory tokens，保存其层内 KV 作为压缩块；门控选择块，推理器另维护文本工作窗口。",
       "orthogonal_designs": "块检索；文本工作记忆；RL",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T2"
+      ],
+      "primary_class": "T2",
+      "technical_subbranch": "摘要 KV 与位置维护",
+      "classification_rationale": "memory tokens 对应的层内 KV 被持久保留为压缩块；按实际保存对象归 T2。",
+      "report_anchor": "paper-L04"
     },
     {
       "id": "L05",
@@ -98,7 +128,14 @@
       ],
       "design": "当前段与历史潜 token 共同编码，更新 FIFO 潜记忆队列；该状态进入检索编码器，改变后续 embedding。",
       "orthogonal_designs": "递归；FIFO；检索表征",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "递归 token 写入与按需注入",
+      "classification_rationale": "潜 token 队列改变后续检索 embedding；读取者是检索编码器，也属于 token 接口。",
+      "report_anchor": "paper-L05"
     },
     {
       "id": "L06",
@@ -114,7 +151,14 @@
       ],
       "design": "将视觉证据与思考轨迹分别生成潜 token，按需注入 agent 推理；双来源和触发器不改变 token 接口。",
       "orthogonal_designs": "双来源；熵触发",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "检索后的 token 组织与容量分配",
+      "classification_rationale": "视觉证据与思考轨迹是两类来源，最终由潜 token 接口读取，双来源不等于两类载体。",
+      "report_anchor": "paper-L06"
     },
     {
       "id": "L07",
@@ -130,7 +174,14 @@
       ],
       "design": "共享 Q-Former 将观察—动作段压成固定数量潜 token；历史经验和本轮历史在输入序列中合流。",
       "orthogonal_designs": "检索；双来源；自蒸馏",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "查询压缩、编码器对齐与潜 token 生成",
+      "classification_rationale": "共享查询压缩器统一历史经验与本轮步骤；检索来源不同，不改变 Q-Former 压缩接口。",
+      "report_anchor": "paper-L07"
     },
     {
       "id": "L08",
@@ -146,7 +197,14 @@
       ],
       "design": "双历史库经当前隐藏状态检索，condenser 输出潜 token，weaver 将其与观察、指令嵌入拼接。",
       "orthogonal_designs": "双时间尺度；检索",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "检索后的 token 组织与容量分配",
+      "classification_rationale": "检索历史后压缩并接入策略模型；机器人是使用者和任务，不构成第四条技术路线。",
+      "report_anchor": "paper-L08"
     },
     {
       "id": "L09",
@@ -162,7 +220,14 @@
       ],
       "design": "composer 根据检索经验及角色上下文生成潜 token，LMPO 训练其内容；底层轨迹库仍是外部数据。",
       "orthogonal_designs": "角色条件；检索；RL",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "检索后的 token 组织与容量分配",
+      "classification_rationale": "角色条件和 LMPO 控制潜 token 的内容；外部轨迹库与生成的工作记忆需分别核算。",
+      "report_anchor": "paper-L09"
     },
     {
       "id": "L10",
@@ -176,9 +241,16 @@
       "technical_classes": [
         "T1"
       ],
-      "design": "离线键与内容缓存供检索，策略分配各条目的潜 token 数，投影后进入生成输入；查询时 bank 不更新。",
+      "design": "冻结离线编码器保存检索键和末段隐藏状态；策略为检索条目分配潜 token 数，经投影接入生成输入，记忆 bank 保持只读。",
       "orthogonal_designs": "自适应预算；检索；GRPO",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "检索后的 token 组织与容量分配",
+      "classification_rationale": "content cache 保存隐藏表示，最终投影为 soft tokens；名称中的 cache 不足以归为 T2。",
+      "report_anchor": "paper-L10"
     },
     {
       "id": "L11",
@@ -192,9 +264,16 @@
       "technical_classes": [
         "T1"
       ],
-      "design": "连续轨迹编码承担潜内容，离散概念图承担组织与多跳检索；取回混合记忆后刷新工作上下文。",
+      "design": "采用 CoMEM 将轨迹压为 8 个连续嵌入，直接拼入 GUI agent 嵌入层；离散策略与属性构成图索引，支持多跳检索和工作记忆刷新。",
       "orthogonal_designs": "图索引；多跳；在线刷新",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "检索后的 token 组织与容量分配",
+      "classification_rationale": "连续轨迹向量直接拼入 agent 嵌入层，满足 T1 接口；概念图是并存的结构化索引。",
+      "report_anchor": "paper-L11"
     },
     {
       "id": "L12",
@@ -210,7 +289,14 @@
       ],
       "design": "local memory 保存动态矩阵及归一化向量，hyper memory 选择隐藏表示并执行写入；矩阵读出参与模型计算。",
       "orthogonal_designs": "递归；自适应写入",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T3"
+      ],
+      "primary_class": "T3",
+      "technical_subbranch": "关联矩阵与可学习读写",
+      "classification_rationale": "历史累积到动态矩阵及归一化状态，并由学习的读写程序使用，主接口属于递归状态。",
+      "report_anchor": "paper-L12"
     },
     {
       "id": "L13",
@@ -226,7 +312,14 @@
       ],
       "design": "从旧状态读出关联向量，修正注意力查询与输出，再按门控 delta rule 将当前键值误差写回矩阵。",
       "orthogonal_designs": "递归；delta rule；冻结骨干",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T3"
+      ],
+      "primary_class": "T3",
+      "technical_subbranch": "关联矩阵与可学习读写",
+      "classification_rationale": "历史写入实例状态，状态读出修正注意力；冻结主干与状态在线更新是不同层面的操作。",
+      "report_anchor": "paper-L13"
     },
     {
       "id": "L14",
@@ -243,7 +336,15 @@
       ],
       "design": "indexer 留下部分 KV；被淘汰的键值进入紧凑关联状态，状态读出对普通注意力作残差补偿。",
       "orthogonal_designs": "混合；学习淘汰",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T2",
+        "T3"
+      ],
+      "primary_class": "T3",
+      "technical_subbranch": "递归状态与显式注意力混合",
+      "classification_rationale": "T3＋T2：递归状态补偿被淘汰 KV；按用户确认的混合方法口径主列递归状态，KV 路线保留交叉引用。",
+      "report_anchor": "paper-L14"
     },
     {
       "id": "L15",
@@ -260,7 +361,15 @@
       ],
       "design": "显式保留部分 KV，将待淘汰内容通过熵相关状态转移写入 SSM 式关联状态，供后续读取。",
       "orthogonal_designs": "混合；熵调节",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T2",
+        "T3"
+      ],
+      "primary_class": "T3",
+      "technical_subbranch": "递归状态与显式注意力混合",
+      "classification_rationale": "T3＋T2：递归状态补偿被淘汰 KV；按用户确认的混合方法口径主列递归状态，KV 路线保留交叉引用。",
+      "report_anchor": "paper-L15"
     },
     {
       "id": "L16",
@@ -276,7 +385,14 @@
       ],
       "design": "Consolidator 读取已经计算的骨干 KV，产出潜 token。KV 是构造记忆时的计算来源，长期输出接口仍是 token。",
       "orthogonal_designs": "计算复用；熵触发",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "查询压缩、编码器对齐与潜 token 生成",
+      "classification_rationale": "读取 KV 来构造记忆，但供后续使用的是潜 token；按输出记忆接口归 T1。",
+      "report_anchor": "paper-L16"
     },
     {
       "id": "L17",
@@ -292,7 +408,14 @@
       ],
       "design": "在缓存中维护双速 EMA 聚合的记忆键值；键以未旋转形式保存，读取时施加位置编码。",
       "orthogonal_designs": "EMA；位置重索引",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T2"
+      ],
+      "primary_class": "T2",
+      "technical_subbranch": "摘要 KV 与位置维护",
+      "classification_rationale": "双速 EMA 聚合的是缓存键值，另维护旋转位置编码；EMA 不使其自动变成 T3。",
+      "report_anchor": "paper-L17"
     },
     {
       "id": "L18",
@@ -304,11 +427,18 @@
       "team": "CUHK（Qiang Xu）、华为诺亚方舟实验室",
       "task": "上下文问答",
       "technical_classes": [
-        "T5"
+        "O"
       ],
       "design": "每个上下文蒸馏出独立 LoRA；查询时检索并路由模块，以共享前缀 KV 和首 token 熵控制启用。",
       "orthogonal_designs": "模块检索；蒸馏；启停门控",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T5"
+      ],
+      "primary_class": "O",
+      "technical_subbranch": "上下文蒸馏为参数模块",
+      "classification_rationale": "上下文信息经优化写入独立 LoRA，读取时改变模型参数映射；共享前缀 KV 是配套加速。",
+      "report_anchor": "paper-L18"
     },
     {
       "id": "L19",
@@ -320,11 +450,18 @@
       "team": "清华大学（Chun Yuan）、微软亚洲研究院（Yeyun Gong、Yan Lu）",
       "task": "语言预训练",
       "technical_classes": [
-        "T4"
+        "O"
       ],
       "design": "冻结模型离线产生 n-gram 隐藏向量；按最长匹配后缀读取向量表，投影与门控后融合入骨干。",
       "orthogonal_designs": "离线构表；精确匹配",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T4"
+      ],
+      "primary_class": "O",
+      "technical_subbranch": "离散地址的条件向量表",
+      "classification_rationale": "主要记忆是离散 n-gram 地址对应的条件向量表，不是本次历史压出的 token 序列或递归状态。",
+      "report_anchor": "paper-L19"
     },
     {
       "id": "L20",
@@ -336,11 +473,18 @@
       "team": "DeepSeek-AI、北京大学（Huishuai Zhang、Dongyan Zhao）",
       "task": "语言预训练",
       "technical_classes": [
-        "T4"
+        "O"
       ],
       "design": "规范化局部 token 模式，经多头哈希读取可学习 embedding 表，再用当前隐藏状态门控融合。",
       "orthogonal_designs": "哈希；上下文门控",
-      "group": "new_2026"
+      "group": "new_2026",
+      "previous_technical_classes": [
+        "T4"
+      ],
+      "primary_class": "O",
+      "technical_subbranch": "离散地址的条件向量表",
+      "classification_rationale": "推理时按离散模式查表并门控融合；表值可训练，不意味着它属于递归状态或 KV 缓存。",
+      "report_anchor": "paper-L20"
     },
     {
       "id": "A01",
@@ -356,7 +500,14 @@
       ],
       "design": "逐步演化潜 token，问题到达后扩大所整合记忆的范围。",
       "orthogonal_designs": "多时间尺度；问题后演化",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "递归 token 写入与按需注入",
+      "classification_rationale": "历史通过潜 token 演化和问题后整合来使用；递归更新不自动使它归入 T3。",
+      "report_anchor": "paper-A01"
     },
     {
       "id": "A02",
@@ -372,7 +523,14 @@
       ],
       "design": "过滤动态冗余并保存视觉潜表示，推理中按需向输入／推理序列注入历史。",
       "orthogonal_designs": "动态过滤；触发读取",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "递归 token 写入与按需注入",
+      "classification_rationale": "过滤和注入控制何时保留、何时使用视觉潜表示；主要历史接口仍是 token。",
+      "report_anchor": "paper-A02"
     },
     {
       "id": "A03",
@@ -388,7 +546,14 @@
       ],
       "design": "维护固定预算视觉表征 bank，以语义基底与冗余分析决定保留及压缩。",
       "orthogonal_designs": "免训练；预算约束",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "token 的选择、合并与预算控制",
+      "classification_rationale": "按语义基底和冗余管理视觉 token；预算约束与因果写入是策略，不另设任务类别。",
+      "report_anchor": "paper-A03"
     },
     {
       "id": "A04",
@@ -404,7 +569,14 @@
       ],
       "design": "按扰动敏感性管理音频和视觉 KV，并为两类缓存分配预算。",
       "orthogonal_designs": "分模态预算",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T2"
+      ],
+      "primary_class": "T2",
+      "technical_subbranch": "KV 选择、窗口与分层预算",
+      "classification_rationale": "以模态敏感性分配 KV 预算；音视频标签说明数据类型，不决定技术归属。",
+      "report_anchor": "paper-A04"
     },
     {
       "id": "A05",
@@ -420,7 +592,14 @@
       ],
       "design": "在 patch、帧、片段尺度压缩和组织 KV；按层级读取。",
       "orthogonal_designs": "多粒度；层级",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T2"
+      ],
+      "primary_class": "T2",
+      "technical_subbranch": "KV 选择、窗口与分层预算",
+      "classification_rationale": "patch／帧／片段是 KV 管理粒度；重点是细节与全局事件之间的预算分配。",
+      "report_anchor": "paper-A05"
     },
     {
       "id": "A06",
@@ -437,7 +616,14 @@
       "design": "近远区采用不同视觉 token 压缩强度，旧内容合并到紧凑 slots；响应与模型路由在外层控制。",
       "orthogonal_designs": "时间分区；响应门控；模型路由",
       "group": "previous_video",
-      "read_scope": "分别核对 R3 §4.2 与 WeaveTime §3.1、§3.3"
+      "read_scope": "分别核对 R3 §4.2 与 WeaveTime §3.1、§3.3",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "token 的选择、合并与预算控制",
+      "classification_rationale": "远近分区改变 token 压缩率；响应门控和模型路由属于外层控制，不改变记忆载体。",
+      "report_anchor": "paper-A06"
     },
     {
       "id": "A07",
@@ -446,14 +632,21 @@
       "date": "2026-03-31",
       "source": "https://arxiv.org/abs/2603.29252",
       "full_text": "https://arxiv.org/html/2603.29252",
-      "team": "厦门大学上述教育部重点实验室、国防科大",
+      "team": "厦门大学多媒体可信感知与高效计算教育部重点实验室、国防科大",
       "task": "长视频",
       "technical_classes": [
         "T2"
       ],
       "design": "结合压缩全局 KV 与局部细节检索，给长视频推理复用缓存。",
       "orthogonal_designs": "全局／局部；检索",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T2"
+      ],
+      "primary_class": "T2",
+      "technical_subbranch": "外部历史与按需 KV 检索",
+      "classification_rationale": "压缩全局缓存与局部检索协同；需区分 GPU 活跃缓存和外部历史的总容量。",
+      "report_anchor": "paper-A07"
     },
     {
       "id": "A08",
@@ -469,7 +662,14 @@
       ],
       "design": "对视觉 token 做时间冗余抑制与空间合并，并调节压缩强度。",
       "orthogonal_designs": "时空合并；自适应预算",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "token 的选择、合并与预算控制",
+      "classification_rationale": "通过时间去冗余和空间合并压缩输入表征，适合与文本压缩器比较信息瓶颈。",
+      "report_anchor": "paper-A08"
     },
     {
       "id": "A09",
@@ -486,7 +686,14 @@
       "design": "将记忆检索集成入 LLM cache，依当前置信程度调用过去缓存并做粗到细选择。",
       "orthogonal_designs": "时间学习；熵触发；分级检索",
       "group": "previous_video",
-      "read_scope": "分别核对 R3 §4.2 与 WeaveTime §3.1、§3.3"
+      "read_scope": "分别核对 R3 §4.2 与 WeaveTime §3.1、§3.3",
+      "previous_technical_classes": [
+        "T2"
+      ],
+      "primary_class": "T2",
+      "technical_subbranch": "外部历史与按需 KV 检索",
+      "classification_rationale": "在 LLM cache 内做粗到细检索；置信度是读取触发条件，不是另一种记忆载体。",
+      "report_anchor": "paper-A09"
     },
     {
       "id": "A10",
@@ -503,7 +710,14 @@
       "design": "逐层评分并选择 K/V，平滑跨层分数，保存淘汰摘要 KV 并重索引位置。",
       "orthogonal_designs": "跨层分级；摘要；位置处理",
       "group": "previous_video",
-      "read_scope": "§3.1–3.3、§4.1；作者 PDF"
+      "read_scope": "§3.1–3.3、§4.1；作者 PDF",
+      "previous_technical_classes": [
+        "T2"
+      ],
+      "primary_class": "T2",
+      "technical_subbranch": "KV 选择、窗口与分层预算",
+      "classification_rationale": "保留和摘要对象最终是逐层 K/V；跨层平滑与位置重索引属于缓存维护。",
+      "report_anchor": "paper-A10"
     },
     {
       "id": "A11",
@@ -520,7 +734,14 @@
       "design": "当前视觉特征与历史 token 进行保留／融合，再按问题选取送入 LLM；时间掩码约束训练可见性。",
       "orthogonal_designs": "递归；检索；时间因果掩码",
       "group": "previous_video",
-      "read_scope": "§3.1–3.3"
+      "read_scope": "§3.1–3.3",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "检索后的 token 组织与容量分配",
+      "classification_rationale": "历史特征通过 token 保留、融合与选择进入 LLM；全天助手是应用范围。",
+      "report_anchor": "paper-A11"
     },
     {
       "id": "A12",
@@ -536,7 +757,14 @@
       ],
       "design": "保留 sink、短视觉窗口和较长文本窗口，在有限 KV 上持续生成。",
       "orthogonal_designs": "滑窗；sink",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T2"
+      ],
+      "primary_class": "T2",
+      "technical_subbranch": "KV 选择、窗口与分层预算",
+      "classification_rationale": "以 sink 和不同模态窗口限制历史 KV；可持续生成不等于任意远期证据仍在缓存中。",
+      "report_anchor": "paper-A12"
     },
     {
       "id": "A13",
@@ -552,7 +780,14 @@
       ],
       "design": "用通用 query token 对视觉 KV 评分，未来问题未知时维护固定容量 KV。",
       "orthogonal_designs": "问题无关写入",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T2"
+      ],
+      "primary_class": "T2",
+      "technical_subbranch": "KV 选择、窗口与分层预算",
+      "classification_rationale": "通用 query 用来评分视觉 KV；问题无关的写入策略适用于未来问题尚未出现的场景。",
+      "report_anchor": "paper-A13"
     },
     {
       "id": "A14",
@@ -568,7 +803,14 @@
       ],
       "design": "分别保存上下文概述与细节视觉表示，供异步问答时融合读取。",
       "orthogonal_designs": "概述／细节；异步",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "token 的选择、合并与预算控制",
+      "classification_rationale": "概述与细节是两组视觉表征，异步读取是调度机制；不是两种独立技术路线。",
+      "report_anchor": "paper-A14"
     },
     {
       "id": "A15",
@@ -584,7 +826,14 @@
       ],
       "design": "滑窗编码后将历史 KV 存入外部介质，按问题检索并搬回；外部库随历史增长。",
       "orthogonal_designs": "分层存储；检索",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T2"
+      ],
+      "primary_class": "T2",
+      "technical_subbranch": "外部历史与按需 KV 检索",
+      "classification_rationale": "历史 KV 可以存入 RAM／磁盘并按问题加载，展示可存取的缓存记忆；外部库并非固定总容量。",
+      "report_anchor": "paper-A15"
     },
     {
       "id": "A16",
@@ -600,7 +849,14 @@
       ],
       "design": "可学习总结 token 汇总片段，其层内压缩 KV 承接长历史；不是只存一层输入 embedding。",
       "orthogonal_designs": "学习压缩；渐进训练",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T2"
+      ],
+      "primary_class": "T2",
+      "technical_subbranch": "摘要 KV 与位置维护",
+      "classification_rationale": "Visual Summarization Token 的关联 KV 承接片段信息；不能仅凭 token 名称归入 T1。",
+      "report_anchor": "paper-A16"
     },
     {
       "id": "A17",
@@ -616,7 +872,14 @@
       ],
       "design": "memory bridge 在片段间递归传递压缩 token；记忆对象仍是 token 序列。",
       "orthogonal_designs": "递归；场景切分",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "递归 token 写入与按需注入",
+      "classification_rationale": "片段间递归传递的是 memory tokens；区别于将历史折叠进关联矩阵或 SSM 内部状态。",
+      "report_anchor": "paper-A17"
     },
     {
       "id": "A18",
@@ -632,7 +895,14 @@
       ],
       "design": "跨片段传播压缩表征，问题到来后选择相关记忆供后续推理。",
       "orthogonal_designs": "递归；选择",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "递归 token 写入与按需注入",
+      "classification_rationale": "压缩表征跨片段传播，随后做问题相关选择；递归和检索可以在 T1 内组合。",
+      "report_anchor": "paper-A18"
     },
     {
       "id": "A19",
@@ -648,7 +918,14 @@
       ],
       "design": "视觉特征 bank 与查询表征 bank 通过注意力融合读取；没有将历史写成 delta-rule 矩阵。",
       "orthogonal_designs": "双 bank；注意力融合",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "token 的选择、合并与预算控制",
+      "classification_rationale": "视觉 bank 与查询 bank 都以序列表征参与注意力；使用查询不等于保存模型每层历史 KV。",
+      "report_anchor": "paper-A19"
     },
     {
       "id": "A20",
@@ -664,7 +941,296 @@
       ],
       "design": "将短期密集视觉 token 合并为稀疏长期 token，送入视觉语言推理。",
       "orthogonal_designs": "聚合；双时间尺度",
-      "group": "previous_video"
+      "group": "previous_video",
+      "previous_technical_classes": [
+        "T1"
+      ],
+      "primary_class": "T1",
+      "technical_subbranch": "token 的选择、合并与预算控制",
+      "classification_rationale": "以合并减少视觉 token，是后来预算控制和多时间尺度表征的早期对照。",
+      "report_anchor": "paper-A20"
+    },
+    {
+      "id": "R01",
+      "name": "Gated DeltaNet-2",
+      "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention",
+      "date": "2026-05-21",
+      "source": "https://arxiv.org/abs/2605.22791",
+      "full_text": "https://arxiv.org/html/2605.22791v1",
+      "team": "NVIDIA Research（Ali Hatamizadeh、Yejin Choi、Jan Kautz）",
+      "task": "语言建模、常识推理、长上下文检索",
+      "design": "在通道衰减之外，将旧关联的擦除门与新值的写入门拆开；矩阵状态仍递归更新，并提供分块并行算法。",
+      "classification_rationale": "修改固定大小关联状态的更新算子，属于 T3；重点是擦除与写入的控制粒度，而非 token 或 KV 条目筛选。",
+      "technical_subbranch": "擦除与写入规则",
+      "orthogonal_designs": "独立门控；通道衰减；分块并行",
+      "training_and_evaluation": "论文报告 1.3B 模型、100B FineWeb-Edu token 预训练，并做语言与 RULER 检索评测；这是主干训练级配置。",
+      "memory_scope": "主要验证序列内状态记忆和长上下文检索，不据此宣称跨会话恢复。",
+      "evidence": [
+        {
+          "url": "https://research.nvidia.com/publication/2026-05_gated-deltanet-2-decoupling-erase-and-write-linear-attention",
+          "supports": "官方团队、发表日期、机制及训练规模"
+        },
+        {
+          "url": "https://arxiv.org/html/2605.22791v1#S3",
+          "supports": "独立门控与状态更新"
+        }
+      ],
+      "primary_class": "T3",
+      "technical_classes": [
+        "T3"
+      ],
+      "group": "state_followup_2026",
+      "verified_on": "2026-09-10",
+      "report_anchor": "paper-R01",
+      "record_type": "paper",
+      "first_publication_year": 2026
+    },
+    {
+      "id": "R02",
+      "name": "Erase-then-Delta Attention（EDA）",
+      "title": "Erase-then-Delta Attention: Decoupling Erase and Write Addresses in Delta-Rule Linear Attention",
+      "date": "2026-06-25",
+      "source": "https://arxiv.org/abs/2606.26560",
+      "full_text": "https://arxiv.org/html/2606.26560v1",
+      "team": "阿里巴巴 Qwen Team、南京大学、浙江大学",
+      "task": "语言预训练与长上下文理解",
+      "design": "先沿单独学习的擦除地址清除旧信息，再沿当前写入地址执行 delta 纠错写入，使清理位置与新增内容的位置可以不同。",
+      "classification_rationale": "核心是递归关联状态的有序更新；和 Gated DeltaNet-2 的门控拆分相比，进一步改变擦除与写入地址的耦合。",
+      "technical_subbranch": "擦除与写入规则",
+      "orthogonal_designs": "独立擦除地址；纠错写入；分块并行",
+      "training_and_evaluation": "评测覆盖 dense 2.5B 与 MoE 25B-A2.8B 预训练；MoE 另做 80B token 长上下文中期训练及 4K–128K 评测。",
+      "memory_scope": "主要验证上下文内记忆管理；尚不能由状态编辑能力直接推断跨会话事实管理。",
+      "evidence": [
+        {
+          "url": "https://arxiv.org/html/2606.26560v1#S3",
+          "supports": "先擦除再写入、地址解耦"
+        },
+        {
+          "url": "https://arxiv.org/html/2606.26560v1#S4",
+          "supports": "模型规模及长上下文训练评测"
+        }
+      ],
+      "primary_class": "T3",
+      "technical_classes": [
+        "T3"
+      ],
+      "group": "state_followup_2026",
+      "verified_on": "2026-09-10",
+      "report_anchor": "paper-R02",
+      "record_type": "paper",
+      "first_publication_year": 2026
+    },
+    {
+      "id": "R03",
+      "name": "Sparse Delta Memory（SDM）",
+      "title": "Sparse Delta Memory: Scaling the State of Linear RNNs through Sparsity",
+      "date": "2026-07-08",
+      "source": "https://arxiv.org/abs/2607.07386",
+      "full_text": "https://arxiv.org/html/2607.07386v1",
+      "team": "Meta FAIR、Inria／ENS-PSL、图宾根大学",
+      "task": "语言建模、上下文学习与长上下文检索",
+      "design": "将密集小矩阵扩展为较大的动态槽位状态；通过 product-key 寻址选择少量槽位读取和执行 gated-delta 写入，未选中槽位保留。",
+      "classification_rationale": "槽位内容随当前历史在线改写，因此主归 T3。它虽然采用查表式寻址，但不同于 Engram 的静态条件表。",
+      "technical_subbranch": "稀疏与多状态容量组织",
+      "orthogonal_designs": "稀疏寻址；局部状态更新；容量扩展",
+      "training_and_evaluation": "在匹配参数与 FLOPs 的设置下比较状态容量和检索能力；原文默认学习初始状态，并单独消融，本文只聚焦在线递归部分。",
+      "memory_scope": "较大状态不等于零存储成本；局部注意力缓存和可学习初始状态需另计，未宣称完成跨会话恢复验证。",
+      "evidence": [
+        {
+          "url": "https://arxiv.org/html/2607.07386v1#S3",
+          "supports": "稀疏读写、动态状态与可学习初始化"
+        },
+        {
+          "url": "https://github.com/facebookresearch/sparse-delta-memory",
+          "supports": "作者代码入口"
+        }
+      ],
+      "primary_class": "T3",
+      "technical_classes": [
+        "T3"
+      ],
+      "group": "state_followup_2026",
+      "verified_on": "2026-09-10",
+      "report_anchor": "paper-R03",
+      "record_type": "paper",
+      "first_publication_year": 2026
+    },
+    {
+      "id": "R04",
+      "name": "Dynamic Linear Attention（DLA）",
+      "title": "Dynamic Linear Attention",
+      "date": "2026-06-09",
+      "source": "https://arxiv.org/abs/2606.10650",
+      "full_text": "https://arxiv.org/html/2606.10650v1",
+      "team": "Ohio State University、University of Michigan、ByteDance Seed",
+      "task": "常识推理、上下文检索与长序列建模",
+      "design": "按信息变化动态确定状态边界，在语义变化处保留较细状态；达到容量上限时，合并相邻低信息状态，维持有时间顺序的状态集合。",
+      "classification_rationale": "cache 中保存的是多个压缩递归状态，不是逐 token K/V，归 T3；预算管理可以发生在状态层面。",
+      "technical_subbranch": "稀疏与多状态容量组织",
+      "orthogonal_designs": "动态分段；状态合并；有界容量",
+      "training_and_evaluation": "论文在 Mamba-2-780M 与 Gated DeltaNet-1.3B 两种骨干上预训练，并在 16 个数据集评测。",
+      "memory_scope": "研究序列内多状态保留；容量上限下的合并仍会丢失信息，不能等同于保留全部历史。",
+      "evidence": [
+        {
+          "url": "https://arxiv.org/html/2606.10650v1#S3",
+          "supports": "信息感知边界与相邻状态合并"
+        },
+        {
+          "url": "https://arxiv.org/html/2606.10650v1#S4",
+          "supports": "两种骨干及评测范围"
+        }
+      ],
+      "primary_class": "T3",
+      "technical_classes": [
+        "T3"
+      ],
+      "group": "state_followup_2026",
+      "verified_on": "2026-09-10",
+      "report_anchor": "paper-R04",
+      "record_type": "paper",
+      "first_publication_year": 2026
+    },
+    {
+      "id": "R05",
+      "name": "Linear Attention Architectures／CLVR",
+      "title": "Linear Attention Architectures: Mechanisms, Trade-offs, and Cross-Layer Routing",
+      "date": "2026-07-08",
+      "source": "https://arxiv.org/abs/2607.07953",
+      "full_text": "https://arxiv.org/html/2607.07953v1",
+      "team": "ETH Zurich D-INFK、ETH AI Center（Imanol Schlag 团队）",
+      "task": "语言建模与递归架构比较",
+      "design": "统一比较 Delta 系列状态更新，并研究跨层传递写入误差或写入值。CLVR 将写入值送入对齐的隐状态流，加强层间信息共享。",
+      "classification_rationale": "被路由的信号来自递归记忆写入，保留原有状态更新骨架，归 T3 的读写协同设计；同时也是比较研究。",
+      "technical_subbranch": "跨层读写协同",
+      "orthogonal_designs": "跨层路由；受控架构比较；训练吞吐",
+      "training_and_evaluation": "主比较为 350M 参数、15B token；直接转发写入误差未改善基线，CLVR 在匹配实验中有小幅收益。速度数据是训练吞吐。",
+      "memory_scope": "没有实测推理速度或跨会话持久记忆结论，不能将训练吞吐当作长期读取效率。",
+      "evidence": [
+        {
+          "url": "https://arxiv.org/html/2607.07953v1#S4",
+          "supports": "CLER／CLVR 路由设计"
+        },
+        {
+          "url": "https://arxiv.org/html/2607.07953v1#S6",
+          "supports": "受控结果、负结果与适用范围"
+        }
+      ],
+      "primary_class": "T3",
+      "technical_classes": [
+        "T3"
+      ],
+      "group": "state_followup_2026",
+      "verified_on": "2026-09-10",
+      "report_anchor": "paper-R05",
+      "record_type": "paper",
+      "first_publication_year": 2026
+    },
+    {
+      "id": "R06",
+      "name": "Qwen3.5",
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "date": "2026-02（官方模型发布）",
+      "source": "https://qwen.ai/blog?id=qwen3.5",
+      "full_text": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+      "team": "阿里巴巴 Qwen Team",
+      "task": "文本推理、图像／视频理解与 agent",
+      "design": "原生视觉语言骨干组合 Gated DeltaNet 递归层与全注意力层；前者用状态累积历史，后者保留注意力读取能力。",
+      "classification_rationale": "T3＋T2 混合架构，按本版约定主列递归状态；原生多模态说明状态路线已进入大规模 VLM，不代表已验证跨会话记忆。",
+      "technical_subbranch": "递归状态与显式注意力混合",
+      "orthogonal_designs": "混合主干；原生多模态；预训练与后训练",
+      "training_and_evaluation": "属于基础模型预训练与后训练成果。这里只引用官方架构和模型卡，不将整个模型训练资源估算成小模块适配预算。",
+      "memory_scope": "递归层的状态固定不代表整模缓存固定：全注意力层仍有 KV；需要同时保存两者才能讨论完整恢复。",
+      "evidence": [
+        {
+          "url": "https://qwen.ai/blog?id=qwen3.5",
+          "supports": "2026 年系列发布及混合架构"
+        },
+        {
+          "url": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+          "supports": "官方视觉语言模型卡与架构"
+        }
+      ],
+      "primary_class": "T3",
+      "technical_classes": [
+        "T3",
+        "T2"
+      ],
+      "group": "state_followup_2026",
+      "verified_on": "2026-09-10",
+      "report_anchor": "paper-R06",
+      "record_type": "official_model_release",
+      "first_publication_year": 2026
     }
-  ]
+  ],
+  "primary_counts": {
+    "T1": 22,
+    "T2": 11,
+    "T3": 10,
+    "O": 3
+  },
+  "technical_membership_counts": {
+    "T1": 22,
+    "T2": 14,
+    "T3": 10,
+    "O": 3
+  },
+  "report_order": [
+    "A03",
+    "A06",
+    "A08",
+    "A14",
+    "A19",
+    "A20",
+    "L01",
+    "L03",
+    "L07",
+    "L02",
+    "L16",
+    "A01",
+    "A02",
+    "L05",
+    "A17",
+    "A18",
+    "L08",
+    "L10",
+    "L11",
+    "L09",
+    "L06",
+    "A11",
+    "A04",
+    "A05",
+    "A10",
+    "A12",
+    "A13",
+    "A07",
+    "A09",
+    "A15",
+    "L17",
+    "L04",
+    "A16",
+    "L12",
+    "L13",
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "L14",
+    "L15",
+    "R06",
+    "R05",
+    "L19",
+    "L20",
+    "L18"
+  ],
+  "verification_scope": "2026-09-10 核读原有 L11、L10、A16、L13 的接口，并核读新增 R01–R06 的原文或官方技术资料；其余旧文献沿用既有来源。未运行实验。",
+  "previous_taxonomy_commit": "acc24d04e3fa3e876069d11a6f42c9ff61556689",
+  "state_followup_count": 6,
+  "total_count": 46,
+  "paper_count": 45,
+  "official_model_release_count": 1,
+  "count_definitions": {
+    "previous_count": "前批 A01–A20",
+    "new_count": "后批 L01–L20",
+    "state_followup_count": "本轮 R01–R06，5 篇论文＋1 项官方模型技术发布"
+  }
 }
