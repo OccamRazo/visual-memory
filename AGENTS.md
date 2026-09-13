@@ -1,60 +1,52 @@
-# Visual Memory Project Guide
+# Repository Guide
 
 ## Project goals
 
 This project studies visual memory in large models: how a model selects, compresses, stores, retrieves, and updates information from a continuous visual stream. The current primary setting is ultra-long video understanding, with particular interest in its relationship to sparse attention, KV cache, external or parametric memory, and evaluation methods.
 
-The repository should preserve the complete research process, from literature review, problem formulation, and hypotheses through experiments, analysis, and paper writing. Existing surveys are exploratory material and do not represent a final approach or conclusion.
-
 ## Communication
 
-- The user prefers Chinese. Communicate with the user in Chinese by default, including progress updates, questions, explanations, and handoff summaries, unless the user explicitly requests another language.
+- Communicate in Chinese by default, unless the user requests another language.
+- Keep repository-management rules reusable. Put domain-specific structure and requirements in [Project conventions](docs/project-guide.md); do not embed them in management skills.
 
-## Repository structure
+## Repository navigation
 
-Create directories only when they are actually needed. The recommended structure is:
+- [Project conventions](docs/project-guide.md): project-specific directories and working requirements. Read when relevant to the task.
+- [Project status](docs/STATUS.md): the current task, status, authoritative references, and next action across sessions.
+- [Work records](docs/work-records.md): small, versionable run records and local artifact locations.
+- [Session notes skill](.agents/skills/session-notes/SKILL.md): resolve and maintain the current session's note.
+- [Git handoff skill](.agents/skills/git-handoff/SKILL.md): inspect Git readiness, continue local work, and transfer work between devices.
 
-```text
-research/
-  ideas/          # Early ideas, survey reports, and proposal drafts
-  literature/     # Literature notes, evidence tables, and citation data
-  hypotheses/     # Testable research questions and hypotheses
-src/              # Reusable model, data, and evaluation code
-experiments/      # Configurations, scripts, records, and results by experiment ID
-data/             # Data documentation, splits, and small metadata; no large raw data
-docs/             # Project conventions, development plans, and collaboration workflows
-notes/
-  sessions/       # One ID-addressable note per Codex/ChatGPT session
-writing/
-  drafts/         # Outlines and paper drafts
-  figures/        # Final figures and instructions for generating them
-```
+Create directories and records only when they are needed.
 
-Use `EXP-YYYYMMDD-short-name/` for experiment directories. Every experiment must include at least one `README.md` recording its objective, hypothesis, data and model versions, configuration, run instructions, metrics, results, and conclusions.
+## Starting and continuing work
 
-## Session notes
+- Read this file and `docs/STATUS.md` when it exists. Use the session-notes skill to resolve the current session note, then read the source material relevant to the task.
+- Inspect existing changes before editing. Preserve work outside the task scope; continue known changes belonging to the current task.
+- Missing Git metadata, remote access, or a stable session ID limits only the operations that require them. Continue authorized local work that does not depend on the missing prerequisite, and report the limitation when relevant.
+- Pause an affected edit or Git operation when it would discard changes outside the intended task, when branch histories diverge, or when ownership of overlapping changes is unclear. Continue independent work.
+- Update `docs/STATUS.md` only when the task, status, accepted decision, or next action materially changes. Keep it a short current snapshot with links to authoritative files, not a transcript or a copy of their contents. Include a branch and handoff reference when applicable; mark unknown values explicitly.
+- A status entry is context, not authorization to resume work on another device or to publish changes.
 
-- Use `.agents/skills/session-notes/SKILL.md` when starting or resuming a session, retrieving a known session note, deciding whether durable context should be recorded, and preparing a Git handoff.
-- Session notes are concise navigation aids, not the sole source of truth. Keep complete evidence and results in the relevant research or experiment files.
+## Git collaboration
 
-## Multi-device Git collaboration
+- Repository defaults: remote `origin`, base branch `main`, task branches `work/<short-name>`. These are conventions, not proof that the corresponding Git objects exist.
+- Use the Git handoff skill when preparing a branch, taking over work, or handing it off. Read-only reviews and same-device continuation do not require the full takeover sequence on every turn.
+- Small, low-risk documentation-only tasks may start directly on a clean, up-to-date `main`. Use a task branch for code or other substantial work. Continue an existing task on its current appropriate branch.
+- Devices are peers. Continue a task on one device at a time; a different device takes over only after explicit handoff through committed and pushed work.
+- Preserve history. Fast-forward updates are allowed; do not automatically create merge commits, rebase, reset, force-push, or delete branches.
+- Handoff transfers only the identified task's committed and pushed state. Do not use a stash or uncommitted files as the transfer mechanism.
 
-- All development devices are peer nodes; there is no authoritative workstation. Devices hand off the project only through Git states that have been committed and pushed.
-- Before starting or taking over a task, read this file, use the `session-notes` skill to resolve and read the current session note when it exists, and read any relevant experiment documentation. Then fetch the latest state from `origin`, confirm that the worktree is clean, and update the target branch.
-- Small, low-risk documentation-only changes may be made directly on a clean, up-to-date `main`. Use a `work/<short-name>` branch for code changes, experiments, or work that requires cross-device handoff. Continue a given task on only one device at a time; another device may take over only after an explicit handoff.
-- Follow `.agents/skills/git-handoff/SKILL.md` for takeover and handoff. If branches have diverged, stop and report the divergence; do not automatically rebase, merge, overwrite, or force-push.
-- A handoff must leave a focused, understandable commit and push the current branch. Never hand off through uncommitted files or a stash.
-- Report only checks actually run on the current device. When the required environment is unavailable, explicitly mark the check as `未运行` (not run); never claim that unexecuted code has passed validation.
-- Keep large datasets, logs, checkpoints, and output artifacts on the device where they were produced. Do not synchronize them through Git; commit only concise results, reproduction details, and necessary local-location notes when appropriate.
+## Work records and artifacts
+
+- Follow [Work records](docs/work-records.md) when work produces results worth preserving. Keep small records and reproduction inputs outside ignored artifact directories.
+- Keep large data, logs, checkpoints, and generated artifacts on the producing device. Commit only concise records and necessary location references.
+- Store separate records for independent runs. Preserve failed results and original evidence; link corrections and replacements instead of silently overwriting them.
+- Do not commit secrets, caches, or large generated files.
 
 ## Working constraints
 
-- Read relevant material before making changes. Preserve original surveys and failed experiments; never silently overwrite historical results.
-- Distinguish literature facts, inferences, and ideas awaiting validation. Verifiable facts should cite a paper, link, or other source.
-- Experiments must be reproducible: fix and record random seeds, environment, configuration, commands, and key versions. Store results by independent run.
-- Prefer the smallest verifiable change. Put shared logic in `src/` rather than copying it across experiments and allowing the copies to diverge.
-- Do not commit datasets, model weights, large logs, caches, or secrets. Record acquisition instructions and local path conventions in `data/` or the relevant experiment documentation.
-- Figures must be traceable to their data and generation method. Never edit numeric values by hand to improve presentation.
-- Match conclusions to the strength of the evidence, and record negative results, limitations, anomalies, and unresolved questions.
-- Use Chinese by default when documenting the research process; submission-facing content may be in English. Keep file names, experiment IDs, and code identifiers concise and consistent.
-- Do not lock in a specific model, dataset, technical approach, or submission target without an explicit request.
+- Read relevant material before making changes. Prefer the smallest verifiable change and avoid unrelated cleanup.
+- Distinguish verified facts, interpretations, and proposals. Link the evidence supporting consequential claims.
+- Run checks appropriate to the change. Report only checks actually run on the current device; use `not run` with the reason for unavailable checks.
+- Keep full evidence in the relevant work files. Session notes and project status provide navigation and durable context.
