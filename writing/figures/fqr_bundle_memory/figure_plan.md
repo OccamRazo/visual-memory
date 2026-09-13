@@ -2,7 +2,7 @@
 
 ## 完整性说明
 
-- 已分析材料：`research/ideas/fqr_candidate_motivation_and_nearest_work_2026-09-02.md`、`research/ideas/fqr_mem_cvpr_motivation_and_refined_proposal_2026-09-01.md`、`research/literature/fqr_mem_2026_literature_evidence.md`、`writing/drafts/fqr_bundle_memory_cvpr/main.tex`
+- 已分析材料：`research/2026-09-02/fqr_candidate_motivation_and_nearest_work_2026-09-02.md`、`research/2026-09-01/fqr_mem_cvpr_motivation_and_refined_proposal_2026-09-01.md`、`research/2026-08-24/fqr_mem_2026_literature_evidence.md`、`writing/drafts/fqr_bundle_memory_cvpr/main.tex`
 - 当前输出类型：阶段性
 - 高置信信息：论文主问题是固定预算、问题未知、原视频不可回看的 pre-query 记忆；核心结构是 bundle 内 AND、替代 bundle 间 OR；训练问题只能连接训练期 teacher，不能进入部署 writer
 - 待确认信息：最终事件胶囊形式、选用的开源骨干、真实数据上的替代证据路径数量、实验结果
@@ -85,9 +85,9 @@
   "source_revision": "work/fqr-paper-draft@initial-draft-2026-09-02",
   "venue": "CVPR",
   "sources": [
-    "research/ideas/fqr_candidate_motivation_and_nearest_work_2026-09-02.md",
-    "research/ideas/fqr_mem_cvpr_motivation_and_refined_proposal_2026-09-01.md",
-    "research/literature/fqr_mem_2026_literature_evidence.md",
+    "research/2026-09-02/fqr_candidate_motivation_and_nearest_work_2026-09-02.md",
+    "research/2026-09-01/fqr_mem_cvpr_motivation_and_refined_proposal_2026-09-01.md",
+    "research/2026-08-24/fqr_mem_2026_literature_evidence.md",
     "writing/drafts/fqr_bundle_memory_cvpr/main.tex"
   ],
   "figures": [

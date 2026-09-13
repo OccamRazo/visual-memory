@@ -866,10 +866,10 @@ DKM 目前只值得做 premium diagnostic。只有在自然数据上确认“重
 
 ## 9. 与仓库既有材料的关系
 
-- 最小记忆形式化：[`minimal_memory_formalization_with_fqr_2026-09-01.md`](./minimal_memory_formalization_with_fqr_2026-09-01.md)
-- 更宽的潜记忆方案：[`fqr_mem_formal_latent_memory_2026-09-01.md`](./fqr_mem_formal_latent_memory_2026-09-01.md)
-- FQR 最近邻与动机重建：[`fqr_mem_cvpr_motivation_and_refined_proposal_2026-09-01.md`](./fqr_mem_cvpr_motivation_and_refined_proposal_2026-09-01.md)
-- 候选方向的最新比较：[`fqr_candidate_motivation_and_nearest_work_2026-09-02.md`](./fqr_candidate_motivation_and_nearest_work_2026-09-02.md)
+- 最小记忆形式化：[`minimal_memory_formalization_with_fqr_2026-09-01.md`](../2026-09-01/minimal_memory_formalization_with_fqr_2026-09-01.md)
+- 更宽的潜记忆方案：[`fqr_mem_formal_latent_memory_2026-09-01.md`](../2026-09-01/fqr_mem_formal_latent_memory_2026-09-01.md)
+- FQR 最近邻与动机重建：[`fqr_mem_cvpr_motivation_and_refined_proposal_2026-09-01.md`](../2026-09-01/fqr_mem_cvpr_motivation_and_refined_proposal_2026-09-01.md)
+- 候选方向的最新比较：[`fqr_candidate_motivation_and_nearest_work_2026-09-02.md`](../2026-09-02/fqr_candidate_motivation_and_nearest_work_2026-09-02.md)
 - CPM 对应的英文论文草稿：[`../../writing/drafts/fqr_bundle_memory_cvpr/main.tex`](../../writing/drafts/fqr_bundle_memory_cvpr/main.tex)
 
 本文相对旧材料的新增决策是：在当前投稿窗口和 2×80GB 约束下，把宽泛形式化压缩为三个互斥的最小可发表单元，并为每个方案给出真实最近邻边界、计算预算、排期和可执行止损门槛。

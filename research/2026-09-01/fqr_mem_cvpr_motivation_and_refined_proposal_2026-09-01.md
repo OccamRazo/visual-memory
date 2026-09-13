@@ -60,7 +60,7 @@ FQR-Mem 仍然值得做，但原先最直观的动机已经不能直接使用：
 
 ### 1.1 范围
 
-本轮以此前的 [2026 年相关文献证据表](../literature/fqr_mem_2026_literature_evidence.md) 为底稿。该表已经逐项记录 40 项工作，包括 24 篇 2026 年正式会议论文和 16 篇高度相关预印本。本轮进一步重点核查了 2026 年 5 月至 8 月出现、且会直接改变 FQR 定位的工作：
+本轮以此前的 [2026 年相关文献证据表](../2026-08-24/fqr_mem_2026_literature_evidence.md) 为底稿。该表已经逐项记录 40 项工作，包括 24 篇 2026 年正式会议论文和 16 篇高度相关预印本。本轮进一步重点核查了 2026 年 5 月至 8 月出现、且会直接改变 FQR 定位的工作：
 
 - SAVEMem；
 - SelectStream；
@@ -1510,4 +1510,4 @@ $$
 - [MMR-V: What's Left Unsaid? A Benchmark for Multimodal Deep Reasoning in Videos](https://proceedings.iclr.cc/paper_files/paper/2026/hash/6f1989abe9562c5cd306e070725fe0a3-Abstract-Conference.html)
 - [RIVER: A Real-Time Interaction Benchmark for Video LLMs](https://proceedings.iclr.cc/paper_files/paper/2026/hash/1022661f3f43406065641f16ce25eafa-Abstract-Conference.html)
 
-更完整的 2026 年逐篇事实、状态与原始 FQR 约束见 [FQR-Mem：2026 年相关文献证据表](../literature/fqr_mem_2026_literature_evidence.md)。
+更完整的 2026 年逐篇事实、状态与原始 FQR 约束见 [FQR-Mem：2026 年相关文献证据表](../2026-08-24/fqr_mem_2026_literature_evidence.md)。

@@ -27,7 +27,7 @@
 
 ## 2. 怎样继承你的形式化思想
 
-本次主要依据你的[原始形式化笔记](./记忆问题的形式化.md)，并参照[最小形式化讨论](./minimal_memory_formalization_with_fqr_2026-09-01.md)、[第一轮调研](./survey_1/long_video_visual_memory_research_report.md)、[第二轮调研](./survey_2/视觉记忆与超长视频理解调研报告_2026-08.md)、[第三轮调研](./survey_3/long_video_visual_memory_research.md)和[9 月 5 日方案](./visual_memory_three_proposals_2026-09-05.md)。旧稿中的推荐顺序不作为本次选题依据。
+本次主要依据你的[原始形式化笔记](../undated/记忆问题的形式化.md)，并参照[最小形式化讨论](../2026-09-01/minimal_memory_formalization_with_fqr_2026-09-01.md)、[第一轮调研](../2026-08-20/survey_1/long_video_visual_memory_research_report.md)、[第二轮调研](../2026-08-20/survey_2/视觉记忆与超长视频理解调研报告_2026-08.md)、[第三轮调研](../2026-08-21/long_video_visual_memory_research.md)和[9 月 5 日方案](../2026-09-05/visual_memory_three_proposals_2026-09-05.md)。旧稿中的推荐顺序不作为本次选题依据。
 
 ### 2.1 保留思想，收缩实现
 

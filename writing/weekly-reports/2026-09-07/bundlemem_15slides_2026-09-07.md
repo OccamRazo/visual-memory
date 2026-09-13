@@ -48,7 +48,7 @@
 
 本页直接介绍问题出现晚于记忆写入的任务形式。视觉助手和机器人用于说明长期记忆的应用意义，本工作的当前验证仍以视频问答为主。研究动机是同时考察完整证据的保留与取回，预期收益需要实验验证。
 
-来源：[方法设计，第 1、4 节](../../../docs/plan/cvpr2027_bundlemem_closed_loop_design.md)、[组合证据动机，第 1 节](../../../research/ideas/fqr_candidate_motivation_and_nearest_work_2026-09-02.md)、[EMBER](https://arxiv.org/abs/2606.05894v2)。
+来源：[方法设计，第 1、4 节](../../../docs/plan/cvpr2027_bundlemem_closed_loop_design.md)、[组合证据动机，第 1 节](../../../research/2026-09-02/fqr_candidate_motivation_and_nearest_work_2026-09-02.md)、[EMBER](https://arxiv.org/abs/2606.05894v2)。
 
 
 ## 第 03 页｜相关研究与动机：视频选择与记忆压缩
@@ -81,7 +81,7 @@ StreamMem 用通用查询选择 KV，CausalMem 根据语义冗余更新记忆。
 
 对证据完整性的不足是本项目从这些选择目标出发提出的研究判断，并非已复现的共同失败结论。需要用多段联合必要性和同预算集合干预检验，不能从方法结构直接断言它们一定丢失关键证据。
 
-来源：[LongVU，ICML 2025](https://proceedings.mlr.press/v267/shen25j.html)、[VideoTree](https://arxiv.org/abs/2405.19209)、[StreamMem](https://arxiv.org/abs/2508.15717)、[CausalMem](https://arxiv.org/abs/2606.25658)、[Flash-VStream，ICCV 2025](https://www.openaccess.thecvf.com/content/ICCV2025/papers/Zhang_Flash-VStream_Efficient_Real-Time_Understanding_for_Long_Video_Streams_ICCV_2025_paper.pdf)。仓库调研：[长视频工作表](../../../research/ideas/survey_1/appendix_B_long_video_30.md)、[视觉记忆调研](../../../research/ideas/survey_2/视觉记忆与超长视频理解调研报告_2026-08.md)。
+来源：[LongVU，ICML 2025](https://proceedings.mlr.press/v267/shen25j.html)、[VideoTree](https://arxiv.org/abs/2405.19209)、[StreamMem](https://arxiv.org/abs/2508.15717)、[CausalMem](https://arxiv.org/abs/2606.25658)、[Flash-VStream，ICCV 2025](https://www.openaccess.thecvf.com/content/ICCV2025/papers/Zhang_Flash-VStream_Efficient_Real-Time_Understanding_for_Long_Video_Streams_ICCV_2025_paper.pdf)。仓库调研：[长视频工作表](../../../research/2026-08-20/survey_1/appendix_B_long_video_30.md)、[视觉记忆调研](../../../research/2026-08-20/survey_2/视觉记忆与超长视频理解调研报告_2026-08.md)。
 
 
 ## 第 04 页｜相关研究与动机：任务价值与证据读取
@@ -114,7 +114,7 @@ REVEAL 检查证据充分性并针对缺口补检索。Mem-T 通过操作树将�
 
 本页的研究动机承接上一页：写入保住互补证据，读取在预算内取齐这些证据，最后用来源支持和问答表现验证收益。该闭环方案尚未完成端到端实验。
 
-来源：[EMBER v2](https://arxiv.org/abs/2606.05894v2)、[OSL-MR v6](https://arxiv.org/html/2606.10616v6)、[TaskMem](https://arxiv.org/abs/2605.31075)、[REVEAL v1](https://arxiv.org/html/2608.08612v1)、[Mem-T v2](https://arxiv.org/abs/2601.23014v2)。本项目定位：[方法设计，第 3 节](../../../docs/plan/cvpr2027_bundlemem_closed_loop_design.md)、[组合证据动机，第 1 节](../../../research/ideas/fqr_candidate_motivation_and_nearest_work_2026-09-02.md)。
+来源：[EMBER v2](https://arxiv.org/abs/2606.05894v2)、[OSL-MR v6](https://arxiv.org/html/2606.10616v6)、[TaskMem](https://arxiv.org/abs/2605.31075)、[REVEAL v1](https://arxiv.org/html/2608.08612v1)、[Mem-T v2](https://arxiv.org/abs/2601.23014v2)。本项目定位：[方法设计，第 3 节](../../../docs/plan/cvpr2027_bundlemem_closed_loop_design.md)、[组合证据动机，第 1 节](../../../research/2026-09-02/fqr_candidate_motivation_and_nearest_work_2026-09-02.md)。
 
 
 ## 第 05 页｜证据组定义

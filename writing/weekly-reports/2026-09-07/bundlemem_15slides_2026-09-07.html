@@ -13,7 +13,7 @@
 <h3>研究动机</h3>
 <p>单条片段的显著性或相关性不能直接反映证据是否完整。希望以完整证据组为优化单位，提高有限记忆对未来问答的支持能力。</p>
 </div><details><summary>讲解备注与来源 · 不上屏</summary><p>本页直接介绍问题出现晚于记忆写入的任务形式。视觉助手和机器人用于说明长期记忆的应用意义，本工作的当前验证仍以视频问答为主。研究动机是同时考察完整证据的保留与取回，预期收益需要实验验证。</p>
-<p>来源：<a href="../../../docs/plan/cvpr2027_bundlemem_closed_loop_design.md">方法设计，第 1、4 节</a>、<a href="../../../research/ideas/fqr_candidate_motivation_and_nearest_work_2026-09-02.md">组合证据动机，第 1 节</a>、<a href="https://arxiv.org/abs/2606.05894v2">EMBER</a>。</p>
+<p>来源：<a href="../../../docs/plan/cvpr2027_bundlemem_closed_loop_design.md">方法设计，第 1、4 节</a>、<a href="../../../research/2026-09-02/fqr_candidate_motivation_and_nearest_work_2026-09-02.md">组合证据动机，第 1 节</a>、<a href="https://arxiv.org/abs/2606.05894v2">EMBER</a>。</p>
 </details></section>
 <section id="slide-03" class="page"><div class="page-tools"><span>第 03 页 / 15</span><button onclick="copySlide('03',this)">复制本页内容</button></div><div class="slide-content" id="copy-03"><h2>相关研究与动机：视频选择与记忆压缩</h2><h3>1. 问题引导的选择：LongVU、VideoTree</h3>
 <p>LongVU 根据文本查询和帧间冗余压缩视觉特征。VideoTree 根据问题逐层细化视频树，提取相关关键帧。</p>
@@ -27,7 +27,7 @@
 <p>第一类解决问题已知后的选择效率。LongVU 先用 DINOv2 去冗余帧，再进行文本引导的特征选择及跨帧空间压缩；VideoTree 通过自适应广度和相关性引导的深度扩展组织视频。它们可作为读取阶段的参考，但问题依赖部分不能直接用于测试问题不可见的写入。</p>
 <p>第二类中，StreamMem 通过视觉 token 与通用 query token 的注意力压缩固定大小 KV；CausalMem 以在线语义基估计冗余；Flash-VStream 用低容量概要记忆估计信息密度，再引导高容量细节记忆的读取。这里只概括其机制，不将三者都描述为相同总字节预算或相同无回放协议。</p>
 <p>对证据完整性的不足是本项目从这些选择目标出发提出的研究判断，并非已复现的共同失败结论。需要用多段联合必要性和同预算集合干预检验，不能从方法结构直接断言它们一定丢失关键证据。</p>
-<p>来源：<a href="https://proceedings.mlr.press/v267/shen25j.html">LongVU，ICML 2025</a>、<a href="https://arxiv.org/abs/2405.19209">VideoTree</a>、<a href="https://arxiv.org/abs/2508.15717">StreamMem</a>、<a href="https://arxiv.org/abs/2606.25658">CausalMem</a>、<a href="https://www.openaccess.thecvf.com/content/ICCV2025/papers/Zhang_Flash-VStream_Efficient_Real-Time_Understanding_for_Long_Video_Streams_ICCV_2025_paper.pdf">Flash-VStream，ICCV 2025</a>。仓库调研：<a href="../../../research/ideas/survey_1/appendix_B_long_video_30.md">长视频工作表</a>、<a href="../../../research/ideas/survey_2/%E8%A7%86%E8%A7%89%E8%AE%B0%E5%BF%86%E4%B8%8E%E8%B6%85%E9%95%BF%E8%A7%86%E9%A2%91%E7%90%86%E8%A7%A3%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A_2026-08.md">视觉记忆调研</a>。</p>
+<p>来源：<a href="https://proceedings.mlr.press/v267/shen25j.html">LongVU，ICML 2025</a>、<a href="https://arxiv.org/abs/2405.19209">VideoTree</a>、<a href="https://arxiv.org/abs/2508.15717">StreamMem</a>、<a href="https://arxiv.org/abs/2606.25658">CausalMem</a>、<a href="https://www.openaccess.thecvf.com/content/ICCV2025/papers/Zhang_Flash-VStream_Efficient_Real-Time_Understanding_for_Long_Video_Streams_ICCV_2025_paper.pdf">Flash-VStream，ICCV 2025</a>。仓库调研：<a href="../../../research/2026-08-20/survey_1/appendix_B_long_video_30.md">长视频工作表</a>、<a href="../../../research/2026-08-20/survey_2/%E8%A7%86%E8%A7%89%E8%AE%B0%E5%BF%86%E4%B8%8E%E8%B6%85%E9%95%BF%E8%A7%86%E9%A2%91%E7%90%86%E8%A7%A3%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A_2026-08.md">视觉记忆调研</a>。</p>
 </details></section>
 <section id="slide-04" class="page"><div class="page-tools"><span>第 04 页 / 15</span><button onclick="copySlide('04',this)">复制本页内容</button></div><div class="slide-content" id="copy-04"><h2>相关研究与动机：任务价值与证据读取</h2><h3>3. 任务驱动的记忆保留：EMBER、OSL-MR、TaskMem</h3>
 <p>EMBER 用检索和回答反馈训练写入。OSL-MR 学习逐条证据价值。TaskMem 根据环境任务反馈调整记忆策略。</p>
@@ -41,7 +41,7 @@
 <p>这里的不足指缺少对 AND / OR 证据结构的显式区分，不表示总体任务奖励无法间接学到互补性。BundleMem 需要证明集合级监督相对这些已有机制的额外收益。</p>
 <p>第四类按读取与协同机制归纳：REVEAL 已实现充分性检查和针对性再检索，Mem-T 已实现联合优化读写。本项目不能将一般 retrieve–verify 循环或读写联合训练作为首次贡献。REVEAL 的可检索视频集合与本任务已经压缩、不可回放的有限记忆不同；Mem-T 的语言记忆结果也不能直接视为视觉证据组可用性的验证。</p>
 <p>本页的研究动机承接上一页：写入保住互补证据，读取在预算内取齐这些证据，最后用来源支持和问答表现验证收益。该闭环方案尚未完成端到端实验。</p>
-<p>来源：<a href="https://arxiv.org/abs/2606.05894v2">EMBER v2</a>、<a href="https://arxiv.org/html/2606.10616v6">OSL-MR v6</a>、<a href="https://arxiv.org/abs/2605.31075">TaskMem</a>、<a href="https://arxiv.org/html/2608.08612v1">REVEAL v1</a>、<a href="https://arxiv.org/abs/2601.23014v2">Mem-T v2</a>。本项目定位：<a href="../../../docs/plan/cvpr2027_bundlemem_closed_loop_design.md">方法设计，第 3 节</a>、<a href="../../../research/ideas/fqr_candidate_motivation_and_nearest_work_2026-09-02.md">组合证据动机，第 1 节</a>。</p>
+<p>来源：<a href="https://arxiv.org/abs/2606.05894v2">EMBER v2</a>、<a href="https://arxiv.org/html/2606.10616v6">OSL-MR v6</a>、<a href="https://arxiv.org/abs/2605.31075">TaskMem</a>、<a href="https://arxiv.org/html/2608.08612v1">REVEAL v1</a>、<a href="https://arxiv.org/abs/2601.23014v2">Mem-T v2</a>。本项目定位：<a href="../../../docs/plan/cvpr2027_bundlemem_closed_loop_design.md">方法设计，第 3 节</a>、<a href="../../../research/2026-09-02/fqr_candidate_motivation_and_nearest_work_2026-09-02.md">组合证据动机，第 1 节</a>。</p>
 </details></section>
 <section id="slide-05" class="page"><div class="page-tools"><span>第 05 页 / 15</span><button onclick="copySlide('05',this)">复制本页内容</button></div><div class="slide-content" id="copy-05"><h2>证据组定义</h2><h3>Evidence bundle</h3>
 <p>将能够共同支持一个答案的证据集合定义为一个 bundle。组内证据共同发挥作用，不同充分组可以提供替代路径。</p>

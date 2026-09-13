@@ -6,7 +6,7 @@
 >
 > 状态：优化后的研究方案，尚未经过实验验证
 >
-> 文献依据：[FQR-Mem：2026 年相关文献证据表](../literature/fqr_mem_2026_literature_evidence.md)
+> 文献依据：[FQR-Mem：2026 年相关文献证据表](fqr_mem_2026_literature_evidence.md)
 
 ## 0. 执行结论
 

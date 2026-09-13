@@ -495,11 +495,11 @@ CPU、SSD 和人工时间同样重要：
 
 ### 与既有讨论的对应
 
-- [原始形式化思想](./记忆问题的形式化.md)
-- [最小形式化：任务充分性、操作风险和顺序取回](./minimal_memory_formalization_with_fqr_2026-09-01.md)
-- [潜记忆、模型编译与取回的完整探索](./fqr_mem_formal_latent_memory_2026-09-01.md)
-- [候选动机与最近邻比较](./fqr_candidate_motivation_and_nearest_work_2026-09-02.md)
-- [上一版三个方案](./three_feasible_visual_memory_cvpr_2026-09-04.md)
+- [原始形式化思想](../undated/记忆问题的形式化.md)
+- [最小形式化：任务充分性、操作风险和顺序取回](../2026-09-01/minimal_memory_formalization_with_fqr_2026-09-01.md)
+- [潜记忆、模型编译与取回的完整探索](../2026-09-01/fqr_mem_formal_latent_memory_2026-09-01.md)
+- [候选动机与最近邻比较](../2026-09-02/fqr_candidate_motivation_and_nearest_work_2026-09-02.md)
+- [上一版三个方案](../2026-09-04/three_feasible_visual_memory_cvpr_2026-09-04.md)
 
 ### 核心一手来源
 

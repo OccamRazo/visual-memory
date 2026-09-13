@@ -2,7 +2,7 @@
 
 重写日期：2026-09-10。封面 1 页＋正文 10 页＋结束页 1 页。文献沿用上轮的 20 篇 2026 年新作与 20 篇视频流工作。每条路线各两页：技术总体设计、代表方法具体设计。任务仅为论文的应用标签，不参与分类。
 
-配套：[技术分类与设计详解报告](../../../research/literature/latent_memory_technical_taxonomy_2026-09-10.md) · [40 篇技术映射](../../../research/literature/latent_memory_technical_taxonomy_2026-09-10.json)。公式为 LaTeX；每页备注区补充原文依据、变量定义与实现边界。
+配套：[技术分类与设计详解报告](../../../research/2026-09-10/latent_memory_technical_taxonomy_2026-09-10.md) · [40 篇技术映射](../../../research/2026-09-10/latent_memory_technical_taxonomy_2026-09-10.json)。公式为 LaTeX；每页备注区补充原文依据、变量定义与实现边界。
 
 ## 第 01 页｜潜记忆：五类技术接口与设计方法
 
@@ -22,7 +22,7 @@
 
 混合方法可有多个技术标签，如 IndexMem 为 KV＋关联状态。它们仍各算一篇论文。保留旧报告作为历史材料，本稿与新报告采用重新核对后的技术归类。
 
-来源：[技术报告 §1](../../../research/literature/latent_memory_technical_taxonomy_2026-09-10.md)。
+来源：[技术报告 §1](../../../research/2026-09-10/latent_memory_technical_taxonomy_2026-09-10.md)。
 
 ## 第 02 页｜路线一：压缩 token 记忆
 
@@ -359,4 +359,4 @@ token、KV、关联矩阵、条件向量表、参数模块；混合方法按实�
 
 本页为结束页，不计入 10 页正文。相关实验是待验证建议。分类的目的在于让设计变量可比较，不宣称一种接口会在所有任务上占优。
 
-完整 40 篇的技术映射、五条路线的详细公式及预算口径，见[技术报告](../../../research/literature/latent_memory_technical_taxonomy_2026-09-10.md)。
+完整 40 篇的技术映射、五条路线的详细公式及预算口径，见[技术报告](../../../research/2026-09-10/latent_memory_technical_taxonomy_2026-09-10.md)。

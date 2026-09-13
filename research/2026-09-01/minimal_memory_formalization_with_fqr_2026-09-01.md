@@ -2,7 +2,7 @@
 
 > 日期：2026-09-01
 > 文档性质：独立重思报告，不替代也不修改旧版潜记忆报告
-> 与现有方案的关系：保留 [FQR-Mem v2](./fqr_mem_optimized_proposal_2026-08-24.md) 的任务协议和方法主线，只增加一层最小形式化
+> 与现有方案的关系：保留 [FQR-Mem v2](../2026-08-24/fqr_mem_optimized_proposal_2026-08-24.md) 的任务协议和方法主线，只增加一层最小形式化
 > 核心边界：本文不要求潜记忆、世界模型、图记忆、固定槽位或某一种模型接口
 
 ## 0. 最终判断
@@ -1015,4 +1015,4 @@ experiments/
 6. Guo et al. [Semantic Compression with Side Information: A Rate-Distortion Perspective](https://arxiv.org/abs/2208.06094). 2022.
 7. Xiong et al. [Adaptive Information Control for Search-Augmented LLM Reasoning](https://arxiv.org/abs/2602.01672). 2026.
 8. Zou et al. [Remember the Decision, Not the Description: A Rate-Distortion Framework for Agent Memory](https://arxiv.org/abs/2605.10870). 2026.
-9. 项目内部文献证据表：[FQR-Mem 2026 Literature Evidence](../literature/fqr_mem_2026_literature_evidence.md).
+9. 项目内部文献证据表：[FQR-Mem 2026 Literature Evidence](../2026-08-24/fqr_mem_2026_literature_evidence.md).

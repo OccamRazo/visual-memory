@@ -8,7 +8,7 @@
 
 文字层级参考 [9 月 7 日周报](../2026-09-07/bundlemem_15slides_2026-09-07.md) 的“背景／设计／任务／指标”组织方式。
 
-相关工作依据 [latent_memory_technical_taxonomy_2026-09-10.md](../../../research/literature/latent_memory_technical_taxonomy_2026-09-10.md) 的 §2–4、§7 整理，按新近程度、团队背景与技术代表性选取 **15 篇 2026 年工作**。压缩 token 列 7 篇，KV 缓存列 6 篇，递归状态列 4 篇；IndexMem、RetentiveKV 在后两类交叉出现，去重后为 15 篇。这里的筛选不作为引用量排名。
+相关工作依据 [latent_memory_technical_taxonomy_2026-09-10.md](../../../research/2026-09-10/latent_memory_technical_taxonomy_2026-09-10.md) 的 §2–4、§7 整理，按新近程度、团队背景与技术代表性选取 **15 篇 2026 年工作**。压缩 token 列 7 篇，KV 缓存列 6 篇，递归状态列 4 篇；IndexMem、RetentiveKV 在后两类交叉出现，去重后为 15 篇。这里的筛选不作为引用量排名。
 
 分类依据是历史信息的主要保留形式：**压缩 token、KV 缓存、递归状态**。递归更新摘要 token 仍归第一类；第三类强调历史累积进隐状态或动态关联映射。多种载体可以组合，任务不参与一级分类。本稿暂不讨论参数化记忆，LoRA 仅作为可选训练手段提及。
 
@@ -147,7 +147,7 @@ $$
     - **讲解例子：**页面跳转后继续使用此前选定的文件，或在物体短暂离开视野后继续执行操作序列。
     - **评价重点：**任务完成率、动作正确性及历史依赖步骤的表现，不能只看问答分数。
 
-任务依据：[原报告 §7 的应用标签](../../../research/literature/latent_memory_technical_taxonomy_2026-09-10.md)、[LCLM](https://arxiv.org/html/2606.09659v1)、[NextMem](https://arxiv.org/html/2603.15634v1)、[LatentStream](https://arxiv.org/abs/2609.04131)、[Mem-W](https://arxiv.org/html/2605.09317v1)、[LaMem-VLA](https://arxiv.org/html/2607.07608v1)。评价重点为本稿比较这些任务时采用的分析维度。
+任务依据：[原报告 §7 的应用标签](../../../research/2026-09-10/latent_memory_technical_taxonomy_2026-09-10.md)、[LCLM](https://arxiv.org/html/2606.09659v1)、[NextMem](https://arxiv.org/html/2603.15634v1)、[LatentStream](https://arxiv.org/abs/2609.04131)、[Mem-W](https://arxiv.org/html/2605.09317v1)、[LaMem-VLA](https://arxiv.org/html/2607.07608v1)。评价重点为本稿比较这些任务时采用的分析维度。
 
 **单轮与长期的任务协议（建议评测）**
 

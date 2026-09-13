@@ -55,7 +55,7 @@
 
 H1–H3 是核心判据。H4 在 P0 的真实交互及固定历史条件下测基础版本，更复杂的主动 EQA 放 P1；H5 的未见视频/场景必须做，跨任务统一权重属于 P1。新颖性、实验有效性和工程可运行性是三个不同的关卡。
 
-本方案参考 [组合保留的既有分析](../../research/ideas/fqr_candidate_motivation_and_nearest_work_2026-09-02.md)、[9 月 5 日方案与数据审计](../../research/ideas/visual_memory_three_proposals_2026-09-05.md)、[9 月 6 日读取和资源讨论](../../research/ideas/visual_memory_cvpr2027_reassessment_2026-09-06.md) 及 [早期文献表](../../research/literature/fqr_mem_2026_literature_evidence.md)。仓库历史提交 `2aa6932` 中的闭环工作规划也作为工程参考；本文件进一步固定组合读取算法、弱标签生成、延迟价值与双预算协议。原稿和历史调研保留。
+本方案参考 [组合保留的既有分析](../../research/2026-09-02/fqr_candidate_motivation_and_nearest_work_2026-09-02.md)、[9 月 5 日方案与数据审计](../../research/2026-09-05/visual_memory_three_proposals_2026-09-05.md)、[9 月 6 日读取和资源讨论](../../research/2026-09-06/visual_memory_cvpr2027_reassessment_2026-09-06.md) 及 [早期文献表](../../research/2026-08-24/fqr_mem_2026_literature_evidence.md)。仓库历史提交 `2aa6932` 中的闭环工作规划也作为工程参考；本文件进一步固定组合读取算法、弱标签生成、延迟价值与双预算协议。原稿和历史调研保留。
 
 ## 2. 思想来源、原论文的完整方法与扩展边界
 

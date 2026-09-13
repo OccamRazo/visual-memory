@@ -20,7 +20,7 @@
 
 “导航、长程操作、具身问答、规划”均给出实现和验证设计，但不承诺在两张卡上重训四套智能体。导航/EQA 共享环境，操作/规划共享环境；主要训练对象是小型记忆模块。
 
-本方案参考 [组合保留的既有分析](../../research/ideas/fqr_candidate_motivation_and_nearest_work_2026-09-02.md)、[9 月 5 日方案与数据审计](../../research/ideas/visual_memory_three_proposals_2026-09-05.md)、[9 月 6 日读取和资源讨论](../../research/ideas/visual_memory_cvpr2027_reassessment_2026-09-06.md) 及 [早期文献表](../../research/literature/fqr_mem_2026_literature_evidence.md)。仓库历史提交 `2aa6932` 中的闭环工作规划也作为工程参考；本文件进一步固定组合读取算法、弱标签生成、延迟价值与双预算协议。原稿和历史调研保留。
+本方案参考 [组合保留的既有分析](../../research/2026-09-02/fqr_candidate_motivation_and_nearest_work_2026-09-02.md)、[9 月 5 日方案与数据审计](../../research/2026-09-05/visual_memory_three_proposals_2026-09-05.md)、[9 月 6 日读取和资源讨论](../../research/2026-09-06/visual_memory_cvpr2027_reassessment_2026-09-06.md) 及 [早期文献表](../../research/2026-08-24/fqr_mem_2026_literature_evidence.md)。仓库历史提交 `2aa6932` 中的闭环工作规划也作为工程参考；本文件进一步固定组合读取算法、弱标签生成、延迟价值与双预算协议。原稿和历史调研保留。
 
 ## 2. 原稿的保留项与必须修改的问题
 

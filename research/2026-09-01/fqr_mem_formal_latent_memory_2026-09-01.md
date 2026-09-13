@@ -2,8 +2,8 @@
 
 > - 日期：2026-09-01
 > - 状态：研究方案；尚无实验结果
-> - 基础版本：[FQR-Mem v2](./fqr_mem_optimized_proposal_2026-08-24.md)
-> - 文献基础：[FQR-Mem 2026 年相关文献证据表](../literature/fqr_mem_2026_literature_evidence.md)
+> - 基础版本：[FQR-Mem v2](../2026-08-24/fqr_mem_optimized_proposal_2026-08-24.md)
+> - 文献基础：[FQR-Mem 2026 年相关文献证据表](../2026-08-24/fqr_mem_2026_literature_evidence.md)
 
 本文不覆盖 FQR-Mem v2，而是在其“query-after-write、固定预算、未来查询风险、grounded regret”设定上，引入一套可分解的记忆形式化。文中使用以下标记：
 
@@ -1653,7 +1653,7 @@ $$
 4. 能执行 query-after-write，且主实验禁止原视频回放；
 5. 能构造 FQR-Shift 中的任务组和组合 shift。
 
-候选与证据见现有[文献证据表](../literature/fqr_mem_2026_literature_evidence.md)。Grounded evaluation 可参考 E-VQA、EG-VQA 和 VideoZeroBench 的答案—证据联合要求。[Evidence-Backed Video Question Answering](https://arxiv.org/abs/2607.11862) · [EG-VQA](https://arxiv.org/abs/2606.24797) · [VideoZeroBench](https://arxiv.org/abs/2604.01569)
+候选与证据见现有[文献证据表](../2026-08-24/fqr_mem_2026_literature_evidence.md)。Grounded evaluation 可参考 E-VQA、EG-VQA 和 VideoZeroBench 的答案—证据联合要求。[Evidence-Backed Video Question Answering](https://arxiv.org/abs/2607.11862) · [EG-VQA](https://arxiv.org/abs/2606.24797) · [VideoZeroBench](https://arxiv.org/abs/2604.01569)
 
 ### 14.3 核心可证伪假设
 
@@ -1915,7 +1915,7 @@ $$
 
 ### 17.1 现有工作的根本缺口
 
-**[事实]** 2026 年长视频记忆已经覆盖动态记忆、层次事件、KV 压缩、surprise、query-aware navigation、证据充分性和固定预算 latent bank；“再设计一个 memory bank”本身已不足以构成强贡献，详见现有[40 篇证据表](../literature/fqr_mem_2026_literature_evidence.md)。
+**[事实]** 2026 年长视频记忆已经覆盖动态记忆、层次事件、KV 压缩、surprise、query-aware navigation、证据充分性和固定预算 latent bank；“再设计一个 memory bank”本身已不足以构成强贡献，详见现有[40 篇证据表](../2026-08-24/fqr_mem_2026_literature_evidence.md)。
 
 **[推论]** 更根本的空白是：
 
@@ -2065,7 +2065,7 @@ $$
 
 ### 20.4 长视频记忆、稳健性与证据
 
-- [FQR-Mem 2026 年相关文献证据表](../literature/fqr_mem_2026_literature_evidence.md)；
+- [FQR-Mem 2026 年相关文献证据表](../2026-08-24/fqr_mem_2026_literature_evidence.md)；
 - [SelectStream](https://arxiv.org/abs/2606.16353)；
 - [CausalMem](https://arxiv.org/abs/2606.25658)；
 - [OASIS](https://arxiv.org/abs/2604.17052)；
