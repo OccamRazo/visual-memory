@@ -21,6 +21,7 @@
 | 2026-09-08 | [文献来源数据](2026-09-08/visual_memory_sources_2026-09-08.json)<br>[大模型与 Agent 视觉记忆综述：从历史压缩到可更新的世界与任务状态](2026-09-08/visual_memory_survey_2026-09-08.md)<br>[大模型与 Agent 视觉记忆：79 篇工作分类表](2026-09-08/visual_memory_work_catalog_2026-09-08.md) |
 | 2026-09-09 | [潜记忆补充调研：20 篇新作与 20 篇视频流工作的联合报告](2026-09-09/latent_memory_followup_2026-09-09.md)<br>[文献来源数据](2026-09-09/latent_memory_sources_2026-09-09.json) |
 | 2026-09-10 | [技术分类数据](2026-09-10/latent_memory_technical_taxonomy_2026-09-10.json)<br>[潜记忆的三条技术路线：46 项工作联合分类与设计分析](2026-09-10/latent_memory_technical_taxonomy_2026-09-10.md) |
+| 2026-09-14 | [长期记忆 benchmark：公开资源复核与五项推荐](2026-09-14/long_term_memory_benchmark_shortlist.md)<br>[Agent 记忆系统的核心瓶颈：深度研究](2026-09-14/agent_memory_bottlenecks_deep_research.md)<br>[来源与证据范围](2026-09-14/agent_memory_bottlenecks_sources.json)<br>[从 BundleMem 到模型可用的关系证据记忆：WorldMM 基线与研究方案](2026-09-14/bundlemem_worldmm_relational_sufficiency_proposal.md)<br>[方法方案来源与核查范围](2026-09-14/bundlemem_worldmm_sources.json) |
 | 日期待确认 | [记忆问题的形式化](undated/记忆问题的形式化.md) |
 
 ## 相关材料

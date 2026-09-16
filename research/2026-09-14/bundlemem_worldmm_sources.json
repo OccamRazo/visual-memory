@@ -1,0 +1,107 @@
+{
+  "cutoff": "2026-09-14",
+  "scope": "BundleMem 动机重构；WorldMM 四环节分析与关系充分性研究提案",
+  "evidence_policy": "论文和作者官方代码支持事实；方法缺口为据此推断的研究问题，未经实验验证。未宣称文献穷尽或方法新颖性保证。",
+  "sources": [
+    {
+      "title": "WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning",
+      "url": "https://arxiv.org/html/2512.02425v2",
+      "read_scope": "方法第 3 节、实现设置及相关工作",
+      "supports": "多尺度 episodic 图、semantic 图、visual memory、自适应多轮检索及回答阶段",
+      "limitations": "不能由架构推断关系失败率或新方案收益"
+    },
+    {
+      "title": "WorldMM official implementation",
+      "url": "https://github.com/wgcyeo/WorldMM",
+      "commit": "3a55b65235e4f9618626a91c28e7e45baa6d8bdf",
+      "read_files": [
+        "src/worldmm/memory/memory.py",
+        "src/worldmm/memory/visual/memory.py",
+        "src/worldmm/llm/templates/memory_reasoning.py",
+        "src/worldmm/llm/templates/qa.py",
+        "src/worldmm/llm/templates/qa_egolife.py"
+      ],
+      "supports": "时间读取经 video_path 解码原视频帧；回答输入组织累计多模态检索结果；公开 EgoLife 与 Video-MME 接入",
+      "limitations": "仅静态检查，未安装运行、未验证效果或成本"
+    },
+    {
+      "title": "Task-Focused Memorization for Multimodal Agents",
+      "url": "https://arxiv.org/html/2605.31075v1",
+      "read_scope": "方法、任务协议和 hard case analysis",
+      "supports": "任务反馈引导记忆选择；问题公布后只读记忆；作者已有视觉细节与关系时间整合失败分析"
+    },
+    {
+      "title": "TaskMem official repository",
+      "url": "https://github.com/ByteDance-Seed/TaskMem",
+      "commit": "dfc20dbda118a08bceae9d83d57dab2f1b0948b2",
+      "read_scope": "README 与文件树",
+      "limitations": "本轮未读取或运行完整训练实现"
+    },
+    {
+      "title": "EMBER: Efficient Memory via Budgeted Evidence Retention for Long-Horizon Agents",
+      "url": "https://arxiv.org/html/2606.05894v2",
+      "read_scope": "pre-query retention、source-backed capsule 与读答反馈相关段落",
+      "supports": "问题隐藏的预算保留与读答监督已有先例"
+    },
+    {
+      "title": "REVEAL: A Rubric-Guided Agent for Explicit Evidence Sufficiency Verification in Long-Video Question Answering",
+      "url": "https://arxiv.org/html/2608.08612v1",
+      "read_scope": "方法与访问协议",
+      "supports": "充分性判断、缺口分析和继续检索已有先例"
+    },
+    {
+      "title": "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+      "url": "https://arxiv.org/html/2402.07630v3",
+      "read_scope": "子图检索、graph encoder 和 projection layer",
+      "supports": "图表示投射至 LLM 输入不能独立作为本方案创新"
+    },
+    {
+      "title": "Graph-to-Frame RAG: Visual-Space Knowledge Fusion for Training-Free and Auditable Video Reasoning",
+      "url": "https://arxiv.org/html/2604.04372v1",
+      "read_scope": "摘要、方法与输入融合",
+      "supports": "问题无关知识图、充分子图、渲染为输入帧；原视频仍参与回答",
+      "limitations": "未复现论文效果；本方案中的 G2F 风格对照应标明协议适配"
+    },
+    {
+      "title": "Beyond Retrieval: Progressive Latent Memory Evolution for Streaming Video Understanding",
+      "url": "https://arxiv.org/html/2609.04131v1",
+      "read_scope": "方法 3.3–3.4 与总体架构",
+      "supports": "取回证据到潜表示的内化与联合优化已有直接近邻"
+    },
+    {
+      "title": "Seeing, Listening, Remembering, and Reasoning: A Multimodal Agent with Long-Term Memory",
+      "url": "https://arxiv.org/html/2508.09736v1",
+      "read_scope": "摘要和总体架构",
+      "supports": "实体中心、多模态记忆和多轮读取已有先例",
+      "limitations": "本轮不作细粒度性能或训练归因"
+    },
+    {
+      "title": "ReflectWorld-MM: An Entity-Oriented Multi-Media Memory System for Open-Ended Video Streams",
+      "url": "https://arxiv.org/html/2607.09759v1",
+      "read_scope": "摘要和总体系统说明",
+      "supports": "实体组织与视觉来源是需要讨论的近邻能力",
+      "limitations": "本轮不作细粒度性能归因"
+    },
+    {
+      "title": "EgoLife official repository",
+      "url": "https://github.com/EvolvingLMMs-Lab/EgoLife",
+      "read_scope": "README、数据和基线入口",
+      "supports": "多日视觉经历、数据入口及 EgoRAG 等公开基线",
+      "limitations": "没有验证关系 witness 标签完备性，也未下载视频"
+    },
+    {
+      "title": "EG-VQA official repository",
+      "url": "https://github.com/HCPLab-SYSU/EG-VQA",
+      "read_scope": "README 中的训练/测试、时间证据与原视频获取要求",
+      "supports": "可用于证据诊断的现有标注；原视频需要从来源数据集取得",
+      "limitations": "多时间段不等于联合必要或最小充分；本轮未复算数据统计"
+    }
+  ],
+  "unavailable": [
+    {
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yang_EgoLife_Towards_Egocentric_Life_Assistant_CVPR_2025_paper.html",
+      "reason": "本轮 web 读取返回 Internal Error；相关资源事实改用作者官方仓库核查"
+    }
+  ],
+  "experiments_run": false
+}
