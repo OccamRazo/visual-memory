@@ -1,0 +1,7 @@
+# Legacy relative output paths, if an archived script is invoked here.
+/data/raw/
+/data/cache/
+/data/downloads/
+/data/external/
+/data/interim/
+/experiments/

@@ -1,5 +1,7 @@
 # EG-VQA 小规模验证子集
 
+> 2026-09-16：此下载器及其数据说明已[归档停用](../../README.md)，后续开发不再使用。下文保留历史命令与设备记录，完整复现请使用归档说明指定的历史版本。
+
 为 15 小时初步验证准备数据：默认 **24 个完整视频、96 道 QA**，额外弱监督训练数据按需启用。下载器只需要 CPU、网络和 Python，不需要 GPU、模型权重或 EG-Reasoner 的训练环境。
 
 脚本入口：[`scripts/download_egvqa.py`](../../scripts/download_egvqa.py)；复用逻辑：[`src/egvqa_subset.py`](../../src/egvqa_subset.py)。
@@ -150,7 +152,7 @@ python scripts/download_egvqa.py --download-only --output data/downloads/egvqa-s
 
 ## 2026-09-07：本设备完整 pilot 数据验证
 
-以下是本轮 Linux 设备的实际数据结果，保留上方 macOS 单视频抽查作为历史记录。环境位于仓库 `.venv`，本次使用 Python 3.12.3、requests 2.32.5、PyAV 18.1.0、NumPy 2.4.6 和 Pillow 12.2.0。逐视频 SHA-256、实际解码时长、帧率、E1 构造计数及失败原因见[数据摘要](../../experiments/EXP-20260907-egvqa-15h-pilot/data_summary.json)；模型实验另见[实验记录](../../experiments/EXP-20260907-egvqa-15h-pilot/README.md)。
+以下是本轮 Linux 设备的实际数据结果，保留上方 macOS 单视频抽查作为历史记录。环境位于仓库 `.venv`，本次使用 Python 3.12.3、requests 2.32.5、PyAV 18.1.0、NumPy 2.4.6 和 Pillow 12.2.0。逐视频 SHA-256、实际解码时长、帧率、E1 构造计数及失败原因见[数据摘要](../../../data_summary.json)；模型实验另见[实验记录](../../../README.md)。
 
 固定 revision 与 seed=17 的 **24/24 个视频、96 道 QA 已下载并完成逐视频 SHA 校验**，其中 dev 6 视频/24 QA、eval 18 视频/72 QA。视频正文合计 **350,188,158 字节**，位于 `data/downloads/egvqa-pilot/`。最终 `download_status.json` 为 `ready_videos=24`、缺失列表为空；最终 `--download-only` 校验退出码为 `0`，新增范围正文传输量为 `0` 字节。逐视频 SHA 是本地完整文件的校验记录；仍未重新下载整包计算上游 tar SHA。
 
