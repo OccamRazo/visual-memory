@@ -6,4 +6,4 @@
 - 结构定义（2026-09-16）：按内容关联组织对象经历、事件过程等可复用记忆块；图、文本流等仅为表示形式。内容块不预设为某题的充分证据，核心对照固定形式、检验内容组织与存取的作用。
 - 下一步：冻结简答改写、任务分类/先验及评分规则并校准标签，按完整性作用、缺失定位、存取四格、任务先验交换四步实施。第 2 步保留原抽样分母，第 3 步固定任务信息，第 4 步固定写入器及读取器；沿用[失败审计](../experiments/EXP-20260907-egvqa-failure-audit/analysis.md)的同答同分与语义核验要求。
 - 背景入口：[9 月 14 日方法提案](../research/2026-09-14/bundlemem_worldmm_relational_sufficiency_proposal.md)；[已完成的五项 benchmark 资源复核](../research/2026-09-14/long_term_memory_benchmark_shortlist.md)；[调研时间索引](../research/README.md)。
-- 当前分支：`work/organize-research`；本次本地提交覆盖当前全部文档、来源数据与会话记录，提交标识见分支 Git 历史及交付消息；未推送，无跨设备交接。
+- 当前分支：`main`；`work/organize-research` 的内容已快进合入并推送至 `origin/main`，集成提交为 `3716843`；原分支保留，无跨设备交接。后续记录见主分支 Git 历史及交付消息。
