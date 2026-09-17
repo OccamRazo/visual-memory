@@ -1,0 +1,227 @@
+{
+  "qid": "videomme:829-3",
+  "source_result_sha256": "51a9419ad6e2614cecdf523eac6fd7128aedcb817695654ea988ac14b095fc65",
+  "reason_zh": "两个独立花盆项目被范围外锚点扩张而合并；保留原提议的独立项目范围，移除跨界源锚点，重新审计。",
+  "proposal": {
+    "groups": [
+      {
+        "id": "G01",
+        "start_s": 0.16,
+        "end_s": 156.06,
+        "label_zh": "主题介绍与篮子花盆改造",
+        "episode_reason_zh": "这是视频开场主题介绍紧接第一个篮子改造项目的连续制作段落；旁白先说明主题，随后从 Dollar Tree 篮子绘制、涂装到安装支脚，之后转入音乐和新的花盆项目。",
+        "frame_ids": [
+          "V006"
+        ],
+        "subtitle_ids": [
+          "S00004",
+          "S00008",
+          "S00009",
+          "S00011",
+          "S00020",
+          "S00031",
+          "S00049",
+          "S00058",
+          "S00059",
+          "S00063",
+          "S00066"
+        ],
+        "fact_ids": [
+          "F1"
+        ],
+        "role": "direct",
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "开头和结尾包含少量主题转场、项目收尾及音乐，不表示精确动作起止。",
+        "source_summary_zh": "画面标题显示“20 Dollar Tree DIY PLANTER HACKS”，旁白说明本期带来 Dollar Tree do-it-yourself planter hacks；随后制作者把 Dollar Tree 篮子绘制、涂装，并用 plunger 木柄制作四条腿，将其升级为花盆。"
+      },
+      {
+        "id": "G02",
+        "start_s": 178.3,
+        "end_s": 361.479,
+        "label_zh": "柱纹花盆制作",
+        "episode_reason_zh": "这是一个独立且连续的仿制肋纹、缝隙外观花盆项目，包含材料组装、麻绳纹理处理和成品展示；前后是音乐转场及另一个碗状花盆项目。",
+        "frame_ids": [
+          "V010"
+        ],
+        "subtitle_ids": [
+          "S00070",
+          "S00071",
+          "S00075",
+          "S00080",
+          "S00097",
+          "S00103",
+          "S00111",
+          "S00124",
+          "S00131",
+          "S00136"
+        ],
+        "fact_ids": [
+          "F1"
+        ],
+        "role": "representative",
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "边界保留少量音乐和成品展示作为上下文，不表示精确动作起止。",
+        "source_summary_zh": "旁白说明使用 Dollar Tree plunger 顶部、鸡胸肉罐等材料制作带缝隙或肋纹外观的花盆，并用麻绳和带纹理的涂料完成现代化效果；画面展示成品花盆。"
+      },
+      {
+        "id": "G03",
+        "start_s": 545.88,
+        "end_s": 713.7,
+        "label_zh": "麻绳包裹花盆",
+        "episode_reason_zh": "这是从给 Dollar Tree 花盆缠绕 sisal rope、修剪收尾，到添加叶片、木珠和木块支脚装饰的一段连续制作；约720秒后字幕开始介绍新的矩形花盆项目。",
+        "frame_ids": [
+          "V026"
+        ],
+        "subtitle_ids": [
+          "S00202",
+          "S00204",
+          "S00211",
+          "S00215",
+          "S00228",
+          "S00234",
+          "S00237",
+          "S00241",
+          "S00244",
+          "S00247"
+        ],
+        "fact_ids": [
+          "F1"
+        ],
+        "role": "representative",
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "571至618秒主要为音乐，但前后源内容仍指向同一麻绳花盆；边界不是精确动作起止。",
+        "source_summary_zh": "制作者用 Dollar Tree planter、热胶和 sisal rope 包裹花盆，再用叶片模板、木珠和木块制作装饰及支脚。"
+      },
+      {
+        "id": "G04",
+        "start_s": 1625.24,
+        "end_s": 1772.88,
+        "label_zh": "丝带与碎玻璃花盆升级",
+        "episode_reason_zh": "这是一个独立且连续的花盆升级流程，包含涂 Mod Podge、固定 burlap ribbon 和粘贴 crushed glass；随后字幕明确以“next”开启另一种花盆改造项目，因此在此分组。",
+        "frame_ids": [
+          "V034"
+        ],
+        "subtitle_ids": [
+          "S00583",
+          "S00587",
+          "S00598",
+          "S00605",
+          "S00618",
+          "S00621",
+          "S00638",
+          "S00642",
+          "S00645"
+        ],
+        "fact_ids": [
+          "F1"
+        ],
+        "role": "representative",
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "结尾保留成品展示和音乐转场前的少量上下文，不表示精确动作结束时间。",
+        "source_summary_zh": "旁白介绍用 Dollar Tree planter、burlap ribbon、Mod Podge 和 crushed glass 装饰并升级花盆。"
+      },
+      {
+        "id": "G05",
+        "start_s": 1775.36,
+        "end_s": 1914.48,
+        "label_zh": "花卉餐巾纸拼贴花盆",
+        "episode_reason_zh": "这是由前一项目后的“next”明确开启的独立项目，连续包含蓝色花盆刷白、花卉餐巾纸拼贴、补色和稀释白色粉笔漆白洗；之后转入新的海洋风花盆。",
+        "frame_ids": [
+          "V039"
+        ],
+        "subtitle_ids": [
+          "S00659",
+          "S00674",
+          "S00695",
+          "S00702",
+          "S00715"
+        ],
+        "fact_ids": [
+          "F1"
+        ],
+        "role": "representative",
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "结尾包含成品展示和音乐转场，不表示精确动作结束时间。",
+        "source_summary_zh": "制作者将 Dollar Tree 花盆刷成白色，用花卉餐巾纸和 Mod Podge 覆盖，再用稀释白色粉笔漆制造仿石膏、旧化效果。"
+      },
+      {
+        "id": "G06",
+        "start_s": 2649.92,
+        "end_s": 2697.079,
+        "label_zh": "金属色花盆快速升级",
+        "episode_reason_zh": "这是一个独立且简短的花盆升级段落，使用金属漆和保护涂层完成；随后转入利用植物吊篮绳制作的新项目。",
+        "frame_ids": [
+          "V051"
+        ],
+        "subtitle_ids": [
+          "S01001",
+          "S01003",
+          "S01006",
+          "S01011",
+          "S01012",
+          "S01014"
+        ],
+        "fact_ids": [
+          "F1"
+        ],
+        "role": "representative",
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "末尾含音乐转场，不表示精确动作结束时间。",
+        "source_summary_zh": "旁白说明用 FolkArt 金属漆给 Dollar Tree planter 上色，再涂两层 polyurethane 保护涂层，快速得到高端外观。"
+      }
+    ],
+    "omitted_prior_citations": [
+      {
+        "frame_ids": [
+          "V021"
+        ],
+        "subtitle_ids": [],
+        "reason_zh": "碗状花盆成品展示是额外代表性例证，未作为主旨所必需的独立证据组。"
+      },
+      {
+        "frame_ids": [
+          "V041"
+        ],
+        "subtitle_ids": [
+          "S00745",
+          "S00746"
+        ],
+        "reason_zh": "pop-dot 花盆项目属于额外重复例证，未纳入紧凑代表性覆盖。"
+      },
+      {
+        "frame_ids": [
+          "V058"
+        ],
+        "subtitle_ids": [
+          "S01090",
+          "S01091"
+        ],
+        "reason_zh": "接近视频结尾的成品和结束语属于收尾上下文，不增加主旨证据。"
+      },
+      {
+        "frame_ids": [
+          "V006"
+        ],
+        "subtitle_ids": [
+          "S00004",
+          "S00009",
+          "S00058"
+        ],
+        "reason_zh": "旧引用将开场主题和篮子改造的连续段落拆分或重复引用；现合并为一个连续开场制作组。"
+      },
+      {
+        "frame_ids": [
+          "V034",
+          "V039"
+        ],
+        "subtitle_ids": [
+          "S00647",
+          "S00659"
+        ],
+        "reason_zh": "旧引用错误地将碎玻璃/丝带项目与“next”之后的花卉餐巾纸拼贴项目合并；现已拆为 G04 和 G05。"
+      }
+    ],
+    "coverage_notes_zh": "F1是视频整体主题；G01中的标题和明确主题旁白已直接建立主旨，G02、G03、G04、G05和G06提供多个不同 Dollar Tree 花盆或相关容器改造的代表性实例，并非对全片所有 DIY 项目的穷举。G04与G05由“next”明确分隔。",
+    "unresolved": []
+  }
+}

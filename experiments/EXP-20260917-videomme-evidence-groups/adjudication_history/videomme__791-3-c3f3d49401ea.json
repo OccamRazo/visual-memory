@@ -1,0 +1,217 @@
+{
+  "qid": "videomme:791-3",
+  "source_result_sha256": "451ec28b84d4c44bffd2835ce3539ac7c99b76668cd5cba2d7b37c2416a5b1dc",
+  "reason_zh": "独立魔术表演按演员/节目分组，去除跨界锚点造成的四个表演误合并；同一表演内动作和评委反应不另拆。",
+  "proposal": {
+    "groups": [
+      {
+        "id": "G01",
+        "start_s": 0.0,
+        "end_s": 413.81,
+        "label_zh": "Kevin Li的魔术表演",
+        "episode_reason_zh": "从Kevin Li的出场介绍、魔术表演到评委点评和投票，属于同一段连续节目；约415.9秒后切换为Brynn Cummings的独立出场。",
+        "frame_ids": [
+          "V001",
+          "V002",
+          "V003",
+          "V014"
+        ],
+        "subtitle_ids": [
+          "S00000",
+          "S00005",
+          "S00057",
+          "S00083",
+          "S00097",
+          "S00114",
+          "S00124"
+        ],
+        "fact_ids": [
+          "F1",
+          "F2"
+        ],
+        "role": "direct",
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "范围包含出场寒暄、表演后感谢及相邻节目转场，不声称魔术动作在边界处精确开始或结束。",
+        "source_summary_zh": "字幕介绍Kevin Li来自洛杉矶、才艺是魔术；他展示照片、爆米花和眼睛相关魔术，评委称其表演很酷、令人惊讶并给予肯定。"
+      },
+      {
+        "id": "G02",
+        "start_s": 413.91,
+        "end_s": 829.25,
+        "label_zh": "Brynn Cummings的魔术与腹语表演",
+        "episode_reason_zh": "从Brynn Cummings出场介绍、与木偶配合的魔术表演到评委点评和四个肯定，属于同一段连续节目；约829.6秒后切换为Mandy Muden的独立介绍。起始处保留Kevin节目结束与Brynn出场之间的短暂过渡。",
+        "frame_ids": [
+          "V018",
+          "V021",
+          "V026"
+        ],
+        "subtitle_ids": [
+          "S00130",
+          "S00131",
+          "S00132",
+          "S00149",
+          "S00150",
+          "S00167",
+          "S00224",
+          "S00233",
+          "S00252",
+          "S00260"
+        ],
+        "fact_ids": [
+          "F1",
+          "F2"
+        ],
+        "role": "direct",
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "起始和结尾可能包含少量节目剪辑过渡，不据此断言表演动作的精确起止。",
+        "source_summary_zh": "字幕介绍12岁的Brynn Cummings及其魔术表演；她与木偶完成纸牌和读心类节目，评委称其表演令人惊叹，是魔术与腹语的结合，并投出肯定票。"
+      },
+      {
+        "id": "G03",
+        "start_s": 829.35,
+        "end_s": 1222.31,
+        "label_zh": "Mandy Muden的读心魔术",
+        "episode_reason_zh": "从Mandy Muden的出场介绍、字母和书页读心表演到评委点评及投票，构成同一段连续节目；约1222.4秒后切换到Ryland的独立介绍。起始处保留Brynn节目结束和Mandy出场之间的短暂过渡。",
+        "frame_ids": [
+          "V039"
+        ],
+        "subtitle_ids": [
+          "S00263",
+          "S00264",
+          "S00270",
+          "S00278",
+          "S00287",
+          "S00320",
+          "S00322",
+          "S00342",
+          "S00351",
+          "S00362",
+          "S00363",
+          "S00378"
+        ],
+        "fact_ids": [
+          "F1",
+          "F2"
+        ],
+        "role": "direct",
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "范围包含出场、表演后的感谢和章节过渡，不代表表演动作在边界处精确结束。",
+        "source_summary_zh": "字幕介绍来自英国伦敦的魔术师Mandy Muden；她让评委选择字母、书页和单词并进行读心展示，评委表示惊讶、称其有趣且令人印象深刻。"
+      },
+      {
+        "id": "G04",
+        "start_s": 1222.41,
+        "end_s": 1563.919,
+        "label_zh": "Ryland的魔术表演",
+        "episode_reason_zh": "从Ryland的身份和魔术才艺介绍、评委选择图画并组成单词，到揭示预先准备的匹配结果，属于同一段连续节目；约1564秒后进入Magic Mike Jacobson的独立出场。",
+        "frame_ids": [
+          "V048",
+          "V052"
+        ],
+        "subtitle_ids": [
+          "S00391",
+          "S00392",
+          "S00398",
+          "S00400",
+          "S00412",
+          "S00417",
+          "S00428",
+          "S00460",
+          "S00471",
+          "S00478",
+          "S00484",
+          "S00488",
+          "S00493",
+          "S00508"
+        ],
+        "fact_ids": [
+          "F1"
+        ],
+        "role": "representative",
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "所选范围包含节目结尾和少量转场，不能据此断言表演动作在边界处精确结束。",
+        "source_summary_zh": "字幕介绍10岁的Ryland是魔术师；他让评委选择朋友、数字和位置，通过蛇、青柠、房屋和山等图画组成“scam”，随后展示预先准备的匹配结果。"
+      },
+      {
+        "id": "G05",
+        "start_s": 1572.88,
+        "end_s": 2002.84,
+        "label_zh": "Magic Mike Jacobson的纸牌魔术",
+        "episode_reason_zh": "从Magic Mike Jacobson的出场介绍、隐形牌组和火柴盒纸牌演示，到签名牌揭示、评委反应及投票，属于同一段连续节目；约2003秒后进入结束语和片尾。",
+        "frame_ids": [
+          "V061"
+        ],
+        "subtitle_ids": [
+          "S00512",
+          "S00513",
+          "S00539",
+          "S00542",
+          "S00545",
+          "S00561",
+          "S00577",
+          "S00597",
+          "S00612",
+          "S00628",
+          "S00630",
+          "S00638",
+          "S00641",
+          "S00648",
+          "S00658",
+          "S00668"
+        ],
+        "fact_ids": [
+          "F1",
+          "F2"
+        ],
+        "role": "direct",
+        "boundary_basis": "subtitle",
+        "boundary_uncertainty_zh": "起始处保留出场寒暄，结尾处保留投票和感谢，不声称表演动作在边界处精确结束。",
+        "source_summary_zh": "字幕介绍Magic Mike Jacobson及其魔术；他演示隐形牌组、火柴选择和签名牌，最后揭示Howie签名的牌，评委称其令人难以置信、非常精彩并投出肯定票。"
+      }
+    ],
+    "omitted_prior_citations": [
+      {
+        "frame_ids": [
+          "V018",
+          "V026",
+          "V032",
+          "V048",
+          "V051",
+          "V052"
+        ],
+        "subtitle_ids": [
+          "S00131",
+          "S00263",
+          "S00391"
+        ],
+        "reason_zh": "旧引用把Brynn、Mandy和Ryland三个彼此独立的节目合并为一个组；现已按连续节目分别拆分。"
+      },
+      {
+        "frame_ids": [
+          "V051"
+        ],
+        "subtitle_ids": [],
+        "reason_zh": "旧提案将V051列入Mandy组，但该帧实际时间为1281.714秒，画面属于Ryland段的观众反应，不是Mandy表演证据。"
+      },
+      {
+        "frame_ids": [
+          "V056"
+        ],
+        "subtitle_ids": [],
+        "reason_zh": "旧事实说明提及V056，但该帧未在本次实际 supplied frames 中提供，不能作为有效来源锚点。"
+      },
+      {
+        "frame_ids": [
+          "V003",
+          "V014",
+          "V021",
+          "V052"
+        ],
+        "subtitle_ids": [],
+        "reason_zh": "这些旧帧主要是泛化的评委或观众反应；各表演组已保留更直接的原始字幕作为身份、表演内容和评委反应证据。"
+      }
+    ],
+    "coverage_notes_zh": "五个按时间分开的表演组共同支持视频是多位魔术师或魔术中心表演的汇编。F2由Kevin、Brynn、Mandy和Magic Mike组中的评委惊讶、赞赏及投票字幕直接支持；Ryland组建立其作为魔术表演的代表性内容，但本组锚点没有同样明确的评委惊叹台词，因此不单独将Ryland作为F2直接证据。",
+    "unresolved": []
+  }
+}

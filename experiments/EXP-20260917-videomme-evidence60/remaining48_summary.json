@@ -1,0 +1,37 @@
+{
+  "completed_at": "2026-09-17T01:12:00.716289+08:00",
+  "remaining48_processed": 48,
+  "accepted_new": 21,
+  "skipped": 27,
+  "previous_accepted": 8,
+  "total_accepted_after_original60": 29,
+  "pipeline": {
+    "processed": 48,
+    "remaining48_processed": 48,
+    "replacement_processed": 0,
+    "counts": {
+      "source_complete_candidate": 29,
+      "skipped_ambiguity": 10,
+      "skipped_localization": 5,
+      "skipped_evidence_not_complete": 4
+    },
+    "prior_source_complete": 8,
+    "candidate_total_including_prior": 37,
+    "api_attempts": 104,
+    "api_failures": 0,
+    "usage": {
+      "prompt_tokens": 2940814,
+      "completion_tokens": 97439,
+      "total_tokens": 3038253
+    },
+    "resolved_models": [
+      "gpt-5.6-luna",
+      "gpt-5.6-luna-2026-07-09"
+    ],
+    "final_admission": "pending Codex evidence review",
+    "human_reviewed": false
+  },
+  "preserved_v1_technical_failures": 12,
+  "v1_1_retry_unresolved_technical_failures": 0,
+  "next": "Draw replacements in frozen SHA256 order until total accepted reaches 60."
+}

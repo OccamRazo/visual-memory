@@ -1,0 +1,70 @@
+{
+  "status": "complete",
+  "completed_at": "2026-09-17T12:28:09.840433+08:00",
+  "questions": 60,
+  "confirmed": 52,
+  "qualified": 8,
+  "candidate_groups": {
+    "n": 60,
+    "total": 153,
+    "mean": 2.55,
+    "median": 1.5,
+    "min": 1,
+    "max": 11,
+    "histogram": {
+      "1": 30,
+      "2": 10,
+      "3": 4,
+      "4": 6,
+      "5": 4,
+      "6": 2,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "11": 1
+    }
+  },
+  "verified_irreducible_groups": {
+    "n": 52,
+    "total": 64,
+    "mean": 1.2307692307692308,
+    "median": 1.0,
+    "min": 1,
+    "max": 4,
+    "histogram": {
+      "1": 44,
+      "2": 5,
+      "3": 2,
+      "4": 1
+    }
+  },
+  "multi_group_questions_among_confirmed": 8,
+  "source_dataset_sha256": "0292dc45de55b0a2b7b500880174a84ce2b52651c15921cdf86c432278eda12b",
+  "dataset_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence-groups/run-002-continuity/final/evidence_groups60.jsonl",
+  "dataset_sha256": "f6be3ac741e815193b1d66be8cc5a84ebd3a54133a3ff91c5a13ecd0c222eb96",
+  "api": {
+    "api_attempts": 433,
+    "api_failures": 0,
+    "usage": {
+      "prompt_tokens": 12303769,
+      "completion_tokens": 478929,
+      "total_tokens": 12782698
+    },
+    "models": [
+      "gpt-5.6-luna",
+      "gpt-5.6-luna-2026-07-09"
+    ]
+  },
+  "preserved_v1_pilot_api": {
+    "api_attempts": 31,
+    "api_failures": 0,
+    "usage": {
+      "prompt_tokens": 1179975,
+      "completion_tokens": 40110,
+      "total_tokens": 1220085
+    },
+    "note": "Preserved v1.0 methodological pilot; excluded from final grouping counts, included in experiment cost accounting."
+  },
+  "human_reviewed": false,
+  "minimum_scope": "Inclusion-minimal within sampled evidence, not guaranteed minimum over all possible groups in the full video."
+}

@@ -1,0 +1,18 @@
+{
+  "source_result_sha256": "61d503d807984a34eece30d5085754a18aaddea2004cbed32357cdfd5b132abb",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The introduction/performance of (a) History occurs before (c) CUDA in the video."
+    },
+    {
+      "id": "F2",
+      "fact": "The introduction/performance of (c) CUDA occurs before (b) Alexnet in the video."
+    },
+    {
+      "id": "F3",
+      "fact": "The introduction/performance of (b) Alexnet occurs before (d) Team Management in the video."
+    }
+  ],
+  "reason_zh": "将原题复合要求逐项拆开，不增加额外评分内容；缺任一事件/天不能以其他片段推断补足。删除原事实中未被问题要求的机制细节或排名。"
+}

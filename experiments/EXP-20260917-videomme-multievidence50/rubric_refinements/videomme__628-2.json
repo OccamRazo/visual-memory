@@ -1,0 +1,18 @@
+{
+  "source_result_sha256": "2a55d18be4b78d437feba9cf1b19821956f6d361198afea2cdb241713366d2b8",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The introduction/performance of (④) What does resilient behavior look like occurs before (②) The relationship between genetics and stress in the video."
+    },
+    {
+      "id": "F2",
+      "fact": "The introduction/performance of (②) The relationship between genetics and stress occurs before (③) The stress's influence on the brain in the video."
+    },
+    {
+      "id": "F3",
+      "fact": "The introduction/performance of (③) The stress's influence on the brain occurs before (①) Resilience training program in the video."
+    }
+  ],
+  "reason_zh": "将原题复合要求逐项拆开，不增加额外评分内容；缺任一事件/天不能以其他片段推断补足。删除原事实中未被问题要求的机制细节或排名。"
+}

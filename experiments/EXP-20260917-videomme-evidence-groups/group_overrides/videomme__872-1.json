@@ -1,0 +1,195 @@
+{
+  "qid": "videomme:872-1",
+  "source_result_sha256": "edd5ddd8d5a4199ba3802e10f17c6a85311138ac22452e936497e062706c574e",
+  "reason_zh": "逐页检查发现多组边界带入相邻独立动物短片，导致一组树懒同时混入小猫并错误通过多动物主旨核验。按原帧取单一动物短片核心，重新做审计与删组。",
+  "proposal": {
+    "groups": [
+      {
+        "boundary_basis": "visual",
+        "boundary_uncertainty_zh": "依据原帧缩回单个动物短片的核心窗口；邻近不同动物仅留作复查上下文，不纳入该组的充分性判断。",
+        "end_s": 11,
+        "episode_reason_zh": "当前核心仅为同一连续动物短片；已避开邻近不同动物的镜头切换。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V001"
+        ],
+        "id": "G01",
+        "label_zh": "幼犬与玩具车互动",
+        "role": "representative",
+        "source_summary_zh": "画面显示一名儿童抱着小狗，旁边有绿色玩具车，呈现幼小动物与人及物品的互动。",
+        "start_s": 0,
+        "subtitle_ids": [],
+        "proposal_ids": [
+          "G01"
+        ],
+        "review_start_s": 0,
+        "review_end_s": 14.0
+      },
+      {
+        "boundary_basis": "visual",
+        "boundary_uncertainty_zh": "依据原帧缩回单个动物短片的核心窗口；邻近不同动物仅留作复查上下文，不纳入该组的充分性判断。",
+        "end_s": 36,
+        "episode_reason_zh": "当前核心仅为同一连续动物短片；已避开邻近不同动物的镜头切换。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V008"
+        ],
+        "id": "G02",
+        "label_zh": "幼年树懒特写",
+        "role": "representative",
+        "source_summary_zh": "画面特写展示一只外观幼小的树懒从毛巾下探出头。",
+        "start_s": 31.531,
+        "subtitle_ids": [],
+        "proposal_ids": [
+          "G02"
+        ],
+        "review_start_s": 27.0,
+        "review_end_s": 39.0
+      },
+      {
+        "boundary_basis": "visual",
+        "boundary_uncertainty_zh": "依据原帧缩回单个动物短片的核心窗口；邻近不同动物仅留作复查上下文，不纳入该组的充分性判断。",
+        "end_s": 329,
+        "episode_reason_zh": "当前核心仅为同一连续动物短片；已避开邻近不同动物的镜头切换。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V013",
+          "V014"
+        ],
+        "id": "G03",
+        "label_zh": "动物园群兽展示",
+        "role": "representative",
+        "source_summary_zh": "户外草地上可见大象、其他大型动物和鸟类，构成动物群体展示。",
+        "start_s": 315,
+        "subtitle_ids": [],
+        "proposal_ids": [
+          "G03"
+        ],
+        "review_start_s": 312.0,
+        "review_end_s": 332.0
+      },
+      {
+        "boundary_basis": "visual",
+        "boundary_uncertainty_zh": "依据原帧缩回单个动物短片的核心窗口；邻近不同动物仅留作复查上下文，不纳入该组的充分性判断。",
+        "end_s": 700,
+        "episode_reason_zh": "当前核心仅为同一连续动物短片；已避开邻近不同动物的镜头切换。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V026"
+        ],
+        "id": "G04",
+        "label_zh": "海滩上的海豹幼崽",
+        "role": "representative",
+        "source_summary_zh": "一只海豹幼崽贴近拍摄者的腿，背景有企鹅群，呈现幼小动物与人的互动。",
+        "start_s": 690,
+        "subtitle_ids": [],
+        "proposal_ids": [
+          "G04"
+        ],
+        "review_start_s": 685.0,
+        "review_end_s": 703.0
+      },
+      {
+        "boundary_basis": "visual",
+        "boundary_uncertainty_zh": "依据原帧缩回单个动物短片的核心窗口；邻近不同动物仅留作复查上下文，不纳入该组的充分性判断。",
+        "end_s": 1055,
+        "episode_reason_zh": "当前核心仅为同一连续动物短片；已避开邻近不同动物的镜头切换。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V030"
+        ],
+        "id": "G05",
+        "label_zh": "幼年猫头鹰展示",
+        "role": "representative",
+        "source_summary_zh": "室内木地板上，一只羽毛蓬松、外观幼小的猫头鹰面对镜头。",
+        "start_s": 1047.813,
+        "subtitle_ids": [],
+        "proposal_ids": [
+          "G05"
+        ],
+        "review_start_s": 1043.0,
+        "review_end_s": 1058.0
+      },
+      {
+        "boundary_basis": "visual",
+        "boundary_uncertainty_zh": "依据原帧缩回单个动物短片的核心窗口；邻近不同动物仅留作复查上下文，不纳入该组的充分性判断。",
+        "end_s": 1270,
+        "episode_reason_zh": "当前核心仅为同一连续动物短片；已避开邻近不同动物的镜头切换。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V039",
+          "V040"
+        ],
+        "id": "G06",
+        "label_zh": "小动物玩具琴互动",
+        "role": "representative",
+        "source_summary_zh": "一只小型啮齿动物在彩色玩具键盘上踩踏，呈现动物进行玩具互动或类似表演。",
+        "start_s": 1260,
+        "subtitle_ids": [],
+        "proposal_ids": [
+          "G06"
+        ],
+        "review_start_s": 1255.0,
+        "review_end_s": 1273.0
+      },
+      {
+        "boundary_basis": "visual",
+        "boundary_uncertainty_zh": "依据原帧缩回单个动物短片的核心窗口；邻近不同动物仅留作复查上下文，不纳入该组的充分性判断。",
+        "end_s": 1625,
+        "episode_reason_zh": "当前核心仅为同一连续动物短片；已避开邻近不同动物的镜头切换。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V051"
+        ],
+        "id": "G07",
+        "label_zh": "猴子与梳子互动",
+        "role": "representative",
+        "source_summary_zh": "画面展示一只猴子接触并摆弄梳子，属于动物行为展示。",
+        "start_s": 1620,
+        "subtitle_ids": [],
+        "proposal_ids": [
+          "G07"
+        ],
+        "review_start_s": 1617.0,
+        "review_end_s": 1635.0
+      },
+      {
+        "boundary_basis": "visual",
+        "boundary_uncertainty_zh": "依据原帧缩回单个动物短片的核心窗口；邻近不同动物仅留作复查上下文，不纳入该组的充分性判断。",
+        "end_s": 1750,
+        "episode_reason_zh": "当前核心仅为同一连续动物短片；已避开邻近不同动物的镜头切换。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V054"
+        ],
+        "id": "G08",
+        "label_zh": "山羊站在陆龟背上",
+        "role": "representative",
+        "source_summary_zh": "两只外观幼小的山羊站在一只大型陆龟背上，呈现新奇的跨物种互动。",
+        "start_s": 1742,
+        "subtitle_ids": [],
+        "proposal_ids": [
+          "G08"
+        ],
+        "review_start_s": 1739.0,
+        "review_end_s": 1758.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-09-16T23:51:52.413041+08:00",
+  "status": "passed",
+  "checks": {
+    "dev_qids_unchanged": 60,
+    "pilot_qids_unchanged": 12,
+    "source_annotation_files_unchanged": 72,
+    "old_frame_hashes": 600,
+    "new_frame_hashes_and_pts": 87,
+    "evidence_citations_resolve": true,
+    "no_human_or_frozen_claims": true,
+    "fact_ids_and_exclusion_schema": true
+  },
+  "limitation": "Integrity checks do not establish semantic truth, reviewer independence, or complete video coverage."
+}

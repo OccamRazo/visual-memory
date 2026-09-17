@@ -1,0 +1,41 @@
+{
+  "qid": "videomme:704-2",
+  "source_result_sha256": "be20f3730d1754428cfa32ee1619eeb85a667487cfcfddaf778219e5d79719b8",
+  "reason_zh": "修正没有依据的场景结束断言，并覆盖末尾完整字幕；取证范围与真实场景终点分开表述。",
+  "proposal": {
+    "groups": [
+      {
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "取证窗口覆盖情绪镜头和办公室对话完整字幕至2092.159秒；真实场景仍可能继续，不把本窗口终点当成场景切换。",
+        "end_s": 2092.159,
+        "episode_reason_zh": "所选原帧与字幕均属于同一办公室重逢对话，没有独立新事件。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V001",
+          "V005",
+          "V007",
+          "V008"
+        ],
+        "id": "G01",
+        "label_zh": "办公室与格雷森重逢",
+        "role": "direct",
+        "source_summary_zh": "V001显示办公室内女性面对站在门口的Grayson；V005、V007、V008显示该女性眼含泪光、眉头紧锁、表情痛苦。字幕中Grayson说“it's me grayson”，随后两人确认彼此身份。该画面直接支持她当时处于悲伤、痛苦的情绪。",
+        "start_s": 2053.359,
+        "subtitle_ids": [
+          "S00710",
+          "S00712",
+          "S00713",
+          "S00714",
+          "S00715"
+        ],
+        "proposal_ids": [
+          "G01"
+        ],
+        "review_start_s": 2050.359,
+        "review_end_s": 2085.639
+      }
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "qid": "videomme:626-3",
+  "source_result_sha256": "bf6ac32e73c1e7f8a59a2a19d7741e76fd828725429058efd25339d660c88597",
+  "reason_zh": "保留4个既有章节边界，重做源支持与删组验证；行动建议G04关联F2。",
+  "proposal": {
+    "groups": [
+      {
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "窗口覆盖主题标题及其开始说明，不声称精确的主题切换时刻。",
+        "end_s": 202.8,
+        "episode_reason_zh": "这是连续的标准治疗主题开场，画面显示“Standard Thyroid Treatment”，随后旁白说明标准治疗模式；与前面的疾病概述不同。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V002"
+        ],
+        "id": "G01",
+        "label_zh": "标准甲状腺治疗介绍",
+        "role": "direct",
+        "source_summary_zh": "画面显示“Standard Thyroid Treatment”；旁白说检查和处理甲状腺问题令人沮丧，因为标准治疗模式通常不足，并开始解释甲状腺激素的产生。",
+        "start_s": 180.58,
+        "subtitle_ids": [
+          "S00026",
+          "S00027",
+          "S00028"
+        ]
+      },
+      {
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "窗口覆盖压力主题的引入及TSH调节说明，不声称精确的主题结束时刻。",
+        "end_s": 1161.04,
+        "episode_reason_zh": "这是从“stress kills”引出的连续压力与甲状腺调节讨论，涵盖下丘脑、TSH及甲状腺激素；与前面的标准治疗段落相隔较远且属于新的主题标题。",
+        "fact_ids": [
+          "F1",
+          "F2"
+        ],
+        "frame_ids": [
+          "V018",
+          "V026"
+        ],
+        "id": "G02",
+        "label_zh": "压力对TSH调节的影响",
+        "role": "direct",
+        "source_summary_zh": "旁白提出压力如何影响甲状腺，并说明高皮质醇会使下丘脑敏感性降低，可能导致低T4和低TSH；画面显示“Pain Hurts - Stress Kills”、Stress及TSH通路。",
+        "start_s": 1010.16,
+        "subtitle_ids": [
+          "S00137",
+          "S00138",
+          "S00148",
+          "S00149",
+          "S00150",
+          "S00151",
+          "S00152",
+          "S00153",
+          "S00154",
+          "S00155"
+        ]
+      },
+      {
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "窗口覆盖自身免疫主题标题和明确引入语句，不声称精确主题起止。",
+        "end_s": 1634.94,
+        "episode_reason_zh": "这是新的“Auto Immune”主题段落，旁白明确引入甲状腺自身免疫疾病Hashimoto’s thyroiditis，并解释其重要性；与此前的压力调节讨论之间有独立的转换。",
+        "fact_ids": [
+          "F2"
+        ],
+        "frame_ids": [
+          "V040",
+          "V051"
+        ],
+        "id": "G03",
+        "label_zh": "甲状腺自身免疫主题介绍",
+        "role": "direct",
+        "source_summary_zh": "画面显示“Auto Immune”；旁白明确说到甲状腺功能减退的自身免疫疾病Hashimoto’s thyroiditis，并说明在多数地区它是甲状腺功能减退的重要原因，以及仅补充T4可能忽略自身免疫问题。",
+        "start_s": 1540.8,
+        "subtitle_ids": [
+          "S00208",
+          "S00209",
+          "S00210",
+          "S00211",
+          "S00212",
+          "S00213",
+          "S00214",
+          "S00215",
+          "S00216",
+          "S00217"
+        ]
+      },
+      {
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "窗口覆盖行动步骤及部分建议，不声称每项建议的精确起止。",
+        "end_s": 2008.96,
+        "episode_reason_zh": "这是在抗体讨论结束后明确开启的独立“action steps”段落，列出寻求专业帮助、饮食及环境与肠道相关建议；它不是自身免疫主题的首次引入，而是后续行动方案。",
+        "fact_ids": [
+          "F2"
+        ],
+        "frame_ids": [
+          "V064"
+        ],
+        "id": "G04",
+        "label_zh": "自身免疫甲状腺的行动建议",
+        "role": "relation_context",
+        "source_summary_zh": "旁白转入行动步骤，建议寻找专业人员，并讨论低至中等碳水饮食、避免含氯或氟的水、过滤器、肝脏及肠道健康等做法；画面显示“Action Plan”。",
+        "start_s": 1834.96,
+        "subtitle_ids": [
+          "S00248",
+          "S00249",
+          "S00250",
+          "S00251",
+          "S00252",
+          "S00253",
+          "S00254",
+          "S00255",
+          "S00256",
+          "S00257",
+          "S00258",
+          "S00259",
+          "S00260",
+          "S00261",
+          "S00262",
+          "S00263",
+          "S00264",
+          "S00265",
+          "S00266",
+          "S00267",
+          "S00268",
+          "S00269",
+          "S00270",
+          "S00271",
+          "S00272"
+        ]
+      }
+    ],
+    "omitted_prior_citations": [],
+    "coverage_notes_zh": "标准治疗、压力、自身免疫背景、行动建议是不同章节；题目中的处理/治疗不能仅用疾病名称代替。",
+    "unresolved": []
+  }
+}

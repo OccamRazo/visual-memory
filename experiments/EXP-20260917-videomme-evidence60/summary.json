@@ -1,0 +1,68 @@
+{
+  "status": "complete",
+  "completed_at": "2026-09-17T01:49:10.774686+08:00",
+  "target": 60,
+  "accepted": 60,
+  "accepted_by_origin": {
+    "prior_pilot": 8,
+    "remaining48": 21,
+    "replacement": 31
+  },
+  "accepted_videos": 47,
+  "original60_dispositioned": 60,
+  "official_task_types": {
+    "Object Reasoning": 14,
+    "Spatial Reasoning": 1,
+    "Temporal Reasoning": 4,
+    "Information Synopsis": 15,
+    "Action Reasoning": 13,
+    "Object Recognition": 7,
+    "Action Recognition": 2,
+    "Counting Problem": 3,
+    "Attribute Perception": 1
+  },
+  "evidence_scopes": {
+    "local": 24,
+    "global_coverage": 3,
+    "cross_segment": 13,
+    "representative_topic": 17,
+    "exhaustive": 3
+  },
+  "required_fact_count": 79,
+  "multi_fact_questions": 13,
+  "replacement_questions_processed": 76,
+  "all_dispositions": {
+    "accepted": 60,
+    "skipped_prior": 4,
+    "skipped_ambiguity": 10,
+    "skipped_codex_review": 20,
+    "skipped_localization": 27,
+    "skipped_evidence_not_complete": 15
+  },
+  "technical_failures_preserved": 12,
+  "future_test_excluded_videos": 88,
+  "human_reviewed": false,
+  "independent_human_calibration": "not run",
+  "dataset_type": "curated development/diagnostic set; not a natural-distribution or held-out benchmark",
+  "api": {
+    "api_attempts": 288,
+    "api_failures": 0,
+    "usage": {
+      "prompt_tokens": 8258844,
+      "completion_tokens": 261436,
+      "total_tokens": 8520280
+    },
+    "resolved_models": [
+      "gpt-5.6-luna",
+      "gpt-5.6-luna-2026-07-09"
+    ]
+  },
+  "pipeline_counts": {
+    "skipped_localization": 27,
+    "source_complete_candidate": 72,
+    "skipped_evidence_not_complete": 15,
+    "skipped_ambiguity": 10
+  },
+  "dataset_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/final/evidence60.jsonl",
+  "dataset_sha256": "0292dc45de55b0a2b7b500880174a84ce2b52651c15921cdf86c432278eda12b"
+}

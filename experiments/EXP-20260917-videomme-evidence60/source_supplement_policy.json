@@ -1,0 +1,6 @@
+{
+  "recorded_at": "2026-09-17T01:21:54.975073+08:00",
+  "policy": "During direct Codex review, original SRT context can be added in a separately hashed package when necessary to verify source-section identity or a relation. Original model inputs, outputs and package hashes remain unchanged; new source is labeled as Codex-reviewed, not model-observed. All added text/timestamps are checked against original SRT. No generated caption becomes evidence.",
+  "first_case": "videomme:888-1",
+  "reason": "Four exercise segments were visible, but day labels were outside the nominated windows; original full SRT resolves all four day boundaries."
+}

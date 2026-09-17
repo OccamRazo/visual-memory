@@ -1,0 +1,31 @@
+{
+  "version": "1.3",
+  "target": 50,
+  "model": "qwen3.8-flash",
+  "dataset": "Video-MME long, all 900 questions / 300 videos",
+  "caption_search": "Every caption of the candidate's video, chronological and untruncated; no BM25 shortlist, no 40-caption cap. Original full subtitles accompany localization. Persist supplied IDs and exact request hashes.",
+  "screening": "900-QA question-only prioritization; eight prior seeds re-evaluated without inherited acceptance. Consume highest available completed-screen priority, scope-risk false first, qid tie-break. Freeze every actual draw wave; exact replay uses frozen draws rather than asynchronous completion order.",
+  "group_definition": "One continuous activity episode or independently introduced standalone section. Multiple steps in one ongoing procedure stay one group. Different days, performances, destinations, conversations or standalone chapters may form separate groups. Artificial temporal splits are forbidden.",
+  "acceptance": "Original question semantics and official answer preserved; unambiguous minimal rubric; original-frame/subtitle support complete; independent answer-blind observation; segmentation audit passes; all single candidate groups fail sufficiency; retained set succeeds and every one-group deletion fails. Global count/absence require source scope closure. Full-caption countersearch checks for a self-contained single-group alternative.",
+  "scope": "AI-curated multi-evidence diagnostic set; source completeness and irreducibility relative to retrieved source, not a human gold or proof of a global minimum.",
+  "api": {
+    "concurrency": 8,
+    "timeout_seconds": 300,
+    "attempts": 3,
+    "max_output_tokens": 14000,
+    "stream": true,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "projection": {
+    "max_side": 1024,
+    "jpeg_quality": 94,
+    "review_padding_seconds": 3,
+    "frame_sampling": "All localization key times plus boundary +/-2 seconds and interval quartiles; at least one image per 15 seconds for <=180-second visual cores; longer cores uniformly sampled at 13 points. No generated captions in verification."
+  },
+  "reproducibility": "Exact question/caption/source hashes, frozen prompts/code snapshots, request/response ledgers, original frame PTS/SHA256, deterministic projection and cached replay. Fresh API calls may differ.",
+  "human_reviewed": false,
+  "change_note": "Transport-only improvement after successful streaming probe: collect complete streamed JSON and usage to avoid non-streaming read timeouts on long reasoning responses. No evidence/acceptance criterion change. Previous requests and failed/superseded results retained.",
+  "normalization": "Half-open source cores; adjacent independently introduced chapters/days may meet at a cut and go to semantic source audit. Overlapping cores require revision; no automatic temporal merge claims an episode. Same-activity substeps still fail semantic audit."
+}

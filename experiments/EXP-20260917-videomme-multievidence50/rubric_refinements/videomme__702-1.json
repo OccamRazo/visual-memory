@@ -1,0 +1,58 @@
+{
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "Wayne lures a dog with food, and the dog bites the man's arm."
+    },
+    {
+      "id": "F2",
+      "fact": "The man injured in that earlier dog attack is the bandaged man holding the envelope in the later scene.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "The man injured in the earlier dog attack"
+        },
+        {
+          "id": "E2",
+          "entity": "The bandaged man holding the envelope in the later scene"
+        }
+      ]
+    }
+  ],
+  "core_overrides": {
+    "G01": {
+      "start_s": 176.0,
+      "end_s": 229.0,
+      "key_times_s": [
+        180,
+        185,
+        195,
+        197.5,
+        198.9,
+        200,
+        202,
+        204,
+        206,
+        208,
+        210,
+        212.5,
+        213.95,
+        214.5,
+        215.5,
+        216.5
+      ]
+    },
+    "G02": {
+      "start_s": 1647.0,
+      "end_s": 1666.0,
+      "key_times_s": [
+        1647.5,
+        1650,
+        1655,
+        1665
+      ]
+    }
+  },
+  "reason_zh": "删除题目未问的收房租与狗的所有权评分要求，保留受伤原因和后段所指男子的跨场景身份对应。原狗攻击瞬间只有短暂镜头，已在实际213.964秒观察到狗，按原字幕狗低吼/痛叫的时点补抽局部原帧后重新做盲观察及全部验证。",
+  "source_result_sha256": "331d4589be29dfbb79d7c1289906395e9d5ac0f24e79d058c636d4273e778681"
+}

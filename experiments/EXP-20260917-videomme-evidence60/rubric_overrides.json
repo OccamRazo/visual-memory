@@ -1,0 +1,241 @@
+{
+  "videomme:821-3": {
+    "fact_statements": {
+      "F1": "The video demonstrates simple, cute DIY crafts on a budget."
+    },
+    "reason": "Easter and Dollar Tree identify supporting source context; the official main-topic answer does not require naming the occasion or retailer. Remove those extra scoring requirements without changing the answer."
+  },
+  "videomme:851-1": {
+    "fact_statements": {
+      "F1": "She likes to wear makeup because her eyelids/eye area are dark."
+    },
+    "reason": "Preserve the official reason; heredity and concealing details support it but are not extra mandatory scoring requirements."
+  },
+  "videomme:833-3": {
+    "support_overrides": {
+      "F1": {
+        "frame_ids": [],
+        "source_observation": "Original subtitles S00011-S00022 introduce Filipino food being ignored, insulted and misunderstood globally; S00307-S00312 return to the lack of appreciation.",
+        "inference_bridge": "The explicit introductory framing and later return to the issue establish why Filipino food is unappreciated as the main focus."
+      }
+    },
+    "reason": "Direct image review found V018 is a reaction clip, not the title card claimed by the model. Remove the erroneous visual claim; original subtitles independently support the topic.",
+    "fact_statements": {
+      "F1": "The video focuses on why Filipino food is unappreciated."
+    }
+  },
+  "videomme:626-3": {
+    "reference_answer": "Standard Thyroid Treatment → stress influence on the production of TSH → how to cure thyroid when you have auto-immune.",
+    "reason": "Remove option-number notation because the adapted question contains topic text without numbered labels. Preserve order and topic wording."
+  },
+  "videomme:674-1": {
+    "fact_statements": {
+      "F1": "The video teaches beginners the basics of how to play mahjong."
+    },
+    "support_overrides": {
+      "F1": {
+        "source_observation": "S00021-S00025 explicitly introduce a tutorial on the basic rules of mahjong, repeated in the conclusion S00872-S00873. V008 shows a Mahjong Tiles instructional screen with tile groups."
+      }
+    },
+    "reason": "Correct the frame description from an imagined Riichi Mahjong title to the actually visible Mahjong Tiles screen. Mahjong subtype is supporting context, not an extra scoring requirement."
+  },
+  "videomme:782-2": {
+    "support_overrides": {
+      "F1": {
+        "subtitle_ids": [
+          "S00000",
+          "S00002",
+          "S00106",
+          "S00109"
+        ],
+        "source_observation": "The opening identifies American Theatre Wing and COSTUMES; actual frames show costume sketches, work/fitting rooms, fabric handling and garment construction. S00106 describes where actual work gets done; S00109 discusses the fitting room."
+      }
+    },
+    "reason": "Remove the backstage-musical genre line as evidence for behind-the-scenes access; actual workshop images and explicit fitting-room discussion directly support the inference."
+  },
+  "videomme:626-2": {
+    "fact_statements": {
+      "F1": "Provide iodine for the goiter."
+    },
+    "reason": "The answer requests the treatment, not an additional explanation of iodine deficiency."
+  },
+  "videomme:655-1": {
+    "fact_statements": {
+      "F1": "Tsunamis are not single waves."
+    },
+    "reason": "Wave-train explanation supports the misconception correction but is not an extra required answer detail."
+  },
+  "videomme:655-3": {
+    "fact_statements": {
+      "F1": "A landslide triggered the 1958 Lituya Bay tsunami."
+    },
+    "reason": "The requested cause is a landslide; its size is not a separate answer requirement."
+  },
+  "videomme:660-3": {
+    "fact_statements": {
+      "F1": "The carvings suggest that a new political ideology involving religious beliefs emerged or spread in the region."
+    },
+    "reason": "Preserve the political/religious inference; exact northern subregion and date are source context, not added answer requirements."
+  },
+  "videomme:808-3": {
+    "fact_statements": {
+      "F1": "Brian Quinn was booed because he charged audience members at a free performance."
+    },
+    "reason": "The causal explanation is required; the exact five-dollar amount is supporting context, not an added scoring requirement."
+  },
+  "videomme:605-1": {
+    "fact_statements": {
+      "F1": "The video covers the rise of the Austro-Hungarian Empire.",
+      "F2": "The video covers the fall of the Austro-Hungarian Empire."
+    },
+    "reason": "Keep the two requested topic components; power ranking, dates and enumerated causes are supporting context."
+  },
+  "videomme:888-1": {
+    "support_overrides": {
+      "F1": {
+        "subtitle_ids": [
+          "S00019",
+          "S00020",
+          "S00021",
+          "S00066",
+          "S00072",
+          "S00073",
+          "S00074",
+          "S00269",
+          "S00361",
+          "S00362",
+          "S00363",
+          "S00487",
+          "S00625",
+          "S00629",
+          "S00644",
+          "S00645",
+          "S00646",
+          "S00712",
+          "S00713",
+          "S00718"
+        ],
+        "source_observation": "The original full transcript announces the four-day split at S00019-S00021 and marks push at S00066 (137.079 s), leg at S00269 (636.32 s), pull/back-biceps at S00487 (1260 s), and full-body at S00644-S00646 (1687-1692 s). Within these respective sections, V005, V014/V019, V026 and V040/V045 visibly show dumbbells; cited exercise subtitles identify them.",
+        "inference_bridge": "Section boundaries from the source transcript map each independently observed dumbbell exercise to its named workout day, establishing use on all four requested days."
+      }
+    },
+    "reason": "Codex added and directly checked the original full SRT to resolve workout-day mapping. The grounded model and blind observer saw the preserved original narrower package; the supplement is separately labeled."
+  },
+  "videomme:621-1": {
+    "fact_statements": {
+      "F1": "The video presents enhancing metabolic health as a strategy to combat Alzheimer's disease."
+    },
+    "reason": "Keep the central topic without requiring lifestyle details as additional answer facts."
+  },
+  "videomme:723-3": {
+    "question": "In the final part of the video, an interview was conducted with a white woman and a black man. What is the relevance of this interview to the theme of the video?",
+    "reason": "Restore the original final-part temporal scope, which localization omitted; evidence is from that late interview."
+  },
+  "videomme:664-1": {
+    "fact_statements": {
+      "F1": "The video is mainly about establishing paternity: determining the biological father of a child."
+    },
+    "reason": "Preserve the main-topic reference without adding court procedure or DNA-method requirements."
+  },
+  "videomme:773-3": {
+    "reference_answer": "Men's badminton doubles match.",
+    "reason": "Remove the duplicated word match from the official reference without changing meaning."
+  },
+  "videomme:855-3": {
+    "question": "What is inside the Amazon package received by the female protagonist in the video used for?",
+    "reference_answer": "The package contains bottles to store the ginger juice drink she made.",
+    "required_fact_ids": [
+      "F2"
+    ],
+    "fact_statements": {
+      "F2": "The package contents were intended to store the ginger juice drink."
+    },
+    "reason": "Restore the original purpose-only question; localization added a separate what-is-inside question. Retain only intended storage of ginger drink as a scoring fact; glass, size, lids and portioning remain source context."
+  },
+  "videomme:702-3": {
+    "question": "In the early part of the video, the man whose window was smashed by Wayne, and the woman wearing a pattern with white triangles, who is chatting with Wayne's father in the middle part of the video, what is their relationship?",
+    "reason": "Preserve original early/middle scene descriptions as identification context; the verified ex-partner relation is unchanged."
+  },
+  "videomme:791-3": {
+    "fact_statements": {
+      "F1": "The video is a compilation of magician or magic-centered performances.",
+      "F2": "The magic performances surprise or amaze the judges."
+    },
+    "support_overrides": {
+      "F1": {
+        "frame_ids": [
+          "V002",
+          "V018",
+          "V032",
+          "V048"
+        ],
+        "subtitle_ids": [
+          "S00005",
+          "S00132",
+          "S00233",
+          "S00270",
+          "S00398",
+          "S00512",
+          "S00513"
+        ],
+        "source_observation": "Original transcript introductions identify Kevin Li, Brynn Cummings, Mandy Muden, Ryland and Magic Mike Jacobson across the full video. V002/V018/V032/V048 show the first four acts; Magic Mike is explicitly introduced in S00512-S00513. V056 shows judges and is not identity evidence for Magic Mike."
+      },
+      "F2": {
+        "subtitle_ids": [
+          "S00224",
+          "S00362",
+          "S00363",
+          "S00612"
+        ],
+        "source_observation": "Original subtitles include wow/oh my, Mandy that was quite a surprise, and oh my god oh wow that was very impressive; the footage also shows judge reactions. These support surprise or amazement, rather than merely positive votes."
+      }
+    },
+    "reason": "Main-content question does not require an exact performer count as a separate fact. Keep the magic-compilation and surprised-judge concepts; correct V056 identity claim and cite explicit surprise language."
+  },
+  "videomme:689-1": {
+    "support_overrides": {
+      "F1": {
+        "frame_ids": [],
+        "source_observation": "Original S00439-S00444 discusses Starship as central to SpaceX ambitions; S00562-S00564 presents Starlink as a major revenue strategy; S00760-S00762 describes rivals aiming to follow SpaceX. The overview shows these programs and competitors, but no holy-grail title is visible in the cited frames.",
+        "inference_bridge": "The connected discussion of SpaceX technologies, revenue strategy and rivals supports the conditional topic of how it could lead or win the space race."
+      }
+    },
+    "reason": "Remove a nonexistent on-screen title claim. The source subtitle discussion supports the topic inference; preserve its conditional could wording."
+  },
+  "videomme:625-3": {
+    "fact_statements": {
+      "F1": "Sugar is a component listed in the speaker nutritional model of inflammation.",
+      "F2": "Carbohydrates are a component listed in the speaker nutritional model of inflammation.",
+      "F3": "Polyunsaturated oils are a component listed in the speaker nutritional model of inflammation."
+    },
+    "reason": "Score the three categories in the official answer. Source explicitly specifies fructose/refined carbohydrates, retained in evidence but not extra answer requirements; do not generalize the speaker model into medical truth."
+  },
+  "videomme:842-1": {
+    "question": "According to the video, how many grandsons does the founder of Gucci have?",
+    "fact_statements": {
+      "F1": "According to the genealogy presented in the video, Guccio Gucci has four grandsons."
+    },
+    "reason": "Restore the original according-to-video scope. The depicted two branches establish 3 + 1 in this video account; this is not an externally verified claim about the complete real-world family."
+  },
+  "videomme:889-3": {
+    "fact_statements": {
+      "F1": "They had spent eight months preparing for this event."
+    },
+    "support_overrides": {
+      "F1": {
+        "frame_ids": [],
+        "subtitle_ids": [
+          "S00100",
+          "S00101"
+        ],
+        "source_observation": "At 308.10–311.58 seconds the original dialogue says eight months in the making. V047 shows a finish-area conversation, not an Eight months caption.",
+        "inference_bridge": "The explicit eight-month preparation statement supplies the duration; it does not prove their lifetime total participation in the sport."
+      },
+      "F2": {
+        "source_observation": "S00378/S00383 describe foot pain and a stress reaction; S00430/S00434 describe continuing despite pain. V035 shows the emotional immediate finish area, and V058 shows both leads wearing medals while S00518 says we did it, we finished it."
+      }
+    },
+    "reason": "Correct the unsupported V047 text claim and avoid equating event preparation duration with lifetime sporting experience. Preserve the raw official reference separately.",
+    "reference_answer": "After eight months of preparation, they persevered through physical difficulties and finished the event, making them proud and deeply moving their supporters."
+  }
+}

@@ -1,0 +1,422 @@
+[
+  {
+    "qid": "videomme:660-2",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "6b24e814f58464684fcec1b839218a9ceaba0878ab7b6a87562c2915e91f8854"
+  },
+  {
+    "qid": "videomme:669-1",
+    "candidate_groups": 9,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "56b6fbe7f50ebe3c129748221f17f35ff5ead0f5ad513bd69033b853ebbaa625"
+  },
+  {
+    "qid": "videomme:674-2",
+    "candidate_groups": 2,
+    "verified_irreducible_groups": null,
+    "status": "qualified",
+    "result_sha256": "d4e1b920d568fbe5de129420dbe3b08ed0bd350de142462f38e6fa2e6f3410b6"
+  },
+  {
+    "qid": "videomme:782-1",
+    "candidate_groups": 7,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "a92eba8143c3c7c259be34255df818dd0b3d5ed0f4db23de96eb4c0e82ce4213"
+  },
+  {
+    "qid": "videomme:821-1",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "61e10e3bcf0d78978921fc99ce90cf9500264df794017bee37a219272623f43c"
+  },
+  {
+    "qid": "videomme:843-3",
+    "candidate_groups": 3,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "b12f8816530066d6634abc87ead1cedbba506f9679fe080eba1e96f449da7645"
+  },
+  {
+    "qid": "videomme:845-2",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "b1832d4926dfe0e81ac6083e9ebffe3b9ab39145427a5ca6063d78355db7f168"
+  },
+  {
+    "qid": "videomme:885-2",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": null,
+    "status": "qualified",
+    "result_sha256": "30526cba5c8abe6d7f4143a80dca6d650f0daea871e276896f9601131b3032de"
+  },
+  {
+    "qid": "videomme:626-1",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "199912f2295d4b5a6d6d37d8f11b6b5d102b73ae24bab23cd6ada684b0eff204"
+  },
+  {
+    "qid": "videomme:626-2",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "59e704d6bf14fe8dbe27372eae90e7cce2d60701f7e87d7dcdc80f6da448fac4"
+  },
+  {
+    "qid": "videomme:626-3",
+    "candidate_groups": 4,
+    "verified_irreducible_groups": 3,
+    "status": "confirmed",
+    "result_sha256": "0742687868cb16ec53cd9a5d8db32573b7c458973b91389c362ce7189301f3af"
+  },
+  {
+    "qid": "videomme:655-1",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "fb42eb8deb30e4c90aedf81a5a724b70590e52b584afafb52429aebb97a2332b"
+  },
+  {
+    "qid": "videomme:655-3",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "714af3e13f6fd39d83665bd1e9f2b4295accd154ee3970dd49afef6b45e72a1e"
+  },
+  {
+    "qid": "videomme:660-3",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "23d04bd65523cad58f2e2a97a8bb096d7e81596a791afdbfe26699c69b5ece3b"
+  },
+  {
+    "qid": "videomme:669-3",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "bf9c79eef619c9ecb4d5534016dc8b81b72c5b4f53cb05565a4a71ba118c1875"
+  },
+  {
+    "qid": "videomme:674-1",
+    "candidate_groups": 4,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "67ba2d29eb6569aa2ef966cfb5942ed177152ba4d2f65f383f4ec567fca63c91"
+  },
+  {
+    "qid": "videomme:699-1",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "6d9cd490c9c1f83cfe36292a008367d7f62522bc84bba25fa372fbf8e836bf3e"
+  },
+  {
+    "qid": "videomme:699-2",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "d51e8d9f31f29d90b12cd4e0931be3affaa6c2f4f9894d6bbc4d2a6ed65851d9"
+  },
+  {
+    "qid": "videomme:715-1",
+    "candidate_groups": 3,
+    "verified_irreducible_groups": 3,
+    "status": "confirmed",
+    "result_sha256": "d7ecf77ad003d437c6be0f9dc521fa3171757d7b7fa4c238614e2633c084a576"
+  },
+  {
+    "qid": "videomme:782-2",
+    "candidate_groups": 4,
+    "verified_irreducible_groups": 2,
+    "status": "confirmed",
+    "result_sha256": "f4052c27e93f83fe38eb6bff67939bcb2521af76b844b7a5ec70f1a1a5937343"
+  },
+  {
+    "qid": "videomme:808-1",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "2c58509b1120a7f2f202a9baf7306e0ac43a0d3ad69285aeba707e830198b23b"
+  },
+  {
+    "qid": "videomme:808-2",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "e593472414ac7e5a9ca6b7581f431dbc15daef1b88ea99da32d565fc5389475f"
+  },
+  {
+    "qid": "videomme:808-3",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": null,
+    "status": "qualified",
+    "result_sha256": "54574a9409ce18ed37410757fb374ee31a0fddbb6ca477f4189acf0dbd32804d"
+  },
+  {
+    "qid": "videomme:821-3",
+    "candidate_groups": 5,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "589f5ac42236267eae328cb5f717495980c7ad5745ea1af2467fd2b7c59c1cb3"
+  },
+  {
+    "qid": "videomme:833-3",
+    "candidate_groups": 3,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "f9daa463228c72f9e31481644b3cd11c7dd4533946bd111954273a3446df9aa0"
+  },
+  {
+    "qid": "videomme:843-1",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "82df3843829d6969515482a90471fbd71919f9ad55536a34f872b74da40ceef5"
+  },
+  {
+    "qid": "videomme:851-1",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "8463c332a4b9540d0544ee763eadadfb9aa74decade56bfa4b338e7fcbd8a7be"
+  },
+  {
+    "qid": "videomme:851-2",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "b539cd93f9d6dd0faadee6bf76393f138d27c564e728e40c6cbe16c2dd2f53ee"
+  },
+  {
+    "qid": "videomme:872-1",
+    "candidate_groups": 8,
+    "verified_irreducible_groups": 2,
+    "status": "confirmed",
+    "result_sha256": "d82f724ea7f2fed67bfd598304468979af92ebba5a8747021e3a04e043fdaf8e"
+  },
+  {
+    "qid": "videomme:645-1",
+    "candidate_groups": 4,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "5f6064253bc756190051877b089220f6dd76c1f1444e0802aa09966f84e0244a"
+  },
+  {
+    "qid": "videomme:759-1",
+    "candidate_groups": 3,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "4d7d32dcf9e4444d8db3a30f2acbe1a446c12afb1cbb45aabc1cf640c557029c"
+  },
+  {
+    "qid": "videomme:605-1",
+    "candidate_groups": 5,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "e30d16fd219f8dc3359f2ad79f847ca467b305514d8ae306771d9e58248ac78f"
+  },
+  {
+    "qid": "videomme:892-3",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "4c71f6eca798722630b42d02319810f853b57d98500d77f55f89b8210e942b65"
+  },
+  {
+    "qid": "videomme:881-1",
+    "candidate_groups": 2,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "15c2c8fe947bb497dbd9109c3c5cabf543e9354335556d50de8c66b244b1fc60"
+  },
+  {
+    "qid": "videomme:621-1",
+    "candidate_groups": 4,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "5d93602d019762339f013d974b0d0ec3badd3e6ceda7a74385f1a23e39b8b8ed"
+  },
+  {
+    "qid": "videomme:767-1",
+    "candidate_groups": 2,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "28cd71eed318dc337a49e62a08a0932ee48abb1778405eaef5b6aca7f4f66d76"
+  },
+  {
+    "qid": "videomme:829-3",
+    "candidate_groups": 6,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "29dc9a0ede69f77154881201aeb613bcd8b6749598ca0b70fc4cc9551a4b5648"
+  },
+  {
+    "qid": "videomme:888-1",
+    "candidate_groups": 4,
+    "verified_irreducible_groups": 4,
+    "status": "confirmed",
+    "result_sha256": "28680d1424cf36e07a69d313b08e02690f06ba6b045fa1a2b477f0182b39f2aa"
+  },
+  {
+    "qid": "videomme:723-3",
+    "candidate_groups": 2,
+    "verified_irreducible_groups": 2,
+    "status": "confirmed",
+    "result_sha256": "5ebd2d604016d10f2a32b91636a682db81b5db5c01db11c973f4730110da8246"
+  },
+  {
+    "qid": "videomme:735-3",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "b52eb8d2b22a145c34b893de8e8dd6d61a8d29cce1a2748201aea2b53c3d6ee7"
+  },
+  {
+    "qid": "videomme:773-3",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "42803a0ac74c5c0b2ad75a6eeb820a68ee0c7fc6b6233dc00e47ececb769558b"
+  },
+  {
+    "qid": "videomme:664-1",
+    "candidate_groups": 2,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "21da766fca65a26e256afc4739a9000f066d7579ce2fdb12396d7ae39b048f59"
+  },
+  {
+    "qid": "videomme:784-2",
+    "candidate_groups": 2,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "81d5c2815578d9ba9af9c5eb046454b9b67bfe413a8931925d68ca403a085d90"
+  },
+  {
+    "qid": "videomme:863-2",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": null,
+    "status": "qualified",
+    "result_sha256": "7f2b4b91926da34fc5cf949ec545b383625c97b0935c4ddd8108afc71c32f915"
+  },
+  {
+    "qid": "videomme:704-2",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "52d1b5ae8e01b1c0515e5baaf04f4e7e22e91b64ff9632b0baade5ed089eeecd"
+  },
+  {
+    "qid": "videomme:855-3",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "0e52994300be122a9c09772c626fe4fe346a77601dfffbc304422404edd2147d"
+  },
+  {
+    "qid": "videomme:791-3",
+    "candidate_groups": 5,
+    "verified_irreducible_groups": 2,
+    "status": "confirmed",
+    "result_sha256": "b176f19eef67403cd2345ad03098afacd2f24d6cdf8740f8721c8d3456711ac2"
+  },
+  {
+    "qid": "videomme:702-3",
+    "candidate_groups": 2,
+    "verified_irreducible_groups": null,
+    "status": "qualified",
+    "result_sha256": "67ecd5ea4d109fca34d7d9acc9cb10b80214b506e65739d985703930d29ed40f"
+  },
+  {
+    "qid": "videomme:793-3",
+    "candidate_groups": 11,
+    "verified_irreducible_groups": null,
+    "status": "qualified",
+    "result_sha256": "0cbd77789129128377f59c85b7424ed1a22d06303c9ff4c05e6a7b1fd1243ecf"
+  },
+  {
+    "qid": "videomme:644-1",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "f9089f032a1653f9b2375c9b5df237e8826faff72793f56bb1a0f3a54d7f96ea"
+  },
+  {
+    "qid": "videomme:689-1",
+    "candidate_groups": 5,
+    "verified_irreducible_groups": null,
+    "status": "qualified",
+    "result_sha256": "a2048a52b7dbbe011d9bc41b9ad722fd9eee2262fc417a0d0eb41035aee6d12f"
+  },
+  {
+    "qid": "videomme:898-3",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "1a5b650660296932cc9cbcbba84918175dd77308a8b38b6c6b99f8335fba5301"
+  },
+  {
+    "qid": "videomme:625-3",
+    "candidate_groups": 2,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "0ade06b27c3c53573dcf608e285a79fe4f1ff1d6129416c4f4804fcbde66e8e9"
+  },
+  {
+    "qid": "videomme:642-3",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "6103d4a99e64aef6bc0b9f7f91e731f19f8084c2932612a34369e90532d20e2c"
+  },
+  {
+    "qid": "videomme:707-2",
+    "candidate_groups": 2,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "31f7c1f418f5c3bbd8f28f9d75bde3313e78d4a11224a6d45d806c538ed5a3ce"
+  },
+  {
+    "qid": "videomme:740-1",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "4a99396808db56cca72289214ce21778b918988fb026a39fd0f9b6b9a9d8164b"
+  },
+  {
+    "qid": "videomme:641-3",
+    "candidate_groups": 2,
+    "verified_irreducible_groups": 2,
+    "status": "confirmed",
+    "result_sha256": "6bea087e821a6095b73e2c6c3b0ea3bc80dbbf9150698799a8c20ef0fb6e231a"
+  },
+  {
+    "qid": "videomme:842-1",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "11b49925495249ade97fe2f8cc5e3637743c16ebeb82e31c513837c0b8c1c5b7"
+  },
+  {
+    "qid": "videomme:794-2",
+    "candidate_groups": 1,
+    "verified_irreducible_groups": 1,
+    "status": "confirmed",
+    "result_sha256": "4e96ed57d1f11e3002adc072c439028508e54ec3ad729f766ff94cca4839bfc2"
+  },
+  {
+    "qid": "videomme:889-3",
+    "candidate_groups": 6,
+    "verified_irreducible_groups": null,
+    "status": "qualified",
+    "result_sha256": "897b28c4ce0cb4b86c540fcfb38f02371b0a78827dc06505daf31f591f3d661e"
+  }
+]

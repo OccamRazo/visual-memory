@@ -1,0 +1,41 @@
+{
+  "completed_at": "2026-09-17T18:38:03.402634+08:00",
+  "status": "paused_by_user",
+  "target": 50,
+  "confirmed_questions": 11,
+  "videos": 11,
+  "necessary_groups": 36,
+  "group_count_histogram": {
+    "2": 4,
+    "3": 2,
+    "4": 3,
+    "5": 2
+  },
+  "mean_groups": 3.272727272727273,
+  "processed_questions": 816,
+  "dispositions": {
+    "multi_verified_candidate": 48,
+    "processing_failed": 646,
+    "rejected_single_group_sufficient": 19,
+    "rejected_source_or_segmentation": 19,
+    "rejected_localization": 59,
+    "rejected_full_set_insufficient": 13,
+    "qualified_countersearch": 11,
+    "rejected_merged_single_episode": 1
+  },
+  "dataset_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/final/multievidence.jsonl",
+  "dataset_sha256": "8b001264e190fea402fef04f0896597912bcfe88a1675e32ec803ddc112c62a9",
+  "models": [
+    "qwen3.8-flash"
+  ],
+  "api_attempts": 3418,
+  "api_failures": 1981,
+  "usage": {
+    "prompt_tokens": 51467073,
+    "completion_tokens": 11259054,
+    "total_tokens": 62726127
+  },
+  "human_reviewed": false,
+  "paused_at": "2026-09-17T18:35:49+08:00",
+  "target_met": false
+}

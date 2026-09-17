@@ -1,0 +1,14 @@
+{
+  "source_result_sha256": "63be32e2d33aa3114607508862e10dbf38918552035f0acc6f14ec1086339f2e",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The introduction/performance of (①) Insulin Resistance Explained occurs before (③) How to Reverse Type 2 Diabetes in the video."
+    },
+    {
+      "id": "F2",
+      "fact": "The introduction/performance of (③) How to Reverse Type 2 Diabetes occurs before (②) Case studies in the video."
+    }
+  ],
+  "reason_zh": "将原题复合要求逐项拆开，不增加额外评分内容；缺任一事件/天不能以其他片段推断补足。删除原事实中未被问题要求的机制细节或排名。"
+}

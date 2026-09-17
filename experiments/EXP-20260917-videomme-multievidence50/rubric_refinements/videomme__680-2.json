@@ -1,0 +1,48 @@
+{
+  "source_result_sha256": "a96bc0ac26c04eca1f56dfbb27c2498d247e488acf4bd1e3b8001f9666a84ed8",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The introduction/performance of (b) Basic Parts of a Computer occurs before (d) Understanding Operating Systems in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Basic Parts of a Computer"
+        },
+        {
+          "id": "E2",
+          "entity": "Understanding Operating Systems"
+        }
+      ]
+    },
+    {
+      "id": "F2",
+      "fact": "The introduction/performance of (d) Understanding Operating Systems occurs before (a) Internet Safety: Your Browser's Security Features in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Understanding Operating Systems"
+        },
+        {
+          "id": "E2",
+          "entity": "Internet Safety: Your Browser's Security Features"
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "fact": "The introduction/performance of (a) Internet Safety: Your Browser's Security Features occurs before (c) Mac OS X Basics: Getting Started with the Desktop in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Internet Safety: Your Browser's Security Features"
+        },
+        {
+          "id": "E2",
+          "entity": "Mac OS X Basics: Getting Started with the Desktop"
+        }
+      ]
+    }
+  ],
+  "reason_zh": "删掉MacOS组后模型仍称顺序完整，但同时承认缺该章节且missing_zh非空，是明显自相矛盾。加入关系两端逐项源引用的结构检查，重新验证，不能把前三章节猜补成四章节。"
+}

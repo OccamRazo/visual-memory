@@ -1,0 +1,25 @@
+{
+  "processed": 6,
+  "target": 60,
+  "status_counts": {
+    "review_candidate": 2,
+    "processing_failed": 2,
+    "needs_segmentation_review": 1,
+    "needs_source_review": 1
+  },
+  "groups": 29,
+  "api_attempts": 31,
+  "api_failures": 0,
+  "usage": {
+    "prompt_tokens": 1179975,
+    "completion_tokens": 40110,
+    "total_tokens": 1220085
+  },
+  "models": [
+    "gpt-5.6-luna",
+    "gpt-5.6-luna-2026-07-09"
+  ],
+  "status": "superseded_methodological_pilot",
+  "replacement_run": "run-002-continuity",
+  "interpretation": "Action-level segmentation overcounted continuous procedures; two schema failures and one source-scope failure preserved. This pilot is not the final 60-question grouping result."
+}

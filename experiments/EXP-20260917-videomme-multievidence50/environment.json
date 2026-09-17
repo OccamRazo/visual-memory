@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-09-17T14:17:17.637369+08:00",
+  "python_executable": "/home/baorui/projects/WorldMM/.venv/bin/python",
+  "python": "3.13.12 (main, Mar 24 2026, 22:49:35) [Clang 22.1.1 ]",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "git_branch": "work/motivation-data-prep",
+  "base_revision": "3916850f86b1150dd8c4ea7be110d4c2c4f92e8f",
+  "local_changes_uncommitted": true,
+  "dependencies": {
+    "av": "17.0.0",
+    "httpx": "0.28.1",
+    "openai": "2.29.0",
+    "Pillow": "12.1.1"
+  },
+  "proxy": "Existing localhost HTTP proxy :7892, set per-command; system unchanged",
+  "credentials": "tmp/api.json, not copied",
+  "requested_model": "qwen3.8-flash",
+  "connectivity_probe_returned_model": "qwen3.8-flash"
+}

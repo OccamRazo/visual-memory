@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-09-16T23:02:14.903527+08:00",
+  "host": "affect-ESC4000-G4",
+  "python": "3.13.12",
+  "qa_by_dataset": {
+    "videomme_long": 900
+  },
+  "video_by_dataset": {
+    "videomme_long": 300
+  },
+  "captions_by_dataset": {
+    "videomme_long": 74136
+  },
+  "worldmm_caption_video_count": 300,
+  "worldmm_missing_long_ids": [],
+  "worldmm_extra_ids": [],
+  "dev_questions": 60,
+  "dev_videos": 20,
+  "visual_pilot_questions": 12,
+  "missing_video_files": [],
+  "missing_caption_source_files": [],
+  "invalid_candidate_intervals": [],
+  "target_parse_errors": [],
+  "video_metadata_probed": 300,
+  "video_metadata_failures": [],
+  "full_video_decode": "not_run; selected evidence frames are decoded in visual stage",
+  "human_audit": "not_run",
+  "formal_test_selection": "not_frozen"
+}

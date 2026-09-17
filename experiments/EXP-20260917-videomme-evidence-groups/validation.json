@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "questions": 60,
+  "all_original_questions_and_rubrics_preserved": true,
+  "source_anchors_checked": 2041,
+  "unique_frame_hashes_checked": 3928,
+  "original_subtitle_members_checked": 47,
+  "raw_subset_payloads_checked": 132,
+  "excluded_group_content_absent_from_subset_payloads": true,
+  "all_group_intervals_disjoint_and_citations_contained": true,
+  "confirmed_subsets_and_every_single_group_deletion_have_results": true,
+  "no_captions_as_evidence": true,
+  "checked_at": "2026-09-17T12:28:09.841772+08:00"
+}

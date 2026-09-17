@@ -1,0 +1,16 @@
+{
+  "python": "3.13.12",
+  "executable": "/home/baorui/projects/WorldMM/.venv/bin/python",
+  "packages": {
+    "openai": "2.29.0",
+    "httpx": "0.28.1",
+    "pyarrow": "23.0.1",
+    "av": "17.0.0",
+    "Pillow": "12.1.1",
+    "pysrt": "1.1.2",
+    "numpy": "2.4.3"
+  },
+  "ffprobe": "ffprobe version 4.2.7-0ubuntu0.1 Copyright (c) 2007-2022 the FFmpeg developers",
+  "gpu_used_by_local_preprocessing": false,
+  "local_model_weights_loaded": false
+}

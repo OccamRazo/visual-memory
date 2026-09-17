@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-09-17T18:42:08.082153+08:00",
+  "status": "passed_partial_delivery",
+  "target50_met": false,
+  "commands": [
+    {
+      "command": "code/export.py",
+      "result": "11 confirmed questions, original sources and full-caption request integrity passed"
+    },
+    {
+      "command": "code/check_delivery.py --min-count 11",
+      "result": "PASS: 11 questions,36 groups,565 local preview references"
+    },
+    {
+      "command": "code/check_pipeline.py",
+      "result": "PASS: full-caption retention, subset isolation, singleton alternatives, greedy deletions, adjacent independent cores"
+    }
+  ],
+  "python_syntax_files": 28,
+  "valid_json_files": 108,
+  "browser_playback_tested": false,
+  "new_api_calls_during_pause_archival": 0
+}

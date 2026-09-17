@@ -1,0 +1,42 @@
+{
+  "started_at": "2026-09-17T15:34:00.049088+08:00",
+  "reason": "Bounded retry of technical/schema failures after global streaming, anchor-normalization and missing-status fixes; not retries of semantic rejections. All old requests/results preserved.",
+  "questions": [
+    {
+      "qid": "videomme:627-2",
+      "previous_result": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/superseded_results/videomme__627-2/84a7d806a692ecdaa20905b1f1d48210bdf525e0a19339d6e703ae3be3f8e8d7.json",
+      "previous_sha256": "84a7d806a692ecdaa20905b1f1d48210bdf525e0a19339d6e703ae3be3f8e8d7",
+      "previous_error": "Overlapping cores G03 / G04: revise evidence-bearing bounds without splitting one activity or merging distinct chapters. Choose source anchors contained in their episode."
+    },
+    {
+      "qid": "videomme:661-3",
+      "previous_result": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/superseded_results/videomme__661-3/940cc80f4c3b1cc1c9a0f15010ee497b87f2166ff09839b89399a0e39a601474.json",
+      "previous_sha256": "940cc80f4c3b1cc1c9a0f15010ee497b87f2166ff09839b89399a0e39a601474",
+      "previous_error": "invalid localization ID"
+    },
+    {
+      "qid": "videomme:795-2",
+      "previous_result": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/superseded_results/videomme__795-2/44a305af673833a0c70230960a262559131a2588833d97d7281fb7589320163f.json",
+      "previous_sha256": "44a305af673833a0c70230960a262559131a2588833d97d7281fb7589320163f",
+      "previous_error": ""
+    },
+    {
+      "qid": "videomme:824-2",
+      "previous_result": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/superseded_results/videomme__824-2/44812006aa9340c625e32d592160f94d581bce2bfcb56ede78f065165f08484c.json",
+      "previous_sha256": "44812006aa9340c625e32d592160f94d581bce2bfcb56ede78f065165f08484c",
+      "previous_error": "'status'"
+    },
+    {
+      "qid": "videomme:796-3",
+      "previous_result": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/superseded_results/videomme__796-3/cba7822d307de78621137a89e3ef52672defa0609d5b43c2f6255500d07f2db9.json",
+      "previous_sha256": "cba7822d307de78621137a89e3ef52672defa0609d5b43c2f6255500d07f2db9",
+      "previous_error": "'str' object has no attribute 'get'"
+    },
+    {
+      "qid": "videomme:723-3",
+      "previous_result": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/superseded_results/videomme__723-3/f0c48d4a00ed6fa8cb5fd2905f659f467965c1e013dd798fa47275ee41661e5d.json",
+      "previous_sha256": "f0c48d4a00ed6fa8cb5fd2905f659f467965c1e013dd798fa47275ee41661e5d",
+      "previous_error": "videomme:723-3/locate API failed; see redacted ledger"
+    }
+  ]
+}

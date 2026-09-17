@@ -3,11 +3,14 @@
 研究大模型如何从连续视觉流中选择、压缩、保存、取回和更新信息，当前聚焦超长视频理解。
 
 - [项目状态](docs/STATUS.md)：当前任务、权威方案与下一步。
+- [项目约定](docs/project-guide.md)与[工作记录规范](docs/work-records.md)。
 - [研究调研](research/README.md)：文献、方法提案与时间索引。
 - [执行方案](docs/plan/README.md)：当前验证方案及历史版本。
-- `experiments/`：独立实验的配置、结果和审计记录。
+- [实验索引](experiments/README.md)：独立实验的配置、结果和审计记录。
 - `writing/`：论文草稿、图表和周报。
 - `notes/sessions/`：跨会话的简要上下文。
+
+当前多证据数据收集已按用户要求暂停，保留 11 道确认题；50 题目标未达成。详情见[暂停实验记录](experiments/EXP-20260917-videomme-multievidence50/README.md)。
 
 ## 代码状态
 

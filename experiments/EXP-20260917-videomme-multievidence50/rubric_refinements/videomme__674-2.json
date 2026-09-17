@@ -1,0 +1,49 @@
+{
+  "source_result_sha256": "f354935bb50096eaaf8833105e7a1e5a18904cbfbda44f539ce2431bd2c0d1c8",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The introduction/performance of (b) Different types of tiles occurs before (d) How to create a winning hand in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Different types of tiles"
+        },
+        {
+          "id": "E2",
+          "entity": "How to create a winning hand"
+        }
+      ]
+    },
+    {
+      "id": "F2",
+      "fact": "The introduction/performance of (d) How to create a winning hand occurs before (c) The strategies to complete a winning hand quickly in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "How to create a winning hand"
+        },
+        {
+          "id": "E2",
+          "entity": "The strategies to complete a winning hand quickly"
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "fact": "The introduction/performance of (c) The strategies to complete a winning hand quickly occurs before (a) Different types of yaku in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "The strategies to complete a winning hand quickly"
+        },
+        {
+          "id": "E2",
+          "entity": "Different types of yaku"
+        }
+      ]
+    }
+  ],
+  "question": "In what sequence are the following contents introduced in this video?\n(a) Different types of yaku.\n(b) Different types of tiles.\n(c) The strategies to complete a winning hand quickly.\n(d) How to create a winning hand.",
+  "reason_zh": "按原题最小相邻先后关系逐端点核验，禁止据缺失事件的逻辑位置猜补顺序。保持原题题项与官方排列，不增加评分要求。"
+}

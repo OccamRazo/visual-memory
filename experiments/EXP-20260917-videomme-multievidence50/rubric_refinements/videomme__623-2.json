@@ -1,0 +1,14 @@
+{
+  "source_result_sha256": "e10e54a9877132fc7b897f34b86ae2e16d781b48e6d29b03d21a8fec03eb0e10",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The introduction/performance of (①) The concept of the personal fat threshold occurs before (②) How to grow fat cells in the video."
+    },
+    {
+      "id": "F2",
+      "fact": "The introduction/performance of (②) How to grow fat cells occurs before (③) The relationship between insulin and diet in the video."
+    }
+  ],
+  "reason_zh": "将原题复合要求逐项拆开，不增加额外评分内容；缺任一事件/天不能以其他片段推断补足。删除原事实中未被问题要求的机制细节或排名。"
+}

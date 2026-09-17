@@ -1,0 +1,11 @@
+{
+  "qid": "videomme:715-1",
+  "source_result_sha256": "465726deb37fcb6bb3d9bafa71ea3e80b61c6c38262fd7f605cd8b0fe84be276",
+  "reason_zh": "原选项是Tesla、Coca-Cola、Intel三家公司的不同排列，评分只需它们的相对顺序，不需额外证明绝对第几个公司或详细用水原因。原问题中的前半段范围由源时间与原视频时长复核；原证据组不改，重跑最小顺序事实验证。",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The three named companies are mentioned in this order: Tesla, Coca-Cola, Intel."
+    }
+  ]
+}

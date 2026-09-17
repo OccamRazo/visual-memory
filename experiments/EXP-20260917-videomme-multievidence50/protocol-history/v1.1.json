@@ -1,0 +1,26 @@
+{
+  "version": "1.1",
+  "target": 50,
+  "model": "qwen3.8-flash",
+  "dataset": "Video-MME long, all 900 questions / 300 videos",
+  "caption_search": "Every caption of the candidate's video, chronological and untruncated; no BM25 shortlist, no 40-caption cap. Original full subtitles accompany localization. Persist supplied IDs and exact request hashes.",
+  "screening": "Question-only model prioritization of all 900 QA; deterministic ranked traversal. Does not determine source sufficiency.",
+  "group_definition": "One continuous activity episode or independently introduced standalone section. Multiple steps in one ongoing procedure stay one group. Different days, performances, destinations, conversations or standalone chapters may form separate groups. Artificial temporal splits are forbidden.",
+  "acceptance": "Original question semantics and official answer preserved; unambiguous minimal rubric; original-frame/subtitle support complete; independent answer-blind observation; segmentation audit passes; all single candidate groups fail sufficiency; retained set succeeds and every one-group deletion fails. Global count/absence require source scope closure. Full-caption countersearch checks for a self-contained single-group alternative.",
+  "scope": "AI-curated multi-evidence diagnostic set; source completeness and irreducibility relative to retrieved source, not a human gold or proof of a global minimum.",
+  "api": {
+    "concurrency": 8,
+    "timeout_seconds": 300,
+    "attempts": 3,
+    "max_output_tokens": 14000
+  },
+  "projection": {
+    "max_side": 1024,
+    "jpeg_quality": 94,
+    "review_padding_seconds": 3,
+    "frame_sampling": "All localization key times plus boundary +/-2 seconds and interval quartiles; at least one image per 15 seconds for <=180-second visual cores; longer cores uniformly sampled at 13 points. No generated captions in verification."
+  },
+  "reproducibility": "Exact question/caption/source hashes, frozen prompts/code snapshots, request/response ledgers, original frame PTS/SHA256, deterministic projection and cached replay. Fresh API calls may differ.",
+  "human_reviewed": false,
+  "change_note": "Operational adjustment after connectivity recovery: up to 8 workers and 300s timeout for full-timeline requests. No criterion or prompt changes. Initial question screening ran with 4 workers/180s and retains its code/config snapshot."
+}

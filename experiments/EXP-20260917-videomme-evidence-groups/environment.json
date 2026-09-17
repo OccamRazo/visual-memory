@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-09-17T11:39:48.611260+08:00",
+  "python": "3.13.12",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "packages": {
+    "av": "17.0.0",
+    "pillow": "12.1.1",
+    "pysrt": "1.1.2",
+    "openai": "2.29.0",
+    "httpx": "0.28.1"
+  },
+  "source_environment": "../EXP-20260917-videomme-evidence60/environment.json",
+  "branch": "work/motivation-data-prep",
+  "base_head": "3916850f86b1150dd8c4ea7be110d4c2c4f92e8f",
+  "credentials_recorded": false,
+  "current_run": "run-002-continuity",
+  "preserved_pilot_root": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence-groups"
+}

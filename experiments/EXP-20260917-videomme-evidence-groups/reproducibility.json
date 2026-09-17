@@ -1,0 +1,162 @@
+{
+  "files": [
+    {
+      "path": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/final/evidence60.jsonl",
+      "sha256": "0292dc45de55b0a2b7b500880174a84ce2b52651c15921cdf86c432278eda12b"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/protocol.json",
+      "sha256": "ca0fa088f717a78e11070482f795c021e419cd00a1c1eb6b8b62a929b9163026"
+    },
+    {
+      "path": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence-groups/run-002-continuity/input_manifest.json",
+      "sha256": "5b182fa89386dddaa9f13cb266c070b6ac3997a0ed51bcb5e7605a0536c374cd"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/corrections.json",
+      "sha256": "e05753893ecd409d4ed72cf0facac7e3f4290054e925fc67527e80fb2c5d51fa"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/adjudication_rules.json",
+      "sha256": "3e3a7278ba9a5b9530579f2ce56c395a4d61ee3c4b0cba98a5e3f72031f9012d"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/environment.json",
+      "sha256": "76e308c0452a794c9271aae97734e7e6ac8fa3814be6382da72086121a6df884"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/implementation_fixes.json",
+      "sha256": "3673c0818b43acce7af236c52f07f034427a296128708e674d7b6f7515bc2fab"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__621-1.json",
+      "sha256": "3a271de2f291c211301261f9dc0286f2200593ada3e1b82e410361e72d5d9ddf"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__626-3.json",
+      "sha256": "f8343e8a508d296a1368ad7e91b0151cfbd817d2a4b3dbe5a415f0d3806a7ff4"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__655-3.json",
+      "sha256": "7121a62f2613e5d22d988123dedc7f821f63ff20579eb90ed891ac6ed409b28b"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__664-1.json",
+      "sha256": "09ac580bcb2d71e6e7cde6452deb1f09588d981f4e141b1fbae48962b7fb021e"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__669-1.json",
+      "sha256": "5c7c1f5d00a88e28bea6838a335766981b5bf45107de7d4807b049a1fce569e3"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__674-2.json",
+      "sha256": "68d0fcc2b39973f1642b5442d40ec751a8ec9fe6c19a89e8e67d759226c4b28b"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__699-1.json",
+      "sha256": "34a0b61670584f07f187deb629961ca0b4b4e5534d94b32c7f97613df8b24ebf"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__704-2.json",
+      "sha256": "9add305644fe617141b629f09d076500a1597e65dcd1506828f11c642aa52cd0"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__773-3.json",
+      "sha256": "522643e55745939ce618083e0267ab529f9cd0f961c407fad34a26f6facb2b14"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__791-3.json",
+      "sha256": "d123343289477ddc5cd935ff89b69826ba019eae81c4b58c4104565ae686ccfa"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__808-1.json",
+      "sha256": "70931ab6774269864dbde2d79383046169afbd721e6816629d83a5c9b4d5e803"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__808-2.json",
+      "sha256": "967f71a41ee3ab67f5fec98e6526a137a0d8546702cd069fc1ec1ba3ce2c8468"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__821-3.json",
+      "sha256": "0c7b37e2d8381482950259ee1fccd26af4aa12e91fa4514bd4ad70b71bffab74"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__829-3.json",
+      "sha256": "bbd81a7d23ec4551ff1f080e707e923286478a02e32d04386d50b701d0f0e504"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/group_overrides/videomme__872-1.json",
+      "sha256": "e36e187e861ed8bb4717bba42cd299a68a5fadf7b1db2db678b5a3d3d0e9f625"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/evaluation_notes/videomme__626-3.json",
+      "sha256": "c64bab6ce224741d9637ec1562bc87909316ea74cc5f51a88d379f437ae0e505"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/evaluation_notes/videomme__674-2.json",
+      "sha256": "b05e759703d817d35e557e0ac23c60066f8ea9bc9f83faae8a3f49c54fc43f2f"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/evaluation_notes/videomme__872-1.json",
+      "sha256": "4c05bf0465a2adf0455e3ca3068c1492402e3c5ab7a15bf8c110d924de4e2c12"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/adjudication_history/videomme__669-1-9fc1880cabdc.json",
+      "sha256": "9fc1880cabdc7a05151c61720068ca22aad72d1349c940501a8cff8b0b27b2cf"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/adjudication_history/videomme__674-2-75d477147033.json",
+      "sha256": "75d477147033acb3f193e4b0d6139d4ad0803ab1ccd9a1afa677ec5c4492d7ef"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/adjudication_history/videomme__791-3-c3f3d49401ea.json",
+      "sha256": "c3f3d49401eac733303504551ec7570481f46baf7e9202cba0b0147b2e2d394e"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/adjudication_history/videomme__821-3-0f3162318bc6.json",
+      "sha256": "0f3162318bc626c3fbd101d9e3ca1f8e59312457e2666ad4de9bd12089459f2f"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/code/check_delivery.py",
+      "sha256": "888946b634f28afc425b72fcf599b1add67309db76165adbbeaa4f9587ffe78c"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/code/check_logic.py",
+      "sha256": "25bd96999deebfcfc0d6ba682b2f3acfa20ba96b84cf4bee10c23216d0ed1b26"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/code/export.py",
+      "sha256": "82051cbc501d926119fb0ab0c7d9b333f9b266ef3b9e14cbbb1d624314fa951c"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/code/group.py",
+      "sha256": "ddef5c42cfb89f534e04972bff0a4d151c01b74e1a175127fbe4f3ac18d102a7"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/code/refine_subset.py",
+      "sha256": "3ff4e518a6de7b580996ed75ed814211867c8e94ab901204f43213452f6ad68b"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/code/review.py",
+      "sha256": "ebb01715ce61d00e5175af5019c24d5721d41350689c5bf92723f4fd1f3791b8"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/code/prompts/audit.txt",
+      "sha256": "0bb747ebcc23e22a87c13d82288bdec55017fd6eb822dd371735bb2081b6d2d7"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/code/prompts/propose.txt",
+      "sha256": "0fd18e38b1c6f810c6f9dcd4b091472de92228e618e5bf1c13067e0734225548"
+    },
+    {
+      "path": "/home/baorui/projects/visual-memory/experiments/EXP-20260917-videomme-evidence-groups/code/prompts/subset.txt",
+      "sha256": "09fed0cb3de1894304956b583e753ad9a5225c950244b6bd1d467910927fbed0"
+    }
+  ],
+  "code_snapshots": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence-groups/run-002-continuity/code_snapshots",
+  "raw_calls": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence-groups/run-002-continuity/calls",
+  "source_bank": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence-groups/run-002-continuity/sources",
+  "review_records": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence-groups/run-002-continuity/reviews",
+  "cache_replay_exact": true,
+  "fresh_model_calls_deterministic": false
+}

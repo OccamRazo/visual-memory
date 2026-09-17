@@ -1,0 +1,61 @@
+{
+  "source_result_sha256": "ecee044ada5e4436678a92591f8f141bc79677f0535a6fe14e544d9bb3509a16",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The introduction/performance of (b) Emphasizing the importance of time and priority occurs before (d) Creating a caloric deficit in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Emphasizing the importance of time and priority"
+        },
+        {
+          "id": "E2",
+          "entity": "Creating a caloric deficit"
+        }
+      ]
+    },
+    {
+      "id": "F2",
+      "fact": "The introduction/performance of (d) Creating a caloric deficit occurs before (c) Building a personalised meal plan in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Creating a caloric deficit"
+        },
+        {
+          "id": "E2",
+          "entity": "Building a personalised meal plan"
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "fact": "The introduction/performance of (c) Building a personalised meal plan occurs before (a) Tracking daily data of the body in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Building a personalised meal plan"
+        },
+        {
+          "id": "E2",
+          "entity": "Tracking daily data of the body"
+        }
+      ]
+    }
+  ],
+  "question": "In which order are the following tips introduced in this video?\n(a) Tracking daily data of the body\n(b) Emphasizing the importance of time and priority.\n(c) Building a personalised meal plan.\n(d) Creating a caloric deficit.",
+  "reason_zh": "按原题最小相邻先后关系逐端点核验，禁止据缺失事件的逻辑位置猜补顺序。保持原题题项与官方排列，不增加评分要求。 实际R013/1128秒和R019/1878秒已出现下一独立章节标题，修正相邻边界并重新投射/盲观察。",
+  "core_overrides": {
+    "G02": {
+      "end_s": 1128.0
+    },
+    "G03": {
+      "start_s": 1128.0,
+      "end_s": 1878.0
+    },
+    "G04": {
+      "start_s": 1878.0
+    }
+  }
+}

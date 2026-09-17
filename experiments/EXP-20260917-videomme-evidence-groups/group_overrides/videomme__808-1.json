@@ -1,0 +1,46 @@
+{
+  "qid": "videomme:808-1",
+  "created_at": "2026-09-17T12:01:43.325316+08:00",
+  "reviewer": "Codex source continuity adjudication",
+  "source_result_sha256": "e221578940799b6911ad4f0174e0a02c93563ca898daf0578c08692837ca957c",
+  "reason_zh": "复查间隔原字幕后确认同一连续任务，合并介绍/执行或执行/收尾，避免按叙述阶段拆组。",
+  "proposal": {
+    "groups": [
+      {
+        "boundary_basis": "subtitle",
+        "boundary_uncertainty_zh": "涵盖同一事件取证范围，不声称精确动作起止。",
+        "end_s": 233.933,
+        "episode_reason_zh": "原字幕填补两段锚点间空隙，仍是同一任务的准备/执行或紧接总结；没有无关章节或新事件，不应拆组。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V016",
+          "V024",
+          "V029"
+        ],
+        "id": "G01",
+        "label_zh": "婚礼演讲恶作剧的准备与演讲",
+        "role": "relation_context",
+        "source_summary_zh": "字幕说明众人来到 Gary 和 Crystal 的婚礼现场庆祝。；画面显示身穿黑色西装和黄色领带的Sal正在婚礼上演讲；字幕先点名Crystal和Gary，随后说两人是令人赞叹的一对，并明确提到婚姻。",
+        "start_s": 3.136,
+        "subtitle_ids": [
+          "S00002",
+          "S00003",
+          "S00055",
+          "S00062",
+          "S00063",
+          "S00148",
+          "S00149",
+          "S00150",
+          "S00151"
+        ],
+        "proposal_ids": [
+          "G01"
+        ],
+        "review_start_s": 0.13600000000000012,
+        "review_end_s": 12.409
+      }
+    ]
+  }
+}

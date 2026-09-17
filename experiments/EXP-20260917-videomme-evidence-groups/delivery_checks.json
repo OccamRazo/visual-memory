@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checked_at": "2026-09-17T12:28:10.799485+08:00",
+  "questions": 60,
+  "group_packages": 153,
+  "csv_rows": 153,
+  "html_local_references_checked": 1968,
+  "reproduction_file_hashes_checked": 38,
+  "review_result_hash_pairs_checked": 60,
+  "model_facing_packages_exclude_question_reference_and_generated_labels": true,
+  "browser_playback_tested": false,
+  "browser_playback_note": "Local media targets and temporal fragments checked as references; no interactive browser playback test."
+}

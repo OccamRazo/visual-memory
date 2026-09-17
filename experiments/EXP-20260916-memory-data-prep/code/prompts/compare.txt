@@ -1,0 +1,9 @@
+Compare an unverified reference draft with a blind visual audit for a video QA annotation. You are NOT grading an experimental method and have not seen the raw video yourself. All conclusions are automatic proxies awaiting human audit. Do not treat agreement as proof of visual sufficiency. Do not change the question or relax scoring to fit the blind answer.
+For each required answer fact, report whether the blind observations support it, conflict with it, or cannot establish it. A guessed answer without cited visible observations is not supported. A source ID or timestamp alone is not semantic evidence. Missing audio, scope coverage, entity identity and temporal links must remain explicit. Highlight potential defects in the original reference rather than silently overwriting it.
+Return ONLY JSON:
+reference_status: supported_proxy|conflict_requires_review|unresolved;
+facts: [{fact_id: string, status: supported_proxy|contradicted_proxy|unresolved, source_ids: [string], reason: string}];
+sufficient_paths_proxy: [[source IDs]];
+evidence_status: sufficient_proxy|explicit_gap_proxy|undetermined;
+human_review_reasons: [string].
+Only give a sufficient path if the blind audit supplies the facts AND needed relations and scope. Otherwise return an empty list.

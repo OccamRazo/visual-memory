@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "verified_at": "2026-09-17T01:49:10.730108+08:00",
+  "unique_complete_questions": 60,
+  "remaining48_dispositioned": 48,
+  "frame_hashes_checked": 2716,
+  "subtitle_rows_checked": 8550,
+  "blind_observer_requests_checked": 87,
+  "checks": [
+    "All accepted records have traceable reviewed source packages and supported citations.",
+    "Original selection manifest unchanged; no unresolved technical failures.",
+    "Blind observer payload headers contain no answer/options/fact rubric.",
+    "Generated captions excluded from all final evidence packages.",
+    "All final subtitle timestamps/texts and member hashes match the original dataset SRT archive."
+  ],
+  "limits": "Integrity checks do not independently prove semantic correctness. Human calibration not run."
+}

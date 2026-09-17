@@ -1,0 +1,8 @@
+{
+  "constraints": [
+    "For order of topics INTRODUCED, a later explanation recapping previously introduced concepts does not establish their earlier introduction order. Require source introductions at their temporal positions or an explicit source statement of chronology.",
+    "Each independent tutorial topic may constitute a semantic group; individual gameplay actions or subexamples within that topic do not constitute new groups.",
+    "Different types of TILES means individual tiles: numbered suits (man/pin/sou) and honor tiles (winds/dragons). Pairs, triplets and sequences are tile COMBINATIONS in hand construction and cannot substitute for introducing different tile types.",
+    "A general mention that a winning hand must contain Yaku is not by itself an introduction to different TYPES of Yaku. Require the relevant distinct topic content when establishing the order."
+  ]
+}

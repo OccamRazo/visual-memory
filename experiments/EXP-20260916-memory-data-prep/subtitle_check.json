@@ -1,0 +1,20 @@
+{
+  "archive": "/mnt/raid5-01/baorui/Video-MME/subtitle.zip",
+  "sha256": "a2ee50c5912d23301ddf2c5036c19c4ac4eb2116cd9874aeecd026c4eff45a34",
+  "long_videos": 300,
+  "matching_subtitle_files": 292,
+  "missing_video_ids": [
+    "1evyOuQz-jM",
+    "4IenX7OHumk",
+    "5y5_VyEwZhc",
+    "7TydWUguPRU",
+    "Sp2nxlrQ89w",
+    "t23Zi0DBSiI",
+    "xNgVeznQmXI",
+    "yh-EHgkFci4"
+  ],
+  "missing_files_not_synthesized": true,
+  "upstream_revision": "ead1408f75b618502df9a1d8e0950166bf0a2a0b",
+  "upstream_url": "https://huggingface.co/datasets/lmms-lab/Video-MME/blob/ead1408f75b618502df9a1d8e0950166bf0a2a0b/subtitle.zip",
+  "upstream_sha256_matches_local": true
+}

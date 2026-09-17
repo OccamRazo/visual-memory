@@ -1,0 +1,4 @@
+{
+  "basis": "Original MCQ options A/B/C and all-of-the-above reference; preserve question semantics without exposing true values.",
+  "instruction": "Make the standalone question explicitly ask for common features in three dimensions: use of video playback, face coverings, and audience reaction. Do not reveal yes/no or the actual reactions in the question. Keep all evidence requirements minimal. Previously bare commonality wording was underspecified; full caption/source review must run again."
+}

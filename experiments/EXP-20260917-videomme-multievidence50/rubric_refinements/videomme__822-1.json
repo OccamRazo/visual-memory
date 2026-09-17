@@ -1,0 +1,111 @@
+{
+  "source_result_sha256": "f645f72c138790ad634418bbc85a9a033677a3a7b7c978e8d2abe81ac31028db",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The introduction/performance of (a) Spring pocket DIY occurs before (b) Easter bucket floral DIY in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Spring pocket DIY"
+        },
+        {
+          "id": "E2",
+          "entity": "Easter bucket floral DIY"
+        }
+      ]
+    },
+    {
+      "id": "F2",
+      "fact": "The introduction/performance of (b) Easter bucket floral DIY occurs before (c) Farmhouse bunny in a bucket DIY in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Easter bucket floral DIY"
+        },
+        {
+          "id": "E2",
+          "entity": "Farmhouse bunny in a bucket DIY"
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "fact": "The introduction/performance of (c) Farmhouse bunny in a bucket DIY occurs before (d) Spring tin bucket floral DIY in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Farmhouse bunny in a bucket DIY"
+        },
+        {
+          "id": "E2",
+          "entity": "Spring tin bucket floral DIY"
+        }
+      ]
+    },
+    {
+      "id": "F4",
+      "fact": "The introduction/performance of (d) Spring tin bucket floral DIY occurs before (e) Bunny hop decor in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Spring tin bucket floral DIY"
+        },
+        {
+          "id": "E2",
+          "entity": "Bunny hop decor"
+        }
+      ]
+    }
+  ],
+  "reason_zh": "使用全局新增的逐端点原源引用与矛盾输出检查。旧语义判定不直接继承；已知源事件按同一原题最小关系再次验证。 前次三组支持将V050的花桶误认成Farmhouse Bunny且把F3/F4都说成c在e之前，与事实不符；V050/1450s是上一制作的成品，混进下一组开头。根据实际已看过的标题帧585、860、1318、1455秒收紧后四组为各自引入核心，首组保留春季心形口袋介绍/制作片段；不跨入相邻项目。",
+  "core_overrides": {
+    "G01": {
+      "start_s": 18,
+      "end_s": 210,
+      "key_times_s": [
+        18,
+        27,
+        57.5,
+        175,
+        195
+      ]
+    },
+    "G02": {
+      "start_s": 585,
+      "end_s": 625,
+      "key_times_s": [
+        585,
+        590,
+        610
+      ]
+    },
+    "G03": {
+      "start_s": 860,
+      "end_s": 900,
+      "key_times_s": [
+        860,
+        870,
+        890
+      ]
+    },
+    "G04": {
+      "start_s": 1318,
+      "end_s": 1355,
+      "key_times_s": [
+        1318,
+        1320,
+        1340
+      ]
+    },
+    "G05": {
+      "start_s": 1455,
+      "end_s": 1490,
+      "key_times_s": [
+        1455,
+        1460,
+        1480
+      ]
+    }
+  }
+}

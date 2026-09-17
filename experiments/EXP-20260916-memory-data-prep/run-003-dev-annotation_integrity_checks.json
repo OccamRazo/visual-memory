@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "checks": {
+    "only_videomme_long": {
+      "passed": true,
+      "detail": null
+    },
+    "900_questions_300_videos": {
+      "passed": true,
+      "detail": null
+    },
+    "unique_question_ids": {
+      "passed": true,
+      "detail": null
+    },
+    "unique_source_ids": {
+      "passed": true,
+      "detail": null
+    },
+    "dev_60_questions_20_videos": {
+      "passed": true,
+      "detail": null
+    },
+    "no_history_leakage": {
+      "passed": true,
+      "detail": null
+    },
+    "pilot_is_dev_subset": {
+      "passed": true,
+      "detail": null
+    },
+    "metadata_all_successful": {
+      "passed": true,
+      "detail": null
+    },
+    "source_files_present": {
+      "passed": true,
+      "detail": null
+    },
+    "caption_text_nonempty": {
+      "passed": true,
+      "detail": null
+    },
+    "caption_timeline_and_video_duration": {
+      "passed": true,
+      "detail": []
+    },
+    "caption_coverage_all_video_ids": {
+      "passed": true,
+      "detail": null
+    },
+    "all_60_dev_drafts": {
+      "passed": true,
+      "detail": null
+    },
+    "all_12_pilot_outcomes_recorded": {
+      "passed": true,
+      "detail": null
+    },
+    "human_labels_not_fabricated": {
+      "passed": true,
+      "detail": null
+    },
+    "frame_hash_and_timestamp_provenance": {
+      "passed": true,
+      "detail": {
+        "frames_checked": 600,
+        "errors": []
+      }
+    },
+    "blind_input_excludes_reference_and_captions": {
+      "passed": true,
+      "detail": []
+    },
+    "model_citation_timestamp_precision": {
+      "passed": false,
+      "detail": [
+        {
+          "qid": "videomme:660-2",
+          "source_id": "videomme:7MFKy7DJsCY:00041",
+          "cited": 409.009
+        },
+        {
+          "qid": "videomme:833-1",
+          "source_id": "videomme:lw3_W5X1t54:00050",
+          "cited": 510.0
+        },
+        {
+          "qid": "videomme:833-1",
+          "source_id": "videomme:lw3_W5X1t54:00123",
+          "cited": 1240.0
+        },
+        {
+          "qid": "videomme:833-1",
+          "source_id": "videomme:lw3_W5X1t54:00123",
+          "cited": 1241.0
+        },
+        {
+          "qid": "videomme:674-2",
+          "source_id": "videomme:gKjpYd1Ogwg:00045",
+          "cited": 460.0
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "warnings": [
+    "Some model-cited timestamps do not match sampled frame PTS within 0.1s; inspect original audit before accepting support."
+  ],
+  "scope": "Data integrity and input isolation only; not human verification or a method result"
+}

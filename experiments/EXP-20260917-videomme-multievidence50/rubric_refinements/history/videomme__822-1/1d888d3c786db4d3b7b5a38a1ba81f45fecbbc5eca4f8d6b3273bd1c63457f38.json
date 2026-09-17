@@ -1,0 +1,30 @@
+{
+  "source_result_sha256": "41a6f484e2d966597b792093d1dee769cfd24078e889775a09bf72d80c4daa05",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The introduction/performance of (a) Spring pocket DIY occurs before (b) Easter bucket floral DIY in the video."
+    },
+    {
+      "id": "F2",
+      "fact": "The introduction/performance of (b) Easter bucket floral DIY occurs before (c) Farmhouse bunny in a bucket DIY in the video."
+    },
+    {
+      "id": "F3",
+      "fact": "The introduction/performance of (c) Farmhouse bunny in a bucket DIY occurs before (d) Spring tin bucket floral DIY in the video."
+    },
+    {
+      "id": "F4",
+      "fact": "The introduction/performance of (d) Spring tin bucket floral DIY occurs before (e) Bunny hop decor in the video."
+    }
+  ],
+  "reason_zh": "将原题复合要求逐项拆开，不增加额外评分内容；缺任一事件/天不能以其他片段推断补足。删除原事实中未被问题要求的机制细节或排名。 原帧R019在1318秒已显示Spring Tin Bucket Floral DIY新章节标题，因此核心边界由1320改为1318，重新抽原帧、盲观察和全部验证。",
+  "core_overrides": {
+    "G03": {
+      "end_s": 1318.0
+    },
+    "G04": {
+      "start_s": 1318.0
+    }
+  }
+}

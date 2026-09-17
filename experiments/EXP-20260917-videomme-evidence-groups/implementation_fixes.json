@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-09-17T11:45:17.214075+08:00",
+  "fixes": [
+    "Preserve v1.0 pilot with action-step oversegmentation; rerun v1.1 at activity-episode granularity.",
+    "Add source-only schema repair for extra fact IDs or nonexistent citations; never pass omitted-group content during a retry.",
+    "Reject misplaced anchors instead of silently expanding a window across unrelated events.",
+    "Omit original SRT units extending beyond video duration from proposal eligibility and repair invalid bounds."
+  ],
+  "first_retry": {
+    "qid": "videomme:669-1",
+    "failed_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence-groups/run-002-continuity/failed_results/videomme__669-1-7160d949c427.json",
+    "sha256": "7160d949c4279afa5683610846a8747aeeccd11ffafa816627a336ac638f89a3",
+    "reason": "Proposal end exceeded actual video duration; misplaced image IDs also observed in the proposal. Original artifact preserved."
+  },
+  "clarification": "669-1原始失败已确认来自末字幕超出视频时长；随后重试被3.279秒的跨界字幕触发过严格式限制。复查其所有提案后，未发现引用帧远离组范围，前一备注对该题帧错位的描述撤回。防止远处帧扩大时间段仍作为预防性检查保留。",
+  "subtitle_boundary_tolerance_seconds": 15,
+  "frame_boundary_tolerance_seconds": 3,
+  "revision_paths": "Package/frame/sheet revisions now include proposal content hashes, so retries cannot overwrite earlier source projections.",
+  "final_fixes": [
+    "Proposal-content hashes distinguish frame/package/sheet revisions.",
+    "Snapshot later manual proposal inputs by content hash; preserve revised earlier manual inputs in adjudication_history.",
+    "Repair exact group/fact IDs and source-citation schemas with bounded source-only retries.",
+    "Verify original archive SRT bytes and normalized records on export.",
+    "Validate actual subset request content and image hashes against retained cores.",
+    "Keep current-session qualified cases out of verified necessary-group statistics.",
+    "Add auditable source-reviewed alternative subset testing; 669-1 reduced from two groups to G04 alone."
+  ],
+  "final_archived_technical_failures": 8
+}

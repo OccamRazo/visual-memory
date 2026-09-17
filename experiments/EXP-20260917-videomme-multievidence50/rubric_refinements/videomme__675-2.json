@@ -1,0 +1,88 @@
+{
+  "source_result_sha256": "1e7e8a7da1e22745794339cd1f5478fe23cae0811807f32030dbb4a9b0c92641",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The introduction/performance of (a) Espresso, Manual occurs before (b) Piccolo Latte in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Espresso, Manual"
+        },
+        {
+          "id": "E2",
+          "entity": "Piccolo Latte"
+        }
+      ]
+    },
+    {
+      "id": "F2",
+      "fact": "The introduction/performance of (b) Piccolo Latte occurs before (c) Dirty Chai in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Piccolo Latte"
+        },
+        {
+          "id": "E2",
+          "entity": "Dirty Chai"
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "fact": "The introduction/performance of (c) Dirty Chai occurs before (d) Vienna Coffee in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Dirty Chai"
+        },
+        {
+          "id": "E2",
+          "entity": "Vienna Coffee"
+        }
+      ]
+    }
+  ],
+  "question": "In which order are the following types of coffee made in this video?\n(a) Espresso, Manual.\n(b) Piccolo Latte.\n(c) Dirty Chai.\n(d) Vienna Coffee.",
+  "reason_zh": "按原题最小相邻先后关系逐端点核验，禁止据缺失事件的逻辑位置猜补顺序。保持原题题项与官方排列，不增加评分要求。 原1790–1800秒窗口漏掉Vienna Coffee命名，132–140秒也过短；根据全原字幕espresso manu/132.959、piccolo latte/811.36、dirty chai/1285.76、vienna coffee/1799.52修正核心，并保留同一饮品制作的相邻动作，不跨产品。",
+  "core_overrides": {
+    "G01": {
+      "start_s": 132.0,
+      "end_s": 210.0,
+      "key_times_s": [
+        133,
+        150,
+        190,
+        200
+      ]
+    },
+    "G02": {
+      "start_s": 811.0,
+      "end_s": 870.0,
+      "key_times_s": [
+        812,
+        830,
+        850
+      ]
+    },
+    "G03": {
+      "start_s": 1285.5,
+      "end_s": 1340.0,
+      "key_times_s": [
+        1286,
+        1290,
+        1310
+      ]
+    },
+    "G04": {
+      "start_s": 1799.0,
+      "end_s": 1840.0,
+      "key_times_s": [
+        1801,
+        1810,
+        1825
+      ]
+    }
+  }
+}

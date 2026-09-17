@@ -1,0 +1,18 @@
+{
+  "/mnt/raid5-01/baorui/Video-MME/videomme/test-00000-of-00001.parquet": {
+    "bytes": 405167,
+    "sha256": "7fffab8ed38ecc2f9f0eca4c44d8a11636f0ee96116ede83580c8b9ae0faf986"
+  },
+  "/mnt/raid5-01/baorui/visual-memory/EXP-20260916-memory-data-prep/resources/worldmm-videomme-caption.zip": {
+    "bytes": 11580301,
+    "sha256": "ada66bdab7af40c0975f5bfdd40040380384ee17d82dd1afc284c26f1947b348"
+  },
+  "experiments/EXP-20260916-memory-data-prep/protocol.json": {
+    "bytes": 2216,
+    "sha256": "a8de34e522933a28c701892637b59c9f78cd0563a817f2eb5522f473e406a7ac"
+  },
+  "/home/baorui/projects/visual-memory/experiments/EXP-20260916-memory-data-prep/code/prepare.py": {
+    "bytes": 7752,
+    "sha256": "5d7fa1845359c90b94fb68d9efa213c65337a1abf520fe60478cf55c66a6d6bc"
+  }
+}

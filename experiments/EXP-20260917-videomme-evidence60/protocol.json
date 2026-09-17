@@ -1,0 +1,38 @@
+{
+  "version": "1.1",
+  "started_date": "2026-09-17",
+  "target_complete_questions": 60,
+  "dataset": "Video-MME-long",
+  "source_experiment": "EXP-20260916-memory-data-prep",
+  "prior_audit": "EXP-20260916-videomme-annotation-audit",
+  "selection_seed": 20260917,
+  "remaining_dev_first": true,
+  "replacement_order": "SHA256 of 20260917:replacement:<qid> over the 840 previously unprocessed long QA",
+  "skip_policy": "User explicitly requests skipping ambiguous/unsuitable cases and replacing until 60 source-complete questions. Preserve every disposition. Incomplete evidence or unsupported references are not admitted.",
+  "acceptance": "All necessary answer facts and relations supported by traceable original frames/subtitles; question has a usable standalone short-answer rubric; positive grounded source audit with valid citations plus Codex review. Answer correctness alone is never the sufficiency criterion.",
+  "reference_visibility": "Localization and grounded rubric audit see the official reference. Independent observer sees only the short question, actual frames and source subtitles. Generated captions are localization-only.",
+  "human_reviewed": false,
+  "result_type": "AI-audited curated evidence-complete development/diagnostic set, not human gold or unbiased natural benchmark sample",
+  "future_test_policy": "Exclude all accessed development and replacement video histories from future held-out test selection. Existing original manifests remain unchanged; write new exclusion manifest.",
+  "api": {
+    "concurrency": 3,
+    "attempts": 3,
+    "timeout_seconds": 150,
+    "max_output_tokens": 6000
+  },
+  "projection": {
+    "max_intervals": 8,
+    "max_interval_seconds": 60,
+    "max_key_times": 24,
+    "max_frames": 64,
+    "max_side": 1024,
+    "jpeg_quality": 94,
+    "context_margin_seconds": 3,
+    "oversized_intervals": "Split each nominated span into contiguous <=60-second subwindows before adding context; retain the full nominated span. The limit of 8 applies to nominations, not derived subwindows. Frame budget remains 64; any resulting insufficiency is grounds for exclusion."
+  },
+  "audio": "Use original provided SRT where available; no synthetic subtitle treated as original evidence, no ASR in this run",
+  "source_summaries": "Full original SRT for localization and at most 40 candidate caption segments from lexical retrieval plus temporal coverage. For explicit first/order scope, source SRT can be supplied in full to audit when needed. Original frames are still required for visual claims.",
+  "prior_eight": "Reuse previously source-supported 8 pilot adjudications with complete pointers and checksums; unresolved and unsuitable 4 remain excluded. Do not relabel previous raw responses.",
+  "method_experiments": 0,
+  "change_note": "Normalize oversized model nominations after v1.0 technical failures; preserve failed records and reuse cached calls. No admission threshold change."
+}

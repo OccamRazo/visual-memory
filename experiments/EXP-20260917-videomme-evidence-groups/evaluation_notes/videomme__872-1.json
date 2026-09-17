@@ -1,0 +1,6 @@
+{
+  "constraints": [
+    "The question asks the subject of a video-wide showcase. A single isolated animal occurrence, with no explicit source title/overview or narration, cannot alone establish a compilation of baby animals and their featured performances/interactions. Judge adequate scope from representative source occurrences; do not conflate multiple frames of one animal with multiple occurrences.",
+    "When auditing temporal groups, an independent different-animal clip inside the CORE interval is a segmentation error even if it only occupies the first or last sampled frame. Different animals visible only in +/-3 s REVIEW context do not invalidate an already trimmed core."
+  ]
+}

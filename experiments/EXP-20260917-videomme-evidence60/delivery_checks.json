@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checked_at": "2026-09-17T01:52:03.586010+08:00",
+  "artifact_counts": {
+    "evidence60.jsonl": 60,
+    "questions.jsonl": 60,
+    "scoring_facts.jsonl": 60,
+    "task_labels.jsonl": 60,
+    "evidence_index.jsonl": 60
+  },
+  "all_dispositions": 136,
+  "replacement_prefix_verified": 76,
+  "html_questions": 60,
+  "html_local_links_checked": 289,
+  "markdown_local_links_checked": 49,
+  "source_and_code_hashes_checked": 15,
+  "checks": [
+    "Five final JSONL files have identical 60 IDs and question-only payloads contain no answer or label fields.",
+    "All original 60 questions and the fixed first 76 replacement questions have terminal dispositions.",
+    "All local evidence-page and edited documentation links exist; recorded source/code hashes match."
+  ]
+}

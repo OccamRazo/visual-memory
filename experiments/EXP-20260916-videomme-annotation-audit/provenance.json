@@ -1,0 +1,23 @@
+{
+  "python": "3.13.12",
+  "host": "affect-ESC4000-G4",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "packages": {
+    "av": "17.0.0",
+    "Pillow": "12.1.1",
+    "pysrt": "1.1.2"
+  },
+  "reviewer": "Codex active conversation; exact deployed model build unavailable",
+  "new_api_calls": 0,
+  "credentials_accessed": false,
+  "base_git_head": "3916850f86b1150dd8c4ea7be110d4c2c4f92e8f",
+  "branch": "work/motivation-data-prep",
+  "code_sha256": {
+    "adjudicate.py": "6e02d402dee40692ef33899d2b9bd64854fe46a14441f0c31ea28afff51aabbe",
+    "expand_evidence.py": "a210a751baf0da29aa778a846e68a7d01d0d592e7f23835e837d85bc66dd94b8",
+    "prepare_audit.py": "e303a22cc592b29d39fa77d472349af956f6af1eb11db48fa745a04e483251cf",
+    "validate_and_package.py": "f5f3f03e2994c14ca07e1c0e3fe1431510d5477374387239df6e7d167d22d715"
+  },
+  "inspection_manifest_sha256": "6427acffb0d193a5b0605ea84f29bd6fb86ef8257e5d567f036a269b0ddf8560",
+  "expanded_manifest_sha256": "ef63eb5543d2613c7b136cf1e0e222ede95a205fa6395d9283ee3f910eba7bf3"
+}

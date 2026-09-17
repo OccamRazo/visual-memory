@@ -1,0 +1,8 @@
+{
+  "qid": "videomme:626-3",
+  "constraints": [
+    "F2 requires the relative position of the discussion of HOW TO ADDRESS autoimmune thyroid problems. Merely introducing or defining Hashimoto disease does not establish the later treatment/action topic. Preserve this specificity of the frozen fact.",
+    "F1 concerns the order in which the named topics are introduced in the video. A later recap of the standard model within a stress discussion is not automatically the original introduction, and must not be treated as evidence of a first-introduction order without an explicit chronological statement."
+  ],
+  "reason_zh": "当前删组模型将自身免疫主题介绍替代治疗/行动内容，并把压力章节内的标准模型回顾当成原主题引入。按已有题意纠正核验解释，不更改问题、事实或提供组外信息。"
+}

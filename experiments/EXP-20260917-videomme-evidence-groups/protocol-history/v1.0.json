@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "dataset": "Frozen evidence60, all 60 questions; no replacement or silent deletion",
+  "source": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/final/evidence60.jsonl",
+  "group_definition": "A single contiguous source occurrence: one uninterrupted local event, demonstration, dialogue, or coherent topic section. Multiple frames, subtitles and facts in that occurrence form one group. Distinct distant occurrences remain distinct even when they support the same fact. A long continuous procedure may form one group; unrelated chapters/occurrences must not be merged into a whole-video group.",
+  "boundary_definition": "Evidence-bearing core interval, not a claim of exact cinematic event onset/offset. Recoverable source subtitle boundaries and actual frame PTS anchor the interval. Separate padded review intervals retain context. Sparse visual boundaries retain uncertainty.",
+  "inputs": "Frozen question/rubric, prior cited source anchors, full ORIGINAL subtitle timeline, original sampled frames. No generated captions.",
+  "stages": ["source snapshot and schema normalization", "API source-grounded episode proposal", "deterministic boundary snapping, overlap repair and source projection", "API boundary/support audit with original frames and subtitles", "revision when substantive issue is found", "raw-source sufficient-subset test and leave-one-group-out checks", "Codex review of per-question audit, source anchors and unresolved cases", "export all 60 with integrity checks and statistics"],
+  "normalization": {"round_seconds": 3, "review_padding_seconds": 3, "merge_overlapping_groups": true, "merge_touching_groups": true, "nearby_merge": "Model must justify separating nearby intervals; no gap threshold substitutes for event continuity."},
+  "projection": {"max_side": 1024, "jpeg_quality": 94, "boundary_context_offsets_seconds": [-2, 0, 2], "interior_uniform_samples": 3, "no_limit_on_existing_cited_frames": true, "frames_for_text_only_groups": "Boundary context sampled for visual review; support can remain subtitle-only"},
+  "audit": {"max_revision_rounds": 2, "model_calls_isolated": true, "full_reference_visible": true, "subset_tests": "Evaluator sees only retained groups source, question and rubric; no excluded group descriptions, timestamps, old answer, prior decisions or proposed coverage. Report irreducibility relative to this source collection, not global-video minimum.", "human_reviewed": false},
+  "api": {"concurrency": 3, "timeout_seconds": 180, "attempts": 3, "max_output_tokens": 12000},
+  "reproducibility": "Frozen IDs, input hashes, source member hashes, exact prompts, per-call input/output cache and code snapshots. Replaying cached outputs is exact; a fresh stochastic API run may differ.",
+  "limitations": "No exhaustive full-video search or human gold. A later support or scope failure is recorded against the frozen question, never repaired by silently rewriting the question or dropping it. Evidence-group count is distinct from minimum required groups."
+}

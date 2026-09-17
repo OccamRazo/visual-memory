@@ -1,0 +1,57 @@
+{
+  "started_at": "2026-09-17T15:45:53.651813+08:00",
+  "rule": "Supplement question-only API priority with explicit cross-day/cross-family/comparison/section-order wording among lower-ranked unprocessed questions. Selection sees original questions and references, never downstream method outputs. Same full-caption and source/ablation acceptance protocol; no inherited acceptance.",
+  "qids": [
+    "videomme:643-3",
+    "videomme:746-3",
+    "videomme:719-1",
+    "videomme:840-2",
+    "videomme:841-2",
+    "videomme:712-1",
+    "videomme:810-3",
+    "videomme:896-1"
+  ],
+  "original_questions_sha256": "7371079dbb99b472d98d2c1f4cd919e0e38336a31400b549adaf7b9ee0e63d84",
+  "questions": [
+    {
+      "qid": "videomme:643-3",
+      "original_question": "What is the order in which the following is introduced in the video?\n① How to supply oxygen\n② The motion of ISS\n③ Fireflies on ISS\n④ The communication between ISS and The Earth",
+      "official_answer": "①②③④."
+    },
+    {
+      "qid": "videomme:746-3",
+      "original_question": "Which task does the man continue to do from day one to day two?",
+      "official_answer": "Hit 500 shots."
+    },
+    {
+      "qid": "videomme:719-1",
+      "original_question": "What are the differing motivations for buying unhealthy food in the early part of the video between Cuba's family and Michael's family?",
+      "official_answer": "All members of Cuba's family like to eat unhealthy food, while Michael's family does it just to satisfy Michael's demands."
+    },
+    {
+      "qid": "videomme:840-2",
+      "original_question": "What letter of the alphabet does the two teams choose to eat differently when it comes to food?",
+      "official_answer": "B."
+    },
+    {
+      "qid": "videomme:841-2",
+      "original_question": "What factors contributed to the success of Chanel No. 5 and the little black dress?",
+      "official_answer": "A combination of high-quality products, innovative marketing strategies, and understanding the desires of her target audience."
+    },
+    {
+      "qid": "videomme:712-1",
+      "original_question": "After receiving a one-time benefit of £26,000, what transformation did the three families experience?",
+      "official_answer": "Became more motivated in life."
+    },
+    {
+      "qid": "videomme:810-3",
+      "original_question": "Based on the entire video, what kind of transformation occurs between Jono and Bailey?",
+      "official_answer": "From being selfish and willful to understanding gratitude."
+    },
+    {
+      "qid": "videomme:896-1",
+      "original_question": "What sets apart the third set of stickers from the other two?",
+      "official_answer": "The third set of stickers has no color."
+    }
+  ]
+}

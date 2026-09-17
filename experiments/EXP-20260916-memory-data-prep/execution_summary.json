@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-09-16T23:24:53.957496+08:00",
+  "runs": {
+    "run-002-annotation": {
+      "api_attempts": 2,
+      "api_failures": 0,
+      "usage": {
+        "prompt_tokens": 974,
+        "completion_tokens": 914,
+        "total_tokens": 1888
+      }
+    },
+    "run-003-dev-annotation": {
+      "api_attempts": 90,
+      "api_failures": 0,
+      "usage": {
+        "prompt_tokens": 328615,
+        "completion_tokens": 48904,
+        "total_tokens": 377519
+      }
+    },
+    "run-004-source-refinement": {
+      "api_attempts": 30,
+      "api_failures": 0,
+      "usage": {
+        "prompt_tokens": 326194,
+        "completion_tokens": 26691,
+        "total_tokens": 352885
+      }
+    }
+  },
+  "successful_preflight_usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 8,
+    "total_tokens": 24
+  },
+  "total_reported_usage": {
+    "prompt_tokens": 655799,
+    "completion_tokens": 76517,
+    "total_tokens": 732316
+  },
+  "billing_cost": "unknown; provider bill not queried",
+  "api_attempts_in_runs": 122,
+  "human_audits_completed": 0,
+  "method_experiments_run": 0
+}

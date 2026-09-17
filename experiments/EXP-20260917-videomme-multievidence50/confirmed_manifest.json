@@ -1,0 +1,236 @@
+[
+  {
+    "qid": "videomme:616-3",
+    "video_id": "aansXcMqnNk",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__616-3.json",
+    "result_sha256": "86fd1ae0e0b48acdf2c36a7db823d62e8611ade59f8542e63b4ba41caa6acf2d",
+    "review": {
+      "qid": "videomme:616-3",
+      "decision": "confirmed",
+      "reason_zh": "已读原字幕S00350–353的豆腐店/制作引入与S00395–398的Zen Buddhist temple介绍，查看V011豆腐成品、V013寺院、V014僧人原帧。豆腐店与寺院访问是独立地点/章节，转场紧邻；所问寺院类别与先后关系有双源支持，各单组与反搜符合条件。专名仅定位说明，评分关键为佛教寺院。",
+      "reviewer": "Codex source review",
+      "reviewed_at": "2026-09-17T15:35:43.971121+08:00",
+      "human_reviewed": false,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__616-3.json",
+      "result_sha256": "86fd1ae0e0b48acdf2c36a7db823d62e8611ade59f8542e63b4ba41caa6acf2d"
+    },
+    "necessary_group_ids": [
+      "G01",
+      "G02"
+    ]
+  },
+  {
+    "qid": "videomme:623-2",
+    "video_id": "gfikT_O4v9A",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__623-2.json",
+    "result_sha256": "acaaa20382ae967e9ba5f8407673db8c52dec3081b19588d51523533ce11b53a",
+    "review": {
+      "qid": "videomme:623-2",
+      "decision": "confirmed",
+      "reason_zh": "原图V003明确Personal Fat Threshold，V005 What makes fat grow，V010 Low-calorie diets/Low-insulin diets；字幕S00231、S00363、S00854及其相邻完整字幕确认三主题。独立盲观察relations也完整列三者顺序，但answer短字段漏写③；不把答题正确当证据完整度指标，保留该模型输出缺陷。已按最小相邻关系重新验证，全组充分，各单组与每个删组均未通过；删中间组的理由仍有猜测，但总判定不充分，未据此接受缺源集合。",
+      "reviewer": "Codex source review",
+      "reviewed_at": "2026-09-17T15:27:33.333811+08:00",
+      "human_reviewed": false,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__623-2.json",
+      "result_sha256": "acaaa20382ae967e9ba5f8407673db8c52dec3081b19588d51523533ce11b53a"
+    },
+    "necessary_group_ids": [
+      "G01",
+      "G02",
+      "G03"
+    ]
+  },
+  {
+    "qid": "videomme:628-2",
+    "video_id": "YdMCL9_UTE4",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__628-2.json",
+    "result_sha256": "b0b56c48f5fddacb48b2bdabec97562e5608905a84b9fe4905cbf8fec9114774",
+    "review": {
+      "qid": "videomme:628-2",
+      "decision": "confirmed",
+      "reason_zh": "去掉未被原题要求的具体神经损伤/胎儿机制细节后重新验证。源S00129/633s提出韧性行为，S00223–227/1079s引入遗传与压力，紧随同段S00234–249/1122s实际解释压力激活大脑及反馈，S00573–574/2640s介绍学校训练。查看实际引证帧并读原字幕；三个独立场景为鼠实验、遗传/压力机制讲解、学校训练，机制段本身支持两个相邻主题，故后面的单独损伤研究段是冗余，不强求四组。三个单组及删组均不充分，全组与反搜通过。",
+      "reviewer": "Codex source review",
+      "reviewed_at": "2026-09-17T15:39:05.709502+08:00",
+      "human_reviewed": false,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__628-2.json",
+      "result_sha256": "b0b56c48f5fddacb48b2bdabec97562e5608905a84b9fe4905cbf8fec9114774"
+    },
+    "necessary_group_ids": [
+      "G01",
+      "G02",
+      "G04"
+    ]
+  },
+  {
+    "qid": "videomme:629-1",
+    "video_id": "Z9mOrNcX4j0",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__629-1.json",
+    "result_sha256": "7b422c4e403dc222e3b8157d019d94caba68ba0a64abdc6516e7b2470a4502e8",
+    "review": {
+      "qid": "videomme:629-1",
+      "decision": "confirmed",
+      "reason_zh": "原字幕明确依次介绍植物部位、吃肉/食虫植物、光合作用、排泄、适应性；已查看源帧并逐段读原字幕，不依赖caption描述。五个独立动画科普章节，各单组及全部五个删组均缺指定主题，完整五组与反搜通过，事实仅原题顺序。",
+      "reviewer": "Codex source review",
+      "reviewed_at": "2026-09-17T15:18:22.231355+08:00",
+      "human_reviewed": false,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__629-1.json",
+      "result_sha256": "7b422c4e403dc222e3b8157d019d94caba68ba0a64abdc6516e7b2470a4502e8"
+    },
+    "necessary_group_ids": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05"
+    ]
+  },
+  {
+    "qid": "videomme:630-2",
+    "video_id": "BjmPvovl-V4",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__630-2.json",
+    "result_sha256": "93af470aee367b145d4302a4686a944ca494f1c286bdf5829c3a317dd0ca96b8",
+    "review": {
+      "qid": "videomme:630-2",
+      "decision": "confirmed",
+      "reason_zh": "逐项读原字幕S00107–113、S00296–297、S00452–453、S00722–723并查看实际引证帧，四次独立访谈依次为脑/意识研究者、Hindu monk/spiritual leader、tech entrepreneur、physicist。四组身份与访谈场景均有原源支持；所有单组及删一组缺少对应专家类别，完整组与全caption反搜通过。",
+      "reviewer": "Codex source review",
+      "reviewed_at": "2026-09-17T15:15:46.706453+08:00",
+      "human_reviewed": false,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__630-2.json",
+      "result_sha256": "93af470aee367b145d4302a4686a944ca494f1c286bdf5829c3a317dd0ca96b8"
+    },
+    "necessary_group_ids": [
+      "G01",
+      "G02",
+      "G03",
+      "G04"
+    ]
+  },
+  {
+    "qid": "videomme:641-3",
+    "video_id": "rD5oDjk3IOU",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__641-3.json",
+    "result_sha256": "9ac73e22685a43a52a528ce63b84a3decc06d0469aabf43e0ad8c8518ae825bb",
+    "review": {
+      "qid": "videomme:641-3",
+      "decision": "confirmed",
+      "reason_zh": "已核对原始字幕S00103–S00106与S00573–S00576，并实际查看核心帧R006（405.572s）及R016（1888.021s）：画面姓名条分别为David Grinspoon和Heidi B. Hammel，与金星、海王星研究叙述对应。两段是相隔约24分钟的独立行星章节；全集通过、两种单组均失败，全量caption反查无共同回顾。原题与最小评分事实一致。",
+      "reviewer": "Codex source review",
+      "reviewed_at": "2026-09-17T14:24:40.383036+08:00",
+      "human_reviewed": false,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__641-3.json",
+      "result_sha256": "9ac73e22685a43a52a528ce63b84a3decc06d0469aabf43e0ad8c8518ae825bb"
+    },
+    "necessary_group_ids": [
+      "G01",
+      "G02"
+    ]
+  },
+  {
+    "qid": "videomme:675-2",
+    "video_id": "lVeNTofDB2k",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__675-2.json",
+    "result_sha256": "26aaefdf6faa627099bf5926eb3183d1d05208568d042d9dae025ba5681ed1d1",
+    "review": {
+      "qid": "videomme:675-2",
+      "decision": "confirmed",
+      "reason_zh": "已查看修订后的实际原帧R003/134s Espresso Manual、V013/812s Piccolo Latte、V021/1286s Dirty Chai，最后段原字幕S00752–758明确Vienna Coffee且配套原帧呈现奶油咖啡及制作配料。最后段首帧1799s还未显示名称文字，API把它称为标题不精确，但同一核验输入内的原字幕直接提供名称，事实支持成立。四种独立饮品制作各一组；新核心排除之前漏命名的问题，所有单组/删组失败，完整组及全caption反搜通过。",
+      "reviewer": "Codex source review",
+      "reviewed_at": "2026-09-17T15:50:51.944082+08:00",
+      "human_reviewed": false,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__675-2.json",
+      "result_sha256": "26aaefdf6faa627099bf5926eb3183d1d05208568d042d9dae025ba5681ed1d1"
+    },
+    "necessary_group_ids": [
+      "G01",
+      "G02",
+      "G03",
+      "G04"
+    ]
+  },
+  {
+    "qid": "videomme:680-2",
+    "video_id": "y2kg3MOk1sY",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__680-2.json",
+    "result_sha256": "f2eb7cad7321b5dcffb8931e24967c65aff78c6a2d2e0a5c49bd8082acf35ba9",
+    "review": {
+      "qid": "videomme:680-2",
+      "decision": "confirmed",
+      "reason_zh": "已查看原帧R006/327.5秒Basic Parts of a Computer、V004/740秒Understanding Operating Systems、V007/2150秒Browser Security Features、V011/2825秒MacOS Basics。四个独立教程章节题意对应清楚。修订核验逐关系的两端均有实际源引用；完整四组通过，全部四个单组和四个删组均明确缺对应章节；不再接受前三章猜补第四章。全caption反搜无单章替代。",
+      "reviewer": "Codex source review",
+      "reviewed_at": "2026-09-17T15:41:25.958360+08:00",
+      "human_reviewed": false,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__680-2.json",
+      "result_sha256": "f2eb7cad7321b5dcffb8931e24967c65aff78c6a2d2e0a5c49bd8082acf35ba9"
+    },
+    "necessary_group_ids": [
+      "G01",
+      "G02",
+      "G03",
+      "G04"
+    ]
+  },
+  {
+    "qid": "videomme:779-2",
+    "video_id": "1wzgMHrkrys",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__779-2.json",
+    "result_sha256": "37862d8930ea734bb01c0e0ca614176006b4ef35b6f62ec5737d26086f3e450d",
+    "review": {
+      "qid": "videomme:779-2",
+      "decision": "confirmed",
+      "reason_zh": "查看实际赛前V005/V006与赛后R013/V012姓名条JAKE GAGNE；原字幕S00127–128定位grid赛前、S01139定位race winner赛后（赛前自动字幕名字有误拼，以原画面姓名条确认）。两次独立采访跨越比赛，两个单组均缺另一阶段采访；全组通过，无单章替代。",
+      "reviewer": "Codex source review",
+      "reviewed_at": "2026-09-17T15:15:46.706880+08:00",
+      "human_reviewed": false,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__779-2.json",
+      "result_sha256": "37862d8930ea734bb01c0e0ca614176006b4ef35b6f62ec5737d26086f3e450d"
+    },
+    "necessary_group_ids": [
+      "G01",
+      "G02"
+    ]
+  },
+  {
+    "qid": "videomme:821-2",
+    "video_id": "c03YTDzmsK8",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__821-2.json",
+    "result_sha256": "dd500f8ab6589b9c795c2ee5e547dd2b7bb19cb761f259b2c6f7b4e7ef3617f9",
+    "review": {
+      "qid": "videomme:821-2",
+      "decision": "confirmed",
+      "reason_zh": "查看原帧V003兔子毛线框架和V015/V023/V027胡萝卜标牌制作，均实际出现同一黑绿色热熔胶枪操作；S00077等与S00478等分别明确hot glue/hot glue gun。两件独立手作保持各一组；各单组无法证明另一件手作使用胶枪。",
+      "reviewer": "Codex source review",
+      "reviewed_at": "2026-09-17T15:15:46.707214+08:00",
+      "human_reviewed": false,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__821-2.json",
+      "result_sha256": "dd500f8ab6589b9c795c2ee5e547dd2b7bb19cb761f259b2c6f7b4e7ef3617f9"
+    },
+    "necessary_group_ids": [
+      "G01",
+      "G02"
+    ]
+  },
+  {
+    "qid": "videomme:865-1",
+    "video_id": "YEok4Ykw204",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__865-1.json",
+    "result_sha256": "8f9c51f2a477313661f104300dbafde188e1677b40eb46a594dd104521417f60",
+    "review": {
+      "qid": "videomme:865-1",
+      "decision": "confirmed",
+      "reason_zh": "最小评分事实已重新验证，只要求五地点顺序、不要求编号排名。逐项读原字幕S00036、S00080、S00140、S00227、S00259，五地独立介绍时间分别约266、630、1132、1799、2075秒；查看章节帧27/22/16/8/5用于分组定位。官方地名误拼在原字幕有对应名称，顺序一致。五个单组及五个删组均明确缺对应地点，完整组支持，反搜无单组替代。",
+      "reviewer": "Codex source review",
+      "reviewed_at": "2026-09-17T15:15:46.707457+08:00",
+      "human_reviewed": false,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/results/videomme__865-1.json",
+      "result_sha256": "8f9c51f2a477313661f104300dbafde188e1677b40eb46a594dd104521417f60"
+    },
+    "necessary_group_ids": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05"
+    ]
+  }
+]

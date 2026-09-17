@@ -1,0 +1,26 @@
+[
+  {
+    "qid": "707-1",
+    "requested_s": 1835.932,
+    "actual_pts_s": 1835.8757083333333,
+    "last_available_source_frame_used": true
+  },
+  {
+    "qid": "706-3",
+    "requested_s": 1808.207,
+    "actual_pts_s": 1808.1730333333333,
+    "last_available_source_frame_used": true
+  },
+  {
+    "qid": "737-1",
+    "requested_s": 3094.1,
+    "actual_pts_s": 3094.060727394061,
+    "last_available_source_frame_used": true
+  },
+  {
+    "qid": "689-3",
+    "requested_s": 3458.6,
+    "actual_pts_s": 3458.5884666666666,
+    "last_available_source_frame_used": true
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "checked_at": "2026-09-17T18:43:24.888784+08:00",
+  "scope": "All tracked and nonignored untracked Markdown; inline local links outside fenced code. External URLs, reference-style links and heading anchors not validated. Historical source commands were not executed.",
+  "markdown_files": 105,
+  "local_links_checked": 430,
+  "unexpected_missing": 0,
+  "historical_artifact_links_unavailable": 15,
+  "missing_links": [
+    {
+      "file": "experiments/EXP-20260907-egvqa-15h-pilot/README.md",
+      "target": "run-20260907T0206+0800/audit_pages/e1.html",
+      "line": 88,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-15h-pilot/README.md",
+      "target": "run-20260907T0206+0800/audit_pages/e2_blind.html",
+      "line": 88,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-15h-pilot/ai_visual_diagnostics.md",
+      "target": "run-20260907T0206+0800/ai_visual_diagnostics_assets/selection_and_payload_checks.json",
+      "line": 20,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-15h-pilot/ai_visual_diagnostics.md",
+      "target": "run-20260907T0206+0800/ai_visual_diagnostics_assets/build_contact_sheets.py",
+      "line": 20,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-15h-pilot/ai_visual_diagnostics.md",
+      "target": "run-20260907T0206+0800/ai_visual_diagnostics_assets/PtbGXfb6B1I_q01_Full.png",
+      "line": 36,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-15h-pilot/ai_visual_diagnostics.md",
+      "target": "run-20260907T0206+0800/prepared/PtbGXfb6B1I/e1/PtbGXfb6B1I_q01/manifest.json",
+      "line": 36,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-15h-pilot/ai_visual_diagnostics.md",
+      "target": "run-20260907T0206+0800/prepared/PtbGXfb6B1I/e1/PtbGXfb6B1I_q01/pixels.npz",
+      "line": 36,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-15h-pilot/ai_visual_diagnostics.md",
+      "target": "run-20260907T0206+0800/ai_visual_diagnostics_assets/DBgap0YANhs_q02_Full.png",
+      "line": 64,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-15h-pilot/ai_visual_diagnostics.md",
+      "target": "run-20260907T0206+0800/prepared/DBgap0YANhs/e1/DBgap0YANhs_q02/manifest.json",
+      "line": 64,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-15h-pilot/ai_visual_diagnostics.md",
+      "target": "run-20260907T0206+0800/prepared/DBgap0YANhs/e1/DBgap0YANhs_q02/pixels.npz",
+      "line": 64,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-failure-audit/case_observations.md",
+      "target": "run-20260907T0909+0800/blind_packets/p303db0a84f52/frames.png",
+      "line": 9,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-failure-audit/case_observations.md",
+      "target": "run-20260907T0909+0800/blind_packets/p54d6105401eb/frames.png",
+      "line": 10,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-failure-audit/case_observations.md",
+      "target": "run-20260907T0909+0800/blind_packets/pc792e858fc65/frames.png",
+      "line": 11,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-failure-audit/case_observations.md",
+      "target": "run-20260907T0909+0800/blind_packets/pdeb701734026/frames.png",
+      "line": 17,
+      "classification": "historical_device_artifact"
+    },
+    {
+      "file": "experiments/EXP-20260907-egvqa-failure-audit/case_observations.md",
+      "target": "run-20260907T0909+0800/blind_packets/p7597709fde6e/frames.png",
+      "line": 18,
+      "classification": "historical_device_artifact"
+    }
+  ],
+  "new_api_calls": 0
+}

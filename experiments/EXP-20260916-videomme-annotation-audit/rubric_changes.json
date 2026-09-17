@@ -1,0 +1,1736 @@
+[
+  {
+    "qid": "videomme:626-1",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:626-2",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:626-3",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The three topics are ordered according to when each is first introduced in the video.",
+            "acceptable_variants": [
+              "A sequence using the labels ①, ②, and ③ in introduction order",
+              "The topics listed from earliest to latest introduction"
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "Standard Thyroid Treatment is introduced before Stress influence on the production of TSH.",
+            "acceptable_variants": [
+              "Standard Thyroid Treatment is introduced before Stress influence on the production of TSH."
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "Stress influence on the production of TSH is introduced before How to cure thyroid when you have auto-immune.",
+            "acceptable_variants": [
+              "Stress influence on the production of TSH is introduced before How to cure thyroid when you have auto-immune."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Reference order is unverified pending source checks.",
+          "The wording of topic ① is preserved from the source and may be grammatically nonstandard."
+        ],
+        "new": [
+          "Reference order is unverified pending source checks.",
+          "The wording of topic ① is preserved from the source and may be grammatically nonstandard.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。"
+        ]
+      },
+      "scoring_note": {
+        "old": null,
+        "new": "Accept full sequences or unambiguous event labels from the question. Score each adjacent precedence relation semantically; do not demand word-for-word repetition of supplied event descriptions. Normalize fact score within the question. Reject contradictory order claims."
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:655-1",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:655-2",
+    "substantive": false,
+    "fields": {
+      "review_flags": {
+        "old": [
+          "Negative option-dependent question requires the original choices for reliable evaluation.",
+          "Reference answer remains unverified pending source checks."
+        ],
+        "new": [
+          "Negative option-dependent question requires the original choices for reliable evaluation.",
+          "Reference answer remains unverified pending source checks.",
+          "否定题脱离原选项集合后不能唯一作答；保留原 MCQ，简答规则清空以避免误入评分。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "exhaustive_or_closed_set"
+      }
+    }
+  },
+  {
+    "qid": "videomme:655-3",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:660-1",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "Identify the specific evidence presented in support of the claim that the Maya in the Yucatan were more advanced than previously believed.",
+            "acceptable_variants": [
+              "The construction of the \"Stairway to Heaven\" estate with its elaborate architecture.",
+              "The elaborate architecture of the \"Stairway to Heaven\" estate."
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "The elaborate architecture of the Stairway to Heaven estate is the evidence cited.",
+            "acceptable_variants": [
+              "The elaborate architecture of the Stairway to Heaven estate is the evidence cited."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft answer is unverified because the video was not provided."
+        ],
+        "new": [
+          "Draft answer is unverified because the video was not provided.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:660-2",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The analysis of food particles in dental plaque reveals a diverse diet.",
+            "acceptable_variants": [
+              "Analysis of dental plaque food particles indicates a diverse diet.",
+              "Food remains in dental plaque show that they had a diverse diet."
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "Food particles in dental plaque were analyzed.",
+            "acceptable_variants": [
+              "Food particles in dental plaque were analyzed."
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "That analysis revealed a diverse diet, supporting the inference of wealth.",
+            "acceptable_variants": [
+              "That analysis revealed a diverse diet, supporting the inference of wealth."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft is unverified because the video was not provided."
+        ],
+        "new": [
+          "Draft is unverified because the video was not provided.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:660-3",
+    "substantive": true,
+    "fields": {
+      "modality": {
+        "old": "visual",
+        "new": "audio_subtitle"
+      },
+      "review_flags": {
+        "old": [
+          "Draft answer is unverified pending source checks."
+        ],
+        "new": [
+          "Draft answer is unverified pending source checks.",
+          "政治含义或师生关系无法仅凭外观核实；模态标签仍待逐题源内容验证。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:669-1",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "representative_topic_or_format"
+      }
+    }
+  },
+  {
+    "qid": "videomme:669-2",
+    "substantive": true,
+    "fields": {
+      "short_question": {
+        "old": "What courtroom character is the prosecutor whom the man with the gun is trying to assassinate in the film clip at the very beginning of the video?",
+        "new": "What character in the courtroom is the man with the gun trying to assassinate the prosecutor in the film clip at the very beginning of the video?"
+      },
+      "adaptation_status": {
+        "old": "rewritten",
+        "new": "needs_review"
+      },
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The prosecutor being targeted is a witness.",
+            "acceptable_variants": [
+              "Witness",
+              "the witness"
+            ]
+          }
+        ],
+        "new": []
+      },
+      "review_flags": {
+        "old": [
+          "Original wording is grammatically ambiguous; rewritten for clarity. All content remains unverified pending source checks."
+        ],
+        "new": [
+          "Original wording is grammatically ambiguous; rewritten for clarity. All content remains unverified pending source checks.",
+          "原题英文人物指代有歧义；旧改写把持枪者的角色改成被刺杀检察官的角色。退回原题，不能凭官方选项消解指代。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:669-3",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:674-1",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "representative_topic_or_format"
+      }
+    }
+  },
+  {
+    "qid": "videomme:674-2",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The video introduces the contents in the order: different types of tiles, how to create a winning hand, the strategies to complete a winning hand quickly, and different types of yaku.",
+            "acceptable_variants": [
+              "(b)(d)(c)(a)",
+              "Different types of tiles, then how to create a winning hand, then the strategies to complete a winning hand quickly, then different types of yaku"
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "Different types of tiles occurs before How to create a winning hand.",
+            "acceptable_variants": [
+              "Different types of tiles occurs before How to create a winning hand."
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "How to create a winning hand occurs before Strategies to complete a winning hand quickly.",
+            "acceptable_variants": [
+              "How to create a winning hand occurs before Strategies to complete a winning hand quickly."
+            ]
+          },
+          {
+            "id": "F3",
+            "statement": "Strategies to complete a winning hand quickly occurs before Different types of yaku.",
+            "acceptable_variants": [
+              "Strategies to complete a winning hand quickly occurs before Different types of yaku."
+            ]
+          }
+        ]
+      },
+      "evidence_scope": {
+        "old": "global_coverage",
+        "new": "cross_segment"
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; sequence is unverified against the video.",
+          "Answer ordering is derived from the supplied reference draft."
+        ],
+        "new": [
+          "Draft only; sequence is unverified against the video.",
+          "Answer ordering is derived from the supplied reference draft.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "所问关系跨事件或对象，应记录关系覆盖，不能凭单帧成立。"
+        ]
+      },
+      "scoring_note": {
+        "old": null,
+        "new": "Accept full sequences or unambiguous event labels from the question. Score each adjacent precedence relation semantically; do not demand word-for-word repetition of supplied event descriptions. Normalize fact score within the question. Reject contradictory order claims."
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:674-3",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "Identify the yaku associated with example round one.",
+            "acceptable_variants": [
+              "Tanyao"
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "Example round one has the yaku Tanyao.",
+            "acceptable_variants": [
+              "Example round one has the yaku Tanyao."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; answer and modality require verification from the source video."
+        ],
+        "new": [
+          "Draft only; answer and modality require verification from the source video.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:699-1",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:699-2",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:699-3",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:715-1",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The companies are ordered as Tesla, Coca-Cola, then Intel.",
+            "acceptable_variants": [
+              "Tesla followed by Coca-Cola followed by Intel",
+              "Tesla, Coca-Cola, Intel"
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "Tesla occurs before Coca-Cola.",
+            "acceptable_variants": [
+              "Tesla occurs before Coca-Cola."
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "Coca-Cola occurs before Intel.",
+            "acceptable_variants": [
+              "Coca-Cola occurs before Intel."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; verify company mentions and ordering against the source video.",
+          "Requires coverage of the first half of the video rather than a single local clip."
+        ],
+        "new": [
+          "Draft only; verify company mentions and ordering against the source video.",
+          "Requires coverage of the first half of the video rather than a single local clip.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。"
+        ]
+      },
+      "scoring_note": {
+        "old": null,
+        "new": "Accept full sequences or unambiguous event labels from the question. Score each adjacent precedence relation semantically; do not demand word-for-word repetition of supplied event descriptions. Normalize fact score within the question. Reject contradictory order claims."
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:715-2",
+    "substantive": false,
+    "fields": {
+      "review_flags": {
+        "old": [
+          "Negative option-dependent question",
+          "Original answer choices are required to interpret the task",
+          "Reference answer remains unverified"
+        ],
+        "new": [
+          "Negative option-dependent question",
+          "Original answer choices are required to interpret the task",
+          "Reference answer remains unverified",
+          "否定题脱离原选项集合后不能唯一作答；保留原 MCQ，简答规则清空以避免误入评分。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "exhaustive_or_closed_set"
+      }
+    }
+  },
+  {
+    "qid": "videomme:715-3",
+    "substantive": false,
+    "fields": {
+      "review_flags": {
+        "old": [
+          "negative_option_dependent",
+          "requires_original_options",
+          "answer_space_changed",
+          "draft_unverified"
+        ],
+        "new": [
+          "negative_option_dependent",
+          "requires_original_options",
+          "answer_space_changed",
+          "draft_unverified",
+          "否定题脱离原选项集合后不能唯一作答；保留原 MCQ，简答规则清空以避免误入评分。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "exhaustive_or_closed_set"
+      }
+    }
+  },
+  {
+    "qid": "videomme:782-1",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The video's primary subject is identified.",
+            "acceptable_variants": [
+              "The main topic of the video",
+              "The subject the video primarily discusses"
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "The main subject is the process and artistry of theatrical costume design.",
+            "acceptable_variants": [
+              "The main subject is the process and artistry of theatrical costume design."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; answer and labels remain unverified pending source checks.",
+          "Requires broad coverage of the video to determine its primary subject."
+        ],
+        "new": [
+          "Draft only; answer and labels remain unverified pending source checks.",
+          "Requires broad coverage of the video to determine its primary subject.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "representative_topic_or_format"
+      }
+    }
+  },
+  {
+    "qid": "videomme:782-2",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:782-3",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The video describes the professional relationship between William Ivey Long and Willa Kim.",
+            "acceptable_variants": [
+              "Teacher and student",
+              "They were teacher and student"
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "William Ivey Long and Willa Kim have a teacher–student professional relationship.",
+            "acceptable_variants": [
+              "William Ivey Long and Willa Kim have a teacher–student professional relationship."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [],
+        "new": [
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。",
+          "政治含义或师生关系无法仅凭外观核实；模态标签仍待逐题源内容验证。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:796-1",
+    "substantive": true,
+    "fields": {
+      "adaptation_status": {
+        "old": "unchanged",
+        "new": "needs_review"
+      },
+      "review_flags": {
+        "old": [
+          "Reference answer and required count are unverified pending source checks."
+        ],
+        "new": [
+          "Reference answer and required count are unverified pending source checks.",
+          "题干仅问主旨，旧评分强制回答八个魔术；该数量用于区分原选项，是否应成为简答必要事实须统一校准。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:796-2",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "Identify which of the listed tools is not used in the video.",
+            "acceptable_variants": [
+              "A string"
+            ]
+          }
+        ],
+        "new": []
+      },
+      "review_flags": {
+        "old": [
+          "negative option-dependent question",
+          "requires checking absence across the video",
+          "reference answer is unverified"
+        ],
+        "new": [
+          "negative option-dependent question",
+          "requires checking absence across the video",
+          "reference answer is unverified",
+          "否定题脱离原选项集合后不能唯一作答；保留原 MCQ，简答规则清空以避免误入评分。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "exhaustive_or_closed_set"
+      }
+    }
+  },
+  {
+    "qid": "videomme:796-3",
+    "substantive": true,
+    "fields": {
+      "adaptation_status": {
+        "old": "rewritten",
+        "new": "needs_review"
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; requires verification against the video.",
+          "Must identify both the first and fifth magic segments before comparing their locations."
+        ],
+        "new": [
+          "Draft only; requires verification against the video.",
+          "Must identify both the first and fifth magic segments before comparing their locations.",
+          "去掉选项后，共同点不唯一；不能仅接受官方选项中的同一地点而排斥其他源内容支持的共同点。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:806-1",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The winning strategy for building the tallest tower involves how contestants use the already stacked can tower.",
+            "acceptable_variants": [
+              "Contestants keep and use the already stacked can tower to build to a greater height."
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "Contestants preserve the already stacked can tower.",
+            "acceptable_variants": [
+              "Contestants preserve the already stacked can tower."
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "They build on that existing tower to achieve greater height.",
+            "acceptable_variants": [
+              "They build on that existing tower to achieve greater height."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; requires source-video verification."
+        ],
+        "new": [
+          "Draft only; requires source-video verification.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:806-2",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:806-3",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "Identify the prize that Sam Campbell cannot obtain in the latter part of the video.",
+            "acceptable_variants": []
+          }
+        ],
+        "new": []
+      },
+      "review_flags": {
+        "old": [
+          "negative option-dependent question",
+          "requires reference to the original choice set",
+          "draft answer remains unverified"
+        ],
+        "new": [
+          "negative option-dependent question",
+          "requires reference to the original choice set",
+          "draft answer remains unverified",
+          "否定题脱离原选项集合后不能唯一作答；保留原 MCQ，简答规则清空以避免误入评分。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:808-1",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:808-2",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The reason Joe pounces on the customer's table.",
+            "acceptable_variants": [
+              "He was carrying out a task given by his friends to find all the broken tables."
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "Joe pounces on the table because his friends tasked him with finding all the broken tables.",
+            "acceptable_variants": [
+              "Joe pounces on the table because his friends tasked him with finding all the broken tables."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; answer and event context are unverified.",
+          "The reason may depend on audio, subtitles, or earlier video context."
+        ],
+        "new": [
+          "Draft only; answer and event context are unverified.",
+          "The reason may depend on audio, subtitles, or earlier video context.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:808-3",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:816-1",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "State what, if anything, distinguishes the yellow lion from the red lion in the video.",
+            "acceptable_variants": []
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "No obvious difference other than color is discernible between the yellow and red lions in the video.",
+            "acceptable_variants": [
+              "No obvious difference other than color is discernible between the yellow and red lions in the video."
+            ]
+          }
+        ]
+      },
+      "evidence_scope": {
+        "old": "local",
+        "new": "cross_segment"
+      },
+      "review_flags": {
+        "old": [
+          "Reference answer and visual distinction remain unverified pending source checks."
+        ],
+        "new": [
+          "Reference answer and visual distinction remain unverified pending source checks.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。",
+          "所问关系跨事件或对象，应记录关系覆盖，不能凭单帧成立。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:816-2",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The actions occurred in the order: unfurling a banner from their mouths, catching the balls thrown by the ground staff, then tumbling down from the high platform.",
+            "acceptable_variants": [
+              "Unfurled the banner, caught the balls, then tumbled down.",
+              "They unfurled a banner from their mouths, caught the balls thrown by the ground staff, and then tumbled down from the high platform."
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "Unfurling a banner from their mouths occurs before Catching the balls thrown by ground staff.",
+            "acceptable_variants": [
+              "Unfurling a banner from their mouths occurs before Catching the balls thrown by ground staff."
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "Catching the balls thrown by ground staff occurs before Tumbling down from the high platform.",
+            "acceptable_variants": [
+              "Catching the balls thrown by ground staff occurs before Tumbling down from the high platform."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; sequence is unverified pending source-video checks."
+        ],
+        "new": [
+          "Draft only; sequence is unverified pending source-video checks.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。"
+        ]
+      },
+      "scoring_note": {
+        "old": null,
+        "new": "Accept full sequences or unambiguous event labels from the question. Score each adjacent precedence relation semantically; do not demand word-for-word repetition of supplied event descriptions. Normalize fact score within the question. Reject contradictory order claims."
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:816-3",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The spectators take photos with the lion after the performance.",
+            "acceptable_variants": [
+              "They photograph the lion.",
+              "They take pictures with the lion."
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "The spectators pat the lion's head after the performance.",
+            "acceptable_variants": [
+              "They pet the lion's head.",
+              "They pat the lion."
+            ]
+          },
+          {
+            "id": "F3",
+            "statement": "The spectators attempt to play the drum after the performance.",
+            "acceptable_variants": [
+              "They try to play the drum.",
+              "They attempt to play a drum."
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "The spectators take photos with the lion after the performance.",
+            "acceptable_variants": [
+              "They take pictures with the lion."
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "The spectators pat the lion's head after the performance.",
+            "acceptable_variants": [
+              "They pet the lion's head."
+            ]
+          },
+          {
+            "id": "F3",
+            "statement": "The spectators attempt to play the drum after the performance.",
+            "acceptable_variants": [
+              "They try to play the drum.",
+              "They attempt to play a drum."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft is unverified pending source-video review."
+        ],
+        "new": [
+          "Draft is unverified pending source-video review.",
+          "删除过宽同义项：拍狮子不必然是与狮子合照；摸狮子不必然摸头。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:821-1",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The four steps occur in the order: cutting off the tinsel from the original rabbit; wrapping the brown yarn across the rabbit; making a white tail from a microfiber duster mop pad; making a cute little lace bow and tying it to the rabbit.",
+            "acceptable_variants": [
+              "(b), (c), (a), (d)",
+              "cut off the tinsel, wrap the brown yarn, make the white microfiber-duster tail, then make and tie the lace bow"
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "Cutting off the tinsel occurs before Wrapping the brown yarn.",
+            "acceptable_variants": [
+              "Cutting off the tinsel occurs before Wrapping the brown yarn."
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "Wrapping the brown yarn occurs before Making the white tail from a microfiber duster mop pad.",
+            "acceptable_variants": [
+              "Wrapping the brown yarn occurs before Making the white tail from a microfiber duster mop pad."
+            ]
+          },
+          {
+            "id": "F3",
+            "statement": "Making the white tail from a microfiber duster mop pad occurs before Making and tying the lace bow.",
+            "acceptable_variants": [
+              "Making the white tail from a microfiber duster mop pad occurs before Making and tying the lace bow."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft answer is unverified pending source checks."
+        ],
+        "new": [
+          "Draft answer is unverified pending source checks.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。"
+        ]
+      },
+      "scoring_note": {
+        "old": null,
+        "new": "Accept full sequences or unambiguous event labels from the question. Score each adjacent precedence relation semantically; do not demand word-for-word repetition of supplied event descriptions. Normalize fact score within the question. Reject contradictory order claims."
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:821-2",
+    "substantive": true,
+    "fields": {
+      "adaptation_status": {
+        "old": "unchanged",
+        "new": "needs_review"
+      },
+      "evidence_scope": {
+        "old": "local",
+        "new": "cross_segment"
+      },
+      "review_flags": {
+        "old": [
+          "Draft answer is unverified pending source checks."
+        ],
+        "new": [
+          "Draft answer is unverified pending source checks.",
+          "去掉选项后，两件工艺品的共同点不唯一；当前单一答案规则不足以覆盖有效简答。",
+          "所问关系跨事件或对象，应记录关系覆盖，不能凭单帧成立。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:821-3",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "representative_topic_or_format"
+      }
+    }
+  },
+  {
+    "qid": "videomme:833-1",
+    "substantive": true,
+    "fields": {
+      "adaptation_status": {
+        "old": "rewritten",
+        "new": "needs_review"
+      },
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "Identify the dish at Restaurant Kalamansi that best embodies the rich history and essence of Filipino cuisine.",
+            "acceptable_variants": [
+              "Pinakbet"
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "The dish identified is Pinakbet.",
+            "acceptable_variants": [
+              "The dish identified is Pinakbet."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft answer is unverified pending source checks.",
+          "The criterion 'best embodies' is subjective and may require contextual evidence."
+        ],
+        "new": [
+          "Draft answer is unverified pending source checks.",
+          "The criterion 'best embodies' is subjective and may require contextual evidence.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。",
+          "原帧明确标出 Pinakbet，旁白说其融合多方饮食来源；但 best 的唯一比较标准未明确。撤销错误冲突，暂不冻结单一金标。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:833-2",
+    "substantive": true,
+    "fields": {
+      "adaptation_status": {
+        "old": "unchanged",
+        "new": "needs_review"
+      },
+      "task_type": {
+        "old": [
+          "identity_handoff"
+        ],
+        "new": [
+          "other"
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; answer and relationship remain unverified.",
+          "The relationship may require spoken dialogue or contextual evidence rather than visual evidence alone."
+        ],
+        "new": [
+          "Draft only; answer and relationship remain unverified.",
+          "The relationship may require spoken dialogue or contextual evidence rather than visual evidence alone.",
+          "companion 是宽泛同行关系；去选项后其粒度和其他可接受关系需源内容校准。",
+          "静态同行关系不等于跨时间身份衔接。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:833-3",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "representative_topic_or_format"
+      }
+    }
+  },
+  {
+    "qid": "videomme:834-1",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The sequence was determined by the children’s ages.",
+            "acceptable_variants": [
+              "Ordered by age",
+              "Based on age"
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "The children appeared from youngest to oldest.",
+            "acceptable_variants": [
+              "Youngest first and oldest last",
+              "In ascending age order"
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "The children appear in order from youngest to oldest.",
+            "acceptable_variants": [
+              "The children appear in order from youngest to oldest."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; answer and labels are unverified pending source checks.",
+          "Determining the complete appearance sequence may require reviewing the full video."
+        ],
+        "new": [
+          "Draft only; answer and labels are unverified pending source checks.",
+          "Determining the complete appearance sequence may require reviewing the full video.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:834-2",
+    "substantive": true,
+    "fields": {
+      "adaptation_status": {
+        "old": "unchanged",
+        "new": "needs_review"
+      },
+      "reference_answer_draft": {
+        "old": "The food preparer thinks she is better at choosing her food than other children.",
+        "new": "The food preparer regards Sadie as skilled at preparing her lunch and is confident she can do it, so she gives her a timed challenge."
+      },
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The reason Sadie has a countdown is that the food preparer thinks she is better at choosing her food than other children.",
+            "acceptable_variants": [
+              "She thinks she is better at choosing her food than other children.",
+              "The food preparer believes she is better than other children at choosing her food."
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "The food preparer gives Sadie a timed challenge because she regards her as skilled at preparing her lunch.",
+            "acceptable_variants": [
+              "The food preparer gives Sadie a timed challenge because she regards her as skilled at preparing her lunch."
+            ]
+          }
+        ]
+      },
+      "modality": {
+        "old": "unknown",
+        "new": "audio_subtitle"
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; answer and modality are unverified pending source checks."
+        ],
+        "new": [
+          "Draft only; answer and modality are unverified pending source checks.",
+          "原字幕支持准备者认为 Sadie 熟练并给她计时；未明确与其他孩子比较食物选择能力。采用较忠实的候选参考，等待评分规则校准。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:834-3",
+    "substantive": true,
+    "fields": {
+      "adaptation_status": {
+        "old": "rewritten",
+        "new": "needs_review"
+      },
+      "evidence_scope": {
+        "old": "local",
+        "new": "cross_segment"
+      },
+      "review_flags": {
+        "old": [
+          "Reference answer and required facts are unverified pending source checks."
+        ],
+        "new": [
+          "Reference answer and required facts are unverified pending source checks.",
+          "原顺序题的三个食物来自答案选项，题干未给事件集合；删去选项后可能包含许多备餐动作，不能直接用三项答案作唯一标准。",
+          "所问关系跨事件或对象，应记录关系覆盖，不能凭单帧成立。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:843-1",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "Identify the category with the highest number of outfits.",
+            "acceptable_variants": [
+              "Gorgeous"
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "Gorgeous is the category containing the most outfits.",
+            "acceptable_variants": [
+              "Gorgeous is the category containing the most outfits."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Reference answer is an unverified draft.",
+          "Requires counting and comparing all relevant categories across the video."
+        ],
+        "new": [
+          "Reference answer is an unverified draft.",
+          "Requires counting and comparing all relevant categories across the video.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "exhaustive_or_closed_set"
+      }
+    }
+  },
+  {
+    "qid": "videomme:843-2",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "\"Nothing new\" includes an outfit with a hat that is not present in the other categories.",
+            "acceptable_variants": [
+              "It includes an outfit with a hat.",
+              "An outfit with a hat distinguishes \"Nothing new\" from the other categories."
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "The Nothing new category includes an outfit with a hat.",
+            "acceptable_variants": [
+              "The Nothing new category includes an outfit with a hat."
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "The other categories do not include an outfit with a hat.",
+            "acceptable_variants": [
+              "The other categories do not include an outfit with a hat."
+            ]
+          }
+        ]
+      },
+      "evidence_scope": {
+        "old": "local",
+        "new": "global_coverage"
+      },
+      "review_flags": {
+        "old": [
+          "Reference answer and labels are unverified pending source checks."
+        ],
+        "new": [
+          "Reference answer and labels are unverified pending source checks.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "与其他所有类别比较的排他性事实需要覆盖其他类别。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "exhaustive_or_closed_set"
+      }
+    }
+  },
+  {
+    "qid": "videomme:843-3",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "representative_topic_or_format"
+      }
+    }
+  },
+  {
+    "qid": "videomme:845-1",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The jewelry pieces are displayed in the sequence: engagement ring, Cartier bracelets, Tabayer earrings, then Missoma hoops.",
+            "acceptable_variants": [
+              "Engagement ring; Cartier bracelets; Tabayer earrings; Missoma hoops.",
+              "Engagement ring → Cartier bracelets → Tabayer earrings → Missoma hoops."
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "Engagement ring occurs before Cartier bracelets.",
+            "acceptable_variants": [
+              "Engagement ring occurs before Cartier bracelets."
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "Cartier bracelets occurs before Tabayer earrings.",
+            "acceptable_variants": [
+              "Cartier bracelets occurs before Tabayer earrings."
+            ]
+          },
+          {
+            "id": "F3",
+            "statement": "Tabayer earrings occurs before Missoma hoops.",
+            "acceptable_variants": [
+              "Tabayer earrings occurs before Missoma hoops."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; sequence is unverified against the video."
+        ],
+        "new": [
+          "Draft only; sequence is unverified against the video.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。"
+        ]
+      },
+      "scoring_note": {
+        "old": null,
+        "new": "Accept full sequences or unambiguous event labels from the question. Score each adjacent precedence relation semantically; do not demand word-for-word repetition of supplied event descriptions. Normalize fact score within the question. Reject contradictory order claims."
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:845-2",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:845-3",
+    "substantive": true,
+    "fields": {
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "The jewellery piece being introduced when she takes off her coat is identified.",
+            "acceptable_variants": [
+              "A necklace."
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "A necklace is being introduced when she takes off her coat.",
+            "acceptable_variants": [
+              "A necklace is being introduced when she takes off her coat."
+            ]
+          }
+        ]
+      },
+      "task_type": {
+        "old": [
+          "single_event_recognition",
+          "event_order"
+        ],
+        "new": [
+          "single_event_recognition"
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; answer and event timing require source-video verification."
+        ],
+        "new": [
+          "Draft only; answer and event timing require source-video verification.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。",
+          "脱外套时识别所介绍物品，不是排列多个事件顺序。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:851-1",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:851-2",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:851-3",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:872-1",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "representative_topic_or_format"
+      }
+    }
+  },
+  {
+    "qid": "videomme:872-2",
+    "substantive": true,
+    "fields": {
+      "adaptation_status": {
+        "old": "rewritten",
+        "new": "needs_review"
+      },
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "Identify the characteristic attributed to the animals as depicted in the video.",
+            "acceptable_variants": [
+              "One adjective or short phrase describing the animals in the video"
+            ]
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "The animals are described as cute.",
+            "acceptable_variants": [
+              "The animals are described as cute."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Answer remains unverified pending source-video checks."
+        ],
+        "new": [
+          "Answer remains unverified pending source-video checks.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。",
+          "Cute 是评价性描述；去选项后要求任意特征却仅按可爱打分，评分空间未界定。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:872-3",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:885-1",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:885-2",
+    "substantive": false,
+    "fields": {
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  },
+  {
+    "qid": "videomme:885-3",
+    "substantive": true,
+    "fields": {
+      "reference_answer_draft": {
+        "old": "Unverified: the video’s scoring rules for the finals and semifinals.",
+        "new": "In the semifinals and finals, the attacking side scores if it scores a goal; otherwise the defending side scores."
+      },
+      "required_facts": {
+        "old": [
+          {
+            "id": "F1",
+            "statement": "State the scoring rule or rules for the finals.",
+            "acceptable_variants": []
+          },
+          {
+            "id": "F2",
+            "statement": "State the scoring rule or rules for the semifinals.",
+            "acceptable_variants": []
+          }
+        ],
+        "new": [
+          {
+            "id": "F1",
+            "statement": "In both semifinals and finals, the attacking side scores when it scores a goal.",
+            "acceptable_variants": [
+              "In both semifinals and finals, the attacking side scores when it scores a goal."
+            ]
+          },
+          {
+            "id": "F2",
+            "statement": "In both semifinals and finals, the defending side scores when the attacking side fails to score a goal.",
+            "acceptable_variants": [
+              "In both semifinals and finals, the defending side scores when the attacking side fails to score a goal."
+            ]
+          }
+        ]
+      },
+      "review_flags": {
+        "old": [
+          "Draft only; requires verification against the video.",
+          "Confirm whether the finals and semifinals use the same or different scoring rules."
+        ],
+        "new": [
+          "Draft only; requires verification against the video.",
+          "Confirm whether the finals and semifinals use the same or different scoring rules.",
+          "评分事实改为具体声明；顺序题按相邻关系拆分，事实级按题归一化。",
+          "原 statement 仅复述任务或没有具体答案，不能直接作为事实评分规则。"
+        ]
+      },
+      "coverage_requirement": {
+        "old": null,
+        "new": "case_specific_pending_source_audit"
+      }
+    }
+  }
+]

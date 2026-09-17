@@ -1,0 +1,30 @@
+{
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The entrepreneur local-radio item is followed by the Vancouver airport lightning-plane item."
+    },
+    {
+      "id": "F2",
+      "fact": "The Vancouver airport lightning-plane item is followed by the anchor's closing sign-off."
+    }
+  ],
+  "core_overrides": {
+    "G02": {
+      "start_s": 2622.0,
+      "end_s": 2756.881966,
+      "key_times_s": [
+        2622,
+        2630,
+        2645,
+        2705,
+        2722,
+        2725,
+        2730,
+        2745
+      ]
+    }
+  },
+  "reason_zh": "倒数第二条需要收尾范围闭合。原G02结束2726秒尚未完整覆盖good night和片尾；延至原视频结尾，包含完整结束语及字幕片尾。同时起点从仍残留上一条标题的2620移到已切换飞机画面的2622秒，排除跨新闻边界的标题泄漏。评分事实不变，重抽源帧、盲观察、源审计、单组/删组和反搜。",
+  "source_result_sha256": "12ae0e65a0fbfba8d00a381e9429ec1afa1f77e7f2333c916974db6a1a8eac0a"
+}

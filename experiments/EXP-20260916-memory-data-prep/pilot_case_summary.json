@@ -1,0 +1,136 @@
+[
+  {
+    "qid": "videomme:660-2",
+    "status": "ok",
+    "human_reviewed": false,
+    "blind_status": "explicit_gap_proxy",
+    "comparison_raw_status": "explicit_gap_proxy",
+    "final_proxy_status": "explicit_gap_proxy",
+    "reference_proxy_status": "unresolved",
+    "guard_flags": [],
+    "frame_count": 60,
+    "subtitle_entries": 26
+  },
+  {
+    "qid": "videomme:669-1",
+    "status": "ok",
+    "human_reviewed": false,
+    "blind_status": "sufficient_proxy",
+    "comparison_raw_status": "explicit_gap_proxy",
+    "final_proxy_status": "explicit_gap_proxy",
+    "reference_proxy_status": "unresolved",
+    "guard_flags": [],
+    "frame_count": 60,
+    "subtitle_entries": 34
+  },
+  {
+    "qid": "videomme:674-2",
+    "status": "ok",
+    "human_reviewed": false,
+    "blind_status": "sufficient_proxy",
+    "comparison_raw_status": "explicit_gap_proxy",
+    "final_proxy_status": "explicit_gap_proxy",
+    "reference_proxy_status": "unresolved",
+    "guard_flags": [],
+    "frame_count": 60,
+    "subtitle_entries": 37
+  },
+  {
+    "qid": "videomme:715-3",
+    "status": "adaptation_requires_review",
+    "human_reviewed": false
+  },
+  {
+    "qid": "videomme:782-1",
+    "status": "ok",
+    "human_reviewed": false,
+    "blind_status": "sufficient_proxy",
+    "comparison_raw_status": "sufficient_proxy",
+    "final_proxy_status": "undetermined",
+    "reference_proxy_status": "conflict_requires_review",
+    "guard_flags": [
+      "Sufficiency downgraded: missing whole-range coverage or audio"
+    ],
+    "frame_count": 60,
+    "subtitle_entries": 13
+  },
+  {
+    "qid": "videomme:806-3",
+    "status": "adaptation_requires_review",
+    "human_reviewed": false
+  },
+  {
+    "qid": "videomme:821-1",
+    "status": "ok",
+    "human_reviewed": false,
+    "blind_status": "sufficient_proxy",
+    "comparison_raw_status": "explicit_gap_proxy",
+    "final_proxy_status": "explicit_gap_proxy",
+    "reference_proxy_status": "unresolved",
+    "guard_flags": [],
+    "frame_count": 60,
+    "subtitle_entries": 30
+  },
+  {
+    "qid": "videomme:833-1",
+    "status": "ok",
+    "human_reviewed": false,
+    "blind_status": "explicit_gap_proxy",
+    "comparison_raw_status": "explicit_gap_proxy",
+    "final_proxy_status": "explicit_gap_proxy",
+    "reference_proxy_status": "conflict_requires_review",
+    "guard_flags": [],
+    "frame_count": 60,
+    "subtitle_entries": 27
+  },
+  {
+    "qid": "videomme:834-2",
+    "status": "ok",
+    "human_reviewed": false,
+    "blind_status": "sufficient_proxy",
+    "comparison_raw_status": "explicit_gap_proxy",
+    "final_proxy_status": "explicit_gap_proxy",
+    "reference_proxy_status": "conflict_requires_review",
+    "guard_flags": [],
+    "frame_count": 60,
+    "subtitle_entries": 28
+  },
+  {
+    "qid": "videomme:843-3",
+    "status": "ok",
+    "human_reviewed": false,
+    "blind_status": "sufficient_proxy",
+    "comparison_raw_status": "sufficient_proxy",
+    "final_proxy_status": "undetermined",
+    "reference_proxy_status": "supported_proxy",
+    "guard_flags": [
+      "Sufficiency downgraded: missing whole-range coverage or audio"
+    ],
+    "frame_count": 60,
+    "subtitle_entries": 41
+  },
+  {
+    "qid": "videomme:845-2",
+    "status": "ok",
+    "human_reviewed": false,
+    "blind_status": "explicit_gap_proxy",
+    "comparison_raw_status": "explicit_gap_proxy",
+    "final_proxy_status": "explicit_gap_proxy",
+    "reference_proxy_status": "unresolved",
+    "guard_flags": [],
+    "frame_count": 60,
+    "subtitle_entries": 0
+  },
+  {
+    "qid": "videomme:885-2",
+    "status": "ok",
+    "human_reviewed": false,
+    "blind_status": "sufficient_proxy",
+    "comparison_raw_status": "explicit_gap_proxy",
+    "final_proxy_status": "explicit_gap_proxy",
+    "reference_proxy_status": "unresolved",
+    "guard_flags": [],
+    "frame_count": 60,
+    "subtitle_entries": 22
+  }
+]

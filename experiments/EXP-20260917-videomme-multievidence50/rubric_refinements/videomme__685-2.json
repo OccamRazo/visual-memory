@@ -1,0 +1,48 @@
+{
+  "source_result_sha256": "61d503d807984a34eece30d5085754a18aaddea2004cbed32357cdfd5b132abb",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The introduction/performance of (a) History occurs before (c) CUDA in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "History"
+        },
+        {
+          "id": "E2",
+          "entity": "CUDA"
+        }
+      ]
+    },
+    {
+      "id": "F2",
+      "fact": "The introduction/performance of (c) CUDA occurs before (b) Alexnet in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "CUDA"
+        },
+        {
+          "id": "E2",
+          "entity": "Alexnet"
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "fact": "The introduction/performance of (b) Alexnet occurs before (d) Team Management in the video.",
+      "endpoints": [
+        {
+          "id": "E1",
+          "entity": "Alexnet"
+        },
+        {
+          "id": "E2",
+          "entity": "Team Management"
+        }
+      ]
+    }
+  ],
+  "reason_zh": "使用全局新增的逐端点原源引用与矛盾输出检查。旧语义判定不直接继承；已知源事件按同一原题最小关系再次验证。 上次修订因Subset schema invalid after bounded repair失败，原结果未更改；本次在统一模式修复后进行有记录的技术重试。"
+}

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checked_at": "2026-09-17T18:38:03.406384+08:00",
+  "unchanged_original_questions": 11,
+  "full_caption_request_payloads": 27,
+  "original_subtitle_packages": 11,
+  "answer_blind_observer_requests": 11,
+  "contained_frame_anchors": 293,
+  "contained_subtitle_anchors": 429,
+  "candidate_singleton_failures": 37,
+  "retained_group_deletion_failures": 36,
+  "isolated_subset_requests": 78,
+  "legacy_explicit_negative_with_omitted_fact_status": 1,
+  "unique_frame_hashes": 659,
+  "confirmed_questions": 11,
+  "target_reached": false,
+  "browser_playback_tested": false
+}

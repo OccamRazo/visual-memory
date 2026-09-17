@@ -1,0 +1,39 @@
+{
+  "paused_at": "2026-09-17T18:35:49+08:00",
+  "status": "paused_by_user",
+  "reason_zh": "用户认为效率过低，要求暂停方案、维护文件并提交。",
+  "target": 50,
+  "target_met": false,
+  "result_count": 816,
+  "result_statuses": {
+    "multi_verified_candidate": 48,
+    "processing_failed": 646,
+    "rejected_single_group_sufficient": 19,
+    "rejected_source_or_segmentation": 19,
+    "rejected_localization": 59,
+    "rejected_full_set_insufficient": 13,
+    "qualified_countersearch": 11,
+    "rejected_merged_single_episode": 1
+  },
+  "current_reviews": {
+    "qualified": 17,
+    "confirmed": 11
+  },
+  "confirmed_qids": [
+    "videomme:821-2",
+    "videomme:865-1",
+    "videomme:629-1",
+    "videomme:779-2",
+    "videomme:641-3",
+    "videomme:675-2",
+    "videomme:616-3",
+    "videomme:623-2",
+    "videomme:680-2",
+    "videomme:630-2",
+    "videomme:628-2"
+  ],
+  "pause_marker": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-multievidence50/run-001/pause_queue",
+  "local_process_check": "No experiment workers found in process listing at pause time.",
+  "inflight_remote_requests": "unknown; local process absence does not establish provider-side cancellation",
+  "resume_requires_explicit_user_instruction": true
+}

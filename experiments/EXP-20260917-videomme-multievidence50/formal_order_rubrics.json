@@ -1,0 +1,1160 @@
+{
+  "videomme:623-2": {
+    "question": "What is the order in which the following is introduced in the video?\n① The concept of the personal fat threshold.\n② How to grow fat cells.\n③ The relationship between insulin and diet.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (①) The concept of the personal fat threshold occurs before (②) How to grow fat cells in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (②) How to grow fat cells occurs before (③) The relationship between insulin and diet in the video."
+      }
+    ],
+    "items": {
+      "①": "The concept of the personal fat threshold",
+      "②": "How to grow fat cells",
+      "③": "The relationship between insulin and diet"
+    },
+    "reference_order": [
+      "①",
+      "②",
+      "③"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:624-2": {
+    "question": "What is the order in which the following is introduced in the video?\n① Insulin Resistance Explained.\n② Case studies.\n③ How to Reverse Type 2 Diabetes.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (①) Insulin Resistance Explained occurs before (③) How to Reverse Type 2 Diabetes in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (③) How to Reverse Type 2 Diabetes occurs before (②) Case studies in the video."
+      }
+    ],
+    "items": {
+      "①": "Insulin Resistance Explained",
+      "②": "Case studies",
+      "③": "How to Reverse Type 2 Diabetes"
+    },
+    "reference_order": [
+      "①",
+      "③",
+      "②"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:626-3": {
+    "question": "What is the order in which the following is introduced in the video?\n① How to cure thyroid when you have auto-immune.\n② Stress influence on the production of TSH.\n③ Standard Thyroid Treatment.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (③) Standard Thyroid Treatment occurs before (②) Stress influence on the production of TSH in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (②) Stress influence on the production of TSH occurs before (①) How to cure thyroid when you have auto-immune in the video."
+      }
+    ],
+    "items": {
+      "①": "How to cure thyroid when you have auto-immune",
+      "②": "Stress influence on the production of TSH",
+      "③": "Standard Thyroid Treatment"
+    },
+    "reference_order": [
+      "③",
+      "②",
+      "①"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:627-2": {
+    "question": "What is the order in which the following is introduced in the video?\n① Sleepwalking and the Brain.\n② How Much Control Do We Have of Our Brain?\n③ Emotions and the Brain.\n④ Creativity and the Brain.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (①) Sleepwalking and the Brain occurs before (③) Emotions and the Brain in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (③) Emotions and the Brain occurs before (②) How Much Control Do We Have of Our Brain? in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (②) How Much Control Do We Have of Our Brain? occurs before (④) Creativity and the Brain in the video."
+      }
+    ],
+    "items": {
+      "①": "Sleepwalking and the Brain",
+      "②": "How Much Control Do We Have of Our Brain?",
+      "③": "Emotions and the Brain",
+      "④": "Creativity and the Brain"
+    },
+    "reference_order": [
+      "①",
+      "③",
+      "②",
+      "④"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:628-2": {
+    "question": "In what order are the following introduced in the video?\n① Resilience training program.\n② The relationship between genetics and stress.\n③ The stress's influence on the brain.\n④ What does resilient behavior look like.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (④) What does resilient behavior look like occurs before (②) The relationship between genetics and stress in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (②) The relationship between genetics and stress occurs before (③) The stress's influence on the brain in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (③) The stress's influence on the brain occurs before (①) Resilience training program in the video."
+      }
+    ],
+    "items": {
+      "①": "Resilience training program",
+      "②": "The relationship between genetics and stress",
+      "③": "The stress's influence on the brain",
+      "④": "What does resilient behavior look like"
+    },
+    "reference_order": [
+      "④",
+      "②",
+      "③",
+      "①"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:629-1": {
+    "question": "What is the  order for introducing content in the video?\n(a) The excretion process of plants.\n(b) Plant adaptability.\n(c) The structure of a plant.\n(d) The special way of eating of plants.\n(e) Photosynthesis.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (c) The structure of a plant occurs before (d) The special way of eating of plants in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (d) The special way of eating of plants occurs before (e) Photosynthesis in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (e) Photosynthesis occurs before (a) The excretion process of plants in the video."
+      },
+      {
+        "id": "F4",
+        "fact": "The introduction/performance of (a) The excretion process of plants occurs before (b) Plant adaptability in the video."
+      }
+    ],
+    "items": {
+      "a": "The excretion process of plants",
+      "b": "Plant adaptability",
+      "c": "The structure of a plant",
+      "d": "The special way of eating of plants",
+      "e": "Photosynthesis"
+    },
+    "reference_order": [
+      "c",
+      "d",
+      "e",
+      "a",
+      "b"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:632-1": {
+    "question": "Here are a few sub-titles about this video, what should be the correct order in which they appear in the video?\n(1) The money problem.\n(2) The Acqusition.\n(3) Intermission.\n(4) Present day and future.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (1) The money problem occurs before (2) The Acqusition in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (2) The Acqusition occurs before (4) Present day and future in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (4) Present day and future occurs before (3) Intermission in the video."
+      }
+    ],
+    "items": {
+      "1": "The money problem",
+      "2": "The Acqusition",
+      "3": "Intermission",
+      "4": "Present day and future"
+    },
+    "reference_order": [
+      "1",
+      "2",
+      "4",
+      "3"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:642-2": {
+    "question": "What is the order in which the following is introduced in the video?\n① SN-1987A\n② Type 1a Supernova\n③ Kilonova",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (①) SN-1987A occurs before (②) Type 1a Supernova in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (②) Type 1a Supernova occurs before (③) Kilonova in the video."
+      }
+    ],
+    "items": {
+      "①": "SN-1987A",
+      "②": "Type 1a Supernova",
+      "③": "Kilonova"
+    },
+    "reference_order": [
+      "①",
+      "②",
+      "③"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:643-3": {
+    "question": "What is the order in which the following is introduced in the video?\n① How to supply oxygen\n② The motion of ISS\n③ Fireflies on ISS\n④ The communication between ISS and The Earth",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (①) How to supply oxygen occurs before (②) The motion of ISS in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (②) The motion of ISS occurs before (③) Fireflies on ISS in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (③) Fireflies on ISS occurs before (④) The communication between ISS and The Earth in the video."
+      }
+    ],
+    "items": {
+      "①": "How to supply oxygen",
+      "②": "The motion of ISS",
+      "③": "Fireflies on ISS",
+      "④": "The communication between ISS and The Earth"
+    },
+    "reference_order": [
+      "①",
+      "②",
+      "③",
+      "④"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:646-1": {
+    "question": "What is the order in which the following is introduced in the video?\n① Lambda-Cold Dark Matter Model\n② The Bullet Cluster\n③ Annihilation Detection\n④ Dark Energy",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (①) Lambda-Cold Dark Matter Model occurs before (②) The Bullet Cluster in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (②) The Bullet Cluster occurs before (③) Annihilation Detection in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (③) Annihilation Detection occurs before (④) Dark Energy in the video."
+      }
+    ],
+    "items": {
+      "①": "Lambda-Cold Dark Matter Model",
+      "②": "The Bullet Cluster",
+      "③": "Annihilation Detection",
+      "④": "Dark Energy"
+    },
+    "reference_order": [
+      "①",
+      "②",
+      "③",
+      "④"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:647-1": {
+    "question": "What is the order in which the following is introduced in the video?\n① Our Local Universe\n② The Zone of Avoidance\n③ Dark Flow\n④ The Vela Supercluster",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (①) Our Local Universe occurs before (②) The Zone of Avoidance in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (②) The Zone of Avoidance occurs before (③) Dark Flow in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (③) Dark Flow occurs before (④) The Vela Supercluster in the video."
+      }
+    ],
+    "items": {
+      "①": "Our Local Universe",
+      "②": "The Zone of Avoidance",
+      "③": "Dark Flow",
+      "④": "The Vela Supercluster"
+    },
+    "reference_order": [
+      "①",
+      "②",
+      "③",
+      "④"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:648-2": {
+    "question": "In which sequence are the following introduced in the video?\n① The Big Bang\n② The Hubble Telescope\n③ Redshift\n④ Dark Energy",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (①) The Big Bang occurs before (②) The Hubble Telescope in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (②) The Hubble Telescope occurs before (③) Redshift in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (③) Redshift occurs before (④) Dark Energy in the video."
+      }
+    ],
+    "items": {
+      "①": "The Big Bang",
+      "②": "The Hubble Telescope",
+      "③": "Redshift",
+      "④": "Dark Energy"
+    },
+    "reference_order": [
+      "①",
+      "②",
+      "③",
+      "④"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:671-2": {
+    "question": "In which order are the following steps introduced in this video?\n(a) Removing a washing machine door seal.\n(b) Astonishing Results of the beach on the washing machine door seal.\n(c) Washing machine hoses to clean to remove Mold Mildew fungus.\n(d) Cleaning mold out of soap draw.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) Removing a washing machine door seal occurs before (c) Washing machine hoses to clean to remove Mold Mildew fungus in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (c) Washing machine hoses to clean to remove Mold Mildew fungus occurs before (b) Astonishing Results of the beach on the washing machine door seal in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (b) Astonishing Results of the beach on the washing machine door seal occurs before (d) Cleaning mold out of soap draw in the video."
+      }
+    ],
+    "items": {
+      "a": "Removing a washing machine door seal",
+      "b": "Astonishing Results of the beach on the washing machine door seal",
+      "c": "Washing machine hoses to clean to remove Mold Mildew fungus",
+      "d": "Cleaning mold out of soap draw"
+    },
+    "reference_order": [
+      "a",
+      "c",
+      "b",
+      "d"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:672-2": {
+    "question": "In which order are the following poses introduced in this video?\n(a) Reclining butterfly pose.\n(b) Downward facing dog.\n(c) Camel pose.\n(d) Seated chair twist.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (b) Downward facing dog occurs before (d) Seated chair twist in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (d) Seated chair twist occurs before (c) Camel pose in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (c) Camel pose occurs before (a) Reclining butterfly pose in the video."
+      }
+    ],
+    "items": {
+      "a": "Reclining butterfly pose",
+      "b": "Downward facing dog",
+      "c": "Camel pose",
+      "d": "Seated chair twist"
+    },
+    "reference_order": [
+      "b",
+      "d",
+      "c",
+      "a"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:673-2": {
+    "question": "In which order are the following tips introduced in this video?\n(a) Tracking daily data of the body\n(b) Emphasizing the importance of time and priority.\n(c) Building a personalised meal plan.\n(d) Creating a caloric deficit.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (b) Emphasizing the importance of time and priority occurs before (d) Creating a caloric deficit in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (d) Creating a caloric deficit occurs before (c) Building a personalised meal plan in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (c) Building a personalised meal plan occurs before (a) Tracking daily data of the body in the video."
+      }
+    ],
+    "items": {
+      "a": "Tracking daily data of the body",
+      "b": "Emphasizing the importance of time and priority",
+      "c": "Building a personalised meal plan",
+      "d": "Creating a caloric deficit"
+    },
+    "reference_order": [
+      "b",
+      "d",
+      "c",
+      "a"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:674-2": {
+    "question": "In what sequence are the following contents introduced in this video?\n(a) Different types of yaku.\n(b) Different types of tiles.\n(c) The strategies to complete a winning hand quickly.\n(d) How to create a winning hand.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (b) Different types of tiles occurs before (d) How to create a winning hand in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (d) How to create a winning hand occurs before (c) The strategies to complete a winning hand quickly in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (c) The strategies to complete a winning hand quickly occurs before (a) Different types of yaku in the video."
+      }
+    ],
+    "items": {
+      "a": "Different types of yaku",
+      "b": "Different types of tiles",
+      "c": "The strategies to complete a winning hand quickly",
+      "d": "How to create a winning hand"
+    },
+    "reference_order": [
+      "b",
+      "d",
+      "c",
+      "a"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:675-2": {
+    "question": "In which order are the following types of coffee made in this video?\n(a) Espresso, Manual.\n(b) Piccolo Latte.\n(c) Dirty Chai.\n(d) Vienna Coffee.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) Espresso, Manual occurs before (b) Piccolo Latte in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (b) Piccolo Latte occurs before (c) Dirty Chai in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (c) Dirty Chai occurs before (d) Vienna Coffee in the video."
+      }
+    ],
+    "items": {
+      "a": "Espresso, Manual",
+      "b": "Piccolo Latte",
+      "c": "Dirty Chai",
+      "d": "Vienna Coffee"
+    },
+    "reference_order": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:676-2": {
+    "question": "In which order are the following steps introduced in this video?\n(a) Solving the middle layer.\n(b) Matching corner pieces with the center.\n(c) Solving the yellow.\n(d) Solving the white.\n(e) Solving the cube.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (d) Solving the white occurs before (a) Solving the middle layer in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (a) Solving the middle layer occurs before (c) Solving the yellow in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (c) Solving the yellow occurs before (b) Matching corner pieces with the center in the video."
+      },
+      {
+        "id": "F4",
+        "fact": "The introduction/performance of (b) Matching corner pieces with the center occurs before (e) Solving the cube in the video."
+      }
+    ],
+    "items": {
+      "a": "Solving the middle layer",
+      "b": "Matching corner pieces with the center",
+      "c": "Solving the yellow",
+      "d": "Solving the white",
+      "e": "Solving the cube"
+    },
+    "reference_order": [
+      "d",
+      "a",
+      "c",
+      "b",
+      "e"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:678-2": {
+    "question": "In which order are the following topics introduced in this video?\n(a) How to design clothing.\n(b) How to create a logo.\n(c) How to start an online store or website for free.\n(d) How to market and get sales.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) How to design clothing occurs before (c) How to start an online store or website for free in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (c) How to start an online store or website for free occurs before (b) How to create a logo in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (b) How to create a logo occurs before (d) How to market and get sales in the video."
+      }
+    ],
+    "items": {
+      "a": "How to design clothing",
+      "b": "How to create a logo",
+      "c": "How to start an online store or website for free",
+      "d": "How to market and get sales"
+    },
+    "reference_order": [
+      "a",
+      "c",
+      "b",
+      "d"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:679-2": {
+    "question": "In which order do the following steps are introduced when manipulating the first image in this video?\n(a) Adding more control points.\n(b) Global adjustments\n(c) Launching Nik Viveza.\n(d) Adjusting green",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (c) Launching Nik Viveza occurs before (b) Global adjustments in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (b) Global adjustments occurs before (d) Adjusting green in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (d) Adjusting green occurs before (a) Adding more control points in the video."
+      }
+    ],
+    "items": {
+      "a": "Adding more control points",
+      "b": "Global adjustments",
+      "c": "Launching Nik Viveza",
+      "d": "Adjusting green"
+    },
+    "reference_order": [
+      "c",
+      "b",
+      "d",
+      "a"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:680-2": {
+    "question": "In what sequence are the following topics introduced in this video?\n(a) Internet Safety: Your Browser's Security Features.\n(b) Basic Parts of a Computer.\n(c) Mac OS X Basics: Getting Started with the Desktop\n(d) Understanding Operating Systems",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (b) Basic Parts of a Computer occurs before (d) Understanding Operating Systems in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (d) Understanding Operating Systems occurs before (a) Internet Safety: Your Browser's Security Features in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (a) Internet Safety: Your Browser's Security Features occurs before (c) Mac OS X Basics: Getting Started with the Desktop in the video."
+      }
+    ],
+    "items": {
+      "a": "Internet Safety: Your Browser's Security Features",
+      "b": "Basic Parts of a Computer",
+      "c": "Mac OS X Basics: Getting Started with the Desktop",
+      "d": "Understanding Operating Systems"
+    },
+    "reference_order": [
+      "b",
+      "d",
+      "a",
+      "c"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:685-2": {
+    "question": "What is the correct order of the video to explain the following events?\n(a) History.\n(b) Alexnet.\n(c) CUDA.\n(d) Team Management.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) History occurs before (c) CUDA in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (c) CUDA occurs before (b) Alexnet in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (b) Alexnet occurs before (d) Team Management in the video."
+      }
+    ],
+    "items": {
+      "a": "History",
+      "b": "Alexnet",
+      "c": "CUDA",
+      "d": "Team Management"
+    },
+    "reference_order": [
+      "a",
+      "c",
+      "b",
+      "d"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:686-2": {
+    "question": "What is the installation order for the following components in the video?\n(a) Motherboard.\n(b) Water cooling.\n(c) Power supply.\n(d) Bus.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) Motherboard occurs before (c) Power supply in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (c) Power supply occurs before (d) Bus in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (d) Bus occurs before (b) Water cooling in the video."
+      }
+    ],
+    "items": {
+      "a": "Motherboard",
+      "b": "Water cooling",
+      "c": "Power supply",
+      "d": "Bus"
+    },
+    "reference_order": [
+      "a",
+      "c",
+      "d",
+      "b"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:791-1": {
+    "question": "In which order are the following magics performed in this video?\n(a) Finding words in a dictionary.\n(b) Drawing a diamond using a match.\n(c) Producing a popcoin from eyes.\n(d) Seeing things through a bearded dragon.\n(e) Inducing judges to choose the cards that they get.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (c) Producing a popcoin from eyes occurs before (d) Seeing things through a bearded dragon in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (d) Seeing things through a bearded dragon occurs before (a) Finding words in a dictionary in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (a) Finding words in a dictionary occurs before (e) Inducing judges to choose the cards that they get in the video."
+      },
+      {
+        "id": "F4",
+        "fact": "The introduction/performance of (e) Inducing judges to choose the cards that they get occurs before (b) Drawing a diamond using a match in the video."
+      }
+    ],
+    "items": {
+      "a": "Finding words in a dictionary",
+      "b": "Drawing a diamond using a match",
+      "c": "Producing a popcoin from eyes",
+      "d": "Seeing things through a bearded dragon",
+      "e": "Inducing judges to choose the cards that they get"
+    },
+    "reference_order": [
+      "c",
+      "d",
+      "a",
+      "e",
+      "b"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:795-2": {
+    "question": "In which order are the following magics performed in this video?\n(a) Bend the straw with spirits.\n(b) Two kinds of snacks are poured out of the packaging bag.\n(c) Two coins on the plate turn into seven.\n(d) Coins drilled into the cup from the bottom.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (c) Two coins on the plate turn into seven occurs before (d) Coins drilled into the cup from the bottom in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (d) Coins drilled into the cup from the bottom occurs before (a) Bend the straw with spirits in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (a) Bend the straw with spirits occurs before (b) Two kinds of snacks are poured out of the packaging bag in the video."
+      }
+    ],
+    "items": {
+      "a": "Bend the straw with spirits",
+      "b": "Two kinds of snacks are poured out of the packaging bag",
+      "c": "Two coins on the plate turn into seven",
+      "d": "Coins drilled into the cup from the bottom"
+    },
+    "reference_order": [
+      "c",
+      "d",
+      "a",
+      "b"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:799-2": {
+    "question": "In which order do the following events happen in this video?\n(a) Mr. Bean falls in love with the beautiful singer Roxy and has a wish to get an autograph from her. His attempts are mostly foiled by the bodyguard until he manages to get a kiss mark from Roxy using her handkerchief and Bean is happy.\n(b) Whilst digging for treasure, Mr. Bean builds his own metal detector and goes to hunt for treasure but fails. When he manages to get the treasure and bring it to his flat.\n(c) Mr. Bean and Irma are off for a day at the seaside, where his trunk gets accidentally swapped with that of a stage magician.\n(d) Bean attends a hypnotism show. He unwittingly volunteers to be hypnotised; when the hypnotist makes him think he's a dog, he runs away and then back at home chases Scrapper around the garden and the house.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (c) Mr. Bean and Irma are off for a day at the seaside, where his trunk gets accidentally swapped with that of a stage magician occurs before (d) Bean attends a hypnotism show. He unwittingly volunteers to be hypnotised; when the hypnotist makes him think he's a dog, he runs away and then back at home chases Scrapper around the garden and the house in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (d) Bean attends a hypnotism show. He unwittingly volunteers to be hypnotised; when the hypnotist makes him think he's a dog, he runs away and then back at home chases Scrapper around the garden and the house occurs before (a) Mr. Bean falls in love with the beautiful singer Roxy and has a wish to get an autograph from her. His attempts are mostly foiled by the bodyguard until he manages to get a kiss mark from Roxy using her handkerchief and Bean is happy in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (a) Mr. Bean falls in love with the beautiful singer Roxy and has a wish to get an autograph from her. His attempts are mostly foiled by the bodyguard until he manages to get a kiss mark from Roxy using her handkerchief and Bean is happy occurs before (b) Whilst digging for treasure, Mr. Bean builds his own metal detector and goes to hunt for treasure but fails. When he manages to get the treasure and bring it to his flat in the video."
+      }
+    ],
+    "items": {
+      "a": "Mr. Bean falls in love with the beautiful singer Roxy and has a wish to get an autograph from her. His attempts are mostly foiled by the bodyguard until he manages to get a kiss mark from Roxy using her handkerchief and Bean is happy",
+      "b": "Whilst digging for treasure, Mr. Bean builds his own metal detector and goes to hunt for treasure but fails. When he manages to get the treasure and bring it to his flat",
+      "c": "Mr. Bean and Irma are off for a day at the seaside, where his trunk gets accidentally swapped with that of a stage magician",
+      "d": "Bean attends a hypnotism show. He unwittingly volunteers to be hypnotised; when the hypnotist makes him think he's a dog, he runs away and then back at home chases Scrapper around the garden and the house"
+    },
+    "reference_order": [
+      "c",
+      "d",
+      "a",
+      "b"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:800-1": {
+    "question": "What is the sequence in which the following magic tricks are performed in this video?\n(a) Joker inside the black Jacks sandwich is mysteriously replaced with the randomly chosen card.\n(b) The positions of Aces and random cards are swapped.\n(c) After a full circle of mixing up, the piles go back to where they started.\n(d) The order of cards is recovered from chaos.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) Joker inside the black Jacks sandwich is mysteriously replaced with the randomly chosen card occurs before (c) After a full circle of mixing up, the piles go back to where they started in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (c) After a full circle of mixing up, the piles go back to where they started occurs before (d) The order of cards is recovered from chaos in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (d) The order of cards is recovered from chaos occurs before (b) The positions of Aces and random cards are swapped in the video."
+      }
+    ],
+    "items": {
+      "a": "Joker inside the black Jacks sandwich is mysteriously replaced with the randomly chosen card",
+      "b": "The positions of Aces and random cards are swapped",
+      "c": "After a full circle of mixing up, the piles go back to where they started",
+      "d": "The order of cards is recovered from chaos"
+    },
+    "reference_order": [
+      "a",
+      "c",
+      "d",
+      "b"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:816-2": {
+    "question": "What sequence of actions followed after they stepped on the stilts?\n(a)  They unfurled a banner from their mouths.\n(b) They tumbled down from the high platform.\n(c) They caught the balls thrown by the ground staff.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) They unfurled a banner from their mouths occurs before (c) They caught the balls thrown by the ground staff in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (c) They caught the balls thrown by the ground staff occurs before (b) They tumbled down from the high platform in the video."
+      }
+    ],
+    "items": {
+      "a": "They unfurled a banner from their mouths",
+      "b": "They tumbled down from the high platform",
+      "c": "They caught the balls thrown by the ground staff"
+    },
+    "reference_order": [
+      "a",
+      "c",
+      "b"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:822-1": {
+    "question": "In which order do the following topics are introduced in this video ?\n(a) Spring pocket DIY.\n(b) Easter bucket floral DIY.\n(c) Farmhouse bunny in a bucket DIY.\n(d) Spring tin bucket floral DIY.\n(e) Bunny hop decor.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) Spring pocket DIY occurs before (b) Easter bucket floral DIY in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (b) Easter bucket floral DIY occurs before (c) Farmhouse bunny in a bucket DIY in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (c) Farmhouse bunny in a bucket DIY occurs before (d) Spring tin bucket floral DIY in the video."
+      },
+      {
+        "id": "F4",
+        "fact": "The introduction/performance of (d) Spring tin bucket floral DIY occurs before (e) Bunny hop decor in the video."
+      }
+    ],
+    "items": {
+      "a": "Spring pocket DIY",
+      "b": "Easter bucket floral DIY",
+      "c": "Farmhouse bunny in a bucket DIY",
+      "d": "Spring tin bucket floral DIY",
+      "e": "Bunny hop decor"
+    },
+    "reference_order": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:825-2": {
+    "question": "In which order are the following steps introduced in this video?\n(a) Cardboard Apple MacBook.\n(b) Cardboard Apple Watch.\n(c) Apple iPad.\n(d) Apple iPhone 13.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) Cardboard Apple MacBook occurs before (c) Apple iPad in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (c) Apple iPad occurs before (b) Cardboard Apple Watch in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (b) Cardboard Apple Watch occurs before (d) Apple iPhone 13 in the video."
+      }
+    ],
+    "items": {
+      "a": "Cardboard Apple MacBook",
+      "b": "Cardboard Apple Watch",
+      "c": "Apple iPad",
+      "d": "Apple iPhone 13"
+    },
+    "reference_order": [
+      "a",
+      "c",
+      "b",
+      "d"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:826-2": {
+    "question": "In which order are the following steps introduced in this video?\n(a) A pair of slippers.\n(b) A pair of pillows.\n(c) A Starbucks cup.\n(d) A Windows computer.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) A pair of slippers occurs before (b) A pair of pillows in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (b) A pair of pillows occurs before (c) A Starbucks cup in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (c) A Starbucks cup occurs before (d) A Windows computer in the video."
+      }
+    ],
+    "items": {
+      "a": "A pair of slippers",
+      "b": "A pair of pillows",
+      "c": "A Starbucks cup",
+      "d": "A Windows computer"
+    },
+    "reference_order": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:844-1": {
+    "question": "In what chronological order did the following events take place?\n(a) The Prada brand was almost ceasing to exist.\n(b) The launch of the label Miu Miu.\n(c) Prada gained connections to royal families.\n(d) The arrival of Miuccia Prada.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (c) Prada gained connections to royal families occurs before (a) The Prada brand was almost ceasing to exist in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (a) The Prada brand was almost ceasing to exist occurs before (d) The arrival of Miuccia Prada in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (d) The arrival of Miuccia Prada occurs before (b) The launch of the label Miu Miu in the video."
+      }
+    ],
+    "items": {
+      "a": "The Prada brand was almost ceasing to exist",
+      "b": "The launch of the label Miu Miu",
+      "c": "Prada gained connections to royal families",
+      "d": "The arrival of Miuccia Prada"
+    },
+    "reference_order": [
+      "c",
+      "a",
+      "d",
+      "b"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:845-1": {
+    "question": "In what sequence are the following jewelry pieces arranged to be displayed in this video?\n(a) Engagement ring.\n(b) Cartier bracelets.\n(c) Tabayer earrings.\n(d) Missoma hoops.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) Engagement ring occurs before (b) Cartier bracelets in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (b) Cartier bracelets occurs before (c) Tabayer earrings in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (c) Tabayer earrings occurs before (d) Missoma hoops in the video."
+      }
+    ],
+    "items": {
+      "a": "Engagement ring",
+      "b": "Cartier bracelets",
+      "c": "Tabayer earrings",
+      "d": "Missoma hoops"
+    },
+    "reference_order": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:848-1": {
+    "question": "Here are the names of some of the chapters, and what is the order in which they occur?\n(a) Scaling Up: One Plus One.\n(b) The Public Eye.\n(c) Broken Trust.\n(d) Revenge.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) Scaling Up: One Plus One occurs before (c) Broken Trust in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (c) Broken Trust occurs before (d) Revenge in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (d) Revenge occurs before (b) The Public Eye in the video."
+      }
+    ],
+    "items": {
+      "a": "Scaling Up: One Plus One",
+      "b": "The Public Eye",
+      "c": "Broken Trust",
+      "d": "Revenge"
+    },
+    "reference_order": [
+      "a",
+      "c",
+      "d",
+      "b"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:849-1": {
+    "question": "What is the correct order in which the following fragrances appear in the video?\n(a) OUD LEATHER.\n(b) OUD WOOD.\n(c) GREY VETIVER.\n(d) LAVENDRE EXTREME.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (b) OUD WOOD occurs before (a) OUD LEATHER in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (a) OUD LEATHER occurs before (d) LAVENDRE EXTREME in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (d) LAVENDRE EXTREME occurs before (c) GREY VETIVER in the video."
+      }
+    ],
+    "items": {
+      "a": "OUD LEATHER",
+      "b": "OUD WOOD",
+      "c": "GREY VETIVER",
+      "d": "LAVENDRE EXTREME"
+    },
+    "reference_order": [
+      "b",
+      "a",
+      "d",
+      "c"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:850-3": {
+    "question": "What is the correct order of presentation of the following events in the video?\n(a) Zara was plagiarized.\n(b) Toxic dyes.\n(c) Zara owner's birthday.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) Zara was plagiarized occurs before (b) Toxic dyes in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (b) Toxic dyes occurs before (c) Zara owner's birthday in the video."
+      }
+    ],
+    "items": {
+      "a": "Zara was plagiarized",
+      "b": "Toxic dyes",
+      "c": "Zara owner's birthday"
+    },
+    "reference_order": [
+      "a",
+      "b",
+      "c"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:865-1": {
+    "question": "What is the correct order in which the following places are introduced in the video?\n(a) Minaki Aman Temple.\n(b) Alhamra.\n(c) Burj Khalifa.\n(d) Machu Picchu.\n(e) Coliseum.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (a) Minaki Aman Temple occurs before (b) Alhamra in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (b) Alhamra occurs before (c) Burj Khalifa in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (c) Burj Khalifa occurs before (d) Machu Picchu in the video."
+      },
+      {
+        "id": "F4",
+        "fact": "The introduction/performance of (d) Machu Picchu occurs before (e) Coliseum in the video."
+      }
+    ],
+    "items": {
+      "a": "Minaki Aman Temple",
+      "b": "Alhamra",
+      "c": "Burj Khalifa",
+      "d": "Machu Picchu",
+      "e": "Coliseum"
+    },
+    "reference_order": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:893-2": {
+    "question": "What is the correct order in which the following events are told in the video?\n(a) Desserts in restaurants.\n(b) Pinguin frozen vegetables.\n(c) Lab test for vitamin C.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (c) Lab test for vitamin C occurs before (b) Pinguin frozen vegetables in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (b) Pinguin frozen vegetables occurs before (a) Desserts in restaurants in the video."
+      }
+    ],
+    "items": {
+      "a": "Desserts in restaurants",
+      "b": "Pinguin frozen vegetables",
+      "c": "Lab test for vitamin C"
+    },
+    "reference_order": [
+      "c",
+      "b",
+      "a"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  },
+  "videomme:896-2": {
+    "question": "What is the proper sequence for the following items used in this video?\n(a) Stickers.\n(b) Watercolor pencils.\n(c) Gems.\n(d) Glue paper.",
+    "required_facts": [
+      {
+        "id": "F1",
+        "fact": "The introduction/performance of (d) Glue paper occurs before (a) Stickers in the video."
+      },
+      {
+        "id": "F2",
+        "fact": "The introduction/performance of (a) Stickers occurs before (c) Gems in the video."
+      },
+      {
+        "id": "F3",
+        "fact": "The introduction/performance of (c) Gems occurs before (b) Watercolor pencils in the video."
+      }
+    ],
+    "items": {
+      "a": "Stickers",
+      "b": "Watercolor pencils",
+      "c": "Gems",
+      "d": "Glue paper"
+    },
+    "reference_order": [
+      "d",
+      "a",
+      "c",
+      "b"
+    ],
+    "policy": "Adjacent ordering relations from original labeled items and official permutation; no numeric ranks, exact timestamps or additional uniqueness claims."
+  }
+}

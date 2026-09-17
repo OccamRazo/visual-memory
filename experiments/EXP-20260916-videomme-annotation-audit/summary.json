@@ -1,0 +1,27 @@
+{
+  "drafts_reviewed": 60,
+  "substantive_draft_changes": 32,
+  "eligible_drafts_with_placeholder_fact_defects": 13,
+  "adaptation_counts": {
+    "rewritten": 26,
+    "unchanged": 20,
+    "unsuitable": 5,
+    "needs_review": 9
+  },
+  "pilot_cases": 12,
+  "pilot_results": {
+    "source_supported_ai": 8,
+    "short_answer_unsuitable": 2,
+    "reference_qualification_needed": 2
+  },
+  "old_frames_hash_checked": 600,
+  "old_frames_visually_inspected_in_sheets": 240,
+  "new_frames_visually_inspected_in_sheets": 87,
+  "new_api_calls": 0,
+  "human_reviewed": 0,
+  "full_continuous_video_viewing": false,
+  "test_set_frozen": false,
+  "artifacts_root": "/mnt/raid5-01/baorui/visual-memory/EXP-20260916-videomme-annotation-audit",
+  "reviewer_session_id": "01a0aadc-0452-7903-aa67-e338744b88e0",
+  "counts_are_method_performance": false
+}

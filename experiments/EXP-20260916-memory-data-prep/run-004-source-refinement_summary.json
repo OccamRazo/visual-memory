@@ -1,0 +1,47 @@
+{
+  "draft_count": 60,
+  "adaptation_status": {
+    "rewritten": 31,
+    "unchanged": 24,
+    "unsuitable": 5
+  },
+  "scope_labels": {
+    "local": 35,
+    "cross_segment": 9,
+    "global_coverage": 15,
+    "unknown": 1
+  },
+  "modality_labels": {
+    "unknown": 16,
+    "audio_subtitle": 9,
+    "mixed": 11,
+    "visual": 24
+  },
+  "visual_records": 12,
+  "visual_status": {
+    "explicit_gap_proxy": 8,
+    "undetermined": 4
+  },
+  "reference_status": {
+    "unresolved": 6,
+    "unknown": 2,
+    "conflict_requires_review": 3,
+    "supported_proxy": 1
+  },
+  "decoded_frames": 600,
+  "api_attempts": 30,
+  "api_failures": 0,
+  "resolved_models": [
+    "gpt-5.6-luna",
+    "gpt-5.6-luna-2026-07-09"
+  ],
+  "usage": {
+    "prompt_tokens": 326194,
+    "completion_tokens": 26691,
+    "total_tokens": 352885
+  },
+  "billing_cost": "unknown; provider billing not queried",
+  "human_audit": "not_run; all labels are automatic proxies",
+  "formal_test_frozen": false,
+  "experimental_method_runs": 0
+}

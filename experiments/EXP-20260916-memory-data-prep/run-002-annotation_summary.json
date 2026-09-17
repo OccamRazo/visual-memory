@@ -1,0 +1,31 @@
+{
+  "draft_count": 2,
+  "adaptation_status": {
+    "rewritten": 1,
+    "unchanged": 1
+  },
+  "scope_labels": {
+    "local": 2
+  },
+  "modality_labels": {
+    "audio_subtitle": 2
+  },
+  "visual_records": 0,
+  "visual_status": {},
+  "reference_status": {},
+  "decoded_frames": 0,
+  "api_attempts": 2,
+  "api_failures": 0,
+  "resolved_models": [
+    "gpt-5.6-luna-2026-07-09"
+  ],
+  "usage": {
+    "prompt_tokens": 974,
+    "completion_tokens": 914,
+    "total_tokens": 1888
+  },
+  "billing_cost": "unknown; provider billing not queried",
+  "human_audit": "not_run; all labels are automatic proxies",
+  "formal_test_frozen": false,
+  "experimental_method_runs": 0
+}

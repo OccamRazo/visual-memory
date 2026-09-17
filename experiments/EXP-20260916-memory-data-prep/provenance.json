@@ -1,0 +1,78 @@
+{
+  "recorded_at": "2026-09-16T23:11:04.712057+08:00",
+  "host": "affect-ESC4000-G4",
+  "repos": {
+    "visual-memory": {
+      "path": "/home/baorui/projects/visual-memory",
+      "head": "3916850f86b1150dd8c4ea7be110d4c2c4f92e8f",
+      "branch": "work/motivation-data-prep",
+      "status": "M .gitignore\n?? experiments/EXP-20260916-memory-data-prep/\n?? notes/sessions/01a0a988-3c56-7a80-8e44-0d9e5ac2923c.md",
+      "working_diff_sha256": "3e1319bfd7115873401de9772e46878ff7f1b62a4b584b69b6b8c6e87ea40d31"
+    },
+    "WorldMM": {
+      "path": "/home/baorui/projects/WorldMM",
+      "head": "3a55b65235e4f9618626a91c28e7e45baa6d8bdf",
+      "branch": "main",
+      "status": "M pyproject.toml\n M uv.lock\n?? LOCAL_SETUP.md\n?? script/check_environment.py\n?? script/repair_decord_metadata.py",
+      "working_diff_sha256": "a5849417b88523436e6274f4a3d34a68842c4823a0929f91c43177bd668f6cd5"
+    },
+    "Ego-R1": {
+      "path": "/home/baorui/projects/Ego-R1",
+      "head": "69177ee7dffd0ce3460c894dc727b6f5eec638d6",
+      "branch": "main",
+      "status": "M .gitignore\n?? Ego-R1-Agent/requirements.txt\n?? LLaMA-Factory/requirements.txt\n?? environment/",
+      "working_diff_sha256": "a634bac19b62628769b267c8c87fd339b6016c01a9ee80ca7be4f360fa063cb7"
+    }
+  },
+  "environment_python": "/home/baorui/projects/WorldMM/.venv/bin/python",
+  "actual_model_from_preflight": "gpt-5.6-luna-2026-07-09",
+  "baseline_repositories_modified_by_this_task": false,
+  "source_media_modified": false,
+  "only_dataset_processed": "Video-MME-long",
+  "secret_content_recorded": false,
+  "preflight": [
+    {
+      "stage": "API SDK default proxy",
+      "outcome": "ImportError before request; WorldMM environment lacks SOCKS transport dependency"
+    },
+    {
+      "stage": "direct API transport",
+      "outcome": "connection timeout after 90.51 s; no successful model response"
+    },
+    {
+      "stage": "explicit HTTP proxy and /v1 normalization",
+      "outcome": "success",
+      "prompt_tokens": 16,
+      "completion_tokens": 8,
+      "total_tokens": 24
+    },
+    {
+      "stage": "caption initial download",
+      "outcome": "IncompleteRead; 5567289 of 11580301 bytes received, no accepted archive"
+    },
+    {
+      "stage": "caption streaming retry",
+      "outcome": "11580301 bytes, expected LFS SHA256 verified"
+    }
+  ],
+  "unavailable_repository_guides": [
+    "docs/project-guide.md",
+    "docs/work-records.md"
+  ],
+  "record_policy": "Followed root and experiments AGENTS.md; missing optional referenced guides did not block authorized local work",
+  "final_code_sha256": {
+    "code/annotate.py": "f2a7703b79fa881fa93c463597df3509eff1ecbfe20cd1d6ef4f0562e8843942",
+    "code/package_review.py": "4d9dd6c6765d465ab11e1c67afa34ac52b6fbe38297e9b803aba2fd04a95946e",
+    "code/prepare.py": "5d7fa1845359c90b94fb68d9efa213c65337a1abf520fe60478cf55c66a6d6bc",
+    "code/prompts/blind_multimodal.txt": "7d48c0ea98ba1ae13297bba15e210551a583be6906ea046aa765323734cc8905",
+    "code/prompts/blind_visual.txt": "fe71b5f5d277e4357bf3d285ad9b4448ec5a21e9efc93440652278bb60559bef",
+    "code/prompts/compare.txt": "ae98866ea9fa6d983e7c4cbee8d2421c31e2e90623690aeb065718306533368d",
+    "code/prompts/draft.txt": "ed7205c325b68de859e3f5cab6da32f4fef9278716ae8bac89930951c262cb85",
+    "code/prompts/nominate.txt": "88216c285b2d73d8eb78ff945cd95573a3f105bac95a1b33ca6bfd1071a7a4ec",
+    "code/validate.py": "42f0058c443be3144c79ea46c7e507d79ef90d059af80e60fc64ba783f48870f"
+  },
+  "security_check": {
+    "api_key_found_in_records_or_artifacts": false,
+    "scanned_files": 652
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "recorded_at": "2026-09-17T18:37:43.227892+08:00",
+  "amendments": [
+    {
+      "issue": "API host unreachable directly; existing proxy environment was absent in noninteractive shell",
+      "action": "Use existing localhost HTTP proxy :7892 per command; direct/public TCP tests and two successful proxy model probes retained. No system configuration or credentials changed."
+    },
+    {
+      "issue": "Full-timeline and large screening calls can exceed 180 seconds",
+      "action": "v1.1 raises timeout to300s and queue worker cap to8; original failed attempts retained."
+    },
+    {
+      "issue": "Adjacent distinct training days were automatically merged by inherited temporal rule in888-1",
+      "action": "v1.2 retains adjacent cores for semantic audit, uses half-open frame bounds, requires overlap revision. Same-episode steps still cannot be split. Preserved old result and reran; final source validation replays legacy closed-core requests exactly for unaffected legacy cases."
+    },
+    {
+      "issue": "Locator enumerated every subtitle of whole chapters and included some out-of-video trailing subtitles",
+      "action": "Require minimal evidentiary cores and direct source anchor IDs. All captions remain input unchanged; malformed bounds cannot pass; failed791-3 archived and rerun."
+    },
+    {
+      "issue": "JSON root sometimes a single-object array or flat facts array",
+      "action": "Explicit object-root instructions; only a one-object wrapper can be losslessly normalized with raw response retained. Incomplete flat fact arrays still fail or require schema repair."
+    },
+    {
+      "issue": "Question-only model sometimes assigned highest priority to negative/exhaustive news questions",
+      "action": "Prioritize positive order/sequence/cross-episode comparison candidates rated>=3, then other positive candidates, then remaining candidates. Does not alter acceptance. Every asynchronous draw wave is frozen for exact replay."
+    },
+    {
+      "issue": "Initial consumer filename shadowed standard-library queue",
+      "action": "Renamed toconsume.py before it submitted any question; startup failure log preserved."
+    },
+    {
+      "issue": "Several large non-streaming requests exceeded read timeout repeatedly",
+      "action": "v1.3 uses streamed responses with final JSON/finish reason/usage recorded; successful transport probe archived. Timeout attempts have unknown provider-side token usage and are not counted as zero cost."
+    },
+    {
+      "issue": "Incorrect localization anchor IDs and subtitle boundary expansion created artificial overlapping cores",
+      "action": "v1.4 retains proposed nonoverlapping half-open cores unchanged, logs invalid localization anchors removed, and retains full original source bank. Actual verification sees original core frames/subtitles. Raw proposals and superseded sources remain archived."
+    },
+    {
+      "issue": "Minimal rubric still sometimes added unasked numeric ranks/exact timestamps; compound sequence/shared-equipment claims were accepted despite missing middle events or days",
+      "action": "v1.5 derives adjacent relation facts deterministically for original labeled order questions. Root source review rejects unsupported subset reasoning and refines affected old rubrics, rerunning original-source audit, every singleton/deletion and full-caption countersearch. Shared equipment gets one fact per requested day; no extra uniqueness claim."
+    },
+    {
+      "issue": "A v1.4 retry launcher overlapped with the producer for624-2/799-2/800-1",
+      "action": "Terminated only duplicate retry launcher before any accepted results; retained request copies and incident record under run-001/incidents/retry-v14-concurrent-launch. Producer owns those runs;888-1 was restarted explicitly. Provider usage of aborted duplicates unknown. Future retries reserve IDs first, preserve old results while revalidating, and use per-question fcntl locks."
+    },
+    {
+      "issue": "822-1 sampled next independent craft chapter title inside previous core",
+      "action": "Root viewed original R019 at1318s; corrected G03 end/G04 start from1320 to1318. Old evidence preserved; revised source projection, answer-blind observation and all subsequent tests must rerun."
+    },
+    {
+      "issue": "v1.6: continuous activities were proposed as independent evidence groups",
+      "action": "Strengthened explicit examples; one ongoing workout, recipe, trick or editing task remains one episode. Added per-day and adjacent-order atomic facts."
+    },
+    {
+      "issue": "v1.7: relation facts passed despite absent middle entities; contradictory support fields",
+      "action": "Require separate endpoint source citations, explicit per-fact statuses and no missing claims on positive results; retain raw responses and bounded repairs. Pool cap32, actual worker count frozen per draw."
+    },
+    {
+      "issue": "v1.8: concurrent snapshot initialization and media duration beyond final video PTS",
+      "action": "Serialize snapshot initialization with a file lock. Decode actual last frame only when within2s of requested time; retain actual PTS. See trailing_frame_check.json; no synthetic timestamp."
+    },
+    {
+      "issue": "Legacy616-3 negative subset result omitted per-fact status",
+      "action": "Offline exporter tolerates only the single-fact explicit-negative response with both overall flags false and nonempty missing evidence; never infers positive support."
+    },
+    {
+      "issue": "Technical retries, supplemental low-priority questions and source-boundary refinements",
+      "action": "Preserve technical_retry_v17.json, supplemental_candidates_v18.json and rubric_refinements including history. Latest822-1 refinement tightens all five craft cores and grounds each endpoint. Formal_order_rubrics.json remains historical v1.5 derivation; actual per-result rubric and snapshot are authoritative."
+    },
+    {
+      "issue": "User paused due to low efficiency; background results include extensive API connection failures",
+      "action": "No local experiment workers remained at pause. Added pause_queue and pause_record.json. Freeze partial export without further API calls; target50 remains unmet. Any future resume needs explicit user instruction and a new execution record."
+    }
+  ],
+  "legacy_result_policy": "Preserve all attempts and superseded results; no inherited acceptance from previous experiment; legacy nonoverlapping core inputs replayed with their original boundary semantics."
+}

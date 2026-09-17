@@ -1,0 +1,11 @@
+{
+  "qid": "videomme:865-1",
+  "source_result_sha256": "12502ea627edb55cb6ad0b0b26582cff44ac9efe3325722d4eba78857c7e1bb1",
+  "reason_zh": "原题只要求五个给定地点的介绍顺序。删除非评分所需的27/22/16/8/5名次信息；这些数字仍保留为原始源定位线索。原题、官方答案和原证据组不改，按最小顺序事实重跑源审计、单组/删组及全量反查。",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "The five named places are introduced in this order: Meenakshi Amman Temple, Alhambra, Burj Khalifa, Machu Picchu, Colosseum."
+    }
+  ]
+}

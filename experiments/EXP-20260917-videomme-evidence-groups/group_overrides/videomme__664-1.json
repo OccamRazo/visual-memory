@@ -1,0 +1,90 @@
+{
+  "qid": "videomme:664-1",
+  "source_result_sha256": "6a8433a2c5a65686181fd5a0f0601f8b80e2e411278c6e9b6371f8ed1fb7e45d",
+  "reason_zh": "开场与后续Sophia案件是同一连续审理，按同事件规则合并；Taylor案件保留独立组。",
+  "proposal": {
+    "groups": [
+      {
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "取证范围覆盖同一案件，节目剪辑/叙述阶段不另成组。",
+        "end_s": 970.199,
+        "episode_reason_zh": "同一案件从开场介绍、争议对话到DNA结果持续围绕同一亲子关系；取证锚点之间的时间空隙不构成独立案件。后续Taylor案件才是另一独立事件。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V001",
+          "V003",
+          "V019"
+        ],
+        "id": "G01",
+        "label_zh": "Sophia生父争议的连续审理及DNA结果",
+        "role": "direct",
+        "source_summary_zh": "开场介绍Sophia的生父争议，经过审理以DNA结果收束。",
+        "start_s": 0,
+        "subtitle_ids": [
+          "S00000",
+          "S00001",
+          "S00002",
+          "S00003",
+          "S00004",
+          "S00005",
+          "S00006",
+          "S00266",
+          "S00269",
+          "S00272",
+          "S00294",
+          "S00300",
+          "S00380",
+          "S00382",
+          "S00386"
+        ],
+        "proposal_ids": [
+          "G01"
+        ],
+        "review_start_s": 0,
+        "review_end_s": 30.359
+      },
+      {
+        "boundary_basis": "mixed",
+        "boundary_uncertainty_zh": "该组跨越同一案件中的连续审理和结果公布段落；窗口依据案件引入、潜在父亲陈述及结果字幕，不表示每个动作的精确起止。",
+        "end_s": 1949.96,
+        "episode_reason_zh": "这是另一宗围绕成年女性Taylor生物学父亲身份的连续法庭案件，涵盖Hardy、Bryant和Lynn的陈述、潜在父亲比较以及最终DNA结果；与前一宗Sophia案件属于不同人物和独立案件。",
+        "fact_ids": [
+          "F1"
+        ],
+        "frame_ids": [
+          "V039",
+          "V051",
+          "V058",
+          "V059"
+        ],
+        "id": "G03",
+        "label_zh": "Taylor生父争议审理与DNA结果",
+        "role": "representative",
+        "source_summary_zh": "字幕说明Hardy来证明自己是Taylor的父亲，Bryant也是潜在生父；法庭随后公布DNA结果，认定Bryant是Taylor的生物学父亲，并记录结果后的回应。",
+        "start_s": 1026.76,
+        "subtitle_ids": [
+          "S00409",
+          "S00411",
+          "S00431",
+          "S00432",
+          "S00643",
+          "S00645",
+          "S00744",
+          "S00746",
+          "S00750",
+          "S00752",
+          "S00759",
+          "S00767",
+          "S00775"
+        ],
+        "proposal_ids": [
+          "G03"
+        ],
+        "review_start_s": 1023.76,
+        "review_end_s": 1952.96
+      }
+    ]
+  }
+}

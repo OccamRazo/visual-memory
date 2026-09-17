@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-09-17T01:06:07.322754+08:00",
+  "python": "3.13.12 (main, Mar 24 2026, 22:49:35) [Clang 22.1.1 ]",
+  "executable": "/home/baorui/projects/WorldMM/.venv/bin/python",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "host": "affect-ESC4000-G4",
+  "git_branch": "work/motivation-data-prep",
+  "base_head": "3916850f86b1150dd8c4ea7be110d4c2c4f92e8f",
+  "packages": {
+    "av": "17.0.0",
+    "pillow": "12.1.1",
+    "pysrt": "1.1.2",
+    "openai": "2.29.0",
+    "httpx": "0.28.1"
+  },
+  "artifact_root": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60",
+  "credentials_recorded": false,
+  "note": "Existing task changes preserved. Code snapshots are keyed by implementation hash under artifact root; no commit or push."
+}

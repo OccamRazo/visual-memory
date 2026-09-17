@@ -1,0 +1,43 @@
+{
+  "protocol_version": "1.0",
+  "purpose": "Prepare auditable data for content-linked memory motivation validation; no method evaluation or training",
+  "seed": 20260916,
+  "datasets_root": "/mnt/raid5-01/baorui",
+  "artifacts_root": "/mnt/raid5-01/baorui/visual-memory/EXP-20260916-memory-data-prep",
+  "worldmm_root": "/home/baorui/projects/WorldMM",
+  "egor1_root": "/home/baorui/projects/Ego-R1",
+  "credentials_file": "/home/baorui/projects/visual-memory/tmp/api.json",
+  "development": {
+    "dataset": "videomme_long",
+    "video_count": 20,
+    "include_all_questions_per_selected_video": true
+  },
+  "visual_pilot": {
+    "question_count": 12,
+    "one_question_per_video": true,
+    "selection": "hash order, before model outputs",
+    "max_caption_candidates": 12,
+    "max_visual_candidates": 6,
+    "frames_per_candidate": 10,
+    "max_image_side": 768
+  },
+  "api": {
+    "concurrency": 3,
+    "timeout_seconds": 120,
+    "attempts": 2,
+    "trust_env": false,
+    "text_output_tokens": 3000,
+    "visual_output_tokens": 4000,
+    "proxy_mode": "explicit HTTPS_PROXY or https_proxy; ignore ALL_PROXY",
+    "base_url_policy": "append /v1 only when configured URL has no path"
+  },
+  "split_policy": "Video-MME videos are disjoint. No formal test selection until development calibration. All 300 long videos / 900 QA are inventoried.",
+  "annotation_policy": "All model-produced reference facts and evidence labels are automatic proxies pending source verification and human audit. Keep unknowns and unsupported references.",
+  "visibility_policy": "Questions, choices, answers and evidence annotations are evaluation-only. This run does not construct experimental memories.",
+  "modality_policy": "Existing captions may mix vision and speech. Silent frame-only verification cannot confirm audio-only facts; mark unresolved and preserve the original record.",
+  "scope_policy": "Global count, absence, first/last and exhaustive summary claims cannot be confirmed from a few retrieved clips. Record unresolved coverage. No human audits are claimed by automated scripts.",
+  "datasets": [
+    "videomme_long"
+  ],
+  "scope": "Video-MME-long only, per user clarification; EgoLife excluded from this run"
+}

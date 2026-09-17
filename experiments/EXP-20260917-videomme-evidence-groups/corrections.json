@@ -1,0 +1,11 @@
+{
+  "videomme:782-1": {
+    "group_fields": {
+      "G05": {
+        "label_zh": "《Bullets Over Broadway》舞台服装的整体设计方案",
+        "source_summary_zh": "受访者介绍 Bullets Over Broadway 的舞台服装设计，说明如何以装饰艺术门和色板统一帮派人物造型，并通过服装引导观众视线。"
+      }
+    },
+    "reason_zh": "源字幕 S00205 明确写 Bullets Over Broadway，模型生成了错误中文片名；只修正显示文字，不更改时间、来源或组数。"
+  }
+}

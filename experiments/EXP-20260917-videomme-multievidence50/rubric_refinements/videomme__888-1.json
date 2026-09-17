@@ -1,0 +1,22 @@
+{
+  "source_result_sha256": "949c969c37108c58542a48caa01ec27c986f0614ea7fafeab0d27b295389d423",
+  "required_facts": [
+    {
+      "id": "F1",
+      "fact": "Dumbbells are used by the heroine in the push-day workout episode."
+    },
+    {
+      "id": "F2",
+      "fact": "Dumbbells are used by the heroine in the leg-day workout episode."
+    },
+    {
+      "id": "F3",
+      "fact": "Dumbbells are used by the heroine in the pull-day workout episode."
+    },
+    {
+      "id": "F4",
+      "fact": "Dumbbells are used by the heroine in the full-body-day workout episode."
+    }
+  ],
+  "reason_zh": "将原题复合要求逐项拆开，不增加额外评分内容；缺任一事件/天不能以其他片段推断补足。删除原事实中未被问题要求的机制细节或排名。"
+}

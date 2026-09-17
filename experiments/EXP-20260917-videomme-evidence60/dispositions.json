@@ -1,0 +1,1090 @@
+[
+  {
+    "qid": "videomme:660-2",
+    "video_id": "7MFKy7DJsCY",
+    "disposition": "accepted",
+    "pipeline_status": "prior_source_complete",
+    "reason": "1481.76–1515.52 秒旁白直接连起牙菌斑中的食物分析、丰富食谱、财富与种植园主人推断；旧包完全漏掉该段。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/prior/videomme__660-2.json"
+  },
+  {
+    "qid": "videomme:669-1",
+    "video_id": "g1VFfVsZt7w",
+    "disposition": "accepted",
+    "pipeline_status": "prior_source_complete",
+    "reason": "主持人观看电影法律场景并逐段评论；开头说明、段落衔接、结尾和均匀概览一致。不能把主旨表述 each clip 当成逐帧全称证明要求。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/prior/videomme__669-1.json"
+  },
+  {
+    "qid": "videomme:674-2",
+    "video_id": "gKjpYd1Ogwg",
+    "disposition": "accepted",
+    "pipeline_status": "prior_source_complete",
+    "reason": "连续读取前 510 秒字幕：78.56 秒起讲牌类，145.28 秒起讲成手，339.04 秒起讲碰吃策略，484.4 秒起定义役并讲役种。顺序 b→d→c→a。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/prior/videomme__674-2.json"
+  },
+  {
+    "qid": "videomme:715-3",
+    "video_id": "9edWX7TTsLw",
+    "disposition": "skipped_prior",
+    "pipeline_status": "skipped_prior",
+    "reason": "删去候选原因集合后，未提到的原因可以无限多，无法保持原选择题任务。保留原 MCQ，不纳入当前简答轨。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/prior/videomme__715-3.json"
+  },
+  {
+    "qid": "videomme:782-1",
+    "video_id": "-xZglYQSJ3Q",
+    "disposition": "accepted",
+    "pipeline_status": "prior_source_complete",
+    "reason": "采访、服装草图、工坊与舞台作品围绕戏剧服装设计。早年布景训练是职业背景，提到布景不与服装设计主旨相矛盾。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/prior/videomme__782-1.json"
+  },
+  {
+    "qid": "videomme:806-3",
+    "video_id": "r1PoSdFWvQg",
+    "disposition": "skipped_prior",
+    "pipeline_status": "skipped_prior",
+    "reason": "前段字幕列出五件奖品并说明赢家全拿，末段 Sam 获胜；木棍不在奖品表内。但不在奖品表中的物品无限多，去选项后仍不能唯一作答。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/prior/videomme__806-3.json"
+  },
+  {
+    "qid": "videomme:821-1",
+    "video_id": "c03YTDzmsK8",
+    "disposition": "accepted",
+    "pipeline_status": "prior_source_complete",
+    "reason": "原帧与字幕支持去亮片→绕棕纱→做白尾→制作并系蝴蝶结。652.44 秒明说 microfiber duster mop pad，约 990–997 秒可见最终蝴蝶结。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/prior/videomme__821-1.json"
+  },
+  {
+    "qid": "videomme:833-1",
+    "video_id": "lw3_W5X1t54",
+    "disposition": "skipped_prior",
+    "pipeline_status": "skipped_prior",
+    "reason": "560–563 秒菜品画面直接写 Pinakbet / Squash and Okra Stew；555.96–568.72 秒字幕虽误转写 pck bet，明确描述当地海鲜、多国蔬菜及泰国虾酱。旧核验声称无菜名及指向 sisig 是误读。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/prior/videomme__833-1.json"
+  },
+  {
+    "qid": "videomme:834-2",
+    "video_id": "aqFfjJrLkBA",
+    "disposition": "skipped_prior",
+    "pipeline_status": "skipped_prior",
+    "reason": "1806.48–1820.34 秒准备者称 Sadie 是熟手、相信她能完成，接着提议给三分钟计时；只解释计时用途不能否定该动机。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/prior/videomme__834-2.json"
+  },
+  {
+    "qid": "videomme:843-3",
+    "video_id": "9aGgBzToUz4",
+    "disposition": "accepted",
+    "pipeline_status": "prior_source_complete",
+    "reason": "开头标题明确 ranking every single eras tour outfit，42.88 秒说明逐套评级；中段评级界面和新增全程概览一致。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/prior/videomme__843-3.json"
+  },
+  {
+    "qid": "videomme:845-2",
+    "video_id": "1evyOuQz-jM",
+    "disposition": "accepted",
+    "pipeline_status": "prior_source_complete",
+    "reason": "1235 秒盒子写 LEON DIAMOND；1260 秒原始近景可见同一枚钻石戒指横跨两根手指。旧包落在其他戒指的展示时段。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/prior/videomme__845-2.json"
+  },
+  {
+    "qid": "videomme:885-2",
+    "video_id": "EhLOdDfaC7Y",
+    "disposition": "accepted",
+    "pipeline_status": "prior_source_complete",
+    "reason": "206 秒背面写 CHAMPION / TOP BALLER / NORTH LONDON，主持人指向背面；203.84–209.04 秒明确回忆第二期。视觉标识与旧赛事的关系在原包中可恢复。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/prior/videomme__885-2.json"
+  },
+  {
+    "qid": "videomme:626-1",
+    "video_id": "Z4Ug2ONxgYw",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "原字幕 S00050 明确说 standard treatment only checks TSH；据直接源陈述确认。最终评分不可把 primarily 当成 only 的等价替换。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__626-1.json"
+  },
+  {
+    "qid": "videomme:626-2",
+    "video_id": "Z4Ug2ONxgYw",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "核读 S00111/S00115/S00121 与原帧拼图中的 Goiter、Thyroid Needs Iodine。只要求提供 iodine，不要求额外解释缺碘机制。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__626-2.json"
+  },
+  {
+    "qid": "videomme:626-3",
+    "video_id": "Z4Ug2ONxgYw",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed topic-heading transitions: V002 Standard Thyroid Treatment at 185.79 s, V018 stress at 1010.18 s, V040 Auto Immune at 1540.81 s. Original S00050/S00137/S00208 and full supplied transcript agree. These establish the two adjacent order relations; export text sequence without undefined option-number notation.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__626-3.json"
+  },
+  {
+    "qid": "videomme:655-1",
+    "video_id": "PXxscnWG8QA",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "原字幕 S00109–S00112 直接指明 Masu 不知道海啸并非单一波，而是一组波，人物与误解关系齐全。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__655-1.json"
+  },
+  {
+    "qid": "videomme:655-2",
+    "video_id": "PXxscnWG8QA",
+    "disposition": "skipped_ambiguity",
+    "pipeline_status": "skipped_ambiguity",
+    "reason": "User requested skip of ambiguous/unsuitable items already documented in prior audit.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__655-2.json"
+  },
+  {
+    "qid": "videomme:655-3",
+    "video_id": "PXxscnWG8QA",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "原字幕 S00873–S00878 给出地震→山体滑坡入湾→巨浪的因果链，S00917 明确 1958 年滑坡生成海啸。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__655-3.json"
+  },
+  {
+    "qid": "videomme:660-1",
+    "video_id": "7MFKy7DJsCY",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "引用证明宅邸规模与建筑特点，但宽题干并未唯一指向该证据；源内容还提供其他支持玛雅先进性的发现。当前单一参考评分存在歧义，跳过。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__660-1.json"
+  },
+  {
+    "qid": "videomme:660-3",
+    "video_id": "7MFKy7DJsCY",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00749-S00757 characterize the serpent cult as political ideology with religious overtones; S00787-S00791 explicitly link Uxmal carvings to its spread in the north and kings adopting the new ideology. This proves the requested political/religious inference without importing outside history.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__660-3.json"
+  },
+  {
+    "qid": "videomme:669-2",
+    "video_id": "g1VFfVsZt7w",
+    "disposition": "skipped_ambiguity",
+    "pipeline_status": "skipped_ambiguity",
+    "reason": "User requested skip of ambiguous/unsuitable items already documented in prior audit.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__669-2.json"
+  },
+  {
+    "qid": "videomme:669-3",
+    "video_id": "g1VFfVsZt7w",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00653-S00654 call this a settlement discussion; S00711 defines compensation for injury; S00726-S00733 explicitly connect responsible party and compensation to each injured person. The required damages/compensation issue is stated, not inferred from generic courtroom imagery.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__669-3.json"
+  },
+  {
+    "qid": "videomme:674-1",
+    "video_id": "gKjpYd1Ogwg",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "S00021-S00025 explicitly introduce a tutorial on basic mahjong rules; S00872-S00873 repeat this in the closing. Viewed V008 displays Mahjong Tiles and tile groups, not the Riichi Mahjong title claimed by the auditor. Correct that visual description, and keep the minimal rubric as beginner mahjong basics without requiring the subtype.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__674-1.json"
+  },
+  {
+    "qid": "videomme:674-3",
+    "video_id": "gKjpYd1Ogwg",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "结算原帧 V018/V019 同时出现 Under the River、All Simples、Red Five。去掉原选项后只按 Tanyao 评分不能覆盖合法回答，属于选项依赖，按用户要求跳过。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__674-3.json"
+  },
+  {
+    "qid": "videomme:699-1",
+    "video_id": "I2dv1jNM7gM",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "已直接检查各题 page-01 原帧拼图。699-1 开头有团队、灯光、布景与摄影机拍摄动作；699-2 同一鲨鱼持伞并遮挡美人鱼，角色与保护关系可恢复。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__699-1.json"
+  },
+  {
+    "qid": "videomme:699-2",
+    "video_id": "I2dv1jNM7gM",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "已直接检查各题 page-01 原帧拼图。699-1 开头有团队、灯光、布景与摄影机拍摄动作；699-2 同一鲨鱼持伞并遮挡美人鱼，角色与保护关系可恢复。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__699-2.json"
+  },
+  {
+    "qid": "videomme:699-3",
+    "video_id": "I2dv1jNM7gM",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The supplied source evidence does not show or describe figures being electrocuted or what happens afterward, so the reference answer cannot be verified.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__699-3.json"
+  },
+  {
+    "qid": "videomme:715-1",
+    "video_id": "9edWX7TTsLw",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00034 at 157.64 s names Tesla, S00062 at 269.52 s names Coca-Cola, S00180 at 767.68 s names Intel; all precede midpoint 1273 s. These establish both required adjacent order relations.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__715-1.json"
+  },
+  {
+    "qid": "videomme:715-2",
+    "video_id": "9edWX7TTsLw",
+    "disposition": "skipped_ambiguity",
+    "pipeline_status": "skipped_ambiguity",
+    "reason": "User requested skip of ambiguous/unsuitable items already documented in prior audit.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__715-2.json"
+  },
+  {
+    "qid": "videomme:782-2",
+    "video_id": "-xZglYQSJ3Q",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed overview title COSTUMES, designers drawing, fitting/work rooms, fabric handling and garment construction. S00106 calls it where actual work gets done, S00109 describes fitting-room work. These support backstage theatre production including costume design. Drop S00205 as support: backstage musical describes a show genre, not documentary access.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__782-2.json"
+  },
+  {
+    "qid": "videomme:782-3",
+    "video_id": "-xZglYQSJ3Q",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00151-S00152 and S00268-S00274 establish that seeing Willa Kim work inspired William to enter the profession. They do not establish that she taught or mentored him directly. The official teacher/student relationship is stronger than this evidence; the generated rubric also contains confused student-mentor wording. Skip unsupported relationship rather than equating inspiration with teaching.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__782-3.json"
+  },
+  {
+    "qid": "videomme:796-1",
+    "video_id": "_eJsOYC8SVU",
+    "disposition": "skipped_ambiguity",
+    "pipeline_status": "skipped_ambiguity",
+    "reason": "User requested skip of ambiguous/unsuitable items already documented in prior audit.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__796-1.json"
+  },
+  {
+    "qid": "videomme:796-2",
+    "video_id": "_eJsOYC8SVU",
+    "disposition": "skipped_ambiguity",
+    "pipeline_status": "skipped_ambiguity",
+    "reason": "User requested skip of ambiguous/unsuitable items already documented in prior audit.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__796-2.json"
+  },
+  {
+    "qid": "videomme:796-3",
+    "video_id": "_eJsOYC8SVU",
+    "disposition": "skipped_ambiguity",
+    "pipeline_status": "skipped_ambiguity",
+    "reason": "User requested skip of ambiguous/unsuitable items already documented in prior audit.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__796-3.json"
+  },
+  {
+    "qid": "videomme:806-1",
+    "video_id": "r1PoSdFWvQg",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed complete sheet and cited subtitles. They show intact and knocked-down can towers, but the claimed singular key to winning is a strategy inference without an explicit sufficient causal/result comparison in the evidence. The blind observer recovers task rules instead; this alone is not the rejection criterion. Skip the underspecified strategy question.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__806-1.json"
+  },
+  {
+    "qid": "videomme:806-2",
+    "video_id": "r1PoSdFWvQg",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The question and rubric are valid, and the proposed method is visually supported, but the source package lacks adequate scope to establish the necessary shortest-time contestant relation.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__806-2.json"
+  },
+  {
+    "qid": "videomme:808-1",
+    "video_id": "leG0U5wzGlA",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00003 identifies Gary and Crystal wedding; S00148-S00151 explicitly discuss their marriage. Viewed sheet shows the black suit/yellow tie speaker at V016 and V024, matching the question referent.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__808-1.json"
+  },
+  {
+    "qid": "videomme:808-2",
+    "video_id": "leG0U5wzGlA",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed same blue-shirt/yellow-trouser man receiving directions and jumping onto tables. S00513-S00514 identify staged tables that break and instruct him to break them; S00526-S00527 specify finding them; S00641 confirms task completion. This directly establishes the friends-assigned table-finding task as the reason. Exact table count is not a scoring requirement.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__808-2.json"
+  },
+  {
+    "qid": "videomme:808-3",
+    "video_id": "leG0U5wzGlA",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed sheet shows the same cap-wearing man collecting cash at the door, joining the audience, then reacting to the announcement. S00910-S00912 explicitly contrast the charge with a free show; S00951-S00956 announce the collection, state no cover and mark crowd booing. Final fact requires charging at a free performance, not the exact dollar amount.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__808-3.json"
+  },
+  {
+    "qid": "videomme:816-1",
+    "video_id": "Z2G9bTvffAw",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question asks for a global absence of distinguishing features, but the supplied evidence consists of sparse caption hints and does not provide exhaustive coverage sufficient to establish that the only obvious difference is color.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__816-1.json"
+  },
+  {
+    "qid": "videomme:816-2",
+    "video_id": "Z2G9bTvffAw",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The question is standalone and visually grounded, and the rubric captures the two ordering relations needed for the multiple-choice sequence. However, the source package only partially supports the reference: banner display is visible, while ball catching and the final tumble are not directly established.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__816-2.json"
+  },
+  {
+    "qid": "videomme:816-3",
+    "video_id": "Z2G9bTvffAw",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed both sheets. Photos and touching the lion are clear, but V047-V054 show a child in the same green troupe uniform as performers playing the drum. The package does not establish that this child is a spectator trying the drum. Required F3 actor identity remains unresolved, so all three spectator actions are not verified.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__816-3.json"
+  },
+  {
+    "qid": "videomme:821-2",
+    "video_id": "c03YTDzmsK8",
+    "disposition": "skipped_ambiguity",
+    "pipeline_status": "skipped_ambiguity",
+    "reason": "User requested skip of ambiguous/unsuitable items already documented in prior audit.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__821-2.json"
+  },
+  {
+    "qid": "videomme:821-3",
+    "video_id": "c03YTDzmsK8",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed sheet spanning introduction, rabbit construction, carrot garland, gift bucket and final display. Original S00002-S00015 introduce Easter crafts and low-cost Dollar Tree supplies, S00226 quotes price, S00755 describes cute gifts. Final minimal rubric should require simple/cute budget DIY crafts only; Easter and Dollar Tree remain supporting context, not additional mandatory facts.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__821-3.json"
+  },
+  {
+    "qid": "videomme:833-2",
+    "video_id": "lw3_W5X1t54",
+    "disposition": "skipped_ambiguity",
+    "pipeline_status": "skipped_ambiguity",
+    "reason": "User requested skip of ambiguous/unsuitable items already documented in prior audit.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__833-2.json"
+  },
+  {
+    "qid": "videomme:833-3",
+    "video_id": "lw3_W5X1t54",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00011-S00022 introduce Filipino food being ignored and misunderstood globally; S00307-S00312 return to its lack of appreciation. Viewed overview supports a Filipino-food discussion. Auditor incorrectly says V018 is a title card: it is a reaction clip with TRASH text. Drop V018 and that title claim from final fact support; original subtitle evidence independently establishes the topic.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__833-3.json"
+  },
+  {
+    "qid": "videomme:834-1",
+    "video_id": "aqFfjJrLkBA",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Cited source subtitles establish participant succession but do not state ages or the ordering rule. Auditor derives youngest-to-oldest from apparent ages in sparse frames; that does not establish strict age order or the primary determining factor. Blind observer also labels the inference likely. Skip unresolved ordering evidence.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__834-1.json"
+  },
+  {
+    "qid": "videomme:834-3",
+    "video_id": "aqFfjJrLkBA",
+    "disposition": "skipped_ambiguity",
+    "pipeline_status": "skipped_ambiguity",
+    "reason": "User requested skip of ambiguous/unsuitable items already documented in prior audit.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__834-3.json"
+  },
+  {
+    "qid": "videomme:843-1",
+    "video_id": "9aGgBzToUz4",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Inspected full-resolution V030 final tier board. All five rows are visible; Gorgeous has the longest populated row, exceeding God tier, holy ground, nothing new and should-have-said-no. No need to infer a global maximum from sparse earlier samples.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__843-1.json"
+  },
+  {
+    "qid": "videomme:843-2",
+    "video_id": "9aGgBzToUz4",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question asks for a subjective, cross-category distinction, and the source does not explicitly establish that the hat is unique to the “Nothing new” category.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__843-2.json"
+  },
+  {
+    "qid": "videomme:845-1",
+    "video_id": "1evyOuQz-jM",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed full sheet. Frames show rings, stacked bracelets, clover earrings and later hoops, but no subtitle or readable branding establishes the required engagement-ring, Tabayer and Missoma identities. V007 is a stacked-band display, and calling V046 clover earrings Tabayer is unsupported. Shape/category chronology does not verify the named-item chronology; skip unresolved identity mappings.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__845-1.json"
+  },
+  {
+    "qid": "videomme:845-3",
+    "video_id": "1evyOuQz-jM",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The supplied source evidence does not show or describe the moment when she takes off her coat, and full subtitles are unavailable. The reference answer is therefore unsupported.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__845-3.json"
+  },
+  {
+    "qid": "videomme:851-1",
+    "video_id": "Lo-ewzf-Q1k",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "851-1: S00011-S00018 explicitly link doing makeup most days to hereditary dark circles/darker eye area, including darker eyelids; final scoring must require only the dark-eye/eyelid reason, not extra heredity or product details. 851-2: S00343-S00346 explicitly say a large picture will cover the electrical stuff/unit. Both local explanations are directly stated in original subtitles.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__851-1.json"
+  },
+  {
+    "qid": "videomme:851-2",
+    "video_id": "Lo-ewzf-Q1k",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "851-1: S00011-S00018 explicitly link doing makeup most days to hereditary dark circles/darker eye area, including darker eyelids; final scoring must require only the dark-eye/eyelid reason, not extra heredity or product details. 851-2: S00343-S00346 explicitly say a large picture will cover the electrical stuff/unit. Both local explanations are directly stated in original subtitles.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__851-2.json"
+  },
+  {
+    "qid": "videomme:851-3",
+    "video_id": "Lo-ewzf-Q1k",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question incorrectly identifies the packaged item as a lamp. The source identifies it as a neon sign, so answering requires changing the referenced entity; the official answer cannot be verified as stated.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__851-3.json"
+  },
+  {
+    "qid": "videomme:872-1",
+    "video_id": "ZP-Y2S750KY",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed full overview: young sloth, baby primate feeding, ducklings, seal pup, owl chick, piglet with toy, kittens and goat kids recur across the video; original S00049 explicitly refers to baby elephants. This supports a main-topic summary of baby animal antics/interactions, without requiring every shot to contain a juvenile or a trained performance.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__872-1.json"
+  },
+  {
+    "qid": "videomme:872-2",
+    "video_id": "ZP-Y2S750KY",
+    "disposition": "skipped_ambiguity",
+    "pipeline_status": "skipped_ambiguity",
+    "reason": "User requested skip of ambiguous/unsuitable items already documented in prior audit.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__872-2.json"
+  },
+  {
+    "qid": "videomme:872-3",
+    "video_id": "ZP-Y2S750KY",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed sheet: early panda rolls on grass; later V024-V030 moves head-first down a slide. Localization expands official Rolling down to climbing and sliding or rolling, conflating distinct motions and adding an unsupported climb. With a generic what-does-panda-do question, several actions are valid. Skip ambiguous action/rubric rather than broadening the official answer.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__872-3.json"
+  },
+  {
+    "qid": "videomme:885-1",
+    "video_id": "EhLOdDfaC7Y",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The question has an ambiguous/unsupported tournament-phase premise, and the evidence package does not provide adequate same-entity and event continuity to support all required facts.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__885-1.json"
+  },
+  {
+    "qid": "videomme:885-3",
+    "video_id": "EhLOdDfaC7Y",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The question is clear and the rubric captures the minimal requested facts, but the source package only partially supports the reference answer. It shows relevant gameplay, scoreboards, and commentary about points, saves, scoring, and reruns, without an explicit complete statement of the two conditional scoring rules covering both semifinals and finals.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__885-3.json"
+  },
+  {
+    "qid": "videomme:645-1",
+    "video_id": "c08Zzc0xepI",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original opening S00001-S00007/S00029-S00031 states other universes and potential evidence, S00043-S00045 asks if parallel universes are physical reality, S00614-S00623 discusses finding experimental evidence, and S00790-S00791 returns to certainty of their existence. This establishes the theme across the video; no scientific-truth claim beyond the video content is being certified.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__645-1.json"
+  },
+  {
+    "qid": "videomme:743-3",
+    "video_id": "-QuCz7kxBr8",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question asks for a subjective comparative judgment, and the official answer is not uniquely supported: the source describes Power Hands as ineffective, but also calls the Shot Coach the worst product and rates the fingertip glove very poorly. Therefore, “Power hands” is contradicted or at least ambiguous.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__743-3.json"
+  },
+  {
+    "qid": "videomme:732-2",
+    "video_id": "xvQOEdwAgj0",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Only cited evidence is the garbled subtitle mired side. The auditor silently repairs this to mirrored and equates it with opposite, while the independent observer interprets the same phrase as same side. Without verified starting-position identities this does not establish the official different-sides relation. Skip the ambiguous transcript-based inference.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__732-2.json"
+  },
+  {
+    "qid": "videomme:619-3",
+    "video_id": "B6tQyCH5hQM",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed full sheet: brush painting of the tray, cup and other ceramic pieces is clear. However the package starts with unboxing and has no original subtitles or kiln/firing evidence, so it does not establish that this is the post-firing stage specified by the question. Painting alone leaves the required temporal referent unverified.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__619-3.json"
+  },
+  {
+    "qid": "videomme:759-1",
+    "video_id": "aKLobzbLxuY",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00362/S00365/S00366/S00369 explicitly state Liverpool wins the FA Cup at Chelsea expense via penalty shootout. Viewed V049 shows the team on the FA CUP WINNERS 2022 podium. The full outcome/topic is directly stated; no exact year or score is required for scoring.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__759-1.json"
+  },
+  {
+    "qid": "videomme:698-2",
+    "video_id": "KIg4rprmO9Y",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The official answer is contradicted and incomplete: Halo initially says she only adjusted Victor's internal technology, while the source later states the Mobius chair stabilized and saved him. Answering requires changing the reference meaning.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__698-2.json"
+  },
+  {
+    "qid": "videomme:831-3",
+    "video_id": "6Pt3-NDxzRk",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The answer fact is supported, but the standalone question contains an unsupported Wednesday premise, so the question fails admission under the evidence requirements.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__831-3.json"
+  },
+  {
+    "qid": "videomme:605-1",
+    "video_id": "xKiRmesHWIA",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00009 announces the rise to power, S00086-S00106 describes creation and development, S00186-S00191 introduces WW1 and breakup causes, S00310-S00314 concludes with the empire end. These cover both rise and fall, matching the main-topic reference; no date, causal list or power-ranking details are mandatory in the answer.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__605-1.json"
+  },
+  {
+    "qid": "videomme:866-2",
+    "video_id": "xNgVeznQmXI",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question is a broad judgment about the people of Bandung, but the supplied original subtitles are unavailable and the caption hints only document the vlogger calling one man kind, which cannot establish his general view of Bandung's people.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__866-2.json"
+  },
+  {
+    "qid": "videomme:892-3",
+    "video_id": "8UQFaVCV8S8",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed continuous selfie sequence with the camera-holder and companion entering the venue. Original French S00010-S00011 says notre petit frère qui joue (our younger brother is playing). This supports the question most-likely family-member role from direct self-description, not from presumed appearance or identity.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__892-3.json"
+  },
+  {
+    "qid": "videomme:881-1",
+    "video_id": "goyWFUzCqF4",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00064 states a tracking device is needed for runs; S00066 requests an Apple Watch; S00079 says he bought his brother Apple Watch before running. Viewed V011 pairing/device and V012 protagonist wearing it, with later race-watch shots corroborating use. Brand and user-purpose link are explicitly established.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__881-1.json"
+  },
+  {
+    "qid": "videomme:884-2",
+    "video_id": "0kRsiSdDFYg",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question is well-defined, but the supplied source evidence contradicts the official reference answer: during the first semifinal, the subtitles indicate an opening score of 1–0 and later report 4–1, not 2–1. The result requires source verification and cannot be safely annotated from the provided evidence.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__884-2.json"
+  },
+  {
+    "qid": "videomme:601-3",
+    "video_id": "TGom0uiW130",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question is option-dependent: removing the option references leaves an ill-defined negative task asking which unspecified statement is incorrect. The source also presents competing claims about Whitehead's flight, so the official answer cannot be independently treated as an unqualified source fact.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__601-3.json"
+  },
+  {
+    "qid": "videomme:621-1",
+    "video_id": "5LU_XY0z2ZY",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed title Mind over Metabolism—Choosing Brain Health and slides linking insulin resistance, brain metabolism, lifestyle and Alzheimer disease. Original S00010-S00023 states the metabolic/lifestyle framing; S00374-S00376 relates healthy lifestyle to memory decline. These establish the video theme; this is content verification, not validation of medical efficacy.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__621-1.json"
+  },
+  {
+    "qid": "videomme:712-1",
+    "video_id": "GDzuMTvHnJE",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question asks for one shared transformation across all three families, but the source presents different outcomes, including increased confidence, business activity, job seeking, financial pressure, and uncertainty rather than a clearly stated common transformation.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__712-1.json"
+  },
+  {
+    "qid": "videomme:767-1",
+    "video_id": "LqaSTy0swNE",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00214-S00217 explicitly identifies Poland and says the baton was never received; S00224 locates the final handovers. Viewed race-to-post-race sequence and Polish crest/names on the white/orange team in V019/V025, with consolation shots. This connects the failed final exchange to the team reaction.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__767-1.json"
+  },
+  {
+    "qid": "videomme:829-3",
+    "video_id": "h5Jx12SYKzk",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed V006 title Dollar Tree DIY PLANTER HACKS. Original S00004 explicitly introduces that theme; S00202-S00204, S00583-S00584, S00745-S00749 and S01001-S01004 describe successive planter DIY upgrades across the video. This supports several Dollar Tree planter/flowerpot projects; exact project count and subjective brilliant quality are not scoring requirements.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__829-3.json"
+  },
+  {
+    "qid": "videomme:888-1",
+    "video_id": "N1ZRYx46ye4",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed page-01: dumbbells in push V005, leg RDL V014/V019, pull hammer curls V026, full-body thruster/press V040/V045. Directly checked supplemental original full SRT: split S00019-S00021, push S00066 137 s, leg S00269 636 s, pull/back-biceps S00487 1260 s, full-body S00644-S00646 1687 s. These boundaries establish all four segment identities. Original model package preserved; Codex-only SRT supplement recorded separately. Answer requires dumbbells only, not an equipment inventory.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__888-1.json"
+  },
+  {
+    "qid": "videomme:849-1",
+    "video_id": "j27UP4zz_6U",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The fragrance named (a) as “OUD LEATHER” does not appear in the source; the video identifies the fragrance as “Ombre Leather.” Answering would require silently correcting the question’s entity.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__849-1.json"
+  },
+  {
+    "qid": "videomme:698-3",
+    "video_id": "KIg4rprmO9Y",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The question and minimal rubric are valid, but the reference count of six cannot be fully admitted from the available original visual/subtitle evidence.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__698-3.json"
+  },
+  {
+    "qid": "videomme:666-3",
+    "video_id": "mzvHYBgD-tI",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The standalone question is broad and asks about the defence lawyers' efforts plural, while the supplied reference answer identifies only one outcome and does not uniquely resolve the full set of efforts shown in the video.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__666-3.json"
+  },
+  {
+    "qid": "videomme:783-1",
+    "video_id": "liDQtpusSmY",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original question asks generally what the king is endeavoring to accomplish without a scene/time restriction. Source S00054-S00060 establishes driving out/avenging a murderer, while S00442/S00450 establishes discovering his origins. Both are legitimate objectives. A single identity-search rubric cannot uniquely score this unscoped question; skip ambiguity rather than reject solely for observer disagreement.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__783-1.json"
+  },
+  {
+    "qid": "videomme:723-3",
+    "video_id": "n5DXniZGkME",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed the final remote interview and interviewee title card V004. Original S00972-S00974 directly states removing repetitive work; S01002-S01013 links robots/automation to shrinking workforce, and S01023 states enough labor for needed jobs. These establish relevance to demographic aging/labor pressures. Preserve original final-part time scope in exported question; interviewee names are source context, not required answer facts.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__723-3.json"
+  },
+  {
+    "qid": "videomme:884-1",
+    "video_id": "0kRsiSdDFYg",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question's reference premise is not reliably supported: the player interviewed near the beginning is identified in the source as Rommel wearing a grey/purple Getir top, not a top bearing \"QARAR\" or \"Qatar.\" The supplied evidence also does not unambiguously establish that player's goal count in his first match.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__884-1.json"
+  },
+  {
+    "qid": "videomme:735-3",
+    "video_id": "ot4P2G1MRLw",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S01047-S01053 describes the team as a five-person unit and explicitly their confidence in teammates. Viewed the contemporaneous WBG vs LNG commentary graphic and subsequent team celebration. Mutual trust is directly attributed in the video; it is not inferred solely from player appearance or an unstated personality judgment.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__735-3.json"
+  },
+  {
+    "qid": "videomme:773-3",
+    "video_id": "BrjwEoPXyxA",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed overview: V005 bracket explicitly says MENS DOUBLES, V016 shows four-player badminton, and repeated match footage/scoreboards continue through the conclusion. S00002 explicitly introduces mens doubles. This supports the main topic; no player names, final score or tournament year are required.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__773-3.json"
+  },
+  {
+    "qid": "videomme:664-1",
+    "video_id": "x1qEBVBxE10",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Correction to prior note only: V019 shows Paternity Court branding and asks whether Joshua is the biological father of baby Sophia; it is not a DNA-results screen. Original S00380-S00386 supplies a DNA paternity result, S00431-S00432 disputes another biological father, S00643-S00645 asks a potential father about parentage. Repeated cases support establishing paternity as the main topic. Acceptance unchanged; old note preserved in review history.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__664-1.json"
+  },
+  {
+    "qid": "videomme:687-1",
+    "video_id": "yGiM3kD12cU",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The answer entity Type 44 is directly identified, but the question's central firstness/design premise is unsupported and the available scope is inadequate for an earliest-car claim.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__687-1.json"
+  },
+  {
+    "qid": "videomme:825-2",
+    "video_id": "wxff_4tDauo",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The question is understandable and the pairwise rubric is appropriately minimal, but the source package does not support the reference sequence under a literal first-introduction reading: the iPhone-labeled cardboard phone appears before the Apple Watch, and the exact “iPhone 13” identity is not established.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__825-2.json"
+  },
+  {
+    "qid": "videomme:601-1",
+    "video_id": "TGom0uiW130",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The official reference answer is not semantically adequate for the video's main topic. The video broadly investigates and disputes the Wright brothers' primacy in powered flight, comparing their claim with Gustave Whitehead's, rather than simply being about planes invented by the Wright brothers.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__601-1.json"
+  },
+  {
+    "qid": "videomme:844-2",
+    "video_id": "K7YNoRZMv2k",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The source says that without the daughter's intervention this could have been the end of Prada's story, but it does not state or support that the company would go bankrupt. The official reference answer therefore requires an unsupported semantic change.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__844-2.json"
+  },
+  {
+    "qid": "videomme:880-3",
+    "video_id": "eZ2Rt2DVGdU",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original question asks for the best title, not a factual main-topic label. Without options this permits many valid titles, including the observer Underwater Nightmares. Original S00865-S00866 describes deadly creatures across world waters; marine-animal examples support content but do not make Ocean animals the uniquely correct title. Skip subjective title scoring rather than silently convert the task.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__880-3.json"
+  },
+  {
+    "qid": "videomme:784-2",
+    "video_id": "FvZFBZB10LA",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original subtitles identify Fellowship at S00206 and his pledge at S00217-S00218/S00233-S00235, then refusal/departure at S00237-S00239/S00263-S00267 and recap S00397-S00399. Kinsmen are introduced at S00279-S00281, promise live-and-die-together at S00287-S00288, then make excuses/refuse at S00309/S00325 and are summarized as fleeing at S00331-S00334. Both initial promises and later abandonments are explicitly covered.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__784-2.json"
+  },
+  {
+    "qid": "videomme:863-2",
+    "video_id": "rSnQR7vGqMY",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed source sequence: mountain panorama carries HOW ECHOES WORK caption, then the left man yells AHH and points saying OH IM OVER THERE. Original S00152 explicitly says they discovered how echoes work. This directly connects the shout with playing/testing its echo; no audio waveform inference is claimed.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__863-2.json"
+  },
+  {
+    "qid": "videomme:704-2",
+    "video_id": "HTv4z899xgA",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed initial office encounter at V005/V007/V008: Jane has tears, knitted brows and a distressed/downturned expression immediately after the visitor identifies himself as Grayson in S00710. The later smiles occur after this queried moment. Sad is a supported portrayal of the initial expression, not an inference about a clinical condition or a claim that the whole later scene has one emotion.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__704-2.json"
+  },
+  {
+    "qid": "videomme:680-3",
+    "video_id": "y2kg3MOk1sY",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "The unconditioned question asks what can be done after losing files. Original S00238-S00239 supports cloud recovery, but S00315-S00316 also gives external-drive backup and Windows Backup/Time Machine. A cloud-only rubric would reject another source-supported recovery answer. Do not add a cloud-only premise from the answer; skip ambiguity.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__680-3.json"
+  },
+  {
+    "qid": "videomme:856-1",
+    "video_id": "3HEYqZgC4ko",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The required answer fact is directly supported, but the standalone question contains an insufficiently supported supermarket-shopping premise, so the question fails admission.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__856-1.json"
+  },
+  {
+    "qid": "videomme:677-1",
+    "video_id": "MYxL_JLseC8",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question is well-defined, but the official reference answer identifies the speaker as a professor, which is unsupported by the source. The video is a Yale webinar/presentation led by Pat Polingo and Steve Scheinkopf, so accepting the reference would require a semantic correction.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__677-1.json"
+  },
+  {
+    "qid": "videomme:750-2",
+    "video_id": "sxrx7oCrb3A",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The source indicates that Moneyball is the third game in Guess Wiggins but the second game in Guess Nash, contradicting the official reference answer 'Third game.'",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__750-2.json"
+  },
+  {
+    "qid": "videomme:855-3",
+    "video_id": "vzfTpidE5wg",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed Amazon unboxing and bottles V015/V022/V027. Original S00618-S00621 explicitly identifies Amazon shot bottles for ginger shots; S00649-S00653 describes storing them for daily shots. Restore original purpose-only question and keep only F2 storing ginger drink; remove added contents-identification question and size/material/lid requirements. Original stronger model rubric was source supported, but exceeded the requested answer.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__855-3.json"
+  },
+  {
+    "qid": "videomme:749-3",
+    "video_id": "EeTmrsVW8qE",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question is not a well-defined standalone task: without the answer options, it does not identify what is being presented successively or which events should be ordered.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__749-3.json"
+  },
+  {
+    "qid": "videomme:791-3",
+    "video_id": "9tBsMSDoDqk",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed both sheets and five-act subtitle introductions: Kevin Li, Brynn Cummings magic/ventriloquism, Mandy Muden, Ryland, Magic Mike Jacobson. Original S00224/S00362-S00363/S00612 directly express surprise or amazement, with visible judge reactions. V056 is judges, not Magic Mike; remove it from F1 support and rely on his explicit S00512-S00513 introduction. For this main-content question, do not require exact count five as an extra scoring fact; preserve it in the reference/context.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__791-3.json"
+  },
+  {
+    "qid": "videomme:702-3",
+    "video_id": "p84O3JAp_IM",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed window confrontation V006-V009 and the distinctive triangle-patterned woman V019/V023. S00381-S00383 links her ex-boyfriend to a report of the same boy throwing rocks through a window; S00390-S00391 explicitly says he cheated and she broke up with him. The two referents and cross-scene relationship are recoverable. Observer confuses the man with Wayne father; that answer is not the admission criterion. Restore original scene qualifiers in export.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__702-3.json"
+  },
+  {
+    "qid": "videomme:793-3",
+    "video_id": "hIJtZN8w03A",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Checked the full 1108-row original transcript: eleven distinct titled recap/explanation sections begin at 17.439, 222.599, 493.4, 818.8, 980.839, 1155.32, 1378.96, 1575.44, 1794.32, 1996.76 and 2135.04 s, ending in the closing thanks. The two Sacred Riana headings describe different routines: golden-box/demons versus miniature-house/doll. Count unit is top-level revealed performance segment, not each sub-effect; this provides complete count coverage rather than sparse visual counting.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__793-3.json"
+  },
+  {
+    "qid": "videomme:795-2",
+    "video_id": "D97vMwfWxvI",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed sheet. The nominated d endpoint at V018-V030 is a nested-cup/liquid-transfer demonstration: cup cutting, pouring liquid and raising an inner cup. It does not show coins passing through a cup bottom. Thus only c/a/b are identifiable; cup-category timing cannot establish the required named trick d or its two order relations. Skip incomplete event identity despite correct-looking answer order.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__795-2.json"
+  },
+  {
+    "qid": "videomme:644-1",
+    "video_id": "EVBCLAaflaw",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00566 asks what introductory message humans can compose; S00588-S00596 discusses making it understandable to aliens; S00616 addresses transmission; S00622/S00628 discuss sending information and existing sent messages. This directly supports the requested topic of creating and sending understandable alien messages.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__644-1.json"
+  },
+  {
+    "qid": "videomme:689-1",
+    "video_id": "KTjeh5QPL0o",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed overview of SpaceX Starship/Starlink and later competitors. Original S00439-S00444 presents Starship as central to SpaceX ambitions; S00562-S00564 describes Starlink revenue strategy; S00760-S00762 frames competitors following SpaceX. These support the conditional space-race strategy topic. V012/V033 do not display the holy-grail title claimed by the auditor; remove that visual-text claim and retain the explicit spoken evidence.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__689-1.json"
+  },
+  {
+    "qid": "videomme:818-3",
+    "video_id": "Fqptx5fNXR4",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The question is a valid standalone main-content question and the rubric is appropriately scoped to a representative topic. The evidence clearly supports a circus-performer experience at Circus Vargas, but only multiple days—not exactly three—are established, so the reference answer is unresolved rather than fully supported.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__818-3.json"
+  },
+  {
+    "qid": "videomme:823-2",
+    "video_id": "vDzNVHXc66U",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question asks for a globally absent ingredient, which requires exhaustive visual or subtitle coverage. The supplied caption hints are sparse and do not establish that any ingredient was never used; the official answer cannot be verified from the available source evidence.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__823-2.json"
+  },
+  {
+    "qid": "videomme:898-3",
+    "video_id": "K9MQATj3894",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed bullion-stitch-labelled sequence and thread coils around the needle, especially V010 at 994.8 s. Original Korean S00361 (986.06 s), 바늘에 실을 감아 줍니다, explicitly instructs wrapping thread around the needle. Stitch identity and the requested key action are both directly supported.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__898-3.json"
+  },
+  {
+    "qid": "videomme:792-1",
+    "video_id": "0bwyCF0HteE",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The question and minimal rubric are valid, but the evidence package does not support the required exact count of 10; the reference answer therefore remains unresolved rather than contradicted.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__792-1.json"
+  },
+  {
+    "qid": "videomme:663-3",
+    "video_id": "eqJPDJr_irE",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The reference topic is supported, but the question relies on an ordinal premise—'the second case'—that is not established by the supplied source scope, so the standalone question and its rubric cannot be fully admitted.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__663-3.json"
+  },
+  {
+    "qid": "videomme:868-1",
+    "video_id": "eZ5lFBPpRkM",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The question and minimal rubric are clear and locally scoped, but the reference answer's claim that the woman is his wife is not established by the sampled frames or subtitles.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__868-1.json"
+  },
+  {
+    "qid": "videomme:859-1",
+    "video_id": "u4TU2A7eVj8",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "S00284 的 I have not talked all day 必须接 S00285 on this vlog；它指今天没对 vlog 说话，并不证明工作时很少说话。参考题意扩大原话范围，跳过。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__859-1.json"
+  },
+  {
+    "qid": "videomme:853-1",
+    "video_id": "pKaPg9ZJ88Q",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Removing which-of-the-following options leaves an unbounded negative question: infinitely many topics were not discussed in the car. Full car-to-park subtitles can establish that park activities were discussed later, but cannot make that the unique absent topic. The standalone rubric is therefore invalid even if its selected absence claim is true.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__853-1.json"
+  },
+  {
+    "qid": "videomme:625-3",
+    "video_id": "iCQmfRMwHfA",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00165-S00170 explicitly introduces the speaker nutritional model of inflammation and enumerates sugar (particularly fructose), refined carbohydrate, and polyunsaturated oils together. All three requested components are directly stated. Final scoring accepts the official category names; fructose/refined qualifiers remain recorded source context. This verifies the speaker model description, not medical causality.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__625-3.json"
+  },
+  {
+    "qid": "videomme:663-2",
+    "video_id": "eqJPDJr_irE",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The reference answer is contradicted by the source: the woman claims Mr. Manser is Dylan's father and presents evidence to support paternity, rather than knowingly imprisoning a man she knows is not the father. Her role in causing the arrest is also not explicitly established.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__663-2.json"
+  },
+  {
+    "qid": "videomme:837-1",
+    "video_id": "4VniCsSusJs",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question asks for a shared subjective favorite, which is not uniquely resolvable: the speakers explicitly call Cheetos with chocolate pudding a favorite at 312–317 seconds and cheese-covered Oreos their favorite at 1588–1603 seconds, while the official reference answer is spaghetti with tacos.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__837-1.json"
+  },
+  {
+    "qid": "videomme:642-3",
+    "video_id": "lAgwMGRvJrM",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Viewed V013 explicitly labeled Fritz Zwicky and Rudolph Minkowski. S00241-S00246 explains spectroscopic measurements/hydrogen-based supernova classification; S00258-S00260 attributes that system to the two scientists, resolving the Zwicky transcription error. Reference does not require sole authorship or the decade; the contribution is directly established.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__642-3.json"
+  },
+  {
+    "qid": "videomme:634-2",
+    "video_id": "0ncLRRLvdfk",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The question is underdetermined: the reference answer is a valid item outside the #6-to-#11 interval, but the source supports multiple other items that likewise were not introduced in that interval.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__634-2.json"
+  },
+  {
+    "qid": "videomme:707-2",
+    "video_id": "fuDNhWIa6KQ",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "V041 在 1361.36 秒显示 1. Jon Snow，V061 在 1800.17 秒的 Top 7 Greatest Fighters (Still Alive) 总榜显示 #1 Jon Snow；是视频排名陈述，非外部客观最强判断。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__707-2.json"
+  },
+  {
+    "qid": "videomme:825-1",
+    "video_id": "wxff_4tDauo",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question requires an exhaustive comparison of how often each device type is manufactured across the full video, but the supplied captions and subtitles do not provide complete coverage or an explicit countable inventory. Sparse shots showing smartphones cannot establish that they are the most common.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__825-1.json"
+  },
+  {
+    "qid": "videomme:740-1",
+    "video_id": "YcU9d-RPEog",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "原字幕 S00002 与 S00010 明确说 mid lane，开局 V001/V010 位于中路；题目只问开局路线，直接支持。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__740-1.json"
+  },
+  {
+    "qid": "videomme:625-2",
+    "video_id": "iCQmfRMwHfA",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "The broad opinion question has multiple directly stated components: dietary choices at S00690-S00704 and personal action at S00732-S00739. The official answer covers only the latter, while the proposed rubric adds the former and itself notes reference incompleteness. A diet-focused source-supported response would be mis-scored under the official-only rubric. Skip ambiguous scope rather than adding or selectively removing substantive opinions.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__625-2.json"
+  },
+  {
+    "qid": "videomme:641-3",
+    "video_id": "rD5oDjk3IOU",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00102-S00106 names David Grinspoon and says he specializes in the evolution of Venus; S00572-S00574 names Heidi Hammel and says she has researched Neptune for over twenty years. Both named researcher-to-planet relations are explicit at separate timestamps; scoring requires Venus/Neptune with correct binding, not titles or duration.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__641-3.json"
+  },
+  {
+    "qid": "videomme:832-3",
+    "video_id": "iWT0kl1k32M",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question is standalone, but the official reference answer is contradicted by the source: the source discusses Wisconsin fried cheese curds, not grilled cheese cubes, and says they were demoted from S to A by general consensus after Alaska smoked salmon spread was rated S—not that one person lowered the score.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__832-3.json"
+  },
+  {
+    "qid": "videomme:842-1",
+    "video_id": "CKYw_RG7i7w",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "恢复 according to the video 范围。V010 显示 Aldo 的三个儿子，V013 显示 Rodolfo 下的 Maurizio；S00046 给出两支，S00053–S00057 明确三子和独子，视频呈现的谱系为 3+1=4。不外推到现实完整家谱。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__842-1.json"
+  },
+  {
+    "qid": "videomme:869-1",
+    "video_id": "NagvWwLvRik",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The reference answer is contradicted by the source: during the man's solo canyon hike, the family is described as staying at a rented house/home base, while during another canyon excursion the family is nearby rather than in a hotel. The question also does not identify which canyon crossing is intended.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__869-1.json"
+  },
+  {
+    "qid": "videomme:774-2",
+    "video_id": "GV5CuB4zPTY",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "The question remains ill-defined after removing the answer options; it does not specify what inference or match outcome is being requested.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__774-2.json"
+  },
+  {
+    "qid": "videomme:794-2",
+    "video_id": "XDq08lk5GnQ",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "Original S00445-S00448 explicitly says the spoon is rigged with a spring at the center so it curls into a bent position. This directly establishes the mechanism behind the apparent mind-bending illusion; subsequent duplicate-spoon handling is context, not an extra answer requirement. Preserve original reference wording separately from the precise source-grounded fact.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__794-2.json"
+  },
+  {
+    "qid": "videomme:848-1",
+    "video_id": "gHXaUDx7P0Y",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "原字幕可支持扩张、冲突、反击、上市这些事件的先后，但所看 V001/V008/V009/V017/V025/V048/V054 没有给出题目指定的完整章节标题。将语义相近事件直接当成确切章节身份存在缺口，未建立四个标题与时间的对应，跳过。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__848-1.json"
+  },
+  {
+    "qid": "videomme:603-2",
+    "video_id": "7D-gxaie6UI",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "S00327–S00339 将浪漫化衰退联系到工人贫困群体，后文又将终结联系到 1882 年病原发现；问题 asked put an end 并不区分衰退与终结，官方答案和盲答对应不同合理事件，跳过歧义题。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__603-2.json"
+  },
+  {
+    "qid": "videomme:730-2",
+    "video_id": "1NH5dJ9VRvU",
+    "disposition": "skipped_evidence_not_complete",
+    "pipeline_status": "skipped_evidence_not_complete",
+    "reason": "The reference event is supported as absent from the exhaustive transcript, but the standalone question is ambiguous and non-unique: without answer choices or a defined set of events, countless events were not reported. Under the admission criteria, this ambiguity causes the question and its answer-specific rubric to fail admission.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__730-2.json"
+  },
+  {
+    "qid": "videomme:859-3",
+    "video_id": "u4TU2A7eVj8",
+    "disposition": "skipped_codex_review",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "S00566–S00569 明确为了位置隐私尽量不拍窗外，足以支持意图和理由；本题还要求全视频没有展示窗外全景。局部抽帧与 try not to 意图不足以核验全局否定，按严格完整性标准跳过。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__859-3.json"
+  },
+  {
+    "qid": "videomme:869-3",
+    "video_id": "NagvWwLvRik",
+    "disposition": "skipped_localization",
+    "pipeline_status": "skipped_localization",
+    "reason": "After removing the option references, the question is under-specified: the video contains many activities performed once, and the answer depends on comparing the option list. The source does support that the man gets together with old friends around 2175–2211 s, but it does not make that activity uniquely identifiable without the options.",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__869-3.json"
+  },
+  {
+    "qid": "videomme:889-3",
+    "video_id": "EP2rD6lr2Xk",
+    "disposition": "accepted",
+    "pipeline_status": "source_complete_candidate",
+    "reason": "S00100–S00101 明确八个月筹备；S00378/S00383 伤痛和应力反应、S00430/S00434 坚持、S00518 完赛，V035/V038/V041/V045 显示终点情绪和拥抱，S00447/S00449/S00496 支持感动和自豪。V047 没有 Eight months 字幕，已纠正引用；八个月限于赛事准备时长。",
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-evidence60/results/videomme__889-3.json"
+  }
+]
