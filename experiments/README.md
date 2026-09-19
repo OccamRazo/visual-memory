@@ -1,9 +1,13 @@
 # 实验索引
 
-当前全量 caption 多证据收集已于 2026-09-17 按用户要求暂停，确认 11 题，50 题目标未达成。四步存取方法实验尚未运行。规范见 [工作记录](../docs/work-records.md)，当前任务见 [项目状态](../docs/STATUS.md)。
+已按用户修订的事件/语义标准[复查已有caption](EXP-20260917-videomme-semantic-reassessment/README.md)：242题全部完成，214题多组，其中188题为覆盖充分且需联合的语义候选。原全量 caption 多证据收集已于 2026-09-17 按用户要求暂停，确认 11 题，50 题目标未达成。四步存取方法实验尚未运行。规范见 [工作记录](../docs/work-records.md)，当前任务见 [项目状态](../docs/STATUS.md)。
 
 | 实验 | 状态与主要结果 |
 |---|---|
+| [新增50题源核验](EXP-20260918-videomme-api-expand50/README.md) | 50题完成：20多组、14单组/冗余、16未解决；累计52多组/172组，目标达成，备用未启用 |
+| [32题API定向修复与补证](EXP-20260918-videomme-api-repair32/README.md) | 32题处理完毕：19多组、7单组/冗余、6未解决；固定50题合并后32多组、12单组/冗余 |
+| [50题API原始证据定位](EXP-20260917-videomme-api-source50/README.md) | 50题已有结果，后台已停；13多组、5单组/冗余、23技术失败、9未确定；32题原因诊断完成 |
+| [事件与语义分组复审](EXP-20260917-videomme-semantic-reassessment/README.md) | caption复查完成；825题清点，242题可复查，214题多组；188题/581组语义候选，不恢复旧队列 |
 | [Video-MME 多证据富集](EXP-20260917-videomme-multievidence50/README.md) | 已暂停；全视频 caption + qwen3.8-flash；11 题确认、36 个必要组 |
 | [60 题时间证据组](EXP-20260917-videomme-evidence-groups/README.md) | 已完成；52 题通过，其中 44 题单组、8 题多组；8 题存疑 |
 | [初版 60 题源复核](EXP-20260917-videomme-evidence60/README.md) | 当轮完成；60 题/47 视频/79 事实，使用时须结合后续时间分组判定 |

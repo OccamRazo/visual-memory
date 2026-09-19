@@ -1,0 +1,2885 @@
+{
+  "created_at": "2026-09-17T23:26:08.440349+08:00",
+  "progress_snapshot": {
+    "updated_at": "2026-09-17T23:21:56.513041+08:00",
+    "pid": 371170,
+    "state": "paused",
+    "selected": 50,
+    "terminal_results": 50,
+    "remaining": 0,
+    "status_counts": {
+      "technical_failed": 23,
+      "source_supported_multi": 13,
+      "source_unresolved": 9,
+      "source_supported_single_or_redundant": 5
+    },
+    "active": {},
+    "implementation": "a360fd3a41c7acf6e166ae61d5b604810f7aec7326b4d112bc01e6ad1da9b413",
+    "api_attempts": 157,
+    "api_failed_attempts": 64,
+    "usage": {
+      "prompt_tokens": 3611687,
+      "completion_tokens": 120515,
+      "total_tokens": 3732202
+    },
+    "calls_without_returned_usage": 1,
+    "human_reviewed": false
+  },
+  "reviewed_failed_questions": 23,
+  "scope": "Read-only replay of terminal technical failures as encountered; background worker unchanged. No images viewed or new API calls. Counterfactual membership correction is not a production result or source pass.",
+  "records": [
+    {
+      "qid": "videomme:663-3",
+      "result_sha256": "4b34fd2f7bf4e5a118cb8e0eb43b26236b0cde5f4b3a49b2c4a79cfb13c49abd",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__663-3.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__663-3/locate/e4be89310e690c17e3663815/attempt-01.json",
+          "call_sha256": "9cb0917e5ab5876a5c491361ecee2bbd1b536093ff9b19d23312ce08c521fcdb",
+          "original_error": "",
+          "original_error_type": "AssertionError",
+          "replay": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']"
+        },
+        {
+          "stage": "refine",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__663-3/refine/6e8b0257ef6c07d55fdf696b/attempt-01.json",
+          "call_sha256": "cad20f00e7120eb033d4d19623a85488fa71b5269878de7cb68a180b44a0e4d2",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "bad frame citation"
+        },
+        {
+          "stage": "refine",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__663-3/refine/6e8b0257ef6c07d55fdf696b/attempt-02.json",
+          "call_sha256": "8e00082929dca750a9b94aeaddeb53434ccea86fbcc516a0b54eeef7850ee080",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "bad frame citation"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:694-2",
+      "result_sha256": "97069bc34727492a5689ee88647dd71733447bb0d4b507bf912c2d77fb252e4d",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__694-2.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "refine",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__694-2/refine/f194903fcac671ad185fe468/attempt-01.json",
+          "call_sha256": "7aec28503d6f8aea73ea1f53ad62b2267e2d9cfd9dfe522896761e66d86735d1",
+          "original_error": "",
+          "original_error_type": "AssertionError",
+          "replay": "line 143: e['frame_ids'] and e['subtitle_ids']",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "line 143: e['frame_ids'] and e['subtitle_ids']"
+        },
+        {
+          "stage": "refine",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__694-2/refine/f194903fcac671ad185fe468/attempt-02.json",
+          "call_sha256": "4b3ef5c160dd431e25cdf7c7269e11e1c1d7f342f0273b33e74b6bd19ef4e513",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "bad frame citation"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:698-3",
+      "result_sha256": "56f4e7e6aac2720b95c7e4f14c937a8d3eb63f13fdd028ef3ea3f1a3958b2274",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__698-3.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__698-3/locate/ac9f0e815cd36ca06e8590ca/attempt-01.json",
+          "call_sha256": "0350eceb759751252ac014cd7d65dab110da9e3e5caf43dbd2de9cf3ea15b829",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0024",
+              "time_s": 2527.0245,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0025",
+              "time_s": 2529.0265,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0026",
+              "time_s": 2531.0285,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0027",
+              "time_s": 2532.897033,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0028",
+              "time_s": 2533.0305,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0030",
+              "time_s": 2537.001133,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0031",
+              "time_s": 2539.003133,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0032",
+              "time_s": 2541.005133,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0033",
+              "time_s": 2542.907033,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0034",
+              "time_s": 2543.007133,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0036",
+              "time_s": 2547.011133,
+              "old": [
+                "G06"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G05",
+                "G06"
+              ]
+            },
+            {
+              "frame_id": "C0037",
+              "time_s": 2549.013133,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G05",
+                "G06"
+              ]
+            },
+            {
+              "frame_id": "C0038",
+              "time_s": 2551.015133,
+              "old": [
+                "G06"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G05",
+                "G06"
+              ]
+            },
+            {
+              "frame_id": "C0039",
+              "time_s": 2552.883667,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G05",
+                "G06"
+              ]
+            },
+            {
+              "frame_id": "C0040",
+              "time_s": 2553.017133,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G05",
+                "G06"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "pass"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__698-3/locate/ac9f0e815cd36ca06e8590ca/attempt-02.json",
+          "call_sha256": "a0e5bbfd429b172cf1df3b0bdf5a50ba50e155743533eff215540d0261ac7a2c",
+          "original_error": "outside review windows",
+          "original_error_type": "AssertionError",
+          "replay": "outside review windows",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0024",
+              "time_s": 2527.0245,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0025",
+              "time_s": 2529.0265,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0026",
+              "time_s": 2531.0285,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0027",
+              "time_s": 2532.897033,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0028",
+              "time_s": 2533.0305,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0030",
+              "time_s": 2537.001133,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0031",
+              "time_s": 2539.003133,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0032",
+              "time_s": 2541.005133,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0033",
+              "time_s": 2542.907033,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0034",
+              "time_s": 2543.007133,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0036",
+              "time_s": 2547.011133,
+              "old": [
+                "G06"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G05",
+                "G06"
+              ]
+            },
+            {
+              "frame_id": "C0037",
+              "time_s": 2549.013133,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G05",
+                "G06"
+              ]
+            },
+            {
+              "frame_id": "C0038",
+              "time_s": 2551.015133,
+              "old": [
+                "G06"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G05",
+                "G06"
+              ]
+            },
+            {
+              "frame_id": "C0039",
+              "time_s": 2552.883667,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G05",
+                "G06"
+              ]
+            },
+            {
+              "frame_id": "C0040",
+              "time_s": 2553.017133,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G05",
+                "G06"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "outside review windows"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:702-1",
+      "result_sha256": "f157258e8763d5bb47ec6089157f16027cde751c26f55faf8d1cdb9389a07af4",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__702-1.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "refine",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__702-1/refine/4a3235b74edaf1a7a3ebeb7c/attempt-01.json",
+          "call_sha256": "e8769fb6b4b9027f0df7bf7f93aff600651df93add49d3d808a3f81937677184",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "bad frame citation"
+        },
+        {
+          "stage": "refine",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__702-1/refine/4a3235b74edaf1a7a3ebeb7c/attempt-02.json",
+          "call_sha256": "468dc33513a023b70438d6b701fbcc0440b7b14b8c93d513da93db9c16829edd",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "bad frame citation"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:712-3",
+      "result_sha256": "c019b6355aaeb8db88ee70100dc1eb87ebd0794b5c398f900f50e2d23025500b",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__712-3.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__712-3/locate/d4ee8686289a057a2bc00119/attempt-01.json",
+          "call_sha256": "3e5e4a732d66273f8f1f2eddc63b408e07892caf7b65a55f45265c7a44081c82",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0024",
+              "time_s": 2407.0,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0025",
+              "time_s": 2409.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0026",
+              "time_s": 2411.0,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0027",
+              "time_s": 2412.88,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0028",
+              "time_s": 2413.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "pass"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__712-3/locate/d4ee8686289a057a2bc00119/attempt-02.json",
+          "call_sha256": "57a4e75978c2f38fb620bca8136d7e1622bed81e8515ab300387bbaa7a2483e5",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0024",
+              "time_s": 2407.0,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0025",
+              "time_s": 2409.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0026",
+              "time_s": 2411.0,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0027",
+              "time_s": 2412.88,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0028",
+              "time_s": 2413.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "pass"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:723-3",
+      "result_sha256": "f986780475c228f9bec33290e12074f1b9a9d8e0a12c25e1b774a93edb861460",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__723-3.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__723-3/locate/262d9ff172d5f0d1bdaf7eb7/attempt-01.json",
+          "call_sha256": "18eb205cecae4abec8c59739e7bcd7ea3242752e61f325f42fa70f760acf280c",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0003",
+              "time_s": 2487.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0004",
+              "time_s": 2489.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0005",
+              "time_s": 2491.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0006",
+              "time_s": 2492.88,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0007",
+              "time_s": 2493.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "bad frame citation"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__723-3/locate/262d9ff172d5f0d1bdaf7eb7/attempt-02.json",
+          "call_sha256": "4551958c903571a00cb639a7dc680bfc07ae540bf9be5aca5ba84f04a3343011",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0003",
+              "time_s": 2487.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0004",
+              "time_s": 2489.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0005",
+              "time_s": 2491.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0006",
+              "time_s": 2492.88,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0007",
+              "time_s": 2493.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "pass"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:751-3",
+      "result_sha256": "5ae4c98f0772f7f654ee5cf9f662234a10c551b71aaefffe3e35544c2966c9a0",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__751-3.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__751-3/locate/701318902c67ff3f536ba967/attempt-01.json",
+          "call_sha256": "8801d80dc76e1f0de0b6dcf28e60178f52db82ec89c397ee591734b70d566e9a",
+          "original_error": "outside review windows",
+          "original_error_type": "AssertionError",
+          "replay": "outside review windows",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "outside review windows"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__751-3/locate/701318902c67ff3f536ba967/attempt-02.json",
+          "call_sha256": "9dbe6f783ce00f586c3d6e55b420d641d28969770b4c16afef4918c033a09fd9",
+          "original_error": "outside review windows",
+          "original_error_type": "AssertionError",
+          "replay": "outside review windows",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "outside review windows"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:757-3",
+      "result_sha256": "9b08e1d7cb79f52fd821031b16c8a003de08429cc655af3d75a5214485777d00",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__757-3.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__757-3/locate/8c9c9e1f59596a653e825851/attempt-01.json",
+          "call_sha256": "9577609eea0565120d9b5c00f385c91530b57cdc775f11a02b5f2d95877e98dc",
+          "original_error": "",
+          "original_error_type": "AssertionError",
+          "replay": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']"
+        },
+        {
+          "stage": "refine",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__757-3/refine/a938155e2df88db1a805570b/attempt-01.json",
+          "call_sha256": "0c4d6560516f0d9f634c265042d988091d7959ea8786dd3be8efc15045b59c4c",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "bad frame citation"
+        },
+        {
+          "stage": "audit",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__757-3/audit/d25cea9d33b2dd66733cf3c0/attempt-01.json",
+          "call_sha256": "ccdb6ce4730b0e4193b12bd39c3df1cbf4677065b0f578abb768b8ca636ed4dd",
+          "original_error": "audit subtitle outside fact interval",
+          "original_error_type": "AssertionError",
+          "replay": "audit subtitle outside fact interval",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "audit subtitle outside fact interval"
+        },
+        {
+          "stage": "audit",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__757-3/audit/d25cea9d33b2dd66733cf3c0/attempt-02.json",
+          "call_sha256": "c68c1029c843908fa367825a4746610daabf9f4ab4554ea6f69ddcea428f4a4c",
+          "original_error": "audit subtitle outside fact interval",
+          "original_error_type": "AssertionError",
+          "replay": "audit subtitle outside fact interval",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "audit subtitle outside fact interval"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:759-3",
+      "result_sha256": "cf3e7b90584e0236b067d411113000ee68535cc7b4c5361bf8abeed961ed43f1",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__759-3.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__759-3/locate/56697524e965c838f4d98f9c/attempt-01.json",
+          "call_sha256": "4664ec46ec63f75f99405663db322e5f6129d49dc7c2079ba13d86a72dd929b5",
+          "original_error": "outside review windows",
+          "original_error_type": "AssertionError",
+          "replay": "outside review windows",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "outside review windows"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__759-3/locate/56697524e965c838f4d98f9c/attempt-02.json",
+          "call_sha256": "a75f2827e69055f0f53166e7983d8243334a8cd2e1705c365881afeb4ffeefcc",
+          "original_error": "",
+          "original_error_type": "AssertionError",
+          "replay": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:765-2",
+      "result_sha256": "44f224bd905d29efd24d5209321df72486e0148aa04816d642c065d30c2681cf",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__765-2.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__765-2/locate/ff90f1ca758329c9eb517425/attempt-01.json",
+          "call_sha256": "af72a946a031b417beb725c92718cfeb85d75aa8ad92a9989764ea3e3d2b3ad7",
+          "original_error": "",
+          "original_error_type": "AssertionError",
+          "replay": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0007",
+              "time_s": 1102.88,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0021",
+              "time_s": 1842.88,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__765-2/locate/ff90f1ca758329c9eb517425/attempt-02.json",
+          "call_sha256": "b40765c854791dc7b5cbb1085255350cb055c8f7e711e3d25ce0f76c97fd0906",
+          "original_error": "",
+          "original_error_type": "AssertionError",
+          "replay": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0007",
+              "time_s": 1102.88,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0021",
+              "time_s": 1842.88,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:771-2",
+      "result_sha256": "21dc3c67154ab048884f1126f7c272be6e817662893226298bd397bab115372e",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__771-2.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__771-2/locate/98510284df4ada34b85574d9/attempt-01.json",
+          "call_sha256": "8afd6cafdede7d00d070dc2f3a4223ce7d084140a27749f24996a4756cbd60a3",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0004",
+              "time_s": 1402.9,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0029",
+              "time_s": 1497.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0030",
+              "time_s": 1499.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0031",
+              "time_s": 1501.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0032",
+              "time_s": 1503.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0033",
+              "time_s": 1505.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0034",
+              "time_s": 1507.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0035",
+              "time_s": 1509.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0036",
+              "time_s": 1511.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0037",
+              "time_s": 1512.9,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0038",
+              "time_s": 1513.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0050",
+              "time_s": 1557.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0051",
+              "time_s": 1559.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0052",
+              "time_s": 1561.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0053",
+              "time_s": 1562.9,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0054",
+              "time_s": 1563.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "bad frame citation"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__771-2/locate/98510284df4ada34b85574d9/attempt-02.json",
+          "call_sha256": "a8ba018bfbe8a19961a06268bcf093a275628a2076fa337e70a420c9673cec6b",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0004",
+              "time_s": 1402.9,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0029",
+              "time_s": 1497.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0030",
+              "time_s": 1499.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0031",
+              "time_s": 1501.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0032",
+              "time_s": 1503.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0033",
+              "time_s": 1505.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0034",
+              "time_s": 1507.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0035",
+              "time_s": 1509.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0036",
+              "time_s": 1511.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0037",
+              "time_s": 1512.9,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0038",
+              "time_s": 1513.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0050",
+              "time_s": 1557.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0051",
+              "time_s": 1559.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0052",
+              "time_s": 1561.0,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0053",
+              "time_s": 1562.9,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0054",
+              "time_s": 1563.0,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "bad frame citation"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:783-2",
+      "result_sha256": "5ae95baf7a9b1c08182a49ea8c1f3745421ac9cf33978cf07e020e0661815270",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__783-2.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__783-2/locate/e00507866ea342cb7b093bde/attempt-01.json",
+          "call_sha256": "fb4bd1c9f573c3a0ec5dad8352d54431f2f08d05cd9cd40dfa31920fe4c13b49",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "bad frame citation"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__783-2/locate/e00507866ea342cb7b093bde/attempt-02.json",
+          "call_sha256": "d7951a2483c8f059e3adfc0c341e2b6cbc8f3d97be36164b714e55208a4e87f0",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "bad frame citation"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:821-1",
+      "result_sha256": "d2bc3025624dc1fd42f4ed25bf3c27fe5196cb109b62ecbf64ccb1e715efdfd4",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__821-1.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__821-1/locate/3f10fc36a0abac4c118b165b/attempt-01.json",
+          "call_sha256": "0dfffcb7e105774d03c497ca16a447acd3aeda35989c1dcd37cc2b67987aed9f",
+          "original_error": "",
+          "original_error_type": "AssertionError",
+          "replay": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__821-1/locate/3f10fc36a0abac4c118b165b/attempt-02.json",
+          "call_sha256": "cf72aced6313cf7322868822696ab598c9a33abaa13c00e747b53a69cdc41f73",
+          "original_error": "",
+          "original_error_type": "AssertionError",
+          "replay": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:831-3",
+      "result_sha256": "7e480c8afcebf6e6c2885161139edaf41d238e6057a10b7caf696bb27c6779a4",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__831-3.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__831-3/locate/eafc0dae2f4ca5743b559cc7/attempt-01.json",
+          "call_sha256": "2d5820a159ecca2a0fd3879ebd73b52c5f16e5a4c2c839a399b723554b8a91c2",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0003",
+              "time_s": 977.009367,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0004",
+              "time_s": 979.011367,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0005",
+              "time_s": 981.013367,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0006",
+              "time_s": 983.015367,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0007",
+              "time_s": 985.017367,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0008",
+              "time_s": 987.019367,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0009",
+              "time_s": 989.021367,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0010",
+              "time_s": 991.023367,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0011",
+              "time_s": 992.8919,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0012",
+              "time_s": 993.025367,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "pass"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__831-3/locate/eafc0dae2f4ca5743b559cc7/attempt-02.json",
+          "call_sha256": "557c6055a09b37e9130f394dae79560b3e889cb7fc4e6b0fc4b1d6f779169cf9",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0003",
+              "time_s": 977.009367,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0004",
+              "time_s": 979.011367,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0005",
+              "time_s": 981.013367,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0006",
+              "time_s": 983.015367,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0007",
+              "time_s": 985.017367,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0008",
+              "time_s": 987.019367,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0009",
+              "time_s": 989.021367,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0010",
+              "time_s": 991.023367,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0011",
+              "time_s": 992.8919,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0012",
+              "time_s": 993.025367,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "pass"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:848-1",
+      "result_sha256": "7cac231e7397387d9b8d5220a6a4895ef0fa5c60e4f8a8be4256fe4f45b7aa80",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__848-1.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__848-1/locate/a6b015c3ef37b3caad3be3e7/attempt-01.json",
+          "call_sha256": "475643332769007f3626bed80544861c0affd8d70556e2a9a452f6e4dab5f6e0",
+          "original_error": "",
+          "original_error_type": "AssertionError",
+          "replay": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__848-1/locate/a6b015c3ef37b3caad3be3e7/attempt-02.json",
+          "call_sha256": "95f4bcf604b2124fd56a54262433eeaa4055de84c46599df76a77206abb2336b",
+          "original_error": "",
+          "original_error_type": "AssertionError",
+          "replay": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:852-1",
+      "result_sha256": "baebe048d9108c19cbdd7c8242bf959b51ad9ef5ddf61b8a1a305eaca96a16b7",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__852-1.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__852-1/locate/64b9849bf60d41c9ffd4153d/attempt-01.json",
+          "call_sha256": "e469891fc4d9b41a2b52598fb454a76f064bfa196d12c3863a0c3bfdf1648228",
+          "original_error": "outside review windows",
+          "original_error_type": "AssertionError",
+          "replay": "outside review windows",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "outside review windows"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__852-1/locate/64b9849bf60d41c9ffd4153d/attempt-02.json",
+          "call_sha256": "15772f7338c6dfa137306448c608cc9c9f3b3d3f05914f002c9676680c9593da",
+          "original_error": "outside review windows",
+          "original_error_type": "AssertionError",
+          "replay": "outside review windows",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "outside review windows"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:853-1",
+      "result_sha256": "1e883848261eecb85f12cff645f5550f2f3a6ec1d1287369c2636dde428228f8",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__853-1.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__853-1/locate/6ca58888cd70e05e2dd0540d/attempt-01.json",
+          "call_sha256": "f9d84d918094003703770bb52bd4bfbbe90fd72182a8d2bfb2aa5a73ab188bb2",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0016",
+              "time_s": 117.0169,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0017",
+              "time_s": 119.0189,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0018",
+              "time_s": 121.0209,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0019",
+              "time_s": 122.889433,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0020",
+              "time_s": 123.0229,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0036",
+              "time_s": 182.8827,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "pass"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__853-1/locate/6ca58888cd70e05e2dd0540d/attempt-02.json",
+          "call_sha256": "e468b0b96869e6563f9b37178da8d64d2f4d447270b8a1ead9a5512689cc676a",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0016",
+              "time_s": 117.0169,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0017",
+              "time_s": 119.0189,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0018",
+              "time_s": 121.0209,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0019",
+              "time_s": 122.889433,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0020",
+              "time_s": 123.0229,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0036",
+              "time_s": 182.8827,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "bad frame citation"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:864-3",
+      "result_sha256": "95562512cf5f025f028f32962bc59b803dc65a32f588d5a6dbfd81df1a4fdf71",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__864-3.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__864-3/locate/92e749b5f937bc807388e6d0/attempt-01.json",
+          "call_sha256": "489d9875d0631120b5907a8448dba1a1e4f3deb0256e3730227c9e1ca5fe0915",
+          "original_error": "outside review windows",
+          "original_error_type": "AssertionError",
+          "replay": "outside review windows",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "outside review windows"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__864-3/locate/92e749b5f937bc807388e6d0/attempt-02.json",
+          "call_sha256": "8adae526bd02e5ef25a89dbfda8e14fc43ce9adef1eb3939d690d69abd0f743b",
+          "original_error": "outside review windows",
+          "original_error_type": "AssertionError",
+          "replay": "outside review windows",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "outside review windows"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:868-1",
+      "result_sha256": "85eca89cbe23c6950686ca14db396b2252b42231106e7e7bf4e31027ba4fa095",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__868-1.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "refine",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__868-1/refine/1c5e1abf6a74753b9b04c3f8/attempt-01.json",
+          "call_sha256": "d126ea8d59328470fc3469919c90edc47888bf170c353caff726e57b6cde4911",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "R0002",
+              "time_s": 169.903067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0003",
+              "time_s": 170.003167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0004",
+              "time_s": 170.904067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0005",
+              "time_s": 171.004167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0006",
+              "time_s": 171.905067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0007",
+              "time_s": 172.005167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0008",
+              "time_s": 172.906067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0009",
+              "time_s": 173.006167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0010",
+              "time_s": 173.907067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0011",
+              "time_s": 174.007167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0012",
+              "time_s": 174.908067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0013",
+              "time_s": 175.008167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0014",
+              "time_s": 175.909067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0015",
+              "time_s": 175.909067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0016",
+              "time_s": 176.009167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "pass"
+        },
+        {
+          "stage": "refine",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__868-1/refine/1c5e1abf6a74753b9b04c3f8/attempt-02.json",
+          "call_sha256": "c7e67f7c112b8fe4097145ea4dbc3f85fe712bdf70b6c2bf299089144c6e3773",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "R0002",
+              "time_s": 169.903067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0003",
+              "time_s": 170.003167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0004",
+              "time_s": 170.904067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0005",
+              "time_s": 171.004167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0006",
+              "time_s": 171.905067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0007",
+              "time_s": 172.005167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0008",
+              "time_s": 172.906067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0009",
+              "time_s": 173.006167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0010",
+              "time_s": 173.907067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0011",
+              "time_s": 174.007167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0012",
+              "time_s": 174.908067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0013",
+              "time_s": 175.008167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0014",
+              "time_s": 175.909067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0015",
+              "time_s": 175.909067,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "R0016",
+              "time_s": 176.009167,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "pass"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:881-3",
+      "result_sha256": "6adc8aa81f8698b3f5f9a2588a106221b0e28e19ae4749649bd7eeca7488adf4",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__881-3.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__881-3/locate/4650481670913128244110c2/attempt-01.json",
+          "call_sha256": "d42ff5771d4c0b8522731d0d7a71ff034fce4e5f29a01ee19012a4126cb86ed4",
+          "original_error": "outside review windows",
+          "original_error_type": "AssertionError",
+          "replay": "outside review windows",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "outside review windows"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__881-3/locate/4650481670913128244110c2/attempt-02.json",
+          "call_sha256": "622a056985aeab3c2249cefc786edda07f33a70f04d390aa69ff12f47dbdcd57",
+          "original_error": "outside review windows",
+          "original_error_type": "AssertionError",
+          "replay": "outside review windows",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "outside review windows"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:886-3",
+      "result_sha256": "f4a6df18530fcf2456f71b12638cce0234b8b49aad4871bccc6c5ab6adabe367",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__886-3.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "audit",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__886-3/audit/eb724d9002d68e11c49405e1/attempt-01.json",
+          "call_sha256": "d5fc9b3f66b0041a5448b1762a828cd94f367faf9428485f5a9b80470f0e4d4d",
+          "original_error": "audit citation outside fact interval",
+          "original_error_type": "AssertionError",
+          "replay": "audit citation outside fact interval",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "audit citation outside fact interval"
+        },
+        {
+          "stage": "audit",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__886-3/audit/eb724d9002d68e11c49405e1/attempt-02.json",
+          "call_sha256": "9cbb5ef3c12b0f796a128fe2b80f02e0afbca3ed3d52ee02c04b2b0b0bc56897",
+          "original_error": "audit citation outside fact interval",
+          "original_error_type": "AssertionError",
+          "replay": "audit citation outside fact interval",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "audit citation outside fact interval"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:888-1",
+      "result_sha256": "78407ab2d4bbf6a7db437263f5807620cd0361c1ca4ce9ef9ae4bc0cc8b01727",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__888-1.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__888-1/locate/a4be819e45e7142cb6a761fe/attempt-01.json",
+          "call_sha256": "ad1ed75a859deba8b773033728189424d4e8a3cb4ab27940bd9a72acbc33c346",
+          "original_error": "",
+          "original_error_type": "AssertionError",
+          "replay": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "line 135: 0 <= a < b <= p['duration_s'] + 0.1 and b - a <= self.cfg['source']['max_evidence_interval_s']"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__888-1/locate/a4be819e45e7142cb6a761fe/attempt-02.json",
+          "call_sha256": "87bfe5bfd76ac1a743f332bfbe3a15d39fa45b6cbb4198480ee9dfdc8f5d2960",
+          "original_error": "outside review windows",
+          "original_error_type": "AssertionError",
+          "replay": "outside review windows",
+          "frame_membership_defects": [],
+          "replay_after_membership_only_correction": "outside review windows"
+        }
+      ]
+    },
+    {
+      "qid": "videomme:890-3",
+      "result_sha256": "3067cc700ace70fef32e978cf258f85b954ff2eb274cff112532f74c42d2a5d1",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__890-3.json",
+      "attempt_diagnostics": [
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__890-3/locate/980fc109fa8642a096518118/attempt-01.json",
+          "call_sha256": "bdecefb20c23262b9362d6ebd1595a8652c0ccee3a8f24ce32e649f7722369a8",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0007",
+              "time_s": 1832.914417,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0009",
+              "time_s": 1837.001833,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0010",
+              "time_s": 1839.003833,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0011",
+              "time_s": 1841.005833,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0012",
+              "time_s": 1843.007833,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0013",
+              "time_s": 1845.009833,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0014",
+              "time_s": 1847.011833,
+              "old": [
+                "G02",
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0015",
+              "time_s": 1849.013833,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0016",
+              "time_s": 1851.015833,
+              "old": [
+                "G02",
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0017",
+              "time_s": 1852.892708,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0018",
+              "time_s": 1853.017833,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0019",
+              "time_s": 1855.019833,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0020",
+              "time_s": 1857.021833,
+              "old": [
+                "G03",
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0021",
+              "time_s": 1859.023833,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0022",
+              "time_s": 1861.025833,
+              "old": [
+                "G03",
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0023",
+              "time_s": 1862.902708,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0024",
+              "time_s": 1863.027833,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0025",
+              "time_s": 1865.029833,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0026",
+              "time_s": 1867.031833,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0027",
+              "time_s": 1869.033833,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0028",
+              "time_s": 1871.035833,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0029",
+              "time_s": 1872.912708,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0030",
+              "time_s": 1873.037833,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0033",
+              "time_s": 1882.881,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G05",
+                "G06"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "outside review windows"
+        },
+        {
+          "stage": "locate",
+          "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__890-3/locate/980fc109fa8642a096518118/attempt-02.json",
+          "call_sha256": "5e3d779638563485ed7d0041b87d104c610a047d2e33835bae19831088147bd9",
+          "original_error": "bad frame citation",
+          "original_error_type": "AssertionError",
+          "replay": "bad frame citation",
+          "frame_membership_defects": [
+            {
+              "frame_id": "C0007",
+              "time_s": 1832.914417,
+              "old": [
+                "G01"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G01",
+                "G02"
+              ]
+            },
+            {
+              "frame_id": "C0009",
+              "time_s": 1837.001833,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0010",
+              "time_s": 1839.003833,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0011",
+              "time_s": 1841.005833,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0012",
+              "time_s": 1843.007833,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0013",
+              "time_s": 1845.009833,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03"
+              ]
+            },
+            {
+              "frame_id": "C0014",
+              "time_s": 1847.011833,
+              "old": [
+                "G02",
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0015",
+              "time_s": 1849.013833,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0016",
+              "time_s": 1851.015833,
+              "old": [
+                "G02",
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0017",
+              "time_s": 1852.892708,
+              "old": [
+                "G02"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0018",
+              "time_s": 1853.017833,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G02",
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0019",
+              "time_s": 1855.019833,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04"
+              ]
+            },
+            {
+              "frame_id": "C0020",
+              "time_s": 1857.021833,
+              "old": [
+                "G03",
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0021",
+              "time_s": 1859.023833,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0022",
+              "time_s": 1861.025833,
+              "old": [
+                "G03",
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0023",
+              "time_s": 1862.902708,
+              "old": [
+                "G03"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0024",
+              "time_s": 1863.027833,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G03",
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0025",
+              "time_s": 1865.029833,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0026",
+              "time_s": 1867.031833,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0027",
+              "time_s": 1869.033833,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0028",
+              "time_s": 1871.035833,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0029",
+              "time_s": 1872.912708,
+              "old": [
+                "G04"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0030",
+              "time_s": 1873.037833,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G04",
+                "G05"
+              ]
+            },
+            {
+              "frame_id": "C0033",
+              "time_s": 1882.881,
+              "old": [
+                "G05"
+              ],
+              "based_on_all_overlapping_windows": [
+                "G05",
+                "G06"
+              ]
+            }
+          ],
+          "replay_after_membership_only_correction": "pass"
+        }
+      ]
+    }
+  ]
+}

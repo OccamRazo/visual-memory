@@ -1,0 +1,25 @@
+{
+  "launched_at": "2026-09-18T01:16:44.756472+08:00",
+  "session": "videomme-expand50-audit",
+  "frozen_sha256": "981ac36f92a2453d6c9f9df35830728bb9edd60669c6fdf6ed6fd47d42efa6a6",
+  "frozen_file_hashes": {
+    "code/control.py": "6810cfbba6e534106ef6418ea287d0724708489f6c2a54c5e4088acb7fcf3e67",
+    "code/engine.py": "b6441ff2325bedb44e2cd6f8e5933eb509688d99064d2e623ceed4d6c64960b9",
+    "code/audit_results.py": "51f2d2d0153417be61b98909b18764bdfb287e4130548417f23a5c5e10488076",
+    "code/test_repair.py": "940e2914e5353e79b78ec01fd56eed4aa3fc0557c01080f0cb869b212f1af0ea",
+    "code/test_expansion.py": "f336cc65acbb107108d2876519728783e4d9ed8a1410c89310e76a000beb00e2",
+    "code/repair.py": "6eadfa168925ba2b1363363823ca1a8c5139e6a82e9f4181a0cb86cdd82739db",
+    "code/expand.py": "771a07bd34fd6b865156647069abc77da29b9974394fe323f8a0345e36e4da74",
+    "code/prompts/observe.txt": "f5c71d170eef52a1b56ecc00550d24e6bcd7ef2ffadc0b35313abea0f1f79641",
+    "code/prompts/verify.txt": "f57d848a95af7c8c211651ef443485dcac24bbe303395869040562dd5aa83b08",
+    "code/prompts/plan.txt": "c4a0251782e9ea3213a2c86e3d21f906891dc3c7b36761e7478840a97a4e1dc3"
+  },
+  "command": [
+    "/home/baorui/projects/WorldMM/.venv/bin/python",
+    "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-expand50/run-001/audit_deployment/981ac36f92a2453d6c9f9df35830728bb9edd60669c6fdf6ed6fd47d42efa6a6/code/audit_results.py",
+    "--record-dir",
+    "/home/baorui/projects/visual-memory/experiments/EXP-20260918-videomme-api-expand50"
+  ],
+  "coordination": "Waits for inference runner lock, then audits completion, source hashes and cumulative target before exporting terminal_summary.json and cumulative_supported_multi.json to repository experiment record. No API calls.",
+  "log_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-expand50/run-001/final_audit.log"
+}

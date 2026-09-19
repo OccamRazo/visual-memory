@@ -1,0 +1,34 @@
+[
+  {
+    "qid": "videomme:699-1",
+    "raw_decision_sha256": "0eaaabdd664851efb494c39f7be32bee456acf930823bf34c02c11f089014cac",
+    "source_packet_sha256": "2d5925a3b8fe88da033554aebc1fbfc4f0803ae51dca1584f8dd08d2020424c3",
+    "review_kind": "codex_caption_text_correction",
+    "patch": {
+      "requires_multiple": "no",
+      "reason_zh": "片头准备、化妆布景和正式拍摄是不同语义组；但正式拍摄组的场记板、摄像机拍摄和取景框已直接支持“他们在拍摄”，不需要所有准备阶段联合。"
+    },
+    "caption_ids_inspected": [
+      "C00010",
+      "C00027"
+    ],
+    "new_visual_verification": false,
+    "human_reviewed": false
+  },
+  {
+    "qid": "videomme:682-2",
+    "raw_decision_sha256": "a5ef86de6c6a0dbd45648411a010d40c20aac78e73e7628629a54a95fdb64728",
+    "source_packet_sha256": "a6e170a03cc658a215bb09c206fa566b288e4c71855456764e16343768555121",
+    "review_kind": "codex_caption_text_correction",
+    "patch": {
+      "requires_multiple": "no",
+      "reason_zh": "不同手机型号仍是不同证据组；S8段将Bixby称为新推出并替代S Voice的助手，已可识别“S5+Bixby”配对错误，无须把其他三个正确选项也全部核验作为必要条件。"
+    },
+    "caption_ids_inspected": [
+      "C00129",
+      "C00140"
+    ],
+    "new_visual_verification": false,
+    "human_reviewed": false
+  }
+]

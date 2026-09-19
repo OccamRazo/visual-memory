@@ -1,0 +1,16 @@
+{
+  "host": "affect-ESC4000-G4",
+  "python": "3.13.12",
+  "executable": "/home/baorui/projects/WorldMM/.venv/bin/python",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "packages": {
+    "av": "17.0.0",
+    "Pillow": "12.1.1",
+    "pysrt": "1.1.2",
+    "httpx": "0.28.1",
+    "openai": "2.29.0"
+  },
+  "branch": "work/motivation-data-prep",
+  "base_commit": "cef8161facc9b4f31c7694fd6ae883b4c794b673",
+  "runtime_source": "Uncommitted; frozen deployment and implementation snapshots identify actual runtime."
+}

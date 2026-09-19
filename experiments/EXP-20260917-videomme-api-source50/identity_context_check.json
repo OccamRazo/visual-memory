@@ -1,0 +1,13 @@
+{
+  "video_id": "p_4UPdFqgIQ",
+  "subtitle_zip": "/mnt/raid5-01/baorui/Video-MME/subtitle.zip",
+  "member": "subtitle/p_4UPdFqgIQ.srt",
+  "member_sha256": "382042a09f5e70076f2247a9d3851cef9c6ea8fc49ba41182562c1069d0c1205",
+  "source_cues": [
+    "S00461",
+    "S00462",
+    "S00463"
+  ],
+  "observed_text": "Unity Biotechnology ... it was founded by ... Nathaniel David",
+  "scope": "原字幕确认该临床试验上下文的公司关联Nathaniel David，不能用模型将其归为Steve的陈述否定参考；不构成完整题目复核。"
+}

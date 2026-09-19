@@ -1,0 +1,14 @@
+{
+  "launched_at": "2026-09-18T00:44:00.032733+08:00",
+  "session": "videomme-repair32",
+  "deployment_sha256": "5f2ec86021476c3143cb19c4bbcd9f6bc4135e3c3298501f9869fcc18127956a",
+  "frozen_script": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/deployment/5f2ec86021476c3143cb19c4bbcd9f6bc4135e3c3298501f9869fcc18127956a/code/repair.py",
+  "worker_argv": [
+    "/home/baorui/projects/WorldMM/.venv/bin/python",
+    "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/deployment/5f2ec86021476c3143cb19c4bbcd9f6bc4135e3c3298501f9869fcc18127956a/code/repair.py",
+    "run"
+  ],
+  "pilot_coordination": "waits for runner.lock; skips existing terminal results",
+  "log_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/background.log",
+  "state_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/status.json"
+}

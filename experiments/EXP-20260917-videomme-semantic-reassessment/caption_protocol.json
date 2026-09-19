@@ -1,0 +1,25 @@
+{
+  "version": "2.0",
+  "created_at": "2026-09-17T19:42:04.259948+08:00",
+  "user_steering": "只复查API筛选出的caption语义，不再逐题审核原始图像，提高效率。",
+  "scope": "825 prior question IDs; recover all caption selections/time windows across archived versions; review nonempty selections only.",
+  "selection_rule": "Union explicit caption IDs and all captions overlapping API-proposed intervals or archived groups; no 40-caption cap; no new full-video search.",
+  "model": "qwen3.8-flash",
+  "api": {
+    "concurrency": 8,
+    "batch_size": 1,
+    "enable_thinking": false,
+    "max_output_tokens": 7000,
+    "timeout_seconds": 180,
+    "automatic_retries": 0,
+    "stop_after_consecutive_failures": 3
+  },
+  "grouping_rule": "事件、动作、对象状态、比较对象、语义阶段优先；连续活动不强制合并，时间相隔较远可分别成组，不设统一秒数门槛。",
+  "necessity": "根据caption语义判断是否需联合多组；不再执行图像、删组或反搜验证。",
+  "outputs": "grouping, requires_multiple, coverage, reference_consistency, cited caption IDs and timestamp envelopes; no source-confirmed promotion",
+  "boundary_precision": "caption-level timestamps, not frame-accurate event boundaries",
+  "original_experiment_remains_paused": true,
+  "supersedes": "run-001 policy-disposition review interrupted at820/825 by explicit user steering; retained, not used as caption decision input.",
+  "human_reviewed": false,
+  "new_visual_verification": false
+}

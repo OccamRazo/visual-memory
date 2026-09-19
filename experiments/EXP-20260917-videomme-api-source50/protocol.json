@@ -1,0 +1,44 @@
+{
+  "version": "1.1",
+  "model": "qwen3.8-flash",
+  "selection": {
+    "count": 50,
+    "seed": 20260917,
+    "max_selected_caption_seconds": 300,
+    "max_groups": 6,
+    "unique_video": true,
+    "strata": "round-robin 2,3,4+ groups; deterministic seeded shuffle within strata; efficiency pilot, not random population sample"
+  },
+  "source": {
+    "coarse_spacing_s": 4.0,
+    "refine_spacing_s": 1.0,
+    "context_margin_s": 3.0,
+    "refine_boundary_margin_s": 3.0,
+    "max_coarse_frames": 180,
+    "max_refine_frames": 240,
+    "max_image_side": 768,
+    "max_evidence_interval_s": 120.0
+  },
+  "api": {
+    "concurrency": 3,
+    "attempts_per_stage": 2,
+    "timeout_s": 180,
+    "max_stage_wall_s": 480,
+    "max_output_tokens": 6500,
+    "enable_thinking": false,
+    "retry_backoff_s": 8,
+    "stop_after_consecutive_failed_questions": 5
+  },
+  "stages": [
+    "blind source localization",
+    "blind denser local source refinement",
+    "independent source audit with reference"
+  ],
+  "scope": "Exactly the frozen50 existing caption candidates; no replacements or resampling based on model output.",
+  "time_annotations": "Video-MME QA provides no authoritative fact-level temporal gold used here; caption windows are proposals. Refined spans are sampled source witness intervals, not frame-perfect event boundaries.",
+  "modalities": "Original decoded video frames and synchronized original SRT; no audio stream. Claims needing audio without usable subtitles remain unresolved.",
+  "resume": "Completed stage cache is keyed by full text, frame hashes, protocol and frozen implementation; terminal question results skipped; explicit --retry-failed retries technical failures only.",
+  "old_queue_remains_paused": true,
+  "human_reviewed": false,
+  "timestamp_normalization": "Before validation, expand each model witness edge by at most10s to contain cited original subtitle cues/actual frame PTS; do not change citations; full validation and independent audit still required. Raw response and every normalization preserved."
+}

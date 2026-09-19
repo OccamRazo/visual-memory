@@ -1,0 +1,15 @@
+{
+  "launched_at": "2026-09-17T22:47:20.781522+08:00",
+  "session": "videomme-source50-v2",
+  "deployment_sha256": "e1122f50f3f67eadc9503d3456c058e3588ce8b04bd4f7d024e6b7b50594795d",
+  "frozen_script": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/deployment/e1122f50f3f67eadc9503d3456c058e3588ce8b04bd4f7d024e6b7b50594795d/code/run.py",
+  "worker_argv": [
+    "/home/baorui/projects/WorldMM/.venv/bin/python",
+    "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/deployment/e1122f50f3f67eadc9503d3456c058e3588ce8b04bd4f7d024e6b7b50594795d/code/run.py",
+    "run",
+    "--retry-failed"
+  ],
+  "pilot_coordination": "waits for runner.lock; continues automatically after pilot",
+  "log_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/background.log",
+  "state_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/status.json"
+}

@@ -1,0 +1,74 @@
+{
+  "status": {
+    "updated_at": "2026-09-18T00:59:51.992445+08:00",
+    "pid": 488532,
+    "state": "completed",
+    "selected": 32,
+    "terminal_results": 32,
+    "remaining": 0,
+    "status_counts": {
+      "source_supported_multi": 19,
+      "source_supported_single_or_redundant": 7,
+      "output_invalid": 4,
+      "reference_conflict": 1,
+      "preparation_failed": 1
+    },
+    "active": {},
+    "implementation": "91829b28364a3cbe52aaa00f6889143870eef598e8ef9703d4becb3f150bd5c5",
+    "api_attempts": 89,
+    "api_failed_attempts": 21,
+    "usage": {
+      "prompt_tokens": 3722671,
+      "completion_tokens": 66460,
+      "total_tokens": 3789131
+    },
+    "calls_without_returned_usage": 1,
+    "human_reviewed": false
+  },
+  "combined50": {
+    "updated_at": "2026-09-18T00:59:52.066050+08:00",
+    "reprocessed": 32,
+    "unchanged_historical": 18,
+    "status_counts": {
+      "source_supported_multi": 32,
+      "source_supported_single_or_redundant": 12,
+      "output_invalid": 4,
+      "reference_conflict": 1,
+      "preparation_failed": 1
+    },
+    "note": "Original18 supported results are historical carry-over, not new verification; pending repair cases retain old labels."
+  },
+  "unresolved": [
+    {
+      "qid": "videomme:610-2",
+      "status": "output_invalid",
+      "error": "unknown locator caption/subtitle ID"
+    },
+    {
+      "qid": "videomme:698-3",
+      "status": "output_invalid",
+      "error": "root must be object"
+    },
+    {
+      "qid": "videomme:816-3",
+      "status": "output_invalid",
+      "error": "unknown locator caption/subtitle ID"
+    },
+    {
+      "qid": "videomme:826-2",
+      "status": "output_invalid",
+      "error": "incomplete response"
+    },
+    {
+      "qid": "videomme:848-1",
+      "status": "reference_conflict",
+      "error": null
+    },
+    {
+      "qid": "videomme:694-2",
+      "status": "preparation_failed",
+      "error": "peer closed connection without sending complete message body (incomplete chunked read)"
+    }
+  ],
+  "checked_at": "2026-09-18T01:02:15.859040+08:00"
+}

@@ -1,0 +1,1373 @@
+[
+  {
+    "qid": "videomme:630-2",
+    "video_id": "BjmPvovl-V4",
+    "question": "What kind of experts does Kmele consult in sequence in the video?",
+    "options": {
+      "A": "Spiritual leaders, neuroscientists, entrepreneurs, physicists.",
+      "B": "Physicists, neuroscientists, entrepreneurs, neuroscientists.",
+      "C": "Neuroscientists, spiritual leaders, entrepreneurs, physicists.",
+      "D": "Entrepreneurs, spiritual leaders, physicists, neuroscientists."
+    },
+    "reference_answer": "Neuroscientists, spiritual leaders, entrepreneurs, physicists.",
+    "status": "source_supported_multi",
+    "semantic_groups": [
+      {
+        "fact_ids": [
+          "F01"
+        ],
+        "id": "E01",
+        "label_zh": "Consulting a neuroscientist",
+        "source_ids": [
+          "C0003",
+          "R0002"
+        ],
+        "sources": {
+          "C0003": {
+            "kind": "frame_point",
+            "start_s": 49.007292,
+            "end_s": 49.007292
+          },
+          "R0002": {
+            "kind": "frame_point",
+            "start_s": 49.007292,
+            "end_s": 49.007292
+          }
+        }
+      },
+      {
+        "fact_ids": [
+          "F02"
+        ],
+        "id": "E02",
+        "label_zh": "Consulting a spiritual leader",
+        "source_ids": [
+          "C0022",
+          "R0021"
+        ],
+        "sources": {
+          "C0022": {
+            "kind": "frame_point",
+            "start_s": 757.00625,
+            "end_s": 757.00625
+          },
+          "R0021": {
+            "kind": "frame_point",
+            "start_s": 757.00625,
+            "end_s": 757.00625
+          }
+        }
+      },
+      {
+        "fact_ids": [
+          "F03"
+        ],
+        "id": "E03",
+        "label_zh": "Consulting an entrepreneur",
+        "source_ids": [
+          "C0025",
+          "R0027"
+        ],
+        "sources": {
+          "C0025": {
+            "kind": "frame_point",
+            "start_s": 1147.020875,
+            "end_s": 1147.020875
+          },
+          "R0027": {
+            "kind": "frame_point",
+            "start_s": 1147.062583,
+            "end_s": 1147.062583
+          }
+        }
+      },
+      {
+        "fact_ids": [
+          "F04"
+        ],
+        "id": "E04",
+        "label_zh": "Consulting a physicist",
+        "source_ids": [
+          "C0033",
+          "R0033"
+        ],
+        "sources": {
+          "C0033": {
+            "kind": "frame_point",
+            "start_s": 1837.001833,
+            "end_s": 1837.001833
+          },
+          "R0033": {
+            "kind": "frame_point",
+            "start_s": 1837.043542,
+            "end_s": 1837.043542
+          }
+        }
+      }
+    ],
+    "fact_evidence": [
+      {
+        "fact_id": "F01",
+        "statement": "Kmele consults a neuroscientist first.",
+        "status": "supported",
+        "video_id": "BjmPvovl-V4",
+        "source_spans": [
+          {
+            "id": "C0003",
+            "kind": "frame_point",
+            "start_s": 49.007292,
+            "end_s": 49.007292,
+            "frame_sha256": "2b4a23007c59635d33e17aefdbecd34c7b56405bca60a4877f51d5d20e8e42ae",
+            "source_id": "C0003"
+          },
+          {
+            "id": "R0002",
+            "kind": "frame_point",
+            "start_s": 49.007292,
+            "end_s": 49.007292,
+            "frame_sha256": "2b4a23007c59635d33e17aefdbecd34c7b56405bca60a4877f51d5d20e8e42ae",
+            "source_id": "R0002"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      },
+      {
+        "fact_id": "F02",
+        "statement": "Kmele consults a spiritual leader second.",
+        "status": "supported",
+        "video_id": "BjmPvovl-V4",
+        "source_spans": [
+          {
+            "id": "C0022",
+            "kind": "frame_point",
+            "start_s": 757.00625,
+            "end_s": 757.00625,
+            "frame_sha256": "663a9eedb42722960f35c7015068a21e5c02f0462c6311d0700baca172b85b28",
+            "source_id": "C0022"
+          },
+          {
+            "id": "R0021",
+            "kind": "frame_point",
+            "start_s": 757.00625,
+            "end_s": 757.00625,
+            "frame_sha256": "663a9eedb42722960f35c7015068a21e5c02f0462c6311d0700baca172b85b28",
+            "source_id": "R0021"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      },
+      {
+        "fact_id": "F03",
+        "statement": "Kmele consults an entrepreneur third.",
+        "status": "supported",
+        "video_id": "BjmPvovl-V4",
+        "source_spans": [
+          {
+            "id": "C0025",
+            "kind": "frame_point",
+            "start_s": 1147.020875,
+            "end_s": 1147.020875,
+            "frame_sha256": "70bb57c02dc79547f36b6a1e5e28c0858ef37448d0305899c91efe35112ec816",
+            "source_id": "C0025"
+          },
+          {
+            "id": "R0027",
+            "kind": "frame_point",
+            "start_s": 1147.062583,
+            "end_s": 1147.062583,
+            "frame_sha256": "16e1b6b9e65735a9060517799a3a8c3ac7daf3374668c0eac7e928e6ebdd1084",
+            "source_id": "R0027"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      },
+      {
+        "fact_id": "F04",
+        "statement": "Kmele consults a physicist fourth.",
+        "status": "supported",
+        "video_id": "BjmPvovl-V4",
+        "source_spans": [
+          {
+            "id": "C0033",
+            "kind": "frame_point",
+            "start_s": 1837.001833,
+            "end_s": 1837.001833,
+            "frame_sha256": "f2fd81ce881b87eb247a0d402fcf8035d5248213cb00f05cf98f8a1f3e523981",
+            "source_id": "C0033"
+          },
+          {
+            "id": "R0033",
+            "kind": "frame_point",
+            "start_s": 1837.043542,
+            "end_s": 1837.043542,
+            "frame_sha256": "675ce5ccf16d495ccf40dfca635388a83138777f7aee70797a25d71aa04899d6",
+            "source_id": "R0033"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      }
+    ],
+    "cross_segment_relations": [
+      {
+        "fact_ids": [
+          "F01",
+          "F02",
+          "F03",
+          "F04"
+        ],
+        "statement": "The sequence of experts consulted is neuroscientist, then spiritual leader, then entrepreneur, and finally physicist.",
+        "status": "supported",
+        "type": "temporal_order"
+      }
+    ],
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-expand50/run-001/results/videomme__630-2.json"
+  },
+  {
+    "qid": "videomme:676-2",
+    "video_id": "YPzzGPXW8fs",
+    "question": "In which order are the following steps introduced in this video?\n(a) Solving the middle layer.\n(b) Matching corner pieces with the center.\n(c) Solving the yellow.\n(d) Solving the white.\n(e) Solving the cube.",
+    "options": {
+      "A": "(b)(c)(a)(d)(d).",
+      "B": "(d)(a)(c)(b)(e).",
+      "C": "(a)(c)(b)(d)(e).",
+      "D": "(b)(d)(a)(c)(e)."
+    },
+    "reference_answer": "(d)(a)(c)(b)(e).",
+    "status": "source_supported_multi",
+    "semantic_groups": [
+      {
+        "id": "E01",
+        "label_zh": "步骤一：解决白色十字",
+        "fact_ids": [
+          "F01"
+        ],
+        "source_ids": [
+          "C0003",
+          "R0005"
+        ],
+        "sources": {
+          "C0003": {
+            "kind": "frame_point",
+            "start_s": 249.040458,
+            "end_s": 249.040458
+          },
+          "R0005": {
+            "kind": "frame_point",
+            "start_s": 247.330417,
+            "end_s": 247.330417
+          }
+        }
+      },
+      {
+        "id": "E02",
+        "label_zh": "步骤三：解决中间层",
+        "fact_ids": [
+          "F02"
+        ],
+        "source_ids": [
+          "C0010",
+          "R0013"
+        ],
+        "sources": {
+          "C0010": {
+            "kind": "frame_point",
+            "start_s": 845.010833,
+            "end_s": 845.010833
+          },
+          "R0013": {
+            "kind": "frame_point",
+            "start_s": 841.966125,
+            "end_s": 841.966125
+          }
+        }
+      },
+      {
+        "id": "E03",
+        "label_zh": "步骤四：解决黄色面",
+        "fact_ids": [
+          "F03"
+        ],
+        "source_ids": [
+          "C0018",
+          "R0023"
+        ],
+        "sources": {
+          "C0018": {
+            "kind": "frame_point",
+            "start_s": 1555.011792,
+            "end_s": 1555.011792
+          },
+          "R0023": {
+            "kind": "frame_point",
+            "start_s": 1553.0515,
+            "end_s": 1553.0515
+          }
+        }
+      },
+      {
+        "id": "E04",
+        "label_zh": "步骤五：解决角块",
+        "fact_ids": [
+          "F04"
+        ],
+        "source_ids": [
+          "C0027",
+          "R0031"
+        ],
+        "sources": {
+          "C0027": {
+            "kind": "frame_point",
+            "start_s": 2049.005292,
+            "end_s": 2049.005292
+          },
+          "R0031": {
+            "kind": "frame_point",
+            "start_s": 2048.004292,
+            "end_s": 2048.004292
+          }
+        }
+      },
+      {
+        "id": "E05",
+        "label_zh": "最后一步：完成魔方",
+        "fact_ids": [
+          "F05"
+        ],
+        "source_ids": [
+          "C0035",
+          "R0041"
+        ],
+        "sources": {
+          "C0035": {
+            "kind": "frame_point",
+            "start_s": 2209.040167,
+            "end_s": 2209.040167
+          },
+          "R0041": {
+            "kind": "frame_point",
+            "start_s": 2208.080875,
+            "end_s": 2208.080875
+          }
+        }
+      }
+    ],
+    "fact_evidence": [
+      {
+        "fact_id": "F01",
+        "statement": "The step 'Solving the white' (d) is introduced first in the video.",
+        "status": "supported",
+        "video_id": "YPzzGPXW8fs",
+        "source_spans": [
+          {
+            "id": "C0003",
+            "kind": "frame_point",
+            "start_s": 249.040458,
+            "end_s": 249.040458,
+            "frame_sha256": "b09e327dd075c85d129f2a187fdf46b48cc84f235f91483eb6208cd3f0f3c63d",
+            "source_id": "C0003"
+          },
+          {
+            "id": "R0005",
+            "kind": "frame_point",
+            "start_s": 247.330417,
+            "end_s": 247.330417,
+            "frame_sha256": "b7872849d026d62e701db8e7ef94b2fbb6600c234b68b8f6233b87363484a0a1",
+            "source_id": "R0005"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      },
+      {
+        "fact_id": "F02",
+        "statement": "The step 'Solving the middle layer' (a) is introduced second among the listed steps.",
+        "status": "supported",
+        "video_id": "YPzzGPXW8fs",
+        "source_spans": [
+          {
+            "id": "C0010",
+            "kind": "frame_point",
+            "start_s": 845.010833,
+            "end_s": 845.010833,
+            "frame_sha256": "20886d73ae09572b5dd9313286c852bfad6f8e20cabc28a2a406b1c6b63c61ce",
+            "source_id": "C0010"
+          },
+          {
+            "id": "R0013",
+            "kind": "frame_point",
+            "start_s": 841.966125,
+            "end_s": 841.966125,
+            "frame_sha256": "59a86f61dde77ddf7076ec09d9b32464e075dafb4b0288cc5405798e68eb4a15",
+            "source_id": "R0013"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      },
+      {
+        "fact_id": "F03",
+        "statement": "The step 'Solving the yellow' (c) is introduced third among the listed steps.",
+        "status": "supported",
+        "video_id": "YPzzGPXW8fs",
+        "source_spans": [
+          {
+            "id": "C0018",
+            "kind": "frame_point",
+            "start_s": 1555.011792,
+            "end_s": 1555.011792,
+            "frame_sha256": "610f8d44d4f5d2a7f1199390b1d4bd761d6c14a353e550697f9152e5b93026df",
+            "source_id": "C0018"
+          },
+          {
+            "id": "R0023",
+            "kind": "frame_point",
+            "start_s": 1553.0515,
+            "end_s": 1553.0515,
+            "frame_sha256": "84f831e8ed7426ff8278eb36464785b3d12e57e153e4e4aab7e190db227b5ac8",
+            "source_id": "R0023"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      },
+      {
+        "fact_id": "F04",
+        "statement": "The step 'Matching corner pieces with the center' (b), labeled as 'Solving the Corners', is introduced fourth among the listed steps.",
+        "status": "supported",
+        "video_id": "YPzzGPXW8fs",
+        "source_spans": [
+          {
+            "id": "C0027",
+            "kind": "frame_point",
+            "start_s": 2049.005292,
+            "end_s": 2049.005292,
+            "frame_sha256": "e6dbe7e384dfb5d297a6da3b5ca40e856c0841714afd43a6d0e100d4e881db28",
+            "source_id": "C0027"
+          },
+          {
+            "id": "R0031",
+            "kind": "frame_point",
+            "start_s": 2048.004292,
+            "end_s": 2048.004292,
+            "frame_sha256": "3623dfacdff0d12be9eb2b5315eb89f7bb34aa1ec7b586630f70ba1056fc24de",
+            "source_id": "R0031"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      },
+      {
+        "fact_id": "F05",
+        "statement": "The step 'Solving the cube' (e), labeled as 'Final Step: Solve the Cube', is introduced fifth among the listed steps.",
+        "status": "supported",
+        "video_id": "YPzzGPXW8fs",
+        "source_spans": [
+          {
+            "id": "C0035",
+            "kind": "frame_point",
+            "start_s": 2209.040167,
+            "end_s": 2209.040167,
+            "frame_sha256": "8302a8896cc29cad1c8e613cf6344e61df3f581a423e64825fa4f12875c2f127",
+            "source_id": "C0035"
+          },
+          {
+            "id": "R0041",
+            "kind": "frame_point",
+            "start_s": 2208.080875,
+            "end_s": 2208.080875,
+            "frame_sha256": "0fb39032ad49b0e890ee8d0c08360a3180a9c8c98afdf07ce36662677d367cc2",
+            "source_id": "R0041"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      }
+    ],
+    "cross_segment_relations": [
+      {
+        "type": "temporal_order",
+        "statement": "The steps are introduced in the order: Solving the white (d), Solving the middle layer (a), Solving the yellow (c), Matching corner pieces with the center (b), and finally Solving the cube (e).",
+        "fact_ids": [
+          "F01",
+          "F02",
+          "F03",
+          "F04",
+          "F05"
+        ],
+        "status": "supported"
+      }
+    ],
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-expand50/run-001/results/videomme__676-2.json"
+  },
+  {
+    "qid": "videomme:883-1",
+    "video_id": "2LDriAWltwM",
+    "question": "Which move in the video was done in both the warm-up phase and the official workout phase of Monday's workout?",
+    "options": {
+      "A": "Glute drive.",
+      "B": "Barbell rdls.",
+      "C": "Single leg dumbbell rdl.",
+      "D": "Seated hamstring curl."
+    },
+    "reference_answer": "Glute drive.",
+    "status": "source_supported_multi",
+    "semantic_groups": [
+      {
+        "id": "E01",
+        "label_zh": "热身阶段的器械练习",
+        "fact_ids": [
+          "F01"
+        ],
+        "source_ids": [
+          "C0010",
+          "C0011",
+          "C0012"
+        ],
+        "sources": {
+          "C0010": {
+            "kind": "frame_point",
+            "start_s": 207.0,
+            "end_s": 207.0
+          },
+          "C0011": {
+            "kind": "frame_point",
+            "start_s": 211.0,
+            "end_s": 211.0
+          },
+          "C0012": {
+            "kind": "frame_point",
+            "start_s": 215.0,
+            "end_s": 215.0
+          }
+        }
+      },
+      {
+        "id": "E02",
+        "label_zh": "正式训练阶段的同名动作",
+        "fact_ids": [
+          "F02"
+        ],
+        "source_ids": [
+          "C0013",
+          "C0014",
+          "S00075"
+        ],
+        "sources": {
+          "C0013": {
+            "kind": "frame_point",
+            "start_s": 219.0,
+            "end_s": 219.0
+          },
+          "C0014": {
+            "kind": "frame_point",
+            "start_s": 223.0,
+            "end_s": 223.0
+          },
+          "S00075": {
+            "kind": "subtitle_span",
+            "start_s": 215.599,
+            "end_s": 220.68,
+            "text": "first exercise we have is glute Drive"
+          }
+        }
+      }
+    ],
+    "fact_evidence": [
+      {
+        "fact_id": "F01",
+        "statement": "在动态热身阶段（屏幕文字提示'dynamic warm up'），人物在带有靠背的髋推/臀桥器械上进行练习。",
+        "status": "supported",
+        "video_id": "2LDriAWltwM",
+        "source_spans": [
+          {
+            "id": "C0010",
+            "kind": "frame_point",
+            "start_s": 207.0,
+            "end_s": 207.0,
+            "frame_sha256": "b37a093daae0a942621d912d31eed16d1336efae5e0f593768dcaf5a5e280801",
+            "source_id": "C0010"
+          },
+          {
+            "id": "C0011",
+            "kind": "frame_point",
+            "start_s": 211.0,
+            "end_s": 211.0,
+            "frame_sha256": "cb8ad6c37e4a744812e52c759a68ea8f3b13cb4bf630eebf62d0714f825b5bcb",
+            "source_id": "C0011"
+          },
+          {
+            "id": "C0012",
+            "kind": "frame_point",
+            "start_s": 215.0,
+            "end_s": 215.0,
+            "frame_sha256": "4f473083eae7975cb982cc2a9aac81189cdc1cabb6c5fdbd4159b25926db169e",
+            "source_id": "C0012"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      },
+      {
+        "fact_id": "F02",
+        "statement": "在随后的正式训练阶段，人物在同一台器械上进行练习，且屏幕左下角明确标注该动作为'Glute drive'。",
+        "status": "supported",
+        "video_id": "2LDriAWltwM",
+        "source_spans": [
+          {
+            "id": "C0013",
+            "kind": "frame_point",
+            "start_s": 219.0,
+            "end_s": 219.0,
+            "frame_sha256": "b963a2f3ce4e4b87ff03d1e8b648b16578b0dc90e62624c717ca3bc2a7b4ddc6",
+            "source_id": "C0013"
+          },
+          {
+            "id": "C0014",
+            "kind": "frame_point",
+            "start_s": 223.0,
+            "end_s": 223.0,
+            "frame_sha256": "4a0636cd90c20fde183bbe8ad38c46f75ca63b74cb46d55c93415baf6396ff48",
+            "source_id": "C0014"
+          },
+          {
+            "id": "S00075",
+            "kind": "subtitle_span",
+            "start_s": 215.599,
+            "end_s": 220.68,
+            "text": "first exercise we have is glute Drive",
+            "source_id": "S00075"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      }
+    ],
+    "cross_segment_relations": [
+      {
+        "fact_ids": [
+          "F01",
+          "F02"
+        ],
+        "type": "identity",
+        "statement": "热身阶段进行的器械动作与正式训练阶段被标记为'Glute drive'的动作是同一个动作。",
+        "status": "supported"
+      }
+    ],
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-expand50/run-001/results/videomme__883-1.json"
+  },
+  {
+    "qid": "videomme:855-3",
+    "video_id": "vzfTpidE5wg",
+    "question": "What is inside the Amazon package received by the female protagonist in the video used for?",
+    "options": {
+      "A": "The package contains bottles to store the ginger juice drink she made.",
+      "B": "The package contains a new set of makeup brushes.",
+      "C": "The package contains a book on herbal remedies.",
+      "D": "None of the above."
+    },
+    "reference_answer": "The package contains bottles to store the ginger juice drink she made.",
+    "status": "source_supported_multi",
+    "semantic_groups": [
+      {
+        "id": "E01",
+        "label_zh": "开箱并展示物品",
+        "fact_ids": [
+          "F01"
+        ],
+        "source_ids": [
+          "C0000",
+          "C0013",
+          "C0018",
+          "C0019"
+        ],
+        "sources": {
+          "C0000": {
+            "kind": "frame_point",
+            "start_s": 1467.032233,
+            "end_s": 1467.032233
+          },
+          "C0013": {
+            "kind": "frame_point",
+            "start_s": 1519.0175,
+            "end_s": 1519.0175
+          },
+          "C0018": {
+            "kind": "frame_point",
+            "start_s": 1539.004133,
+            "end_s": 1539.004133
+          },
+          "C0019": {
+            "kind": "frame_point",
+            "start_s": 1543.008133,
+            "end_s": 1543.008133
+          }
+        }
+      },
+      {
+        "id": "E02",
+        "label_zh": "说明物品用途",
+        "fact_ids": [
+          "F02"
+        ],
+        "source_ids": [
+          "S00619",
+          "S00620",
+          "S00621",
+          "S00649",
+          "S00650",
+          "S00651",
+          "S00652",
+          "S00653"
+        ],
+        "sources": {
+          "S00619": {
+            "kind": "subtitle_span",
+            "start_s": 1467.159,
+            "end_s": 1470.159,
+            "text": "glass shot bottles I'll show you guys in"
+          },
+          "S00620": {
+            "kind": "subtitle_span",
+            "start_s": 1468.76,
+            "end_s": 1472.039,
+            "text": "a minute but they're for the ginger"
+          },
+          "S00621": {
+            "kind": "subtitle_span",
+            "start_s": 1470.159,
+            "end_s": 1474.0,
+            "text": "shots that I'm going to make and this"
+          },
+          "S00649": {
+            "kind": "subtitle_span",
+            "start_s": 1524.159,
+            "end_s": 1528.039,
+            "text": "I'm going to stock these in the fridge"
+          },
+          "S00650": {
+            "kind": "subtitle_span",
+            "start_s": 1525.6,
+            "end_s": 1530.559,
+            "text": "and I think there's 12 bottles so it'll"
+          },
+          "S00651": {
+            "kind": "subtitle_span",
+            "start_s": 1528.039,
+            "end_s": 1532.96,
+            "text": "last us for me and Joel a week and every"
+          },
+          "S00652": {
+            "kind": "subtitle_span",
+            "start_s": 1530.559,
+            "end_s": 1534.64,
+            "text": "single morning we can take our immunity"
+          },
+          "S00653": {
+            "kind": "subtitle_span",
+            "start_s": 1532.96,
+            "end_s": 1537.08,
+            "text": "shot and it's perfect and they're going"
+          }
+        }
+      }
+    ],
+    "fact_evidence": [
+      {
+        "fact_id": "F01",
+        "statement": "The female protagonist holds an Amazon package and later unboxes it to reveal small glass bottles with white lids.",
+        "status": "supported",
+        "video_id": "vzfTpidE5wg",
+        "source_spans": [
+          {
+            "id": "C0000",
+            "kind": "frame_point",
+            "start_s": 1467.032233,
+            "end_s": 1467.032233,
+            "frame_sha256": "52d00cf6583eff187161dd32da8d42b5d10af639c0e2f370be0e9d61545ed15f",
+            "source_id": "C0000"
+          },
+          {
+            "id": "C0013",
+            "kind": "frame_point",
+            "start_s": 1519.0175,
+            "end_s": 1519.0175,
+            "frame_sha256": "d179fca352c9e77b284607c86f7d8d5530e9bec7380e48cab6754117e37b4e59",
+            "source_id": "C0013"
+          },
+          {
+            "id": "C0018",
+            "kind": "frame_point",
+            "start_s": 1539.004133,
+            "end_s": 1539.004133,
+            "frame_sha256": "0c367edd36c9faaa8171c0a9d9533416150c9953052b428fabd3d0d97f331fe7",
+            "source_id": "C0018"
+          },
+          {
+            "id": "C0019",
+            "kind": "frame_point",
+            "start_s": 1543.008133,
+            "end_s": 1543.008133,
+            "frame_sha256": "47a4ba14ecb6e166b00a81663193aaf424e74b09b2b26f7324b7cce8cf618258",
+            "source_id": "C0019"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      },
+      {
+        "fact_id": "F02",
+        "statement": "The subtitles state that the bottles are for storing ginger shots she is going to make.",
+        "status": "supported",
+        "video_id": "vzfTpidE5wg",
+        "source_spans": [
+          {
+            "id": "S00619",
+            "kind": "subtitle_span",
+            "start_s": 1467.159,
+            "end_s": 1470.159,
+            "text": "glass shot bottles I'll show you guys in",
+            "source_id": "S00619"
+          },
+          {
+            "id": "S00620",
+            "kind": "subtitle_span",
+            "start_s": 1468.76,
+            "end_s": 1472.039,
+            "text": "a minute but they're for the ginger",
+            "source_id": "S00620"
+          },
+          {
+            "id": "S00621",
+            "kind": "subtitle_span",
+            "start_s": 1470.159,
+            "end_s": 1474.0,
+            "text": "shots that I'm going to make and this",
+            "source_id": "S00621"
+          },
+          {
+            "id": "S00649",
+            "kind": "subtitle_span",
+            "start_s": 1524.159,
+            "end_s": 1528.039,
+            "text": "I'm going to stock these in the fridge",
+            "source_id": "S00649"
+          },
+          {
+            "id": "S00650",
+            "kind": "subtitle_span",
+            "start_s": 1525.6,
+            "end_s": 1530.559,
+            "text": "and I think there's 12 bottles so it'll",
+            "source_id": "S00650"
+          },
+          {
+            "id": "S00651",
+            "kind": "subtitle_span",
+            "start_s": 1528.039,
+            "end_s": 1532.96,
+            "text": "last us for me and Joel a week and every",
+            "source_id": "S00651"
+          },
+          {
+            "id": "S00652",
+            "kind": "subtitle_span",
+            "start_s": 1530.559,
+            "end_s": 1534.64,
+            "text": "single morning we can take our immunity",
+            "source_id": "S00652"
+          },
+          {
+            "id": "S00653",
+            "kind": "subtitle_span",
+            "start_s": 1532.96,
+            "end_s": 1537.08,
+            "text": "shot and it's perfect and they're going",
+            "source_id": "S00653"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      }
+    ],
+    "cross_segment_relations": [
+      {
+        "fact_ids": [
+          "F01",
+          "F02"
+        ],
+        "type": "purpose_of_item",
+        "statement": "The glass bottles shown in F01 are stated in F02 to be used for storing ginger juice drinks.",
+        "status": "supported"
+      }
+    ],
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-expand50/run-001/results/videomme__855-3.json"
+  },
+  {
+    "qid": "videomme:885-1",
+    "video_id": "EhLOdDfaC7Y",
+    "question": "What happened in the first game of the second round of 16 in the video?",
+    "options": {
+      "A": "During the game, the attacking side committed a foul while attacking and the defence turned into the attacking side and successfully scored.",
+      "B": "During the game, the defending side committed a foul during defense and the attacking side resumed the ball attack and scored successfully.",
+      "C": "During the game, the attacking side committed a foul while attacking, but the defense successfully intercepted the ball and prevented any scoring opportunity.",
+      "D": "During the game, the defending side committed a foul during defense, but the attacking side missed the subsequent penalty kick, failing to score."
+    },
+    "reference_answer": "During the game, the defending side committed a foul during defense and the attacking side resumed the ball attack and scored successfully.",
+    "status": "source_supported_multi",
+    "semantic_groups": [
+      {
+        "id": "E01",
+        "label_zh": "防守犯规导致进攻中断",
+        "fact_ids": [
+          "F01",
+          "F02"
+        ],
+        "source_ids": [
+          "C0007",
+          "C0008",
+          "C0014",
+          "C0015",
+          "C0016",
+          "S00334",
+          "R0011",
+          "R0015",
+          "R0025",
+          "R0029",
+          "R0030",
+          "R0031"
+        ],
+        "sources": {
+          "C0007": {
+            "kind": "frame_point",
+            "start_s": 1345.0,
+            "end_s": 1345.0
+          },
+          "C0008": {
+            "kind": "frame_point",
+            "start_s": 1349.0,
+            "end_s": 1349.0
+          },
+          "C0014": {
+            "kind": "frame_point",
+            "start_s": 1373.0,
+            "end_s": 1373.0
+          },
+          "C0015": {
+            "kind": "frame_point",
+            "start_s": 1377.0,
+            "end_s": 1377.0
+          },
+          "C0016": {
+            "kind": "frame_point",
+            "start_s": 1381.0,
+            "end_s": 1381.0
+          },
+          "S00334": {
+            "kind": "subtitle_span",
+            "start_s": 1331.4,
+            "end_s": 1334.4,
+            "text": "well stopped now"
+          },
+          "R0011": {
+            "kind": "frame_point",
+            "start_s": 1345.0,
+            "end_s": 1345.0
+          },
+          "R0015": {
+            "kind": "frame_point",
+            "start_s": 1349.0,
+            "end_s": 1349.0
+          },
+          "R0025": {
+            "kind": "frame_point",
+            "start_s": 1373.0,
+            "end_s": 1373.0
+          },
+          "R0029": {
+            "kind": "frame_point",
+            "start_s": 1377.0,
+            "end_s": 1377.0
+          },
+          "R0030": {
+            "kind": "frame_point",
+            "start_s": 1378.0,
+            "end_s": 1378.0
+          },
+          "R0031": {
+            "kind": "frame_point",
+            "start_s": 1379.0,
+            "end_s": 1379.0
+          }
+        }
+      },
+      {
+        "id": "E02",
+        "label_zh": "进攻方罚点球得分",
+        "fact_ids": [
+          "F03",
+          "F04"
+        ],
+        "source_ids": [
+          "C0021",
+          "C0022",
+          "C0023",
+          "C0024",
+          "C0025",
+          "C0026",
+          "C0027",
+          "R0039",
+          "R0043",
+          "R0047",
+          "R0051",
+          "R0052",
+          "R0053",
+          "R0054",
+          "R0055"
+        ],
+        "sources": {
+          "C0021": {
+            "kind": "frame_point",
+            "start_s": 1401.0,
+            "end_s": 1401.0
+          },
+          "C0022": {
+            "kind": "frame_point",
+            "start_s": 1405.0,
+            "end_s": 1405.0
+          },
+          "C0023": {
+            "kind": "frame_point",
+            "start_s": 1409.0,
+            "end_s": 1409.0
+          },
+          "C0024": {
+            "kind": "frame_point",
+            "start_s": 1413.0,
+            "end_s": 1413.0
+          },
+          "C0025": {
+            "kind": "frame_point",
+            "start_s": 1417.0,
+            "end_s": 1417.0
+          },
+          "C0026": {
+            "kind": "frame_point",
+            "start_s": 1421.0,
+            "end_s": 1421.0
+          },
+          "C0027": {
+            "kind": "frame_point",
+            "start_s": 1425.0,
+            "end_s": 1425.0
+          },
+          "R0039": {
+            "kind": "frame_point",
+            "start_s": 1401.0,
+            "end_s": 1401.0
+          },
+          "R0043": {
+            "kind": "frame_point",
+            "start_s": 1405.0,
+            "end_s": 1405.0
+          },
+          "R0047": {
+            "kind": "frame_point",
+            "start_s": 1409.0,
+            "end_s": 1409.0
+          },
+          "R0051": {
+            "kind": "frame_point",
+            "start_s": 1413.0,
+            "end_s": 1413.0
+          },
+          "R0052": {
+            "kind": "frame_point",
+            "start_s": 1414.0,
+            "end_s": 1414.0
+          },
+          "R0053": {
+            "kind": "frame_point",
+            "start_s": 1415.0,
+            "end_s": 1415.0
+          },
+          "R0054": {
+            "kind": "frame_point",
+            "start_s": 1416.0,
+            "end_s": 1416.0
+          },
+          "R0055": {
+            "kind": "frame_point",
+            "start_s": 1417.0,
+            "end_s": 1417.0
+          }
+        }
+      }
+    ],
+    "fact_evidence": [
+      {
+        "fact_id": "F01",
+        "statement": "在第二轮16进8的第一场比赛中，身穿绿色球衣的进攻球员带球突破，遭到身穿黑色球衣的防守球员的贴身逼抢。",
+        "status": "supported",
+        "video_id": "EhLOdDfaC7Y",
+        "source_spans": [
+          {
+            "id": "C0007",
+            "kind": "frame_point",
+            "start_s": 1345.0,
+            "end_s": 1345.0,
+            "frame_sha256": "6b17495b31d1e84356175bf23f6772870092a477f7f2479602365f910c10a7a6",
+            "source_id": "C0007"
+          },
+          {
+            "id": "C0008",
+            "kind": "frame_point",
+            "start_s": 1349.0,
+            "end_s": 1349.0,
+            "frame_sha256": "98275032ae416bfa4df52bb66afd5565bc2d98e361a14b5d69efef53c336f67e",
+            "source_id": "C0008"
+          },
+          {
+            "id": "R0011",
+            "kind": "frame_point",
+            "start_s": 1345.0,
+            "end_s": 1345.0,
+            "frame_sha256": "6b17495b31d1e84356175bf23f6772870092a477f7f2479602365f910c10a7a6",
+            "source_id": "R0011"
+          },
+          {
+            "id": "R0015",
+            "kind": "frame_point",
+            "start_s": 1349.0,
+            "end_s": 1349.0,
+            "frame_sha256": "98275032ae416bfa4df52bb66afd5565bc2d98e361a14b5d69efef53c336f67e",
+            "source_id": "R0015"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      },
+      {
+        "fact_id": "F02",
+        "statement": "防守球员在防守过程中对进攻球员犯规（拉扯/推搡），导致进攻球员倒地，比赛暂停。",
+        "status": "supported",
+        "video_id": "EhLOdDfaC7Y",
+        "source_spans": [
+          {
+            "id": "C0014",
+            "kind": "frame_point",
+            "start_s": 1373.0,
+            "end_s": 1373.0,
+            "frame_sha256": "a357cf9704b098fdffa1603907769d0017023c927090d23e80756d963f4e251f",
+            "source_id": "C0014"
+          },
+          {
+            "id": "C0015",
+            "kind": "frame_point",
+            "start_s": 1377.0,
+            "end_s": 1377.0,
+            "frame_sha256": "47c0adcc0f0e6e59ad431519b8a00e154c362aa10b22b25334f98a19edf0a3ab",
+            "source_id": "C0015"
+          },
+          {
+            "id": "C0016",
+            "kind": "frame_point",
+            "start_s": 1381.0,
+            "end_s": 1381.0,
+            "frame_sha256": "480b5b677212892f6afa08c5e175781c4baac2e6da5944d334dd4c403214740b",
+            "source_id": "C0016"
+          },
+          {
+            "id": "S00334",
+            "kind": "subtitle_span",
+            "start_s": 1331.4,
+            "end_s": 1334.4,
+            "text": "well stopped now",
+            "source_id": "S00334"
+          },
+          {
+            "id": "R0025",
+            "kind": "frame_point",
+            "start_s": 1373.0,
+            "end_s": 1373.0,
+            "frame_sha256": "a357cf9704b098fdffa1603907769d0017023c927090d23e80756d963f4e251f",
+            "source_id": "R0025"
+          },
+          {
+            "id": "R0029",
+            "kind": "frame_point",
+            "start_s": 1377.0,
+            "end_s": 1377.0,
+            "frame_sha256": "47c0adcc0f0e6e59ad431519b8a00e154c362aa10b22b25334f98a19edf0a3ab",
+            "source_id": "R0029"
+          },
+          {
+            "id": "R0030",
+            "kind": "frame_point",
+            "start_s": 1378.0,
+            "end_s": 1378.0,
+            "frame_sha256": "0c764e847a7777e966336dfa2672d9fbbdd1e53eec2ba5cfd2d195993dc2e7df",
+            "source_id": "R0030"
+          },
+          {
+            "id": "R0031",
+            "kind": "frame_point",
+            "start_s": 1379.0,
+            "end_s": 1379.0,
+            "frame_sha256": "dbcb441736d6c901019b14af95994f0c74b512d714c106a4a8b1b81c21023a63",
+            "source_id": "R0031"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      },
+      {
+        "fact_id": "F03",
+        "statement": "犯规后，进攻方获得了罚点球的机会，准备主罚。",
+        "status": "supported",
+        "video_id": "EhLOdDfaC7Y",
+        "source_spans": [
+          {
+            "id": "C0021",
+            "kind": "frame_point",
+            "start_s": 1401.0,
+            "end_s": 1401.0,
+            "frame_sha256": "ff6725b4edf18421ef7cc0597975ada34ab9fba4762a4f580a482d6874ec16f7",
+            "source_id": "C0021"
+          },
+          {
+            "id": "C0022",
+            "kind": "frame_point",
+            "start_s": 1405.0,
+            "end_s": 1405.0,
+            "frame_sha256": "73d2453b3a3d2acdf0dbe86748c1cf7507fd81f919f614826ae5d2a8a8815b7b",
+            "source_id": "C0022"
+          },
+          {
+            "id": "C0023",
+            "kind": "frame_point",
+            "start_s": 1409.0,
+            "end_s": 1409.0,
+            "frame_sha256": "f300b4c1eead8e3aba9286aef6757e2abcda2d6bc7b0a3075c05e6cf608f604d",
+            "source_id": "C0023"
+          },
+          {
+            "id": "R0039",
+            "kind": "frame_point",
+            "start_s": 1401.0,
+            "end_s": 1401.0,
+            "frame_sha256": "ff6725b4edf18421ef7cc0597975ada34ab9fba4762a4f580a482d6874ec16f7",
+            "source_id": "R0039"
+          },
+          {
+            "id": "R0043",
+            "kind": "frame_point",
+            "start_s": 1405.0,
+            "end_s": 1405.0,
+            "frame_sha256": "73d2453b3a3d2acdf0dbe86748c1cf7507fd81f919f614826ae5d2a8a8815b7b",
+            "source_id": "R0043"
+          },
+          {
+            "id": "R0047",
+            "kind": "frame_point",
+            "start_s": 1409.0,
+            "end_s": 1409.0,
+            "frame_sha256": "f300b4c1eead8e3aba9286aef6757e2abcda2d6bc7b0a3075c05e6cf608f604d",
+            "source_id": "R0047"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      },
+      {
+        "fact_id": "F04",
+        "statement": "进攻球员主罚点球，成功将球踢入球门得分。",
+        "status": "supported",
+        "video_id": "EhLOdDfaC7Y",
+        "source_spans": [
+          {
+            "id": "C0024",
+            "kind": "frame_point",
+            "start_s": 1413.0,
+            "end_s": 1413.0,
+            "frame_sha256": "3b9cff2544ac930aa5936f72bcec2f9097b0c775d96c9d0193c945748d677b34",
+            "source_id": "C0024"
+          },
+          {
+            "id": "C0025",
+            "kind": "frame_point",
+            "start_s": 1417.0,
+            "end_s": 1417.0,
+            "frame_sha256": "4385dfd2c31bf8ff11ff9b4c9466e76ad100e6dad6a409009c9e0ed6476f5d83",
+            "source_id": "C0025"
+          },
+          {
+            "id": "C0026",
+            "kind": "frame_point",
+            "start_s": 1421.0,
+            "end_s": 1421.0,
+            "frame_sha256": "9eb93028f43a1d7add3b1d2fbe06c4fd5e7af289e54d23ae8a47440dab07ef05",
+            "source_id": "C0026"
+          },
+          {
+            "id": "C0027",
+            "kind": "frame_point",
+            "start_s": 1425.0,
+            "end_s": 1425.0,
+            "frame_sha256": "cb23256487600a53855a0f5fdf2d04b0957807366c1461fc83724303e1faf846",
+            "source_id": "C0027"
+          },
+          {
+            "id": "R0051",
+            "kind": "frame_point",
+            "start_s": 1413.0,
+            "end_s": 1413.0,
+            "frame_sha256": "3b9cff2544ac930aa5936f72bcec2f9097b0c775d96c9d0193c945748d677b34",
+            "source_id": "R0051"
+          },
+          {
+            "id": "R0052",
+            "kind": "frame_point",
+            "start_s": 1414.0,
+            "end_s": 1414.0,
+            "frame_sha256": "878adef2e803931aa957a01be2297d2cc86dbfb84742a17896253cc27dc45518",
+            "source_id": "R0052"
+          },
+          {
+            "id": "R0053",
+            "kind": "frame_point",
+            "start_s": 1415.0,
+            "end_s": 1415.0,
+            "frame_sha256": "0a502fdf56d6d3daa34ce7584f24d1850419e087fe988f2c14f461c1063bdcf2",
+            "source_id": "R0053"
+          },
+          {
+            "id": "R0054",
+            "kind": "frame_point",
+            "start_s": 1416.0,
+            "end_s": 1416.0,
+            "frame_sha256": "d09c2ee7403d6b8e43823cd7ba3257d8f3759edce602e06a967a59286cbad71b",
+            "source_id": "R0054"
+          },
+          {
+            "id": "R0055",
+            "kind": "frame_point",
+            "start_s": 1417.0,
+            "end_s": 1417.0,
+            "frame_sha256": "4385dfd2c31bf8ff11ff9b4c9466e76ad100e6dad6a409009c9e0ed6476f5d83",
+            "source_id": "R0055"
+          }
+        ],
+        "span_semantics": "Frame points and full original subtitle cues; gaps remain explicit. These are source supports, not semantic group counts."
+      }
+    ],
+    "cross_segment_relations": [
+      {
+        "type": "causal",
+        "statement": "防守方的犯规导致了进攻的中断，并为进攻方赢得了罚点球的机会。",
+        "fact_ids": [
+          "F02",
+          "F03"
+        ],
+        "status": "supported"
+      },
+      {
+        "type": "temporal_order",
+        "statement": "进攻方在获得点球机会后，执行了罚球并成功得分。",
+        "fact_ids": [
+          "F03",
+          "F04"
+        ],
+        "status": "supported"
+      }
+    ],
+    "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-expand50/run-001/results/videomme__885-1.json"
+  }
+]

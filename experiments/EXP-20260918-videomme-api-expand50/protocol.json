@@ -1,0 +1,68 @@
+{
+  "version": "2.1-expand",
+  "model": "qwen3.8-flash",
+  "source": {
+    "coarse_spacing_s": 4.0,
+    "refine_spacing_s": 1.0,
+    "context_margin_s": 5,
+    "refine_boundary_margin_s": 3.0,
+    "max_coarse_frames": 200,
+    "max_refine_frames": 240,
+    "max_image_side": 768,
+    "max_evidence_interval_s": 120.0
+  },
+  "api": {
+    "concurrency": 3,
+    "attempts_per_stage": 2,
+    "timeout_s": 180,
+    "max_stage_wall_s": 480,
+    "max_output_tokens": 6500,
+    "enable_thinking": false,
+    "retry_backoff_s": 8,
+    "stop_after_consecutive_failed_questions": 5
+  },
+  "stages": [
+    "API targeted full-timeline search for source_unresolved or newly detected gaps",
+    "source observation with complete question/options and without reference",
+    "denser original-source audit with reference; fresh facts/citations permitted",
+    "at most one targeted supplementation round if unresolved"
+  ],
+  "scope": "Process initial50 distinct new questions/videos; add frozen reserve batches only until cumulative unique source_supported_multi >=51. Baseline32 from previous fixed50; preserve all old results.",
+  "time_annotations": "Video-MME QA provides no authoritative fact-level temporal gold used here; caption windows are proposals. Refined spans are sampled source witness intervals, not frame-perfect event boundaries.",
+  "modalities": "Original decoded video frames and synchronized original SRT; no audio stream. Claims needing audio without usable subtitles remain unresolved.",
+  "resume": "Only interrupted entries resume with stage caches; every terminal outcome retained. Initial50 all processed, then reserve batches of5 until target51 or pool exhausted. Stop marker/API circuit respected.",
+  "old_queue_remains_paused": true,
+  "human_reviewed": false,
+  "repair": {
+    "max_source_rounds": 2,
+    "max_planned_windows": 16,
+    "max_planned_total_seconds": 600,
+    "full_video_caption_and_subtitle_search": true,
+    "max_source_ids_per_fact": 40
+  },
+  "evidence_contract": "API cites exact current source IDs; code derives original timestamp spans, including point witnesses, and preserves disjoint observed intervals. Retrieval windows are not semantic groups. No API-authored timestamp or input-group-ID constraints.",
+  "acceptance": "Final source audit determines required gaps; earlier missing items and optional notes do not veto resolved evidence. No passing with final required gaps, unsupported facts/relations, reference conflict or inconsistent multi-group declarations.",
+  "code_base": {
+    "path": "experiments/EXP-20260918-videomme-api-repair32/code",
+    "hashes": {
+      "code/control.py": "95d7ebb854ecf8ffe26b31eb98e1d49baa9443cccc2e113923288504d9f717ed",
+      "code/engine.py": "909fac15203c8401fc417ad86ada2193f523af09f4e7304d2d948e3382b7f19b",
+      "code/test_repair.py": "940e2914e5353e79b78ec01fd56eed4aa3fc0557c01080f0cb869b212f1af0ea",
+      "code/repair.py": "1f96a28db222e21f3983affcf948223f9b4e73d81fcf7b812fad93081f6ccdd1",
+      "code/prompts/observe.txt": "f5c71d170eef52a1b56ecc00550d24e6bcd7ef2ffadc0b35313abea0f1f79641",
+      "code/prompts/verify.txt": "f57d848a95af7c8c211651ef443485dcac24bbe303395869040562dd5aa83b08",
+      "code/prompts/plan.txt": "c4a0251782e9ea3213a2c86e3d21f906891dc3c7b36761e7478840a97a4e1dc3"
+    },
+    "changes": "Separate output root; every new candidate starts full-timeline API search; frozen selection, target-aware scheduler and cumulative export; classify RemoteProtocolError as API failure. Source acceptance unchanged."
+  },
+  "selection": {
+    "seed": 20260918,
+    "initial_questions": 50,
+    "reserve_batch_size": 5,
+    "target_cumulative_multi": 51,
+    "pool": "188 caption-semantic candidates",
+    "exclude_prior50_videos": true,
+    "one_question_per_video": true,
+    "stratification": "round-robin groups2,3,4plus; seeded shuffle per stratum"
+  }
+}

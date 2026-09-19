@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-09-19T15:40:41.471245+08:00",
+  "scope": "Two fixed50 batches; latest repair supersedes old results by qid; not all900 long questions.",
+  "processed_unique_questions": 100,
+  "statuses": {
+    "source_supported_multi": 52,
+    "source_supported_single_or_redundant": 26,
+    "output_invalid": 17,
+    "preparation_failed": 2,
+    "reference_conflict": 3
+  },
+  "supported_multi": 52,
+  "multi_unique_videos": 52,
+  "semantic_groups": 172,
+  "mean_semantic_groups": 3.3076923076923075,
+  "group_count_distribution": {
+    "4": 15,
+    "2": 17,
+    "5": 5,
+    "3": 13,
+    "6": 1,
+    "8": 1
+  },
+  "video_minutes": {
+    "min": 30.136792133333334,
+    "max": 56.41365381666667,
+    "mean": 38.7594628711962
+  },
+  "unused_reserve_questions": 48,
+  "human_reviewed": false
+}

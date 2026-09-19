@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-09-17T19:32:10.075113+08:00",
+  "scope": "All816 current full-caption result files. Original package hashes and mechanical positive-subset consistency only; no new visual verification.",
+  "questions_checked": 816,
+  "packages_hash_verified": 125,
+  "questions_with_issues": 2,
+  "issue_counts": {
+    "positive_with_explicit_missing": 2
+  },
+  "issues_by_question": [
+    {
+      "qid": "videomme:679-2",
+      "result_sha256": "355dce72bb0f9e22675376ca1b1e411c0e742b580d25301c72d5e99da903d5cb",
+      "has_original_source_package": true,
+      "issues": [
+        {
+          "code": "positive_with_explicit_missing",
+          "group_ids": [
+            "G01",
+            "G02"
+          ],
+          "missing": [
+            "关于“添加更多控制点”的具体演示或介绍内容未在提供的视频片段中出现。"
+          ]
+        }
+      ]
+    },
+    {
+      "qid": "videomme:799-2",
+      "result_sha256": "fc61b1e4ab32b024ccf56ddbb774a13167bd565f2d4a0e4a109a438c5147f253",
+      "has_original_source_package": true,
+      "issues": [
+        {
+          "code": "positive_with_explicit_missing",
+          "group_ids": [
+            "G01",
+            "G03",
+            "G04"
+          ],
+          "missing": [
+            "事件(d)（催眠秀）在提供的视频片段中完全缺失，无法验证其发生的时间顺序。"
+          ]
+        }
+      ]
+    }
+  ]
+}

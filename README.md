@@ -10,7 +10,7 @@
 - `writing/`：论文草稿、图表和周报。
 - `notes/sessions/`：跨会话的简要上下文。
 
-当前多证据数据收集已按用户要求暂停，保留 11 道确认题；50 题目标未达成。详情见[暂停实验记录](experiments/EXP-20260917-videomme-multievidence50/README.md)。
+原多证据数据收集队列保持暂停，详见[暂停记录](experiments/EXP-20260917-videomme-multievidence50/README.md)。已按事件与语义重新分组，完成[已有 API 选出 caption 的复查](experiments/EXP-20260917-videomme-semantic-reassessment/README.md)，其后[50题API原始证据定位](experiments/EXP-20260917-videomme-api-source50/README.md)均已产生处理结果，后台已停止；失败及未确定题的原因诊断已完成，[32题API定向修复与补证](experiments/EXP-20260918-videomme-api-repair32/README.md)已完成，固定50题累计32题多组源支持；[新增50题源核验](experiments/EXP-20260918-videomme-api-expand50/README.md)亦已完成，累计52题多组源支持，已超过50题目标。
 
 ## 代码状态
 

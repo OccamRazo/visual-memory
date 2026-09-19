@@ -1,0 +1,22 @@
+[
+  {
+    "qid": "videomme:689-3",
+    "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-semantic-reassessment/run-002-caption-semantic/calls/videomme__689-3/attempt-01.json",
+    "normalizations": [
+      "C0206 -> C00206; zero-padding only",
+      "C0274 -> C00274; zero-padding only",
+      "C0275 -> C00275; zero-padding only",
+      "C0276 -> C00276; zero-padding only",
+      "C0277 -> C00277; zero-padding only",
+      "C0278 -> C00278; zero-padding only",
+      "C0279 -> C00279; zero-padding only"
+    ]
+  },
+  {
+    "qid": "videomme:794-2",
+    "call_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-semantic-reassessment/run-002-caption-semantic/calls/videomme__794-2/attempt-01.json",
+    "normalizations": [
+      "unsupported enum insufficient -> unclear; original insufficiency reason preserved"
+    ]
+  }
+]

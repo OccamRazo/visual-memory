@@ -1,0 +1,1615 @@
+{
+  "created_at": "2026-09-17T23:28:51.709967+08:00",
+  "questions": 9,
+  "no_new_api_calls": true,
+  "no_original_images_viewed": true,
+  "original_results_unchanged": true,
+  "records": [
+    {
+      "qid": "videomme:610-2",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__610-2.json",
+      "result_sha256": "8bfa62c2c05f324e88c56adc5e8301ebd7d1e7f6b16116ecdc520e15b2c14ffa",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__610-2.json",
+      "input_sha256": "99b021e644013b508e14560aa87943018036753958ee6913eda7732ea8c5a68c",
+      "question": "In accordance with the video footage, which of the following events happened after the battle at Standford Bridge?",
+      "options": {
+        "A": "Harold's coronation.",
+        "B": "The marriage of William.",
+        "C": "The Norman army landed on Hasting.",
+        "D": "Edward's demise."
+      },
+      "reference_answer": "The Norman army landed on Hasting.",
+      "observed_answer": "The Norman Invasion had begun, with the huge Norman Armada setting sail and arriving off Pevensey to establish a base camp at Hastings.",
+      "coverage": "complete",
+      "observer_missing": [],
+      "uncertain_facts": [],
+      "audit": {
+        "question_supported": true,
+        "reference_matches": true,
+        "relations_supported": true,
+        "requires_multiple": "yes",
+        "semantic_groups": [
+          {
+            "id": "E01",
+            "label_zh": "哈罗德南撤与诺曼登陆",
+            "fact_ids": [
+              "F01",
+              "F02",
+              "F03",
+              "F04"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F01",
+                "evidence_index": 0
+              },
+              {
+                "fact_id": "F02",
+                "evidence_index": 0
+              },
+              {
+                "fact_id": "F03",
+                "evidence_index": 0
+              },
+              {
+                "fact_id": "F04",
+                "evidence_index": 0
+              }
+            ]
+          }
+        ],
+        "fact_checks": [
+          {
+            "fact_id": "F01",
+            "supported": true,
+            "frame_ids": [
+              "R0003",
+              "R0004",
+              "R0005",
+              "R0006",
+              "R0007",
+              "R0008",
+              "R0009",
+              "R0010",
+              "R0011",
+              "R0012",
+              "R0013",
+              "R0014",
+              "R0016",
+              "R0018",
+              "R0020",
+              "R0022",
+              "R0024",
+              "R0026",
+              "R0028",
+              "R0030",
+              "R0032",
+              "R0034"
+            ],
+            "subtitle_ids": [
+              "S00445",
+              "S00446",
+              "S00447",
+              "S00448",
+              "S00449"
+            ],
+            "reason_zh": "字幕明确提到“Harold and his household troops... hurried South once again but the terrifying news was out the Norman Invasion had begun”，画面展示了行军场景。"
+          },
+          {
+            "fact_id": "F02",
+            "supported": true,
+            "frame_ids": [
+              "R0021",
+              "R0023",
+              "R0025",
+              "R0027",
+              "R0029",
+              "R0031",
+              "R0033",
+              "R0036",
+              "R0037",
+              "R0038",
+              "R0039",
+              "R0040",
+              "R0041",
+              "R0042",
+              "R0043",
+              "R0044",
+              "R0045"
+            ],
+            "subtitle_ids": [
+              "S00450",
+              "S00451",
+              "S00452"
+            ],
+            "reason_zh": "字幕说明“sometime around September 27 the huge Norman Armada of some 700 ships set sail”，画面展示了贝叶挂毯中的船只。"
+          },
+          {
+            "fact_id": "F03",
+            "supported": true,
+            "frame_ids": [
+              "R0048",
+              "R0049",
+              "R0050",
+              "R0051",
+              "R0052",
+              "R0053",
+              "R0054"
+            ],
+            "subtitle_ids": [
+              "S00453",
+              "S00454",
+              "S00455"
+            ],
+            "reason_zh": "字幕描述“arrived off pavy early the following morning the Norman forces disembarked unopposed”，画面展示了士兵跪地登陆的场景。"
+          },
+          {
+            "fact_id": "F04",
+            "supported": true,
+            "frame_ids": [
+              "R0055",
+              "R0056",
+              "R0057",
+              "R0058",
+              "R0059",
+              "R0060",
+              "R0061",
+              "R0062",
+              "R0063",
+              "R0064",
+              "R0065"
+            ],
+            "subtitle_ids": [
+              "S00456",
+              "S00457",
+              "S00458",
+              "S00459"
+            ],
+            "reason_zh": "地图动画标示了黑斯廷斯的位置，字幕确认“moved to occupy the easily defensible Peninsula occupied by the town of Hastings where the Norman army established its Base Camp”。"
+          }
+        ],
+        "missing_zh": [],
+        "reference_issues_zh": [],
+        "reason_zh": "视频通过字幕和画面完整叙述了斯坦福桥战役后，哈罗德因诺曼入侵的消息南下，以及诺曼军队从启航到在黑斯廷斯建立营地的过程。所有事实陈述均有对应的视觉或文本证据支持，且时间顺序逻辑清晰。"
+      },
+      "false_acceptance_gates": [
+        "grouping_status_consistent"
+      ],
+      "request_fields": {
+        "coarse_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__610-2/locate/fbdfc99f5e61da84f71dd2fc/request.json",
+          "request_sha256": "2546862591bb0361b9fa13edf54720eb1a1f7465aa2b90b0b51791be6598bbe0",
+          "has_options": false,
+          "has_reference": false,
+          "question": "In accordance with the video footage, which of the following events happened after the battle at Standford Bridge?"
+        },
+        "refined_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__610-2/refine/78ea5764de29e7d16ca67a93/request.json",
+          "request_sha256": "fcf65bdb8ec09513ac8d28f9ea7ede30490ff039b7623a09de5fa31ef4b8c543",
+          "has_options": false,
+          "has_reference": false,
+          "question": "In accordance with the video footage, which of the following events happened after the battle at Standford Bridge?"
+        },
+        "audit_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__610-2/audit/685d4f47282b6ef4cfad2097/request.json",
+          "request_sha256": "f5d037cdfd709885fc6c1c5350d9fbd56dbfded569f1bf1e839b697d95f98d0a",
+          "has_options": true,
+          "has_reference": true,
+          "question": "In accordance with the video footage, which of the following events happened after the battle at Standford Bridge?"
+        }
+      }
+    },
+    {
+      "qid": "videomme:634-2",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__634-2.json",
+      "result_sha256": "0f4a2f99d5148aeee34d4ef5ad6aec790c2a9ae649c3a772b055ab004c3e160d",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__634-2.json",
+      "input_sha256": "46468edff4aa24de30451e74aae1388632facc900573bc123c6d99ced70d4d5b",
+      "question": "Which of the following options is NOT introduced between the way \"learn to read financial news critically\" and \"utilize gamified learning apps\" in the video?",
+      "options": {
+        "A": "Challenge yourself with financial experiments.",
+        "B": "Experiment with dollar-cost averaging.",
+        "C": "Analyze your favourite brands' financials.",
+        "D": "Read influential personal finance books."
+      },
+      "reference_answer": "Experiment with dollar-cost averaging.",
+      "observed_answer": "unknown",
+      "coverage": "partial",
+      "observer_missing": [
+        "问题中提到的“以下选项”未在提供的数据中列出，因此无法判断哪个选项未被介绍。",
+        "项目9的内容在提供的字幕和帧中未明确显示。"
+      ],
+      "uncertain_facts": [],
+      "audit": {
+        "question_supported": true,
+        "reference_matches": true,
+        "relations_supported": true,
+        "requires_multiple": "yes",
+        "semantic_groups": [
+          {
+            "id": "E01",
+            "label_zh": "第6项：批判性阅读财经新闻",
+            "fact_ids": [
+              "F01"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F01",
+                "evidence_index": 0
+              }
+            ]
+          },
+          {
+            "id": "E02",
+            "label_zh": "第7项：挑战金融实验",
+            "fact_ids": [
+              "F03"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F03",
+                "evidence_index": 0
+              }
+            ]
+          },
+          {
+            "id": "E03",
+            "label_zh": "第8项：分析品牌财务",
+            "fact_ids": [
+              "F03"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F03",
+                "evidence_index": 1
+              }
+            ]
+          },
+          {
+            "id": "E04",
+            "label_zh": "第10项：阅读个人理财书籍",
+            "fact_ids": [
+              "F03"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F03",
+                "evidence_index": 2
+              }
+            ]
+          },
+          {
+            "id": "E05",
+            "label_zh": "第11项：利用游戏化学习应用",
+            "fact_ids": [
+              "F02"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F02",
+                "evidence_index": 0
+              }
+            ]
+          }
+        ],
+        "fact_checks": [
+          {
+            "fact_id": "F01",
+            "supported": true,
+            "frame_ids": [
+              "R0004",
+              "R0005",
+              "R0006",
+              "R0007",
+              "R0008"
+            ],
+            "subtitle_ids": [
+              "S00319",
+              "S00320"
+            ],
+            "reason_zh": "视频帧和字幕明确显示第6项为“Learn to read financial news critically”。"
+          },
+          {
+            "fact_id": "F02",
+            "supported": true,
+            "frame_ids": [
+              "R0066",
+              "R0067",
+              "R0068",
+              "R0069"
+            ],
+            "subtitle_ids": [
+              "S00549"
+            ],
+            "reason_zh": "视频帧和字幕明确显示第11项为“Utilize gamified learning apps”。"
+          },
+          {
+            "fact_id": "F03",
+            "supported": true,
+            "frame_ids": [
+              "R0019",
+              "R0020",
+              "R0021",
+              "R0022",
+              "R0023",
+              "R0035",
+              "R0036",
+              "R0037",
+              "R0038",
+              "R0050",
+              "R0051",
+              "R0052",
+              "R0053",
+              "R0054"
+            ],
+            "subtitle_ids": [
+              "S00369",
+              "S00370",
+              "S00406",
+              "S00407",
+              "S00501",
+              "S00502"
+            ],
+            "reason_zh": "视频帧和字幕确认了第7、8、10项的内容，且时间戳位于第6项和第11项之间。"
+          }
+        ],
+        "missing_zh": [
+          "项目9的具体内容未在提供的证据中显示（虽然不影响回答本题，但属于信息缺失）。"
+        ],
+        "reference_issues_zh": [],
+        "reason_zh": "观察到的事实与参考答案一致。视频在第6项和第11项之间介绍了选项A（第7项）、C（第8项）和D（第10项），而选项B（Experiment with dollar-cost averaging）未出现在该区间内，因此是正确答案。"
+      },
+      "false_acceptance_gates": [
+        "observer_complete",
+        "observer_no_missing",
+        "auditor_no_missing"
+      ],
+      "request_fields": {
+        "coarse_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__634-2/locate/9183f4209df4ae9efc0d7eb3/request.json",
+          "request_sha256": "27f46297c6fc3bd9b1fba07b722e46427844bb767e9d94546a35c678a102d717",
+          "has_options": false,
+          "has_reference": false,
+          "question": "Which of the following options is NOT introduced between the way \"learn to read financial news critically\" and \"utilize gamified learning apps\" in the video?"
+        },
+        "refined_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__634-2/refine/0999c676e28970b5e1f1bf94/request.json",
+          "request_sha256": "1470b82b2ade4fbee8edcb3f767fddca556679580b6711ac0c03c6d44f1240c0",
+          "has_options": false,
+          "has_reference": false,
+          "question": "Which of the following options is NOT introduced between the way \"learn to read financial news critically\" and \"utilize gamified learning apps\" in the video?"
+        },
+        "audit_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__634-2/audit/3ab29de775538b537916ae8f/request.json",
+          "request_sha256": "5e6fb4fc69febea26dd280f25504d1c64406061382a166d2076f03bddc18680c",
+          "has_options": true,
+          "has_reference": true,
+          "question": "Which of the following options is NOT introduced between the way \"learn to read financial news critically\" and \"utilize gamified learning apps\" in the video?"
+        }
+      }
+    },
+    {
+      "qid": "videomme:725-1",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__725-1.json",
+      "result_sha256": "98f4d5802885f9af48d940674ac186f3ad20294fae916074e185e57e631cad4e",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__725-1.json",
+      "input_sha256": "5ca0cdb555949acc50b6741db600091b5daa27664aa7738a9c3578c74a6a77b7",
+      "question": "Which person's anti-aging research did not mention biological clinical trials?",
+      "options": {
+        "A": "Cynthia Kenyon.",
+        "B": "Nathaniel David.",
+        "C": "Steve Horvath.",
+        "D": "Liz Parrish."
+      },
+      "reference_answer": "Steve Horvath.",
+      "observed_answer": "Cynthia",
+      "coverage": "partial",
+      "observer_missing": [
+        "需要确认问题中的“biological clinical trials”是否特指针对人类的正式临床试验，还是包括动物实验。如果仅指人类临床试验，则Cynthia和Lise均未提及，但Lise有自我实验，而Cynthia的研究完全停留在动物模型阶段。根据通常理解，临床指人体试验，因此Cynthia最符合“未提及”。"
+      ],
+      "uncertain_facts": [
+        {
+          "evidence": [
+            {
+              "boundary_uncertainty_zh": "字幕提到了开发治疗方法的原理（如药物），但没有明确说明是否已经或计划进行临床试验。",
+              "end_s": 756.32,
+              "frame_ids": [
+                "R0020",
+                "R0021",
+                "R0022",
+                "R0023",
+                "R0024",
+                "R0025",
+                "R0026",
+                "R0027",
+                "R0028",
+                "R0029",
+                "R0030",
+                "R0031",
+                "R0032",
+                "R0033",
+                "R0034",
+                "R0035",
+                "R0036",
+                "R0037",
+                "R0038",
+                "R0039",
+                "R0040",
+                "R0041",
+                "R0042",
+                "R0043"
+              ],
+              "group_id": "G04",
+              "modality": "mixed",
+              "start_s": 733.72,
+              "subtitle_ids": [
+                "S00250",
+                "S00251",
+                "S00252",
+                "S00253"
+              ]
+            }
+          ],
+          "id": "F02",
+          "statement": "Steve Horvath's anti-aging research focuses on the epigenetic clock and mentions developing treatments like drugs to reverse epigenetic changes, but does not explicitly mention conducting biological clinical trials in the provided text.",
+          "status": "uncertain"
+        }
+      ],
+      "audit": {
+        "question_supported": true,
+        "reference_matches": false,
+        "relations_supported": true,
+        "requires_multiple": "yes",
+        "semantic_groups": [
+          {
+            "id": "E01",
+            "label_zh": "Lise Parrish的自我实验",
+            "fact_ids": [
+              "F01"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F01",
+                "evidence_index": 0
+              }
+            ]
+          },
+          {
+            "id": "E02",
+            "label_zh": "Steve Horvath的表观遗传学研究",
+            "fact_ids": [
+              "F02"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F02",
+                "evidence_index": 0
+              }
+            ]
+          },
+          {
+            "id": "E03",
+            "label_zh": "Unity Biotechnology (Steve) 的临床试验计划",
+            "fact_ids": [
+              "F03"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F03",
+                "evidence_index": 0
+              }
+            ]
+          },
+          {
+            "id": "E04",
+            "label_zh": "Cynthia Kenyon的动物模型研究",
+            "fact_ids": [
+              "F04"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F04",
+                "evidence_index": 0
+              }
+            ]
+          }
+        ],
+        "fact_checks": [
+          {
+            "fact_id": "F01",
+            "supported": true,
+            "frame_ids": [
+              "R0000",
+              "R0001",
+              "R0002",
+              "R0003",
+              "R0004",
+              "R0005",
+              "R0006",
+              "R0007",
+              "R0008",
+              "R0009",
+              "R0010",
+              "R0011",
+              "R0012",
+              "R0013",
+              "R0014",
+              "R0015",
+              "R0016",
+              "R0017",
+              "R0018",
+              "R0019"
+            ],
+            "subtitle_ids": [
+              "S00048",
+              "S00049",
+              "S00050",
+              "S00051"
+            ],
+            "reason_zh": "字幕明确提到Lise在自己身上进行了实验，且该疗法此前仅在老鼠身上测试过。"
+          },
+          {
+            "fact_id": "F02",
+            "supported": true,
+            "frame_ids": [
+              "R0020",
+              "R0021",
+              "R0022",
+              "R0023",
+              "R0024",
+              "R0025",
+              "R0026",
+              "R0027",
+              "R0028",
+              "R0029",
+              "R0030",
+              "R0031",
+              "R0032",
+              "R0033",
+              "R0034",
+              "R0035",
+              "R0036",
+              "R0037",
+              "R0038",
+              "R0039",
+              "R0040",
+              "R0041",
+              "R0042",
+              "R0043"
+            ],
+            "subtitle_ids": [
+              "S00250",
+              "S00251",
+              "S00252",
+              "S00253"
+            ],
+            "reason_zh": "字幕提到了开发治疗方法的原理（如药物），但没有明确说明是否已经或计划进行临床试验。"
+          },
+          {
+            "fact_id": "F03",
+            "supported": true,
+            "frame_ids": [
+              "R0097",
+              "R0098",
+              "R0099",
+              "R0100",
+              "R0101",
+              "R0102",
+              "R0103",
+              "R0104",
+              "R0105",
+              "R0106",
+              "R0107",
+              "R0108",
+              "R0109",
+              "R0110",
+              "R0111",
+              "R0112",
+              "R0113",
+              "R0114",
+              "R0115",
+              "R0116",
+              "R0117",
+              "R0118",
+              "R0119"
+            ],
+            "subtitle_ids": [
+              "S00514",
+              "S00515",
+              "S00516",
+              "S00517"
+            ],
+            "reason_zh": "字幕明确指出他们计划在接下来的12到18个月内进行首次临床试验。"
+          },
+          {
+            "fact_id": "F04",
+            "supported": true,
+            "frame_ids": [
+              "R0044",
+              "R0045",
+              "R0046",
+              "R0047",
+              "R0048",
+              "R0049",
+              "R0050",
+              "R0051",
+              "R0052",
+              "R0053",
+              "R0054",
+              "R0055",
+              "R0056",
+              "R0057",
+              "R0058",
+              "R0059",
+              "R0060",
+              "R0061",
+              "R0062",
+              "R0063",
+              "R0064",
+              "R0065",
+              "R0066",
+              "R0067",
+              "R0068",
+              "R0069",
+              "R0070",
+              "R0071",
+              "R0072",
+              "R0073",
+              "R0074",
+              "R0075",
+              "R0076",
+              "R0077",
+              "R0078",
+              "R0079",
+              "R0080",
+              "R0081",
+              "R0082",
+              "R0083",
+              "R0084",
+              "R0085",
+              "R0086",
+              "R0087",
+              "R0088",
+              "R0089",
+              "R0090",
+              "R0091",
+              "R0092",
+              "R0093",
+              "R0094",
+              "R0095",
+              "R0096"
+            ],
+            "subtitle_ids": [
+              "S00394",
+              "S00395",
+              "S00396",
+              "S00397",
+              "S00398",
+              "S00399",
+              "S00400",
+              "S00401",
+              "S00402",
+              "S00403",
+              "S00404",
+              "S00405",
+              "S00406",
+              "S00407",
+              "S00408",
+              "S00409",
+              "S00410"
+            ],
+            "reason_zh": "字幕详细描述了她在蠕虫、果蝇和小鼠上的研究，并推测可能对人类有效，但未提及具体的临床试验。"
+          }
+        ],
+        "missing_zh": [],
+        "reference_issues_zh": [
+          "参考答案为'Steve Horvath'，但视频内容显示Steve的公司Unity Biotechnology明确计划进行临床试验，而Cynthia的研究仅停留在动物模型阶段，未提及任何人体临床试验。因此，根据视频证据，正确答案应为'Cynthia Kenyon'。"
+        ],
+        "reason_zh": "视频证据支持Cynthia Kenyon的研究未提及生物临床试验，而Steve Horvath关联的公司有明确的临床试验计划。"
+      },
+      "false_acceptance_gates": [
+        "observer_complete",
+        "observer_no_missing",
+        "observer_facts_supported",
+        "auditor_reference_matches",
+        "auditor_no_reference_issues"
+      ],
+      "request_fields": {
+        "coarse_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__725-1/locate/9310a3697b94286f2d73d851/request.json",
+          "request_sha256": "49532ea5cc613845136ca0ca21379ae52bcb2d078c749d12e9efc22dcbde6612",
+          "has_options": false,
+          "has_reference": false,
+          "question": "Which person's anti-aging research did not mention biological clinical trials?"
+        },
+        "refined_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__725-1/refine/855d2224862875bd478ebe3e/request.json",
+          "request_sha256": "e0a72a9c12f7e7fa81e903f1d5adb106dc33261c04d69b5bd809cbd1285a09c6",
+          "has_options": false,
+          "has_reference": false,
+          "question": "Which person's anti-aging research did not mention biological clinical trials?"
+        },
+        "audit_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__725-1/audit/d08626970d3a44c63a436e85/request.json",
+          "request_sha256": "c93661229f7b0cdfd40a634d2feab92ff665c2eb1dfb8fdd82598c394bb08258",
+          "has_options": true,
+          "has_reference": true,
+          "question": "Which person's anti-aging research did not mention biological clinical trials?"
+        }
+      }
+    },
+    {
+      "qid": "videomme:734-3",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__734-3.json",
+      "result_sha256": "99c78bd8bfa2388e71605c98002cd09134f85536fd290e6f4fb28390a259dfc2",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__734-3.json",
+      "input_sha256": "b2a20bafa1116f2fad5f5a9d3a30889c55735059d4f3179a3e1299787ccb8697",
+      "question": "Who has the maximum kill streak according to the video?",
+      "options": {
+        "A": "Buslo.",
+        "B": "Massu.",
+        "C": "Berserker.",
+        "D": "Jensen."
+      },
+      "reference_answer": "Jensen.",
+      "observed_answer": "Jensen",
+      "coverage": "complete",
+      "observer_missing": [
+        "视频未提供最终结算画面以确认谁拥有绝对最高的连杀记录（如超神/五杀等），仅展示了Jensen的连杀播报。"
+      ],
+      "uncertain_facts": [],
+      "audit": {
+        "question_supported": true,
+        "reference_matches": true,
+        "relations_supported": true,
+        "requires_multiple": "yes",
+        "semantic_groups": [
+          {
+            "id": "E01",
+            "label_zh": "Jensen's killing spree announcement and double kill",
+            "fact_ids": [
+              "F01",
+              "F03"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F01",
+                "evidence_index": 0
+              },
+              {
+                "fact_id": "F03",
+                "evidence_index": 0
+              }
+            ]
+          },
+          {
+            "id": "E02",
+            "label_zh": "Berserker's high total kills earlier in the game",
+            "fact_ids": [
+              "F02"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F02",
+                "evidence_index": 0
+              }
+            ]
+          }
+        ],
+        "fact_checks": [
+          {
+            "fact_id": "F01",
+            "supported": true,
+            "frame_ids": [
+              "R0017",
+              "R0018",
+              "R0019"
+            ],
+            "subtitle_ids": [
+              "S01023"
+            ],
+            "reason_zh": "在时间戳2045.0s至2047.0s处，屏幕中央出现“FLY Jensen is on a killing spree!”的提示文字。"
+          },
+          {
+            "fact_id": "F02",
+            "supported": true,
+            "frame_ids": [],
+            "subtitle_ids": [
+              "S00763",
+              "S00764"
+            ],
+            "reason_zh": "字幕明确提到Berserker拥有全场最高击杀数（most kills of anybody on either team）。"
+          },
+          {
+            "fact_id": "F03",
+            "supported": true,
+            "frame_ids": [
+              "R0022",
+              "R0023",
+              "R0024"
+            ],
+            "subtitle_ids": [],
+            "reason_zh": "在时间戳2050.0s至2052.0s处，屏幕显示“DOUBLE KILL”字样。"
+          }
+        ],
+        "missing_zh": [
+          "视频未提供最终结算画面以确认谁拥有绝对最高的连杀记录（如超神/五杀等），仅展示了Jensen的连杀播报。"
+        ],
+        "reference_issues_zh": [],
+        "reason_zh": "视频中明确出现了Jensen达成“killing spree”（连杀）和“double kill”（双杀）的系统播报，虽然之前解说提到Berserker总击杀数最高，但针对“kill streak”（连杀）这一特定指标，Jensen是视频中唯一被明确展示达成该成就的选手。"
+      },
+      "false_acceptance_gates": [
+        "observer_no_missing",
+        "observer_relations_supported",
+        "auditor_no_missing"
+      ],
+      "request_fields": {
+        "coarse_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__734-3/locate/c4ef76946e96761386e3d873/request.json",
+          "request_sha256": "7965f6e6fa0af4b8ff8db942ca86daa8b6ac24449375c2ca704f37892c888583",
+          "has_options": false,
+          "has_reference": false,
+          "question": "Who has the maximum kill streak according to the video?"
+        },
+        "refined_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__734-3/refine/42b5deaaa0998c643fc0b646/request.json",
+          "request_sha256": "869e84347239e28f0c754e629278b2234a216ed8073d5cbfc1b26bcc6974a281",
+          "has_options": false,
+          "has_reference": false,
+          "question": "Who has the maximum kill streak according to the video?"
+        },
+        "audit_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__734-3/audit/b5762e049b4a2da0668afcee/request.json",
+          "request_sha256": "784c5afdee110a294a8306abf3c6be4d7ba503222cdebaac9be6939de4694f70",
+          "has_options": true,
+          "has_reference": true,
+          "question": "Who has the maximum kill streak according to the video?"
+        }
+      }
+    },
+    {
+      "qid": "videomme:763-1",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__763-1.json",
+      "result_sha256": "c34144e749d95ed4f9ee45105406540ceeead63ad916686c933ec83a45b9c30a",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__763-1.json",
+      "input_sha256": "d6cd18d7cba9cd9a25deef1ad3f5134cf0166e5701af2cc3b9537e78cac42077",
+      "question": "Assuming the order of the matches is arranged in the order of appearance in the video, with the first match being the first one played in the video. Which of the following description of the champions' performances in several matches in the video is inappropriate?",
+      "options": {
+        "A": "The person who won the championship in the first match consistently held the lead throughout the competition.",
+        "B": "The person who won the championship in the second match consistently held the lead throughout the competition.",
+        "C": "The person who won the championship in the third match consistently held the lead throughout the competition.",
+        "D": "The person who won the championship in the first match came from behind to take the lead during the competition."
+      },
+      "reference_answer": "The person who won the championship in the first match consistently held the lead throughout the competition.",
+      "observed_answer": "unknown",
+      "coverage": "uncertain",
+      "observer_missing": [
+        "题目中提到的“以下描述”的具体选项内容缺失，无法判断哪一项是不恰当的。"
+      ],
+      "uncertain_facts": [],
+      "audit": {
+        "question_supported": true,
+        "reference_matches": true,
+        "relations_supported": true,
+        "requires_multiple": "yes",
+        "semantic_groups": [
+          {
+            "id": "E01",
+            "label_zh": "男子100米仰泳决赛：墨菲半场落后，后半程反超夺冠并打破奥运会纪录",
+            "fact_ids": [
+              "F01"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F01",
+                "evidence_index": 0
+              },
+              {
+                "fact_id": "F01",
+                "evidence_index": 1
+              }
+            ]
+          },
+          {
+            "id": "E02",
+            "label_zh": "女子400米个人混合泳决赛：霍苏强势出发并在仰泳阶段拉开差距，打破世界纪录夺冠",
+            "fact_ids": [
+              "F02"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F02",
+                "evidence_index": 0
+              },
+              {
+                "fact_id": "F02",
+                "evidence_index": 1
+              }
+            ]
+          },
+          {
+            "id": "E03",
+            "label_zh": "女子800米自由泳决赛：莱德茨基从出发即领先，最终打破世界纪录夺冠",
+            "fact_ids": [
+              "F03"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F03",
+                "evidence_index": 0
+              },
+              {
+                "fact_id": "F03",
+                "evidence_index": 1
+              }
+            ]
+          }
+        ],
+        "fact_checks": [
+          {
+            "fact_id": "F01",
+            "supported": true,
+            "frame_ids": [
+              "R0016",
+              "R0017",
+              "R0031",
+              "R0053"
+            ],
+            "subtitle_ids": [
+              "S00013",
+              "S00019",
+              "S00030"
+            ],
+            "reason_zh": "字幕明确说明墨菲在半场时不在奖牌位置（S00013），随后反超（S00019）并以新奥运会纪录获胜（S00030）。画面显示比赛进行中的状态及文字板再次强调其半场落后但后半程惊人的表现（R0053）。"
+          },
+          {
+            "fact_id": "F02",
+            "supported": true,
+            "frame_ids": [
+              "R0069",
+              "R0084",
+              "R0095"
+            ],
+            "subtitle_ids": [
+              "S00042",
+              "S00043",
+              "S00050"
+            ],
+            "reason_zh": "字幕描述了她在仰泳阶段拉开差距的过程（S00042-S00043）。画面显示她触壁成绩为WR（R0084），字幕确认其打破世界纪录夺冠（S00050）。颁奖仪式确认冠军为Katinka Hosszu。"
+          },
+          {
+            "fact_id": "F03",
+            "supported": true,
+            "frame_ids": [
+              "R0100",
+              "R0129",
+              "R0141"
+            ],
+            "subtitle_ids": [
+              "S00062",
+              "S00230",
+              "S00232"
+            ],
+            "reason_zh": "字幕提到她立即取得领先（instantly go into the lead，S00062）。画面显示Ledecky触壁并标记为新WR（R0129），字幕确认其获得金牌并打破世界纪录（S00230-S00232）。"
+          }
+        ],
+        "missing_zh": [],
+        "reference_issues_zh": [],
+        "reason_zh": "视频按顺序展示了三场比赛。第一场比赛中，解说和字幕明确指出冠军Ryan Murphy在半场时并未处于奖牌位置，而是后来居上，这与选项A“始终领先”的描述相悖，因此选项A是不恰当的描述。第二场Hosszu和第三场Ledecky均被描述为从开始就确立优势或领先，符合选项B和C。选项D正确描述了Murphy的情况。证据充分支持参考答案。"
+      },
+      "false_acceptance_gates": [
+        "observer_complete",
+        "observer_no_missing"
+      ],
+      "request_fields": {
+        "coarse_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__763-1/locate/c45f3f456f0a91fc0bbe3468/request.json",
+          "request_sha256": "e0f3c887fdb7b8e685c3d8025b654b2456e1f6c9206d14d77f97b3fc54972ac7",
+          "has_options": false,
+          "has_reference": false,
+          "question": "Assuming the order of the matches is arranged in the order of appearance in the video, with the first match being the first one played in the video. Which of the following description of the champions' performances in several matches in the video is inappropriate?"
+        },
+        "refined_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__763-1/refine/c6357bc4a91bdf3fda48bbbe/request.json",
+          "request_sha256": "8c7a61072dfb068fa60404eeb9799dad3c1cd0131d2827c8784471c2736a413a",
+          "has_options": false,
+          "has_reference": false,
+          "question": "Assuming the order of the matches is arranged in the order of appearance in the video, with the first match being the first one played in the video. Which of the following description of the champions' performances in several matches in the video is inappropriate?"
+        },
+        "audit_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__763-1/audit/e632fcee875cc41cbd823030/request.json",
+          "request_sha256": "5aa281dcb9f34b09e9bb4fb4eb10484ef05fa486cfac370b94a91fd857288a28",
+          "has_options": true,
+          "has_reference": true,
+          "question": "Assuming the order of the matches is arranged in the order of appearance in the video, with the first match being the first one played in the video. Which of the following description of the champions' performances in several matches in the video is inappropriate?"
+        }
+      }
+    },
+    {
+      "qid": "videomme:815-2",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__815-2.json",
+      "result_sha256": "591a2dc320efe589f80a824dd4886b8bc236f5cc6d4a947dcda88f7e0e9af09b",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__815-2.json",
+      "input_sha256": "648cedf673d35070fb529e7d6337cdaf08ab0128a10a050857288ec3e9352f1a",
+      "question": "Which two programs have similarities in the use of the ring?",
+      "options": {
+        "A": "The first and fourth programs.",
+        "B": "Second and fourth programs.",
+        "C": "Third and fifth programs.",
+        "D": "Third and seventh programs."
+      },
+      "reference_answer": "Third and fifth programs.",
+      "observed_answer": "Cirque du Soleil VOLTA and Cirque du Soleil LUZIA",
+      "coverage": "complete",
+      "observer_missing": [],
+      "uncertain_facts": [],
+      "audit": {
+        "question_supported": false,
+        "reference_matches": false,
+        "relations_supported": true,
+        "requires_multiple": "yes",
+        "semantic_groups": [
+          {
+            "id": "E01",
+            "label_zh": "VOLTA节目中的六边形环装置表演",
+            "fact_ids": [
+              "F01"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F01",
+                "evidence_index": 0
+              }
+            ]
+          },
+          {
+            "id": "E02",
+            "label_zh": "LUZIA节目中的圆形环装置表演",
+            "fact_ids": [
+              "F02"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F02",
+                "evidence_index": 0
+              }
+            ]
+          }
+        ],
+        "fact_checks": [
+          {
+            "fact_id": "F01",
+            "supported": true,
+            "frame_ids": [
+              "R0003",
+              "R0005",
+              "R0013"
+            ],
+            "subtitle_ids": [],
+            "reason_zh": "画面左下角清晰显示“CIRQUE DU SOLEIL VOLTA”字样，且舞台中央有演员在使用一个垂直堆叠的六边形环状装置进行表演。"
+          },
+          {
+            "fact_id": "F02",
+            "supported": true,
+            "frame_ids": [
+              "R0021",
+              "R0030",
+              "R0034"
+            ],
+            "subtitle_ids": [],
+            "reason_zh": "画面左下角清晰显示“CIRQUE DU SOLEIL LUZIA”字样，且有演员在操控一个悬挂的圆形环（类似空中吊环）进行表演。"
+          }
+        ],
+        "missing_zh": [
+          "无法确定视频中出现的节目总数及顺序，因此无法验证参考选项中提到的“第三个和第五个节目”是否准确对应这两个片段。"
+        ],
+        "reference_issues_zh": [
+          "模型回答直接指出了具体的节目名称（VOLTA和LUZIA），而参考答案使用的是序数（第三和第五）。由于提供的视频帧仅包含这两个节目的片段，缺乏完整的时间线上下文来确认它们在整部宣传片中的确切排序位置，导致无法判断模型答案与参考答案是否指向同一对象。"
+        ],
+        "reason_zh": "证据包成功支持了关于两个特定节目（VOLTA和LUZIA）及其使用环形装置的描述。然而，题目询问的是基于节目出现顺序的选项（如“第三和第五”），而提供的视觉证据仅截取了这两个节目的片段，未展示完整的节目列表或顺序标记。因此，虽然事实本身成立，但无法建立从视觉证据到参考答案中特定序号的逻辑映射，导致问题无法被完全证实。"
+      },
+      "false_acceptance_gates": [
+        "auditor_question_supported",
+        "auditor_reference_matches",
+        "auditor_no_missing",
+        "auditor_no_reference_issues"
+      ],
+      "request_fields": {
+        "coarse_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__815-2/locate/b7a04d0ac4ec64ea8cd31e52/request.json",
+          "request_sha256": "6f3ebb7d82caf6872319bedf7949312711bc8862169cca972c25f4a9dc146751",
+          "has_options": false,
+          "has_reference": false,
+          "question": "Which two programs have similarities in the use of the ring?"
+        },
+        "refined_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__815-2/refine/0e6bd0b7d8650b0236cdce34/request.json",
+          "request_sha256": "f5e7fa88cf43ebea9ce541503d8385f4ea8e5c29abe0514335d00477d45f4441",
+          "has_options": false,
+          "has_reference": false,
+          "question": "Which two programs have similarities in the use of the ring?"
+        },
+        "audit_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__815-2/audit/c58322e54b1790913e6fe02c/request.json",
+          "request_sha256": "438e2f4840d3aeefc7401c4d5eb57103e4320587b9a63d4f95d402683351f723",
+          "has_options": true,
+          "has_reference": true,
+          "question": "Which two programs have similarities in the use of the ring?"
+        }
+      }
+    },
+    {
+      "qid": "videomme:816-3",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__816-3.json",
+      "result_sha256": "d8aaa1da7e872ddcfd3128df75008bcd5834ff993b3c2df3a136078597ab997e",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__816-3.json",
+      "input_sha256": "7fbaed3b4aa5a268efd3e3053a239fe47eef7006748a32eb179e78e39ff1b77b",
+      "question": "What do the spectators do after the performance?",
+      "options": {
+        "A": "Take photos with the lion.",
+        "B": "Pat the lion's head.",
+        "C": "Attempt to play the drum.",
+        "D": "All of the above."
+      },
+      "reference_answer": "All of the above.",
+      "observed_answer": "After the performance, spectators gather around the lion dancers to touch the lion costume and take photos with them.",
+      "coverage": "complete",
+      "observer_missing": [],
+      "uncertain_facts": [],
+      "audit": {
+        "question_supported": true,
+        "reference_matches": false,
+        "relations_supported": true,
+        "requires_multiple": "yes",
+        "semantic_groups": [
+          {
+            "id": "E01",
+            "label_zh": "观众触摸舞狮服装",
+            "fact_ids": [
+              "F01"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F01",
+                "evidence_index": 0
+              },
+              {
+                "fact_id": "F01",
+                "evidence_index": 1
+              }
+            ]
+          },
+          {
+            "id": "E02",
+            "label_zh": "观众与舞狮合影",
+            "fact_ids": [
+              "F02"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F02",
+                "evidence_index": 0
+              }
+            ]
+          }
+        ],
+        "fact_checks": [
+          {
+            "fact_id": "F01",
+            "supported": true,
+            "frame_ids": [
+              "R0003",
+              "R0004",
+              "R0005",
+              "R0006",
+              "R0007",
+              "R0011",
+              "R0012",
+              "R0013",
+              "R0014",
+              "R0015",
+              "R0123",
+              "R0124",
+              "R0125",
+              "R0126",
+              "R0127",
+              "R0128",
+              "R0129",
+              "R0130",
+              "R0131",
+              "R0132",
+              "R0133",
+              "R0134",
+              "R0135",
+              "R0136",
+              "R0137"
+            ],
+            "subtitle_ids": [],
+            "reason_zh": "视频画面清晰显示多名儿童和成人伸手触摸黄色的舞狮服装。"
+          },
+          {
+            "fact_id": "F02",
+            "supported": true,
+            "frame_ids": [
+              "R0059",
+              "R0060",
+              "R0061",
+              "R0062",
+              "R0063",
+              "R0065",
+              "R0066",
+              "R0070",
+              "R0071"
+            ],
+            "subtitle_ids": [],
+            "reason_zh": "视频画面显示有家庭（父亲带着孩子）在舞狮旁边摆姿势，明显是在拍照留念。"
+          }
+        ],
+        "missing_zh": [
+          "缺少关于“尝试敲鼓”的视觉证据"
+        ],
+        "reference_issues_zh": [
+          "参考答案为“All of the above”，包含选项C“Attempt to play the drum”。然而，提供的观察事实仅支持选项A（Take photos）和选项B（Pat the lion's head/touch costume）。虽然背景中可见鼓（如R0104），但没有任何画面显示观众正在尝试敲击鼓。因此，现有证据无法完全支持参考答案。"
+        ],
+        "reason_zh": "观察者准确记录了观众触摸狮子头和合影的行为（对应选项A和B），这些行为得到了视频帧的有力支持。但是，由于缺乏观众敲鼓（选项C）的证据，观察者未能覆盖参考答案所需的全部范围，导致参考答案与当前证据包不完全匹配。"
+      },
+      "false_acceptance_gates": [
+        "auditor_reference_matches",
+        "auditor_no_missing",
+        "auditor_no_reference_issues"
+      ],
+      "request_fields": {
+        "coarse_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__816-3/locate/111baf617ffe97c5edbf7991/request.json",
+          "request_sha256": "341dce517329deae9f2744f02418edc73c90b361ef5b375c779bbb554c30b95a",
+          "has_options": false,
+          "has_reference": false,
+          "question": "What do the spectators do after the performance?"
+        },
+        "refined_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__816-3/refine/11eb491f736abb6a290498c3/request.json",
+          "request_sha256": "addb89c50b30264619ee728063f52f069cd95e74c328e13877c57d68212553b9",
+          "has_options": false,
+          "has_reference": false,
+          "question": "What do the spectators do after the performance?"
+        },
+        "audit_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__816-3/audit/35af35d67dd4b76fdbdc7da0/request.json",
+          "request_sha256": "4882b092e10d98fd35868ee907f6a11c43da672fb37bbf6a598a638e903ed375",
+          "has_options": true,
+          "has_reference": true,
+          "question": "What do the spectators do after the performance?"
+        }
+      }
+    },
+    {
+      "qid": "videomme:826-2",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__826-2.json",
+      "result_sha256": "b0ac3b21e1c0a29dd427efe736cfc615d26aedb9eaf39cea47f90d56d168b2fc",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__826-2.json",
+      "input_sha256": "c0c4d6a953f462f9b38b4b160af649e29e5a54a5341b0d9a33e6c3a556e127d0",
+      "question": "In which order are the following steps introduced in this video?\n(a) A pair of slippers.\n(b) A pair of pillows.\n(c) A Starbucks cup.\n(d) A Windows computer.",
+      "options": {
+        "A": "(b)(c)(a)(d).",
+        "B": "(a)(b)(c)(d).",
+        "C": "(a)(c)(b)(d).",
+        "D": "(b)(d)(a)(c)."
+      },
+      "reference_answer": "(a)(b)(c)(d).",
+      "observed_answer": "(b) A pair of pillows, (a) A pair of slippers, (c) A Starbucks cup, (d) A Windows computer.",
+      "coverage": "complete",
+      "observer_missing": [],
+      "uncertain_facts": [],
+      "audit": {
+        "question_supported": true,
+        "reference_matches": false,
+        "relations_supported": true,
+        "requires_multiple": "yes",
+        "semantic_groups": [
+          {
+            "id": "E01",
+            "label_zh": "枕头展示",
+            "fact_ids": [
+              "F01"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F01",
+                "evidence_index": 0
+              }
+            ]
+          },
+          {
+            "id": "E02",
+            "label_zh": "拖鞋展示",
+            "fact_ids": [
+              "F02"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F02",
+                "evidence_index": 0
+              }
+            ]
+          },
+          {
+            "id": "E03",
+            "label_zh": "星巴克杯子展示",
+            "fact_ids": [
+              "F03"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F03",
+                "evidence_index": 0
+              }
+            ]
+          },
+          {
+            "id": "E04",
+            "label_zh": "Windows电脑展示",
+            "fact_ids": [
+              "F04"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F04",
+                "evidence_index": 0
+              }
+            ]
+          }
+        ],
+        "fact_checks": [
+          {
+            "fact_id": "F01",
+            "supported": true,
+            "frame_ids": [
+              "R0003",
+              "R0004",
+              "R0005"
+            ],
+            "subtitle_ids": [],
+            "reason_zh": "在视频帧R0003至R0005中，画面背景里清晰展示了两个黄色小熊造型的枕头。"
+          },
+          {
+            "fact_id": "F02",
+            "supported": true,
+            "frame_ids": [
+              "R0015",
+              "R0016"
+            ],
+            "subtitle_ids": [],
+            "reason_zh": "在视频帧R0015和R0016中，画面中展示了一双粉色带白色蝴蝶结的迷你拖鞋。"
+          },
+          {
+            "fact_id": "F03",
+            "supported": true,
+            "frame_ids": [
+              "R0027",
+              "R0028"
+            ],
+            "subtitle_ids": [],
+            "reason_zh": "在视频帧R0027中，镊子夹着一个带有绿色星巴克标志的白色迷你杯子放入架子中。"
+          },
+          {
+            "fact_id": "F04",
+            "supported": true,
+            "frame_ids": [
+              "R0039",
+              "R0040"
+            ],
+            "subtitle_ids": [],
+            "reason_zh": "在视频帧R0039和R0040中，画面展示了一个屏幕显示Windows系统界面的迷你台式电脑。"
+          }
+        ],
+        "missing_zh": [],
+        "reference_issues_zh": [
+          "参考答案为(a)(b)(c)(d)，即先介绍拖鞋再介绍枕头；但根据视频时间戳，枕头（约439秒）明显早于拖鞋（约899秒）出现，实际顺序应为(b)(a)(c)(d)。"
+        ],
+        "reason_zh": "视频中各物品的出现顺序通过时间戳明确可辨：枕头(439s) -> 拖鞋(899s) -> 星巴克杯子(1211s) -> Windows电脑(1613s)。这与观察到的事实一致，但与提供的参考答案顺序不符。"
+      },
+      "false_acceptance_gates": [
+        "auditor_reference_matches",
+        "auditor_no_reference_issues"
+      ],
+      "request_fields": {
+        "coarse_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__826-2/locate/4419fb97fd569a042760ad0c/request.json",
+          "request_sha256": "cb6386f39e782dbe7a59e631420ef98a5beb47a1b30206967c0b8b7960dddd84",
+          "has_options": false,
+          "has_reference": false,
+          "question": "In which order are the following steps introduced in this video?\n(a) A pair of slippers.\n(b) A pair of pillows.\n(c) A Starbucks cup.\n(d) A Windows computer."
+        },
+        "refined_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__826-2/refine/35e476192fd632b41dc98c53/request.json",
+          "request_sha256": "af98cd9bccaf9a3758c0e84f00a4dbd4ac8962af626a1f49a73804c56f943a82",
+          "has_options": false,
+          "has_reference": false,
+          "question": "In which order are the following steps introduced in this video?\n(a) A pair of slippers.\n(b) A pair of pillows.\n(c) A Starbucks cup.\n(d) A Windows computer."
+        },
+        "audit_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__826-2/audit/9ac88bc99d4fdd25dc285479/request.json",
+          "request_sha256": "793795f33579c7309270a59ec3b3a28a52fb55e82724b53b456e586a57218f7d",
+          "has_options": true,
+          "has_reference": true,
+          "question": "In which order are the following steps introduced in this video?\n(a) A pair of slippers.\n(b) A pair of pillows.\n(c) A Starbucks cup.\n(d) A Windows computer."
+        }
+      }
+    },
+    {
+      "qid": "videomme:844-1",
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/results/videomme__844-1.json",
+      "result_sha256": "eb28fc2b900ed64d98e5b8029d9cfbe8a162e9f1449f261c710600cc56a2ef3a",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__844-1.json",
+      "input_sha256": "01b6d5492e0b250522053b8bdecdf1a69a9fa2fc163b1b5141368c6b10f67f80",
+      "question": "In what chronological order did the following events take place?\n(a) The Prada brand was almost ceasing to exist.\n(b) The launch of the label Miu Miu.\n(c) Prada gained connections to royal families.\n(d) The arrival of Miuccia Prada.",
+      "options": {
+        "A": "(c)(b)(a)(d).",
+        "B": "(c)(a)(d)(b).",
+        "C": "(d)(c)(a)(b).",
+        "D": "(d)(a)(b)(c)."
+      },
+      "reference_answer": "(c)(a)(d)(b).",
+      "observed_answer": "(c) Prada gained connections to royal families -> (d) The arrival of Miuccia Prada -> (b) The launch of the label Miu Miu. Event (a) is unknown.",
+      "coverage": "partial",
+      "observer_missing": [
+        "关于“Prada品牌几乎不复存在”这一事件的具体时间或描述在提供的片段中未找到证据。"
+      ],
+      "uncertain_facts": [
+        {
+          "evidence": [],
+          "id": "F04",
+          "statement": "The Prada brand was almost ceasing to exist.",
+          "status": "uncertain"
+        }
+      ],
+      "audit": {
+        "question_supported": false,
+        "reference_matches": true,
+        "relations_supported": true,
+        "requires_multiple": "yes",
+        "semantic_groups": [
+          {
+            "id": "E01",
+            "label_zh": "Prada获得皇室供应商资格 (1919年)",
+            "fact_ids": [
+              "F01"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F01",
+                "evidence_index": 0
+              }
+            ]
+          },
+          {
+            "id": "E02",
+            "label_zh": "Miuccia Prada加入家族企业 (1978年)",
+            "fact_ids": [
+              "F02"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F02",
+                "evidence_index": 0
+              }
+            ]
+          },
+          {
+            "id": "E03",
+            "label_zh": "Miu Miu品牌发布 (1993年)",
+            "fact_ids": [
+              "F03"
+            ],
+            "interval_refs": [
+              {
+                "fact_id": "F03",
+                "evidence_index": 0
+              }
+            ]
+          }
+        ],
+        "fact_checks": [
+          {
+            "fact_id": "F01",
+            "supported": true,
+            "frame_ids": [],
+            "subtitle_ids": [
+              "S00085",
+              "S00086",
+              "S00087",
+              "S00088"
+            ],
+            "reason_zh": "字幕明确提到“in 1919... Fratelli Prada was named the official supplier of the Italian Royal household”，支持该事实。"
+          },
+          {
+            "fact_id": "F02",
+            "supported": true,
+            "frame_ids": [
+              "R0042",
+              "R0043",
+              "R0044",
+              "R0045",
+              "R0046"
+            ],
+            "subtitle_ids": [
+              "S00136",
+              "S00137",
+              "S00142",
+              "S00143"
+            ],
+            "reason_zh": "字幕说明“spark came in 1978 when luis's daughter Maria Bianchi decided to join the family business”，并指出她现在的名字是Miuccia Prada，画面出现“MIUCCIA”字样，支持该事实。"
+          },
+          {
+            "fact_id": "F03",
+            "supported": true,
+            "frame_ids": [
+              "R0056",
+              "R0057",
+              "R0058",
+              "R0059",
+              "R0060",
+              "R0061",
+              "R0062",
+              "R0063",
+              "R0064",
+              "R0065",
+              "R0066"
+            ],
+            "subtitle_ids": [
+              "S00465",
+              "S00466",
+              "S00467",
+              "S00468",
+              "S00469"
+            ],
+            "reason_zh": "字幕明确指出“it was in 1993 that she decided to launch mew mew... a sub-label of Prada”，画面展示了“miu miu”标志，支持该事实。"
+          },
+          {
+            "fact_id": "F04",
+            "supported": false,
+            "frame_ids": [],
+            "subtitle_ids": [],
+            "reason_zh": "提供的视频片段和字幕中未包含关于“Prada品牌几乎不复存在”这一事件的具体时间或描述，无法验证。"
+          }
+        ],
+        "missing_zh": [
+          "缺少关于事件(a) 'The Prada brand was almost ceasing to exist' 发生时间的证据，导致无法确定其在完整时间线中的位置。"
+        ],
+        "reference_issues_zh": [],
+        "reason_zh": "虽然观察到的三个事件（c、d、b）的时间顺序与参考答案一致，但由于完全缺失对事件(a)的验证，无法独立确认完整的四步时间顺序，因此问题在现有证据下不完全成立。"
+      },
+      "false_acceptance_gates": [
+        "observer_complete",
+        "observer_no_missing",
+        "observer_facts_supported",
+        "auditor_question_supported",
+        "auditor_facts_supported",
+        "auditor_no_missing"
+      ],
+      "request_fields": {
+        "coarse_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__844-1/locate/f837a98954e1ac7eedef3ed8/request.json",
+          "request_sha256": "bd6850ccd663c40f1eede181e288ee69ad1ab6efafd781088d5bb9cf1c5d3e83",
+          "has_options": false,
+          "has_reference": false,
+          "question": "In what chronological order did the following events take place?\n(a) The Prada brand was almost ceasing to exist.\n(b) The launch of the label Miu Miu.\n(c) Prada gained connections to royal families.\n(d) The arrival of Miuccia Prada."
+        },
+        "refined_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__844-1/refine/7bea7a6594a7950893c2dcba/request.json",
+          "request_sha256": "a6f5b15cd86cee4d848555f1c1c00700f79f8dc55b8f9ffe9d6e45344f864147",
+          "has_options": false,
+          "has_reference": false,
+          "question": "In what chronological order did the following events take place?\n(a) The Prada brand was almost ceasing to exist.\n(b) The launch of the label Miu Miu.\n(c) Prada gained connections to royal families.\n(d) The arrival of Miuccia Prada."
+        },
+        "audit_call": {
+          "request_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/calls/videomme__844-1/audit/e6dd0c72a6f244e10d51f84e/request.json",
+          "request_sha256": "0cc789642c8dd4ec88c9f040cbdf234808fce8eab91d2ab544fbbe2e40f4503e",
+          "has_options": true,
+          "has_reference": true,
+          "question": "In what chronological order did the following events take place?\n(a) The Prada brand was almost ceasing to exist.\n(b) The launch of the label Miu Miu.\n(c) Prada gained connections to royal families.\n(d) The arrival of Miuccia Prada."
+        }
+      }
+    }
+  ]
+}

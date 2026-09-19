@@ -1,6 +1,6 @@
 # 研究与工程方案
 
-> 2026-09-17：当前[多证据数据收集方案已暂停](../../experiments/EXP-20260917-videomme-multievidence50/README.md)，50 题目标未达成；以下四步方法实验尚未运行，等待用户确定后续方向。
+> 2026-09-19状态核对：原[多证据收集队列保持暂停](../../experiments/EXP-20260917-videomme-multievidence50/README.md)。固定50题及修复、新增50题均已完成处理，[累计52题多组源支持](../../experiments/EXP-20260918-videomme-api-expand50/README.md)，已超过50题目标；26题单组/冗余、22题未解决。以下四步方法实验尚未运行。
 
 当前优先任务是 [内容关联记忆与证据完整性：动机验证](./content_linked_memory_completeness_validation_2026-09-16.md)（2026-09-16）：先以小规模补全验证完整性的答题作用，再定位完整性缺失，随后分别做内容关联存取四格、固定写入器交换任务先验。第 3 步保留原设计，第 4 步采用通用/匹配/错配三组，不合并为多因素网格；独立任务需求诊断不恢复。简答由独立大模型按必要事实评分并人工抽审，证据充分性另行核验，原题型结果单列；固定前端、回答模型和投射，暂不训练完整学习系统。[Video-MME-long 数据准备已启动](../../experiments/EXP-20260916-memory-data-prep/README.md)，四步实验尚未执行。[9 月 15 日方案](./task_structured_memory_motivation_validation_2026-09-15.md)保留为前版。
 

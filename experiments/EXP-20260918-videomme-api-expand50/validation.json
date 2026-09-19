@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-09-18T01:13:45.479620+08:00",
+  "regression_tests_passed": 14,
+  "manifest_questions": 98,
+  "unique_videos": 98,
+  "overlap_with_prior50_videos": 0,
+  "all_input_hashes": "pass",
+  "entrypoint_links": "pass",
+  "py_compile": "pass",
+  "note": "Post-launch audit_results.py is a separate offline auditor, not part of the deployed inference snapshot."
+}

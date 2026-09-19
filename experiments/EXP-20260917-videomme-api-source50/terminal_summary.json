@@ -1,0 +1,25 @@
+{
+  "updated_at": "2026-09-17T23:21:56.513041+08:00",
+  "pid": 371170,
+  "state": "paused",
+  "selected": 50,
+  "terminal_results": 50,
+  "remaining": 0,
+  "status_counts": {
+    "technical_failed": 23,
+    "source_supported_multi": 13,
+    "source_unresolved": 9,
+    "source_supported_single_or_redundant": 5
+  },
+  "active": {},
+  "implementation": "a360fd3a41c7acf6e166ae61d5b604810f7aec7326b4d112bc01e6ad1da9b413",
+  "api_attempts": 157,
+  "api_failed_attempts": 64,
+  "usage": {
+    "prompt_tokens": 3611687,
+    "completion_tokens": 120515,
+    "total_tokens": 3732202
+  },
+  "calls_without_returned_usage": 1,
+  "human_reviewed": false
+}

@@ -1,0 +1,32 @@
+{
+  "updated_at": "2026-09-17T19:35:06.386867+08:00",
+  "scope_questions": 825,
+  "source_records": 1060,
+  "substantive_questions": 291,
+  "record_dispositions": 820,
+  "pending_policy_review": 5,
+  "decisions": {
+    "needs_source_review": 76,
+    "retain_single_local": 63,
+    "unverified_technical_failure": 534,
+    "reopen_grouping": 63,
+    "retain_multi_candidate": 66,
+    "retain_non_grouping_issue": 18
+  },
+  "api_completed_batches": 58,
+  "api_failed_batches": 1,
+  "usage": {
+    "prompt_tokens": 526441,
+    "completion_tokens": 69106,
+    "total_tokens": 595547
+  },
+  "new_visual_verification": false,
+  "human_reviewed": false,
+  "usage_including_failed_batches": {
+    "prompt_tokens": 543469,
+    "completion_tokens": 70194,
+    "total_tokens": 613663
+  },
+  "status": "superseded_by_caption_semantic_review",
+  "superseded_reason": "用户要求直接复查已选caption语义，停止逐题原始图像审核；不再补跑旧判定文字复审。"
+}

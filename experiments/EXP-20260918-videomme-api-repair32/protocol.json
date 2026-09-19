@@ -1,0 +1,55 @@
+{
+  "version": "2.0",
+  "model": "qwen3.8-flash",
+  "source": {
+    "coarse_spacing_s": 4.0,
+    "refine_spacing_s": 1.0,
+    "context_margin_s": 5,
+    "refine_boundary_margin_s": 3.0,
+    "max_coarse_frames": 200,
+    "max_refine_frames": 240,
+    "max_image_side": 768,
+    "max_evidence_interval_s": 120.0
+  },
+  "api": {
+    "concurrency": 3,
+    "attempts_per_stage": 2,
+    "timeout_s": 180,
+    "max_stage_wall_s": 480,
+    "max_output_tokens": 6500,
+    "enable_thinking": false,
+    "retry_backoff_s": 8,
+    "stop_after_consecutive_failed_questions": 5
+  },
+  "stages": [
+    "API targeted full-timeline search for source_unresolved or newly detected gaps",
+    "source observation with complete question/options and without reference",
+    "denser original-source audit with reference; fresh facts/citations permitted",
+    "at most one targeted supplementation round if unresolved"
+  ],
+  "scope": "Exactly the32 historical technical_failed/source_unresolved questions; separate immutable run; original18 supported results not reprocessed.",
+  "time_annotations": "Video-MME QA provides no authoritative fact-level temporal gold used here; caption windows are proposals. Refined spans are sampled source witness intervals, not frame-perfect event boundaries.",
+  "modalities": "Original decoded video frames and synchronized original SRT; no audio stream. Claims needing audio without usable subtitles remain unresolved.",
+  "resume": "Frozen32 inputs and full call cache; final results skipped, interrupted work resumes cached stages. Two attempts per request, max2 source rounds. Old circuit marker remains untouched.",
+  "old_queue_remains_paused": true,
+  "human_reviewed": false,
+  "repair": {
+    "max_source_rounds": 2,
+    "max_planned_windows": 16,
+    "max_planned_total_seconds": 600,
+    "full_video_caption_and_subtitle_search": true,
+    "max_source_ids_per_fact": 40,
+    "pilot_qids": [
+      "videomme:723-3",
+      "videomme:765-2",
+      "videomme:763-1"
+    ]
+  },
+  "evidence_contract": "API cites exact current source IDs; code derives original timestamp spans, including point witnesses, and preserves disjoint observed intervals. Retrieval windows are not semantic groups. No API-authored timestamp or input-group-ID constraints.",
+  "acceptance": "Final source audit determines required gaps; earlier missing items and optional notes do not veto resolved evidence. No passing with final required gaps, unsupported facts/relations, reference conflict or inconsistent multi-group declarations.",
+  "code_base": {
+    "path": "experiments/EXP-20260917-videomme-api-source50/code/run.py",
+    "sha256": "22bb9cff8656c5d1a73bd734d0cf814245c126297ef160d58aca5478c434793e",
+    "use": "Vendored extraction, API ledger, cache and lifecycle; new repair workflow overrides old observation/audit semantics."
+  }
+}

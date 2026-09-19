@@ -1,0 +1,468 @@
+{
+  "created_at": "2026-09-17T22:39:14.740777+08:00",
+  "questions": 50,
+  "pool_sha256": "11b005e550ffaa21410f6a906fbd83b88f2bc1315cbc658051cb8b42b6ec0d04",
+  "protocol_sha256": "b51bd4e18bdd234aff1472e0005824a1738457a347cbea031f731498edcae4ea",
+  "selection": {
+    "count": 50,
+    "seed": 20260917,
+    "max_selected_caption_seconds": 300,
+    "max_groups": 6,
+    "unique_video": true,
+    "strata": "round-robin 2,3,4+ groups; deterministic seeded shuffle within strata; efficiency pilot, not random population sample"
+  },
+  "selected_qids": [
+    "videomme:678-2",
+    "videomme:851-3",
+    "videomme:822-1",
+    "videomme:759-3",
+    "videomme:898-3",
+    "videomme:698-3",
+    "videomme:734-3",
+    "videomme:850-3",
+    "videomme:853-1",
+    "videomme:886-3",
+    "videomme:623-2",
+    "videomme:821-1",
+    "videomme:723-3",
+    "videomme:663-3",
+    "videomme:751-3",
+    "videomme:609-3",
+    "videomme:763-1",
+    "videomme:725-1",
+    "videomme:689-3",
+    "videomme:816-3",
+    "videomme:629-1",
+    "videomme:774-2",
+    "videomme:660-2",
+    "videomme:852-1",
+    "videomme:765-2",
+    "videomme:694-2",
+    "videomme:888-1",
+    "videomme:707-1",
+    "videomme:704-3",
+    "videomme:844-1",
+    "videomme:831-3",
+    "videomme:864-3",
+    "videomme:890-3",
+    "videomme:815-2",
+    "videomme:767-3",
+    "videomme:685-2",
+    "videomme:868-1",
+    "videomme:733-3",
+    "videomme:826-2",
+    "videomme:783-2",
+    "videomme:766-3",
+    "videomme:825-2",
+    "videomme:610-2",
+    "videomme:757-3",
+    "videomme:848-1",
+    "videomme:702-1",
+    "videomme:881-3",
+    "videomme:634-2",
+    "videomme:771-2",
+    "videomme:712-3"
+  ],
+  "entries": [
+    {
+      "qid": "videomme:678-2",
+      "video_id": "B0-7MeWA2aI",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__678-2.json",
+      "input_sha256": "c55cc5514b6b3fbcb186dbb000b53fe817cb72f3dff928ffa0037624f7c2f58d",
+      "caption_groups": 2,
+      "selected_caption_seconds": 70.0
+    },
+    {
+      "qid": "videomme:851-3",
+      "video_id": "Lo-ewzf-Q1k",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__851-3.json",
+      "input_sha256": "2eb188042e0a4897e7924f1a84947484081b5ee183e3dc00acbe161deaf967fa",
+      "caption_groups": 3,
+      "selected_caption_seconds": 60.0
+    },
+    {
+      "qid": "videomme:822-1",
+      "video_id": "3MJNKd10kxM",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__822-1.json",
+      "input_sha256": "40a754fe98dac4f619b5a197ce10e0ed8d5602c4e7f5ced75f61eedad2f4fea8",
+      "caption_groups": 5,
+      "selected_caption_seconds": 60.0
+    },
+    {
+      "qid": "videomme:759-3",
+      "video_id": "aKLobzbLxuY",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__759-3.json",
+      "input_sha256": "46b5af4d9f1214cf461f97d1425ba74cb71e8f7b0b829d29fc1449fbcd0e3208",
+      "caption_groups": 2,
+      "selected_caption_seconds": 190.0
+    },
+    {
+      "qid": "videomme:898-3",
+      "video_id": "K9MQATj3894",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__898-3.json",
+      "input_sha256": "bcc43d4a3312a3aefd1920591188d72390dadc47d1260214f9df8ab0824a9165",
+      "caption_groups": 3,
+      "selected_caption_seconds": 130.0
+    },
+    {
+      "qid": "videomme:698-3",
+      "video_id": "KIg4rprmO9Y",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__698-3.json",
+      "input_sha256": "094388d302798d1c779e8f899c824463c2710c142a0c664ffa5a3ecc7edc6b44",
+      "caption_groups": 6,
+      "selected_caption_seconds": 110.0
+    },
+    {
+      "qid": "videomme:734-3",
+      "video_id": "rj45Omrq6Pk",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__734-3.json",
+      "input_sha256": "b2a20bafa1116f2fad5f5a9d3a30889c55735059d4f3179a3e1299787ccb8697",
+      "caption_groups": 2,
+      "selected_caption_seconds": 30.0
+    },
+    {
+      "qid": "videomme:850-3",
+      "video_id": "5Z2_uRf7ckY",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__850-3.json",
+      "input_sha256": "d74f5acbd1096fa7ca87dcbac90a355c9cb6780ca9175500b1564c1aa7c46f95",
+      "caption_groups": 3,
+      "selected_caption_seconds": 120.0
+    },
+    {
+      "qid": "videomme:853-1",
+      "video_id": "pKaPg9ZJ88Q",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__853-1.json",
+      "input_sha256": "b05691b5060acb498f516a6013f9b5c1518483331a429571b54b96ae0037f68b",
+      "caption_groups": 4,
+      "selected_caption_seconds": 130.0
+    },
+    {
+      "qid": "videomme:886-3",
+      "video_id": "elprD1hnDyU",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__886-3.json",
+      "input_sha256": "322d91cc9724cb85bffb1b8d03c22916280fe0670b33b75c8754a0636414feef",
+      "caption_groups": 2,
+      "selected_caption_seconds": 40.0
+    },
+    {
+      "qid": "videomme:623-2",
+      "video_id": "gfikT_O4v9A",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__623-2.json",
+      "input_sha256": "5aecaa7969c77ff72e6d0735b15866fdfbc7c25ad9ce3030816aebddcc2671e9",
+      "caption_groups": 3,
+      "selected_caption_seconds": 70.0
+    },
+    {
+      "qid": "videomme:821-1",
+      "video_id": "c03YTDzmsK8",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__821-1.json",
+      "input_sha256": "c3708c0a745f7d7978104231e429c9d3365f28efa6f178151b90dd722d50a130",
+      "caption_groups": 4,
+      "selected_caption_seconds": 80.0
+    },
+    {
+      "qid": "videomme:723-3",
+      "video_id": "n5DXniZGkME",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__723-3.json",
+      "input_sha256": "d1076603fbef4688f566877c2267e93c96d41ec6d7adaa84e8e1a0643dd9e216",
+      "caption_groups": 2,
+      "selected_caption_seconds": 50.0
+    },
+    {
+      "qid": "videomme:663-3",
+      "video_id": "eqJPDJr_irE",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__663-3.json",
+      "input_sha256": "06deefacfc7139ae9c47e1f30494c44d368df4d980e7e280dfbd347da9fed0d4",
+      "caption_groups": 3,
+      "selected_caption_seconds": 80.0
+    },
+    {
+      "qid": "videomme:751-3",
+      "video_id": "-yWE13LbFd4",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__751-3.json",
+      "input_sha256": "91181d14df8f4d962516e2d58a1219cb3a10d81b74fae84382c05d2dc463176f",
+      "caption_groups": 4,
+      "selected_caption_seconds": 100.0
+    },
+    {
+      "qid": "videomme:609-3",
+      "video_id": "HProiNnmGwI",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__609-3.json",
+      "input_sha256": "245ff31f9739e2470edf0760e9412a153812b867cccca230c78114949b2a3892",
+      "caption_groups": 2,
+      "selected_caption_seconds": 80.0
+    },
+    {
+      "qid": "videomme:763-1",
+      "video_id": "sDWOsWawxPc",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__763-1.json",
+      "input_sha256": "d6cd18d7cba9cd9a25deef1ad3f5134cf0166e5701af2cc3b9537e78cac42077",
+      "caption_groups": 3,
+      "selected_caption_seconds": 150.0
+    },
+    {
+      "qid": "videomme:725-1",
+      "video_id": "p_4UPdFqgIQ",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__725-1.json",
+      "input_sha256": "5ca0cdb555949acc50b6741db600091b5daa27664aa7738a9c3578c74a6a77b7",
+      "caption_groups": 4,
+      "selected_caption_seconds": 260.0
+    },
+    {
+      "qid": "videomme:689-3",
+      "video_id": "KTjeh5QPL0o",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__689-3.json",
+      "input_sha256": "94bcf6b5c47d570c0b9ef44f57409c053fe0f5cb2b43414e22f8fbb88efba02c",
+      "caption_groups": 2,
+      "selected_caption_seconds": 70.0
+    },
+    {
+      "qid": "videomme:816-3",
+      "video_id": "Z2G9bTvffAw",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__816-3.json",
+      "input_sha256": "7fbaed3b4aa5a268efd3e3053a239fe47eef7006748a32eb179e78e39ff1b77b",
+      "caption_groups": 3,
+      "selected_caption_seconds": 200.0
+    },
+    {
+      "qid": "videomme:629-1",
+      "video_id": "Z9mOrNcX4j0",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__629-1.json",
+      "input_sha256": "63c1837d510f78a6111b10d61a3f59dce8c517073fc312d0a6853ca1de11ecb2",
+      "caption_groups": 5,
+      "selected_caption_seconds": 180.0
+    },
+    {
+      "qid": "videomme:774-2",
+      "video_id": "GV5CuB4zPTY",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__774-2.json",
+      "input_sha256": "c29bf3c842837d0662d77c05b5038b9b9c606fdf278fc4e7245dbca0a1bed058",
+      "caption_groups": 2,
+      "selected_caption_seconds": 70.0
+    },
+    {
+      "qid": "videomme:660-2",
+      "video_id": "7MFKy7DJsCY",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__660-2.json",
+      "input_sha256": "08ee955e1dae0a9bb32876ff708e5d31f2c526d2965b4c7708d908da79e5b156",
+      "caption_groups": 3,
+      "selected_caption_seconds": 50.0
+    },
+    {
+      "qid": "videomme:852-1",
+      "video_id": "eno3UMEMQJI",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__852-1.json",
+      "input_sha256": "0ae42a5ba6c70f59fafa341dce9914031025c5ad428753b4fa0ac8a31ef2143d",
+      "caption_groups": 4,
+      "selected_caption_seconds": 130.0
+    },
+    {
+      "qid": "videomme:765-2",
+      "video_id": "wNpA02SNgUg",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__765-2.json",
+      "input_sha256": "2d3617dc1294a18061e79c4da268338d9ddca2be546d81b5246df501fda63d31",
+      "caption_groups": 2,
+      "selected_caption_seconds": 70.0
+    },
+    {
+      "qid": "videomme:694-2",
+      "video_id": "Sp2nxlrQ89w",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__694-2.json",
+      "input_sha256": "bed6e9727c0f8b83ca18454817f92378da74c9a91485f97f9ae3861178bbbdb1",
+      "caption_groups": 3,
+      "selected_caption_seconds": 130.0
+    },
+    {
+      "qid": "videomme:888-1",
+      "video_id": "N1ZRYx46ye4",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__888-1.json",
+      "input_sha256": "1c6c8b58baf47bdccb31a3d57137f307ca4dd4266c5e72bda88919400cb3a932",
+      "caption_groups": 4,
+      "selected_caption_seconds": 90.0
+    },
+    {
+      "qid": "videomme:707-1",
+      "video_id": "fuDNhWIa6KQ",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__707-1.json",
+      "input_sha256": "f0c8158fee5a5634621d1e36d3d367e4988dac89a83d5e9d1f8a4069f7f20c9f",
+      "caption_groups": 2,
+      "selected_caption_seconds": 60.0
+    },
+    {
+      "qid": "videomme:704-3",
+      "video_id": "HTv4z899xgA",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__704-3.json",
+      "input_sha256": "22fa2403410158060aa8eccc23791888e223b00e9da6ab1ce11611c9804838a5",
+      "caption_groups": 3,
+      "selected_caption_seconds": 110.0
+    },
+    {
+      "qid": "videomme:844-1",
+      "video_id": "K7YNoRZMv2k",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__844-1.json",
+      "input_sha256": "01b6d5492e0b250522053b8bdecdf1a69a9fa2fc163b1b5141368c6b10f67f80",
+      "caption_groups": 4,
+      "selected_caption_seconds": 150.0
+    },
+    {
+      "qid": "videomme:831-3",
+      "video_id": "6Pt3-NDxzRk",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__831-3.json",
+      "input_sha256": "987dd0a4e2951628c0d11c52948d4eb7016eb25c362aa5e27c947e7edfcc4bf6",
+      "caption_groups": 2,
+      "selected_caption_seconds": 30.0
+    },
+    {
+      "qid": "videomme:864-3",
+      "video_id": "VFntoBRGF1A",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__864-3.json",
+      "input_sha256": "d144fd831dd35b58e93d769e39c1cea84839ce3aa934524ba8b49fd7781b0247",
+      "caption_groups": 3,
+      "selected_caption_seconds": 80.0
+    },
+    {
+      "qid": "videomme:890-3",
+      "video_id": "bIQf1HwEqHU",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__890-3.json",
+      "input_sha256": "2d89d3a31ac22f7a37a384365f9d3ff3cdd533513d955ce385e5609f8657da09",
+      "caption_groups": 6,
+      "selected_caption_seconds": 110.0
+    },
+    {
+      "qid": "videomme:815-2",
+      "video_id": "7TydWUguPRU",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__815-2.json",
+      "input_sha256": "648cedf673d35070fb529e7d6337cdaf08ab0128a10a050857288ec3e9352f1a",
+      "caption_groups": 2,
+      "selected_caption_seconds": 260.0
+    },
+    {
+      "qid": "videomme:767-3",
+      "video_id": "LqaSTy0swNE",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__767-3.json",
+      "input_sha256": "b77c8d39a9bf5faed8278b657e1ebcd27304fe583c9bcc3d5c717a5a174fad18",
+      "caption_groups": 3,
+      "selected_caption_seconds": 70.0
+    },
+    {
+      "qid": "videomme:685-2",
+      "video_id": "nVtb2vNUOdU",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__685-2.json",
+      "input_sha256": "02b585feb32cd6ef067d35c6c589493b82e0b00c91e1cd7d44d24e223159247f",
+      "caption_groups": 4,
+      "selected_caption_seconds": 60.0
+    },
+    {
+      "qid": "videomme:868-1",
+      "video_id": "eZ5lFBPpRkM",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__868-1.json",
+      "input_sha256": "8dbf3a0aa57e1ca18ff78647ec5815f11042e299b765d14ca80da784f0a7be73",
+      "caption_groups": 2,
+      "selected_caption_seconds": 40.0
+    },
+    {
+      "qid": "videomme:733-3",
+      "video_id": "EFQtbZQ74Eg",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__733-3.json",
+      "input_sha256": "f0c6826221f014eaf0401cbafd84b7684f017c3512a99f2617eac96c65afe6bb",
+      "caption_groups": 3,
+      "selected_caption_seconds": 90.0
+    },
+    {
+      "qid": "videomme:826-2",
+      "video_id": "dXBREPP1hfo",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__826-2.json",
+      "input_sha256": "c0c4d6a953f462f9b38b4b160af649e29e5a54a5341b0d9a33e6c3a556e127d0",
+      "caption_groups": 4,
+      "selected_caption_seconds": 60.0
+    },
+    {
+      "qid": "videomme:783-2",
+      "video_id": "liDQtpusSmY",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__783-2.json",
+      "input_sha256": "2d82d0f382bcfab3d0566d9f35c3149c1ff5dce326f8a9948f75947266c3fa1d",
+      "caption_groups": 2,
+      "selected_caption_seconds": 50.0
+    },
+    {
+      "qid": "videomme:766-3",
+      "video_id": "SB4NLADmT_k",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__766-3.json",
+      "input_sha256": "469c1027566dd085909d74f1b5f38d739d5efbe4ca96e50a921b1d333435563d",
+      "caption_groups": 3,
+      "selected_caption_seconds": 90.0
+    },
+    {
+      "qid": "videomme:825-2",
+      "video_id": "wxff_4tDauo",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__825-2.json",
+      "input_sha256": "1dd9288ebda48cd1546a4ea1514f940da90dd71cd9b99db3f470b50113791761",
+      "caption_groups": 4,
+      "selected_caption_seconds": 200.0
+    },
+    {
+      "qid": "videomme:610-2",
+      "video_id": "O7zcPvQDIMU",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__610-2.json",
+      "input_sha256": "99b021e644013b508e14560aa87943018036753958ee6913eda7732ea8c5a68c",
+      "caption_groups": 2,
+      "selected_caption_seconds": 60.0
+    },
+    {
+      "qid": "videomme:757-3",
+      "video_id": "jdQ-20JEmgc",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__757-3.json",
+      "input_sha256": "c4a46d6b1a23e1be42ea270677451b3ad9ade4d1c6b1c59cc147f54f3e836cbf",
+      "caption_groups": 3,
+      "selected_caption_seconds": 220.0
+    },
+    {
+      "qid": "videomme:848-1",
+      "video_id": "gHXaUDx7P0Y",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__848-1.json",
+      "input_sha256": "11a5abce02d3ce52eb6ae85a15d9bae4794bfe627a7a4530394e76f53e76e97c",
+      "caption_groups": 4,
+      "selected_caption_seconds": 40.0
+    },
+    {
+      "qid": "videomme:702-1",
+      "video_id": "p84O3JAp_IM",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__702-1.json",
+      "input_sha256": "8f7a9bff704b7f9f64cd05388fe001cf0af1f1e6c19a3e1bec5b6ce1b98923dd",
+      "caption_groups": 2,
+      "selected_caption_seconds": 70.0
+    },
+    {
+      "qid": "videomme:881-3",
+      "video_id": "goyWFUzCqF4",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__881-3.json",
+      "input_sha256": "efac0cd8c428dc3e809e587d3f18c4421c8d01b5f71c061b708be9d62f89c194",
+      "caption_groups": 3,
+      "selected_caption_seconds": 80.0
+    },
+    {
+      "qid": "videomme:634-2",
+      "video_id": "0ncLRRLvdfk",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__634-2.json",
+      "input_sha256": "46468edff4aa24de30451e74aae1388632facc900573bc123c6d99ced70d4d5b",
+      "caption_groups": 6,
+      "selected_caption_seconds": 90.0
+    },
+    {
+      "qid": "videomme:771-2",
+      "video_id": "Bgh-2z6P0ao",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__771-2.json",
+      "input_sha256": "489c4386338b0983963484943e11980ddd2cd0e21afdab054c10bf87dca47125",
+      "caption_groups": 2,
+      "selected_caption_seconds": 180.0
+    },
+    {
+      "qid": "videomme:712-3",
+      "video_id": "GDzuMTvHnJE",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260917-videomme-api-source50/run-001/inputs/videomme__712-3.json",
+      "input_sha256": "03d34f408e27ceed6f9349cf136613eb2d02b32f0b3fb2f5f1bc2fe54aa67341",
+      "caption_groups": 3,
+      "selected_caption_seconds": 120.0
+    }
+  ]
+}

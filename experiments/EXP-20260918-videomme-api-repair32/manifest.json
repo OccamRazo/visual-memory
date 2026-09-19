@@ -1,0 +1,266 @@
+{
+  "created_at": "2026-09-18T00:37:54.996614+08:00",
+  "questions": 32,
+  "prior_questions": 50,
+  "original_manifest_sha256": "c3ff2e4e649feaca7a3b7b9d4e2bc6fd6c10c9376134bc761a3f593caff39d04",
+  "caption_bank_sha256": "e29f7fd05a1f75cb36d4e8d5105d77fbbbd6be085c9c5db98b82dbf7626f9a72",
+  "protocol_sha256": "32dad137d6f411def405479cca377ffeb486a7958a9d01f76d760f085f40a02b",
+  "entries": [
+    {
+      "qid": "videomme:723-3",
+      "video_id": "n5DXniZGkME",
+      "old_status": "technical_failed",
+      "old_result_sha256": "f986780475c228f9bec33290e12074f1b9a9d8e0a12c25e1b774a93edb861460",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__723-3.json",
+      "input_sha256": "b83232aca3108f062c7f381fc08559c4eab57abe179f7548850bcb2a70a540aa"
+    },
+    {
+      "qid": "videomme:765-2",
+      "video_id": "wNpA02SNgUg",
+      "old_status": "technical_failed",
+      "old_result_sha256": "44f224bd905d29efd24d5209321df72486e0148aa04816d642c065d30c2681cf",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__765-2.json",
+      "input_sha256": "f3b471f280ed9fec4e3a62a053a7893164a73ce448d2b21adf8ab81afa62f030"
+    },
+    {
+      "qid": "videomme:763-1",
+      "video_id": "sDWOsWawxPc",
+      "old_status": "source_unresolved",
+      "old_result_sha256": "c34144e749d95ed4f9ee45105406540ceeead63ad916686c933ec83a45b9c30a",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__763-1.json",
+      "input_sha256": "2bd23cbbb5df266f6c24783ce1ad227afc70569442383e5441712c3ffb4054f7"
+    },
+    {
+      "qid": "videomme:610-2",
+      "video_id": "O7zcPvQDIMU",
+      "old_status": "source_unresolved",
+      "old_result_sha256": "8bfa62c2c05f324e88c56adc5e8301ebd7d1e7f6b16116ecdc520e15b2c14ffa",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__610-2.json",
+      "input_sha256": "779aef39a4edee320f42d1441bdc795da69d0c9b6a5993c94481b3ee246f85a3"
+    },
+    {
+      "qid": "videomme:634-2",
+      "video_id": "0ncLRRLvdfk",
+      "old_status": "source_unresolved",
+      "old_result_sha256": "0f4a2f99d5148aeee34d4ef5ad6aec790c2a9ae649c3a772b055ab004c3e160d",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__634-2.json",
+      "input_sha256": "3c319538970c221ad1679f39de86b3bbd5cdd55110ff92d4998d5f1588508825"
+    },
+    {
+      "qid": "videomme:663-3",
+      "video_id": "eqJPDJr_irE",
+      "old_status": "technical_failed",
+      "old_result_sha256": "4b34fd2f7bf4e5a118cb8e0eb43b26236b0cde5f4b3a49b2c4a79cfb13c49abd",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__663-3.json",
+      "input_sha256": "4c02e67cb9f150d0a8bf9e4434bdba3e4bf4c745024f642a0ddcda91e4307e73"
+    },
+    {
+      "qid": "videomme:694-2",
+      "video_id": "Sp2nxlrQ89w",
+      "old_status": "technical_failed",
+      "old_result_sha256": "97069bc34727492a5689ee88647dd71733447bb0d4b507bf912c2d77fb252e4d",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__694-2.json",
+      "input_sha256": "700844072f37f36ccc71f322e56d60e094daec6878aa094b7fc015806a9bac24"
+    },
+    {
+      "qid": "videomme:698-3",
+      "video_id": "KIg4rprmO9Y",
+      "old_status": "technical_failed",
+      "old_result_sha256": "56f4e7e6aac2720b95c7e4f14c937a8d3eb63f13fdd028ef3ea3f1a3958b2274",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__698-3.json",
+      "input_sha256": "de3fd2e072ff67cfa5a3d8e389923091d224aba971ebf6012206f6718a1bf3f1"
+    },
+    {
+      "qid": "videomme:702-1",
+      "video_id": "p84O3JAp_IM",
+      "old_status": "technical_failed",
+      "old_result_sha256": "f157258e8763d5bb47ec6089157f16027cde751c26f55faf8d1cdb9389a07af4",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__702-1.json",
+      "input_sha256": "3d4659e4177ac9a1efb47bcded338b1e2d05fa09ef5e95d8b55e005a1a43abeb"
+    },
+    {
+      "qid": "videomme:712-3",
+      "video_id": "GDzuMTvHnJE",
+      "old_status": "technical_failed",
+      "old_result_sha256": "c019b6355aaeb8db88ee70100dc1eb87ebd0794b5c398f900f50e2d23025500b",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__712-3.json",
+      "input_sha256": "d65f842ae45836e8c3229a10d5dfeb56829a4f9e4f76e41c0682e5bfe4cb079d"
+    },
+    {
+      "qid": "videomme:725-1",
+      "video_id": "p_4UPdFqgIQ",
+      "old_status": "source_unresolved",
+      "old_result_sha256": "98f4d5802885f9af48d940674ac186f3ad20294fae916074e185e57e631cad4e",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__725-1.json",
+      "input_sha256": "b7c1065a200849250ad5a29456300dc9ebbc1082bf2b27e8f7279a9e953a118a"
+    },
+    {
+      "qid": "videomme:734-3",
+      "video_id": "rj45Omrq6Pk",
+      "old_status": "source_unresolved",
+      "old_result_sha256": "99c78bd8bfa2388e71605c98002cd09134f85536fd290e6f4fb28390a259dfc2",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__734-3.json",
+      "input_sha256": "d18d753d5f025db83da8bf9c631b1b2968cb24d2369d77903015a8d7d47a9af4"
+    },
+    {
+      "qid": "videomme:751-3",
+      "video_id": "-yWE13LbFd4",
+      "old_status": "technical_failed",
+      "old_result_sha256": "5ae4c98f0772f7f654ee5cf9f662234a10c551b71aaefffe3e35544c2966c9a0",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__751-3.json",
+      "input_sha256": "4d1e3db7db0b8d8c090d50ac77202245f47ed70aefa5b7c24712b8896a88fd46"
+    },
+    {
+      "qid": "videomme:757-3",
+      "video_id": "jdQ-20JEmgc",
+      "old_status": "technical_failed",
+      "old_result_sha256": "9b08e1d7cb79f52fd821031b16c8a003de08429cc655af3d75a5214485777d00",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__757-3.json",
+      "input_sha256": "9bcaf3095b4aca891bd86d04b30e4054323bc5800538d3911039c2b2d2d2ef83"
+    },
+    {
+      "qid": "videomme:759-3",
+      "video_id": "aKLobzbLxuY",
+      "old_status": "technical_failed",
+      "old_result_sha256": "cf3e7b90584e0236b067d411113000ee68535cc7b4c5361bf8abeed961ed43f1",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__759-3.json",
+      "input_sha256": "5b2b942fe446b264aacc5d02573ebb2614a06528fac98a2a31e4488d1a81efac"
+    },
+    {
+      "qid": "videomme:771-2",
+      "video_id": "Bgh-2z6P0ao",
+      "old_status": "technical_failed",
+      "old_result_sha256": "21dc3c67154ab048884f1126f7c272be6e817662893226298bd397bab115372e",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__771-2.json",
+      "input_sha256": "ed9835cc79562d485b80e66bf4dd1e634a1b3ece1b7ef759844e052f5e87b5d1"
+    },
+    {
+      "qid": "videomme:783-2",
+      "video_id": "liDQtpusSmY",
+      "old_status": "technical_failed",
+      "old_result_sha256": "5ae95baf7a9b1c08182a49ea8c1f3745421ac9cf33978cf07e020e0661815270",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__783-2.json",
+      "input_sha256": "bc33843c221e09cedbfadfb7c2e03ea22caeb083a1da4aabf920fb33f2544067"
+    },
+    {
+      "qid": "videomme:815-2",
+      "video_id": "7TydWUguPRU",
+      "old_status": "source_unresolved",
+      "old_result_sha256": "591a2dc320efe589f80a824dd4886b8bc236f5cc6d4a947dcda88f7e0e9af09b",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__815-2.json",
+      "input_sha256": "dcbee14d86af07d716ece3e9652d4d3df68953ed74d99b27f893c4934af270a0"
+    },
+    {
+      "qid": "videomme:816-3",
+      "video_id": "Z2G9bTvffAw",
+      "old_status": "source_unresolved",
+      "old_result_sha256": "d8aaa1da7e872ddcfd3128df75008bcd5834ff993b3c2df3a136078597ab997e",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__816-3.json",
+      "input_sha256": "c2a4cfafe62ea2df02383d3b1ce03e0b95d89272a81676975334bf0114b7fd93"
+    },
+    {
+      "qid": "videomme:821-1",
+      "video_id": "c03YTDzmsK8",
+      "old_status": "technical_failed",
+      "old_result_sha256": "d2bc3025624dc1fd42f4ed25bf3c27fe5196cb109b62ecbf64ccb1e715efdfd4",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__821-1.json",
+      "input_sha256": "167d59fae889e4aa453044686d9cf24fa0e933b3ad4872272550c791f5d7b574"
+    },
+    {
+      "qid": "videomme:826-2",
+      "video_id": "dXBREPP1hfo",
+      "old_status": "source_unresolved",
+      "old_result_sha256": "b0ac3b21e1c0a29dd427efe736cfc615d26aedb9eaf39cea47f90d56d168b2fc",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__826-2.json",
+      "input_sha256": "568f9218b0ec5e696ca4d75473ae278ad335b248b85957afbb73bed252b691f4"
+    },
+    {
+      "qid": "videomme:831-3",
+      "video_id": "6Pt3-NDxzRk",
+      "old_status": "technical_failed",
+      "old_result_sha256": "7e480c8afcebf6e6c2885161139edaf41d238e6057a10b7caf696bb27c6779a4",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__831-3.json",
+      "input_sha256": "0352da54434e7cc0844097191fb7092a545f036040dafd365d72ad9b237eb533"
+    },
+    {
+      "qid": "videomme:844-1",
+      "video_id": "K7YNoRZMv2k",
+      "old_status": "source_unresolved",
+      "old_result_sha256": "eb28fc2b900ed64d98e5b8029d9cfbe8a162e9f1449f261c710600cc56a2ef3a",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__844-1.json",
+      "input_sha256": "dc0f3c0137bbaa52643d8191a3f1ef82735e1c2b2b118d05c03f98bdca42e1d5"
+    },
+    {
+      "qid": "videomme:848-1",
+      "video_id": "gHXaUDx7P0Y",
+      "old_status": "technical_failed",
+      "old_result_sha256": "7cac231e7397387d9b8d5220a6a4895ef0fa5c60e4f8a8be4256fe4f45b7aa80",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__848-1.json",
+      "input_sha256": "011a3818a83be72ae75791d5302edb186f909b2d0bb0ba3b08c467aa25059b7e"
+    },
+    {
+      "qid": "videomme:852-1",
+      "video_id": "eno3UMEMQJI",
+      "old_status": "technical_failed",
+      "old_result_sha256": "baebe048d9108c19cbdd7c8242bf959b51ad9ef5ddf61b8a1a305eaca96a16b7",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__852-1.json",
+      "input_sha256": "ecc2ae52ce0ee7594c2607559447d1681a96798fdeb9a98d7233b0526bc51a6a"
+    },
+    {
+      "qid": "videomme:853-1",
+      "video_id": "pKaPg9ZJ88Q",
+      "old_status": "technical_failed",
+      "old_result_sha256": "1e883848261eecb85f12cff645f5550f2f3a6ec1d1287369c2636dde428228f8",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__853-1.json",
+      "input_sha256": "864b079ec5f870b02d1ccc48561e0964087c3cd40e725c19bc964bf652924b9b"
+    },
+    {
+      "qid": "videomme:864-3",
+      "video_id": "VFntoBRGF1A",
+      "old_status": "technical_failed",
+      "old_result_sha256": "95562512cf5f025f028f32962bc59b803dc65a32f588d5a6dbfd81df1a4fdf71",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__864-3.json",
+      "input_sha256": "1499af5fcc3c4ec0f0cf2e087f1441f25a8f791cd6086becd4f5ffd831b671b1"
+    },
+    {
+      "qid": "videomme:868-1",
+      "video_id": "eZ5lFBPpRkM",
+      "old_status": "technical_failed",
+      "old_result_sha256": "85eca89cbe23c6950686ca14db396b2252b42231106e7e7bf4e31027ba4fa095",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__868-1.json",
+      "input_sha256": "71e1e5a0da7ab328050a3aca8b240654ff78b369ff2efacbdb9667455d20e5ce"
+    },
+    {
+      "qid": "videomme:881-3",
+      "video_id": "goyWFUzCqF4",
+      "old_status": "technical_failed",
+      "old_result_sha256": "6adc8aa81f8698b3f5f9a2588a106221b0e28e19ae4749649bd7eeca7488adf4",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__881-3.json",
+      "input_sha256": "59a629a169a839ac97fde03ce0f5a9a158ed239ea84249300ee974d20a6603f5"
+    },
+    {
+      "qid": "videomme:886-3",
+      "video_id": "elprD1hnDyU",
+      "old_status": "technical_failed",
+      "old_result_sha256": "f4a6df18530fcf2456f71b12638cce0234b8b49aad4871bccc6c5ab6adabe367",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__886-3.json",
+      "input_sha256": "cb61e71f79c7b3480513e67007a258df3e4b685447bc20c015af8eed5ccb0dea"
+    },
+    {
+      "qid": "videomme:888-1",
+      "video_id": "N1ZRYx46ye4",
+      "old_status": "technical_failed",
+      "old_result_sha256": "78407ab2d4bbf6a7db437263f5807620cd0361c1ca4ce9ef9ae4bc0cc8b01727",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__888-1.json",
+      "input_sha256": "5f6f0d42ad165aba81aaf338818d3eac700ef3b2dd32c7f37274219ff6cd1bdc"
+    },
+    {
+      "qid": "videomme:890-3",
+      "video_id": "bIQf1HwEqHU",
+      "old_status": "technical_failed",
+      "old_result_sha256": "3067cc700ace70fef32e978cf258f85b954ff2eb274cff112532f74c42d2a5d1",
+      "input_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/inputs/videomme__890-3.json",
+      "input_sha256": "d210242181ee48787393d8cfb3c582442fb6351ac8526a9a779fd9ed696cf518"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "updated_at": "2026-09-17T19:50:34.077366+08:00",
+  "scope_questions": 825,
+  "reviewable_questions": 242,
+  "caption_reviewed": 242,
+  "pending_caption_review": 0,
+  "grouping_counts": {
+    "not_reviewable": 583,
+    "single": 22,
+    "multi": 214,
+    "unclear": 6
+  },
+  "semantic_joint_evidence_candidate_count": 188,
+  "semantic_joint_evidence_group_count": 581,
+  "requires_multiple_counts": {
+    "no": 24,
+    "yes": 212,
+    "unclear": 6
+  },
+  "coverage_counts": {
+    "sufficient": 214,
+    "partial": 22,
+    "unclear": 6
+  },
+  "api_attempts": 243,
+  "api_failed": 3,
+  "usage_including_failed_attempts": {
+    "prompt_tokens": 2218764,
+    "completion_tokens": 144425,
+    "total_tokens": 2363189
+  },
+  "attempts_without_returned_usage": 0,
+  "new_visual_verification": false,
+  "human_reviewed": false
+}

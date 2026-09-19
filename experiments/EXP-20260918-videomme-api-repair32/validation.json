@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-09-18T00:46:36.939728+08:00",
+  "tests": {
+    "regression_unittest": {
+      "passed": 11,
+      "failed": 0
+    },
+    "py_compile": [
+      "engine.py",
+      "repair.py",
+      "control.py"
+    ],
+    "git_diff_check": "passed",
+    "frozen32_input_hashes": "all unchanged",
+    "original32_result_hashes": "all unchanged",
+    "updated_entrypoint_links": "passed"
+  },
+  "background_status_snapshot": {
+    "updated_at": "2026-09-18T00:46:33.187579+08:00",
+    "pid": 488532,
+    "state": "running",
+    "selected": 32,
+    "terminal_results": 7,
+    "remaining": 25,
+    "status_counts": {
+      "source_supported_single_or_redundant": 3,
+      "source_supported_multi": 3,
+      "output_invalid": 1
+    },
+    "active": {
+      "videomme:694-2": "verify",
+      "videomme:698-3": "plan",
+      "videomme:712-3": "coarse_frames_r1"
+    },
+    "implementation": "91829b28364a3cbe52aaa00f6889143870eef598e8ef9703d4becb3f150bd5c5",
+    "api_attempts": 23,
+    "api_failed_attempts": 6,
+    "usage": {
+      "prompt_tokens": 904841,
+      "completion_tokens": 15479,
+      "total_tokens": 920320
+    },
+    "calls_without_returned_usage": 0,
+    "human_reviewed": false
+  },
+  "remaining_issue_example": {
+    "qid": "videomme:610-2",
+    "status": "output_invalid",
+    "reason": "API locator cited unknown caption/subtitle IDs after two attempts; retained without fabricating mappings."
+  },
+  "note": "Background continues independently; this is a time-stamped check, not a final32 result."
+}

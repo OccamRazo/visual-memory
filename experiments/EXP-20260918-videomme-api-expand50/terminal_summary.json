@@ -1,0 +1,390 @@
+{
+  "checked_at": "2026-09-18T01:47:40.173172+08:00",
+  "status": {
+    "updated_at": "2026-09-18T01:47:38.986672+08:00",
+    "pid": 548931,
+    "state": "completed",
+    "selected": 50,
+    "initial_questions": 50,
+    "terminal_results": 50,
+    "remaining": 0,
+    "reserve_unadmitted": 48,
+    "status_counts": {
+      "source_supported_single_or_redundant": 14,
+      "source_supported_multi": 20,
+      "output_invalid": 13,
+      "reference_conflict": 2,
+      "preparation_failed": 1
+    },
+    "active": {},
+    "implementation": "140550f7a9aa496142fe9ae0a53132938c1e505f0f114607c979742faa385141",
+    "baseline_multi": 32,
+    "new_multi": 20,
+    "cumulative_multi": 52,
+    "target_multi": 51,
+    "target_met": true,
+    "api_attempts": 180,
+    "api_failed_attempts": 46,
+    "usage": {
+      "prompt_tokens": 8811888,
+      "completion_tokens": 184128,
+      "total_tokens": 8996016
+    },
+    "calls_without_returned_usage": 4,
+    "human_reviewed": false
+  },
+  "counts": {
+    "baseline_multi": 32,
+    "new_multi": 20,
+    "cumulative_multi": 52
+  },
+  "initial50_all_terminal": true,
+  "baseline32_hashes_unchanged": true,
+  "all98_frozen_inputs_unchanged": true,
+  "cumulative_unique_videos": 52,
+  "new_supported_source_packets_checked": 34,
+  "new_source_frame_hashes_checked": 3446,
+  "returned_models": [
+    "qwen3.8-flash",
+    "unknown"
+  ],
+  "source_audit_kind": "Automated integrity/schema audit of actual saved API/source artifacts; no new visual or human review.",
+  "supported_question_checks": [
+    {
+      "qid": "videomme:603-2",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 1,
+      "facts": 2,
+      "source_packet_sha256": "ff2cc9b12896871bd1f976e9fd7612d83f1e90ae26acce26b501c63c5af938b7"
+    },
+    {
+      "qid": "videomme:605-1",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 1,
+      "facts": 1,
+      "source_packet_sha256": "12b0d5a1b358c52c6010d72aadf87fd7476c02b6b0481a2069d081716d0ae82a"
+    },
+    {
+      "qid": "videomme:614-2",
+      "status": "source_supported_multi",
+      "semantic_groups": 2,
+      "facts": 3,
+      "source_packet_sha256": "c7da5395da560ea52a5cd4032b8a93702b5eb18d01bf82c702c16ef4fdbaed54"
+    },
+    {
+      "qid": "videomme:624-2",
+      "status": "source_supported_multi",
+      "semantic_groups": 3,
+      "facts": 3,
+      "source_packet_sha256": "2631785006a66baccca1991dd5ae19f91f945cf89cefc1bc8d317bd94cee253e"
+    },
+    {
+      "qid": "videomme:630-2",
+      "status": "source_supported_multi",
+      "semantic_groups": 4,
+      "facts": 4,
+      "source_packet_sha256": "99e62d5c6220a7ddd6247c78aa452ffaa117628c7f873dd973f2a004bb637c81"
+    },
+    {
+      "qid": "videomme:642-3",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 1,
+      "facts": 2,
+      "source_packet_sha256": "a41757568d74b6e6b40ee4d85fdec04d7daada8b4aa9bd024ee98dac61910686"
+    },
+    {
+      "qid": "videomme:644-3",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 1,
+      "facts": 1,
+      "source_packet_sha256": "471b235b62ba4bf09827a1912a388589d8312a75a0fe23dfd60b17d92aa43594"
+    },
+    {
+      "qid": "videomme:645-1",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 1,
+      "facts": 3,
+      "source_packet_sha256": "816ad2eea1f1c3a4dc777a644d86329f17f8fc2986f1152df3993a7aae668c98"
+    },
+    {
+      "qid": "videomme:661-3",
+      "status": "source_supported_multi",
+      "semantic_groups": 8,
+      "facts": 8,
+      "source_packet_sha256": "9d0e506d1efedce456b4053fbc21d355e5b6bb2a1fa8534ac5ff096b45b61065"
+    },
+    {
+      "qid": "videomme:676-2",
+      "status": "source_supported_multi",
+      "semantic_groups": 5,
+      "facts": 5,
+      "source_packet_sha256": "fa1aa3be9d9edf44d446886aafb7a629314df53e0055684ea71e1c4027b9d4a1"
+    },
+    {
+      "qid": "videomme:700-2",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 1,
+      "facts": 2,
+      "source_packet_sha256": "7fa5f0dbd87006dbc5491436b6549f524d825e1702183e41cf1e6728fd78e7bd"
+    },
+    {
+      "qid": "videomme:706-3",
+      "status": "source_supported_multi",
+      "semantic_groups": 4,
+      "facts": 4,
+      "source_packet_sha256": "5f972b40b3c21f02dcee8e17db5850b33ba339695a80f6fca3eb057e3a0ad62e"
+    },
+    {
+      "qid": "videomme:726-1",
+      "status": "source_supported_multi",
+      "semantic_groups": 2,
+      "facts": 3,
+      "source_packet_sha256": "0855ea1ba407327b4f3c4058e12ea68d15c6e5dff413defe2aa60f12b79ee474"
+    },
+    {
+      "qid": "videomme:740-3",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 1,
+      "facts": 2,
+      "source_packet_sha256": "6aed2902025f9de507e592cf69f57b4ef9ab0beb21ceeb8d5c1ca8be20d75846"
+    },
+    {
+      "qid": "videomme:773-3",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 2,
+      "facts": 3,
+      "source_packet_sha256": "22a717bb5a67c8aacbc5aaf4a55f418a49eae1ce6bcb94830125c86f9b13836d"
+    },
+    {
+      "qid": "videomme:778-2",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 2,
+      "facts": 2,
+      "source_packet_sha256": "eebff4c9d6b8a967db5ee531047dac3c77262ea8b4eb25d3bfa17cd2a673f452"
+    },
+    {
+      "qid": "videomme:780-3",
+      "status": "source_supported_multi",
+      "semantic_groups": 2,
+      "facts": 2,
+      "source_packet_sha256": "171bde738d676b387ca8f8292deb2a4db0763fcf722ae688300e977f2e8ef2cb"
+    },
+    {
+      "qid": "videomme:782-3",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 1,
+      "facts": 2,
+      "source_packet_sha256": "93b19552739d52851c6b7a3bef4aa116a11d35947ffa2022eb4407ece388a322"
+    },
+    {
+      "qid": "videomme:785-3",
+      "status": "source_supported_multi",
+      "semantic_groups": 2,
+      "facts": 3,
+      "source_packet_sha256": "6c8b1fc966df9bde619c40ad656473a9d09962866b719dc26bb93aeb91be955d"
+    },
+    {
+      "qid": "videomme:795-2",
+      "status": "source_supported_multi",
+      "semantic_groups": 3,
+      "facts": 3,
+      "source_packet_sha256": "347347362a199592b55bb741939dcf03d510e0520561419badf7ea4452871bb8"
+    },
+    {
+      "qid": "videomme:799-2",
+      "status": "source_supported_multi",
+      "semantic_groups": 4,
+      "facts": 4,
+      "source_packet_sha256": "0f09d4acc2868fab624be4ff651166b23862747646c9f9a32e6e773fa902cc97"
+    },
+    {
+      "qid": "videomme:820-2",
+      "status": "source_supported_multi",
+      "semantic_groups": 4,
+      "facts": 4,
+      "source_packet_sha256": "ce2757a77a988585e5202408dad4f02e3b049aa4bf2d7a33bc156bd299d3c28d"
+    },
+    {
+      "qid": "videomme:824-2",
+      "status": "source_supported_multi",
+      "semantic_groups": 2,
+      "facts": 6,
+      "source_packet_sha256": "67890b69b4019c02e06ec941421b1d0fbe090dffa563b9412411f47f0a797264"
+    },
+    {
+      "qid": "videomme:833-3",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 1,
+      "facts": 3,
+      "source_packet_sha256": "6c0ba065fd74c5e18ea242a8a05318f2b6f6dd809f3c0cff7a58054d2a26c5dc"
+    },
+    {
+      "qid": "videomme:834-1",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 1,
+      "facts": 1,
+      "source_packet_sha256": "73a4a71d83cb6a6d3cb507757d0d83be0749713f5286296282dc1aa18e695126"
+    },
+    {
+      "qid": "videomme:843-3",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 2,
+      "facts": 3,
+      "source_packet_sha256": "b70f3ab8d7dbd46dbbbf192eb77a6297a26175006aa0bf57868c05628a82cf14"
+    },
+    {
+      "qid": "videomme:845-1",
+      "status": "source_supported_multi",
+      "semantic_groups": 4,
+      "facts": 4,
+      "source_packet_sha256": "440068e7bcd113573b092b9f9a7331089576dfd0c71478ed638a09f7ce472843"
+    },
+    {
+      "qid": "videomme:849-1",
+      "status": "source_supported_multi",
+      "semantic_groups": 4,
+      "facts": 4,
+      "source_packet_sha256": "a28be4bed7688d10f31958da2b42fb4fa01a8c5301862bb1445e90bf7c22150e"
+    },
+    {
+      "qid": "videomme:855-3",
+      "status": "source_supported_multi",
+      "semantic_groups": 2,
+      "facts": 2,
+      "source_packet_sha256": "f434341c37b9e8b956eba3f5c4590f039cfd7559e8103e9c8be54c3303b6f7ab"
+    },
+    {
+      "qid": "videomme:857-3",
+      "status": "source_supported_multi",
+      "semantic_groups": 4,
+      "facts": 4,
+      "source_packet_sha256": "69dea9825024d22c9f6c2c0e5b941a521a879deeb615b65c52961ae1f7c5ee5b"
+    },
+    {
+      "qid": "videomme:865-1",
+      "status": "source_supported_multi",
+      "semantic_groups": 5,
+      "facts": 5,
+      "source_packet_sha256": "0e101c528115639c39aee7290766f44923fb8e050402eb29eb28a4f4b813971a"
+    },
+    {
+      "qid": "videomme:880-3",
+      "status": "source_supported_single_or_redundant",
+      "semantic_groups": 2,
+      "facts": 2,
+      "source_packet_sha256": "500a586cd4241ec24f69d3ecb2ab9fee61bedb05d3e13530a79123ad20112607"
+    },
+    {
+      "qid": "videomme:883-1",
+      "status": "source_supported_multi",
+      "semantic_groups": 2,
+      "facts": 2,
+      "source_packet_sha256": "4161d58f0ecdbe2c1a877614a3595a5182d4ffce33abb9896c2d02a21a3efa33"
+    },
+    {
+      "qid": "videomme:885-1",
+      "status": "source_supported_multi",
+      "semantic_groups": 2,
+      "facts": 4,
+      "source_packet_sha256": "53d39245a81096454b4d3371fba9bf7c5943bb1126df9c8bd63a9bf497736884"
+    }
+  ],
+  "remaining_cases": [
+    {
+      "qid": "videomme:621-1",
+      "status": "output_invalid",
+      "error": "incomplete response",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:650-2",
+      "status": "output_invalid",
+      "error": "root must be object with windows, reason_zh and remaining_search_uncertainties; do not return a bare window array",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:669-3",
+      "status": "output_invalid",
+      "error": "unknown locator caption/subtitle ID",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:686-2",
+      "status": "output_invalid",
+      "error": "root must be object",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:718-3",
+      "status": "output_invalid",
+      "error": "missing_required and notes must be arrays",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:724-3",
+      "status": "reference_conflict",
+      "error": null,
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:730-2",
+      "status": "output_invalid",
+      "error": "F04: cite at most40 directly relevant sources",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:731-1",
+      "status": "output_invalid",
+      "error": "unknown locator caption/subtitle ID",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:784-2",
+      "status": "preparation_failed",
+      "error": "Error code: 400 - {'error': {'message': 'Exceeded limit on max data-uri per request: 250 (tid: 2026091717242861655320085235485)', 'type': 'invalid_request_error', 'param': '', 'code': None}}",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:791-3",
+      "status": "reference_conflict",
+      "error": null,
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:797-2",
+      "status": "output_invalid",
+      "error": "selected windows exceed source budget; choose shorter witnesses",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:806-1",
+      "status": "output_invalid",
+      "error": "root must be object",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:810-3",
+      "status": "output_invalid",
+      "error": "positive coverage conflicts with missing/uncertain required evidence; set partial/false or substantiate it",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:813-3",
+      "status": "output_invalid",
+      "error": "root must be object with windows, reason_zh and remaining_search_uncertainties; do not return a bare window array",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:829-3",
+      "status": "output_invalid",
+      "error": "selected windows exceed source budget; choose shorter witnesses",
+      "missing_required": []
+    },
+    {
+      "qid": "videomme:856-3",
+      "status": "output_invalid",
+      "error": "incomplete response",
+      "missing_required": []
+    }
+  ]
+}

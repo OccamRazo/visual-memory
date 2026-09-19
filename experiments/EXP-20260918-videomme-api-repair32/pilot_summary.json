@@ -1,0 +1,58 @@
+{
+  "snapshot": {
+    "updated_at": "2026-09-18T00:41:46.964973+08:00",
+    "pid": 481823,
+    "state": "pilot_completed",
+    "selected": 32,
+    "terminal_results": 3,
+    "remaining": 29,
+    "status_counts": {
+      "source_supported_single_or_redundant": 2,
+      "source_supported_multi": 1
+    },
+    "active": {},
+    "implementation": "423ee9f65e7a5981825d1d17097eb1e4af5c2d00a0296dd5d6ea32eb7558e6b6",
+    "api_attempts": 10,
+    "api_failed_attempts": 3,
+    "usage": {
+      "prompt_tokens": 333836,
+      "completion_tokens": 8044,
+      "total_tokens": 341880
+    },
+    "calls_without_returned_usage": 0,
+    "human_reviewed": false
+  },
+  "results": [
+    {
+      "qid": "videomme:723-3",
+      "old_status": "technical_failed",
+      "status": "source_supported_single_or_redundant",
+      "rounds": 1,
+      "semantic_groups": 2,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/results/videomme__723-3.json",
+      "result_sha256": "35eab4893bd1075f978b5d7efd07c2f2059288d41a8a5cfc70206472bc6e8954"
+    },
+    {
+      "qid": "videomme:763-1",
+      "old_status": "source_unresolved",
+      "status": "source_supported_multi",
+      "rounds": 1,
+      "semantic_groups": 2,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/results/videomme__763-1.json",
+      "result_sha256": "a6322fc354fd72d923a31be5ad1d9acf67235a5ab4e65ff11e594ffa6c2af5e8"
+    },
+    {
+      "qid": "videomme:765-2",
+      "old_status": "technical_failed",
+      "status": "source_supported_single_or_redundant",
+      "rounds": 1,
+      "semantic_groups": 1,
+      "result_file": "/mnt/raid5-01/baorui/visual-memory/EXP-20260918-videomme-api-repair32/run-001/results/videomme__765-2.json",
+      "result_sha256": "a2d01f15a811dcada2261d93b177648cbf711b6b6923bb28a19bf6a752887209"
+    }
+  ],
+  "models_returned": [
+    "qwen3.8-flash"
+  ],
+  "note": "3 failed attempts were schema errors, all recovered by one bounded retry. No historical results were overwritten."
+}

@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "started_at": "2026-09-17T19:23:43.296889+08:00",
+  "scope": "Reassess all previously processed Video-MME questions, across initial annotation/audit, evidence60, grouping60 and full-caption search; deduplicate by qid and preserve all source records. No new question sampling.",
+  "group_rule_zh": "以事件、动作、对象状态或语义阶段切分时间证据组。同一活动、同一场景、同一人物不强制合并。时间相隔较远的观察可分别成组，即使活动连续或内容相似；相邻片段若动作/语义阶段变化也可分组。不同组是否都为回答所需另行验证。",
+  "temporal_rule_zh": "输出各组起止时间及相邻间隔；不设未经校准的统一秒数阈值。不能用覆盖多个事件的大区间把跨片段题强行记成单组，也不能按相邻帧机械增加组数。",
+  "sufficiency_rule_zh": "保持原题和官方答案语义；允许替代路径、源中可恢复的关系。全集源支持、单组与删组检验继续保留；不以模型答对或答错定义证据充分性。取消跨独立活动/章节这一额外准入要求。",
+  "review_stages": [
+    "Freeze all prior source records and exact hashes.",
+    "Review each substantive archived decision under the new rule; source-less technical failures remain unverified, never semantic rejection.",
+    "Re-use source checks only when the same question/facts/source intervals are unchanged; reopen boundaries, overlarge single groups and invalid subset conclusions for targeted source revalidation.",
+    "Report segmentation-policy review separately from original-source verification; never automatically promote a reopened question to confirmed."
+  ],
+  "model": "qwen3.8-flash",
+  "api": {
+    "concurrency": 4,
+    "batch_size": 5,
+    "timeout_seconds": 180,
+    "attempts": 1,
+    "max_output_tokens": 6000,
+    "stop_after_consecutive_transport_failures": 3
+  },
+  "network": "Existing local HTTP proxy :7897 passed authenticated /models health probe; former :7892 unavailable; no system proxy configuration changed.",
+  "human_reviewed": false,
+  "original_experiment_remains_paused": true
+}
